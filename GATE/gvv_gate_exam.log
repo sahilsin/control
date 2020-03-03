@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  21 FEB 2020 19:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  3 MAR 2020 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1302,7 +1302,14 @@ ngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-) (./gvv_gate_exam.aux)
+) (./gvv_gate_exam.aux
+
+LaTeX Warning: Label `eq:compensator_lag_lead_ex' multiply defined.
+
+
+LaTeX Warning: Label `eq:compensator_lag_lead' multiply defined.
+
+)
 \openout1 = `gvv_gate_exam.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 84.
@@ -1456,6 +1463,22 @@ File: tlc.eps Graphic file (type eps)
 \tf@toc=\write5
 \openout5 = `gvv_gate_exam.toc'.
 
+File: ./figs/figure.eps Graphic file (type eps)
+ <./figs/figure.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 504--506
+
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 531--532
+[]\OT1/txr/m/n/12 At f = $10[]$ Hz, Change in slope =
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 532--533
+[]\OT1/txr/m/n/12 At f = $10[]$ Hz, Change in slope =
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1463,147 +1486,136 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+txss on input line 483
-.
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
-txss.fd
-File: ot1txss.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 483.
-File: ./figs/figure.eps Graphic file (type eps)
- <./figs/figure.eps>
-Overfull \hbox (4.0748pt too wide) in paragraph at lines 488--489
- [][] 
- []
-
-
-Underfull \hbox (badness 3323) in paragraph at lines 514--515
-[]\OT1/txr/m/n/12 At f = $10[]$ Hz, Change in slope =
- []
-
-
-Underfull \hbox (badness 3323) in paragraph at lines 515--516
-[]\OT1/txr/m/n/12 At f = $10[]$ Hz, Change in slope =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 533--536
-
- []
-
-[2]
-Overfull \hbox (27.6113pt too wide) detected at line 560
+Overfull \hbox (27.6113pt too wide) detected at line 615
 []
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: ./figs/plot.eps Graphic file (type eps)
+
 <./figs/plot.eps>
-Overfull \hbox (3.36436pt too wide) in paragraph at lines 570--571
+Overfull \hbox (3.36436pt too wide) in paragraph at lines 625--626
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 598--602
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 653--657
 
  []
 
 File: ./figs/pic1.eps Graphic file (type eps)
 <./figs/pic1.eps>
-Overfull \hbox (6.0pt too wide) in paragraph at lines 612--613
+Overfull \hbox (6.0pt too wide) in paragraph at lines 667--668
 [][] 
  []
 
 File: ./figs/pic2.eps Graphic file (type eps)
 <./figs/pic2.eps>
-Overfull \hbox (6.0pt too wide) in paragraph at lines 619--620
+Overfull \hbox (6.0pt too wide) in paragraph at lines 674--675
 [][] 
  []
 
 File: ./figs/pic3.eps Graphic file (type eps)
 <./figs/pic3.eps>
-Overfull \hbox (6.0pt too wide) in paragraph at lines 624--625
+Overfull \hbox (6.0pt too wide) in paragraph at lines 679--680
 [][] 
  []
 
 File: ./figs/pic4.eps Graphic file (type eps)
 <./figs/pic4.eps>
-Overfull \hbox (6.0pt too wide) in paragraph at lines 630--631
+Overfull \hbox (6.0pt too wide) in paragraph at lines 685--686
 [][] 
  []
 
 File: ./figs/pic5.eps Graphic file (type eps)
 <./figs/pic5.eps>
-Overfull \hbox (6.0pt too wide) in paragraph at lines 635--636
+Overfull \hbox (6.0pt too wide) in paragraph at lines 690--691
 [][] 
  []
 
 File: ./figs/pic6.eps Graphic file (type eps)
 <./figs/pic6.eps>
-Overfull \hbox (6.0pt too wide) in paragraph at lines 640--641
+Overfull \hbox (6.0pt too wide) in paragraph at lines 695--696
 [][] 
  []
 
 File: ./figs/pic8.eps Graphic file (type eps)
 <./figs/pic8.eps>
-Overfull \hbox (6.0pt too wide) in paragraph at lines 645--646
+Overfull \hbox (6.0pt too wide) in paragraph at lines 700--701
 [][] 
  []
 
 
-Underfull \hbox (badness 4416) in paragraph at lines 606--647
+Underfull \hbox (badness 4416) in paragraph at lines 661--702
 \OT1/txr/m/n/12 Now we have Neg-a-tive Unity Feed-back
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 606--647
+Underfull \hbox (badness 10000) in paragraph at lines 661--702
 \OT1/txr/m/n/12 Sys-tem(NUFS) in closed loop trans-fer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 606--647
+Underfull \hbox (badness 10000) in paragraph at lines 661--702
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 648--649
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 650--651
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 652--657
+Underfull \hbox (badness 10000) in paragraph at lines 707--712
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 652--657
+Underfull \hbox (badness 10000) in paragraph at lines 707--712
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 712--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 657--662
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 665--675
+Underfull \hbox (badness 10000) in paragraph at lines 720--730
 
  []
 
 
-Overfull \hbox (25.66637pt too wide) detected at line 677
+Overfull \hbox (25.66637pt too wide) detected at line 732
 []\OML/txmi/m/it/12 y\OT1/txr/m/n/12 1(\OML/txmi/m/it/12 t\OT1/txr/m/n/12 ) = \
 OML/txmi/m/it/12 C[] \OMS/txsy/m/n/12 ^^B \OML/txmi/m/it/12 x\OT1/txr/m/n/12 1(
 \OML/txmi/m/it/12 t\OT1/txr/m/n/12 ) + \OML/txmi/m/it/12 C[] \OMS/txsy/m/n/12 ^
@@ -1614,12 +1626,12 @@ OML/txmi/m/it/12 C[] \OMS/txsy/m/n/12 ^^B \OML/txmi/m/it/12 x\OT1/txr/m/n/12 1(
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 677--679
+Underfull \hbox (badness 10000) in paragraph at lines 732--734
 
  []
 
 
-Overfull \hbox (25.66637pt too wide) detected at line 681
+Overfull \hbox (25.66637pt too wide) detected at line 736
 []\OML/txmi/m/it/12 y\OT1/txr/m/n/12 2(\OML/txmi/m/it/12 t\OT1/txr/m/n/12 ) = \
 OML/txmi/m/it/12 C[] \OMS/txsy/m/n/12 ^^B \OML/txmi/m/it/12 x\OT1/txr/m/n/12 1(
 \OML/txmi/m/it/12 t\OT1/txr/m/n/12 ) + \OML/txmi/m/it/12 C[] \OMS/txsy/m/n/12 ^
@@ -1630,18 +1642,18 @@ OML/txmi/m/it/12 C[] \OMS/txsy/m/n/12 ^^B \OML/txmi/m/it/12 x\OT1/txr/m/n/12 1(
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 681--683
+Underfull \hbox (badness 10000) in paragraph at lines 736--738
 
  []
 
 
-Overfull \hbox (8.16644pt too wide) detected at line 704
+Overfull \hbox (8.16644pt too wide) detected at line 759
 [] \OT1/txr/m/n/12 = [] \OMS/txsy/m/n/12 ^^B [] \OT1/txr/m/n/12 + [] \OMS/txsy/
 m/n/12 ^^B []
  []
 
 
-Overfull \hbox (24.26234pt too wide) detected at line 708
+Overfull \hbox (24.26234pt too wide) detected at line 763
 [][] \OT1/txr/m/n/12 = \OML/txmi/m/it/12 a[] \OMS/txsy/m/n/12 ^^B \OML/txmi/m/i
 t/12 x\OT1/txr/m/n/12 1(\OML/txmi/m/it/12 t\OT1/txr/m/n/12 ) + \OML/txmi/m/it/1
 2 a[] \OMS/txsy/m/n/12 ^^B \OML/txmi/m/it/12 x\OT1/txr/m/n/12 2(\OML/txmi/m/it/
@@ -1652,7 +1664,7 @@ it/12 U\OT1/txr/m/n/12 1(\OML/txmi/m/it/12 t\OT1/txr/m/n/12 ) + \OML/txmi/m/it/
  []
 
 
-Overfull \hbox (22.29436pt too wide) detected at line 711
+Overfull \hbox (22.29436pt too wide) detected at line 766
 [][] \OT1/txr/m/n/12 = \OML/txmi/m/it/12 a[] \OMS/txsy/m/n/12 ^^B \OML/txmi/m/i
 t/12 x\OT1/txr/m/n/12 1(\OML/txmi/m/it/12 t\OT1/txr/m/n/12 ) + \OML/txmi/m/it/1
 2 a[] \OMS/txsy/m/n/12 ^^B \OML/txmi/m/it/12 x\OT1/txr/m/n/12 2(\OML/txmi/m/it/
@@ -1663,94 +1675,97 @@ it/12 U\OT1/txr/m/n/12 1(\OML/txmi/m/it/12 t\OT1/txr/m/n/12 ) + \OML/txmi/m/it/
  []
 
 
-Overfull \hbox (4.79443pt too wide) detected at line 734
+Underfull \vbox (badness 1681) has occurred while \output is active []
+
+
+Overfull \hbox (4.79443pt too wide) detected at line 789
 [] \OT1/txr/m/n/12 = [] \OMS/txsy/m/n/12 ^^B [] \OT1/txr/m/n/12 + [] \OMS/txsy/
 m/n/12 ^^B []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 734--737
+Underfull \hbox (badness 10000) in paragraph at lines 789--792
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 734--737
+Underfull \hbox (badness 10000) in paragraph at lines 789--792
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 737--778
+Underfull \hbox (badness 1418) in paragraph at lines 792--833
 \OML/txmi/m/it/12 So$\OT1/txr/m/n/12 , $[]$=A.X(t)+B.U(t) $ []\OML/txmi/m/it/12
  be []$ $ []equation []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 5548) in paragraph at lines 737--778
+Underfull \hbox (badness 5548) in paragraph at lines 792--833
 \OT1/txr/m/n/12 by ap-ply-ing laplace trans-forms on both
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 737--778
+Underfull \hbox (badness 2269) in paragraph at lines 792--833
 \OML/txmi/m/it/12 Y\OT1/txr/m/n/12 (\OML/txmi/m/it/12 S\OT1/txr/m/n/12 ) = \OML
 /txmi/m/it/12 C:\OT1/txr/m/n/12 [\OML/txmi/m/it/12 X\OT1/txr/m/n/12 (0)([\OML/t
 xmi/m/it/12 SI \OMS/txsy/m/n/12 ^^@ \OML/txmi/m/it/12 A\OT1/txr/m/n/12 ])[]1 + 
@@ -1759,187 +1774,194 @@ xmi/m/it/12 SI \OMS/txsy/m/n/12 ^^@ \OML/txmi/m/it/12 A\OT1/txr/m/n/12 ])[]1 +
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--778
+Underfull \hbox (badness 10000) in paragraph at lines 792--833
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 855--887
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--832
+Underfull \hbox (badness 10000) in paragraph at lines 855--887
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--832
-
- []
-
-[5]
 File: ./figs/gate.eps Graphic file (type eps)
- <./figs/gate.eps>
+<./figs/gate.eps>
 File: ./figs/feedback.eps Graphic file (type eps)
  <./figs/feedback.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 850--857
+Underfull \hbox (badness 10000) in paragraph at lines 905--912
 \OT1/txr/m/n/12 Z(s) = X(s) - Y(s).H(s) $\OMS/txsy/m/n/12 )$ \OT1/txr/m/n/12 X(
 s) =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 850--857
+Underfull \hbox (badness 10000) in paragraph at lines 905--912
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 850--857
+Underfull \hbox (badness 10000) in paragraph at lines 905--912
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 862--864
+Underfull \hbox (badness 10000) in paragraph at lines 917--919
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 865--867
+Underfull \hbox (badness 10000) in paragraph at lines 920--922
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 868--871
+Underfull \hbox (badness 10000) in paragraph at lines 923--926
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 872--875
+Underfull \hbox (badness 10000) in paragraph at lines 927--930
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 876--878
+Underfull \hbox (badness 10000) in paragraph at lines 931--933
 
  []
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 880--884
+Underfull \hbox (badness 2799) in paragraph at lines 935--939
 []\OT1/txr/m/n/12 This cri-te-rion is based on ar-rang-ing the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 880--884
+Underfull \hbox (badness 10000) in paragraph at lines 935--939
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 898--900
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 953--955
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 907--915
+Underfull \hbox (badness 10000) in paragraph at lines 962--970
 
  []
 
 
-Underfull \hbox (badness 5578) in paragraph at lines 916--918
+Underfull \hbox (badness 5578) in paragraph at lines 971--973
 []\OT1/txr/m/n/12 Auxillary equa-tion of the given CE is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 916--918
+Underfull \hbox (badness 10000) in paragraph at lines 971--973
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2035) has occurred while \output is active []
 
- [6]
 File: ./figs/shru1.eps Graphic file (type eps)
 
 <./figs/shru1.eps>
-Underfull \vbox (badness 5504) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [6]
 File: ./figs/nyquist.eps Graphic file (type eps)
 
 <./figs/nyquist.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 1024--1024
+Underfull \hbox (badness 10000) in paragraph at lines 1079--1079
 []|\OT1/txr/m/n/12 (8/3-
  []
 
 
-Overfull \hbox (21.16922pt too wide) in paragraph at lines 1016--1029
+Overfull \hbox (21.16922pt too wide) in paragraph at lines 1071--1084
  [][] 
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: ./figs/pppp.eps Graphic file (type eps)
+
 <./figs/pppp.eps>
-Overfull \hbox (24.0pt too wide) in paragraph at lines 1052--1053
+Overfull \hbox (24.0pt too wide) in paragraph at lines 1107--1108
  [][] 
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8]
+Overfull \hbox (4.07007pt too wide) detected at line 1289
+[]
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9]
-Overfull \hbox (4.07007pt too wide) detected at line 1234
-[]
- []
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3108.
 
-Runaway argument?
- \Rightarrow \dfrac {d^2x_1}{dt^2} - (a_{11} + a_{22})\dfrac {dx_1}{d\ETC.
-! Paragraph ended before \align was complete.
-<to be read again> 
-                   \par 
-l.1251 
-       
-? 
-! Emergency stop.
-<to be read again> 
-                   \par 
-l.1251 
-       
-End of file on the terminal!
+[10
 
- 
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3108.
+ (./gvv_gate_exam.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3108.
+
+Package rerunfilecheck Info: File `gvv_gate_exam.out' has not changed.
+(rerunfilecheck)             Checksum: 8616757539E7CA86ED269563FB2B2B22;48.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3108.
+ ) 
 Here is how much of TeX's memory you used:
- 31930 strings out of 492624
- 686601 string characters out of 6119216
- 896991 words of memory out of 5000000
- 35241 multiletter control sequences out of 15000+600000
- 78418 words of font info for 195 fonts, out of 8000000 for 9000
+ 31893 strings out of 492624
+ 685911 string characters out of 6119216
+ 888991 words of memory out of 5000000
+ 35206 multiletter control sequences out of 15000+600000
+ 77739 words of font info for 194 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,19n,69p,505b,1150s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on gvv_gate_exam.dvi (9 pages, 73812 bytes).
+ 55i,17n,69p,505b,1015s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on gvv_gate_exam.dvi (10 pages, 72772 bytes).

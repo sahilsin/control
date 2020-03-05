@@ -478,6 +478,105 @@ svn co https://github.com/gadepall/school/trunk/training
 \section{GATE Problems}
 \begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
+
+\item Consider a unity feedback system as shown in the figure,shown with an integral compensator $\frac{k}{s}$ and open-loop transfer function
+\begin{align}
+ G(s) = \frac{1}{s^2+3s+2}
+\end{align}   
+   where $k>0$. Find the positive value of $k$ for which there are two poles of unity feedback system on the $\j\omega$ axis.
+ \begin{figure}[!ht]
+\centering
+     \includegraphics[width=\columnwidth]{./figs/gate.eps}
+\caption{}
+\label{fig:routh}
+    \end{figure}
+
+\solution  The open loop transfer function
+%
+\begin{align}
+G(s) = \frac{1}{s^2+3s+2}
+\end{align}
+%
+Hence,
+\begin{align}
+H(s) = \frac{Y(s)}{X(s)} &= \frac{G(s)k/s}{1+G(s)k/s}
+\\
+&=  \frac{k}{1 + ks(s^2+3s+2)}
+\end{align}
+%
+The poles of $H(s)$ are obtained from 
+\begin{align}
+s^3+3s^2+2s+k = 0
+\end{align}
+%
+The corresponding Routh array is given by 
+\begin{align}
+\begin{vmatrix}
+s^3\\s^2\\s^1 \\ s^0 
+\end{vmatrix} 
+\begin{vmatrix}
+1 & 2 \\ 3 & k \\  \frac{6-k}{3} & 0\\ k & 0
+\end{vmatrix}
+\end{align}
+%\newline $For poles on $j$\omega$ axis any one of the row should be zero
+%\newline => $\frac{6-k}{3}$ = 0 or k = 0
+%\newline But given k>0 ...
+%\newline therefore, 6-k=0 => k = 6
+
+\item Let the state-space representation of an LTI system be.
+\begin{align}
+\label{eq:state_space1}
+\dot{\vec{x}(t)}&=\vec{A}\vec{x}(t)+\vec{B}u(t)
+\\
+y(t)&=\vec{C}\vec{x}(t)+Du(t)
+\label{eq:state_space2}
+\end{align}
+%
+where $\vec{A},\vec{B},\vec{C}$ are matrices, $D$ is a scalar, $u(t)$ is input to the system and $y(t)$ is output to the system. Let 
+\begin{align}
+\vec{B} &= \myvec{
+ 0\\0\\1
+}
+\\
+D&=0
+\end{align}
+Find $\vec{A}$ and $\vec{C}$, given that
+\begin{align}
+H(s)=\frac{1}{s^3+3s^2+2s+1}
+\end{align}
+%
+%\solution By applying laplace transforms on both sides of \eqref{eq:state_space1},
+%\begin{align}
+%s\vec{X}(s)-X(0)=\vec{A}\vec{X}(s)+\vec{B}U(S)
+%\\
+%\\S.X(S)-A.X(S)=B.U(S)+X(0)
+%\\
+%\\(SI-A)X(S)=X(0)+B.U(S)
+%\\
+%\\X(S)=X(0)([SI-A])^-1 + B.([SI-A])^-1.U(S)
+%\\
+%\\ $~Laplace~$ $~transform~$ $~of~$ $~equation~$ $~2~$ $~and~$ $~sub~$ $X(s)$ 
+%\\
+%\\Y(S)=C.X(S)+D.U(S)
+%\\
+%\\Y(S)=C.[X(0)([SI-A])^-1 + B.([SI-A])^-1.U(S)]+D.U(S)
+%\\
+%\\If X(0)=0
+%\\
+%\\ then Y(S)=C.[B.([SI-A])^-1.U(S)]+D.U(S)
+%\\
+%\\ \dfrac{Y(S)}{U(S)}=C.[B.([SI-A])^-1]+D=H(S)
+\item The block diagram of a system is illustrated in the figure shown, where $X(s)$ is the input and $Y(s)$ is the output. Find the transfer function $H(s)=\frac{Y(s)}{X(s)}$
+\begin{figure}
+\includegraphics[width=\columnwidth]{./figs/pic1.eps}
+\caption{}
+\label{fig:pic1}
+\end{figure}
+%(A) H(s)=$\frac{s^2+1}{s^3+s^2+s+1}$ \\
+%(B) H(s)=$\frac{s^2+1}{s^3+2s^2+s+1}$ \\
+%(C) H(s)=$\frac{s^2+1}{s^2+s+1}$ \\
+%(D) H(s)=$\frac{s^2+1}{2s^2+1}$
+%\end{frame}
 \item
 %\begin{flushleft}
 %\textsf{ 

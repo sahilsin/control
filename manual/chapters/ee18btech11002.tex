@@ -1,56 +1,48 @@
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
 \item
-Consider the following second order system with the transfer function:
-\begin{multline}
+Consider the following second order system with the transfer function
+\begin{align}
 G(s) = \frac{1}{1+2s+s^2}
-\end{multline}
-with input unit step 
-\begin{multline}
-R(s) = \frac{1}{s}
-\end{multline}
- Let C(s) be the corresponding output. The time taken by the system output c(t) to reach 94\% of its steady state value, rounded off to two decimal places is
+\end{align}
+Is the system stable? 
+\\
+\solution 
+\item Find and sketch the step response $c(t)$ of the system.
+\\
+\solution 
+
+\item Find the steady state response of the system.
+\\
+\solution 
+
+\item Find the time system output c(t) to reach 94\% of its steady state value.
+\\
+\solution 
+
 
 \solution 
-\begin{multline}
+\begin{align}
 G(s) = (\frac{1}{1+2s+s^2})
-\end{multline}
+\end{align}
 From given expression of G(s),both poles of G(s) are at (-1,0) which is on the left half of s-plane, therefore we can conclude that the system is stable.
-\begin{multline}
+\begin{align}
 C(s) = R(s).G(s) = (\frac{1}{s})  (\frac{1}{1+2s+s^2})
-\end{multline}
+\end{align}
 
-\begin{multline}
+\begin{align}
 C(s) =  \frac{1}{s(1+s)^2}
-\end{multline}
+\end{align}
 
-%\end{frame}
-%\begin{frame}{Finding c(t)}
-%To find c(t), we have to do inverse Laplace transform on C(s)
-%$$c(t) \longleftrightarrow C(s)$$
-%Inverse Laplace transform can be calculated by the formula:
-%$$f(t) = \frac{1}{2\pi j} \int_{a -j\infty}^{a+j\infty}F(s)e^{st} ds$$
-%From the above formula, the inverse Laplace for some common expressions are:
-%$$u(t) \longleftrightarrow \frac{1}{s}$$
-%$$e^{-at} u(t) \longleftrightarrow \frac{1}{s+a}$$
-%$$t e^{-at} u(t) \longleftrightarrow \frac{1}{(s+a)^2}$$
-    
-%\end{frame}
-%\begin{frame}{Finding c(t)}
 
 We found C(s) as:
-\begin{multline}
+\begin{align}
 C(s) =  \frac{1}{s(1+s)^2}
-\end{multline}
-%Now, we will use partial fractions to make applying Inverse Laplace easy.
-%$$C(s) =  \frac{1}{s(1+s)^2} =  \frac{A}{s} + \frac{B}{(1+s)} + \frac{C}{(1+s)^2}$$
-%We get, 
-%\begin{align*}
-%A &= 1 & A+B &=0 & 2A+B+C &= 0 \\
-%A &=1 & B &=-1 & C &=-1
-%\end{align*}
+\end{align}
 Therefore,
-\begin{multline}
+\begin{align}
 C(s) = \frac{1}{s} - \frac{1}{(1+s)} - \frac{1}{(1+s)^2}
-\end{multline}
+\end{align}
 
 %\end{frame}
 %\begin{frame}{Inverse Laplace}
@@ -59,44 +51,41 @@ C(s) = \frac{1}{s} - \frac{1}{(1+s)} - \frac{1}{(1+s)^2}
 %$$L^{-1} (F_1(s) + F_2(s) + F_3(s)) = L^{-1}(F_1(s)) + L^{-1}(F_2(s)) + L^{-1}(F_3(s))$$
 
 Therefore;
-\begin{multline}
-c(t) = L^{-1} ( \frac{1}{s}) - L^{-1}(\frac{1}{(1+s)}) - L^{-1}(\frac{1}{(1+s)^2}) 
-\end{multline}
+\begin{align}
+c(t) = L^{-1} \sbrak{ \frac{1}{s}} - L^{-1}(\frac{1}{(1+s)}) - L^{-1}(\frac{1}{(1+s)^2}) 
+\end{align}
 
 Using the Known inverse transforms:
-\begin{multline}
+\begin{align}
 c(t) = (1 - e^{-t} - te^{-t}) . u(t)
-\end{multline}
+\end{align}
 
 %\end{frame}
 %\begin{frame}{Finding the time for reaching 94\%}
 
 
 To know the steady state value of c(t), we calculate 
-\begin{multline}
+\begin{align}
 \lim_{t\to\infty} c(t) = (1+0+0).(1) = 1
-\end{multline}
+\end{align}
 
 Now, 94\% of 1 is 0.94, so we should now solve for a positive t such that
-\begin{multline}
+\begin{align}
 (1 - e^{-t} - te^{-t}) = 0.94
-\end{multline}
+\end{align}
 %the attached code gives us the solution for the equation
 %and t turns out to be
-\begin{multline}
+\begin{align}
  t = 4.5228
-\end{multline}
+\end{align}
 %Therefore, answer is option (b)
 %\end{frame}
 %\begin{frame}{Plot}
 %We can verify the solution by plotting c(t):
 \begin{figure}
+\centering
 \includegraphics[width=\columnwidth]{./figs/ee18btech11002.eps}
-
+\caption{}
+\label{fig:sec_order}
 \end{figure}
-%\end{frame}    
-%\begin{frame}{}
- % \centering \Large
- % \emph{THANK YOU}
-%\end{frame}
-%\end{document}
+\end{enumerate}

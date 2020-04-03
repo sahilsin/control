@@ -51,11 +51,21 @@ codes/ee18btech11002/plot.py
 \ref{eq:sec_order_op}
 \\
 \solution 
-To know the steady response value of c(t), we calculate 
+To know the steady response value of c(t), using final value theorem,
 \begin{align}
-\lim_{t\to\infty} c(t) = (1+0+0).(1) = 1
+\lim_{t\to\infty} c(t) = \lim_{s\to 0} sC(s) 
 \end{align}
-
+We get
+\begin{align}
+\lim_{s\to 0} s \brak{\frac{1}{s}}\brak{\frac{1}{1+s+s^2}} = \frac{1}{1+0+0} = 1
+\end{align}
+Using \ref{eq:sec_order_op}, 
+\begin{align}
+\lim_{t\to\infty} c(t) &=\lim_{t\to\infty}\brak{1 - e^{-t} - te^{-t}}  u(t) 
+\\
+&=(1-0-0) = 1 
+\end{align}
+%
 \item Find the time taken for the system output c(t) to reach 94\% of its steady state value.
 \\
 \solution 

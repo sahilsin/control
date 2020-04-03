@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  2 APR 2020 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  3 APR 2020 10:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -196,39 +196,7 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@postskip=\skip48
 \thm@headsep=\skip49
 \dth@everypar=\toks25
-) (/data/data/com.termux/files/home/texmf/tex/latex/iithtlc/iithtlc.sty
-Package: iithtlc 10/04/2016 IITH TLC
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/gr
-aphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/ke
-yval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks26
 )
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/gr
-aphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/tr
-ig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics-cf
-g/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: dvips.def on input line 99.
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics-de
-f/dvips.def
-File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
-))
-\Gin@req@height=\dimen135
-\Gin@req@width=\dimen136
-))
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ma
 thrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
@@ -344,6 +312,11 @@ Package: cases 2002/05/02 ver 2.5
 ig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/ke
+yval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks26
+)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/caption/cap
 tion.sty
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
@@ -352,13 +325,13 @@ Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 tion3.sty
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen137
-\captionmargin@=\dimen138
-\captionwidth=\dimen139
-\caption@tempdima=\dimen140
-\caption@indent=\dimen141
-\caption@parindent=\dimen142
-\caption@hangindent=\dimen143
+\captionmargin=\dimen135
+\captionmargin@=\dimen136
+\captionwidth=\dimen137
+\caption@tempdima=\dimen138
+\caption@indent=\dimen139
+\caption@parindent=\dimen140
+\caption@hangindent=\dimen141
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 )
@@ -383,7 +356,7 @@ ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
 )
 \c@KVtest=\count111
 \sf@farskip=\skip50
-\sf@captopadj=\dimen144
+\sf@captopadj=\dimen142
 \sf@capskip=\skip51
 \sf@nearskip=\skip52
 \c@subfigure=\count112
@@ -403,7 +376,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \LTpre=\skip57
 \LTpost=\skip58
 \LTchunksize=\count118
-\LTcapwidth=\dimen145
+\LTcapwidth=\dimen143
 \LT@head=\box31
 \LT@firsthead=\box32
 \LT@foot=\box33
@@ -420,13 +393,13 @@ Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
 \multirow@colwidth=\skip59
 \multirow@cntb=\count123
 \multirow@dima=\skip60
-\bigstrutjot=\dimen146
+\bigstrutjot=\dimen144
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/enumitem/en
 umitem.sty
 Package: enumitem 2019/02/04 v3.8 Customized lists
 \labelindent=\skip61
-\enit@outerparindent=\dimen147
+\enit@outerparindent=\dimen145
 \enit@toks=\toks28
 \enit@inbox=\box35
 \enit@count@id=\count124
@@ -441,8 +414,8 @@ sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count126
 \calc@Bcount=\count127
-\calc@Adimen=\dimen148
-\calc@Bdimen=\dimen149
+\calc@Adimen=\dimen146
+\calc@Bdimen=\dimen147
 \calc@Askip=\skip62
 \calc@Bskip=\skip63
 LaTeX Info: Redefining \setlength on input line 80.
@@ -459,14 +432,14 @@ LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_MT_multlinerow_int=\count129
-\l_MT_multwidth_dim=\dimen150
+\l_MT_multwidth_dim=\dimen148
 \origjot=\skip65
-\l_MT_shortvdotswithinadjustabove_dim=\dimen151
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen152
-\l_MT_above_intertext_sep=\dimen153
-\l_MT_below_intertext_sep=\dimen154
-\l_MT_above_shortintertext_sep=\dimen155
-\l_MT_below_shortintertext_sep=\dimen156
+\l_MT_shortvdotswithinadjustabove_dim=\dimen149
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen150
+\l_MT_above_intertext_sep=\dimen151
+\l_MT_below_intertext_sep=\dimen152
+\l_MT_above_shortintertext_sep=\dimen153
+\l_MT_below_shortintertext_sep=\dimen154
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/pgf/fronten
 dlayer/tikz.sty
@@ -477,8 +450,8 @@ es/pgfrcs.sty
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/utili
 ties/pgfutil-common.tex
 \pgfutil@everybye=\toks29
-\pgfutil@tempdima=\dimen157
-\pgfutil@tempdimb=\dimen158
+\pgfutil@tempdima=\dimen155
+\pgfutil@tempdimb=\dimen156
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/utili
 ties/pgfutil-common-lists.tex))
@@ -500,6 +473,31 @@ Package: pgf 2019/02/02 v3.1.1 (3.1.1)
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/pgf/basicla
 yer/pgfcore.sty
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/gr
+aphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/gr
+aphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/tr
+ig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics-cf
+g/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 99.
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics-de
+f/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+))
+\Gin@req@height=\dimen157
+\Gin@req@width=\dimen158
+)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/pgf/systeml
 ayer/pgfsys.sty
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/syste
@@ -1403,10 +1401,7 @@ LaTeX Info: Redefining \nameref on input line 84.
 \c@lemma=\count273
 \c@example=\count274
 \c@rem=\count275
-File: iith_logo.eps Graphic file (type eps)
-
-<iith_logo.eps>
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 240.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 240.
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 240.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
@@ -1440,48 +1435,40 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 240.
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-)
-File: tlc.eps Graphic file (type eps)
- <tlc.eps>
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 240.
-File: iith_logo.eps Graphic file (type eps)
- <iith_logo.eps>
-File: tlc.eps Graphic file (type eps)
- <tlc.eps>
-File: iith_logo.eps Graphic file (type eps)
- <iith_logo.eps>
-File: tlc.eps Graphic file (type eps)
- <tlc.eps>
-(./gvv_control_manual.toc)
+) (./gvv_control_manual.toc)
 \tf@toc=\write5
 \openout5 = `gvv_control_manual.toc'.
 
  (./chapters/ee18btech11002.tex
 File: ./figs/ee18btech11002.eps Graphic file (type eps)
 
-<./figs/ee18btech11002.eps> [1
+<./figs/ee18btech11002.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
- [2
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
+
+[2
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
  (./gvv_control_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 332.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 303.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
 (rerunfilecheck)             Checksum: B4BE2D1EDE815640C47254495FC192FD;264.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 332.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 303.
  ) 
 Here is how much of TeX's memory you used:
- 31856 strings out of 492624
- 685320 string characters out of 6119216
- 890996 words of memory out of 5000000
- 35178 multiletter control sequences out of 15000+600000
- 77739 words of font info for 194 fonts, out of 8000000 for 9000
+ 31809 strings out of 492624
+ 684420 string characters out of 6119216
+ 891694 words of memory out of 5000000
+ 35137 multiletter control sequences out of 15000+600000
+ 68203 words of font info for 165 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,9n,69p,510b,1154s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (2 pages, 19440 bytes).
+Output written on gvv_control_manual.dvi (2 pages, 20524 bytes).

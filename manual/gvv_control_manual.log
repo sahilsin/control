@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  5 APR 2020 11:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  5 APR 2020 15:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1300,11 +1300,7 @@ ngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-) (./gvv_control_manual.aux
-
-LaTeX Warning: Label `eq:sec_order_op' multiply defined.
-
-)
+) (./gvv_control_manual.aux)
 \openout1 = `gvv_control_manual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 84.
@@ -1453,21 +1449,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ])
-(./chapters/ee18btech11005.tex
-Overfull \hbox (20.01926pt too wide) detected at line 73
-[]
- []
-
-
+(./chapters/ee18btech11005.tex (./figs/ee18btech11005.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 103--107
 
- []
+LaTeX Warning: Command \j invalid in math mode on input line 80.
 
 
-Underfull \hbox (badness 4792) in paragraph at lines 116--117
+Underfull \hbox (badness 4792) in paragraph at lines 87--90
 []\OT1/txr/m/n/12 Repeat the above us-ing the de-ter-mi-nant
  []
 
@@ -1482,19 +1472,15 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 304.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
 (rerunfilecheck)             Checksum: B4BE2D1EDE815640C47254495FC192FD;264.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) 
 Here is how much of TeX's memory you used:
- 31950 strings out of 492624
- 687362 string characters out of 6119216
- 892694 words of memory out of 5000000
- 35275 multiletter control sequences out of 15000+600000
+ 31953 strings out of 492624
+ 687430 string characters out of 6119216
+ 896694 words of memory out of 5000000
+ 35276 multiletter control sequences out of 15000+600000
  68203 words of font info for 165 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,14n,69p,510b,1154s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,69p,510b,1155s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (3 pages, 36268 bytes).
+Output written on gvv_control_manual.dvi (3 pages, 40332 bytes).

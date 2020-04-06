@@ -133,6 +133,15 @@ codes/ee18btech11005/ee18btech11005.py
 \end{lstlisting}
 %
 provides the necessary soution.
+\begin{itemize}
+\item  For the system to be stable all coefficients should lie on left half of s-plane. Because if any pole is in right half of s-plane then there will be a component in output that increases without bound,causing system to be unstable.
+All the coefficients in the characteristic equation should be positive.This is necessary condition but not sufficient.Because it may have poles on right half of s plane.
+Poles are the roots of the characteristic equation.
+    \item A system is stable if all of its characteristic modes go to finite value as t goes to infinity.It is possible only if all the poles are on the left half of s plane.
+    The characteristic equation should have negative roots only. So the first column should always be greater than zero.That means no sign changes.
+    \item A system is unstable if its characteristic modes are not bounded. Then the characteristic equation will also have roots in the right side of s-plane.That means it has sign changes.
+    \end{itemize}
+
 \end{enumerate}
 
 

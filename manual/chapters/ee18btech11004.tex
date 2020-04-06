@@ -1,0 +1,147 @@
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Let the state-space representation of an LTI system be
+\begin{align}
+\dot{\vec{x}(t)}&=\vec{A}\vec{x}(t)+\vec{B}\vec{u}(t) \\
+ \vec{y}(t)&=\vec{C}\vec{x}(t)+D u(t)
+\end{align}
+A,B,C are matrices, D is scalar, u(t) is input to the system and y(t) is output to the system. let
+\begin{equation}
+ b1 =\begin{vmatrix}
+  0&0&1\\
+ \end{vmatrix}
+\end{equation}
+\begin{align}
+b1^T=B
+\end{align}
+and D=0. Find A and C.
+\begin{align}
+H(s)=\frac{1}{s^3+3s^2+2s+1}
+\end{align}
+\solution
+\\ \textbf{FINDING TRANSFER FUNCTION}
+\\so
+\begin{align}
+ \dot{X(t)}=AX(t)+BU(t) \\
+ Y(t)=CX(t)+DU(t)
+\end{align}    
+\\by applying laplace transforms on both sides of equation 1
+we get
+\\s.X(s)-X(0)=A.X(s)+B.U(s)
+\\s.X(s)-A.X(s)=B.U(s)+X(0)
+\\(sI-A)X(s)=X(0)+B.U(s)
+\\$X(s)=X(0)([sI-A])^{-1}+(([sI-A])^{-1}B)U(s)$
+\\Laplace transform of equation 2 and sub X(s) 
+\\Y(s)=C.X(s)+D.U(s)
+\\$Y(s)=C.[X(0)([sI-A])^{-1 }+ (([sI-A])^{-1}B)U(s)]+DU(s)$
+\\If X(0)=0
+\\then $Y(s)=C[(([sI-A])^{-1}B)U(s)]+DU(s)$
+\\$\frac{Y(s)}{U(s)}=C[(([sI-A])^{-1}B)]+D=H(s)$
+\\
+\\ As we know that
+\\ $Y(s)=H(s) \times U(s)= (\frac{1}{s^3+3s^2+2s+1}) \times U(s) $
+\\
+\\ $H(s)=\frac{Y(s)}{U(s)}=(\frac{(\frac{Y(s)}{x_{1}(s)})}{\frac{U(s)}{x_{1}(s)}})=\frac{1}{s^3+3s^2+2s+1} $
+\\
+\\let   $x_{1}(s)=\frac{U(s)}{s^3+3s^2+2s+1}$
+\\
+\\$Y(s)=x_{1}(s)\times 1 $
+\begin{align}
+s^3x_{1}(s)+3s^2x_{1}(s)+2sx_{1}(s)+x_{1}(s)=U(s)
+\end{align}
+\\ Taking inverse laplace transform we get
+\\$\dddot{x_{1}(t)}+\ddot{x_{1}(t)}+\dot{x_{1}(t)}+x_{1}(t)=U(t)$
+\\$\dot{x_{1}}=x_{2}$
+\\$\ddot{x_{1}}=\dot{x_{2}}=x_{3}$
+\\$\dddot{x_{1}}=\ddot{x_{2}}=\dot{x_{3}}$
+\\ so equation 1.1.4 can be written as
+\\
+\begin{gather}
+\begin{bmatrix}
+sx_{1}(s)\\
+s^2x_{1}(s)\\
+s^3x_{1}(s)
+\end{bmatrix}
+=
+\begin{bmatrix}
+0&1&0\\
+0&0&1\\
+-1&-2&-3
+\end{bmatrix}\times \begin{bmatrix}
+x_{1}(s)\\
+sx_{1}(s)\\
+s^2x{1}(s)
+\end{bmatrix}
++
+\begin{bmatrix}
+0\\
+0\\
+1
+\end{bmatrix} \times U
+\end{gather}
+taking inverse laplace transform
+\begin{gather}
+\begin{bmatrix}
+\dot{x_{1}}\\
+\dot{x_{2}}\\
+\dot{x_{3}}
+\end{bmatrix}
+=
+\begin{bmatrix}
+0&1&0\\
+0&0&1\\
+-1&-2&-3
+\end{bmatrix}\times \begin{bmatrix}
+x_{1}\\
+x_{2}\\
+x_{3}
+\end{bmatrix}
++
+\begin{bmatrix}
+0\\
+0\\
+1
+\end{bmatrix} \times U
+\end{gather}
+therfore
+\begin{equation}
+A=\begin{bmatrix}
+0&1&0\\
+0&0&1\\
+-1&-2&-3
+\end{bmatrix}
+\end{equation}
+\\
+Since $ Y(s)=x_{1}(s)\times numerator$
+\\therefore $ Y(s)=x_{1}(s) $
+\begin{gather}
+\\Y=
+\begin{bmatrix}
+1&0&0
+\end{bmatrix}\times \begin{bmatrix}
+x_{1}(s)\\
+sx_{1}(s)\\
+s^2x_{1}(s)
+\end{bmatrix} 
+\end{gather}
+taking inverse laplace transform
+\begin{gather}
+\\Y=
+\begin{bmatrix}
+1&0&0
+\end{bmatrix}\times \begin{bmatrix}
+x_{1}\\
+x_{2}\\
+x_{3}
+\end{bmatrix} 
+\end{gather}
+\begin{equation}
+C=\begin{bmatrix}
+1&0&0
+\end{bmatrix}
+\end{equation}
+%\end{document}
+
+%\end{document}
+\end{enumerate}
+

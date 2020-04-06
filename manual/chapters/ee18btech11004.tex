@@ -1,11 +1,18 @@
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
-\item Let the state-space representation of an LTI system be
+\item State the general model of a state space system specifying the dimensions of the matrices and vectors.
+\\
+\solution 
 \begin{align}
 \dot{\vec{x}(t)}&=\vec{A}\vec{x}(t)+\vec{B}\vec{u}(t) \\
  \vec{y}(t)&=\vec{C}\vec{x}(t)+D u(t)
 \end{align}
-A,B,C are matrices, D is scalar, u(t) is input to the system and y(t) is output to the system. let
+A,B,C are matrices, D is scalar, u(t) is input to the system and y(t) is output to the system.
+\item Find the transfer function $\vec{H}(s)$ for the general system.
+\item Given 
+\begin{align}
+H(s)=\frac{1}{s^3+3s^2+2s+1}
+\end{align}
 \begin{equation}
  b1 =\begin{vmatrix}
   0&0&1\\
@@ -14,10 +21,7 @@ A,B,C are matrices, D is scalar, u(t) is input to the system and y(t) is output 
 \begin{align}
 b1^T=B
 \end{align}
-and D=0. Find A and C.
-\begin{align}
-H(s)=\frac{1}{s^3+3s^2+2s+1}
-\end{align}
+and D=0, find A and C.
 \solution
 \\ \textbf{FINDING TRANSFER FUNCTION}
 \\so

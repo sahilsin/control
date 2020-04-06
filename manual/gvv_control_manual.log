@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  6 APR 2020 15:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  6 APR 2020 17:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1462,7 +1462,7 @@ Underfull \hbox (badness 4792) in paragraph at lines 87--90
  []
 
 ) (./chapters/ee18btech11004.tex
-Underfull \hbox (badness 6741) in paragraph at lines 27--49
+Underfull \hbox (badness 6741) in paragraph at lines 31--53
 \OML/txmi/m/it/12 Y\OT1/txr/m/n/12 (\OML/txmi/m/it/12 s\OT1/txr/m/n/12 ) = \OML
 /txmi/m/it/12 C:\OT1/txr/m/n/12 [\OML/txmi/m/it/12 X\OT1/txr/m/n/12 (0)([\OML/t
 xmi/m/it/12 sI \OMS/txsy/m/n/12 ^^@ \OML/txmi/m/it/12 A\OT1/txr/m/n/12 ])[] + (
@@ -1470,32 +1470,32 @@ xmi/m/it/12 sI \OMS/txsy/m/n/12 ^^@ \OML/txmi/m/it/12 A\OT1/txr/m/n/12 ])[] + (
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--49
+Underfull \hbox (badness 10000) in paragraph at lines 31--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--49
+Underfull \hbox (badness 10000) in paragraph at lines 31--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--49
+Underfull \hbox (badness 10000) in paragraph at lines 31--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--49
+Underfull \hbox (badness 10000) in paragraph at lines 31--53
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 51--59
+Underfull \hbox (badness 10000) in paragraph at lines 55--63
 
  []
 
 
-Overfull \hbox (4.86617pt too wide) detected at line 81
+Overfull \hbox (4.86617pt too wide) detected at line 85
 []
  []
 
@@ -1522,4 +1522,4 @@ Here is how much of TeX's memory you used:
  1144 hyphenation exceptions out of 8191
  55i,17n,69p,510b,1155s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (4 pages, 52304 bytes).
+Output written on gvv_control_manual.dvi (4 pages, 52820 bytes).

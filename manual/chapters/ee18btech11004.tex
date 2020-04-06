@@ -2,175 +2,99 @@
 \numberwithin{equation}{enumi}
 \item State the general model of a state space system specifying the dimensions of the matrices and vectors.
 \\
-\solution 
+\solution The model is given by 
 \begin{align}
-\dot{\vec{x}(t)}&=\vec{A}\vec{x}(t)+\vec{B}\vec{u}(t) \\
+\dot{\vec{x}}(t)&=\vec{A}\vec{x}(t)+\vec{B}\vec{u}(t) \\
  \vec{y}(t)&=\vec{C}\vec{x}(t)+\vec{D} \vec{u}(t)
 \end{align}
-where $\vec{A},\vec{B},\vec{C}$ are matrices, $\vec{D}$ is scalar, $\vec{u}(t)$ is input to the system and$ \vec{y}(t)$ is the output of the system.
+%
+with parameters listed in Table \ref{table:ee18btech11004}.
+%
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11004.tex}
+\caption{}
+\label{table:ee18btech11004}
+\end{table}
 \item Find the transfer function $\vec{H}(s)$ for the general system.
+\\
+\solution 
 Taking Laplace transform on both sides we have the following equations
 \begin{align}
-sIX(s)= AX(s)+ BU(s)\\
-(sI-A)X(s)= BU(s)\\
-X(s)={(sI-A)^{-1}}B U(s)
+s\vec{I}X(s)-x(0)= \vec{A}X(s)+ \vec{B}U(s)\\
+(s\vec{I}-\vec{A})X(s)= \vec{B}U(s)+ x(0)\\
+X(s)={(s\vec{I}-\vec{A})^{-1}}\vec{B} U(s)+ (s\vec{I}-\vec{A})^{-1}x(0)
+\label{eq:x_init}
 \end{align}
 and
 \begin{align}
-Y(s)= CX(s)+DIU(s)
+Y(s)= \vec{C}X(s)+D\vec{I}U(s)
 \end{align}
-substituting 0.1.1 in this equation gives
-\begin{align}
-Y(s)=( C{(sI-A)^{-1}}B+DI) U(s)
-\end{align}
+Substituting from \eqref{eq:x_init} in the above,
 %
-For a SISO (single input single output) system, 
+\begin{multline}
+Y(s)=( \vec{C}{(s\vec{I}-\vec{A})^{-1}}\vec{B}+D\vec{I}) U(s) 
+\\
++ \vec{C}(s\vec{I}-\vec{A})^{-1}x(0)
+\end{multline}
+%
+\item Find $H(s)$ for a SISO (single input single output) system.
+\\
+\solution
 \begin{align}
 H(s)= {\frac{Y(s)}{U(s)}}= C{(sI-A)^{-1}}B+DI
 \end{align}
 
 \item Given 
 \begin{align}
-H(s)=\frac{1}{s^3+3s^2+2s+1}
+H(s)&=\frac{1}{s^3+3s^2+2s+1}
+\\
+D&=0
+\\
+\vec{B}&= \myvec{0\\0\\1}
 \end{align}
-\begin{equation}
- b1 =\begin{vmatrix}
-  0&0&1\\
- \end{vmatrix}
-\end{equation}
-\begin{align}
-b1^T=B
+%
+ find $\vec{A}$ and $\vec{C}$.
+\\
+\solution 
+\begin{align} 
+\because {\frac{Y(s)}{U(s)}}= \frac{Y(s)}{V(s)} \times \frac{V(s)}{U(s)},
 \end{align}
-and D=0, find A and C.
-\solution
-In the above question D=0, so our transfer function becomes
+letting
 \begin{align}
-C{(sI-A)^{-1}}B=\frac{1}{s^3 + 3s^2+2s + 1}
+ {\frac{Y(s)}{V(s)}}= 1, 
+\end{align}
+results in 
+\begin{align}
+{\frac{U(s)}{V(s)}}={s^3 + 3s^2+2s + 1}
 \end{align}
 
- \textbf{FINDING TRANSFER FUNCTION}
-\\so
+giving
 \begin{align}
- \dot{X(t)}=AX(t)+BU(t) \\
- Y(t)=CX(t)+DU(t)
-\end{align}    
-\\by applying laplace transforms on both sides of equation 1
-we get
-\\s.X(s)-X(0)=A.X(s)+B.U(s)
-\\s.X(s)-A.X(s)=B.U(s)+X(0)
-\\(sI-A)X(s)=X(0)+B.U(s)
-\\$X(s)=X(0)([sI-A])^{-1}+(([sI-A])^{-1}B)U(s)$
-\\Laplace transform of equation 2 and sub X(s) 
-\\Y(s)=C.X(s)+D.U(s)
-\\$Y(s)=C.[X(0)([sI-A])^{-1 }+ (([sI-A])^{-1}B)U(s)]+DU(s)$
-\\If X(0)=0
-\\then $Y(s)=C[(([sI-A])^{-1}B)U(s)]+DU(s)$
-\\$\frac{Y(s)}{U(s)}=C[(([sI-A])^{-1}B)]+D=H(s)$
-\\
-\\ As we know that
-\\ $Y(s)=H(s) \times U(s)= (\frac{1}{s^3+3s^2+2s+1}) \times U(s) $
-\\
-\\ $H(s)=\frac{Y(s)}{U(s)}=(\frac{(\frac{Y(s)}{x_{1}(s)})}{\frac{U(s)}{x_{1}(s)}})=\frac{1}{s^3+3s^2+2s+1} $
-\\
-\\let   $x_{1}(s)=\frac{U(s)}{s^3+3s^2+2s+1}$
-\\
-\\$Y(s)=x_{1}(s)\times 1 $
-\begin{align}
-s^3x_{1}(s)+3s^2x_{1}(s)+2sx_{1}(s)+x_{1}(s)=U(s)
+U(s)= s^3 V(s) + 3s^2 V(s)+2sV(s) + V(s)
 \end{align}
-\\ Taking inverse laplace transform we get
-\\$\dddot{x_{1}(t)}+\ddot{x_{1}(t)}+\dot{x_{1}(t)}+x_{1}(t)=U(t)$
-\\$\dot{x_{1}}=x_{2}$
-\\$\ddot{x_{1}}=\dot{x_{2}}=x_{3}$
-\\$\dddot{x_{1}}=\ddot{x_{2}}=\dot{x_{3}}$
-\\ so equation 1.1.4 can be written as
-\\
-\begin{gather}
-\begin{bmatrix}
-sx_{1}(s)\\
-s^2x_{1}(s)\\
-s^3x_{1}(s)
-\end{bmatrix}
-=
-\begin{bmatrix}
-0&1&0\\
-0&0&1\\
--1&-2&-3
-\end{bmatrix}\times \begin{bmatrix}
-x_{1}(s)\\
-sx_{1}(s)\\
-s^2x{1}(s)
-\end{bmatrix}
-+
-\begin{bmatrix}
-0\\
-0\\
-1
-\end{bmatrix} \times U
-\end{gather}
-taking inverse laplace transform
-\begin{gather}
-\begin{bmatrix}
-\dot{x_{1}}\\
-\dot{x_{2}}\\
-\dot{x_{3}}
-\end{bmatrix}
-=
-\begin{bmatrix}
-0&1&0\\
-0&0&1\\
--1&-2&-3
-\end{bmatrix}\times \begin{bmatrix}
-x_{1}\\
-x_{2}\\
-x_{3}
-\end{bmatrix}
-+
-\begin{bmatrix}
-0\\
-0\\
-1
-\end{bmatrix} \times U
-\end{gather}
-therfore
-\begin{equation}
-A=\begin{bmatrix}
-0&1&0\\
-0&0&1\\
--1&-2&-3
-\end{bmatrix}
-\end{equation}
-\\
-Since $ Y(s)=x_{1}(s)\times numerator$
-\\therefore $ Y(s)=x_{1}(s) $
-\begin{gather}
-\\Y=
-\begin{bmatrix}
-1&0&0
-\end{bmatrix}\times \begin{bmatrix}
-x_{1}(s)\\
-sx_{1}(s)\\
-s^2x_{1}(s)
-\end{bmatrix} 
-\end{gather}
-taking inverse laplace transform
-\begin{gather}
-\\Y=
-\begin{bmatrix}
-1&0&0
-\end{bmatrix}\times \begin{bmatrix}
-x_{1}\\
-x_{2}\\
-x_{3}
-\end{bmatrix} 
-\end{gather}
-\begin{equation}
-C=\begin{bmatrix}
-1&0&0
-\end{bmatrix}
-\end{equation}
-%\end{document}
 
-%\end{document}
+so equation 0.1.13 can be written as
+\begin{align}
+\myvec{sV(s)\\s^2V(s)\\s^3V(s)}
+=
+\myvec{0&1&0\\0&0&1\\-1&-2&-3}\myvec{V(s)\\s(s)\\s^2V(s)}
++
+\myvec{0\\0\\1}  U
+\end{align}
+So 
+\begin{align}
+\vec{A}=\myvec{0&1&0\\0&0&1\\-1&-2&-3}
+\end{align}
+
+\begin{align}
+Y=X_{1}(s)
+=\myvec{1&0&0} \myvec{V(s)\\sV(s)\\s^2V(s)}
+\end{align}
+\begin{align}
+\vec{C}=\myvec{1&0&0}
+\end{align}
+
+
 \end{enumerate}
 

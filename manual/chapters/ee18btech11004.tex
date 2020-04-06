@@ -5,10 +5,30 @@
 \solution 
 \begin{align}
 \dot{\vec{x}(t)}&=\vec{A}\vec{x}(t)+\vec{B}\vec{u}(t) \\
- \vec{y}(t)&=\vec{C}\vec{x}(t)+D u(t)
+ \vec{y}(t)&=\vec{C}\vec{x}(t)+\vec{D} \vec{u}(t)
 \end{align}
-A,B,C are matrices, D is scalar, u(t) is input to the system and y(t) is output to the system.
+where $\vec{A},\vec{B},\vec{C}$ are matrices, $\vec{D}$ is scalar, $\vec{u}(t)$ is input to the system and$ \vec{y}(t)$ is the output of the system.
 \item Find the transfer function $\vec{H}(s)$ for the general system.
+Taking Laplace transform on both sides we have the following equations
+\begin{align}
+sIX(s)= AX(s)+ BU(s)\\
+(sI-A)X(s)= BU(s)\\
+X(s)={(sI-A)^{-1}}B U(s)
+\end{align}
+and
+\begin{align}
+Y(s)= CX(s)+DIU(s)
+\end{align}
+substituting 0.1.1 in this equation gives
+\begin{align}
+Y(s)=( C{(sI-A)^{-1}}B+DI) U(s)
+\end{align}
+%
+For a SISO (single input single output) system, 
+\begin{align}
+H(s)= {\frac{Y(s)}{U(s)}}= C{(sI-A)^{-1}}B+DI
+\end{align}
+
 \item Given 
 \begin{align}
 H(s)=\frac{1}{s^3+3s^2+2s+1}
@@ -23,7 +43,12 @@ b1^T=B
 \end{align}
 and D=0, find A and C.
 \solution
-\\ \textbf{FINDING TRANSFER FUNCTION}
+In the above question D=0, so our transfer function becomes
+\begin{align}
+C{(sI-A)^{-1}}B=\frac{1}{s^3 + 3s^2+2s + 1}
+\end{align}
+
+ \textbf{FINDING TRANSFER FUNCTION}
 \\so
 \begin{align}
  \dot{X(t)}=AX(t)+BU(t) \\

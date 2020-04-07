@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  7 APR 2020 13:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  7 APR 2020 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1483,14 +1483,31 @@ LaTeX Warning: Command \j invalid in math mode on input line 8.
 LaTeX Warning: Command \j invalid in math mode on input line 8.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 11.
+LaTeX Warning: Command \j invalid in math mode on input line 18.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 11.
+LaTeX Warning: Command \j invalid in math mode on input line 18.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 18.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 18.
+
+
+Overfull \hbox (6.32077pt too wide) detected at line 18
+[]
+ []
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 22.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 22.
 
 File: ./figs/ee18btech11007.eps Graphic file (type eps)
 <./figs/ee18btech11007.eps>
-Underfull \hbox (badness 4608) in paragraph at lines 9--20
+Underfull \hbox (badness 4608) in paragraph at lines 20--31
 \OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The Nyquist plot is a graph
  []
 
@@ -1498,69 +1515,62 @@ Underfull \hbox (badness 4608) in paragraph at lines 9--20
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 26.
+LaTeX Warning: Command \j invalid in math mode on input line 37.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 26.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 33.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 33.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 33.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 33.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 33.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 33.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 33.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 33.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 33.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 33.
+LaTeX Warning: Command \j invalid in math mode on input line 37.
 
 [4]
 
-LaTeX Warning: Command \j invalid in math mode on input line 46.
+LaTeX Warning: Command \j invalid in math mode on input line 44.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 46.
+LaTeX Warning: Command \j invalid in math mode on input line 44.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 46.
+LaTeX Warning: Command \j invalid in math mode on input line 44.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 46.
+LaTeX Warning: Command \j invalid in math mode on input line 44.
 
-)
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 57.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 57.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 57.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 57.
+
+) [5]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
- [5
-
-]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
  (./gvv_control_manual.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 307.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
 (rerunfilecheck)             Checksum: C146947A222B856364F0CA1A66AB9267;316.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
  ) 
 Here is how much of TeX's memory you used:
@@ -1572,4 +1582,4 @@ Here is how much of TeX's memory you used:
  1144 hyphenation exceptions out of 8191
  55i,17n,69p,510b,1155s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (5 pages, 62080 bytes).
+Output written on gvv_control_manual.dvi (5 pages, 63324 bytes).

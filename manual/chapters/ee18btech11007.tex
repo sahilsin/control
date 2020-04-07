@@ -56,47 +56,30 @@ Also, from \eqref{eq:ee18btech11007_system},
 \implies \abs{ G(\j2\pi)} &= \frac{1}{2}
 \end{align}
 %
-\item From Fig.  \ref{fig:ee18btech11007}, determine the number of times the Nyquist plot of $G(s)H(s)$ encircles $-1+\j0$ clockwise.
+\item Find the value of $P$ defined in Table \ref{table:ee18btech11007} from Fig.  \ref{fig:ee18btech11007}.
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11007.tex}
+\caption{}
+\label{table:ee18btech11007}
+\end{table}
+
 %
+\solution $P = 0$.
+\item Find the value of $N$ defined in Table \ref{table:ee18btech11007} from  \eqref{eq:ee18btech11007_system}
+\\
+\solution $\because H(s) = 1$, $G(s)H(s) = G(s)$. Also, $G(s)$ has a pole at $s = 0$, hence $N = 0$.
 \item Use the Nyquist Stability criterion to determine if the system in \eqref{eq:ee18btech11007_system_ang} is stable.
 \\
 \solution According to the Nyquist criterion, the system is stable if
 \begin{align}
-P=N,    
+\label{eq:ee18btech11007_system_nyquist}
+Z = P-N = 0,    
 \end{align}
-
- \textbf{Nyquist Stability Criterion} - for  the stability of a closed loop transfer function G(s)/(1+G(s)*H(s)) ,the number of poles of G(s)*H(s) on right half of s-plane must equal the number of encirclement of nyquist contour of  G(s)*H(s) about the critical point -1+0j
-\\
- we must find
-\
-Z=number of poles of closed loop transfer function in right half of s-plane.
-\\ 
- P=number of poles of G(s)*H(s) in right half of s-plane
-\\ 
- N=number of encirclement of nyquist contour of G(s)*H(s) about the critical point -1+0j,
-here H(S)=1.
-\\ 
-\
-\begin{tabular}{ |p{4cm}||p{4cm}|  }
- \hline
- 
- \hline
- Variable&Description\\
- \hline
- Z&no of poles of G(s)/(1+G(s)*H(s)) in the right half of s-plane\\
- \hline
- P&no of poles of G(s)*H(s) in right half of s-plane \\
- \hline
- N&no of encirclement of G(s)*H(s) about -1+j0 in clockwise direction\\
- 
- \hline
-\end{tabular}
- from plot we get N=0,and we already know P=0 since our G(s) doesnt have any poles on right half of s-plane
-\begin{align}
-Z=0-0=0
-\end{align}
-Z=0 implies the system is stable because we dont have any poles on right half of the s-plane
-
-
+%
+where $Z$ is defined in Table \ref{table:ee18btech11007}.   
+$\because Z = 0$ from \label{eq:ee18btech11007_system_nyquist}
+,  the system is stable.
+%
 
 \end{enumerate}

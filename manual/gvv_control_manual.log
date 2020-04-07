@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  7 APR 2020 19:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  7 APR 2020 20:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1300,7 +1300,11 @@ ngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-) (./gvv_control_manual.aux)
+) (./gvv_control_manual.aux
+
+LaTeX Warning: Label `eq:ee18btech11007_system_nyquist' multiply defined.
+
+)
 \openout1 = `gvv_control_manual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 84.
@@ -1563,45 +1567,7 @@ LaTeX Warning: Command \j invalid in math mode on input line 57.
 
 LaTeX Warning: Command \j invalid in math mode on input line 57.
 
-
-LaTeX Warning: Command \j invalid in math mode on input line 59.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
-[]|\OT1/txr/m/n/12 no of poles of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
-\OT1/txr/m/n/12 G(s)/(1+G(s)*H(s))
- []
-
-
-Underfull \hbox (badness 2726) in paragraph at lines 86--87
-\OT1/txr/m/n/12 in the right half of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-[]|\OT1/txr/m/n/12 no of poles of
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-\OT1/txr/m/n/12 G(s)*H(s) in right
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--95
-[]\OT1/txr/bx/n/12 Nyquist Sta-bil-ity Cri-te-rion \OT1/txr/m/n/12 - for the
- []
-
-
-Overfull \hbox (27.22202pt too wide) in paragraph at lines 68--95
-[]
- []
-
-) [5]
+(./tables/ee18btech11007.tex)) [5]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
  (./gvv_control_manual.aux)
@@ -1609,15 +1575,19 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 307.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
 (rerunfilecheck)             Checksum: C146947A222B856364F0CA1A66AB9267;316.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
  ) 
 Here is how much of TeX's memory you used:
- 31989 strings out of 492624
- 688153 string characters out of 6119216
+ 31993 strings out of 492624
+ 688263 string characters out of 6119216
  897694 words of memory out of 5000000
- 35303 multiletter control sequences out of 15000+600000
+ 35305 multiletter control sequences out of 15000+600000
  68203 words of font info for 165 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,17n,69p,510b,1155s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (5 pages, 64692 bytes).
+Output written on gvv_control_manual.dvi (5 pages, 65640 bytes).

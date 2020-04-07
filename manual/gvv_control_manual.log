@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  7 APR 2020 17:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  7 APR 2020 19:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1563,6 +1563,44 @@ LaTeX Warning: Command \j invalid in math mode on input line 57.
 
 LaTeX Warning: Command \j invalid in math mode on input line 57.
 
+
+LaTeX Warning: Command \j invalid in math mode on input line 59.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+[]|\OT1/txr/m/n/12 no of poles of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+\OT1/txr/m/n/12 G(s)/(1+G(s)*H(s))
+ []
+
+
+Underfull \hbox (badness 2726) in paragraph at lines 86--87
+\OT1/txr/m/n/12 in the right half of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+[]|\OT1/txr/m/n/12 no of poles of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+\OT1/txr/m/n/12 G(s)*H(s) in right
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--95
+[]\OT1/txr/bx/n/12 Nyquist Sta-bil-ity Cri-te-rion \OT1/txr/m/n/12 - for the
+ []
+
+
+Overfull \hbox (27.22202pt too wide) in paragraph at lines 68--95
+[]
+ []
+
 ) [5]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
@@ -1582,4 +1620,4 @@ Here is how much of TeX's memory you used:
  1144 hyphenation exceptions out of 8191
  55i,17n,69p,510b,1155s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (5 pages, 63324 bytes).
+Output written on gvv_control_manual.dvi (5 pages, 64692 bytes).

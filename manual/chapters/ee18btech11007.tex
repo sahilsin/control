@@ -30,7 +30,7 @@ The following python code generates the Nyquist plot in Fig.  \ref{fig:ee18btech
 %
 \item Find the point at which the Nyquist plot of G(s) passes through the negative real axis
 \\
-\solution  Nyquist plot cuts the negative real at $\omega $ for which 
+\solution  Nyquist plot cuts the negative real axis at $\omega $ for which 
 \begin{align}
 \angle G(\j\omega)=-\pi
 \label{eq:ee18btech11007_system_neg_real}
@@ -56,15 +56,18 @@ Also, from \eqref{eq:ee18btech11007_system},
 \implies \abs{ G(\j2\pi)} &= \frac{1}{2}
 \end{align}
 %
+\item From Fig.  \ref{fig:ee18btech11007}, determine the number of times the Nyquist plot of $G(s)H(s)$ encircles $-1+\j0$ clockwise.
+%
 \item Use the Nyquist Stability criterion to determine if the system in \eqref{eq:ee18btech11007_system_ang} is stable.
 \\
-\solution 
+\solution According to the Nyquist criterion, the system is stable if
+\begin{align}
+P=N,    
+\end{align}
+
  \textbf{Nyquist Stability Criterion} - for  the stability of a closed loop transfer function G(s)/(1+G(s)*H(s)) ,the number of poles of G(s)*H(s) on right half of s-plane must equal the number of encirclement of nyquist contour of  G(s)*H(s) about the critical point -1+0j
 \\
  we must find
-\begin{align}
-Z=P-N    
-\end{align}
 \
 Z=number of poles of closed loop transfer function in right half of s-plane.
 \\ 
@@ -73,6 +76,21 @@ Z=number of poles of closed loop transfer function in right half of s-plane.
  N=number of encirclement of nyquist contour of G(s)*H(s) about the critical point -1+0j,
 here H(S)=1.
 \\ 
+\
+\begin{tabular}{ |p{4cm}||p{4cm}|  }
+ \hline
+ 
+ \hline
+ Variable&Description\\
+ \hline
+ Z&no of poles of G(s)/(1+G(s)*H(s)) in the right half of s-plane\\
+ \hline
+ P&no of poles of G(s)*H(s) in right half of s-plane \\
+ \hline
+ N&no of encirclement of G(s)*H(s) about -1+j0 in clockwise direction\\
+ 
+ \hline
+\end{tabular}
  from plot we get N=0,and we already know P=0 since our G(s) doesnt have any poles on right half of s-plane
 \begin{align}
 Z=0-0=0

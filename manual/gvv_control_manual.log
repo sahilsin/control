@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  8 APR 2020 09:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  8 APR 2020 11:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1442,14 +1442,14 @@ File: utxsyc.fd 2000/12/15 v3.1
  (./chapters/ee18btech11002.tex
 File: ./figs/ee18btech11002.eps Graphic file (type eps)
 
-<./figs/ee18btech11002.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
+<./figs/ee18btech11002.eps> [1
 
 
-])
-(./chapters/ee18btech11005.tex (./figs/ee18btech11005.tex)
+]) (./chapters/ee18btech11005.tex
+(./figs/ee18btech11005.tex)
+Underfull \vbox (badness 1107) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
@@ -1461,17 +1461,15 @@ Underfull \hbox (badness 4792) in paragraph at lines 87--90
 []\OT1/txr/m/n/12 Repeat the above us-ing the de-ter-mi-nant
  []
 
-) (./chapters/ee18btech11004.tex (./tables/ee18btech11004.tex
+) (./chapters/ee18btech11008.tex [3]) (./chapters/ee18btech11004.tex
+(./tables/ee18btech11004.tex
 \gnumericTableWidth=\skip75
 \gnumericTableWidthComplete=\skip76
 \gnumericMultiRowLength=\skip77
 \gnumericColA=\skip78
 \gnumericColB=\skip79
 \gnumericColC=\skip80
-)
-Underfull \vbox (badness 1460) has occurred while \output is active []
-
- [3]
+) [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1482,10 +1480,7 @@ Overfull \hbox (3.55016pt too wide) detected at line 112
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+ [5]
 Underfull \hbox (badness 10000) in paragraph at lines 193--196
 
  []
@@ -1500,7 +1495,11 @@ Overfull \hbox (35.44969pt too wide) detected at line 206
 []
  []
 
-) (./chapters/ee18btech11007.tex
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
+(./chapters/ee18btech11007.tex
 
 LaTeX Warning: Command \j invalid in math mode on input line 8.
 
@@ -1537,15 +1536,12 @@ Underfull \hbox (badness 4608) in paragraph at lines 20--31
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 LaTeX Warning: Command \j invalid in math mode on input line 37.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 37.
 
-[5]
+[6]
 
 LaTeX Warning: Command \j invalid in math mode on input line 44.
 
@@ -1588,31 +1584,27 @@ LaTeX Warning: Command \j invalid in math mode on input line 57.
 
 LaTeX Warning: Command \j invalid in math mode on input line 57.
 
-(./tables/ee18btech11007.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+(./tables/ee18btech11007.tex))
+Underfull \vbox (badness 3503) has occurred while \output is active []
 
-) [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
+ [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
 
 (./gvv_control_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 307.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 307.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 310.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
-(rerunfilecheck)             Checksum: C146947A222B856364F0CA1A66AB9267;316.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
+(rerunfilecheck)             Checksum: AA9597AEA61E9EA9C2A3EDE1E1F388C2;441.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 310.
  ) 
 Here is how much of TeX's memory you used:
- 31993 strings out of 492624
- 688263 string characters out of 6119216
- 897694 words of memory out of 5000000
- 35305 multiletter control sequences out of 15000+600000
+ 31999 strings out of 492624
+ 688395 string characters out of 6119216
+ 899694 words of memory out of 5000000
+ 35308 multiletter control sequences out of 15000+600000
  68203 words of font info for 165 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,17n,69p,510b,1155s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,69p,510b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (6 pages, 78192 bytes).
+Output written on gvv_control_manual.dvi (7 pages, 88608 bytes).

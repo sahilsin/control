@@ -1,6 +1,8 @@
 \BOOKMARK [1][-]{section.1}{Stability}{}% 1
 \BOOKMARK [2][-]{subsection.1.1}{Second order System}{section.1}% 2
 \BOOKMARK [1][-]{section.2}{Routh Hurwitz Criterion}{}% 3
-\BOOKMARK [1][-]{section.3}{State-Space Model}{}% 4
-\BOOKMARK [1][-]{section.4}{Compensators}{}% 5
-\BOOKMARK [1][-]{section.5}{Nyquist Plot}{}% 6
+\BOOKMARK [2][-]{subsection.2.1}{Marginal Stability}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Stability}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{State-Space Model}{}% 6
+\BOOKMARK [1][-]{section.4}{Nyquist Plot}{}% 7
+\BOOKMARK [1][-]{section.5}{Compensators}{}% 8

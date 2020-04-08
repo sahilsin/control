@@ -1,6 +1,8 @@
 \contentsline {section}{\numberline {1}Stability}{1}{section.1}% 
 \contentsline {subsection}{\numberline {1.1}Second order System}{1}{subsection.1.1}% 
 \contentsline {section}{\numberline {2}Routh Hurwitz Criterion}{2}{section.2}% 
-\contentsline {section}{\numberline {3}State-Space Model}{3}{section.3}% 
-\contentsline {section}{\numberline {4}Compensators}{5}{section.4}% 
-\contentsline {section}{\numberline {5}Nyquist Plot}{5}{section.5}% 
+\contentsline {subsection}{\numberline {2.1}Marginal Stability}{2}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Stability}{3}{subsection.2.2}% 
+\contentsline {section}{\numberline {3}State-Space Model}{4}{section.3}% 
+\contentsline {section}{\numberline {4}Nyquist Plot}{6}{section.4}% 
+\contentsline {section}{\numberline {5}Compensators}{7}{section.5}% 

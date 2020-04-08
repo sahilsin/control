@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  8 APR 2020 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  8 APR 2020 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1469,10 +1469,10 @@ Underfull \hbox (badness 4792) in paragraph at lines 87--90
 \gnumericColA=\skip78
 \gnumericColB=\skip79
 \gnumericColC=\skip80
-) [4]
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [4]
 Overfull \hbox (3.55016pt too wide) detected at line 112
 []
  []
@@ -1480,7 +1480,7 @@ Overfull \hbox (3.55016pt too wide) detected at line 112
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 193--196
 
  []
@@ -1498,7 +1498,7 @@ Overfull \hbox (35.44969pt too wide) detected at line 206
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
+ [5])
 (./chapters/ee18btech11007.tex
 
 LaTeX Warning: Command \j invalid in math mode on input line 8.
@@ -1541,7 +1541,6 @@ LaTeX Warning: Command \j invalid in math mode on input line 37.
 
 LaTeX Warning: Command \j invalid in math mode on input line 37.
 
-[6]
 
 LaTeX Warning: Command \j invalid in math mode on input line 44.
 
@@ -1587,11 +1586,14 @@ LaTeX Warning: Command \j invalid in math mode on input line 57.
 (./tables/ee18btech11007.tex))
 Underfull \vbox (badness 3503) has occurred while \output is active []
 
- [7]
+ [6]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
 
-(./gvv_control_manual.aux)
+[7
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
+ (./gvv_control_manual.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 310.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
@@ -1599,12 +1601,12 @@ Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 310.
  ) 
 Here is how much of TeX's memory you used:
- 31999 strings out of 492624
- 688395 string characters out of 6119216
- 899694 words of memory out of 5000000
- 35308 multiletter control sequences out of 15000+600000
+ 32000 strings out of 492624
+ 688423 string characters out of 6119216
+ 895694 words of memory out of 5000000
+ 35309 multiletter control sequences out of 15000+600000
  68203 words of font info for 165 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,17n,69p,510b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,69p,510b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (7 pages, 88608 bytes).
+Output written on gvv_control_manual.dvi (7 pages, 84016 bytes).

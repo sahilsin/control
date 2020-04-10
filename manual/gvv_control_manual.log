@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  10 APR 2020 20:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  10 APR 2020 21:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1302,7 +1302,55 @@ Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
 ) (./gvv_control_manual.aux
 
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
 LaTeX Warning: Label `fig:galaxy' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
 
 )
 \openout1 = `gvv_control_manual.aux'.
@@ -1836,4 +1884,4 @@ Here is how much of TeX's memory you used:
  1144 hyphenation exceptions out of 8191
  55i,17n,69p,528b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (13 pages, 128920 bytes).
+Output written on gvv_control_manual.dvi (13 pages, 128932 bytes).

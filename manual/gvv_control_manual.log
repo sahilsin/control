@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  10 APR 2020 09:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  10 APR 2020 09:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1627,10 +1627,6 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 313.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
 (rerunfilecheck)             Checksum: BF2E6F02D71A2E8596800042E3B6B672;591.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
  ) 
 Here is how much of TeX's memory you used:
@@ -1642,4 +1638,4 @@ Here is how much of TeX's memory you used:
  1144 hyphenation exceptions out of 8191
  55i,17n,69p,528b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (7 pages, 92188 bytes).
+Output written on gvv_control_manual.dvi (7 pages, 92464 bytes).

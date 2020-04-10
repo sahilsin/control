@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  10 APR 2020 09:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  10 APR 2020 10:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1300,7 +1300,11 @@ ngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-) (./gvv_control_manual.aux)
+) (./gvv_control_manual.aux
+
+LaTeX Warning: Label `fig:galaxy' multiply defined.
+
+)
 \openout1 = `gvv_control_manual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 84.
@@ -1439,17 +1443,124 @@ File: utxsyc.fd 2000/12/15 v3.1
 \tf@toc=\write5
 \openout5 = `gvv_control_manual.toc'.
 
- (./chapters/ee18btech11002.tex
-File: ./figs/ee18btech11002.eps Graphic file (type eps)
+ (./chapters/ee18btech11001.tex
+LaTeX Font Info:    Try loading font information for OT1+txss on input line 6.
 
-<./figs/ee18btech11002.eps> [1
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
+txss.fd
+File: ot1txss.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 6.
+File: ./figs/ee18btech11001/ee18btech11001.eps Graphic file (type eps)
+ <./figs/ee18btech11001/ee18btech11001.eps>
+Underfull \hbox (badness 2478) in paragraph at lines 16--19
+\OT1/txr/bx/n/12 Solution: \OT1/txss/m/n/12 Let us con-sider a gen-er-al-ized
+ []
 
 
-]) (./chapters/ee18btech11005.tex
-(./figs/ee18btech11005.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 16--19
+
+ []
+
+
+Overfull \hbox (6.33408pt too wide) detected at line 28
+ []$[]  \OML/txmi/m/it/12 Gain \OT1/txr/m/n/12 = 20 [] [] = 20 [] [] + 20 [] []
+$ 
+ []
+
+
+Overfull \hbox (10.14735pt too wide) detected at line 28
+ []$[] \OT1/txr/m/n/12 + 20 [] [] + [] + 20 [] [] \OMS/txsy/m/n/12 ^^@ \OT1/txr
+/m/n/12 20 [] []$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--36
+
+ []
+
+
+Overfull \hbox (55.82056pt too wide) detected at line 49
+[]
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]
+ [1
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 58--66
+
+ []
+
+
+Overfull \hbox (5.46352pt too wide) detected at line 101
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--143
+
+ []
+
+File: ./figs/ee18btech11001/ee18btech11001_2.eps Graphic file (type eps)
+<./figs/ee18btech11001/ee18btech11001_2.eps>) (./chapters/ee18btech11009.tex
+File: ./figs/ee18btech11009/pppp.eps Graphic file (type eps)
+
+<./figs/ee18btech11009/pppp.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 23--25
+[]\OT1/txr/m/n/12 Now, from the Trans-fer equa-tion we can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 30--34
+
+ []
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 30--34
+\OT1/txr/m/n/12 phase $\OML/txmi/m/it/12 ^^^$ \OT1/txr/m/n/12 is the sum of all
+ the phases
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--74
+
+ []
+
+) (./chapters/ee18btech11002.tex
+File: ./figs/ee18btech11002.eps Graphic file (type eps)
+ <./figs/ee18btech11002.eps> [3])
+(./chapters/ee18btech11005.tex (./figs/ee18btech11005.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
 
 LaTeX Warning: Command \j invalid in math mode on input line 80.
 
@@ -1458,7 +1569,7 @@ Underfull \hbox (badness 4792) in paragraph at lines 87--90
 []\OT1/txr/m/n/12 Repeat the above us-ing the de-ter-mi-nant
  []
 
-) (./chapters/ee18btech11008.tex [3]) (./chapters/ee18btech11004.tex
+) (./chapters/ee18btech11008.tex [5]) (./chapters/ee18btech11004.tex
 (./tables/ee18btech11004.tex
 \gnumericTableWidth=\skip75
 \gnumericTableWidthComplete=\skip76
@@ -1469,7 +1580,7 @@ Underfull \hbox (badness 4792) in paragraph at lines 87--90
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]
+ [6]
 Overfull \hbox (3.55016pt too wide) detected at line 112
 []
  []
@@ -1495,7 +1606,7 @@ Overfull \hbox (35.44969pt too wide) detected at line 206
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5])
+ [7])
 (./chapters/ee18btech11011.tex
 
 LaTeX Font Warning: Command \LARGE invalid in math mode on input line 44.
@@ -1558,7 +1669,7 @@ Underfull \hbox (badness 4608) in paragraph at lines 20--31
 \OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The Nyquist plot is a graph
  []
 
-[6]
+[8]
 
 LaTeX Warning: Command \j invalid in math mode on input line 37.
 
@@ -1629,7 +1740,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[7]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
@@ -1653,7 +1764,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) [8]
+) [10]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
 
@@ -1661,16 +1772,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 314.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
-(rerunfilecheck)             Checksum: BF2E6F02D71A2E8596800042E3B6B672;591.
+(rerunfilecheck)             Checksum: 3C2031614AD88F1E82F0B7A1D0EAE47D;755.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
  ) 
 Here is how much of TeX's memory you used:
- 32015 strings out of 492624
- 688795 string characters out of 6119216
+ 32066 strings out of 492624
+ 689902 string characters out of 6119216
  896694 words of memory out of 5000000
- 35318 multiletter control sequences out of 15000+600000
- 68203 words of font info for 165 fonts, out of 8000000 for 9000
+ 35355 multiletter control sequences out of 15000+600000
+ 68882 words of font info for 166 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,17n,69p,528b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (8 pages, 98208 bytes).
+Output written on gvv_control_manual.dvi (10 pages, 113500 bytes).

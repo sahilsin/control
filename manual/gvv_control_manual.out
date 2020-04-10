@@ -1,10 +1,13 @@
-\BOOKMARK [1][-]{section.1}{Stability}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{Second order System}{section.1}% 2
-\BOOKMARK [1][-]{section.2}{Routh Hurwitz Criterion}{}% 3
-\BOOKMARK [2][-]{subsection.2.1}{Marginal Stability}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.2}{Stability}{section.2}% 5
-\BOOKMARK [1][-]{section.3}{State-Space Model}{}% 6
-\BOOKMARK [2][-]{subsection.3.1}{Controllability and Observabiity}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.2}{Second Order System}{section.3}% 8
-\BOOKMARK [1][-]{section.4}{Nyquist Plot}{}% 9
-\BOOKMARK [1][-]{section.5}{Compensators}{}% 10
+\BOOKMARK [1][-]{section.1}{Bode Plot}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Introduction}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Example}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Stability}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Second order System}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Routh Hurwitz Criterion}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Marginal Stability}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Stability}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{State-Space Model}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Controllability and Observabiity}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Second Order System}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Nyquist Plot}{}% 12
+\BOOKMARK [1][-]{section.6}{Compensators}{}% 13

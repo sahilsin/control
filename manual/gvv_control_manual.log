@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  10 APR 2020 09:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  10 APR 2020 09:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1619,23 +1619,58 @@ Underfull \hbox (badness 1466) in paragraph at lines 81--82
 []\OT1/txr/m/n/12 However, if the graph hap-pens to pass
  []
 
-) [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
- (./gvv_control_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 313.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
+) (./chapters/ee18btech11010.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+[]\OT1/txr/m/n/12 The Trans-fer func-tion of Phase Lead
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
+
+ []
+
+File: ./figs/ee18btech11010.eps Graphic file (type eps)
+<./figs/ee18btech11010.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--58
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+) [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
+
+(./gvv_control_manual.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 314.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
 (rerunfilecheck)             Checksum: BF2E6F02D71A2E8596800042E3B6B672;591.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
  ) 
 Here is how much of TeX's memory you used:
- 32008 strings out of 492624
- 688610 string characters out of 6119216
+ 32015 strings out of 492624
+ 688795 string characters out of 6119216
  896694 words of memory out of 5000000
- 35314 multiletter control sequences out of 15000+600000
+ 35318 multiletter control sequences out of 15000+600000
  68203 words of font info for 165 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,17n,69p,528b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (7 pages, 92464 bytes).
+Output written on gvv_control_manual.dvi (8 pages, 98208 bytes).

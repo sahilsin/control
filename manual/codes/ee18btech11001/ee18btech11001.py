@@ -72,7 +72,9 @@ for i in range(len(x)):
 plt.plot(x,y)
 plt.legend(["Calculated Plot" , "Given Plot"])   
 
+#if using termux
 plt.savefig('./figs/bode_ayush.pdf')
 plt.savefig('./figs/bode_ayush.eps')
 subprocess.run(shlex.split("termux-open ./figs/bode_ayush.pdf"))
-
+#else
+#plt.show()

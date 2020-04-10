@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  10 APR 2020 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  10 APR 2020 15:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1557,235 +1557,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--74
 ) (./chapters/ee18btech11002.tex
 File: ./figs/ee18btech11002.eps Graphic file (type eps)
  <./figs/ee18btech11002.eps> [3])
-(./chapters/ee18btech11005.tex (./figs/ee18btech11005.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
-
-LaTeX Warning: Command \j invalid in math mode on input line 80.
-
-
-Underfull \hbox (badness 4792) in paragraph at lines 87--90
-[]\OT1/txr/m/n/12 Repeat the above us-ing the de-ter-mi-nant
- []
-
-) (./chapters/ee18btech11008.tex [5]) (./chapters/ee18btech11004.tex
-(./tables/ee18btech11004.tex
-\gnumericTableWidth=\skip75
-\gnumericTableWidthComplete=\skip76
-\gnumericMultiRowLength=\skip77
-\gnumericColA=\skip78
-\gnumericColB=\skip79
-\gnumericColC=\skip80
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-Overfull \hbox (3.55016pt too wide) detected at line 112
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 193--196
-
- []
-
-
-Overfull \hbox (36.08884pt too wide) detected at line 202
-[]
- []
-
-
-Overfull \hbox (35.44969pt too wide) detected at line 206
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7])
-(./chapters/ee18btech11011.tex
-
-LaTeX Font Warning: Command \LARGE invalid in math mode on input line 44.
-
-
-LaTeX Font Warning: Command \LARGE invalid in math mode on input line 44.
-
-
-LaTeX Font Warning: Command \LARGE invalid in math mode on input line 47.
-
-
-LaTeX Font Warning: Command \LARGE invalid in math mode on input line 47.
-
-
-LaTeX Font Warning: Command \LARGE invalid in math mode on input line 47.
-
-
-LaTeX Font Warning: Command \LARGE invalid in math mode on input line 47.
-
-
-LaTeX Font Warning: Command \LARGE invalid in math mode on input line 60.
-
-
-LaTeX Font Warning: Command \LARGE invalid in math mode on input line 60.
-
-File: ./figs/ee18btech11011.eps Graphic file (type eps)
-<./figs/ee18btech11011.eps>) (./chapters/ee18btech11007.tex
-
-LaTeX Warning: Command \j invalid in math mode on input line 8.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 8.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 18.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 18.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 18.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 18.
-
-
-Overfull \hbox (6.32077pt too wide) detected at line 18
-[]
- []
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 22.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 22.
-
-File: ./figs/ee18btech11007.eps Graphic file (type eps)
-<./figs/ee18btech11007.eps>
-Underfull \hbox (badness 4608) in paragraph at lines 20--31
-\OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The Nyquist plot is a graph
- []
-
-[8]
-
-LaTeX Warning: Command \j invalid in math mode on input line 37.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 37.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 57.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 57.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 57.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 57.
-
-(./tables/ee18btech11007.tex)
-
-LaTeX Warning: Command \j invalid in math mode on input line 81.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 81.
-
-
-Underfull \hbox (badness 1466) in paragraph at lines 81--82
-[]\OT1/txr/m/n/12 However, if the graph hap-pens to pass
- []
-
-) (./chapters/ee18btech11010.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-[]\OT1/txr/m/n/12 The Trans-fer func-tion of Phase Lead
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
-
- []
-
-File: ./figs/ee18btech11010.eps Graphic file (type eps)
-<./figs/ee18btech11010.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-) [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
-
-(./gvv_control_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 314.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
-Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
-(rerunfilecheck)             Checksum: 3C2031614AD88F1E82F0B7A1D0EAE47D;755.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
- ) 
+(./chapters/ee18btech11012.tex
+! Misplaced alignment tab character &.
+l.11 \newline P &
+                 :$\frac{15}{{s^2+5s+15}}$
+? 
+! Emergency stop.
+l.11 \newline P &
+                 :$\frac{15}{{s^2+5s+15}}$
+End of file on the terminal!
+
+ 
 Here is how much of TeX's memory you used:
- 32066 strings out of 492624
- 689902 string characters out of 6119216
- 896694 words of memory out of 5000000
- 35355 multiletter control sequences out of 15000+600000
+ 31882 strings out of 492624
+ 686014 string characters out of 6119216
+ 891694 words of memory out of 5000000
+ 35195 multiletter control sequences out of 15000+600000
  68882 words of font info for 166 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,17n,69p,528b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on gvv_control_manual.dvi (10 pages, 113500 bytes).
+ 55i,14n,69p,510b,1155s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on gvv_control_manual.dvi (3 pages, 33228 bytes).

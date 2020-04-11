@@ -6,10 +6,11 @@
 \BOOKMARK [2][-]{subsection.3.1}{Damping}{section.3}% 6
 \BOOKMARK [2][-]{subsection.3.2}{Example}{section.3}% 7
 \BOOKMARK [1][-]{section.4}{Routh Hurwitz Criterion}{}% 8
-\BOOKMARK [2][-]{subsection.4.1}{Marginal Stability}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.2}{Stability}{section.4}% 10
-\BOOKMARK [1][-]{section.5}{State-Space Model}{}% 11
-\BOOKMARK [2][-]{subsection.5.1}{Controllability and Observabiity}{section.5}% 12
-\BOOKMARK [2][-]{subsection.5.2}{Second Order System}{section.5}% 13
-\BOOKMARK [1][-]{section.6}{Nyquist Plot}{}% 14
-\BOOKMARK [1][-]{section.7}{Compensators}{}% 15
+\BOOKMARK [2][-]{subsection.4.1}{Routh Array}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Marginal Stability}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Stability}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{State-Space Model}{}% 12
+\BOOKMARK [2][-]{subsection.5.1}{Controllability and Observabiity}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.2}{Second Order System}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{Nyquist Plot}{}% 15
+\BOOKMARK [1][-]{section.7}{Compensators}{}% 16

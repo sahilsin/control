@@ -2,9 +2,9 @@
 \BOOKMARK [1][-]{section.2}{Bode Plot}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Introduction}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Example}{section.2}% 4
-\BOOKMARK [1][-]{section.3}{Stability}{}% 5
-\BOOKMARK [2][-]{subsection.3.1}{Second order System}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.2}{Damping}{section.3}% 7
+\BOOKMARK [1][-]{section.3}{Second order System}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Damping}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Example}{section.3}% 7
 \BOOKMARK [1][-]{section.4}{Routh Hurwitz Criterion}{}% 8
 \BOOKMARK [2][-]{subsection.4.1}{Marginal Stability}{section.4}% 9
 \BOOKMARK [2][-]{subsection.4.2}{Stability}{section.4}% 10

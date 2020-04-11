@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  11 APR 2020 13:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  11 APR 2020 14:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1302,7 +1302,52 @@ Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
 ) (./gvv_control_manual.aux
 
-LaTeX Warning: Label `fig:galaxy' multiply defined.
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
 
 )
 \openout1 = `gvv_control_manual.aux'.
@@ -1491,49 +1536,25 @@ Underfull \vbox (badness 1107) has occurred while \output is active []
 
 )
 (./chapters/ee18btech11001.tex
-LaTeX Font Info:    Try loading font information for OT1+txss on input line 6.
+File: ./figs/ee18btech11001/ee18btech11001.eps Graphic file (type eps)
+ <./figs/ee18btech11001/ee18btech11001.eps>
+[3]
+LaTeX Font Info:    Try loading font information for OT1+txss on input line 66.
+
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
 txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 6.
-File: ./figs/ee18btech11001/ee18btech11001.eps Graphic file (type eps)
- <./figs/ee18btech11001/ee18btech11001.eps>
-Underfull \hbox (badness 2478) in paragraph at lines 16--19
+(Font)              scaled to size 11.39996pt on input line 66.
+
+Underfull \hbox (badness 2478) in paragraph at lines 65--68
 \OT1/txr/bx/n/12 Solution: \OT1/txss/m/n/12 Let us con-sider a gen-er-al-ized
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--19
-
- []
-
-
-Overfull \hbox (6.33408pt too wide) detected at line 28
- []$[]  \OML/txmi/m/it/12 Gain \OT1/txr/m/n/12 = 20 [] [] = 20 [] [] + 20 [] []
-$ 
- []
-
-
-Overfull \hbox (10.14735pt too wide) detected at line 28
- []$[] \OT1/txr/m/n/12 + 20 [] [] + [] + 20 [] [] \OMS/txsy/m/n/12 ^^@ \OT1/txr
-/m/n/12 20 [] []$ 
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 32--36
-
- []
-
-
-Overfull \hbox (55.82056pt too wide) detected at line 49
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--66
+Underfull \hbox (badness 10000) in paragraph at lines 65--68
 
  []
 
@@ -1541,20 +1562,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--66
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (5.46352pt too wide) detected at line 101
+Overfull \hbox (6.33408pt too wide) detected at line 77
+ []$[]  \OML/txmi/m/it/12 Gain \OT1/txr/m/n/12 = 20 [] [] = 20 [] [] + 20 [] []
+$ 
+ []
+
+
+Overfull \hbox (10.14735pt too wide) detected at line 77
+ []$[] \OT1/txr/m/n/12 + 20 [] [] + [] + 20 [] [] \OMS/txsy/m/n/12 ^^@ \OT1/txr
+/m/n/12 20 [] []$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--85
+
+ []
+
+
+Overfull \hbox (55.82056pt too wide) detected at line 98
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--143
+Underfull \hbox (badness 10000) in paragraph at lines 107--115
+
+ []
+
+
+Overfull \hbox (5.46352pt too wide) detected at line 121
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--163
 
  []
 
 File: ./figs/ee18btech11001/ee18btech11001_2.eps Graphic file (type eps)
-<./figs/ee18btech11001/ee18btech11001_2.eps>) (./chapters/ee18btech11009.tex
-File: ./figs/ee18btech11009/pppp.eps Graphic file (type eps)
+<./figs/ee18btech11001/ee18btech11001_2.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<./figs/ee18btech11009/pppp.eps> [4]
+ [4])
+(./chapters/ee18btech11009.tex
+File: ./figs/ee18btech11009/pppp.eps Graphic file (type eps)
+ <./figs/ee18btech11009/pppp.eps>
 Underfull \hbox (badness 1622) in paragraph at lines 23--25
 []\OT1/txr/m/n/12 Now, from the Trans-fer equa-tion we can
  []
@@ -1595,14 +1646,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--74
 
  []
 
-) (./chapters/ee18btech11012.tex (./tables/ee18btech11012.tex
+) (./chapters/ee18btech11012.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+(./tables/ee18btech11012.tex
 \gnumericTableWidth=\skip75
 \gnumericTableWidthComplete=\skip76
 \gnumericMultiRowLength=\skip77
 \gnumericColA=\skip78
 \gnumericColB=\skip79
-) [5]
-(./tables/ee18btech11012_damp.tex
+) (./tables/ee18btech11012_damp.tex
 \gnumericColC=\skip80
 \gnumericColD=\skip81
 
@@ -1627,10 +1681,7 @@ Overfull \hbox (2.43596pt too wide) in paragraph at lines 229--229
 
 )) (./chapters/ee18btech11002.tex
 File: ./figs/ee18btech11002.eps Graphic file (type eps)
- <./figs/ee18btech11002.eps>
-Underfull \vbox (badness 7133) has occurred while \output is active []
-
- [6])
+ <./figs/ee18btech11002.eps> [6])
 (./chapters/ee18btech11014.tex
 Overfull \hbox (33.07916pt too wide) detected at line 9
 []
@@ -1640,6 +1691,9 @@ Overfull \hbox (33.07916pt too wide) detected at line 9
 Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
+
+
+Underfull \vbox (badness 1189) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
@@ -1666,7 +1720,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-[7]) (./chapters/ee18btech11005.tex (./figs/ee18btech11005.tex)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7])
+(./chapters/ee18btech11005.tex (./figs/ee18btech11005.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
 
 LaTeX Warning: Command \j invalid in math mode on input line 80.
 
@@ -1675,15 +1736,14 @@ Underfull \hbox (badness 4792) in paragraph at lines 87--90
 []\OT1/txr/m/n/12 Repeat the above us-ing the de-ter-mi-nant
  []
 
+) (./chapters/ee18btech11008.tex [9]) (./chapters/ee18btech11004.tex
+(./tables/ee18btech11004.tex)
+Underfull \vbox (badness 4279) has occurred while \output is active []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8])
-(./chapters/ee18btech11008.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-)
-(./chapters/ee18btech11004.tex (./tables/ee18btech11004.tex) [9]
+ [10]
 Overfull \hbox (3.55016pt too wide) detected at line 114
 []
  []
@@ -1691,10 +1751,10 @@ Overfull \hbox (3.55016pt too wide) detected at line 114
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [11]
 Underfull \hbox (badness 10000) in paragraph at lines 195--198
 
  []
@@ -1710,9 +1770,6 @@ Overfull \hbox (35.44969pt too wide) detected at line 208
  []
 
 ) (./chapters/ee18btech11011.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
 
 LaTeX Font Warning: Command \LARGE invalid in math mode on input line 43.
 
@@ -1762,13 +1819,13 @@ Underfull \hbox (badness 4608) in paragraph at lines 20--31
  []
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 37.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 37.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 44.
+LaTeX Warning: Command \j invalid in math mode on input line 37.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 44.
@@ -1797,6 +1854,10 @@ LaTeX Warning: Command \j invalid in math mode on input line 44.
 
 LaTeX Warning: Command \j invalid in math mode on input line 44.
 
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+[12]
 
 LaTeX Warning: Command \j invalid in math mode on input line 57.
 
@@ -1809,10 +1870,6 @@ LaTeX Warning: Command \j invalid in math mode on input line 57.
 
 LaTeX Warning: Command \j invalid in math mode on input line 57.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12]
 (./tables/ee18btech11007.tex)
 
 LaTeX Warning: Command \j invalid in math mode on input line 81.
@@ -1840,7 +1897,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
@@ -1856,11 +1913,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
-[13])
+) [14]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 320.
- [14
-
-]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 320.
  (./gvv_control_manual.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 320.
@@ -1874,12 +1928,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 320.
  ) 
 Here is how much of TeX's memory you used:
- 32129 strings out of 492624
- 691506 string characters out of 6119216
- 902694 words of memory out of 5000000
- 35391 multiletter control sequences out of 15000+600000
+ 32131 strings out of 492624
+ 691555 string characters out of 6119216
+ 900694 words of memory out of 5000000
+ 35393 multiletter control sequences out of 15000+600000
  68882 words of font info for 166 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,18n,69p,528b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (14 pages, 149168 bytes).
+Output written on gvv_control_manual.dvi (14 pages, 151452 bytes).

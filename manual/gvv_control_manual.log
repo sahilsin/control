@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  12 APR 2020 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  12 APR 2020 22:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1311,42 +1311,6 @@ LaTeX Warning: Label `fig:sec_order' multiply defined.
 LaTeX Warning: Label `fig:sec_order' multiply defined.
 
 
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
 LaTeX Warning: Label `eq:ee18btech11001_system' multiply defined.
 
 
@@ -1355,62 +1319,62 @@ LaTeX Warning: Label `fig:sec_order' multiply defined.
 )
 \openout1 = `gvv_control_manual.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 84.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 84.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 86.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 86.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oml
 txmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 84.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 84.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 86.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 86.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
 txsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 84.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 84.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 86.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 86.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/omx
 txex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 84.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 84.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 86.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 86.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 exa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 84.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 86.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
 txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 84.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 84.
+LaTeX Info: Redefining \celsius on input line 86.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 86.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 84.
-Package gensymb Info: Using \Omega for \ohm on input line 84.
+LaTeX Info: Redefining \ohm on input line 86.
+Package gensymb Info: Using \Omega for \ohm on input line 86.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1427,7 +1391,7 @@ Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box79
-Package hyperref Info: Link coloring OFF on input line 84.
+Package hyperref Info: Link coloring OFF on input line 86.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/na
 meref.sty
@@ -1439,9 +1403,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count268
 )
-LaTeX Info: Redefining \ref on input line 84.
-LaTeX Info: Redefining \pageref on input line 84.
-LaTeX Info: Redefining \nameref on input line 84.
+LaTeX Info: Redefining \ref on input line 86.
+LaTeX Info: Redefining \pageref on input line 86.
+LaTeX Info: Redefining \nameref on input line 86.
  (./gvv_control_manual.out) (./gvv_control_manual.out)
 \@outlinefile=\write4
 \openout4 = `gvv_control_manual.out'.
@@ -1453,35 +1417,35 @@ LaTeX Info: Redefining \nameref on input line 84.
 \c@lemma=\count273
 \c@example=\count274
 \c@rem=\count275
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 240.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 240.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 242.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 242.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 240.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 242.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 240.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 242.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 240.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 242.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 240.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 242.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
@@ -1492,49 +1456,124 @@ File: utxsyc.fd 2000/12/15 v3.1
 \openout5 = `gvv_control_manual.toc'.
 
  (./chapters/ee18btech11003.tex
-File: ./figs/ee18btech11003/pic1.eps Graphic file (type eps)
+(./figs/ee18btech11003/block_diagram.tex)
+(./figs/ee18btech11003/signal_flow.tex
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+) (./figs/ee18btech11003/P1.tex
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+)
+(./figs/ee18btech11003/P2.tex
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+) [1
 
-<./figs/ee18btech11003/pic1.eps>
-File: ./figs/ee18btech11003/signal_flow.eps Graphic file (type eps)
- <./figs/ee18btech11003/signal_flow.eps>
-File: ./figs/ee18btech11003/P1.eps Graphic file (type eps)
 
-<./figs/ee18btech11003/P1.eps>
-File: ./figs/ee18btech11003/P2.eps Graphic file (type eps)
- <./figs/ee18btech11003/P2.eps> [1
+] (./figs/ee18btech11003/L1.tex
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+)
+(./figs/ee18btech11003/L2.tex
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+) (./figs/ee18btech11003/L3.tex
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+)
+(./figs/ee18btech11003/L4.tex
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+)
+Underfull \hbox (badness 4531) in paragraph at lines 159--160
+[]$\OT1/txr/m/n/12 ^^A$ = 1 - (Sum of all in-di-vid-ual loop
+ []
 
-
-]
-File: ./figs/ee18btech11003/L1.eps Graphic file (type eps)
-
-<./figs/ee18btech11003/L1.eps>
-File: ./figs/ee18btech11003/L2.eps Graphic file (type eps)
- <./figs/ee18btech11003/L2.eps>
-File: ./figs/ee18btech11003/L3.eps Graphic file (type eps)
-
-<./figs/ee18btech11003/L3.eps>
-File: ./figs/ee18btech11003/L4.eps Graphic file (type eps)
- <./figs/ee18btech11003/L4.eps>
-File: ./figs/ee18btech11003/L1.eps Graphic file (type eps)
-
-<./figs/ee18btech11003/L1.eps>
-File: ./figs/ee18btech11003/L2.eps Graphic file (type eps)
- <./figs/ee18btech11003/L2.eps>
-File: ./figs/ee18btech11003/L3.eps Graphic file (type eps)
-
-<./figs/ee18btech11003/L3.eps>
-File: ./figs/ee18btech11003/L4.eps Graphic file (type eps)
- <./figs/ee18btech11003/L4.eps>
-File: ./figs/ee18btech11003/Delta1.eps Graphic file (type eps)
-
-<./figs/ee18btech11003/Delta1.eps>
-File: ./figs/ee18btech11003/Delta2.eps Graphic file (type eps)
- <./figs/ee18btech11003/Delta2.eps>
-File: ./figs/ee18btech11003/Delta3.eps Graphic file (type eps)
-
-<./figs/ee18btech11003/Delta3.eps> [2]
-File: ./figs/ee18btech11003/Delta4.eps Graphic file (type eps)
- <./figs/ee18btech11003/Delta4.eps>)
+(./figs/ee18btech11003/L1.tex
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+) (./figs/ee18btech11003/L2.tex
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+)
+(./figs/ee18btech11003/L3.tex
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+) [2] (./figs/ee18btech11003/L4.tex
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+)
+(./figs/ee18btech11003/D1_D3.tex
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+) (./figs/ee18btech11003/D2_D4.tex
+Missing character: There is no , in font nullfont!
+)
+(./figs/ee18btech11003/D1_D3.tex
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+) (./figs/ee18btech11003/D2_D4.tex
+Missing character: There is no , in font nullfont!
+))
 (./chapters/ee18btech11001.tex
 File: ./figs/ee18btech11001/ee18btech11001.eps Graphic file (type eps)
  <./figs/ee18btech11001/ee18btech11001.eps>
@@ -1542,10 +1581,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--15
 
  []
 
-
-Underfull \vbox (badness 4899) has occurred while \output is active []
-
- [3]
+[3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1914,11 +1950,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--124
  []
 
 ) [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 323.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 323.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
  (./gvv_control_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 323.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 323.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 325.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
 (rerunfilecheck)             Checksum: A82366A2A6E11D76157E6C81A8799B49;975.
 
@@ -1928,15 +1964,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 323.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 325.
  ) 
 Here is how much of TeX's memory you used:
- 32148 strings out of 492624
- 691808 string characters out of 6119216
- 902694 words of memory out of 5000000
- 35408 multiletter control sequences out of 15000+600000
+ 32374 strings out of 492624
+ 695945 string characters out of 6119216
+ 929475 words of memory out of 5000000
+ 35604 multiletter control sequences out of 15000+600000
  76571 words of font info for 192 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,18n,69p,528b,1876s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,18n,74p,528b,1876s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (15 pages, 168220 bytes).
+Output written on gvv_control_manual.dvi (15 pages, 261684 bytes).

@@ -5,20 +5,16 @@
 \renewcommand{\thefigure}{\theenumi.\arabic{figure}}
 
 \begin{figure}[!ht]
-    \begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/block_diagram.tex}}
-	\end{center}
-\caption{signal flow block diagram}
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11003/pic1.eps}
+\caption{}
 \label{fig:sec_order}
 \end{figure}
 \solution
 Signal flow graph of given above block diagram is
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/signal_flow.tex}}
-	\end{center}
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11003/signal_flow.eps}
 \caption{signal flow graph}
 \label{fig:sec_order}
 \end{figure}
@@ -33,11 +29,9 @@ P_1=\frac{s}{s}=1
 \end{align}
 
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/P1.tex}}
-	\end{center}
-\caption{$P_1$}
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11003/P1.eps}
+\caption{P1}
 \label{fig:sec_order}
 \end{figure}
 
@@ -47,17 +41,14 @@ P_2=(1/s)(1/s)=1/s^2
 \end{align}
 
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/P2.tex}}
-	\end{center}
-\caption{$P_2$}
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11003/P2.eps}
+\caption{P2}
 \label{fig:sec_order}
 \end{figure}
 \renewcommand{\thefigure}{\theenumi}
 
-\item Draw the loops and calculate the respective gains.
-\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+\item Draw the loops and calculate the respective gains.\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
 \\
 \solution 
 \begin{align}
@@ -65,11 +56,9 @@ L_1=(-1)(s)=-s
 \end{align}
 
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/L1.tex}}
-	\end{center}
-\caption{$L_1$}
+\centering
+\includegraphics[width=0.3\textwidth]{./figs/ee18btech11003/L1.eps}
+\caption{L1}
 \label{fig:sec_order}
 \end{figure}
 
@@ -79,11 +68,9 @@ L_2=\frac{s}{-s}=-1
 \end{align}
 
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/L2.tex}}
-	\end{center}
-\caption{$L_2$}
+\centering
+\includegraphics[width=0.3\textwidth]{./figs/ee18btech11003/L2.eps}
+\caption{L2}
 \label{fig:sec_order}
 \end{figure}
 
@@ -93,28 +80,23 @@ L_3=(\frac{1}{s})*(-1)=\frac{-1}{s}
 \end{align}
 
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/L3.tex}}
-	\end{center}
-\caption{$L_3$}
+\centering
+\includegraphics[width=0.3\textwidth]{./figs/ee18btech11003/L3.eps}
+\caption{L3}
 \label{fig:sec_order}
 \end{figure}
 
 
 \begin{align}
-L_4=(\frac{1}{s})(\frac{1}{s})(-1)=\frac{-1}{s^2}
+L_4=(\frac{1}{s})*(\frac{1}{s})8(-1)=\frac{-1}{s^2}
 \end{align}
 
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/L4.tex}}
-	\end{center}
-\caption{$L_4$}
+\centering
+\includegraphics[width=0.3\textwidth]{./figs/ee18btech11003/L4.eps}
+\caption{L4}
 \label{fig:sec_order}
 \end{figure}
-
 \renewcommand{\thefigure}{\theenumi}
 
 \item State Mason's Gain formula and explain the parameters through a table.
@@ -154,11 +136,9 @@ T = \frac{\sum_{i=1}^{N} P_i\Delta_i}{\Delta}
 
 Now, 
 
-$P_i$ is the $i^{th}$ forward path.
-
-$\Delta$ = 1 - (Sum of all individual loop gains)+(sum of gain products of all possible two non-touching loops)-(sum of gain products of all possible three non-touching loops)+...
-
-$\Delta_i$ is  obtained from $\Delta$ by removing the loops which are touching the $i^{th}$ forward path.
+Pi is the ith forward path.
+%$\Delta = 1 - (Sum of all individual loop gains)+(sum of gain products of all possible two non-touching loops)-(sum of gain products of all possible three non-touching loops)+...$
+%$\Delta_i is obtained from \Delta by removing the loops which are touching the i^{th} forward path.$
 
 
 $\Delta = 1-(L_1 + L_2 + L_3 + L_4)$
@@ -168,25 +148,21 @@ L_1=(-1)(s)=-s
 \end{align}
 
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/L1.tex}}
-	\end{center}
-\caption{$L_1$}
+\centering
+\includegraphics[width=0.3\textwidth]{./figs/ee18btech11003/L1.eps}
+\caption{L1}
 \label{fig:sec_order}
 \end{figure}
-%
+
 
 \begin{align}
 L_2=\frac{s}{-s}=-1
 \end{align}
 
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/L2.tex}}
-	\end{center}
-\caption{$L_2$}
+\centering
+\includegraphics[width=0.3\textwidth]{./figs/ee18btech11003/L2.eps}
+\caption{L2}
 \label{fig:sec_order}
 \end{figure}
 
@@ -196,25 +172,21 @@ L_3=(\frac{1}{s})*(-1)=\frac{-1}{s}
 \end{align}
 
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/L3.tex}}
-	\end{center}
-\caption{$L_3$}
+\centering
+\includegraphics[width=0.3\textwidth]{./figs/ee18btech11003/L3.eps}
+\caption{L3}
 \label{fig:sec_order}
 \end{figure}
 
 
 \begin{align}
-L_4=(\frac{1}{s})(\frac{1}{s})(-1)=\frac{-1}{s^2}
+L_4=(\frac{1}{s})*(\frac{1}{s})8(-1)=\frac{-1}{s^2}
 \end{align}
 
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/L4.tex}}
-	\end{center}
-\caption{$L_4$}
+\centering
+\includegraphics[width=0.3\textwidth]{./figs/ee18btech11003/L4.eps}
+\caption{L4}
 \label{fig:sec_order}
 \end{figure}
 
@@ -223,54 +195,41 @@ $\Delta = 1-(-s-1-\frac{1}{s}-\frac{1}{s^2})$
 $\Delta = \frac{s^3+2s^2+s+1}{s^2}$
 
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/D1_D3.tex}}
-	\end{center}
-\caption{$\Delta_1$}
+\centering
+\includegraphics[width=0.3\textwidth]{./figs/ee18btech11003/Delta1.eps}
+\caption{Delta1}
 \label{fig:sec_order}
 \end{figure}
 
-After removing forward path from loop1 we will get Delta1
 
 $\Delta_1 = 1$
 
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/D2_D4.tex}}
-	\end{center}
-\caption{$\Delta_2$}
+\centering
+\includegraphics[width=0.3\textwidth]{./figs/ee18btech11003/Delta2.eps}
+\caption{Delta2}
 \label{fig:sec_order}
 \end{figure}
-%
-After removing forward path from loop2 we will get Delta2
+
 
 $\Delta_2 = 1$
 
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/D1_D3.tex}}
-	\end{center}
-\caption{$\Delta_3$}
+\centering
+\includegraphics[width=0.3\textwidth]{./figs/ee18btech11003/Delta3.eps}
+\caption{Delta3}
 \label{fig:sec_order}
 \end{figure}
 
-After removing forward path from loop3 we will get Delta4
 
 $\Delta_3 = 1$
 
 \begin{figure}[!ht]
-\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/D2_D4.tex}}
-	\end{center}
-\caption{$\Delta_4$}
+\centering
+\includegraphics[width=0.3\textwidth]{./figs/ee18btech11003/Delta4.eps}
+\caption{Delta4}
 \label{fig:sec_order}
 \end{figure}
-%
-After removing forward path from loop4 we will get Delta4
 
 $\Delta_4 = 1$
 

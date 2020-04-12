@@ -3,27 +3,79 @@
 
 \item For an LTI system, the Bode plot for its gain defined as
 \begin{align}
-G(s) = 20\log\abs{H(s)}
-\label{eq:ee18btech11001_gain}
+	G(s) = 20\log\abs{H(s)}
+	\label{eq:ee18btech11001_gain}
 \end{align}
-is as illustrated in the Fig. \ref{fig:ee18btech11001_bode}. Express $G(f)$ in terms of $f$.
+is as illustrated in the Fig. \ref{fig:ee18btech11001_bode}. Express $G(f)$ in terms of $f$.\\
 \begin{figure}[ht!]
-    \centering
     \includegraphics[width=\columnwidth]{./figs/ee18btech11001/ee18btech11001.eps}
     \caption{}
     \label{fig:ee18btech11001_bode}
-\end{figure}
+\end{figure}\\
+
+\solution
+Let us consider a generalized transfer gain\\
+\begin{align}
+	H(s) = k \dfrac{(s-z_{1})(s-z_{2})...(s-z_{m-1})(s-z_{m})}{(s-p_{1})(s-p_{2})....(s-p_{n-1})(s-p_{n})}
+\end{align}\\
+\begin{multline}
+	Gain = 20\log\abs{H(s)} = 20\log \abs{k} + 20\log \abs{s-z_{1}} 
+	    \\
+	    + 20\log \abs{s-z_{2}} + \dots + 20\log \abs{s-z_{m}} - 20\log \abs{s-p_{1}} 
+	    \\
+	    - 20\log \abs{s-p_{2}} - \dots - 20\log \abs{s-z_{n}} 
+\end{multline}\\
+
+Let us consider the term $ 20\log \abs{s-z_{1}} $ and let $s = j\omega$\\
+\begin{align}
+	20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}}
+\end{align}\\
+
+Based on log scale plot approximations,to the left of $z_{1} \hspace{5pt} \omega << z_{1}$ and towards right  $\omega >> z_{1}$\\
+For $\omega < z_{1}$\\
+\begin{align}
+	20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}}
+	&= 20 \log \abs{z_{1}}\\
+	&= constant
+\end{align}  
+i.e. Slope = 0\\
+
+For $\omega > z_{1}$
+
+\begin{align}
+	20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}} = 20 \log \abs{\omega} 
+\end{align}
+
+i.e Slope = 20\\
+
+\textbf{When a zero is encountered the slope always increases by 20 dB/decade}\\
+By performing similar analysis for $-20\log \abs{s-p_{1}}$, we conclude that\\
+\textbf{When a pole is encountered the slope always decreases by 20 dB/decade}
 \\
-\solution 
+So, Poles are encountered at $f = 10,10^2,10^5,10^6$\\
+Similarly Zeros are encountered at $f = 0,10^3,10^4$
+
+Final Transfer function is\\
+\begin{align}
+	H(f) = \dfrac{K(f+10^{3})(f+10^{4})^{2}}{(f+10^{1})(f+10^{2})^{2}(f+10^{5})^{2}(f+10^{6})}
+\end{align}\\
+\begin{align}
+\begin{small}
+	G(f) = 20\log\dfrac{K(f+10^{3})(f+10^{4})^{2}}{(f+10^{1})(f+10^{2})^{2}(f+10^{5})^{2}(f+10^{6})}
+\end{small}
+\end{align}
+
+%-----------------------------------------------------------------------%
+
 \item Express the slope of $G(f)$ in terms of $f$.
 \\
-\solution
+\solution\\
 \begin{align}
-Slope = \dfrac{d(20\log H(f))}{df}
+Slope = \nabla G(f) &= \dfrac{d(G(f))}{df}
 \end{align}
 
 \begin{align}
- Slope = 
+ \nabla G(f) = 
  \begin{cases} 
         0 & 0 < f < 10^{1} \\
       -20 & 10 < f < 10^{2} \\
@@ -34,14 +86,16 @@ Slope = \dfrac{d(20\log H(f))}{df}
       -60 & 10^{6} < f < 10^{7}   
  \end{cases}
 \end{align}
-%
+
+%-----------------------------------------------------------------------%
+
 \item Express the change of slope of $G(f)$ in terms of $f$.
 \\
-\solution
-$ \Delta$ Slope = Change in slope at f
+\solution\\
+$\Delta(\nabla G(f))$  = Change of slope G(f) at f
 
 \begin{align}
- \Delta Slope = 
+ \Delta(\nabla G(f)) = 
  \begin{cases} 
       -20 &  f = 10^{1} \\
       -40 &  f = 10^{2} \\
@@ -52,121 +106,49 @@ $ \Delta$ Slope = Change in slope at f
  \end{cases}
 \end{align}
 
+%-----------------------------------------------------------------------%
+
 \item Find the number of poles and zeros of $H(s)$.
 \\
-\solution 
-
-\item Find the location of the poles and zeros of $H(s)$.
-The number of system poles $N_{p}$ and number of system zeros $N_{z}$ in the frequency range 1 Hz $\leq$ f $\leq$ $10^{7}$ Hz is
-
-\item Obtain the transfer function of $H(s)$.
-\item Obtain the Bode plot and the slope plot for $H(s)$ and verify with  Fig. \ref{fig:ee18btech11001_bode}
-
-\solution 
-\textsf{Let us consider a generalized transfer gain}
-\\
-\begin{align}
-H(s) = k \dfrac{(s-z_{1})(s-z_{2})...(s-z_{m-1})(s-z_{m})}{(s-p_{1})(s-p_{2})....(s-p_{n-1})(s-p_{n})}
-\end{align}
-\begin{multline}
-Gain = 20\log\abs{H(s)} = 20\log \abs{k} + 20\log \abs{s-z_{1}} 
-    \\
-    + 20\log \abs{s-z_{2}} + \dots + 20\log \abs{s-z_{m}} - 20\log \abs{s-p_{1}} 
-    \\
-    - 20\log \abs{s-p_{2}} - \dots - 20\log \abs{s-z_{n}} 
-\end{multline}
-
-
-
-Let us consider a $ 20\log \abs{s-z_{1}} $
-\\
-Let $s = j\omega$
-\\
-
-\begin{align}
-	20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}} 
-\end{align}
-
-Based on log scale plot approximations,to the 
-left of $z_{1} \hspace{5pt} \omega << z_{1} $ and towards right  $ \omega >> z_{1} $
-For $\omega < z_{1}$
-
-\begin{align}
-	20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}} 
-	&= 20 \log \abs{z_{1}} 
-	&= constant 
-\end{align}  
-i.e. $Slope = 0$
-\\
-For $\omega > z_{1}$
-
-\begin{align}
-	20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}} = 20 \log \abs{\omega} 
-\end{align}
-
-i.e $Slope = 20 $
-\\
-\textbf{When a zero is encountered the slope always increases by 20 dB/decade}
-\\
-Doing similar analysis for $ - 20\log \abs{s-p_{1}} $  We conclude
-\\
+\solution \\
+\textbf{When a zero is encountered the slope always increases by 20 dB/decade}\\
 \textbf{When a pole is encountered the slope always decreases by 20 dB/decade}
-\\
-
-
-Final Transfer function is
-
-\begin{align}
-	H(f) = \dfrac{K(f+10^{3})(f+10^{4})^{2}}{(f+10^{1})(f+10^{2})^{2}(f+10^{5})^{2}(f+10^{6})1}
-\end{align}
-\\
-% \begin{itemize}
-% \\
-% \item $f = 10 Hz $
-% \\Slope$(f<10) = 0$ dB/dec
-% \\Slope$(f>10) = -20$ dB/dec 
-% \\ $ \Delta Slope = -20$ dB/dec
-% \\ $n_{z} = 0$   $n_{p} = 1 $
-% \\
-% \\
-% \item $f = 10^{2}$ Hz 
-% \\Slope($f<10^{2}$) = -20 dB/dec
-% \\Slope($f>10^{2}$) = -60 dB/dec 
-% \\ $ \Delta Slope$ = -40 dB/dec
-% \\ $n_{z} = 0$ $n_{p} = 2 $
-% \\ 
-% \item $f = 10^{3} Hz $
-% \\Slope($f<10^{3}$) = -60 dB/dec
-% \\Slope($f>10^{3}$) = -40 dB/dec 
-% \\ $ \Delta Slope$ = +20 dB/dec
-% \\ $n_{z} = 1$   $n_{p} = 0 $
-% \\
-% \item $f = 10^{4} Hz$ 
-% \\Slope($f < 10^{4}$) = -40 dB/dec
-% \\Slope($f>10^{4}$) = 0 dB/dec 
-% \\ $ \Delta Slope$ = +40 dB/dec
-% \\ $n_{z} = 2$   $n_{p} = 0 $
-% \\
-% \item $f = 10^{5}$ Hz 
-% \\Slope($f<10^{5}$) = 0 dB/dec
-% \\Slope($f>10^{5}$) = -40 dB/dec 
-% \\ $ \Delta Slope$ = -40 dB/dec
-% \\ $n_{z} = 0$   $n_{p} = 2 $
-% \\
-% \item $f = 10^{6}$ Hz 
-% \\Slope($f<10^{2}$) = -40 dB/dec
-% \\Slope($f>10^{2}$) = -60 dB/dec 
-% \\ $ \Delta Slope$ = -20 dB/dec
-% \\ $n_{z} = 0$   $n_{p} = 1 $
-% \\
-% \end{itemize}
 \begin{align}
 	N_{p} = 6  
 \end{align}
 \begin{align}
 	N_{z} = 3
 \end{align}
-Python plot of the obtained transfer function is shown in fig 2.2
+
+%-----------------------------------------------------------------------%
+
+\item Find the location of the poles and zeros of $H(s).$The number of system poles $N_{p}$ and number of system zeros $N_{z}$ in the frequency range 1 Hz $\leq$ f $\leq$ $10^{7}$ Hz is.
+\\
+\solution\\
+\textbf{When a zero is encountered the slope always increases by 20 dB/decade}\\
+\textbf{When a pole is encountered the slope always decreases by 20 dB/decade}
+
+So, Poles are encountered at\\ $f = 10,10^2,10^5,10^6$\\
+Similarly Zeros are encountered at\\ $f = 0,10^3,10^4$
+
+%-----------------------------------------------------------------------%
+
+\item Obtain the transfer function of $H(s)$.
+\\
+\solution\
+$ s = j\omega = j2\pi f$
+\begin{align}
+\begin{small}
+	H(s) = \dfrac{K(s+j2\pi 10^{3})(s+j2\pi 10^{4})^{2}}{(s+j2\pi 10^{1})(s+j2\pi 10^{2})^{2}(s+j2\pi 10^{5})^{2}(s+j2\pi 10^{6})}
+\end{small}
+\end{align}\\
+
+%-----------------------------------------------------------------------%
+
+\item Obtain the Bode plot and the slope plot for $H(s)$ and verify with  Fig. \ref{fig:ee18btech11001_bode}
+\\
+\solution
+Bode Plot of obtained Transfer Function is 
 \begin{figure}[htp]
     \centering
     \includegraphics[width=\columnwidth]{./figs/ee18btech11001/ee18btech11001_2.eps}
@@ -174,100 +156,132 @@ Python plot of the obtained transfer function is shown in fig 2.2
     \label{fig:bode}
 \end{figure}
 
-
-
-%\item
-%%\begin{flushleft}
-%\textsf{ For an LTI system, the Bode plot for its gain is as illustrated in the Fig. \ref{fig:galaxy} The number of system poles $N_{p}$ and number of system zeros $N_{z}$ in the frequency range 1 Hz $\leq$ f $\leq$ $10^{7}$ Hz is}
-%%\end{flushleft}
+\end{enumerate}
 %
-%\begin{figure}[htp]
+%
+%
+%\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+%\numberwithin{equation}{enumi}
+%
+%\item For an LTI system, the Bode plot for its gain defined as
+%\begin{align}
+%G(s) = 20\log\abs{H(s)}
+%\label{eq:ee18btech11001_gain}
+%\end{align}
+%is as illustrated in the Fig. \ref{fig:ee18btech11001_bode}. Express $G(f)$ in terms of $f$.
+%\begin{figure}[ht!]
 %    \centering
 %    \includegraphics[width=\columnwidth]{./figs/ee18btech11001/ee18btech11001.eps}
 %    \caption{}
-%    \label{fig:galaxy}
+%    \label{fig:ee18btech11001_bode}
 %\end{figure}
+%\\
+%\solution 
+%\item Express the slope of $G(f)$ in terms of $f$.
+%\\
+%\solution
+%\begin{align}
+%Slope = \dfrac{d(20\log H(f))}{df}
+%\end{align}
 %
-%{ Solution:- }
-%\begin{flushleft}
-%\textsf{Let us consider a generalized transfer gain}
-%\end{flushleft}
-%\vspace{10pt}
-%$H(s) = k \dfrac{(s-z_{1})(s-z_{2})...(s-z_{m-1})(s-z_{m})}{(s-p_{1})(s-p_{2})....(s-p_{n-1})(s-p_{n})}$\vspace{18pt}\\
-%\begin{multline}
-%    Gain = 20\log\abs{H(s)} = 20\log \abs{k} + 20\log \abs{s-z_{1}} 
-%    \\
-%    + 20\log \abs{s-z_{2}} + \dots + 20\log \abs{s-z_{m}} - 20\log \abs{s-p_{1}} 
-%    \\
-%    - 20\log \abs{s-p_{2}} - \dots - 20\log \abs{s-z_{n}} 
-%\end{multline}
-%
-%\begin{left}
-%
-%
-%Let us consider a $ 20\log \abs{s-z_{1}} $
-%\\
-%Let $s = j\omega$
-%\\
-%$ 20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}} $
-%\\
-%Based on log scale plot approximations,to the 
-%\\
-%left of $z_{1} \hspace{5pt} \omega << z_{1} $ and towards right  $ \omega >> z_{1} $
-%\\ \\
-%For $\omega < z_{1}$
-%\\
-%$ 20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}} = 20 \log \abs{z_{1}} 
-%\\
-%= constant $ i.e. Slope = 0
-%\\
-%\\
-%For $\omega > z_{1}$
-%\\
-%$ 20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}} = 20 \log \abs{\omega} $
-%\\
-%i.e Slope = 20
-%\\
-%\textbf{When a zero is encountered the slope always increases by 20 dB/decade}
-%\\
-%\\
-%Doing similar analysis for $ - 20\log \abs{s-p_{1}} $  We conclude
-%\\
-%\textbf{When a pole is encountered the slope always decreases by 20 dB/decade}
-%\\
-%\end{left}
-%
-%$Slope = \dfrac{d(20\log H(f))}{df}$
-%
-%\[ Slope = \begin{cases} 
+%\begin{align}
+% Slope = 
+% \begin{cases} 
 %        0 & 0 < f < 10^{1} \\
 %      -20 & 10 < f < 10^{2} \\
 %      -60 & 10^{2} < f < 10^{3} \\
 %      -40 & 10^{3} < f < 10^{4} \\
 %       0 & 10^{4} < f < 10^{5} \\
 %      -40 & 10^{5} < f < 10^{6} \\
-%      -60 & 10^{6} < f < 10^{7} \\
-%      
-%   \end{cases}
-%\]
-%$ \Delta Slope = $ Change in slope at f
+%      -60 & 10^{6} < f < 10^{7}   
+% \end{cases}
+%\end{align}
+%%
+%\item Express the change of slope of $G(f)$ in terms of $f$.
+%\\
+%\solution
+%$ \Delta$ Slope = Change in slope at f
 %
-%\[  \Delta Slope = \begin{cases} 
+%\begin{align}
+% \Delta Slope = 
+% \begin{cases} 
 %      -20 &  f = 10^{1} \\
 %      -40 &  f = 10^{2} \\
 %      +20 &  f = 10^{3} \\
 %      +40 &  f = 10^{4} \\
 %      -40 &  f = 10^{5} \\
-%      -20 &  f = 10^{6} \\
-%      
-%      
-%   \end{cases}
-%\]
+%      -20 &  f = 10^{6} 
+% \end{cases}
+%\end{align}
+%
+%\item Find the number of poles and zeros of $H(s)$.
+%\\
+%\solution 
+%
+%\item Find the location of the poles and zeros of $H(s)$.
+%The number of system poles $N_{p}$ and number of system zeros $N_{z}$ in the frequency range 1 Hz $\leq$ f $\leq$ $10^{7}$ Hz is
+%
+%\item Obtain the transfer function of $H(s)$.
+%\item Obtain the Bode plot and the slope plot for $H(s)$ and verify with  Fig. \ref{fig:ee18btech11001_bode}
+%
+%\solution 
+%\textsf{Let us consider a generalized transfer gain}
+%\\
+%\begin{align}
+%H(s) = k \dfrac{(s-z_{1})(s-z_{2})...(s-z_{m-1})(s-z_{m})}{(s-p_{1})(s-p_{2})....(s-p_{n-1})(s-p_{n})}
+%\end{align}
+%\begin{multline}
+%Gain = 20\log\abs{H(s)} = 20\log \abs{k} + 20\log \abs{s-z_{1}} 
+%    \\
+%    + 20\log \abs{s-z_{2}} + \dots + 20\log \abs{s-z_{m}} - 20\log \abs{s-p_{1}} 
+%    \\
+%    - 20\log \abs{s-p_{2}} - \dots - 20\log \abs{s-z_{n}} 
+%\end{multline}
+%
+%
+%
+%Let us consider a $ 20\log \abs{s-z_{1}} $
+%\\
+%Let $s = j\omega$
+%\\
+%
+%\begin{align}
+%	20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}} 
+%\end{align}
+%
+%Based on log scale plot approximations,to the 
+%left of $z_{1} \hspace{5pt} \omega << z_{1} $ and towards right  $ \omega >> z_{1} $
+%For $\omega < z_{1}$
+%
+%\begin{align}
+%	20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}} 
+%	&= 20 \log \abs{z_{1}} 
+%	&= constant 
+%\end{align}  
+%i.e. $Slope = 0$
+%\\
+%For $\omega > z_{1}$
+%
+%\begin{align}
+%	20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}} = 20 \log \abs{\omega} 
+%\end{align}
+%
+%i.e $Slope = 20 $
+%\\
+%\textbf{When a zero is encountered the slope always increases by 20 dB/decade}
+%\\
+%Doing similar analysis for $ - 20\log \abs{s-p_{1}} $  We conclude
+%\\
+%\textbf{When a pole is encountered the slope always decreases by 20 dB/decade}
+%\\
+%
 %
 %Final Transfer function is
-%\\ \\ 
-%$H(f) = \dfrac{K(f+10^{3})(f+10^{4})^{2}}{(f+10^{1})(f+10^{2})^{2}(f+10^{5})^{2}(f+10^{6})}$
-%\\ \\
+%
+%\begin{align}
+%	H(f) = \dfrac{K(f+10^{3})(f+10^{4})^{2}}{(f+10^{1})(f+10^{2})^{2}(f+10^{5})^{2}(f+10^{6})1}
+%\end{align}
+%\\
 %% \begin{itemize}
 %% \\
 %% \item $f = 10 Hz $
@@ -308,15 +322,163 @@ Python plot of the obtained transfer function is shown in fig 2.2
 %% \\ $n_{z} = 0$   $n_{p} = 1 $
 %% \\
 %% \end{itemize}
-%\\ \boxed{$N_{p} = 6 $   $N_{z} = 3 $}
-%\\ \\
-%Python plot of the obtained transfer function is shown in fig \ref{fig:bode}
+%\begin{align}
+%	N_{p} = 6  
+%\end{align}
+%\begin{align}
+%	N_{z} = 3
+%\end{align}
+%Python plot of the obtained transfer function is shown in fig 2.2
 %\begin{figure}[htp]
 %    \centering
-%    \includegraphics[width=\columnwidth]{./figs/ee18btech11001/ee18btech11001_2.png}
+%    \includegraphics[width=\columnwidth]{./figs/ee18btech11001/ee18btech11001_2.eps}
 %    \caption{}
 %    \label{fig:bode}
 %\end{figure}
-\end{enumerate}
 %
 %
+%
+%%\item
+%%%\begin{flushleft}
+%%\textsf{ For an LTI system, the Bode plot for its gain is as illustrated in the Fig. \ref{fig:galaxy} The number of system poles $N_{p}$ and number of system zeros $N_{z}$ in the frequency range 1 Hz $\leq$ f $\leq$ $10^{7}$ Hz is}
+%%%\end{flushleft}
+%%
+%%\begin{figure}[htp]
+%%    \centering
+%%    \includegraphics[width=\columnwidth]{./figs/ee18btech11001/ee18btech11001.eps}
+%%    \caption{}
+%%    \label{fig:galaxy}
+%%\end{figure}
+%%
+%%{ Solution:- }
+%%\begin{flushleft}
+%%\textsf{Let us consider a generalized transfer gain}
+%%\end{flushleft}
+%%\vspace{10pt}
+%%$H(s) = k \dfrac{(s-z_{1})(s-z_{2})...(s-z_{m-1})(s-z_{m})}{(s-p_{1})(s-p_{2})....(s-p_{n-1})(s-p_{n})}$\vspace{18pt}\\
+%%\begin{multline}
+%%    Gain = 20\log\abs{H(s)} = 20\log \abs{k} + 20\log \abs{s-z_{1}} 
+%%    \\
+%%    + 20\log \abs{s-z_{2}} + \dots + 20\log \abs{s-z_{m}} - 20\log \abs{s-p_{1}} 
+%%    \\
+%%    - 20\log \abs{s-p_{2}} - \dots - 20\log \abs{s-z_{n}} 
+%%\end{multline}
+%%
+%%\begin{left}
+%%
+%%
+%%Let us consider a $ 20\log \abs{s-z_{1}} $
+%%\\
+%%Let $s = j\omega$
+%%\\
+%%$ 20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}} $
+%%\\
+%%Based on log scale plot approximations,to the 
+%%\\
+%%left of $z_{1} \hspace{5pt} \omega << z_{1} $ and towards right  $ \omega >> z_{1} $
+%%\\ \\
+%%For $\omega < z_{1}$
+%%\\
+%%$ 20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}} = 20 \log \abs{z_{1}} 
+%%\\
+%%= constant $ i.e. Slope = 0
+%%\\
+%%\\
+%%For $\omega > z_{1}$
+%%\\
+%%$ 20\log \abs{s-z_{1}} = 20\log \abs{\sqrt{\omega^{2} + z_{1}^{2}}} = 20 \log \abs{\omega} $
+%%\\
+%%i.e Slope = 20
+%%\\
+%%\textbf{When a zero is encountered the slope always increases by 20 dB/decade}
+%%\\
+%%\\
+%%Doing similar analysis for $ - 20\log \abs{s-p_{1}} $  We conclude
+%%\\
+%%\textbf{When a pole is encountered the slope always decreases by 20 dB/decade}
+%%\\
+%%\end{left}
+%%
+%%$Slope = \dfrac{d(20\log H(f))}{df}$
+%%
+%%\[ Slope = \begin{cases} 
+%%        0 & 0 < f < 10^{1} \\
+%%      -20 & 10 < f < 10^{2} \\
+%%      -60 & 10^{2} < f < 10^{3} \\
+%%      -40 & 10^{3} < f < 10^{4} \\
+%%       0 & 10^{4} < f < 10^{5} \\
+%%      -40 & 10^{5} < f < 10^{6} \\
+%%      -60 & 10^{6} < f < 10^{7} \\
+%%      
+%%   \end{cases}
+%%\]
+%%$ \Delta Slope = $ Change in slope at f
+%%
+%%\[  \Delta Slope = \begin{cases} 
+%%      -20 &  f = 10^{1} \\
+%%      -40 &  f = 10^{2} \\
+%%      +20 &  f = 10^{3} \\
+%%      +40 &  f = 10^{4} \\
+%%      -40 &  f = 10^{5} \\
+%%      -20 &  f = 10^{6} \\
+%%      
+%%      
+%%   \end{cases}
+%%\]
+%%
+%%Final Transfer function is
+%%\\ \\ 
+%%$H(f) = \dfrac{K(f+10^{3})(f+10^{4})^{2}}{(f+10^{1})(f+10^{2})^{2}(f+10^{5})^{2}(f+10^{6})}$
+%%\\ \\
+%%% \begin{itemize}
+%%% \\
+%%% \item $f = 10 Hz $
+%%% \\Slope$(f<10) = 0$ dB/dec
+%%% \\Slope$(f>10) = -20$ dB/dec 
+%%% \\ $ \Delta Slope = -20$ dB/dec
+%%% \\ $n_{z} = 0$   $n_{p} = 1 $
+%%% \\
+%%% \\
+%%% \item $f = 10^{2}$ Hz 
+%%% \\Slope($f<10^{2}$) = -20 dB/dec
+%%% \\Slope($f>10^{2}$) = -60 dB/dec 
+%%% \\ $ \Delta Slope$ = -40 dB/dec
+%%% \\ $n_{z} = 0$ $n_{p} = 2 $
+%%% \\ 
+%%% \item $f = 10^{3} Hz $
+%%% \\Slope($f<10^{3}$) = -60 dB/dec
+%%% \\Slope($f>10^{3}$) = -40 dB/dec 
+%%% \\ $ \Delta Slope$ = +20 dB/dec
+%%% \\ $n_{z} = 1$   $n_{p} = 0 $
+%%% \\
+%%% \item $f = 10^{4} Hz$ 
+%%% \\Slope($f < 10^{4}$) = -40 dB/dec
+%%% \\Slope($f>10^{4}$) = 0 dB/dec 
+%%% \\ $ \Delta Slope$ = +40 dB/dec
+%%% \\ $n_{z} = 2$   $n_{p} = 0 $
+%%% \\
+%%% \item $f = 10^{5}$ Hz 
+%%% \\Slope($f<10^{5}$) = 0 dB/dec
+%%% \\Slope($f>10^{5}$) = -40 dB/dec 
+%%% \\ $ \Delta Slope$ = -40 dB/dec
+%%% \\ $n_{z} = 0$   $n_{p} = 2 $
+%%% \\
+%%% \item $f = 10^{6}$ Hz 
+%%% \\Slope($f<10^{2}$) = -40 dB/dec
+%%% \\Slope($f>10^{2}$) = -60 dB/dec 
+%%% \\ $ \Delta Slope$ = -20 dB/dec
+%%% \\ $n_{z} = 0$   $n_{p} = 1 $
+%%% \\
+%%% \end{itemize}
+%%\\ \boxed{$N_{p} = 6 $   $N_{z} = 3 $}
+%%\\ \\
+%%Python plot of the obtained transfer function is shown in fig \ref{fig:bode}
+%%\begin{figure}[htp]
+%%    \centering
+%%    \includegraphics[width=\columnwidth]{./figs/ee18btech11001/ee18btech11001_2.png}
+%%    \caption{}
+%%    \label{fig:bode}
+%%\end{figure}
+%\end{enumerate}
+%%
+%%

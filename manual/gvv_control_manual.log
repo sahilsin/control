@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  12 APR 2020 13:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  12 APR 2020 15:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1300,7 +1300,59 @@ ngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-) (./gvv_control_manual.aux)
+) (./gvv_control_manual.aux
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+
+LaTeX Warning: Label `eq:ee18btech11001_system' multiply defined.
+
+
+LaTeX Warning: Label `fig:sec_order' multiply defined.
+
+)
 \openout1 = `gvv_control_manual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 84.
@@ -1449,13 +1501,13 @@ File: ./figs/ee18btech11003/P1.eps Graphic file (type eps)
 
 <./figs/ee18btech11003/P1.eps>
 File: ./figs/ee18btech11003/P2.eps Graphic file (type eps)
- <./figs/ee18btech11003/P2.eps>
-File: ./figs/ee18btech11003/L1.eps Graphic file (type eps)
-
-<./figs/ee18btech11003/L1.eps> [1
+ <./figs/ee18btech11003/P2.eps> [1
 
 
 ]
+File: ./figs/ee18btech11003/L1.eps Graphic file (type eps)
+
+<./figs/ee18btech11003/L1.eps>
 File: ./figs/ee18btech11003/L2.eps Graphic file (type eps)
  <./figs/ee18btech11003/L2.eps>
 File: ./figs/ee18btech11003/L3.eps Graphic file (type eps)
@@ -1480,12 +1532,9 @@ File: ./figs/ee18btech11003/Delta2.eps Graphic file (type eps)
  <./figs/ee18btech11003/Delta2.eps>
 File: ./figs/ee18btech11003/Delta3.eps Graphic file (type eps)
 
-<./figs/ee18btech11003/Delta3.eps>
+<./figs/ee18btech11003/Delta3.eps> [2]
 File: ./figs/ee18btech11003/Delta4.eps Graphic file (type eps)
- <./figs/ee18btech11003/Delta4.eps> [2]
-Underfull \vbox (badness 1107) has occurred while \output is active []
-
-)
+ <./figs/ee18btech11003/Delta4.eps>)
 (./chapters/ee18btech11001.tex
 File: ./figs/ee18btech11001/ee18btech11001.eps Graphic file (type eps)
  <./figs/ee18btech11001/ee18btech11001.eps>
@@ -1663,16 +1712,13 @@ Underfull \hbox (badness 4792) in paragraph at lines 87--90
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
-(./chapters/ee18btech11008.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [9])
-(./chapters/ee18btech11006.tex
+(./chapters/ee18btech11008.tex) (./chapters/ee18btech11006.tex
+(./tables/ee18btech11004.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
 
  []
 
@@ -1683,7 +1729,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
-Underfull \hbox (badness 10000) in paragraph at lines 194--197
+Underfull \hbox (badness 10000) in paragraph at lines 296--299
 
  []
 
@@ -1693,18 +1739,10 @@ LaTeX Warning: Reference `eq:ee18btech11004_state' on page 12 undefined on inpu
 t line 24.
 
 
-LaTeX Warning: Reference `eq:ee18btech11004_siso' on page 12 undefined on input
- line 26.
-
-
 LaTeX Font Warning: Command \LARGE invalid in math mode on input line 43.
 
 
 LaTeX Font Warning: Command \LARGE invalid in math mode on input line 43.
-
-
-Underfull \vbox (badness 2951) has occurred while \output is active []
-
 
 
 LaTeX Font Warning: Command \LARGE invalid in math mode on input line 56.
@@ -1748,43 +1786,46 @@ Underfull \hbox (badness 4608) in paragraph at lines 20--31
 \OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The Nyquist plot is a graph
  []
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
 [12]
-
-LaTeX Warning: Command \j invalid in math mode on input line 37.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 37.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 44.
-
 
 LaTeX Warning: Command \j invalid in math mode on input line 57.
 
@@ -1819,12 +1860,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-[13]
+
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
@@ -1840,31 +1881,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
- [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
+) (./chapters/ee18btech11017.tex [14]
+File: ./figs/ee18btech11017.eps Graphic file (type eps)
+ <./figs/ee18btech11017.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 73--81
+
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 85--88
+[]\OT1/txr/bx/n/12 Application: \OT1/txr/m/n/12 Phase mar-gin is mea-sure of
+ []
+
+
+Underfull \hbox (badness 4181) in paragraph at lines 88--91
+[]\OT1/txr/bx/n/12 Example:\OT1/txr/m/n/12 Phase Mar-gin is a mea-sure of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+[]\OT1/txr/m/n/12 At the gain cross over fre-quency
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--124
+\OT1/txr/m/n/12 For both the cases the pole in the
+ []
+
+) [15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 323.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 323.
  (./gvv_control_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 321.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 323.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 323.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
-(rerunfilecheck)             Checksum: C5523206F1D405D13A962B3DEB96D4E0;927.
+(rerunfilecheck)             Checksum: A82366A2A6E11D76157E6C81A8799B49;975.
 
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 321.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 323.
  ) 
 Here is how much of TeX's memory you used:
- 32133 strings out of 492624
- 691508 string characters out of 6119216
+ 32148 strings out of 492624
+ 691808 string characters out of 6119216
  902694 words of memory out of 5000000
- 35399 multiletter control sequences out of 15000+600000
+ 35408 multiletter control sequences out of 15000+600000
  76571 words of font info for 192 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,18n,69p,528b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,18n,69p,528b,1876s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (14 pages, 154356 bytes).
+Output written on gvv_control_manual.dvi (15 pages, 168220 bytes).

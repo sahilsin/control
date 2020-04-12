@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {2.2}Example}{5}{subsection.2.2}% 
 \contentsline {section}{\numberline {3}Second order System}{6}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}Damping}{6}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Example}{7}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.2}Example}{6}{subsection.3.2}% 
 \contentsline {section}{\numberline {4}Routh Hurwitz Criterion}{7}{section.4}% 
 \contentsline {subsection}{\numberline {4.1}Routh Array}{7}{subsection.4.1}% 
 \contentsline {subsection}{\numberline {4.2}Marginal Stability}{8}{subsection.4.2}% 
@@ -12,5 +12,5 @@
 \contentsline {section}{\numberline {5}State-Space Model}{10}{section.5}% 
 \contentsline {subsection}{\numberline {5.1}Controllability and Observabiity}{10}{subsection.5.1}% 
 \contentsline {subsection}{\numberline {5.2}Second Order System}{12}{subsection.5.2}% 
-\contentsline {section}{\numberline {6}Nyquist Plot}{13}{section.6}% 
-\contentsline {section}{\numberline {7}Compensators}{14}{section.7}% 
+\contentsline {section}{\numberline {6}Nyquist Plot}{12}{section.6}% 
+\contentsline {section}{\numberline {7}Compensators}{13}{section.7}% 

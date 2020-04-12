@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  12 APR 2020 09:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  12 APR 2020 10:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1760,54 +1760,44 @@ Underfull \hbox (badness 4792) in paragraph at lines 87--90
 []\OT1/txr/m/n/12 Repeat the above us-ing the de-ter-mi-nant
  []
 
-[9]) (./chapters/ee18btech11008.tex) (./chapters/ee18btech11004.tex
-(./tables/ee18btech11004.tex)
-Underfull \vbox (badness 4279) has occurred while \output is active []
+[9]) (./chapters/ee18btech11008.tex) (./chapters/ee18btech11006.tex [10]
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
- [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (3.55016pt too wide) detected at line 114
-[]
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 194--197
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 195--198
-
- []
-
-
-Overfull \hbox (36.08884pt too wide) detected at line 204
-[]
- []
-
-
-Overfull \hbox (35.44969pt too wide) detected at line 208
-[]
  []
 
 ) (./chapters/ee18btech11011.tex
 
-LaTeX Font Warning: Command \LARGE invalid in math mode on input line 43.
+LaTeX Warning: Reference `eq:ee18btech11004_state' on page 12 undefined on inpu
+t line 24.
+
+
+LaTeX Warning: Reference `eq:ee18btech11004_siso' on page 12 undefined on input
+ line 26.
 
 
 LaTeX Font Warning: Command \LARGE invalid in math mode on input line 43.
 
-[12]
+
+LaTeX Font Warning: Command \LARGE invalid in math mode on input line 43.
+
 
 LaTeX Font Warning: Command \LARGE invalid in math mode on input line 56.
 
 
 LaTeX Font Warning: Command \LARGE invalid in math mode on input line 56.
 
-) (./chapters/ee18btech11007.tex
+[12]) (./chapters/ee18btech11007.tex
 
 LaTeX Warning: Command \j invalid in math mode on input line 8.
 
@@ -1844,9 +1834,6 @@ Underfull \hbox (badness 4608) in paragraph at lines 20--31
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 LaTeX Warning: Command \j invalid in math mode on input line 37.
 
 
@@ -1881,6 +1868,10 @@ LaTeX Warning: Command \j invalid in math mode on input line 44.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+Underfull \vbox (badness 1552) has occurred while \output is active []
+
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 57.
@@ -1937,30 +1928,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--58
 
  []
 
-[14])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 320.
- [15
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 320.
+) [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
  (./gvv_control_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 320.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 320.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 321.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
 (rerunfilecheck)             Checksum: C5523206F1D405D13A962B3DEB96D4E0;927.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 320.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 321.
  ) 
 Here is how much of TeX's memory you used:
- 32103 strings out of 492624
- 691043 string characters out of 6119216
+ 32100 strings out of 492624
+ 690967 string characters out of 6119216
  904694 words of memory out of 5000000
- 35369 multiletter control sequences out of 15000+600000
+ 35368 multiletter control sequences out of 15000+600000
  68203 words of font info for 165 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,18n,69p,528b,1159s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (15 pages, 155724 bytes).
+Output written on gvv_control_manual.dvi (14 pages, 153028 bytes).

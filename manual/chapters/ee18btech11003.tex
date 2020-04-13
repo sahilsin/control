@@ -9,59 +9,66 @@
 		
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/block_diagram.tex}}
 	\end{center}
-\caption{signal flow block diagram}
-\label{fig:sec_order}
+\caption{Block Diagram}
+\label{fig:ee18btech11003_block_diagram}
 \end{figure}
-\solution
-Signal flow graph of given above block diagram is
+\solution The signal flow graph of the block diagram in Fig. \ref{fig:ee18btech11003_block_diagram} is available in Fig. \ref{fig:ee18btech11003_signal_flow}
+%
 \begin{figure}[!ht]
 \begin{center}
 		
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/signal_flow.tex}}
 	\end{center}
-\caption{signal flow graph}
-\label{fig:sec_order}
+\caption{Signal Flow Graph}
+\label{fig:ee18btech11003_signal_flow}
 \end{figure}
 %
 \renewcommand{\thefigure}{\theenumi}
-\item Draw all the forward paths and compute the respective gains.
+\item Draw all the forward paths in Fig. \ref{fig:ee18btech11003_signal_flow}
+and compute the respective gains.
 \renewcommand{\thefigure}{\theenumi.\arabic{figure}}
-\solution
-Here, 
+\\
+\solution The forward paths are available in Figs. \ref{fig:ee18btech11003_P1}
+ and \ref{fig:ee18btech11003_P2}.  The respective gains are
 \begin{align}
-P_1=\frac{s}{s}=1
+P_1&=s \brak{\frac{1}{s}}=1
+\\
+P_2&=(1/s)(1/s)=1/s^2
 \end{align}
-
+%
 \begin{figure}[!ht]
 \begin{center}
 		
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/P1.tex}}
 	\end{center}
 \caption{$P_1$}
-\label{fig:sec_order}
+\label{fig:ee18btech11003_P1}
 \end{figure}
-
- 
-\begin{align}
-P_2=(1/s)(1/s)=1/s^2
-\end{align}
-
+%
 \begin{figure}[!ht]
 \begin{center}
 		
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/P2.tex}}
 	\end{center}
 \caption{$P_2$}
-\label{fig:sec_order}
+\label{fig:ee18btech11003_P2}
 \end{figure}
 \renewcommand{\thefigure}{\theenumi}
-
-\item Draw the loops and calculate the respective gains.
+%
+\item Draw all the loops in Fig. \ref{fig:ee18btech11003_signal_flow} and calculate the respective gains.
 \renewcommand{\thefigure}{\theenumi.\arabic{figure}}
 \\
-\solution 
+\solution The loops are available in Figs. \ref{fig:ee18btech11003_L1}-\ref{fig:ee18btech11003_L4}
+and the corresponding gains are
+%
 \begin{align}
-L_1=(-1)(s)=-s
+L_1&=(-1)(s)=-s
+\\
+L_2&=s\brak{\frac{1}{s}}\brak{-1}=-1
+\\
+L_3&=\brak{\frac{1}{s}}(-1)=-\frac{1}{s}
+\\
+L_4&=\brak{\frac{1}{s}}\brak{\frac{1}{s}}(-1)=-\frac{1}{s^2}
 \end{align}
 
 \begin{figure}[!ht]
@@ -70,13 +77,10 @@ L_1=(-1)(s)=-s
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/L1.tex}}
 	\end{center}
 \caption{$L_1$}
-\label{fig:sec_order}
+\label{fig:ee18btech11003_L1}
 \end{figure}
 
 
-\begin{align}
-L_2=\frac{s}{-s}=-1
-\end{align}
 
 \begin{figure}[!ht]
 \begin{center}
@@ -84,13 +88,10 @@ L_2=\frac{s}{-s}=-1
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/L2.tex}}
 	\end{center}
 \caption{$L_2$}
-\label{fig:sec_order}
+\label{fig:ee18btech11003_L2}
 \end{figure}
 
 
-\begin{align}
-L_3=(\frac{1}{s})*(-1)=\frac{-1}{s}
-\end{align}
 
 \begin{figure}[!ht]
 \begin{center}
@@ -98,13 +99,10 @@ L_3=(\frac{1}{s})*(-1)=\frac{-1}{s}
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/L3.tex}}
 	\end{center}
 \caption{$L_3$}
-\label{fig:sec_order}
+\label{fig:ee18btech11003_L3}
 \end{figure}
 
 
-\begin{align}
-L_4=(\frac{1}{s})(\frac{1}{s})(-1)=\frac{-1}{s^2}
-\end{align}
 
 \begin{figure}[!ht]
 \begin{center}
@@ -112,7 +110,7 @@ L_4=(\frac{1}{s})(\frac{1}{s})(-1)=\frac{-1}{s^2}
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11003/L4.tex}}
 	\end{center}
 \caption{$L_4$}
-\label{fig:sec_order}
+\label{fig:ee18btech11003_L4}
 \end{figure}
 
 \renewcommand{\thefigure}{\theenumi}
@@ -175,7 +173,7 @@ L_1=(-1)(s)=-s
 \caption{$L_1$}
 \label{fig:sec_order}
 \end{figure}
-%
+
 
 \begin{align}
 L_2=\frac{s}{-s}=-1
@@ -243,7 +241,7 @@ $\Delta_1 = 1$
 \caption{$\Delta_2$}
 \label{fig:sec_order}
 \end{figure}
-%
+
 After removing forward path from loop2 we will get Delta2
 
 $\Delta_2 = 1$
@@ -269,7 +267,7 @@ $\Delta_3 = 1$
 \caption{$\Delta_4$}
 \label{fig:sec_order}
 \end{figure}
-%
+
 After removing forward path from loop4 we will get Delta4
 
 $\Delta_4 = 1$

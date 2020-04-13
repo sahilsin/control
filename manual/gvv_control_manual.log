@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  13 APR 2020 08:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  13 APR 2020 09:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1325,33 +1325,6 @@ LaTeX Warning: Label `fig:sec_order' multiply defined.
 
 LaTeX Warning: Label `fig:sec_order' multiply defined.
 
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
-
-LaTeX Warning: Label `eq:ee18btech11001_system' multiply defined.
-
-
-LaTeX Warning: Label `fig:sec_order' multiply defined.
-
 )
 \openout1 = `gvv_control_manual.aux'.
 
@@ -1560,7 +1533,7 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 )
-Underfull \hbox (badness 4531) in paragraph at lines 159--160
+Underfull \hbox (badness 4531) in paragraph at lines 157--158
 []$\OT1/txr/m/n/12 ^^A$ = 1 - (Sum of all in-di-vid-ual loop
  []
 
@@ -2068,12 +2041,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 325.
  ) 
 Here is how much of TeX's memory you used:
- 32383 strings out of 492624
- 696217 string characters out of 6119216
- 929710 words of memory out of 5000000
- 35611 multiletter control sequences out of 15000+600000
+ 32390 strings out of 492624
+ 696415 string characters out of 6119216
+ 931243 words of memory out of 5000000
+ 35618 multiletter control sequences out of 15000+600000
  76571 words of font info for 192 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,18n,74p,528b,1876s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (16 pages, 266320 bytes).
+Output written on gvv_control_manual.dvi (16 pages, 268780 bytes).

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  14 APR 2020 10:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  14 APR 2020 11:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1572,61 +1572,14 @@ File: ./figs/ee18btech11009/pppp.eps Graphic file (type eps)
 LaTeX Warning: Command \j invalid in math mode on input line 13.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: Command \j invalid in math mode on input line 27.
 
 
+LaTeX Warning: Command \j invalid in math mode on input line 39.
 
-LaTeX Warning: Command \j invalid in math mode on input line 15.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 16.
-
-
-Underfull \hbox (badness 1622) in paragraph at lines 30--32
-[]\OT1/txr/m/n/12 Now, from the Trans-fer equa-tion we can
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--34
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--41
-
- []
-
-
-Underfull \hbox (badness 3965) in paragraph at lines 37--41
-\OT1/txr/m/n/12 phase $\OML/txmi/m/it/12 ^^^$ \OT1/txr/m/n/12 is the sum of all
- the phases
- []
-
-
-Underfull \vbox (badness 1127) has occurred while \output is active []
-
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 74--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--81
-
- []
-
-) (./chapters/ee18btech11012.tex (./tables/ee18btech11012.tex)
-(./tables/ee18btech11012_damp.tex
+File: ./figs/ee18btech11009/ee18btech11009.eps Graphic file (type eps)
+<./figs/ee18btech11009/ee18btech11009.eps> [4]) (./chapters/ee18btech11012.tex
+(./tables/ee18btech11012.tex) (./tables/ee18btech11012_damp.tex
 Overfull \hbox (3.09998pt too wide) in paragraph at lines 207--207
 []|$[]$| 
  []
@@ -1649,7 +1602,7 @@ Overfull \hbox (2.43596pt too wide) in paragraph at lines 229--229
 )) (./chapters/ee18btech11002.tex [5]
 File: ./figs/ee18btech11002.eps Graphic file (type eps)
  <./figs/ee18btech11002.eps>
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 7291) has occurred while \output is active []
 
 )
 (./chapters/ee18btech11014.tex
@@ -2069,12 +2022,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 327.
  ) 
 Here is how much of TeX's memory you used:
- 32403 strings out of 492624
- 696592 string characters out of 6119216
- 929861 words of memory out of 5000000
- 35640 multiletter control sequences out of 15000+600000
+ 32407 strings out of 492624
+ 696751 string characters out of 6119216
+ 929942 words of memory out of 5000000
+ 35644 multiletter control sequences out of 15000+600000
  79696 words of font info for 203 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,18n,74p,528b,1876s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (15 pages, 246388 bytes).
+Output written on gvv_control_manual.dvi (15 pages, 247448 bytes).

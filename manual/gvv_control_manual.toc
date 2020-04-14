@@ -17,3 +17,4 @@
 \contentsline {section}{\numberline {8}Gain Margin}{14}{section.8}% 
 \contentsline {section}{\numberline {9}Compensators}{15}{section.9}% 
 \contentsline {subsection}{\numberline {9.1}Phase Lead}{15}{subsection.9.1}% 
+\contentsline {section}{\numberline {10}Oscillator}{16}{section.10}% 

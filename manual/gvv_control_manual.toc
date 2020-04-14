@@ -15,3 +15,5 @@
 \contentsline {section}{\numberline {6}Nyquist Plot}{11}{section.6}% 
 \contentsline {section}{\numberline {7}Compensators}{12}{section.7}% 
 \contentsline {section}{\numberline {8}Phase Margin}{13}{section.8}% 
+\contentsline {section}{\numberline {9}Gain Margin}{14}{section.9}% 
+\contentsline {section}{\numberline {10}Stability}{15}{section.10}% 

@@ -39,5 +39,57 @@ and the system is critically damped.  Similarly, the damping factors for other s
 \label{table:ee18btech11012_damp}
 \end{table}
 
-\item By choosing an appropriate input, illustrate the effect of damping using a Python code to sketch the response.  
+\item Find the step response of each $H(s)$ in Table \ref{table:ee18btech11012_damp}.
+\\
+\solution 
+\begin{enumerate}
+\item For 
+\begin{align}
+ H(s)=\frac{15}{s^2+5s+15},
+\end{align}
+%
+the step response is
+\begin{equation}
+y(t)=25te^{-5t}u(t)
+\label{eq:ee18btech11012_over}
+\end{equation}
+\item For 
+%
+\begin{align}
+H(s)=\frac{25}{s^2+10s+25},
+\end{align}
+%
+the step response is
+\begin{equation}
+y(t)=\frac{30}{\sqrt{35}}e^{\frac{-5t}{2}}\sin\brak{\frac{\sqrt{35}}{2}t}u(t)
+\label{eq:ee18btech11012_critical}
+\end{equation}
+\item  For 
+
+\begin{align}
+H(s)=\frac{35}{s^2+18s+35},
+\end{align}
+the step response is
+\begin{equation}
+    y(t)=\frac{35}{2\sqrt{46}}\sbrak{e^{(-9+\sqrt{46})t}-e^{(-9-\sqrt{46})t}}u(t)
+\label{eq:ee18btech11012_under}
+\end{equation}
+\end{enumerate}
+\item Illustrate the effect of damping by plotting the step responses in \eqref{eq:ee18btech11012_over}-\eqref{eq:ee18btech11012_under}
+\\
+\solution The following code
+\begin{lstlisting}
+codes/ee18btech11012.py
+\end{lstlisting}
+%
+plots the desired graphs in
+Fig.     \ref{fig:ee18btech11012}. 
+%
+\begin{figure}[ht!]
+    \includegraphics[width=\columnwidth]{./figs/ee18btech11012.eps}
+    \caption{}
+    \label{fig:ee18btech11012}
+\end{figure}
+
+using a Python code to sketch the response.  
 \end{enumerate}

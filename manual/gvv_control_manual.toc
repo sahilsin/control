@@ -19,6 +19,6 @@
 \contentsline {section}{\numberline {6}Nyquist Plot}{13}{section.6}% 
 \contentsline {section}{\numberline {7}Compensators}{15}{section.7}% 
 \contentsline {subsection}{\numberline {7.1}Phase Lead}{15}{subsection.7.1}% 
-\contentsline {section}{\numberline {8}Oscillator}{15}{section.8}% 
-\contentsline {section}{\numberline {9}Gain Margin}{17}{section.9}% 
-\contentsline {section}{\numberline {10}Phase Margin}{19}{section.10}% 
+\contentsline {section}{\numberline {8}Gain Margin}{16}{section.8}% 
+\contentsline {section}{\numberline {9}Phase Margin}{17}{section.9}% 
+\contentsline {section}{\numberline {10}Oscillator}{19}{section.10}% 

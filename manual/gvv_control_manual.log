@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  15 APR 2020 20:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  15 APR 2020 21:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1316,6 +1316,9 @@ LaTeX Warning: Label `eq:sec_order_op_1' multiply defined.
 LaTeX Warning: Label `eq:sec_order_op_1' multiply defined.
 
 
+LaTeX Warning: Label `fig:ee18btech11019_hart' multiply defined.
+
+
 LaTeX Warning: Label `fig:ee18btech11019_hart_block' multiply defined.
 
 )
@@ -1885,43 +1888,10 @@ LaTeX Warning: Command \j invalid in math mode on input line 76.
 LaTeX Warning: Command \j invalid in math mode on input line 76.
 
 File: figs/ee18btech11021.eps Graphic file (type eps)
-<figs/ee18btech11021.eps>) (./chapters/ee18btech11019.tex
-File: ./figs/ee18btech11019/hart.eps Graphic file (type eps)
-
-<./figs/ee18btech11019/hart.eps> (./figs/ee18btech11019/osc.tex) [15]
-Underfull \hbox (badness 2626) in paragraph at lines 57--61
-\OT1/txr/m/n/12 os-cil-la-tor os-cil-lates, it de-pends on R/L/C
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--61
-
- []
-
-File: ./figs/ee18btech11019/lc.eps Graphic file (type eps)
-<./figs/ee18btech11019/lc.eps>
+<figs/ee18btech11021.eps>) (./chapters/ee18btech11016.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-)
-(./chapters/ee18btech11016.tex
+ [15]
 
 LaTeX Warning: Command \j invalid in math mode on input line 9.
 
@@ -1985,7 +1955,6 @@ LaTeX Warning: Command \j invalid in math mode on input line 23.
 
 LaTeX Warning: Command \j invalid in math mode on input line 23.
 
-[17]
 
 LaTeX Warning: Command \j invalid in math mode on input line 35.
 
@@ -2023,6 +1992,7 @@ LaTeX Warning: Command \j invalid in math mode on input line 70.
 
 LaTeX Warning: Command \j invalid in math mode on input line 70.
 
+[16]
 
 LaTeX Warning: Command \j invalid in math mode on input line 97.
 
@@ -2083,10 +2053,6 @@ LaTeX Warning: Command \j invalid in math mode on input line 124.
 LaTeX Warning: Command \j invalid in math mode on input line 124.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
-
 LaTeX Warning: Command \j invalid in math mode on input line 130.
 
 
@@ -2126,6 +2092,10 @@ LaTeX Warning: Command \j invalid in math mode on input line 22.
 LaTeX Warning: Command \j invalid in math mode on input line 22.
 
 
+Underfull \vbox (badness 3780) has occurred while \output is active []
+
+ [17]
+
 LaTeX Warning: Command \j invalid in math mode on input line 34.
 
 
@@ -2140,7 +2110,6 @@ LaTeX Warning: Command \j invalid in math mode on input line 45.
 
 LaTeX Warning: Command \j invalid in math mode on input line 45.
 
-[19]
 
 LaTeX Warning: Command \j invalid in math mode on input line 47.
 
@@ -2170,19 +2139,119 @@ LaTeX Warning: Command \j invalid in math mode on input line 101.
 
 LaTeX Warning: Command \j invalid in math mode on input line 101.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
 File: ./figs/ee18btech11017/ee18btech11017_2.eps Graphic file (type eps)
-<./figs/ee18btech11017/ee18btech11017_2.eps> [20])
+
+<./figs/ee18btech11017/ee18btech11017_2.eps>) (./chapters/ee18btech11019.tex
+(./figs/ee18btech11019/hart.tex) (./figs/ee18btech11019/osc.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 33--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--56
+
+ []
+
+
+Underfull \vbox (badness 1533) has occurred while \output is active []
+
+ [19]
+
+LaTeX Warning: Reference `fig:ee18btech11019_block2' on page 20 undefined on in
+put line 60.
+
+
+LaTeX Warning: Reference `fig:ee18btech11019_block2' on page 20 undefined on in
+put line 69.
+
+
+LaTeX Warning: Reference `fig:ee18btech11019_block3' on page 20 undefined on in
+put line 69.
+
+
+LaTeX Warning: Reference `fig:ee18btech11019_block2' on page 20 undefined on in
+put line 80.
+
+
+LaTeX Warning: Reference `fig:ee18btech11019_block3' on page 20 undefined on in
+put line 84.
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 100--103
+\OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 For any LC os-cil-la-tor, Now,we
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--103
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (23.54735pt too wide) detected at line 119
+[]
+ []
+
+
+Overfull \hbox (31.45543pt too wide) detected at line 124
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--148
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 162--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--196
+
+ []
+
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
  [21
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
-
-(./gvv_control_manual.aux)
+ (./gvv_control_manual.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 341.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
-(rerunfilecheck)             Checksum: 1B9FC5195B759D25093616317C6A86E7;1375.
+(rerunfilecheck)             Checksum: ACFDEE7C42A704AE4DB7D68991B39E90;1375.
 
 
 LaTeX Warning: There were undefined references.
@@ -2193,12 +2262,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
  ) 
 Here is how much of TeX's memory you used:
- 33004 strings out of 492624
- 711690 string characters out of 6119216
- 962658 words of memory out of 5000000
- 36215 multiletter control sequences out of 15000+600000
- 79696 words of font info for 203 fonts, out of 8000000 for 9000
+ 33514 strings out of 492624
+ 724125 string characters out of 6119216
+ 962713 words of memory out of 5000000
+ 36719 multiletter control sequences out of 15000+600000
+ 84303 words of font info for 220 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,18n,74p,528b,1457s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (21 pages, 309628 bytes).
+Output written on gvv_control_manual.dvi (21 pages, 328264 bytes).

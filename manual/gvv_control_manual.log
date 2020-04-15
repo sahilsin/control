@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  15 APR 2020 20:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  15 APR 2020 20:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1310,15 +1310,6 @@ Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
 ) (./gvv_control_manual.aux
 
-LaTeX Warning: Label `eq:ee18btech11007_trans_mat' multiply defined.
-
-
-LaTeX Warning: Label `eq:ee18btech11007_u_mat' multiply defined.
-
-
-LaTeX Warning: Label `eq:ee18btech11003_gain_sol' multiply defined.
-
-
 LaTeX Warning: Label `eq:sec_order_op_1' multiply defined.
 
 
@@ -2204,10 +2195,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
 Here is how much of TeX's memory you used:
  33004 strings out of 492624
  711690 string characters out of 6119216
- 962643 words of memory out of 5000000
+ 962658 words of memory out of 5000000
  36215 multiletter control sequences out of 15000+600000
  79696 words of font info for 203 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,18n,74p,528b,1457s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (21 pages, 309272 bytes).
+Output written on gvv_control_manual.dvi (21 pages, 309628 bytes).

@@ -1,4 +1,4 @@
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
 \numberwithin{equation}{enumi}
 
 \item The Block diagram of a system is illustrated in the figure shown, where $X(s)$ is the input and $Y(s)$ is the output.  Draw the equivalent signal flow graph. 
@@ -157,9 +157,10 @@ T(s)&=\frac{P_1 \Delta_1+P_2 \Delta_2}{\Delta}
 &=\frac{1 +\frac{1}{s^2}}{1-(-s-1-\frac{1}{s}-\frac{1}{s^2})}
 \\
 &=\frac{s^2+1}{s^3+2s^2+s+1}
+\label{eq:ee18btech11003_gain_sol}
 \end{align}
 %
 after simplification.
 \renewcommand{\thefigure}{\theenumi}
-\item Write a program to compute Mason's gain formula, given the branch nodes and gains for each path.
+%\item Write a program to compute Mason's gain formula, given the branch nodes and gains for each path.
 \end{enumerate}

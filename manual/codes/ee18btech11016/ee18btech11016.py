@@ -5,6 +5,11 @@ April 12,2020
 Released under GNU GPL
 '''
 
+#if using termux
+import subprocess
+import shlex
+#end if
+
 #Bode phase plot using scipy in python
 from scipy import signal
 import matplotlib.pyplot as plt
@@ -19,7 +24,7 @@ w,mag,phase = signal.bode(s1)
 
 subplot(2,1,1)
 #plt.xlabel('Frequency(rad/s)')
-plt.ylabel('Mag(deg)')
+plt.ylabel('Mag')
 plt.title('Magnitude plot')
 plt.plot(0.7,-3.5,'o')
 plt.text(0.7,-3.5, '({}, {})'.format(0.7,-3.5))
@@ -42,4 +47,10 @@ plt.grid()
 
 
 
-plt.show()
+#if using termux
+plt.savefig('./figs/ee18btech11016/ee18btech11016.pdf')
+plt.savefig('./figs/ee18btech11016/ee18btech11016.eps')
+subprocess.run(shlex.split("termux-open ./figs/ee18btech11016/ee18btech11016.pdf"))
+#else
+#plt.show()
+

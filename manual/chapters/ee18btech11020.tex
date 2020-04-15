@@ -1,0 +1,51 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item Consider a standard control system with negative feedback and the transfer functions 
+\begin{align}
+G(s) = \frac{1}{(s+1)(s+2)}
+\end{align}
+and
+\begin{align}
+H(s) = \frac{s+\alpha}{s}
+\end{align}
+%
+Find  $\alpha$ so that 
+the closed loop system has poles on the imaginary axis.
+\solution The 
+Characteristic equation is
+\begin{align}
+ 1 + G(s)H(s) &= 0
+\\
+\implies 1 + \sbrak{\frac{1}{(s+1)(s+2)}}\sbrak{\frac{s+\alpha}{s}} &= 0
+\\
+\implies s^3+3s^2+3s+\alpha = 0
+\label{eq:ee18btech11020_char}
+\end{align}
+Constructing the routh array for \eqref{eq:ee18btech11020_char},
+%
+\begin{align}
+\mydet{s^3\\s^2}
+\mydet{1 & 3 \\ 3 & \alpha }
+\label{eq:sec_order_op_1}
+\\
+\implies \mydet{s^3\\s^2\\s^1}
+\mydet{1 & 3 \\ 3 & \alpha \\  \frac{9-\alpha}{3} & 0} \label{eq:sec_order_op_1}
+\\
+\implies \mydet{s^3\\s^2\\s^1\\s^0}
+\mydet{1 & 3 \\ 3 & \alpha \\  \frac{9-\alpha}{3} & 0\\ \alpha & 0} \label{eq:sec_order_op_1}
+\end{align}
+For poles on the imaginary axis any one of the rows should be zero.  Thus,
+\begin{align}
+\frac{9-\alpha}{3} = 0
+\implies   \alpha = 9
+\end{align}
+Substituting $\alpha = 9$ in \eqref{eq:ee18btech11020_char},
+\begin{align}
+s^3+3s^2+3s+9&=0
+\\
+\implies s &= -3,\pm\j\sqrt{3}
+\end{align}
+%
+verifying that poles lie on the imaginary axis.
+\end{enumerate}

@@ -1,0 +1,196 @@
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item Fig. \label{fig:ee18btech11019_hart} shows a Hartley oscillator.
+
+\begin{figure}[ht]
+    \begin{center}
+	    \resizebox{\columnwidth}{!}{\input{./figs/ee18btech11019/hart.tex}}
+	\end{center}
+\caption{Hartley oscillator}
+\label{fig:ee18btech11019_hart}
+\end{figure}
+Draw the equivalent block diagram.
+\solution  The block diagram is available in Fig. \label{fig:ee18btech11019_hart_block}
+\begin{figure}[!ht]
+    \begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11019/osc.tex}} %block diagram
+	\end{center}
+\caption{block diagram for oscillator}
+\label{fig:ee18btech11019_hart_block}
+\end{figure}
+%
+\item Find the gain of the oscillator. 
+\\
+\solution The control system in Fig. \ref{fig:ee18btech11019_hart_block} has positive feedback.  Hence, the gain is 
+
+\begin{align}
+    G = \frac{G(s)}{1-G(s)H(s)}
+\label{eq:ee18btech11019_gain}
+\end{align}
+%
+\item Find $G(s)$ and $H(s)$.
+\\
+\solution From figure \ref{fig:ee18btech11019_hart_block}
+Oscillators gain can be given as follows:\\
+\begin{align}
+    A(V_{in} + BV_{out}) =V_{out}\\
+    A(V_{in} = (1-AB)V_{out}\\
+    \frac{V_{out}}{V_{in}} = \frac{A}{1 - AB}
+\end{align}
+%
+resulting in \eqref{eq:ee18btech11019_gain}.\\
+
+
+
+\item State the condition for sustained oscillations. Justify.
+
+\solution Condition for sustained oscillation is given by\\
+\begin{align}
+    AB = 1
+\end{align}
+Along with, total phase gain o the circuit should be 0 or 2$\pi$\\
+\textbf{Justification:} as, when $ AB =1 $, gain becomes infinity, and theoretically we can get output, without actually providing input\\
+Total phase gain should be so, as we want our signal to be in phase after every loop traversal.\\
+
+
+\item Find $A$ and $B$.
+
+\solution Consider the below circuit fig \ref{fig:ee18btech11019_block2},its basic form of a LC oscillator.\\
+%\begin{figure}[!ht]
+%    \begin{center}
+%		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11019/blc.tex}}
+%		
+%	\end{center}
+%\caption{block diagram for oscillator}
+%\label{fig:ee18btech11019_block2}
+%\end{figure}
+The above figure \ref{fig:ee18btech11019_block2} can also be drawn as fig. \ref{fig:ee18btech11019_block3},when feedback is considered as load :\\
+%\begin{figure}[!ht]
+%    \begin{center}
+%		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11019/lc.tex}}
+%		
+%	\end{center}
+%\caption{block diagram for oscillator}
+%\label{fig:ee18btech11019_block3}
+%\end{figure}
+We know that feedback gain is B, i.e, $\frac{V_0}{V_f} = B$\\
+Applying voltage divider rule we get\\
+From figure \ref{fig:ee18btech11019_block2}
+\begin{align}
+    B = \frac{Z_1}{Z_1 + Z_3}
+\end{align}
+From fig. \eqref{fig:ee18btech11019_block3}
+\begin{align}
+    A = \frac{V_o}{V_{in}} = \frac{A_vZ_L}{R_o + Z_L}\\
+\end{align}    
+    where,\\
+    $A_v$ is the amplification factor of the opamp\\
+    $v_{in}$ is the internal voltage in amplifier\\
+    $Z_L$ is equivalent load across output
+         
+\begin{align}    
+    Z_L = \frac{(Z_1 + Z_3)Z_2}{Z_1+Z_2+Z_3}
+\end{align}
+
+
+\item Find the frequency of oscillation using the condition that $AB = 1$.
+
+\solution For any LC oscillator, 
+Now,we know that $AB = 1$ for sustained oscillations, putting the the above terms in the equation\\
+on solving,\\
+\begin{align}    
+    AB = \frac{Z_1Z_2A}{(Z_1+Z_2+Z_3)R_o+ Z_2(Z_1+Z_3)}
+\end{align}    
+\textbf{Hartley oscillator}:\\
+The Hartley oscillator is one of the classical LC feedback circuits,i.e feedback is made of LC components.Below here 
+\begin{align}
+    Z_1 = SL_1 (inductor)\\
+    Z_2 = SL_2 (inductor)\\
+    Z_3 = \frac{1}{SC} (capacitor)
+\end{align}
+
+putting that in and equating $AB=1$ we get,
+
+\begin{align}
+1 = \frac{S^{2}L_1L_2A}{(SL_1+SL_2+\frac{1}{SC})R_o+ SL_2(SL_1+\frac{1}{SC})}\\
+S^{2}L_1L_2A = (SL_1+SL_2+\frac{1}{SC})R_o+ SL_2(SL_1+\frac{1}{SC})
+\end{align}
+
+As we need, to find frequency, put S =jw
+\begin{align}
+    \omega^{2}L_1L_2A = j(\omega L_1 + \omega L_2 -\frac{1}{\omega C})R_o -\omega L_2(\omega L_1 + \frac{1}{\omega C})
+\end{align}
+To satisfy the above equation, equating imaginary term to Zero.
+\begin{align}    
+    \omega L_1 + \omega L_2  = \frac{1}{\omega C}\\
+    \omega = \frac{1}{\sqrt{(L_1+L_2)(C)}}\\
+    f = \frac{1}{2\pi \sqrt{(L_1+L_2)(C)}}
+\end{align}
+\begin{align}
+    B = \frac{Z_1}{Z_1 + Z_3} = \frac{Z_1}{Z_2}\\
+      = \frac{L_1}{L_2}
+    \label{eq:ee18btech11019_B_gain}  
+\end{align}
+\begin{align}
+    A =  \frac{L_2}{L_1} 
+\label{eq:ee18btech11019_Amp_gain}
+\end{align}
+ 
+\item For Hartley oscillator frequency generated can be given as 
+\begin{align}
+    f = \frac{1}{2\pi\sqrt{(L_1 + L_2)C}}
+    \label{eq:ee18btech11019_frequency}
+\end{align}
+Fig. \ref{fig:ee18btech11019_hart} shows a
+Hartley oscillator built using opamp.\\
+
+We can easily compare between \ref{fig:ee18btech11019_hart_block} and \ref{fig:ee18btech11019_hart}\\
+We know that for an opamp A is given by:
+\begin{align}
+    A = \frac{R_2}{R_1}
+\end{align}
+Here,
+\begin{align}
+    A(S) = \frac{R_2}{R_1} = \frac{L_2}{L_1}
+\end{align}
+referring to \ref{eq:ee18btech11019_Amp_gain}\\
+And,
+\begin{align}
+    B(s) = \frac{V_o}{V_f} = \frac{L_1}{L_2}
+\end{align}
+referring to \ref{eq:ee18btech11019_B_gain}\\
+\newline
+\item \textbf{Simulation:}\\
+Taking the following values,and applying in \ref{eq:ee18btech11019_frequency} \\
+
+
+
+\begin{tabular}{|c|c|}
+\hline
+Component & Value  \\
+\hline
+$R_1$         & 10K$\Omega$   \\
+\hline
+$R_2$         & 100K$\Omega$   \\
+\hline
+$R_3$         & $\sim$  \\
+\hline
+$L_1$         & $1 \mu H$     \\
+\hline
+$L_2$         & $1 \mu H$   \\
+\hline
+C         & 120 pF \\
+\hline
+\end{tabular}
+
+
+We get f = 103 MHz\\
+Feedback factor for Hartley given by:
+\begin{align}
+B =\frac{L_1}{L_2}= 1
+\end{align}
+W.K.T, $AB = 1$\\
+$\therefore$ Minimum amplification Gain,A = 1\\
+\end{enumerate}

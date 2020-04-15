@@ -1,0 +1,75 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item Write the transition equations in Fig. \ref{fig:ee18btech11003_signal_flow}.
+\\
+\solution The equations are
+\begin{align}
+N_1&=X(s)-N_4-N_5
+\\
+N_2&=N_1
+\\
+N_3&=N_2(s+1/s)
+\\
+N_4&=N_3
+\\
+Y(s) = N_5&=N_4/s
+\label{eq:ee18btech11007_state}
+\end{align}
+%
+\item Obtain the state transition matrix from \eqref{eq:ee18btech11007_state}
+\\
+\solution The state transition matrix is
+\begin{align}
+\vec{T} = \myvec{0 & 0 & 0 & -1 & -1 \ \\
+1 & 0 & 0 & 0 & 0   \\
+ 0 & s+1/s & 0 & 0 & 0 \\
+ 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1/s & 0 }
+\label{eq:ee18btech11007_trans_mat}
+\end{align}
+%
+\item State the equivalent matrix form of  Mason's gain formula 
+\label{prob:ee18btech11007_mat_form}
+\\
+\solution Let
+\begin{align}
+    \vec{U}=\brak{\vec{I}-\vec{T}}^{-1}
+\label{eq:ee18btech11007_u_mat}
+\end{align}
+%
+The gain from node m to node n of the graph is $U_{nm}$
+\item Find the transfer function for the sytem in Fig. \ref{fig:ee18btech11003_block_diagram}
+\\
+\solution From \eqref{eq:ee18btech11007_trans_mat} and \eqref{eq:ee18btech11007_u_mat},
+\begin{align}
+\vec{I}-\vec{T} &= \myvec{1 & 0 & 0 & 1 & 1 \ \\
+-1 & 1 & 0 & 0 & 0   \\
+ 0 & -s-1/s & 1 & 0 & 0 \\
+ 0 & 0 & -1 & 1 & 0 \\
+0 & 0 & 0 & -1/s & 1 }
+\\
+\implies U_{40}&=\frac{\mydet{
+-1&1&0&0 
+\\0 &-s-1/s&1&0 
+\\0&0&-1&1
+\\0&0&0&-1/s}}
+{
+\myvec{1 & 0 & 0 & 1 & 1 \ \\
+-1 & 1 & 0 & 0 & 0   \\
+ 0 & -s-1/s & 1 & 0 & 0 \\
+ 0 & 0 & -1 & 1 & 0 \\
+0 & 0 & 0 & -1/s & 1 }
+}
+ \label{eq:ee18btech11007_u_gain},
+\end{align}
+%
+using the cofactor expansion and  Problem \ref{prob:ee18btech11007_mat_form}. The gain is obtained as \eqref{eq:ee18btech11003_gain_sol} after expanding the determinants and simplifying.
+%
+\item Write a program to compute the gain using the matrix method.
+\\
+\solution The following code computes the transfer function 
+\begin{lstlisting}
+codes/ee18btech11007/MasonsGain.py
+\end{lstlisting}
+\end{enumerate}

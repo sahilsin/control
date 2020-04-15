@@ -1,0 +1,160 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item The state equation and the output equation of a control system are given below : 
+\begin{align}
+    \dot{X} =
+  \left[ {\begin{array}{cc}
+   -4 & -1.5 \\
+   4 & 0 \\
+  \end{array} }\right] X +
+  \left[ {\begin{array}{cc}
+      4 \\
+      0 \\
+  \end{array} }\right] U
+\end{align}
+\begin{align}
+    Y = 
+ \left[ {\begin{array}{cc}
+   1.5 & 0.625 \\
+  \end{array} }\right] X
+\end{align}
+  
+Then transfer function representation of the system is 
+\\
+
+\item 
+\solution
+when
+\begin{align}
+    \dot{X} = AX + BU
+\end{align}
+\begin{align}
+    Y = CX + DU
+\end{align}
+\vskip 0.1cm
+where \; A,\,B,\,C,\,D \; are matrices 
+  \\* Then\,the\, transfer\, function\, can\, be\, find\, using
+\vskip 0.1cm
+\begin{align}
+    T(s) = C[(sI-A)^{-1}].B \,+ D\
+\end{align}
+\vskip 0.1cm
+From the given state space representation of the system, we can find matrices as
+\begin{align}
+    A=
+  \left[ {\begin{array}{cc}
+   -4 & -1.5 \\
+   4 & 0 \\
+  \end{array} } \right]
+\end{align}
+\begin{align}
+    B = \left[ {\begin{array}{cc}
+      4 \\
+      0 \\
+  \end{array} }\right]
+\end{align}
+\begin{align}
+     C = \left[ {\begin{array}{cc}
+   1.5 & 0.625 \\
+  \end{array} }\right]
+\end{align}
+\\We can find the transfer function using
+\begin{align}
+    T(s) = C[(sI - A)^{-1}].B
+\end{align}
+\begin{align}
+    (sI - A) = \left[ {\begin{array}{cc}
+   s & 0 \\
+   0 & s \\
+  \end{array} } \right] - \left[ {\begin{array}{cc}
+   -4 & -1.5 \\
+   4 & 0 \\
+  \end{array} } \right]
+\end{align}
+\begin{align}
+    (sI - A) = \left[ {\begin{array}{cc}
+   s + 4 & -1.5 \\
+   -4 & s  \\
+  \end{array} } \right]
+\end{align}
+\begin{align}
+    |sI - A| \;\;\;= s(s+4) - (-4)\times (-1.5)
+\end{align}
+\vskip 0.1cm
+\begin{align}
+    |sI - A| = s^2 + 4s+ 6
+\end{align}
+\vskip 0.1cm
+and from (1.2.9)
+\begin{align}
+    Adj[sI - A] = \left[ {\begin{array}{cc}
+     s & -1.5 \\
+      4 & s+4 \\
+  \end{array} } \right]
+\end{align}
+\\*Hence
+\begin{align}
+    [sI - A]^{-1} = \frac{Adj[sI - A]}{|sI - A|} 
+\end{align}
+\vskip 0.1cm
+\begin{align}
+    = \left[ {\begin{array}{cc}
+   \frac{s}{(s^2 + 4s + 6)} & \frac{-1.5}{(s^2 + 4s + 6)} \\
+   \frac{4}{(s^2 + 4s + 6)} & \frac{(s + 4)}{(s^2 + 4s + 6)} \\
+  \end{array} } \right]
+\end{align}
+\vskip 0.1cm
+\begin{align}
+    [sI - A]^{-1}.B = \left[ {\begin{array}{cc}
+   \frac{s}{(s^2 + 4s + 6)} & \frac{-1.5}{(s^2 + 4s + 6)} \\
+   \frac{4}{(s^2 + 4s + 6)} & \frac{(s + 4)}{(s^2 + 4s + 6)} \\
+  \end{array} } \right]\left[ {\begin{array}{cc}
+      4   \\
+      0 \\
+  \end{array} }\right]
+\end{align}
+\vskip 0.1cm
+\begin{align}
+    \dot{.\hspace{.095in}.}\hspace{.5in} [sI - A]^{-1}.B =  \left[ {\begin{array}{cc}
+   \frac{4s}{(s^2 + 4s + 6)} \\
+   \frac{16}{(s^2 + 4s + 6)} \\
+  \end{array} } \right]
+\end{align}
+\vskip 0.1cm
+\begin{align*}
+    Substituting\,the\,  values\, of\, [sI - A]^{-1}.B\,
+    \\ and\, C\, in\, equation\, (1.2.7)
+\end{align*}
+\vskip 0.1cm
+\begin{align}
+     T(s) = \left[ {\begin{array}{cc}
+   1.5 & 0.625 \\
+  \end{array} }\right]\left[ {\begin{array}{cc}
+   \frac{4s}{(s^2 + 4s + 6)} \\
+   \frac{16}{(s^2 + 4s + 6)} \\
+  \end{array} } \right]
+\end{align}
+\vskip 0.1cm
+\begin{align}
+    T(s) = \left[ {\begin{array}{cc}
+   \frac{6s}{(s^2 + 4s + 6)} + \frac{10}{(s^2 + 4s + 6)} \\
+   \end{array} } \right]
+\end{align}
+
+
+the\,transfer\, function\, representation\, of\, the\, system\, is
+\vskip 0.1cm
+\begin{align}
+    \dot{.\hspace{.095in}.}\hspace{.5in}
+\bf  T(s) = \left[ {\begin{array}{cc}
+   \frac{6s + 10}{(s^2 + 4s + 6)} 
+  \end{array} } \right]  
+\end{align}
+\item  Verify your  answer using a python code
+\\
+\solution The following python code gives the desired answer
+\begin{lstlisting}
+codes/ee18btech11023.py
+\end{lstlisting}
+\end{enumerate}

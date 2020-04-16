@@ -1,0 +1,64 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item
+Consider the state space realization : 
+\begin{align}
+  \dot{ \vec{x}}(t)=\myvec{0&0\\0&-9}\vec{x}(t) + \myvec{0\\45}u(t)   
+\end{align}
+with initial conditions 
+\begin{align}
+\vec{x}(0) = \myvec{0\\0},
+\end{align}
+ where $u(t)$ is the step function.  Find 
+\begin{align}
+\lim _ {t \to \infty}\norm{\vec{x}(t)}
+\end{align}
+\\
+\solution
+From \eqref{eq:ee18btech11006_x_init},
+\begin{align}
+     X(s)={(s\vec{I}-\vec{A})^{-1}}\vec{B} U(s)+ (s\vec{I}-\vec{A})^{-1}\vec{x}(0)
+\end{align}
+where
+\begin{align}
+     \vec{A} &=    \myvec{0&0\\0&-9}\\
+     \vec{B} &=    \myvec{0 \\ 45}\\
+U(s) &= \frac{1}{s}
+\end{align}
+%
+The following code 
+\begin{lstlisting}
+codes/ee18btech11026.py
+\end{lstlisting}
+yields 
+%
+\begin{align}
+   \vec{X}(s) = \myvec{0\\\frac{45}{s(s+9)}}    
+\end{align}
+Using the final value theorem,  
+\begin{align}
+\lim _ {t \to \infty}\vec{x}(t) &= \lim _ {s \to 0}\vec{X}(s) 
+\\
+&= \myvec{0\\5} 
+\\
+\implies \lim _ {t \to \infty}\norm{\vec{x}(t)} &= 5
+\end{align}
+
+%\begin{align}
+%\begin{split}
+%     \abs{\lim_{t\rightarrow \infty}x_{2}(t)}  &=\abs{\lim_{s\rightarrow 0 }s X_{2}(s)}  \\
+%                                         & = \abs{\lim_{s\rightarrow 0 } \left(s \frac{45}{s(s+9)}\right)} \\
+%                                         & = \abs{\lim_{s\rightarrow 0 } \left( \frac{45}{s+9}\right)}\\
+%                                         & =   \abs{\frac{45}{9}}\\
+%                                         & = \abs{5}\\
+%                                         & = 5
+%                                         \end{split}
+%\end{align}
+%
+%    Hence  $\lim _ {t \rightarrow \infty}\abs{\sqrt{x_{1}^{2}(t) + x_{2}^{2}(t)}} = 5  $
+%
+%\item 
+%verify the answer with python code
+%https://github.com/Surya291/EE2227-Control-systems/tree/master/Codes
+\end{enumerate}

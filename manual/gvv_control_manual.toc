@@ -16,9 +16,13 @@
 \contentsline {subsection}{\numberline {5.1}Controllability and Observability}{11}{subsection.5.1}% 
 \contentsline {subsection}{\numberline {5.2}Second Order System}{13}{subsection.5.2}% 
 \contentsline {subsection}{\numberline {5.3}Example}{13}{subsection.5.3}% 
-\contentsline {section}{\numberline {6}Nyquist Plot}{13}{section.6}% 
+\contentsline {subsection}{\numberline {5.4}Example}{13}{subsection.5.4}% 
+\contentsline {section}{\numberline {6}Nyquist Plot}{14}{section.6}% 
 \contentsline {section}{\numberline {7}Compensators}{15}{section.7}% 
 \contentsline {subsection}{\numberline {7.1}Phase Lead}{15}{subsection.7.1}% 
+\contentsline {subsection}{\numberline {7.2}Example}{16}{subsection.7.2}% 
 \contentsline {section}{\numberline {8}Gain Margin}{16}{section.8}% 
-\contentsline {section}{\numberline {9}Phase Margin}{17}{section.9}% 
+\contentsline {subsection}{\numberline {8.1}Introduction}{16}{subsection.8.1}% 
+\contentsline {subsection}{\numberline {8.2}Example}{18}{subsection.8.2}% 
+\contentsline {section}{\numberline {9}Phase Margin}{18}{section.9}% 
 \contentsline {section}{\numberline {10}Oscillator}{19}{section.10}% 

@@ -1,0 +1,61 @@
+ 
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item
+Sketch the Polar Plot of
+\begin{align}
+G(s) = \frac{(1+\frac{s}{29})(1+0.0025s)}{s^{3}(1+0.005s)(1+0.001s)}
+\end{align}
+\\
+\solution  
+Given the Open Loop Transfer Function
+\begin{align}
+G(s) = \frac{(1+\frac{s}{29})(1+0.0025s)}{s^{3}(1+0.005s)(1+0.001s)}
+\end{align}
+Now we have substitute s=j$\omega$
+\begin{align}
+G(j\omega) = \frac{(1+\frac{j\omega}{29})(1+0.0025j\omega)}{(j\omega)^{3}(1+0.005j\omega)(1+0.001j\omega)}
+\end{align}
+\begin{align}
+G(j\omega) = \frac{(\frac{j}{\omega^{3}})(1+\frac{j\omega}{29})(1+0.0025j\omega)}{(1+0.005j\omega)(1+0.001j\omega)}
+\end{align}
+\item
+Find the Magnitude of the Transfer Function
+\\
+\solution
+\begin{align}
+G(j\omega) = \frac{(\frac{j}{w^{3}})(1+\frac{j\omega}{29})(1+\frac{j\omega}{40})}{(1+0.005j\omega)(1+0.001j\omega)}
+\end{align}
+\begin{multline}
+      |G(j\omega)| = \frac{(\frac{1}{\omega^{3}})\sqrt{1+(\frac{\omega}{29})^2}\sqrt{1+(\frac{\omega}{40})^2}}{\sqrt{1+(\frac{\omega}{200})^2}\sqrt{1+(\frac{\omega}{1000})^2}}
+\end{multline}\\
+\item
+Find the Phase of Transfer Function\\
+\solution
+\begin{align}
+    \angle G(j\omega) = \angle G(j\omega)_{num} - \angle G(j\omega)_{den}
+\end{align}
+\begin{multline}
+    \angle G(j\omega) = 90 + tan^{-1}(\frac{\omega}{29})+tan^{-1}(\frac{\omega}{40})\\ - tan^{-1}(\frac{\omega}{200})-tan^{-1}(\frac{\omega}{1000})
+\end{multline}
+\item
+Draw Polar Plot using phase of transfer function\\
+\solution\\
+For $\omega$=0 
+\begin{align}
+    |G(j\omega)| = \infty\\
+    \angle G(j\omega) = \frac{\pi}{2}
+\end{align}
+For w= $\infty$
+\begin{align}
+    |G(j\omega)| = 0\\
+    \angle G(j\omega) = \frac{\pi}{2}
+\end{align}
+Polar Plot drawn by varying $\omega$ from 0 to $\infty$.\\
+\includegraphics[scale=0.4]{./figs/polarplot.eps}
+\item
+Verify the Polar Plot the running the following Code\\
+\begin{lstlisting}
+codes/PolarPlot.py
+\end{lstlisting}
+\end{enumerate}

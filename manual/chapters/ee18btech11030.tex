@@ -8,29 +8,15 @@ Find the value of the k for which the system oscillates at 2 rad/s.  Verify your
 %
 \solution Fig. \ref{fig:ee18btech11030_block} models the equivalent closed loop system. 
 
-\tikzstyle{block} = [draw, fill=blue!20, rectangle, 
-    minimum height=0.7cm, minimum width=0.7cm]
-\tikzstyle{sum} = [draw, fill=blue!20, circle, node distance=1cm]
-\tikzstyle{input} = [coordinate]
-\tikzstyle{output} = [coordinate]
-\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11030/ee18btech11030.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11030_block}
+\end{figure}
 
-\begin{tikzpicture}[auto, node distance=2.5cm,>=latex']
-    % We start by placing the blocks
-    \node [input, name=input] {};
-    \node [sum, right of=input] (sum) {};
-    \node [block, right of=sum] (controller) {G(s)};
-    \node [output, right of=controller] (output) {};
-    \node [block, below of=controller] (measurements) {H(s) = 1};
-
-    % Once the nodes are placed, connecting them is easy. 
-    \draw [draw,->] (input) -- node {$R(s)\  +$} (sum);
-    \draw [->] (sum) -- node {$E(s)$} (controller);
-    \draw [->] (controller) -- node [name=y] {$Y(s)$}(output);
-    \draw [->] (y) |- (measurements);
-    \draw [->] (measurements) -| node[pos=0.99] {$-$} 
-        node [near end] {$Y_m(s)$} (sum);
-\end{tikzpicture}
 
 
 %
@@ -73,14 +59,16 @@ codes/ee18btech11030/ee18btech11030.py
 \\
  &= \frac{8}{73(s+\frac{3}{4})}+ \frac{-8s+152}{73(s^2+4)}
 \\
- \implies g_{m}(t) &= \frac{8}{73}e^{-\frac{3t}{4}}u(t)- \brak{\frac{8}{73}}\sin\brak{2t} +\brak{\frac{152}{73}}\cos\brak{2t}
+ \implies g_{m}(t) &= \frac{8}{73}e^{-\frac{3t}{4}}u(t)- \brak{\frac{8}{73}}\sin\brak{2t} 
+\nonumber \\
+&\quad +\brak{\frac{152}{73}}\cos\brak{2t}
 \end{align}
 %
 The following code 
 \begin{lstlisting}
 codes/ee18btech11030/ee18btech11030_1.py
 \end{lstlisting}
-plot Fig. \ref{fig:ee18btech11030_sine} .
+plots Fig. \ref{fig:ee18btech11030_sine} .
 %
 \begin{figure}[!h]
 \centering

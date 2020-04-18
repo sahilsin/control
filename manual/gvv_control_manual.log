@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  17 APR 2020 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  18 APR 2020 07:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2103,39 +2103,42 @@ LaTeX Warning: Command \j invalid in math mode on input line 25.
 
 LaTeX Warning: Command \j invalid in math mode on input line 25.
 
-File: ./figs/ee18btech11025/q42.eps Graphic file (type eps)
-<./figs/ee18btech11025/q42.eps>
+(./figs/ee18btech11025/ee18btech11025.tex)
 
-LaTeX Warning: Command \j invalid in math mode on input line 51.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 51.
+LaTeX Warning: Command \j invalid in math mode on input line 53.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 51.
+LaTeX Warning: Command \j invalid in math mode on input line 53.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 51.
+LaTeX Warning: Command \j invalid in math mode on input line 53.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 51.
+LaTeX Warning: Command \j invalid in math mode on input line 53.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 51.
+LaTeX Warning: Command \j invalid in math mode on input line 53.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 51.
+LaTeX Warning: Command \j invalid in math mode on input line 53.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 51.
+LaTeX Warning: Command \j invalid in math mode on input line 53.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 55.
+LaTeX Warning: Command \j invalid in math mode on input line 53.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 55.
+LaTeX Warning: Command \j invalid in math mode on input line 57.
 
-[18]) (./chapters/ee18btech11017.tex
+
+LaTeX Warning: Command \j invalid in math mode on input line 57.
+
+
+Underfull \vbox (badness 4792) has occurred while \output is active []
+
+ [18])
+(./chapters/ee18btech11017.tex
 
 LaTeX Warning: Command \j invalid in math mode on input line 11.
 
@@ -2347,12 +2350,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 354.
  ) 
 Here is how much of TeX's memory you used:
- 33549 strings out of 492624
- 724987 string characters out of 6119216
- 953631 words of memory out of 5000000
- 36740 multiletter control sequences out of 15000+600000
+ 33556 strings out of 492624
+ 725096 string characters out of 6119216
+ 953629 words of memory out of 5000000
+ 36746 multiletter control sequences out of 15000+600000
  84303 words of font info for 220 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,18n,74p,528b,1874s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (23 pages, 356604 bytes).
+Output written on gvv_control_manual.dvi (23 pages, 362272 bytes).

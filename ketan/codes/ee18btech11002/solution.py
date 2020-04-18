@@ -1,31 +1,32 @@
-#Code by  Abhishek Shetkar
-#April 2, 2020
-#Released under GNU GPL
+# Code by Abhishek Shetkar
+# 16/04/2020
+# Released under GNU GPL
 import numpy as np
 import matplotlib.pyplot as plt
 
-t = 0
+w = 0
 c = 0
 y = 0
 
-# defining a function whose solution of f=0 will give us the value of t for 94% of output
-def s(a):									
-	v = 0.06 - np.exp(-a) - a*np.exp(-a)
+# defining a function whose solution of f=0 will give us the value of w for which |G(jw)| = 1
+def s(w):									
+	v = w*(1+w*w) - 1
 	return v
 
-#loop starts at t = 0, checks wether function is +ve, if not, then increases t by 0.001
+#loop starts at w = 0, checks wether function is +ve, if not, then increases t by 0.001
 while c == 0:				
-	y = s(t) 						
+	y = s(w) 						
 	if y < 0:
 		c = 0
-		t = t+0.001
+		w = w+0.001
 
 	else:
 		c = 1				
 
 
 #approx. the curve as a straight line, we find the crossing point by weighted mean of the two succesive values
-t1 = ((t-0.001)*(-s(t-0.001)) + t*s(t))/(-s(t-0.001) + s(t)) 
+w1 = ((w-0.001)*(-s(w-0.001)) + w*s(w))/(-s(w-0.001) + s(w)) 
 
-print(t1)
-
+print(w1)
+phase = -(np.pi/2) - 2*np.arctan(w1)
+print(phase)

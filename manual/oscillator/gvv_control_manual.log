@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  18 APR 2020 20:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  18 APR 2020 15:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**ketan_control_manual.tex
-(./ketan_control_manual.tex
+**gvv_control_manual.tex
+(./gvv_control_manual.tex
 LaTeX2e <2018-12-01>
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IE
@@ -111,10 +111,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \IEEEPARstartletwidth=\dimen125
 \c@IEEEbiography=\count94
 \@IEEEtranrubishbin=\box28
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/setspace/se
-tspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/was/gensymb
 .sty
@@ -792,6 +788,83 @@ File: pgfmodulematrix.code.tex 2019/02/02 v3.1.1 (3.1.1)
 endlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2019/02/02 v3.1.1 (3.1.1)
 )))
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2019/02/02 v3.1.1 (3.1.1)
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2019/02/02 v3.1.1 (3.1.1)
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
+ries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2019/02/02 v3.1.1 (3.1.1)
+))
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2019/02/02 v3.1.1 (3.1.1)
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
+ries/shapes/pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2019/02/02 v3.1.1 (3.1.1)
+))
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2019/02/02 v3.1.1 (3.1.1)
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
+ries/shapes/pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2019/02/02 v3.1.1 (3.1.1)
+))
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
+ries/shapes/pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
+))
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
+ries/shapes/pgflibraryshapes.callouts.code.tex))
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2019/02/02 v3.1.1 (3.1.1)
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
+ries/shapes/pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\pgfnodepartlowerbox=\box47
+\pgfnodeparttwobox=\box48
+\pgfnodepartthreebox=\box49
+\pgfnodepartfourbox=\box50
+\pgfnodeparttwentybox=\box51
+\pgfnodepartnineteenbox=\box52
+\pgfnodeparteighteenbox=\box53
+\pgfnodepartseventeenbox=\box54
+\pgfnodepartsixteenbox=\box55
+\pgfnodepartfifteenbox=\box56
+\pgfnodepartfourteenbox=\box57
+\pgfnodepartthirteenbox=\box58
+\pgfnodeparttwelvebox=\box59
+\pgfnodepartelevenbox=\box60
+\pgfnodeparttenbox=\box61
+\pgfnodepartninebox=\box62
+\pgfnodeparteightbox=\box63
+\pgfnodepartsevenbox=\box64
+\pgfnodepartsixbox=\box65
+\pgfnodepartfivebox=\box66
+)))
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
+endlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
+
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
+ries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
+\arrowsize=\dimen259
+))
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/circuitikz/
 circuitikz.sty
 Package: circuitikz 2017/05/28{} The CircuiTikz circuit drawing package version
@@ -800,11 +873,6 @@ Package: circuitikz 2017/05/28{} The CircuiTikz circuit drawing package version
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
 endlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
-ries/pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
-\arrowsize=\dimen259
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/circuitik
 z/pgfcirc.defines.tex
@@ -847,388 +915,28 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks41
 \verbatim@line=\toks42
 \verbatim@in@stream=\read2
-) (/data/data/com.termux/files/home/texmf/tex/latex/tfrupee/tfrupee.sty
-Package: tfrupee 2010/12/15 LaTeX Support for the TechFat Rupee symbols by Tech
-Fat (http://techfat.blogspot.com/2010/07/new-open-source-india-rupee-font.html)
-. Adapted for use with TeX by Palle Jorgensen, hamselv(a)pallej.dk
 )
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/hy
-perref.sty
-Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/oberdiek/
-hobsub-hyperref.sty
-Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
-
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/oberdiek/
-hobsub-generic.sty
-Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
-Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
-)
-Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
-Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
-)
-Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
-Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
-Package: xcolor-patch 2016/05/16 xcolor patch
-Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
-Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/ifxetex/i
-fxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/oberdiek/au
-xhook.sty
-Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kv
-options.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-)
-\@linkdim=\dimen270
-\Hy@linkcounter=\count151
-\Hy@pagecounter=\count152
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd
-1enc.def
-File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
-)
-\Hy@SavedSpaceFactor=\count153
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/latexconfig
-/hyperref.cfg
-File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
-)
-Package hyperref Info: Option `breaklinks' set `true' on input line 4393.
-Package hyperref Info: Hyper figures OFF on input line 4519.
-Package hyperref Info: Link nesting OFF on input line 4524.
-Package hyperref Info: Hyper index ON on input line 4527.
-Package hyperref Info: Plain pages OFF on input line 4534.
-Package hyperref Info: Backreferencing OFF on input line 4539.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4772.
-\c@Hy@tempcnt=\count154
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 5125.
-\XeTeXLinkMargin=\dimen271
-\Fld@menulength=\count155
-\Field@Width=\dimen272
-\Fld@charsize=\dimen273
-Package hyperref Info: Hyper figures OFF on input line 6380.
-Package hyperref Info: Link nesting OFF on input line 6385.
-Package hyperref Info: Hyper index ON on input line 6388.
-Package hyperref Info: backreferencing OFF on input line 6395.
-Package hyperref Info: Link coloring OFF on input line 6400.
-Package hyperref Info: Link coloring with OCG OFF on input line 6405.
-Package hyperref Info: PDF/A mode OFF on input line 6410.
-LaTeX Info: Redefining \ref on input line 6450.
-LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count156
-\c@Item=\count157
-\c@Hfootnote=\count158
-)
-Package hyperref Info: Driver (default): hdvips.
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/hd
-vips.def
-File: hdvips.def 2018/11/30 v6.88e Hyperref driver for dvips
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd
-fmark.def
-File: pdfmark.def 2018/11/30 v6.88e Hyperref definitions for pdfmark specials
-
-
-Package hyperref Warning: You have enabled option `breaklinks'.
-(hyperref)                But driver `hdvips.def' does not suppport this.
-(hyperref)                Expect trouble with the link areas of broken links.
-
-\pdf@docset=\toks43
-\pdf@box=\box47
-\pdf@toks=\toks44
-\pdf@defaulttoks=\toks45
-\HyField@AnnotCount=\count159
-\Fld@listcount=\count160
-\c@bookmark@seq@number=\count161
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/oberdiek/re
-runfilecheck.sty
-Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
-)
-\Hy@SectionHShift=\skip66
-))
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
-/tkz-euclide.sty
-Package: tkz-euclide 2011/06/01 1.16 c for plots 2d 
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tk
-z-base.sty
-Package: tkz-base 2018/09/19 1.16 d tkz-base
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
-endlayer/tikz/libraries/tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
-endlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
-File: tikzlibraryplotmarks.code.tex 2019/02/02 v3.1.1 (3.1.1)
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
-ries/pgflibraryplotmarks.code.tex
-File: pgflibraryplotmarks.code.tex 2019/02/02 v3.1.1 (3.1.1)
-))
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
-endlayer/tikz/libraries/tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2019/02/02 v3.1.1 (3.1.1)
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
-endlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2019/02/02 v3.1.1 (3.1.1)
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
-ries/shapes/pgflibraryshapes.misc.code.tex
-File: pgflibraryshapes.misc.code.tex 2019/02/02 v3.1.1 (3.1.1)
-))
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
-endlayer/tikz/libraries/tikzlibrarydecorations.code.tex
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/modul
-es/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen274
-\pgfdecoratedremainingdistance=\dimen275
-\pgfdecoratedinputsegmentcompleteddistance=\dimen276
-\pgfdecoratedinputsegmentremainingdistance=\dimen277
-\pgf@decorate@distancetomove=\dimen278
-\pgf@decorate@repeatstate=\count162
-\pgfdecorationsegmentamplitude=\dimen279
-\pgfdecorationsegmentlength=\dimen280
-)
-\tikz@lib@dec@box=\box48
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
-endlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
-ries/decorations/pgflibrarydecorations.markings.code.tex))
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
-endlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
-ries/decorations/pgflibrarydecorations.pathreplacing.code.tex))
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
-endlayer/tikz/libraries/tikzlibrarypatterns.code.tex
-File: tikzlibrarypatterns.code.tex 2019/02/02 v3.1.1 (3.1.1)
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
-ries/pgflibrarypatterns.code.tex
-File: pgflibrarypatterns.code.tex 2019/02/02 v3.1.1 (3.1.1)
-))
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/numprint/nu
-mprint.sty
-Package: numprint 2012/08/20 v1.39 Print numbers (HH)
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/array
-.sty
-Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
-\col@sep=\dimen281
-\ar@mcellbox=\box49
-\extrarowheight=\dimen282
-\NC@list=\toks46
-\extratabsurround=\skip67
-\backup@length=\skip68
-\ar@cellbox=\box50
-)
-\c@nprt@mantissa@digitsbefore=\count163
-\c@nprt@mantissa@digitsafter=\count164
-\c@nprt@exponent@digitsbefore=\count165
-\c@nprt@exponent@digitsafter=\count166
-\nprt@digitwidth=\skip69
-\nprt@sepwidth=\skip70
-\nprt@decimalwidth=\skip71
-\nprt@blockwidth=\skip72
-\nprt@digittoks=\toks47
-\nprt@pretoks=\toks48
-\nprt@posttoks=\toks49
-\nprt@thisdigit=\count167
-\nprt@curpos=\count168
-\nprt@rndpos=\count169
-\c@nprt@digitsfirstblock=\count170
-\c@nprt@blockcnt=\count171
-\c@nprt@cntprint=\count172
- No configuration file `numprint.cfg' found.)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
-Package: fp 1995/04/02
-
-`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/defpatte
-rn.sty
-Package: defpattern 1994/10/12
-\actioncount=\count173
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic
-.sty
-Package: fp-basic 1996/05/13
-\FP@xs=\count174
-\FP@xia=\count175
-\FP@xib=\count176
-\FP@xfa=\count177
-\FP@xfb=\count178
-\FP@rega=\count179
-\FP@regb=\count180
-\FP@regs=\count181
-\FP@times=\count182
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addon
-s.sty
-Package: fp-addons 1995/03/15
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp-snap.
-sty
-Package: fp-snap 1995/04/05
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp-exp.s
-ty
-Package: fp-exp 1995/04/03
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp-trigo
-.sty
-Package: fp-trigo 1995/04/14
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp-pas.s
-ty
-Package: fp-pas 1994/08/29
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp-rando
-m.sty
-Package: fp-random 1995/02/23
-\FPseed=\count183
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.s
-ty
-Package: fp-eqn 1995/04/03
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp-upn.s
-ty
-Package: fp-upn 1996/10/21
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.
-sty
-Package: fp-eval 1995/04/03
-))
-\tkzRadius=\dimen283
-\tkzLength=\dimen284
-\tkz@radi=\dimen285
-\tkz@ax=\dimen286
-\tkz@ay=\dimen287
-\tkz@bx=\dimen288
-\tkz@by=\dimen289
-\tkz@cx=\dimen290
-\tkz@cy=\dimen291
-\tkz@dx=\dimen292
-\tkz@dy=\dimen293
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tk
-z-tools-utilities.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tk
-z-tools-arith.tex
-File: tkz-tool-arith.tex tkz-tool-arith 1.161 d
-)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tk
-z-tools-base.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tk
-z-tools-misc.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tk
-z-tools-math.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tk
-z-obj-points.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tk
-z-obj-segments.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tk
-z-obj-marks.tex
-\tkz@cntmk=\count184
-))
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
-/tkz-tools-intersections.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
-/tkz-tools-transformations.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
-/tkz-obj-lines.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
-/tkz-lib-symbols.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
-/tkz-obj-circles.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
-/tkz-obj-addpoints.tex))
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
-/tkz-obj-polygons.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
-/tkz-obj-vectors.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
-/tkz-obj-arcs.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
-/tkz-obj-sectors.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
-/tkz-obj-angles.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide
-/tkz-obj-protractor.tex)
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
-endlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2019/02/02 v3.1.1 (3.1.1)
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
-ries/shapes/pgflibraryshapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2019/02/02 v3.1.1 (3.1.1)
-))
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/li
 stings.sty
-\lst@mode=\count185
-\lst@gtempboxa=\box51
-\lst@token=\toks50
-\lst@length=\count186
-\lst@currlwidth=\dimen294
-\lst@column=\count187
-\lst@pos=\count188
-\lst@lostspace=\dimen295
-\lst@width=\dimen296
-\lst@newlines=\count189
-\lst@lineno=\count190
-\lst@maxwidth=\dimen297
+\lst@mode=\count151
+\lst@gtempboxa=\box67
+\lst@token=\toks43
+\lst@length=\count152
+\lst@currlwidth=\dimen270
+\lst@column=\count153
+\lst@pos=\count154
+\lst@lostspace=\dimen271
+\lst@width=\dimen272
+\lst@newlines=\count155
+\lst@lineno=\count156
+\lst@maxwidth=\dimen273
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/ls
 tmisc.sty
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-\c@lstnumber=\count191
-\lst@skipnumbers=\count192
-\lst@framebox=\box52
+\c@lstnumber=\count157
+\lst@skipnumbers=\count158
+\lst@framebox=\box68
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/listings/li
 stings.cfg
@@ -1236,6 +944,17 @@ File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
 
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/array
+.sty
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen274
+\ar@mcellbox=\box69
+\extrarowheight=\dimen275
+\NC@list=\toks44
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box70
+)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/hhlin
 e.sty
 Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
@@ -1251,128 +970,132 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/tools/multi
 col.sty
 Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
-\c@tracingmulticols=\count193
+\c@tracingmulticols=\count159
 
 
 Package multicol Warning: May not work with the twocolumn option on input line 
 141.
 
-\mult@box=\box53
-\multicol@leftmargin=\dimen298
-\c@unbalance=\count194
-\c@collectmore=\count195
-\doublecol@number=\count196
-\multicoltolerance=\count197
-\multicolpretolerance=\count198
-\full@width=\dimen299
-\page@free=\dimen300
-\premulticols=\dimen301
-\postmulticols=\dimen302
-\multicolsep=\skip73
-\multicolbaselineskip=\skip74
-\partial@page=\box54
-\last@line=\box55
-\maxbalancingoverflow=\dimen303
-\mult@rightbox=\box56
-\mult@grightbox=\box57
-\mult@gfirstbox=\box58
-\mult@firstbox=\box59
-\@tempa=\box60
-\@tempa=\box61
-\@tempa=\box62
-\@tempa=\box63
-\@tempa=\box64
-\@tempa=\box65
-\@tempa=\box66
-\@tempa=\box67
-\@tempa=\box68
-\@tempa=\box69
-\@tempa=\box70
-\@tempa=\box71
-\@tempa=\box72
-\@tempa=\box73
-\@tempa=\box74
-\@tempa=\box75
-\@tempa=\box76
-\c@columnbadness=\count199
-\c@finalcolumnbadness=\count266
-\last@try=\dimen304
-\multicolovershoot=\dimen305
-\multicolundershoot=\dimen306
-\mult@nat@firstbox=\box77
-\colbreak@box=\box78
-\mc@col@check@num=\count267
+\mult@box=\box71
+\multicol@leftmargin=\dimen276
+\c@unbalance=\count160
+\c@collectmore=\count161
+\doublecol@number=\count162
+\multicoltolerance=\count163
+\multicolpretolerance=\count164
+\full@width=\dimen277
+\page@free=\dimen278
+\premulticols=\dimen279
+\postmulticols=\dimen280
+\multicolsep=\skip68
+\multicolbaselineskip=\skip69
+\partial@page=\box72
+\last@line=\box73
+\maxbalancingoverflow=\dimen281
+\mult@rightbox=\box74
+\mult@grightbox=\box75
+\mult@gfirstbox=\box76
+\mult@firstbox=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\c@columnbadness=\count165
+\c@finalcolumnbadness=\count166
+\last@try=\dimen282
+\multicolovershoot=\dimen283
+\multicolundershoot=\dimen284
+\mult@nat@firstbox=\box95
+\colbreak@box=\box96
+\mc@col@check@num=\count167
 )
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/chngcntr/ch
 ngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-) (./ketan_control_manual.aux)
-\openout1 = `ketan_control_manual.aux'.
+) (./gvv_control_manual.aux
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 87.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 87.
+LaTeX Warning: Label `fig:ee18btech11019_hart' multiply defined.
+
+
+LaTeX Warning: Label `fig:ee18btech11019_hart_block' multiply defined.
+
+)
+\openout1 = `gvv_control_manual.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 84.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 84.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oml
 txmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 87.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 87.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 84.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 84.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
 txsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 87.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 87.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 84.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 84.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/omx
 txex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 87.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 87.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 84.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 84.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 exa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 87.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 84.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
 txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 87.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 87.
+LaTeX Info: Redefining \celsius on input line 84.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 84.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 87.
-Package gensymb Info: Using \Omega for \ohm on input line 87.
+LaTeX Info: Redefining \ohm on input line 84.
+Package gensymb Info: Using \Omega for \ohm on input line 84.
 
 Package gensymb Warning: Not defining \micro.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
@@ -1382,149 +1105,159 @@ Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box79
-Package hyperref Info: Link coloring OFF on input line 87.
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/hyperref/na
-meref.sty
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-
-(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/oberdiek/
-gettitlestring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-)
-\c@section@level=\count268
-)
-LaTeX Info: Redefining \ref on input line 87.
-LaTeX Info: Redefining \pageref on input line 87.
-LaTeX Info: Redefining \nameref on input line 87.
- (./ketan_control_manual.out) (./ketan_control_manual.out)
-\@outlinefile=\write4
-\openout4 = `ketan_control_manual.out'.
+\c@lstlisting=\count168
+\c@theorem=\count169
+\c@problem=\count170
+\c@proposition=\count171
+\c@lemma=\count172
+\c@example=\count173
+\c@rem=\count174
+ (./gvv_control_manual.toc)
+\tf@toc=\write4
+\openout4 = `gvv_control_manual.toc'.
 
 
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
-\c@lstlisting=\count269
-\c@theorem=\count270
-\c@problem=\count271
-\c@proposition=\count272
-\c@lemma=\count273
-\c@example=\count274
-\c@rem=\count275
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 243.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 243.
+(./chapters/ee18btech11019.tex (./figs/hart.tex
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 5.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 243.
-
+LaTeX Font Info:    Try loading font information for U+txmia on input line 5.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 243.
-
+LaTeX Font Info:    Try loading font information for U+txsya on input line 5.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 243.
-
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 5.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 243.
-
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 5.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) (./ketan_control_manual.toc)
-\tf@toc=\write5
-\openout5 = `ketan_control_manual.toc'.
+)) (./figs/osc.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
- (./chapters/ee18btech11002.tex
+ []
 
-LaTeX Warning: Command \j invalid in math mode on input line 15.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 15.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 15.
+(./figs/lc.tex)
+Underfull \hbox (badness 5119) in paragraph at lines 37--39
+[]\OT1/txr/m/n/12 W.K.T, no cur-rent flows in the opamp
+ []
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 15.
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
+
+ []
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 15.
+Underfull \hbox (badness 10000) in paragraph at lines 43--47
+
+ []
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 15.
+Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
+ []
 
-LaTeX Warning: Command \j invalid in math mode on input line 15.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 15.
-
-
-LaTeX Warning: Reference `fig:ee18btech11002polar_plot' on page 1 undefined on 
-input line 16.
-
-File: ./figs/ee18btech11002/ee18btech11002.eps Graphic file (type eps)
-<./figs/ee18btech11002/ee18btech11002.eps>
-
-LaTeX Warning: Reference `eq:ee18btech11002_gain' on page 1 undefined on input 
-line 27.
-
-
-LaTeX Warning: Reference `fig:ee18btech11002inverse_polar_plot' on page 1 undef
-ined on input line 29.
-
-File: ./figs/ee18btech11002/ee18btech11002_1.eps Graphic file (type eps)
-<./figs/ee18btech11002/ee18btech11002_1.eps>)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 349.
- [1
-
+[1
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 349.
- (./ketan_control_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 349.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 349.
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
+
+ []
 
 
-Package rerunfilecheck Warning: File `ketan_control_manual.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
-Package rerunfilecheck Info: Checksums for `ketan_control_manual.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  C367BDA33525A0AAC29DB2234C729DA9;162.
-
-LaTeX Warning: There were undefined references.
+ []
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 349.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--117
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--136
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--194
+
+ []
+
+) [3
+
+] (./gvv_control_manual.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 32318 strings out of 492624
- 697318 string characters out of 6119216
- 916288 words of memory out of 5000000
- 35639 multiletter control sequences out of 15000+600000
- 68203 words of font info for 165 fonts, out of 8000000 for 9000
+ 26863 strings out of 492624
+ 618829 string characters out of 6119216
+ 824313 words of memory out of 5000000
+ 30346 multiletter control sequences out of 15000+600000
+ 64082 words of font info for 154 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,8n,69p,512b,1155s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,67p,510b,1160s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ketan_control_manual.dvi (1 page, 12708 bytes).
+Output written on gvv_control_manual.dvi (3 pages, 64932 bytes).

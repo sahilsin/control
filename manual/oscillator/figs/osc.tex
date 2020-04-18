@@ -1,0 +1,27 @@
+\tikzset{
+        amp/.style = {regular polygon, regular polygon sides=3,
+              draw, fill=white, text width=1em,
+              inner sep=1mm, outer sep=0mm,
+              shape border rotate=-90},
+        block/.style = {draw, rectangle,
+            minimum height=1cm,
+            minimum width=2cm},
+        input/.style = {coordinate,node distance=1cm},
+        output/.style = {coordinate,node distance=4cm},
+        arrow/.style={draw, -latex,node distance=2cm},
+        pinstyle/.style = {pin edge={latex-, black,node distance=2cm}},
+        sum/.style = {draw, circle, node distance=1cm},
+}
+
+\begin{tikzpicture}[node distance=2.5cm,auto,>=latex']
+  \node [input, name=input] {};
+  \node [sum, right of=input] (sum) {};
+  \node [amp, right of = sum] (block1) {$G$};
+  \node [output, right of= block1] (output) {};
+  \node [block, below of = block1] (block2) {$H$};
+  \draw [->] (input) -- node {$V_{in}$} (sum);
+  \draw [->] (sum) -- node {$V_{in} + HV_{out}$} (block1);
+  \draw [->] (block1) -- node [name =y] {$V_{out}$} (output);
+  \draw [->] (y) |- node [above,pos=0.79] {$V_{out}$} (block2) ;
+  \draw [->] (block2) -| node  {$HV_{out}$} (sum) ;
+\end{tikzpicture}

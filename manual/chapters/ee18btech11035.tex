@@ -1,0 +1,34 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item Find the closed loop transfer function for the system in Fig. \label{fig:ee18btech11035_block} given that
+\begin{align}
+\label{eq:ee18btech11035_G(s)}
+G\brak{s}=\frac{1}{s^2+2s}
+\end{align}
+%
+\begin{figure}[!ht]
+    \begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11035/ee18btech11035_fig.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11035_block}
+\end{figure}
+\\
+\solution The closed loop transfer function is
+\begin{align}
+H\brak{s} &= \frac{kG\brak{s}}{1+kG\brak{s}}
+\label{eq:ee18btech11035_4}
+\\
+ &= \frac{k}{s^2+2s+k}
+\label{eq:ee18btech11035_H(s)}
+\end{align}
+after substituting from \eqref{eq:ee18btech11035_G(s)}.
+\item Find the step response of the system.
+\item  Find $k$ in  such that the step response of the closed-loop system has minimum settling time and have no overshoot.
+%
+\\
+\solution Settling time is defined as the time required for the transient's damped oscillations to
+reach and stay within $\pm 2$\% of the steady-state value.\\
+
+\end{enumerate}

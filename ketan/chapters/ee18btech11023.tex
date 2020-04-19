@@ -1,36 +1,54 @@
-\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
-
 \item
-The state equation and the output equation of a control system are 
+Sketch the Polar Plot of
 \begin{align}
-    \dot{\vec{ x}}=\myvec{-4&-1.5\\4&0}\vec{x} + \myvec{4\\0}\vec{u}   
+G\brak{s} = \frac{1}{s\brak{1+s^{2}}}
+\label{eq:ee18btech11023_gain}
 \end{align}
+\\
+\solution  From \label{eq:ee18btech11023_gain},
+
 \begin{align}
-    \vec{y} = \myvec{1.5&0.625}\vec{x}
-\end{align}
-%  
-Find the transfer function of the system 
+G\brak{\j\omega} &=   \frac{1}{\j\omega\brak{1-{\omega}^{2}}}
 \\
-\solution The system matrices are
-\begin{align}
-    \vec{A} &= \myvec{-4&-1.5\\4&0}
+      \abs{G\brak{\j\omega}} &= \frac{1}{\abs{\omega\brak{1-{\omega}^{2}}}}
 \\
-    \vec{B} &= \myvec{4\\0}
+    \angle G\brak{\j\omega} &= 
+\begin{cases}
+\frac{\pi}{2} & \omega > 1
 \\
-     \vec{C} &= \myvec{1.5&0.625}
-\end{align}
-and  the  transfer  function is
+-\frac{\pi}{2} & 0 < \omega < 1
+\end{cases}
+    \end{align}
 %
-\begin{align}
-    T(s) &= \vec{C}\sbrak{(sI-\vec{A})^{-1}}\vec{B} + \vec{D}
-\\
- &  = \myvec{\frac{6s+10}{(s^2 + 4s + 6)}} 
-\end{align}
-\item  Verify your  answer using a python code
-\\
-\solution The following python code gives the desired answer
+The corresponding polar plot is generated in Fig.   \ref{fig:ee18btech11023} using 
 \begin{lstlisting}
 codes/ee18btech11023.py
 \end{lstlisting}
+
+\begin{figure}[!ht]
+\centering
+  \includegraphics[width=\columnwidth]{./figs/ee18btech11023/ee18btech11023_1c.eps}
+  \caption{}
+  \label{fig:ee18btech11023}
+\end{figure}
+
+
+\item
+ Stability
+
+\break for the given transfer function 
+\begin{align}
+    G\brak{s} = \frac{1}{s\brak{1+s^{2}}}
+\end{align}
+The polar plots use open loop transfer function, hence the reference point for determining
+stability is shifted to (–1, 0)
+\center
+ If (–1,0) is exactly on the polar plot then the system is marginally stable
+polar plot useful to find the stability of given transfer function
+from the graph we can see that (-1,0) is lying exactly on polar plot
+
+
+\center so the system is marginally stable
 \end{enumerate}

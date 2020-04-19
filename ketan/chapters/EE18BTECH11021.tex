@@ -1,92 +1,196 @@
-\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
+\item
+Write the general expression for the trasfer function of a PID controller.
 
-\item Consider a control system with 
-%
-\begin{align}
-\label{eq:ee18btech11021_gs}
-G(s) = \frac{1}{s(3s+1)}
-\end{align}
-%
-Find its phase margin.
-\\
 \solution
+The Transfer Function of the PID Controller is
 \begin{align}
-G\brak{\j\omega}&=\frac{1}{\brak{j\omega}\brak{3j\omega+1}} 
-\\
-\implies 
-\abs{G\brak{\j\omega}}&=\frac{1}{{\omega}{\brak{\sqrt{9\omega^2+1}}}}
-\\
-\implies \angle G\brak{\j\omega}&=- \tan^{-1}(3\omega) - 90\degree
-\end{align}
-%
-At Gain Crossover,
-\begin{align}
-\abs{G\brak{\j\omega}}&=1
-\\
-\implies \frac{1}{{\omega}{\brak{\sqrt{9\omega^2+1}}}} &=1
-\\
-\implies \omega_{gc} &= 0.531
-\\
-\implies \angle G\brak{\j\omega} &= -147.88\degree
-\\
-\implies PM &=32.12\degree
-\end{align}
-\item The minimum acceptable PM for a control system is 45\degree. Design a suitable {\em lead compensator} for \eqref{eq:ee18btech11021_gs}.
-%
-\\
-\solution Let the desired compensator be
-\begin{align}
-D(s) = \frac{3(s+\frac{1}{3T})}{(s+\frac{1}{T})}
-\end{align}
-Choosing T = 1,
-%
-\begin{align}
-D(s) = \frac{3(s+\frac{1}{3})}{(s+1)}
+    K_{p}\brak{1 + T_{d}s + \frac{1}{T_{i}s}}
 \end{align}
 
-By cascading the Compensator and the Open Loop Transfer Function, 
+\item
+Write the general expression for the trasfer function of a PD controller.
+
+\solution
+PD Controllers are special cases of PID Controllers in which only Proportional and Derivative Controls are used.
+
+The Transfer Function of PD Controller is 
 \begin{align}
-G_1(s) &= D(s)G(s) 
-\\
-&= \frac{1}{s(3s+1)} \frac{3(s+\frac{1}{3})}{(s+1)}
-\\
-\implies G_{1}(s) &= \frac{1}{s(s+1)}
-\\
-\implies G_{1}\brak{\j\omega}&=\frac{1}{\brak{j\omega}\brak{j\omega+1}} 
-\\
-\implies 
-\abs{G_{1}\brak{\j\omega}}&=\frac{1}{{\omega}{\brak{\sqrt{\omega^2+1}}}}
-\\
-\angle G_{1}\brak{\j\omega}&=- \tan^{-1}(\omega) - 90\degree
+    K_{p}(1 + T_{d}s)
 \end{align}
 
-At Gain Crossover,
-\begin{align}
-\abs{G_{1}\brak{\j\omega}}&=1
-\\
-\implies \frac{1}{{\omega}{\brak{\sqrt{\omega^2+1}}}} &=1
-\\
-\implies \omega_{gc} &= 0.786
-\\
-\implies \angle G\brak{\j\omega} &= -128.167\degree
-\\
-\implies PM&=51.83\degree
-\end{align}
-%
-\item Verify the above improvement in Phase Margin with the help of a Python Code
-\\
-\solution  The following code generates Fig. \ref{fig:ee18btech11021}
+\item
+Write the general expression for the transfer function of a PI controller.
 
+\solution
+PD Controllers are special cases of PID Controllers in which only Proportional and Integral Controls are used.
+
+The Transfer Function of PI Controller is 
+\begin{align}
+    K_{p}\brak{1 +  \frac{1}{T_{i}s}}
+\end{align}
+
+
+\item
+For a unity Feedback system 
+\begin{align}
+    G(s) = \frac{K}{s(s+2)(s+4)(s+6)}
+\end{align}
+
+
+Design a PD Controller with $K_{v} = 2$ and Phase Margin 30\degree
+
+\solution
+PD Controller is cascaded with the given G(s).
+The Transfer Function of the PD Controller is $K_{p}(1 + T_{d}s)$
+
+\begin{align}
+    G_{c}(s) = \frac{K_{p}(1 + T_{d}s)K}{s(s+2)(s+4)(s+6)}
+\end{align}
+
+\begin{align}
+    K_{v} = \lim_{s \to 0} sG_{1}(s) = 2
+\end{align}
+
+If we choose $K_{p} = 1$
+\begin{align}
+    \implies K = 96
+\end{align}
+
+For Phase Margin 30\degree, at Gain Crossover Frequency w
+
+\begin{align}
+    \tan^{-1}\brak{T_{d}\omega} - \tan^{-1}\brak{\frac{\omega}{2}} - \tan^{-1}\brak{\frac{\omega}{4}}
+    \tan^{-1}\brak{\frac{\omega}{6}} = -60
+\end{align}
+
+\begin{align}
+    \abs{G_{1}\brak{\j\omega}} = \frac{96\sqrt{T_{d}^2w^2 + 1}}{w\sqrt{(w^2+4)(w^2 + 16)(w^2 + 36)}} = 1
+\end{align}
+
+By Hit and Trial, one of the best combinations is
+\begin{align}
+    w = 4
+\end{align}
+\begin{align}
+    T_{d} = 1.884
+\end{align}
+We get a Phase Margin of 30.31\degree
+
+\item
+Verify using a Python Plot
+
+\solution
 \begin{lstlisting}
-codes/ee18btech11021.py
+codes/EE18BTECH11021_3.py
 \end{lstlisting}
 
-\begin{figure}[!ht]
+\begin{figure}
 \centering
-\includegraphics[width=\columnwidth]{figs/ee18btech11021.eps}
-\caption{}
-\label{fig:ee18btech11021}
+\includegraphics[width=\columnwidth]{figs/EE18BTECH11021_PD.png}
 \end{figure}
-\end{enumerate}
+
+\item
+Design a PI Controller with $K_{v} = \infty$ and Phase Margin 30\degree
+
+\solution
+PI Controller is cascaded with the given G(s).
+The Transfer Function of the PI Controller is $K_{p}\brak{1 + \frac{1}{T_{i}s}}$
+
+\begin{align}
+    G_{1}(s) = \frac{K_{p}\brak{1 +  \frac{1}{T_{i}s}}K}{s(s+2)(s+4)(s+6)}
+\end{align}
+
+Choose $K_{p}K = 96$
+This can be written as
+\begin{align}
+    G_{1}(s) = \frac{96(T_{i}s + 1)}{T_{i}s^2(s+2)(s+4)(s+6)}
+\end{align}
+
+For Phase Margin 30\degree, at Gain Crossover Frequency w
+
+\begin{align}
+    \tan^{-1}(T_{i}\omega) - \tan^{-1}\brak{\frac{\omega}{2}} - \tan^{-1}\brak{\frac{\omega}{4}}
+    \tan^{-1}\brak{\frac{\omega}{6}} = 30
+\end{align}
+
+\begin{align}
+    \abs{G_{1}\brak{\j\omega}} = \frac{96\sqrt{T_{i}^2w^2 + 1}}{T_{i}^2w^2\sqrt{(w^2+4)(w^2 + 16)(w^2 + 36)}} = 1
+\end{align}
+
+By Hit and Trial, one of the best combinations is
+\begin{align}
+    w = 0.75
+\end{align}
+\begin{align}
+    T_{i} = 2.713
+\end{align}
+We get a Phase Margin of 25.53\degree
+
+\item
+Verify using a Python Plot
+
+\solution
+\begin{lstlisting}
+codes/EE18BTECH11021_4.py
+\end{lstlisting}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{figs/EE18BTECH11021_PI.png}
+\end{figure}
+
+\item
+Design a PID Controller with $K_{v} = \infty$ and Phase Margin 30\degree
+
+\solution
+PID Controller is cascaded with the given G(s).
+The Transfer Function of the PD Controller is $K_{p}\brak{1 + T_{d}s + \frac{1}{T_{i}s}}$
+
+\begin{align}
+    G_{1}(s) = \frac{K_{p}\brak{1 + T_{d}s + \frac{1}{T_{i}s}}K}{s(s+2)(s+4)(s+6)}
+\end{align}
+
+Choose $K_{p}K = 96$
+This can be written as
+\begin{align}
+    G_{1}(s) = \frac{96(T_{i}T_{d}s^2 + T_{i}s +  1)}{T_{i}s^2(s+2)(s+4)(s+6)}
+\end{align}
+
+For Phase Margin 30\degree, at Gain Crossover Frequency w
+
+\begin{align}
+    \tan^{-1}(\frac{T_{i}\omega}{1-T{i}T_{d}w^2}) - \tan^{-1}\brak{\frac{\omega}{2}} - \tan^{-1}\brak{\frac{\omega}{4}}
+    \tan^{-1}\brak{\frac{\omega}{6}} = 30
+\end{align}
+
+\begin{align}
+    \abs{G_{1}\brak{\j\omega}} = \frac{96\sqrt{(1-T{i}T_{d}w^2)^2 + T_{i}^2}}{T_{i}^2w^2\sqrt{(w^2+4)(w^2 + 16)(w^2 + 36)}} = 1
+\end{align}
+
+By Hit and Trial, one of the best combinations is
+\begin{align}
+    w = 1
+\end{align}
+\begin{align}
+    T_{i} = 1.738
+\end{align}
+\begin{align}
+    T_{d} = 0.4
+\end{align}
+We get a Phase Margin of 30\degree
+
+\item
+Verify using a Python Plot
+
+\solution
+\begin{lstlisting}
+codes/EE18BTECH11021_5.py
+\end{lstlisting}
+
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{figs/EE18BTECH11021_PID.png}
+\end{figure}

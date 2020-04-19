@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  19 APR 2020 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  19 APR 2020 21:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1322,6 +1322,9 @@ LaTeX Warning: Label `eq:sec_order_op_1' multiply defined.
 LaTeX Warning: Label `eq:ee18btech11031_H' multiply defined.
 
 
+LaTeX Warning: Label `fig:ee18btech11038' multiply defined.
+
+
 LaTeX Warning: Label `fig:ee18btech111019_hart_block' multiply defined.
 
 )
@@ -2193,10 +2196,9 @@ LaTeX Warning: Command \j invalid in math mode on input line 44.
 
 Underfull \vbox (badness 1701) has occurred while \output is active []
 
-File: ./figs/ee18btech11038/ee18btech11038_graph.eps Graphic file (type eps)
+File: ./figs/ee18btech11038/ee18btech11038.eps Graphic file (type eps)
 
-<./figs/ee18btech11038/ee18btech11038_graph.eps>)
-(./chapters/ee18btech11017.tex
+<./figs/ee18btech11038/ee18btech11038.eps>) (./chapters/ee18btech11017.tex
 
 LaTeX Warning: Command \j invalid in math mode on input line 11.
 
@@ -2219,7 +2221,7 @@ LaTeX Warning: Command \j invalid in math mode on input line 22.
 LaTeX Warning: Command \j invalid in math mode on input line 22.
 
 
-Underfull \vbox (badness 2903) has occurred while \output is active []
+Underfull \vbox (badness 3884) has occurred while \output is active []
 
  [20]
 
@@ -2418,12 +2420,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 364.
  ) 
 Here is how much of TeX's memory you used:
- 33881 strings out of 492624
- 732929 string characters out of 6119216
- 980858 words of memory out of 5000000
- 37046 multiletter control sequences out of 15000+600000
+ 33879 strings out of 492624
+ 732871 string characters out of 6119216
+ 981839 words of memory out of 5000000
+ 37045 multiletter control sequences out of 15000+600000
  84303 words of font info for 220 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,18n,74p,528b,1355s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (25 pages, 421788 bytes).
+Output written on gvv_control_manual.dvi (25 pages, 421768 bytes).

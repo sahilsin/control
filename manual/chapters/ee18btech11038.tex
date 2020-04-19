@@ -1,0 +1,59 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item
+Consider the unity feedback control system in Fig.  \ref{fig:ee18btech11038}. Find the value of K such that $PM = 30\degree$.
+
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11038/ee18btech11038.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11038}
+\end{figure}
+\solution From Fig. \ref{fig:ee18btech11038},
+%
+\begin{align}
+G\brak{s} &= \frac{Ke^{-s}}{s}
+\\
+H\brak{s} &= 1
+\\
+\implies 
+%
+\\
+\abs{G\brak{\j\omega_{gc}}H\brak{\j\omega_{gc}}} &= 1
+\\
+\implies \omega_{gc} &= K  
+\end{align}
+%
+Thus, 
+\begin{align}
+\label{eq:PM_in_K}
+\angle G\brak{\j\omega_{gc}}H\brak{\j\omega_{gc}} &=
+ \angle \frac{{Ke^{-jK}}}{jK} 
+\\
+&= -90\degree - K\brak{\frac{180}{\pi}}
+\\
+\implies
+    PM &= 180\degree -90\degree - K\brak{\frac{180}{\pi}}
+\\
+ &= 30\degree
+    \\
+\implies    K&= \frac{\pi}{3}
+\end{align}
+\item Verify result by plotting the gain and phase plots of $G\brak{j\brak{\omega}}$ 
+\\
+\solution The following code plots Fig. \ref{fig:ee18btech11038_graph}
+
+\begin{lstlisting}
+codes/ee18btech11038_plot.py
+\end{lstlisting}
+The Phase plot is as shown-
+\begin{figure}[!h]
+  \includegraphics[width=\columnwidth]{./figs/ee18btech11038/ee18btech11038_graph.eps}
+  \caption{}
+  \label{fig:ee18btech11038_graph}
+\end{figure}
+
+\end{enumerate}

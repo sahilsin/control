@@ -28,7 +28,8 @@
 \contentsline {section}{\numberline {8}Gain Margin}{17}{section.8}% 
 \contentsline {subsection}{\numberline {8.1}Introduction}{17}{subsection.8.1}% 
 \contentsline {subsection}{\numberline {8.2}Example}{19}{subsection.8.2}% 
+\contentsline {subsection}{\numberline {8.3}Example}{20}{subsection.8.3}% 
 \contentsline {section}{\numberline {9}Phase Margin}{20}{section.9}% 
-\contentsline {section}{\numberline {10}Oscillator}{21}{section.10}% 
-\contentsline {subsection}{\numberline {10.1}Introduction}{21}{subsection.10.1}% 
-\contentsline {subsection}{\numberline {10.2}Example}{22}{subsection.10.2}% 
+\contentsline {section}{\numberline {10}Oscillator}{22}{section.10}% 
+\contentsline {subsection}{\numberline {10.1}Introduction}{22}{subsection.10.1}% 
+\contentsline {subsection}{\numberline {10.2}Example}{23}{subsection.10.2}% 

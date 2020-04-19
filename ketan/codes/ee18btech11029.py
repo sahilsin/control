@@ -1,9 +1,14 @@
-############################################################
-#coded by M.Sai Mehar
-#Date April 17,2020
-#Released under GNU GPL
-###########################################################
+######################################################################################
+#Coded by:M.Sai Mehar
+#Date : April 18,2020
+# Released Under GNU GPL
+#####################################################################################
 
+import mpl_toolkits.axisartist.floating_axes as floating_axes
+from matplotlib.projections import PolarAxes
+from mpl_toolkits.axisartist.grid_finder import FixedLocator, \
+     MaxNLocator, DictFormatter
+import control
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -12,23 +17,26 @@ import subprocess
 import shlex
 #end if
 
-w = np.append(np.linspace(0.01,1,100),np.linspace(1,1000,10000)) #ranging omega
+#defining the range of values of omega
+omega = np.linspace(-20,20,2000)
 
-#|G(jw)|
-modGjw = ((np.sqrt(1+(w*w)/29*29))*(np.sqrt(1+(w*w)/40*40)))/(w*w*w*(np.sqrt(1+(w*w)/200*200))*(np.sqrt(1+(w*w)/1000*1000)))                                        
+#writing the coefficients of transfer function
+num=[0.000862,0.0594,1]
+den=[0.000005,0.006,1,0,0,0]
 
-# Phase G(jw)
-phase = (np.pi/2) + np.arctan(w/29) + np.arctan(w/40) - np.arctan(w/200) - np.arctan(w/1000)                          
+#forming the transfer function
+G = control.tf(num,den)
+magnitude, phase, W = G.freqresp(omega)
 
-#x-coordinate in polar plot is |G(jw)|*cos(Phase)
-x = modGjw*np.cos(phase)
-#y-coordinate in polar plot is |G(jw)|*sin(Phase)                                      
-y = modGjw*np.sin(phase)  
 
-plt.grid()
-plt.plot(x,y)
-plt.xlim([-5,0])
-plt.ylim([0,1000])
+
+#plotting the polar plot
+ax1 = plt.subplot(111, projection='polar')
+ax1.plot(phase.reshape((2000,))[-1000:],magnitude.reshape((2000,))[-1000:])
+plt.plot(-1,0,'o')
+plt.annotate("(-1,0)", (-1, 0))
+plt.title("polar plot")
+
 
 #if using termux
 plt.savefig('./figs/ee18btech11029.pdf')
@@ -36,4 +44,3 @@ plt.savefig('./figs/ee18btech11029.eps')
 subprocess.run(shlex.split("termux-open ./figs/ee18btech11029.pdf"))
 #else
 #plt.show()
-

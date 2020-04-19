@@ -1,38 +1,33 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+import control
 
 #if using termux
 import subprocess
 import shlex
 #end if
+#values of omega (w)
+OMEGA = np.linspace(-20, 20, 2001)
 
-def u(n):
-    if(n>=0):
-        return 1
-    else:
-        return 0
-t=np.linspace(0,5,1000)
-H1=np.array([])
-H2 = np.array([])
-H3 =[]
-for i in t:
-    h2=(25*i*np.exp(-5*i))*u(i)
-    h3 = (30/np.sqrt(35))*u(i)*np.sin((np.sqrt(35)*i)/2)*np.exp(-5*i/2)
-    h1 =(35/(2*np.sqrt(46)))*u(i)*(np.exp((-9+np.sqrt(46))*i)-np.exp((-9-np.sqrt(46))*i))
-    H1 =np.append(H1,[h1])
-    H2 = np.append(H2,[h2])
-    H3 = np.append(H3,[h3])
-plt.plot(t,(H1),label="overdamped")
-plt.plot(t,H2,label="critically damped")
-plt.plot(t,H3,label="underdamped")
-plt.xlabel("t")
-plt.ylabel("Step Response")
-plt.title("Second Order Systems")
-plt.legend()
-plt.grid()
+
+#defining transfer function
+s = control.TransferFunction.s
+G = 1/((s+1)*(2*s+1))
+#Using library getting mag and phase of the transfer function for resp. omegas
+MAG, PHASE, W = G.freqresp(OMEGA)
+#plotting the polar plot
+axes = plt.subplot(111, projection='polar')
+axes.plot(PHASE.reshape((2001,))[-1000:],MAG.reshape((2001,))[-1000:])
+plt.title("polar plot")
+plt.polar(-3.14,1,marker='o',color='blue')
+plt.polar(-3.14,0.5,marker='o',color='blue')
+print(MAG)
+print(PHASE)
 #if using termux
 plt.savefig('./figs/ee18btech11012.pdf')
 plt.savefig('./figs/ee18btech11012.eps')
 subprocess.run(shlex.split("termux-open ./figs/ee18btech11012.pdf"))
 #else
 #plt.show()
+
+

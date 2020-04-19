@@ -1,4 +1,4 @@
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
 \numberwithin{equation}{enumi}
 \item
 Sketch the Polar Plot of
@@ -7,7 +7,7 @@ G\brak{s} = \frac{1}{s\brak{1+s^{2}}}
 \label{eq:ee18btech11023_gain}
 \end{align}
 \\
-\solution  From \label{eq:ee18btech11023_gain},
+\solution  From \eqref{eq:ee18btech11023_gain},
 
 \begin{align}
 G\brak{\j\omega} &=   \frac{1}{\j\omega\brak{1-{\omega}^{2}}}
@@ -33,22 +33,7 @@ codes/ee18btech11023.py
   \caption{}
   \label{fig:ee18btech11023}
 \end{figure}
+In Fig.   \ref{fig:ee18btech11023},  (–1,0) is exactly on the polar plot.  Hence, the system is marginally stable.
 
 
-\item
- Stability
-
-\break for the given transfer function 
-\begin{align}
-    G\brak{s} = \frac{1}{s\brak{1+s^{2}}}
-\end{align}
-The polar plots use open loop transfer function, hence the reference point for determining
-stability is shifted to (–1, 0)
-\center
- If (–1,0) is exactly on the polar plot then the system is marginally stable
-polar plot useful to find the stability of given transfer function
-from the graph we can see that (-1,0) is lying exactly on polar plot
-
-
-\center so the system is marginally stable
 \end{enumerate}

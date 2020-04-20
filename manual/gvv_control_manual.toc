@@ -31,6 +31,8 @@
 \contentsline {subsection}{\numberline {8.2}Example}{20}{subsection.8.2}% 
 \contentsline {subsection}{\numberline {8.3}Example}{20}{subsection.8.3}% 
 \contentsline {section}{\numberline {9}Phase Margin}{21}{section.9}% 
+\contentsline {subsection}{\numberline {9.1}Intoduction}{21}{subsection.9.1}% 
+\contentsline {subsection}{\numberline {9.2}Example}{23}{subsection.9.2}% 
 \contentsline {section}{\numberline {10}Oscillator}{23}{section.10}% 
 \contentsline {subsection}{\numberline {10.1}Introduction}{23}{subsection.10.1}% 
-\contentsline {subsection}{\numberline {10.2}Example}{23}{subsection.10.2}% 
+\contentsline {subsection}{\numberline {10.2}Example}{24}{subsection.10.2}% 

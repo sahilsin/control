@@ -1,0 +1,49 @@
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item For the feedback system in Fig. \ref{fig:ee18btech11036},
+%
+\begin{align}
+G(s) = \frac{1}{(s+1)(s+2)(s+3)}.
+\label{eq:ee18btech11036_gain}
+\end{align}
+%
+Find $k > 0$ for which the gain margin of system is exactly 0 dB and phase margin of system is exactly 0 degree.
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11036.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11036}
+\end{figure}
+\\
+\solution From the given information, system can be destabilized with a marginal increase in the gain. Hence the system is marginally stable.  The characteric equation for \eqref{eq:ee18btech11036_gain} is
+\begin{align}
+s^3+6s^2+11s^1+(6+k)
+\end{align}
+and the corresponding  Routh array is
+\begin{align}
+\mydet{s^3\\s^2\\s^1 \\ s^0}
+\mydet{1 & 11 \\ 6 & (6+k) \\  \frac{66-(6+k)}{6} & 0\\ (6+k) & 0}
+\end{align}
+%
+For the system to be  marginally stable,
+%
+\begin{align}
+    \frac{66-(6+K)}{6}>0 \implies 
+k=60
+\end{align}
+%
+The following code
+\begin{lstlisting}
+codes/ee18btech11036.py
+\end{lstlisting}
+%
+verifies that the system is marginally stable for $k = 60$.
+\end{enumerate}
+
+
+
+
+

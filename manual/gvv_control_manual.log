@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  20 APR 2020 09:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  20 APR 2020 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2268,7 +2268,9 @@ File: ./figs/ee18btech11017/ee18btech11017_2.eps Graphic file (type eps)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22])
+(./chapters/ee18btech11036.tex (./figs/ee18btech11036.tex))
 (./chapters/ee18btech11030.tex (./figs/ee18btech11030/ee18btech11030.tex)
+[23]
 
 LaTeX Warning: Command \j invalid in math mode on input line 47.
 
@@ -2276,12 +2278,8 @@ LaTeX Warning: Command \j invalid in math mode on input line 47.
 LaTeX Warning: Command \j invalid in math mode on input line 47.
 
 File: ./figs/ee18btech11030/ee18btech11030_1.eps Graphic file (type eps)
-<./figs/ee18btech11030/ee18btech11030_1.eps>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./chapters/ee18btech11019.tex (./figs/ee18btech11019/hart.tex)
-(./figs/ee18btech11019/osc.tex)
+<./figs/ee18btech11030/ee18btech11030_1.eps>) (./chapters/ee18btech11019.tex
+(./figs/ee18btech11019/hart.tex) (./figs/ee18btech11019/osc.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
@@ -2296,15 +2294,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--39
 
  []
 
-[23]
-Underfull \vbox (badness 8170) has occurred while \output is active []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 43--47
 
  []
 
-
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 50--52
 
  []
@@ -2317,7 +2312,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24]
+
 Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
  []
@@ -2354,15 +2349,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--109
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 114--117
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--136
 
  []
 
@@ -2370,6 +2357,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--136
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25]
+Underfull \hbox (badness 10000) in paragraph at lines 134--136
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 160--163
 
  []
@@ -2385,6 +2377,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--165
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 168--186
 
  []
@@ -2394,17 +2389,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 191--194
 
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 366.
- [26
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 366.
+) [26]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 369.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 369.
  (./gvv_control_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 366.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 366.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 369.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 369.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
-(rerunfilecheck)             Checksum: 4C488816633FF717A0B45CCDE2FDDE4E;2084.
+(rerunfilecheck)             Checksum: 68C278931878A777AD1B3340753CAEB4;2202.
 
 
 LaTeX Warning: There were undefined references.
@@ -2412,15 +2404,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 366.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 369.
  ) 
 Here is how much of TeX's memory you used:
- 33887 strings out of 492624
- 733070 string characters out of 6119216
- 1004739 words of memory out of 5000000
- 37050 multiletter control sequences out of 15000+600000
+ 33896 strings out of 492624
+ 733268 string characters out of 6119216
+ 987328 words of memory out of 5000000
+ 37054 multiletter control sequences out of 15000+600000
  84303 words of font info for 220 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,18n,74p,528b,1355s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (26 pages, 428572 bytes).
+Output written on gvv_control_manual.dvi (26 pages, 439592 bytes).

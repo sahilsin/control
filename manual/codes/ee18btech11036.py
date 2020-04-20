@@ -61,7 +61,7 @@ def generaterouth(a):
 
 
 if __name__=="__main__":
-    a = [1,6,11,69]
+    a = [1,6,11,66]
     b, sign_changes, marginal =  generaterouth(a)
     print(b)
     if (sign_changes>0):

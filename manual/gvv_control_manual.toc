@@ -30,10 +30,10 @@
 \contentsline {section}{\numberline {8}Gain Margin}{19}{section.8}% 
 \contentsline {subsection}{\numberline {8.1}Introduction}{19}{subsection.8.1}% 
 \contentsline {subsection}{\numberline {8.2}Example}{21}{subsection.8.2}% 
-\contentsline {subsection}{\numberline {8.3}Example}{21}{subsection.8.3}% 
-\contentsline {section}{\numberline {9}Phase Margin}{22}{section.9}% 
-\contentsline {subsection}{\numberline {9.1}Intoduction}{22}{subsection.9.1}% 
-\contentsline {subsection}{\numberline {9.2}Example}{23}{subsection.9.2}% 
-\contentsline {section}{\numberline {10}Oscillator}{24}{section.10}% 
-\contentsline {subsection}{\numberline {10.1}Introduction}{24}{subsection.10.1}% 
-\contentsline {subsection}{\numberline {10.2}Example}{25}{subsection.10.2}% 
+\contentsline {subsection}{\numberline {8.3}Example}{22}{subsection.8.3}% 
+\contentsline {section}{\numberline {9}Phase Margin}{23}{section.9}% 
+\contentsline {subsection}{\numberline {9.1}Intoduction}{23}{subsection.9.1}% 
+\contentsline {subsection}{\numberline {9.2}Example}{24}{subsection.9.2}% 
+\contentsline {section}{\numberline {10}Oscillator}{25}{section.10}% 
+\contentsline {subsection}{\numberline {10.1}Introduction}{25}{subsection.10.1}% 
+\contentsline {subsection}{\numberline {10.2}Example}{26}{subsection.10.2}% 

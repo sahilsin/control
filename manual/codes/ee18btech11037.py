@@ -1,6 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import math
+#if using termux
+import subprocess
+import shlex
+#end if
 
 w = np.linspace(0,1000,100000)
 

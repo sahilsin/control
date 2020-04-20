@@ -49,7 +49,7 @@ H(s) &=  \vec{C}{(s\vec{I}-\vec{A})^{-1}}\vec{B}+D\vec{I}
 %
 using the code in 
 \begin{lstlisting}
-codes/ee18btech11031.py
+codes/ee18btech11031/ee18btech11031.py
 \end{lstlisting}
 %
 \item Identify the damping type.
@@ -61,4 +61,30 @@ codes/ee18btech11031.py
 \end{align}
 Fom Table \ref{table:ee18btech11012}, the sytem is overdamped.
 %
+\item Find and plot the unit step response for the system.
+\\
+\solution 
+\begin{align}
+Y(s) &= U(s)H(s)
+\\
+& = \frac{1}{s(s+1)(s+2)}
+\\
+\implies y(t) &= \brak{\frac{1}{2} - e^{-t} + \frac{e^{-2t}}{2}}u(t)
+\end{align}
+%
+The following code plots the step response in Fig.   \ref{fig:ee18btech11031}
+%
+using the code in 
+\begin{lstlisting}
+codes/ee18btech11031/ee18btech11031_2.py
+\end{lstlisting}
+
+\begin{figure}[!h]
+\centering
+  \includegraphics[width=\columnwidth]{./figs/ee18btech11031.eps}
+  \caption{}
+  \label{fig:ee18btech11031}
+\end{figure}
+%
+
 \end{enumerate}

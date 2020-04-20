@@ -1,5 +1,11 @@
-import sympy as sp
+# Code by Neil
+# Unit step response
+
+
 import numpy as np
+import sympy as sp
+from sympy.abc import s,t
+from sympy.integrals import inverse_laplace_transform
 from scipy import signal
 import matplotlib.pyplot as plt
 
@@ -24,20 +30,22 @@ C = np.array([
 
 D = 0
 sys = signal.StateSpace(A,B,C,D) #State space to time domain conversion
+t1,y1= signal.step2(sys) # time and output axis for natural(impulse) response
 
-t1,y1= signal.impulse2(sys) # time and output axis for natural(impulse) response
+Hs = 1/(s**2 + 3*s + 2) 
 
-a,b = signal.ss2tf(A,B,C,D) #Importing Num. and Den. of T.F. from State Space Rep.
+Us = 1/s
 
-#rounding off
-num = np.around(a[0],decimals = 0)
-den = np.around(b,decimals = 0)
-s = sp.symbols('s')
-H_s = sp.Poly(num,s)/sp.Poly(den,s) # Getting polynomial expressions
+Ys = Hs * Us
 
-print("THE TRANSFER FUNCTION OF THE SYSTEM ")
-print("H(s) =",H_s)
-plt.plot(t1,y1,label='impulse response')
+#print(Ys)
+
+y = inverse_laplace_transform(Ys,s,t)
+
+print("Unit step response =",y) # Note: "Heaviside(t)" is nothing but u(t):unit step
+plt.plot(t1,y1,label='Unit step response')
+plt.xlabel('$t$')
+plt.ylabel('$u(t)$')
 plt.legend()
 plt.grid()
 

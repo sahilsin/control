@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  21 APR 2020 10:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  21 APR 2020 10:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1625,7 +1625,7 @@ LaTeX Warning: Command \j invalid in math mode on input line 78.
 [6]
 File: ./figs/ee18btech11037/ee18btech11037_2.eps Graphic file (type eps)
  <./figs/ee18btech11037/ee18btech11037_2.eps>
-Overfull \hbox (4.42886pt too wide) detected at line 118
+Overfull \hbox (4.42886pt too wide) detected at line 123
 []
  []
 
@@ -1650,9 +1650,13 @@ Overfull \hbox (2.43596pt too wide) in paragraph at lines 229--229
 []|$[]$| 
  []
 
-) [7]
+)
+Underfull \vbox (badness 3536) has occurred while \output is active []
+
+ [7]
 File: ./figs/ee18btech11012.eps Graphic file (type eps)
- <./figs/ee18btech11012.eps>) (./chapters/ee18btech11002.tex
+
+<./figs/ee18btech11012.eps>) (./chapters/ee18btech11002.tex
 File: ./figs/ee18btech11002.eps Graphic file (type eps)
 
 <./figs/ee18btech11002.eps> [8]) (./chapters/ee18btech11035.tex
@@ -2433,12 +2437,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 372.
  ) 
 Here is how much of TeX's memory you used:
- 33934 strings out of 492624
- 734312 string characters out of 6119216
- 995675 words of memory out of 5000000
- 37077 multiletter control sequences out of 15000+600000
+ 33933 strings out of 492624
+ 734303 string characters out of 6119216
+ 995626 words of memory out of 5000000
+ 37076 multiletter control sequences out of 15000+600000
  84303 words of font info for 220 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,22n,74p,528b,1355s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,22n,74p,528b,1882s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (28 pages, 474224 bytes).
+Output written on gvv_control_manual.dvi (28 pages, 474184 bytes).

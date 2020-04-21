@@ -1,0 +1,175 @@
+\documentclass{beamer}
+
+ 
+
+\usepackage[utf8]{inputenc}
+
+ 
+
+ 
+
+%Information to be included in the title page:
+
+\title{Presentation}
+
+\author{Shreekara Raghavan}
+
+\institute{ee18btech11040}
+
+\date{12 February 2020}
+
+ 
+
+ 
+
+ 
+
+\begin{document}
+
+ 
+
+\frame{\titlepage}
+
+ 
+
+\begin{frame}
+
+\frametitle{The Question}
+
+The transfer function of the system Y(s)/U(s) whose state-space equations are given below:
+
+
+
+\begin{bmatrix} x_1'(t)\\ x_2'(t) \end{bmatrix} = \begin{bmatrix}  1&2\\ 2&0 \end{bmatrix}\begin{bmatrix} x_1(t)\\ x_2(t) \end{bmatrix} + \begin{bmatrix} 1 \\ 2 \end{bmatrix}u(t)    ........(1)
+
+
+
+y(t) = \begin{bmatrix} 1&0 \end{bmatrix}\begin{bmatrix} x_1(t)\\ x_2(t) \end{bmatrix}    ............(2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(A) \(\frac{s + 2}{s^2 - 2s - 2}\)  (B) \(\frac{s - 2}{s^2 + s - 4}\) (C) \(\frac{s - 4}{s^2 + s - 4}\)  (D) \(\frac{s + 4}{s^2 - s - 4}\)
+
+
+
+\end{frame}
+
+
+
+\begin{frame}
+
+\frametitle{Answer}
+
+Consider equation 1, which can be written as
+
+\centerline{X'(t) = AX(t) + BU(t)}
+
+where
+
+A = \begin{bmatrix}  1&2\\ 2&0 \end{bmatrix} and B = \begin{bmatrix} 1&0 \end{bmatrix}
+
+
+
+Taking Laplace Transform on both sides
+
+
+
+
+
+\centerline{sX(s) = AX(s) + BU(s)}
+
+\centerline{X(s)(sI - A) = BU(s)}
+
+\centerline{X(s) = (sI - A)^{-1} BU(s)}
+
+
+
+
+
+
+
+
+
+\end{frame}
+
+ 
+
+ 
+
+\begin{frame}
+
+\frametitle{Answer Continued..}
+
+From equation 2 we get
+
+\centerline{Y(t) = CX(t)}
+
+where C = \begin{bmatrix}1&0\end{bmatrix}
+
+after taking Laplace transform becomes
+
+\centerline{Y(s) = CX(s) }
+
+The same equation can then be written as 
+
+\centerline{Y(s) = C(sI - A)^{-1} BU(s)}
+
+
+
+
+
+\end{frame}
+
+  
+
+\begin{frame}{Answer Continued....}
+
+
+
+Thus our transfer function can be written as 
+
+\centerline{H(s) = \(\frac{Y(s)}{U(s)}\) = C(sI - A)^{-1} B}
+
+    
+
+\end{frame}
+
+
+
+\begin{frame}{Some Simplification}
+
+H(s) = \begin{bmatrix}1&0\end{bmatrix}\begin{bmatrix}  s-1&-2\\ -2&s \end{bmatrix}^{-1}\begin{bmatrix} 1\\2 \end{bmatrix}
+
+
+
+
+
+H(s) = \begin{bmatrix}1&0\end{bmatrix}\(\frac{\begin{bmatrix}  s&2\\ 2&s-1 \end{bmatrix}}{s^2 -s - 4}\)\begin{bmatrix} 1\\2 \end{bmatrix}
+
+
+
+H(s) = \begin{bmatrix}1&0\end{bmatrix}\(\frac{\begin{bmatrix}  s+4\\ 2+2s-2 \end{bmatrix}}{s^2 -s - 4}\)
+
+
+
+H(s) = \(\frac{s + 4}{s^2 - s - 4}\)
+
+    
+
+\end{frame}
+
+
+
+\end{document}

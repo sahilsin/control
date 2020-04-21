@@ -1,8 +1,8 @@
 \contentsline {section}{\numberline {1}Signal Flow Graph}{1}{section.1}% 
 \contentsline {subsection}{\numberline {1.1}Mason's Gain Formula}{1}{subsection.1.1}% 
 \contentsline {subsection}{\numberline {1.2}Matrix Formula}{3}{subsection.1.2}% 
-\contentsline {section}{\numberline {2}Bode Plot}{3}{section.2}% 
-\contentsline {subsection}{\numberline {2.1}Introduction}{3}{subsection.2.1}% 
+\contentsline {section}{\numberline {2}Bode Plot}{4}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Introduction}{4}{subsection.2.1}% 
 \contentsline {subsection}{\numberline {2.2}Example}{5}{subsection.2.2}% 
 \contentsline {subsection}{\numberline {2.3}Phase}{6}{subsection.2.3}% 
 \contentsline {section}{\numberline {3}Second order System}{7}{section.3}% 
@@ -38,3 +38,5 @@
 \contentsline {section}{\numberline {10}Oscillator}{26}{section.10}% 
 \contentsline {subsection}{\numberline {10.1}Introduction}{26}{subsection.10.1}% 
 \contentsline {subsection}{\numberline {10.2}Example}{26}{subsection.10.2}% 
+\contentsline {section}{\numberline {11}Root Locus}{29}{section.11}% 
+\contentsline {subsection}{\numberline {11.1}Introduction}{29}{subsection.11.1}% 

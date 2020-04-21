@@ -30,14 +30,15 @@ Taking Laplace transform on both sides we have the following equations
 \end{align}
 and
 \begin{align}
-\vec{Y}(s)&= \vec{CX}(s)+D\vec{IU}(s)
+\vec{Y}(s)&= \vec{C}\vec{X}(s)+\vec{D}\vec{U}(s)
 \end{align}
 Substituting from \eqref{eq:x_init} in the above,
 %
 \begin{multline}
-\vec{Y}(s)=( \vec{C}{(s\vec{I}-\vec{A})^{-1}}\vec{B}+D\vec{I}) \vec{U}(s) 
+\vec{Y}(s)=( \vec{C}{(s\vec{I}-\vec{A})^{-1}}\vec{B}+\vec{D}\vec{I}) \vec{U}(s) 
 \\
 + \vec{C}(s\vec{I}-\vec{A})^{-1}\vec{x}(0)
+\label{eq:ee18btech11006_yx_init}
 \end{multline}
 %
 \item Find $H(s)$ for a SISO (single input single output) system.

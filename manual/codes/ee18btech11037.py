@@ -8,47 +8,41 @@ import shlex
 
 w = np.linspace(0,1000,100000)
 
-#bode phase plot for pole = 0.1
+#given bode phase plot 
 y1 = []
 for i in w:
 	if i <= 0.01:
 		y1.append(0)
-	if i > 0.01 and i <1:
-		y1.append(-45*(math.log10(i)+2)) #eqn of straight line
-	if i >= 1:
-		y1.append(-90)
+	if i > 0.01 and i <0.1:
+		y1.append(-90-45*(math.log10(i))) #eqn of straight line
+	if i >= 0.1 and i <10:
+		y1.append(-135-90*(math.log10(i))) #eqn of straight line
+	if i >= 10 and i <100:
+		y1.append(-180-45*(math.log10(i))) #eqn of straight line
+	if i >= 100:
+		y1.append(-270)
 
 
-#bode phase plot for pole = 1
+#bode phase plot for poles  0.1 and 10 only
 y2 = []
 for i in w:
-	if i <= 1:
+	if i <= 0.01:
 		y2.append(0)
-	if i > 1 and i <100:
-		y2.append(-45*(math.log10(i))) #eqn of straight line
+	if i > 0.01 and i <100:
+		y2.append(-45*(math.log10(i)+2)) #eqn of straight line
 	if i >= 100:
-		y2.append(-90)
-		
-#bode plot for both the poles		
-y3 = []
-for i in range(len(w)):
-	a = y1[i]+y2[i]
-	y3.append(a)
+		y2.append(-180)
 
-plt.subplot(211)
-plt.semilogx(w,y1,label='for pole = 0.1')
-plt.axvline(x=0.01,dashes=[5, 5, 5, 5], color = 'c')
+#print(len(y1))
+#print(len(y2))
+		
+plt.semilogx(w,y1,label='$\phi(\omega)$')
 plt.axvline(x=0.1,dashes=[5, 5, 5, 5], color = 'c')
-plt.axvline(x=1,dashes=[5, 5, 5, 5], color = 'c')
-plt.axvline(x=10,dashes=[5, 5, 5, 5], color = 'c')
-plt.axvline(x=100,dashes=[5, 5, 5, 5], color = 'c')
 plt.axhline(y=-45,dashes=[5, 5, 5, 5], color = 'c')
-plt.semilogx(w,y2,label='for pole = 10')
+plt.semilogx(w,y2,label='$\phi_2(\omega)$')
 plt.title("Phase Plot")
 plt.legend()
-plt.subplot(212)
-plt.semilogx(w,y3,label='for both the poles')
-plt.legend()
+plt.grid()
 
 #if using termux
 plt.savefig('./figs/ee18btech11037/ee18btech11037_2.pdf')

@@ -27,16 +27,17 @@
 \contentsline {subsection}{\numberline {6.2}Example}{18}{subsection.6.2}% 
 \contentsline {section}{\numberline {7}Compensators}{19}{section.7}% 
 \contentsline {subsection}{\numberline {7.1}Phase Lead}{19}{subsection.7.1}% 
-\contentsline {subsection}{\numberline {7.2}Example}{19}{subsection.7.2}% 
+\contentsline {subsection}{\numberline {7.2}Lag Lead}{19}{subsection.7.2}% 
+\contentsline {subsection}{\numberline {7.3}Example}{20}{subsection.7.3}% 
 \contentsline {section}{\numberline {8}Gain Margin}{21}{section.8}% 
 \contentsline {subsection}{\numberline {8.1}Introduction}{21}{subsection.8.1}% 
-\contentsline {subsection}{\numberline {8.2}Example}{22}{subsection.8.2}% 
-\contentsline {subsection}{\numberline {8.3}Example}{23}{subsection.8.3}% 
-\contentsline {section}{\numberline {9}Phase Margin}{24}{section.9}% 
-\contentsline {subsection}{\numberline {9.1}Intoduction}{24}{subsection.9.1}% 
-\contentsline {subsection}{\numberline {9.2}Example}{25}{subsection.9.2}% 
-\contentsline {section}{\numberline {10}Oscillator}{26}{section.10}% 
-\contentsline {subsection}{\numberline {10.1}Introduction}{26}{subsection.10.1}% 
-\contentsline {subsection}{\numberline {10.2}Example}{26}{subsection.10.2}% 
-\contentsline {section}{\numberline {11}Root Locus}{29}{section.11}% 
-\contentsline {subsection}{\numberline {11.1}Introduction}{29}{subsection.11.1}% 
+\contentsline {subsection}{\numberline {8.2}Example}{23}{subsection.8.2}% 
+\contentsline {subsection}{\numberline {8.3}Example}{24}{subsection.8.3}% 
+\contentsline {section}{\numberline {9}Phase Margin}{25}{section.9}% 
+\contentsline {subsection}{\numberline {9.1}Intoduction}{25}{subsection.9.1}% 
+\contentsline {subsection}{\numberline {9.2}Example}{26}{subsection.9.2}% 
+\contentsline {section}{\numberline {10}Oscillator}{27}{section.10}% 
+\contentsline {subsection}{\numberline {10.1}Introduction}{27}{subsection.10.1}% 
+\contentsline {subsection}{\numberline {10.2}Example}{28}{subsection.10.2}% 
+\contentsline {section}{\numberline {11}Root Locus}{30}{section.11}% 
+\contentsline {subsection}{\numberline {11.1}Introduction}{30}{subsection.11.1}% 

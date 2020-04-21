@@ -13,25 +13,23 @@
     \vec{y} = \myvec{ 1&0}\vec{x}
 \end{align}
 %
-\solution By comparing the above equations to \label{eq:ee18btech11004_state},
+\solution By comparing the above equations to \eqref{eq:ee18btech11004_state},
 %
 \begin{align}
-    \Vec{D} &= 0
-\end{align}
-\begin{align}
+    \vec{D} &= 0
+\\
     \vec{C} &= \myvec{1&0}
-\end{align}
-\begin{align}
+\\
     \vec{B} &= \myvec{1\\2}
-\end{align}
-\begin{align}
+\\
     \vec{A} &= \myvec{1&2\\2&0}
 \end{align}
 %
-From \label{eq:ee18btech11004_siso}
+From \eqref{eq:ee18btech11004_siso}
 %
 \begin{align}
     H(s) &= \frac{Y(s)}{U(s)} = \vec{C}(s\vec{I} - \vec{A})^{-1} \vec{B} + \vec{D}\vec{I}
+\\
    & = \frac{s +4}{s^2 - s - 4}
 \end{align}
 %

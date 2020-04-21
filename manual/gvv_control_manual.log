@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  21 APR 2020 19:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  21 APR 2020 19:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1325,6 +1325,12 @@ LaTeX Warning: Label `eq:ee18btech11031_H' multiply defined.
 LaTeX Warning: Label `eq:ee18btech11006_yx_init' multiply defined.
 
 
+LaTeX Warning: Label `eq:ee18btech11004_state' multiply defined.
+
+
+LaTeX Warning: Label `eq:ee18btech11004_siso' multiply defined.
+
+
 LaTeX Warning: Label `fig:ee18btech11038' multiply defined.
 
 
@@ -1744,13 +1750,13 @@ Underfull \vbox (badness 1509) has occurred while \output is active []
 )
 (./chapters/ee18btech11006.tex (./tables/ee18btech11004.tex)
 
-LaTeX Warning: Reference `eq:x_init' on page 13 undefined on input line 35.
+LaTeX Warning: Reference `eq:x_init' on page 13 undefined on input line 37.
 
 [13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
 
  []
 
@@ -1758,7 +1764,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--99
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-Underfull \hbox (badness 10000) in paragraph at lines 298--301
+Underfull \hbox (badness 10000) in paragraph at lines 300--303
 
  []
 
@@ -1783,7 +1789,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: ./figs/ee18btech11031.eps Graphic file (type eps)
 
 <./figs/ee18btech11031.eps>) (./chapters/ee18btech11047.tex)
-(./chapters/ee18btech11040.tex [17]) (./chapters/ee18btech11007.tex
+(./chapters/ee18btech11040.tex
+Underfull \vbox (badness 1117) has occurred while \output is active []
+
+ [17])
+(./chapters/ee18btech11007.tex
 
 LaTeX Warning: Command \j invalid in math mode on input line 8.
 
@@ -1917,7 +1927,6 @@ LaTeX Warning: Command \j invalid in math mode on input line 35.
 
 LaTeX Warning: Command \j invalid in math mode on input line 35.
 
-[19]
 
 LaTeX Warning: Command \j invalid in math mode on input line 63.
 
@@ -1936,6 +1945,10 @@ LaTeX Warning: Command \j invalid in math mode on input line 63.
 
 LaTeX Warning: Command \j invalid in math mode on input line 63.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
 
 LaTeX Warning: Command \j invalid in math mode on input line 76.
 
@@ -2461,15 +2474,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 382.
  (./gvv_control_manual.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 382.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 382.
+Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
+(rerunfilecheck)             Checksum: B2D04724C1B2AAD1C7227FE253EDAFF7;2540.
 
-
-Package rerunfilecheck Warning: File `gvv_control_manual.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `gvv_control_manual.out':
-(rerunfilecheck)             Before: 6AA9F120F16B3BB15A139810E1FFC76B;2483
-(rerunfilecheck)             After:  B2D04724C1B2AAD1C7227FE253EDAFF7;2540.
 
 LaTeX Warning: There were undefined references.
 
@@ -2479,12 +2486,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 382.
  ) 
 Here is how much of TeX's memory you used:
- 33958 strings out of 492624
- 734898 string characters out of 6119216
- 986402 words of memory out of 5000000
- 37088 multiletter control sequences out of 15000+600000
+ 33959 strings out of 492624
+ 734914 string characters out of 6119216
+ 986350 words of memory out of 5000000
+ 37089 multiletter control sequences out of 15000+600000
  84303 words of font info for 220 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,22n,74p,528b,1882s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (31 pages, 504632 bytes).
+Output written on gvv_control_manual.dvi (31 pages, 503628 bytes).

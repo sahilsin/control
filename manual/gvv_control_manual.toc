@@ -43,3 +43,4 @@
 \contentsline {subsection}{\numberline {10.2}Example}{29}{subsection.10.2}% 
 \contentsline {section}{\numberline {11}Root Locus}{31}{section.11}% 
 \contentsline {subsection}{\numberline {11.1}Introduction}{31}{subsection.11.1}% 
+\contentsline {subsection}{\numberline {11.2}Example}{32}{subsection.11.2}% 

@@ -3,6 +3,8 @@
 \contentsline {section}{\numberline {2}Polar Plot}{3}{section.2}% 
 \contentsline {subsection}{\numberline {2.1}Introduction}{3}{subsection.2.1}% 
 \contentsline {subsection}{\numberline {2.2}Example}{3}{subsection.2.2}% 
-\contentsline {subsection}{\numberline {2.3}Example}{3}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.3}Example}{4}{subsection.2.3}% 
 \contentsline {subsection}{\numberline {2.4}Example}{4}{subsection.2.4}% 
 \contentsline {subsection}{\numberline {2.5}Example}{4}{subsection.2.5}% 
+\contentsline {subsection}{\numberline {2.6}Example}{5}{subsection.2.6}% 
+\contentsline {subsection}{\numberline {2.7}Example}{5}{subsection.2.7}% 

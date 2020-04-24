@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  22 APR 2020 20:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  24 APR 2020 09:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2526,10 +2526,21 @@ File: ./figs/ee18btech11050.eps Graphic file (type eps)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/ee18btech11051.tex
+) (./chapters/ee18btech11052.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+
+LaTeX Warning: Command \j invalid in math mode on input line 8.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 18.
+
+File: ./figs/ee18btech11052.eps Graphic file (type eps)
+<./figs/ee18btech11052.eps>) (./chapters/ee18btech11051.tex
+Underfull \vbox (badness 2229) has occurred while \output is active []
+
+ [33]
 
 LaTeX Warning: Command \j invalid in math mode on input line 12.
 
@@ -2558,17 +2569,14 @@ LaTeX Warning: Command \j invalid in math mode on input line 20.
 LaTeX Warning: Command \j invalid in math mode on input line 20.
 
 File: ./figs/ee18btech11051.eps Graphic file (type eps)
-<./figs/ee18btech11051.eps> [33])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 392.
- [34
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 392.
+<./figs/ee18btech11051.eps>) [34]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 394.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 394.
  (./gvv_control_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 392.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 392.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 394.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 394.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
-(rerunfilecheck)             Checksum: 9FE7B5A12BF227BB8C723BC520BFF86A;2831.
+(rerunfilecheck)             Checksum: 817054EBC162D24DD11390005884D670;2890.
 
 
 LaTeX Warning: There were undefined references.
@@ -2576,15 +2584,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 392.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 394.
  ) 
 Here is how much of TeX's memory you used:
- 34203 strings out of 492624
- 739142 string characters out of 6119216
- 990679 words of memory out of 5000000
- 37304 multiletter control sequences out of 15000+600000
+ 34210 strings out of 492624
+ 739318 string characters out of 6119216
+ 990723 words of memory out of 5000000
+ 37308 multiletter control sequences out of 15000+600000
  84303 words of font info for 220 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,22n,74p,528b,1874s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (34 pages, 548776 bytes).
+Output written on gvv_control_manual.dvi (34 pages, 553444 bytes).

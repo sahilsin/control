@@ -45,5 +45,6 @@
 \contentsline {section}{\numberline {11}Root Locus}{31}{section.11}% 
 \contentsline {subsection}{\numberline {11.1}Introduction}{31}{subsection.11.1}% 
 \contentsline {subsection}{\numberline {11.2}Example}{33}{subsection.11.2}% 
-\contentsline {section}{\numberline {12}Polar Plot}{33}{section.12}% 
-\contentsline {subsection}{\numberline {12.1}Introduction}{33}{subsection.12.1}% 
+\contentsline {subsection}{\numberline {11.3}Example}{33}{subsection.11.3}% 
+\contentsline {section}{\numberline {12}Polar Plot}{34}{section.12}% 
+\contentsline {subsection}{\numberline {12.1}Introduction}{34}{subsection.12.1}% 

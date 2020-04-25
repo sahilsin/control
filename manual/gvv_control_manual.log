@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  25 APR 2020 14:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  25 APR 2020 15:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1370,6 +1370,12 @@ LaTeX Warning: Label `eq:ee18btech11046_char' multiply defined.
 
 LaTeX Warning: Label `eq:ee18btech11050_t1' multiply defined.
 
+
+LaTeX Warning: Label `eq:ee17btech11031_system' multiply defined.
+
+
+LaTeX Warning: Label `fig:ee17btech11031' multiply defined.
+
 )
 \openout1 = `gvv_control_manual.aux'.
 
@@ -1545,25 +1551,21 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no , in font nullfont!
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-(./figs/ee18btech11003/L1.tex
+) (./figs/ee18btech11003/L1.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
-Missing character: There is no , in font nullfont!
-) (./figs/ee18btech11003/L2.tex
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 )
-(./figs/ee18btech11003/L3.tex
+(./figs/ee18btech11003/L2.tex
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+) (./figs/ee18btech11003/L3.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -1572,7 +1574,8 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no , in font nullfont!
-) (./figs/ee18btech11003/L4.tex
+)
+(./figs/ee18btech11003/L4.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -1580,8 +1583,7 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
-) [2]
-(./tables/ee18btech11003.tex
+) [2] (./tables/ee18btech11003.tex
 \gnumericTableWidth=\skip79
 \gnumericTableWidthComplete=\skip80
 \gnumericMultiRowLength=\skip81
@@ -2597,17 +2599,29 @@ LaTeX Warning: Command \j invalid in math mode on input line 20.
 LaTeX Warning: Command \j invalid in math mode on input line 20.
 
 File: ./figs/ee18btech11051.eps Graphic file (type eps)
-<./figs/ee18btech11051.eps> [35])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 398.
- [36
+<./figs/ee18btech11051.eps> [35]) (./chapters/ee17btech11031.tex
+(./figs/ee17btech11031/ee17btech11031_tik.tex)
+(./figs/ee17btech11031/ee17btech11031_tiklap.tex)
+File: ./figs/ee17btech11031/ee17btech11031_1.eps Graphic file (type eps)
+
+<./figs/ee17btech11031/ee17btech11031_1.eps>
+File: ./figs/ee17btech11031/ee17btech11031_2.eps Graphic file (type eps)
+
+<./figs/ee17btech11031/ee17btech11031_2.eps>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [36]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 401.
+ [37
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 398.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 401.
  (./gvv_control_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 398.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 398.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 401.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 401.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
-(rerunfilecheck)             Checksum: 8AFAB31F08B4CD35335FEB4B39A06A40;3009.
+(rerunfilecheck)             Checksum: C27D57BFE9F7232675E76FED3A70DFED;3124.
 
 
 LaTeX Warning: There were undefined references.
@@ -2615,15 +2629,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 398.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 401.
  ) 
 Here is how much of TeX's memory you used:
- 34385 strings out of 492624
- 743627 string characters out of 6119216
- 985210 words of memory out of 5000000
- 37474 multiletter control sequences out of 15000+600000
+ 34423 strings out of 492624
+ 744577 string characters out of 6119216
+ 986573 words of memory out of 5000000
+ 37500 multiletter control sequences out of 15000+600000
  84303 words of font info for 220 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,22n,74p,528b,1352s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (36 pages, 577172 bytes).
+Output written on gvv_control_manual.dvi (37 pages, 602428 bytes).

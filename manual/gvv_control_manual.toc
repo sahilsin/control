@@ -50,3 +50,5 @@
 \contentsline {subsection}{\numberline {11.3}Example}{35}{subsection.11.3}% 
 \contentsline {section}{\numberline {12}Polar Plot}{35}{section.12}% 
 \contentsline {subsection}{\numberline {12.1}Introduction}{35}{subsection.12.1}% 
+\contentsline {section}{\numberline {13}PID Controller}{36}{section.13}% 
+\contentsline {subsection}{\numberline {13.1}Introduction}{36}{subsection.13.1}% 

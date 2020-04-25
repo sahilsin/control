@@ -9,42 +9,44 @@
 \BOOKMARK [1][-]{section.3}{Second order System}{}% 9
 \BOOKMARK [2][-]{subsection.3.1}{Damping}{section.3}% 10
 \BOOKMARK [2][-]{subsection.3.2}{Peak Overshoot}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.3}{Example}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.4}{Settling Time}{section.3}% 13
-\BOOKMARK [1][-]{section.4}{Routh Hurwitz Criterion}{}% 14
-\BOOKMARK [2][-]{subsection.4.1}{Routh Array}{section.4}% 15
-\BOOKMARK [2][-]{subsection.4.2}{Marginal Stability}{section.4}% 16
-\BOOKMARK [2][-]{subsection.4.3}{Stability}{section.4}% 17
-\BOOKMARK [2][-]{subsection.4.4}{Example}{section.4}% 18
-\BOOKMARK [2][-]{subsection.4.5}{Example}{section.4}% 19
-\BOOKMARK [1][-]{section.5}{State-Space Model}{}% 20
-\BOOKMARK [2][-]{subsection.5.1}{Controllability and Observability}{section.5}% 21
-\BOOKMARK [2][-]{subsection.5.2}{Second Order System}{section.5}% 22
-\BOOKMARK [2][-]{subsection.5.3}{Example}{section.5}% 23
-\BOOKMARK [2][-]{subsection.5.4}{Example}{section.5}% 24
-\BOOKMARK [2][-]{subsection.5.5}{Example}{section.5}% 25
-\BOOKMARK [2][-]{subsection.5.6}{Example}{section.5}% 26
-\BOOKMARK [2][-]{subsection.5.7}{Example}{section.5}% 27
-\BOOKMARK [1][-]{section.6}{Nyquist Plot}{}% 28
-\BOOKMARK [2][-]{subsection.6.1}{Introduction}{section.6}% 29
-\BOOKMARK [2][-]{subsection.6.2}{Example}{section.6}% 30
-\BOOKMARK [1][-]{section.7}{Compensators}{}% 31
-\BOOKMARK [2][-]{subsection.7.1}{Phase Lead}{section.7}% 32
-\BOOKMARK [2][-]{subsection.7.2}{Lag Lead}{section.7}% 33
-\BOOKMARK [2][-]{subsection.7.3}{Example}{section.7}% 34
-\BOOKMARK [1][-]{section.8}{Gain Margin}{}% 35
-\BOOKMARK [2][-]{subsection.8.1}{Introduction}{section.8}% 36
-\BOOKMARK [2][-]{subsection.8.2}{Example}{section.8}% 37
-\BOOKMARK [2][-]{subsection.8.3}{Example}{section.8}% 38
-\BOOKMARK [1][-]{section.9}{Phase Margin}{}% 39
-\BOOKMARK [2][-]{subsection.9.1}{Intoduction}{section.9}% 40
-\BOOKMARK [2][-]{subsection.9.2}{Example}{section.9}% 41
-\BOOKMARK [1][-]{section.10}{Oscillator}{}% 42
-\BOOKMARK [2][-]{subsection.10.1}{Introduction}{section.10}% 43
-\BOOKMARK [2][-]{subsection.10.2}{Example}{section.10}% 44
-\BOOKMARK [1][-]{section.11}{Root Locus}{}% 45
-\BOOKMARK [2][-]{subsection.11.1}{Introduction}{section.11}% 46
-\BOOKMARK [2][-]{subsection.11.2}{Example}{section.11}% 47
-\BOOKMARK [2][-]{subsection.11.3}{Example}{section.11}% 48
-\BOOKMARK [1][-]{section.12}{Polar Plot}{}% 49
-\BOOKMARK [2][-]{subsection.12.1}{Introduction}{section.12}% 50
+\BOOKMARK [2][-]{subsection.3.3}{Settling Time}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.4}{Example}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.5}{Example}{section.3}% 14
+\BOOKMARK [1][-]{section.4}{Routh Hurwitz Criterion}{}% 15
+\BOOKMARK [2][-]{subsection.4.1}{Routh Array}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.2}{Marginal Stability}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.3}{Stability}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.4}{Example}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.5}{Example}{section.4}% 20
+\BOOKMARK [1][-]{section.5}{State-Space Model}{}% 21
+\BOOKMARK [2][-]{subsection.5.1}{Controllability and Observability}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.2}{Second Order System}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.3}{Example}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.4}{Example}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.5}{Example}{section.5}% 26
+\BOOKMARK [2][-]{subsection.5.6}{Example}{section.5}% 27
+\BOOKMARK [2][-]{subsection.5.7}{Example}{section.5}% 28
+\BOOKMARK [1][-]{section.6}{Nyquist Plot}{}% 29
+\BOOKMARK [2][-]{subsection.6.1}{Introduction}{section.6}% 30
+\BOOKMARK [2][-]{subsection.6.2}{Example}{section.6}% 31
+\BOOKMARK [1][-]{section.7}{Compensators}{}% 32
+\BOOKMARK [2][-]{subsection.7.1}{Phase Lead}{section.7}% 33
+\BOOKMARK [2][-]{subsection.7.2}{Lead Circuit}{section.7}% 34
+\BOOKMARK [2][-]{subsection.7.3}{Lag Lead}{section.7}% 35
+\BOOKMARK [2][-]{subsection.7.4}{Example}{section.7}% 36
+\BOOKMARK [1][-]{section.8}{Gain Margin}{}% 37
+\BOOKMARK [2][-]{subsection.8.1}{Introduction}{section.8}% 38
+\BOOKMARK [2][-]{subsection.8.2}{Example}{section.8}% 39
+\BOOKMARK [2][-]{subsection.8.3}{Example}{section.8}% 40
+\BOOKMARK [1][-]{section.9}{Phase Margin}{}% 41
+\BOOKMARK [2][-]{subsection.9.1}{Intoduction}{section.9}% 42
+\BOOKMARK [2][-]{subsection.9.2}{Example}{section.9}% 43
+\BOOKMARK [1][-]{section.10}{Oscillator}{}% 44
+\BOOKMARK [2][-]{subsection.10.1}{Introduction}{section.10}% 45
+\BOOKMARK [2][-]{subsection.10.2}{Example}{section.10}% 46
+\BOOKMARK [1][-]{section.11}{Root Locus}{}% 47
+\BOOKMARK [2][-]{subsection.11.1}{Introduction}{section.11}% 48
+\BOOKMARK [2][-]{subsection.11.2}{Example}{section.11}% 49
+\BOOKMARK [2][-]{subsection.11.3}{Example}{section.11}% 50
+\BOOKMARK [1][-]{section.12}{Polar Plot}{}% 51
+\BOOKMARK [2][-]{subsection.12.1}{Introduction}{section.12}% 52

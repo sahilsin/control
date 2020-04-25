@@ -30,26 +30,27 @@
 \BOOKMARK [1][-]{section.6}{Nyquist Plot}{}% 30
 \BOOKMARK [2][-]{subsection.6.1}{Introduction}{section.6}% 31
 \BOOKMARK [2][-]{subsection.6.2}{Example}{section.6}% 32
-\BOOKMARK [1][-]{section.7}{Compensators}{}% 33
-\BOOKMARK [2][-]{subsection.7.1}{Phase Lead}{section.7}% 34
-\BOOKMARK [2][-]{subsection.7.2}{Lead Circuit}{section.7}% 35
-\BOOKMARK [2][-]{subsection.7.3}{Lag Lead}{section.7}% 36
-\BOOKMARK [2][-]{subsection.7.4}{Example}{section.7}% 37
-\BOOKMARK [1][-]{section.8}{Gain Margin}{}% 38
-\BOOKMARK [2][-]{subsection.8.1}{Introduction}{section.8}% 39
-\BOOKMARK [2][-]{subsection.8.2}{Example}{section.8}% 40
-\BOOKMARK [2][-]{subsection.8.3}{Example}{section.8}% 41
-\BOOKMARK [1][-]{section.9}{Phase Margin}{}% 42
-\BOOKMARK [2][-]{subsection.9.1}{Intoduction}{section.9}% 43
-\BOOKMARK [2][-]{subsection.9.2}{Example}{section.9}% 44
-\BOOKMARK [1][-]{section.10}{Oscillator}{}% 45
-\BOOKMARK [2][-]{subsection.10.1}{Introduction}{section.10}% 46
-\BOOKMARK [2][-]{subsection.10.2}{Example}{section.10}% 47
-\BOOKMARK [1][-]{section.11}{Root Locus}{}% 48
-\BOOKMARK [2][-]{subsection.11.1}{Introduction}{section.11}% 49
-\BOOKMARK [2][-]{subsection.11.2}{Example}{section.11}% 50
-\BOOKMARK [2][-]{subsection.11.3}{Example}{section.11}% 51
-\BOOKMARK [1][-]{section.12}{Polar Plot}{}% 52
-\BOOKMARK [2][-]{subsection.12.1}{Introduction}{section.12}% 53
-\BOOKMARK [1][-]{section.13}{PID Controller}{}% 54
-\BOOKMARK [2][-]{subsection.13.1}{Introduction}{section.13}% 55
+\BOOKMARK [2][-]{subsection.6.3}{Example}{section.6}% 33
+\BOOKMARK [1][-]{section.7}{Compensators}{}% 34
+\BOOKMARK [2][-]{subsection.7.1}{Phase Lead}{section.7}% 35
+\BOOKMARK [2][-]{subsection.7.2}{Lead Circuit}{section.7}% 36
+\BOOKMARK [2][-]{subsection.7.3}{Lag Lead}{section.7}% 37
+\BOOKMARK [2][-]{subsection.7.4}{Example}{section.7}% 38
+\BOOKMARK [1][-]{section.8}{Gain Margin}{}% 39
+\BOOKMARK [2][-]{subsection.8.1}{Introduction}{section.8}% 40
+\BOOKMARK [2][-]{subsection.8.2}{Example}{section.8}% 41
+\BOOKMARK [2][-]{subsection.8.3}{Example}{section.8}% 42
+\BOOKMARK [1][-]{section.9}{Phase Margin}{}% 43
+\BOOKMARK [2][-]{subsection.9.1}{Intoduction}{section.9}% 44
+\BOOKMARK [2][-]{subsection.9.2}{Example}{section.9}% 45
+\BOOKMARK [1][-]{section.10}{Oscillator}{}% 46
+\BOOKMARK [2][-]{subsection.10.1}{Introduction}{section.10}% 47
+\BOOKMARK [2][-]{subsection.10.2}{Example}{section.10}% 48
+\BOOKMARK [1][-]{section.11}{Root Locus}{}% 49
+\BOOKMARK [2][-]{subsection.11.1}{Introduction}{section.11}% 50
+\BOOKMARK [2][-]{subsection.11.2}{Example}{section.11}% 51
+\BOOKMARK [2][-]{subsection.11.3}{Example}{section.11}% 52
+\BOOKMARK [1][-]{section.12}{Polar Plot}{}% 53
+\BOOKMARK [2][-]{subsection.12.1}{Introduction}{section.12}% 54
+\BOOKMARK [1][-]{section.13}{PID Controller}{}% 55
+\BOOKMARK [2][-]{subsection.13.1}{Introduction}{section.13}% 56

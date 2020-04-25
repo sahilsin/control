@@ -30,25 +30,26 @@
 \contentsline {section}{\numberline {6}Nyquist Plot}{20}{section.6}% 
 \contentsline {subsection}{\numberline {6.1}Introduction}{20}{subsection.6.1}% 
 \contentsline {subsection}{\numberline {6.2}Example}{22}{subsection.6.2}% 
+\contentsline {subsection}{\numberline {6.3}Example}{22}{subsection.6.3}% 
 \contentsline {section}{\numberline {7}Compensators}{22}{section.7}% 
 \contentsline {subsection}{\numberline {7.1}Phase Lead}{22}{subsection.7.1}% 
 \contentsline {subsection}{\numberline {7.2}Lead Circuit}{23}{subsection.7.2}% 
-\contentsline {subsection}{\numberline {7.3}Lag Lead}{23}{subsection.7.3}% 
+\contentsline {subsection}{\numberline {7.3}Lag Lead}{24}{subsection.7.3}% 
 \contentsline {subsection}{\numberline {7.4}Example}{24}{subsection.7.4}% 
 \contentsline {section}{\numberline {8}Gain Margin}{25}{section.8}% 
 \contentsline {subsection}{\numberline {8.1}Introduction}{25}{subsection.8.1}% 
 \contentsline {subsection}{\numberline {8.2}Example}{27}{subsection.8.2}% 
 \contentsline {subsection}{\numberline {8.3}Example}{28}{subsection.8.3}% 
-\contentsline {section}{\numberline {9}Phase Margin}{28}{section.9}% 
-\contentsline {subsection}{\numberline {9.1}Intoduction}{28}{subsection.9.1}% 
+\contentsline {section}{\numberline {9}Phase Margin}{29}{section.9}% 
+\contentsline {subsection}{\numberline {9.1}Intoduction}{29}{subsection.9.1}% 
 \contentsline {subsection}{\numberline {9.2}Example}{30}{subsection.9.2}% 
-\contentsline {section}{\numberline {10}Oscillator}{30}{section.10}% 
-\contentsline {subsection}{\numberline {10.1}Introduction}{30}{subsection.10.1}% 
-\contentsline {subsection}{\numberline {10.2}Example}{31}{subsection.10.2}% 
+\contentsline {section}{\numberline {10}Oscillator}{31}{section.10}% 
+\contentsline {subsection}{\numberline {10.1}Introduction}{31}{subsection.10.1}% 
+\contentsline {subsection}{\numberline {10.2}Example}{32}{subsection.10.2}% 
 \contentsline {section}{\numberline {11}Root Locus}{34}{section.11}% 
 \contentsline {subsection}{\numberline {11.1}Introduction}{34}{subsection.11.1}% 
 \contentsline {subsection}{\numberline {11.2}Example}{35}{subsection.11.2}% 
-\contentsline {subsection}{\numberline {11.3}Example}{35}{subsection.11.3}% 
+\contentsline {subsection}{\numberline {11.3}Example}{36}{subsection.11.3}% 
 \contentsline {section}{\numberline {12}Polar Plot}{36}{section.12}% 
 \contentsline {subsection}{\numberline {12.1}Introduction}{36}{subsection.12.1}% 
 \contentsline {section}{\numberline {13}PID Controller}{37}{section.13}% 

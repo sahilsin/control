@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  22 APR 2020 20:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  25 APR 2020 16:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1344,6 +1344,9 @@ Package chngcntr Info: \counterwithout already defined.
 LaTeX Warning: Label `fig:ee18btech11033' multiply defined.
 
 
+LaTeX Warning: Label `eq:ee18btech11048_2' multiply defined.
+
+
 LaTeX Warning: Label `eq:ee18btech11021' multiply defined.
 
 )
@@ -1661,24 +1664,67 @@ LaTeX Warning: Command \j invalid in math mode on input line 52.
 
 LaTeX Warning: Command \j invalid in math mode on input line 54.
 
-) (./chapters/ee18btech11021.tex (./tables/ee18btech11021.tex
+) (./chapters/ee18btech11048.tex [4]
+File: ./figs/ee18btech11048.eps Graphic file (type eps)
+ <./figs/ee18btech11048.eps>
+(./tables/ee18btech11048_table.tex
 \gnumericTableWidth=\skip79
 \gnumericTableWidthComplete=\skip80
 \gnumericMultiRowLength=\skip81
 \gnumericColA=\skip82
 \gnumericColB=\skip83
-) [4]
+\gnumericColC=\skip84
+)
+
+LaTeX Warning: Command \j invalid in math mode on input line 35.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 35.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 39.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 39.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 48.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 48.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 48.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 48.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 59.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 59.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 59.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 59.
+
+
+Underfull \vbox (badness 4899) has occurred while \output is active []
+
+)
+(./chapters/ee18btech11021.tex (./tables/ee18btech11021.tex)
 
 LaTeX Warning: Command \j invalid in math mode on input line 49.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 49.
 
+[5]
 File: ./figs/ee18btech11021/EE18BTECH11021_PD.eps Graphic file (type eps)
-<./figs/ee18btech11021/EE18BTECH11021_PD.eps>
-Underfull \vbox (badness 3701) has occurred while \output is active []
-
-
+ <./figs/ee18btech11021/EE18BTECH11021_PD.eps>
 
 LaTeX Warning: Command \j invalid in math mode on input line 100.
 
@@ -1691,7 +1737,10 @@ Overfull \hbox (17.00072pt too wide) detected at line 100
  []
 
 File: ./figs/ee18btech11021/EE18BTECH11021_PI.eps Graphic file (type eps)
-<./figs/ee18btech11021/EE18BTECH11021_PI.eps> [5]
+<./figs/ee18btech11021/EE18BTECH11021_PI.eps>
+Underfull \vbox (badness 4266) has occurred while \output is active []
+
+ [6]
 
 LaTeX Warning: Command \j invalid in math mode on input line 152.
 
@@ -1699,27 +1748,30 @@ LaTeX Warning: Command \j invalid in math mode on input line 152.
 LaTeX Warning: Command \j invalid in math mode on input line 152.
 
 File: ./figs/ee18btech11021/EE18BTECH11021_PID.eps Graphic file (type eps)
-<./figs/ee18btech11021/EE18BTECH11021_PID.eps>) [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 369.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 369.
+<./figs/ee18btech11021/EE18BTECH11021_PID.eps>)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 371.
+ [7
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 371.
  (./ketan_control_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 369.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 369.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 371.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 371.
 Package rerunfilecheck Info: File `ketan_control_manual.out' has not changed.
-(rerunfilecheck)             Checksum: A086BC7EE10D76B254E369C0EB8E354D;669.
+(rerunfilecheck)             Checksum: 63CBF8794376EA3EB83CD789CE7204FC;726.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 369.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 371.
  ) 
 Here is how much of TeX's memory you used:
- 32587 strings out of 492624
- 702340 string characters out of 6119216
- 919793 words of memory out of 5000000
- 35861 multiletter control sequences out of 15000+600000
+ 32601 strings out of 492624
+ 702677 string characters out of 6119216
+ 920793 words of memory out of 5000000
+ 35869 multiletter control sequences out of 15000+600000
  68203 words of font info for 165 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,19n,69p,512b,1161s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ketan_control_manual.dvi (6 pages, 63484 bytes).
+Output written on ketan_control_manual.dvi (7 pages, 73124 bytes).

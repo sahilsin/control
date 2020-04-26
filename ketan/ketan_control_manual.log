@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  25 APR 2020 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  26 APR 2020 08:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1715,55 +1715,55 @@ LaTeX Warning: Command \j invalid in math mode on input line 59.
 LaTeX Warning: Command \j invalid in math mode on input line 10.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 14.
+LaTeX Warning: Command \j invalid in math mode on input line 15.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 14.
+LaTeX Warning: Command \j invalid in math mode on input line 15.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 14.
+LaTeX Warning: Command \j invalid in math mode on input line 15.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 14.
+LaTeX Warning: Command \j invalid in math mode on input line 15.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 14.
+LaTeX Warning: Command \j invalid in math mode on input line 15.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 14.
+LaTeX Warning: Command \j invalid in math mode on input line 15.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 14.
+LaTeX Warning: Command \j invalid in math mode on input line 15.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 14.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 26.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 26.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 26.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 26.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 26.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 26.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 26.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 26.
+LaTeX Warning: Command \j invalid in math mode on input line 15.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 27.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 27.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 27.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 27.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 27.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 27.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 27.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 27.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 28.
 
 (./tables/es17btech11002/es17btech11002_1.tex
 \gnumericColD=\skip85
@@ -1779,32 +1779,23 @@ LaTeX Warning: Command \j invalid in math mode on input line 228.
 
 )
 
-LaTeX Warning: Command \j invalid in math mode on input line 38.
+LaTeX Warning: Command \j invalid in math mode on input line 39.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 38.
+LaTeX Warning: Command \j invalid in math mode on input line 39.
 
 
 Underfull \vbox (badness 1939) has occurred while \output is active []
 
  [5]
 
-LaTeX Warning: Command \j invalid in math mode on input line 39.
+LaTeX Warning: Command \j invalid in math mode on input line 40.
 
 (./tables/es17btech11002/es17btech11002_2.tex)
 File: ./figs/es17btech11002/es17btech11002.eps Graphic file (type eps)
 
-<./figs/es17btech11002/es17btech11002.eps>
-
-LaTeX Warning: Reference `eq:es17btech11002_gain' on page 6 undefined on input 
-line 66.
-
-
-Underfull \hbox (badness 2261) in paragraph at lines 66--67
-[]\OT1/txr/m/n/12 Solving [] or from Fig. [][]2.2[][][], the gain
- []
-
-) (./chapters/ee18btech11021.tex (./tables/ee18btech11021.tex)
+<./figs/es17btech11002/es17btech11002.eps>) (./chapters/ee18btech11021.tex
+(./tables/ee18btech11021.tex)
 
 LaTeX Warning: Command \j invalid in math mode on input line 49.
 
@@ -1850,9 +1841,6 @@ Package rerunfilecheck Info: File `ketan_control_manual.out' has not changed.
 (rerunfilecheck)             Checksum: 91738FF0D996CB1666D00CE4842583B4;783.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 373.
@@ -1866,4 +1854,4 @@ Here is how much of TeX's memory you used:
  1144 hyphenation exceptions out of 8191
  55i,19n,69p,512b,1161s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ketan_control_manual.dvi (8 pages, 85344 bytes).
+Output written on ketan_control_manual.dvi (8 pages, 85556 bytes).

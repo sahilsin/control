@@ -1,0 +1,194 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item Fig. \ref{fig:ee18btech111019_hart} shows a Hartley oscillator.
+
+\begin{figure}[ht]
+    \begin{center}
+	    \resizebox{\columnwidth}{!}{\input{./figs/ee18btech11019/hart.tex}}
+	\end{center}
+\caption{Hartley oscillator}
+\label{fig:ee18btech111019_hart}
+\end{figure}
+\item Draw the equivalent block diagram of the  oscillator in Fig. \ref{fig:ee18btech111019_hart}.\\
+\solution See Fig. \label{fig:ee18btech111019_hart_block}. 
+%
+\begin{figure}[!ht]
+    \begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11019/osc.tex}} %block diagram
+	\end{center}
+\caption{block diagram for oscillator}
+\label{fig:ee18btech111019_hart_block}
+\end{figure}
+
+\item Find $G$ and $H$.
+
+\solution From the figure \ref{fig:ee18btech111019_block3}\\
+
+\begin{figure}[!ht]
+    \begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11019/lc.tex}}
+		
+	\end{center}
+\caption{Amplifier written in equivalent circuit form}
+\label{fig:ee18btech111019_block3}
+\end{figure}
+W.K.T, no current flows in the opamp terminals.\\
+and,(in S-domain)\\
+\begin{align}
+    A(V_1 - V_2) = V_{out}\\
+    v_2 =0\\
+    V_1 = V_{out} + iR_2
+\end{align}
+where,\\
+A is the gain through the amplifier,\\
+Assuming everything at 0 initially.\\
+\begin{align}
+    V_{out} - i_1SL_1 = 0\\
+    i_1(SL_1 + SL_2) = i_2(\frac{1}{SC})
+\end{align}
+On solving\\
+\begin{align}
+    i_1 = \frac{V_{out}}{SL_1}\\
+    i_2 = ((SL_1 + SL_2)SC)(\frac{V_{out}}{SL_1})\\
+\end{align}
+Now,\\
+\begin{align}
+    i = i_1 + i_2\\
+    i = ((SL_1 + SL_2)SC + 1)\frac{V_{out}}{SL_1}\\
+\end{align}
+Finding $V_1$
+\begin{align}
+    V_1 = V_{out} + iR_2 \\
+                = V_{out} ( 1 + R_2\frac{((SL_1 + SL_2)SC + 1)}{SL_1})\\
+\end{align}
+Gain, G(s) is given by,
+\begin{align}
+G = kA\\
+\therefore A = \frac{V_{out}}{V_1}\\
+    = \frac{1}{1 + R_2\frac{((SL_1 + SL_2)SC + 1)}{SL_1}}
+\end{align}
+where, k is some real number.\\
+\begin{align}
+H(s) = \frac{V_{out}}{V_{f}} =\frac{ i_1SL_1}{i_1SL_2}
+    = \frac{L_1}{L_2}
+\label{eq:ee18btech111019_B_gain}      
+\end{align}
+
+
+
+\item Show that the gain of the oscillator is \\
+\begin{align}
+    Gain  = \frac{V_{out}}{V_{in}} = \frac{G}{1 - GH}
+\label{eq:ee18btech111019_gain}
+\end{align}
+%
+\\
+\solution From figure \ref{fig:ee18btech111019_hart_block}
+Oscillators gain can be given as follows:\\
+\begin{align}
+    G(V_{in} + HV_{out}) =V_{out}\\
+    G(V_{in} = (1-GH)V_{out}\\
+    \frac{V_{out}}{V_{in}} = \frac{G}{1 - GH}
+\end{align}
+%
+resulting in \eqref{eq:ee18btech111019_gain}.\\
+
+
+
+\item State the condition for sustained oscillations. Justify.
+
+\solution Condition for sustained oscillation is given by\\
+\begin{align}
+    GH = 1
+\end{align}
+Along with, total phase gain o the circuit should be 0 or 2$\pi$\\
+\textbf{Justification:} as, when $ GH =1 $, gain becomes infinity, and theoretically we can get output, without actually providing input\\
+Total phase gain should be so, as we want our signal to be in phase after every loop traversal.\\
+
+
+
+\item Find the frequency of oscillation using the condition that $GH = 1$.
+
+\solution 
+Now,we know that $GH = 1$ for sustained oscillations, putting the the above terms in the equation\\
+on solving,\\
+    
+putting that in and equating $GH=1$ we get,
+
+\begin{align}
+    1 = (\frac{L_1}{L_2})\frac{k}{1 + R_2\frac{((SL_1 + SL_2)SC + 1)}{SL_1}}
+\end{align}
+
+As we need, to find frequency, put S =jw
+\begin{align}
+   1 = (\frac{L_1}{L_2})\frac{k}{1 + R_2\frac{((j\omega L_1 + j\omega L_2)j\omega C + 1)}{j\omega L_1}}\\
+   1 = (\frac{L_1}{L_2})\frac{k}{1 -j R_2\frac{(-(\omega L_1 + \omega L_2)\omega C + 1)}{\omega L_1}}\\
+\end{align}
+To satisfy the above equation, equating imaginary term to Zero.
+\begin{align}    
+    \omega L_1 + \omega L_2  = \frac{1}{\omega C}\\
+    \omega = \frac{1}{\sqrt{(L_1+L_2)(C)}}\\
+    f = \frac{1}{2\pi \sqrt{(L_1+L_2)(C)}}
+\end{align}
+Therefor, G for sustained oscillations can be given by,\\
+\begin{align}
+    G = \frac{1}{H}
+     =  \frac{L_2}{L_1} 
+\label{eq:ee18btech111019_Amp_gain}
+\end{align}
+ 
+\item For Hartley oscillator frequency generated can be given as 
+\begin{align}
+    f = \frac{1}{2\pi\sqrt{(L_1 + L_2)C}}
+    \label{eq:ee18btech111019_frequency}
+\end{align}
+
+We know that for an opamp gain is given by:
+\begin{align}
+    G = \frac{R_2}{R_1}
+\end{align}
+Here,
+\begin{align}
+    G(S) = \frac{R_2}{R_1} = \frac{L_2}{L_1}
+\end{align}
+referring to \ref{eq:ee18btech111019_Amp_gain}\\
+And,
+\begin{align}
+    H(s) = \frac{V_o}{V_f} = \frac{L_1}{L_2}
+\end{align}
+referring to \ref{eq:ee18btech111019_B_gain}\\
+\newline
+\item \textbf{Simulation:}\\
+Taking the following values,and applying in \ref{eq:ee18btech111019_frequency} \\
+
+
+
+\begin{tabular}{|c|c|}
+\hline
+Component & Value  \\
+\hline
+$R_1$         & 10K$\Omega$   \\
+\hline
+$R_2$         & 100K$\Omega$   \\
+\hline
+$R_3$         & $\sim$  \\
+\hline
+$L_1$         & $1 \mu H$     \\
+\hline
+$L_2$         & $1 \mu H$   \\
+\hline
+C         & 120 pF \\
+\hline
+\end{tabular}
+\\
+
+We get f = 103 MHz\\
+Feedback factor for Hartley given by:
+\begin{align}
+H =\frac{L_1}{L_2}= 1
+\end{align}
+W.K.T, $GH = 1$, for sustained oscillation \\
+$\therefore$ Minimum amplification Gain,G = 1\\ (GH <=1 for a stable system) \\
+\end{enumerate}

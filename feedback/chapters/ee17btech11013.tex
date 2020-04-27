@@ -1,0 +1,62 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item    A lead Compensator network includes a parallel combination of R and C in feed-forward path as shown in Fig. \ref{fig:ee17btech11013}. Find the gain of the compensator.
+\begin{figure}[!ht]
+    \begin{center}
+    \resizebox{\columnwidth}{!}{\input{./figs/ee17btech11013/figure.tex}}
+    \end{center}
+\caption{}
+\label{fig:ee17btech11013}
+\end{figure}
+\\
+\solution The transfer function  is
+    \begin{align}
+    T(s) &= \frac{V_o}{V_i}
+\\
+&= \frac{R_2}{\frac{\frac{1}{sC}R1}{\frac{1}{sC}+R1} + R2}
+\\
+&= \frac{s+\frac{1}{\tau}}{s+\frac{1}{\tau\alpha}}
+\label{eq:ee17btech11013_ta_comp}
+    \end{align}
+%
+where
+    \begin{align}
+\label{eq:ee17btech11013_ta}
+\begin{split}
+    \alpha &= \frac{R_2}{R_1 + R_2}\\
+    \tau &= R_1C
+\end{split}
+    \end{align}
+\item If the transfer function of the compensator  is 
+\begin{align}
+\label{eq:ee17btech11013_gain}
+G_c(s) = \frac{s+2}{s+4}
+\end{align}, find the value of RC.
+%
+\\
+\solution     From \eqref{eq:ee17btech11013_gain}, \eqref{eq:ee17btech11013_ta_comp}
+ and \eqref{eq:ee17btech11013_ta}
+
+
+\begin{align}
+    \tau = R_1C = 0.5
+    \end{align}
+
+\item    Find the value of RC for the compensator in Section \ref{sec:ee18btech11021}.
+\\
+\solution The compensator gain in this case is 
+     \begin{align}
+\label{eq:ee18btech11021_gain_ex}
+    T(s) = \frac{(s+\frac{1}{3})}{s+1}
+    \end{align}
+ From \eqref{eq:ee18btech11021_gain_ex}, 
+ \eqref{eq:ee17btech11013_ta_comp}
+ and \eqref{eq:ee17btech11013_ta},
+    \begin{align}
+    \tau &= 3
+\\
+\implies    R_1C &= 3
+    \end{align}
+
+\end{enumerate}

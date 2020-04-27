@@ -1,0 +1,160 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item A feedback control system has the characteristic equation 
+\begin{align}
+    s^2 + 6Ks + 2s + 5 = 0, \quad K > 0. 
+\label{eq:ee18btech11046_char}
+\end{align}
+%
+Find the open loop gain.
+\\
+\solution     \label{eq:ee18btech11046_char} can be expressed as
+
+\begin{align}
+    1+\frac{6 k s}{s^{2}+2 s+5}&=0    
+\\
+\implies 1+KG(s)&=0
+\\
+\implies G(s) &= \frac{6 s}{s^{2}+2 s+5}
+\label{eq:ee18btech11046_gs}
+\end{align}
+
+\item Find the poles and zeros of $G(s)$
+\\
+\solution The poles and zeros  are at 
+\begin{align}
+\begin{split}
+p_1,p_2 &= -1 \pm 2\j
+\\
+z &=0
+\end{split}
+\label{eq:ee18btech11046_pz}
+\end{align}
+
+\item Find the number of root locus branches.
+\\
+\solution  For $G(s)$, let 
+\begin{itemize}
+\item $P$- No. of finite poles
+\item $Z$- No. of finite zeros
+\end{itemize}
+%
+The number of root locus branches
+\begin{align}
+N = 
+\begin{cases}
+P & P > Z,
+\\
+Z & P < Z.
+\end{cases}
+\end{align}
+The root locus branches start at the open loop poles and end at open loop zeros. 
+From \eqref{eq:ee18btech11046_pz}, 
+\begin{align}
+P=2, Z = 1 \implies N = 2
+\end{align}
+%
+One branch originates at each pole and ends at zero and the other branch starts from other pole and goes to infinity.
+\item Find the centroid and the angle of asymptotes.
+\\
+\solution 
+Some of the root locus branches approach infinity when $P \ne Z$. Asymptotes give the direction of these root locus branches. The intersection point of asymptotes on the real axis is known as centroid.  The ordinate of the centroid is given by 
+\begin{align}
+\frac{\sum_{i=1}^{P} p_{i}-\sum_{j=1}^{Z} z_{j}}{P-Z} 
+&= \frac{-2-0}{2-1}
+\\
+&= -2
+\end{align}
+%
+after substituting from \eqref{eq:ee18btech11046_pz}.  Thus, the centroid is at $\brak{-2,0}$.
+The formula for angle of asymptotes $\theta$ is
+\begin{align}
+\theta&=\frac{(2 q+1) \pi}{P-Z}, \quad q =0, 1, \dots P-Z-1
+\\
+&=\pi
+\end{align}
+%
+One branch meets the real axis at a breakaway point then goes to zero at origin and other goes to infinity following the asymptote($y=0$).
+	\item Find the intersection points of root locus branches with the imaginary axis. 
+\\
+\solution Using the Routh array method, 
+
+\item Find the angle of departure with respect to the  pole $p_k$.
+\\
+\solution The angle of departure with respect to the $k$th (complex) pole is defined as 
+\begin{align}
+\phi_{k}^{d}&=
+\begin{cases}
+\pi-\phi_k, &  \text{Im}\brak{p_k} \ne 0
+\\
+0 & \text{Im}\brak{p_k} = 0
+\end{cases}
+\end{align}
+where,
+\begin{align}
+\phi_k&=\sum_{i=1}^{P} \phase{p_k-p_i}-\sum_{j}^{Z} \phase{p_k - z_{j}}
+\end{align}
+%
+For $p_1 = -1+2\j$, 
+\begin{align}
+\phi_{1} &= \phase{-1+2\j-\brak{-1-2\j}} - \phase{-1+2i-0}
+\\
+\implies  &= \frac{\pi}{2} + \brak{\pi - \tan^{-1}2} = \frac{3\pi}{2} - \tan^{-1}2
+\end{align}
+%
+\item Find the angle of arrival with respect to the zero $z_k$
+\\
+\solution The angle of arrival with respect to the $k$th (complex) zero is defined as 
+\begin{align}
+\phi_{k}^{a}&=
+\begin{cases}
+\pi-\phi_k, &  \text{Im}\brak{z_k} \ne 0
+\\
+0 & \text{Im}\brak{z_k} = 0
+\end{cases}
+\end{align}
+where,
+\begin{align}
+\phi_k&=\sum_{i=1}^{P} \phase{z_k-p_i}-\sum_{j}^{Z} \phase{z_k - z_{j}}
+\end{align}
+%
+Since there are no complex zeros there is no angle of arrival.
+
+\item Find the breakaway point for the root locus.
+\\
+\solution From \eqref{eq:ee18btech11046_char} and 
+\eqref{eq:ee18btech11046_gs},
+    \begin{align}
+        K&=\frac{-\left(s^{2}+2 s+5\right)}{6 s},
+\\
+        \frac{d K}{d s}&=0 \implies \sbrak{1-\frac{5}{s^{2}}}=0 
+\\
+  \implies        s&=-\sqrt{5}
+    \end{align}
+%
+which is the  breakaway point that lies only in the left half plane. Some information on the breakaway point is available below.
+\begin{itemize}
+\item While varying $K$, the point where the Root Locus enters the real axis is called th breakaway point.
+\item   It is the point on a real axis segment of the root locus between two real poles where the two real closed-loop poles meet and diverge to become complex conjugates.
+\item  As the root locus is symmetric about the real axis there will be two roots at the breakaway point. 
+
+\end{itemize}
+    
+\item Plot the Root Locus.
+\\
+\solution The following code generates the desired plot in Fig. \ref{fig:ee18btech11046}.
+\begin{lstlisting}
+codes/ee18btech11046.py
+\end{lstlisting}    
+
+
+\begin{figure}[ht!]
+\centering
+    \includegraphics[width=\columnwidth]{./figs/ee18btech11046.eps}
+    \caption{}
+    \label{fig:ee18btech11046}
+\end{figure}
+
+
+\end{enumerate}
+

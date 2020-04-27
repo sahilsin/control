@@ -1,0 +1,42 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item Find the transfer function of the following system 
+%
+\begin{align}
+    %\myvec{ \dot x_1(t) \\ \dot x_2(t) } = \myvec{ 1&2\\ 2&0} \myvec{x_1(t)\\ x_2(t)} + \myvec{ 1 \\2}u(t)
+    \vec{\dot x } = \myvec{ 1&2\\ 2&0} \vec{x} + \myvec{ 1 \\2}u(t)   
+\end{align}
+
+\begin{align}
+    %\vec(y) = \myvec{ 1&0}\myvec{ x_1(t)\\ x_2(t)} 
+    \vec{y} = \myvec{ 1&0}\vec{x}
+\end{align}
+%
+\solution By comparing the above equations to \eqref{eq:ee18btech11004_state},
+%
+\begin{align}
+    \vec{D} &= 0
+\\
+    \vec{C} &= \myvec{1&0}
+\\
+    \vec{B} &= \myvec{1\\2}
+\\
+    \vec{A} &= \myvec{1&2\\2&0}
+\end{align}
+%
+From \eqref{eq:ee18btech11004_siso}
+%
+\begin{align}
+    H(s) &= \frac{Y(s)}{U(s)} = \vec{C}(s\vec{I} - \vec{A})^{-1} \vec{B} + \vec{D}\vec{I}
+\\
+   & = \frac{s +4}{s^2 - s - 4}
+\end{align}
+%
+where the following code computes the transfer function. 
+\begin{lstlisting}
+    codes/ee18btech11040.py
+\end{lstlisting}
+
+
+\end{enumerate}

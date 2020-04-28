@@ -140,16 +140,18 @@ columns=fullflexible
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
 %\numberwithin{equation}{section}
 \numberwithin{equation}{subsection}
+\numberwithin{figure}{subsection}
+\numberwithin{table}{subsection}
 %\numberwithin{problem}{section}
 %\numberwithin{definition}{section}
 \makeatletter
-\@addtoreset{figure}{problem}
+%\@addtoreset{figure}{problem}
 \makeatother
 
-\let\StandardTheFigure\thefigure
+%\let\StandardTheFigure\thefigure
 \let\vec\mathbf
 %\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
-\renewcommand{\thefigure}{\theproblem}
+%\renewcommand{\thefigure}{\theproblem}
 %\setlist[enumerate,1]{before=\renewcommand\theequation{\theenumi.\arabic{equation}}
 %\counterwithin{equation}{enumi}
 
@@ -248,8 +250,11 @@ Control Systems
 
 \bigskip
 
-\renewcommand{\thefigure}{\theenumi}
-\renewcommand{\thetable}{\theenumi}
+%\renewcommand{\thefigure}{\theenumi}
+%\renewcommand{\thefigure}{\thesubsection}
+%\renewcommand{\thetable}{\theenumi}
+%\renewcommand{\thefigure}{\theproblem}
+
 %\renewcommand{\theequation}{\theenumi}
 
 %\begin{abstract}
@@ -289,6 +294,24 @@ Download python codes using
 svn co https://github.com/gadepall/school/trunk/control/ketan/codes
 \end{lstlisting}
 
+
+\section{}
+%
+\section{}
+\subsection{}
+\subsection{}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\input{./chapters/ee18btech11028_1.tex}
+\input{./chapters/ee18btech11016.tex}
+\end{enumerate}
+\subsection{}
+\subsection{}
+\subsection{}
+\subsection{}
+\subsection{}
+\numberwithin{equation}{subsection}
+\input{./chapters/ee18btech11034.tex}
 
 \section{Polar Plot}
 \subsection{Introduction}
@@ -354,10 +377,9 @@ svn co https://github.com/gadepall/school/trunk/control/ketan/codes
 %\subsection{Example}
 %\input{./chapters/ee18btech11023.tex}
 %
-%\section{Nyquist Plot}
 %\input{./chapters/ee18btech11007.tex}
 %
-%\section{Compensators}
+\section{Compensators}
 %\subsection{Phase Lead}
 %%\input{./chapters/ee18btech11010.tex}
 %\input{./chapters/ee18btech11021.tex}

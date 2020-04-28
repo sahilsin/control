@@ -1,34 +1,148 @@
 \begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
 \numberwithin{equation}{enumi}
-\item
-Sketch the Polar Plot of
+
+\item In the block diagram Fig.\ref{fig:ee18btech11029}  
 \begin{align}
-G\brak{s} = \frac{\brak{1+\frac{s}{29}}\brak{1+0.0025s}}{\brak{s^{3}}\brak{1+0.005s}\brak{1+0.001s}}
+G\brak{s} = \frac{K}{\brak{s+4}\brak{s+5}}
+\label{ee18btech11034_Gs}
 \end{align}
+\begin{figure}[!ht]
+    \begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11029/ee18btech11029_1.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11029}
+\end{figure}
+\item Find the range of K for stability by Nyquist criterion
 
-\solution 
-%
-The following code generates the polar plot in Fig.   \ref{fig:ee18btech11029}
-
-\begin{lstlisting}
-codes/ee18btech11029.py
-\end{lstlisting}
-
+\solution
 \begin{figure}[!h]
-\centering
-  \includegraphics[width=\columnwidth]{./figs/ee18btech11029.eps}
-  \caption{}
-  \label{fig:ee18btech11029}
+    \begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11029/ee18btech11029_2.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11029_1}
 \end{figure}
 
+
+The open loop transfer function from Fig.\ref{fig:ee18btech11029_1}
+
+\begin{align}
+    T\brak{s} =\brak{\frac{\frac{K}{\brak{s+4}\brak{s+5}}}{1+\frac{K}{\brak{s+4}\brak{s+5}}}}^2 
+\end{align}
+
+
+\begin{align}
+    T\brak{\j\omega} =\brak{\frac{\frac{K}{\brak{\j\omega+4}\brak{\j\omega+5}}}{1+\frac{K}{\brak{\j\omega+4}\brak{\j\omega+5}}}}^2 
+\end{align}
+
+
+
+
 \begin{itemize}
-    \item The polar plots use open loop transfer function to determine the stability and hence reference point is shifted to \brak{-1,0}
-    \item If \brak{–1,0} is left of the polar plot or \brak{–1,0} is not enclosed, then it is stable
-    \item If \brak{–1,0} is on right side of the polar plot or \brak{–1,0} is enclosed by polar plot then it is unstable. 
-    \item If \brak{–1,0} is on the polar plot then it is marginally stable
-    
+    \item Since it is connected in positive feedback the transfer function cuts at \brak{1,\j0} 
 \end{itemize}
 
-In Fig.   \ref{fig:ee18btech11029},  \brak{-1,0} is on the polar plot so the system is marginally stable.
-   
+\begin{align}
+    \implies  \text{Re} \cbrak{T\brak{\j\omega}} &= 1\\
+      \implies  \text{Im} \cbrak{T\brak{\j \omega}} &= 0
+     \label{eq:ee18btech11029_eq_Re}
+\end{align}
+
+
+\begin{align}
+    \brak{\frac{\frac{K}{\brak{\j\omega+4}\brak{\j\omega+5}}}{1+\frac{K}{\brak{\j\omega+4}\brak{\j\omega+5}}}}^2 &= 1+\j0
+\end{align}
+
+\begin{align}
+    \brak{\j\omega+4}\brak{\j\omega+5}+2K &=0
+\end{align}
+
+\begin{align}
+    -\omega^2 + 9\j\omega +20+2K &=0 
+\end{align}
+\\
+From  \eqref{eq:ee18btech11029_eq_Re}
+
+\begin{align}
+    20 + 2K &= 0\\
+    \implies K=-10
+\end{align}
+The minimum value of stability for the system to be stable is
+\begin{align}
+    K_{min} > -10
+\end{align}
+The range of K for which the system is stable is 
+\begin{align}
+    -10 < K < \infty
+\end{align}
+
+
+\item From the table.\ref{table:ee18btech11029_table1}, 
+Stability criterion for K is N+P=Z
+
+
+\begin{table}[!h]
+\centering
+\input{./tables/ee18btech11029_table.tex}
+\caption{}
+\label{table:ee18btech11029_table1}
+\end{table}
+
+
+\item Verify the Nyquist plots by
+\begin{lstlisting}
+codes/ee18btech11029_1.py
+\end{lstlisting}
+
+
+\begin{figure}[h!]
+\centering
+  \includegraphics[width=\columnwidth]{./figs/ee18btech11029/Nyquist.eps}
+  \caption{Nyquist Plot}
+  \label{fig:ee18btech11029_2}
+\end{figure}
+
+
+
+
+
+\item Verify the result using Routh-Hurwitz criterion
+
+\solution The characteristic equation is 
+\begin{align}
+    1-T\brak{s} &=0\\
+    1-\brak{\frac{\frac{K}{\brak{s+4}\brak{s+5}}}{1+\frac{K}{\brak{s+4}\brak{s+5}}}}^2 &=0\\
+    1+2\brak{\frac{K}{\brak{s+4}\brak{s+5}}}&=0\\
+    s^2+9s+20+2K &= 0
+\end{align}
+
+\begin{align}
+\mydet{s^2\\s^1\\s^0}
+\mydet{1 & 20+2K \\ 9 & 0 \\ 20+2K & 0}
+\end{align}
+For a system to be stable it should not have any sign changes
+\begin{align}
+    20+2K >0
+\end{align}
+This is valid for all positive values of K but the minimum value of K is
+\begin{align}
+    K>-10
+\end{align}
+So the range of K for stability is 
+\begin{align}
+    -10<K<\infty
+\end{align}
+
+\item Verify the result by
+\begin{lstlisting}
+codes/ee18btech11029_2.py
+\end{lstlisting}
+
+
+
+
+
+
+
 \end{enumerate}

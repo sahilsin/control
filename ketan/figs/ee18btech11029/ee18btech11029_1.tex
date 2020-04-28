@@ -1,0 +1,59 @@
+\tikzset{
+        block/.style = {draw, rectangle,
+            minimum height=1cm,
+            minimum width=2cm},
+        input/.style = {coordinate,node distance=1cm},
+        output/.style = {coordinate,node distance=4cm},
+        arrow/.style={draw, -latex,node distance=2cm},
+        pinstyle/.style = {pin edge={latex-, black,node distance=2cm}},
+        sum/.style = {draw, circle, node distance=1cm},
+}
+
+\begin{tikzpicture}[node distance=2.5cm,auto,>=latex']
+  \node [input, name=input] {};
+  \node [sum, right = 1cm of input] (sum) {};
+  \node [block, right =0.5 cm of sum] (block1) {$G(s)$};
+  \node [sum,right  = 0.7 cm of block1] (sum1){};
+  \node [input ,right =0.25cm of block1] (p1) {};
+  \node [input ,below = 1 cm of p1] (p2){};
+  \node [input ,left = 2.7cm of p2] (p3){};
+  \node [input ,above =0.8cm of p3] (p4) {};
+  \node [block,right  = 0.5 cm of sum1] (block2) {$G(s)$};
+  \node [input ,right =0.25cm of block2] (q1) {};
+  \node [input ,below = 1 cm of q1] (q2){};
+  \node [input ,left = 2.8cm of q2] (q3){};
+  \node [input ,above =0.7cm of q3] (q4) {};
+   \node [input ,right =0.8cm of block2] (q5) {};
+   \node [input ,below =1.5cm of q5] (q6){};
+    \node [input ,left =7.24cm of q6] (q7){};
+    \node [input ,above =0.9cm of q7] (q8) {};
+    \node [input ,right =1cm of q5] (q9) {};
+  
+  
+  
+  
+ 
+  
+  
+  \draw [->] (input) -- node {$R(s)\ +$} (sum);
+  \draw [->] (sum) --  (block1);
+ \draw [-]  (block1) -- (sum1);
+ \draw [-]  (sum1) -- (block2);
+ \draw [-]  (p1) -- (p2);
+ \draw [-] (p2) -- (p3);
+   \draw [->](p3) -| node[pos=0.90] {$-$} (p4);
+  \draw [-] (block2) -- (q1);
+  \draw[-] (q1) -- (q2);
+  \draw[-] (q2) -- (q3);
+  \draw [->](q3) -| node[pos=0.99] {$-$} (q4);
+  \draw[-] (block2)--(q5);
+   \draw[-] (q5) -- (q6);
+    \draw[-] (q6) -- (q7);
+  \draw [->](q7) -| node[pos=0.99] {$+$} (q8);
+  \draw [->] (q5) -- node {$Y(s)$} (q9);
+
+  %\draw [->] (block1) -- node {} (block2);
+%  \draw [->] (block2) -- node [name =y] {$Y(s)$} (output);
+ % \draw [->] (y) -- ++ (0,-2) -| node [pos=0.99] {$-$} (sum);
+
+\end{tikzpicture}

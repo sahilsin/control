@@ -1,5 +1,5 @@
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
+%\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+%\numberwithin{equation}{enumi}
 
 \item Plot the Bode magnitude and phase plots for the following system
 \begin{align}
@@ -29,9 +29,10 @@ The following code plots Fig. \ref{fig:ee18btech11049}
 codes/ee18btech11049.py
 \end{lstlisting}
 
-\item Find $\phase G\brak{\j\omega} + 180\degree$ , where $\omega$ is frequency when gain = 1 . This is known as  {\em phase margin} (PM)
-\\
-\solution Solving 
+%\item Find $\phase G\brak{\j\omega} + 180\degree$ , where $\omega$ is frequency when gain = 1 . This is known as  {\em phase margin} (PM)
+%\\
+%\solution 
+Solving 
 \begin{align}
 \label{eq:ee18btech11049_gain}
 \begin{split}
@@ -51,10 +52,10 @@ PM &= 91.7
 % \label{eq:ee18btech11049_phase}
 \end{align}
 
-\item Find $-G\brak{\j\omega}  $ db , where $\omega$ is frequency when phase = $-180\degree$ . This is known as  {\em gain margin} (GM)
-\\
+%\item Find $-G\brak{\j\omega}  $ db , where $\omega$ is frequency when phase = $-180\degree$ . This is known as  {\em gain margin} (GM)
+%\\
 \solution From Fig. \ref{fig:ee18btech11049} ,we can say that phase  never crosses $-180\degree$ .
 So , the gain margin is {\em infinite}.
 Which means we can add any gain, and the equivalent closed loop system never becomes unstable.
 
-\end{enumerate}
+%\end{enumerate}

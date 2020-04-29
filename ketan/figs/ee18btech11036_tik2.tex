@@ -1,0 +1,27 @@
+%\begin{figure}
+\tikzstyle{block} = [draw, fill=blue!20, rectangle, 
+    minimum height=1cm, minimum width=1cm]
+\tikzstyle{sum} = [draw, fill=blue!20, circle, node distance=1cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+% The block diagram code is probably more verbose than necessary
+\begin{tikzpicture}[scale=2]
+    \draw[color=black, thick]
+    (0,0) to (5,0){} 
+    (0,2) to [short,-o] (0,1.5){}
+    (0,0) to [short,-o] (0,0.5){}
+    (0,1) node[]{\large{\textbf{INPUT}}}
+    (0,2) to [R,l=$R_1$,](3,2)
+    (0.7,3) to [C, l=$C$, *-] (2.3,3)
+    (0.7,2) to (0.7,3){}
+    (2.3,2) to (2.3,3){}
+    (3,0) to [R,l=$R_2$,-*] (3,2)
+    (3,2) to (5,2){}
+    (5,2) to [short,-o] (5,1.5){}
+    (5,0) to [short,-o] (5,0.5){} node[above=7mm]{\large{\textbf{OUTPUT}}}
+    ;
+\end{tikzpicture}
+%\end{figure}
+

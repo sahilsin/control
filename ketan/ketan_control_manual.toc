@@ -8,7 +8,20 @@
 \contentsline {subsection}{\numberline {2.3}}{8}{subsection.2.3}% 
 \contentsline {subsection}{\numberline {2.4}}{8}{subsection.2.4}% 
 \contentsline {subsection}{\numberline {2.5}}{8}{subsection.2.5}% 
-\contentsline {subsection}{\numberline {2.6}}{9}{subsection.2.6}% 
-\contentsline {section}{\numberline {3}Design in Frequency Domain}{11}{section.3}% 
-\contentsline {section}{\numberline {4}PID Controller Design}{11}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}Introduction}{11}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {2.6}Nyquist and Routh-Hurwitz}{8}{subsection.2.6}% 
+\contentsline {subsection}{\numberline {2.7}Nyquist}{9}{subsection.2.7}% 
+\contentsline {subsection}{\numberline {2.8}Nyquist}{11}{subsection.2.8}% 
+\contentsline {section}{\numberline {3}Design in Frequency Domain}{12}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}}{12}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}}{12}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}}{12}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}}{12}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5}Nyquist Criterion}{12}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.6}}{14}{subsection.3.6}% 
+\contentsline {subsection}{\numberline {3.7}}{14}{subsection.3.7}% 
+\contentsline {subsection}{\numberline {3.8}}{14}{subsection.3.8}% 
+\contentsline {subsection}{\numberline {3.9}}{14}{subsection.3.9}% 
+\contentsline {subsection}{\numberline {3.10}}{14}{subsection.3.10}% 
+\contentsline {subsection}{\numberline {3.11}}{14}{subsection.3.11}% 
+\contentsline {section}{\numberline {4}PID Controller Design}{14}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Introduction}{14}{subsection.4.1}% 

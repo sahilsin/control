@@ -8,7 +8,20 @@
 \BOOKMARK [2][-]{subsection.2.3}{}{section.2}% 8
 \BOOKMARK [2][-]{subsection.2.4}{}{section.2}% 9
 \BOOKMARK [2][-]{subsection.2.5}{}{section.2}% 10
-\BOOKMARK [2][-]{subsection.2.6}{}{section.2}% 11
-\BOOKMARK [1][-]{section.3}{Design in Frequency Domain}{}% 12
-\BOOKMARK [1][-]{section.4}{PID Controller Design}{}% 13
-\BOOKMARK [2][-]{subsection.4.1}{Introduction}{section.4}% 14
+\BOOKMARK [2][-]{subsection.2.6}{Nyquist and Routh-Hurwitz}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.7}{Nyquist}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.8}{Nyquist}{section.2}% 13
+\BOOKMARK [1][-]{section.3}{Design in Frequency Domain}{}% 14
+\BOOKMARK [2][-]{subsection.3.1}{}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.2}{}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.3}{}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.4}{}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.5}{Nyquist Criterion}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.6}{}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.7}{}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.8}{}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.9}{}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.10}{}{section.3}% 24
+\BOOKMARK [2][-]{subsection.3.11}{}{section.3}% 25
+\BOOKMARK [1][-]{section.4}{PID Controller Design}{}% 26
+\BOOKMARK [2][-]{subsection.4.1}{Introduction}{section.4}% 27

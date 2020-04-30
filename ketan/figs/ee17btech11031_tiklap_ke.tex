@@ -1,0 +1,26 @@
+
+\tikzstyle{block} = [draw, fill=blue!20, rectangle, 
+    minimum height=1cm, minimum width=1cm]
+\tikzstyle{sum} = [draw, fill=blue!20, circle, node distance=1cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+% The block diagram code is probably more verbose than necessary
+\begin{tikzpicture}[auto, node distance=2cm,>=latex']
+    % We start by placing the blocks
+    \node [input, name=input] {};
+    \node [sum, right of=input] (sum) {};
+    \node [block, right of=sum] (controller) {G(s)};
+    \node [output, right of=controller, node distance = 3cm] (output) {};
+    \node [block, below of=controller] (measurements) {1};
+    % We draw an edge between the controller and system block to 
+    % calculate the coordinate u. We need it to place the measurement block. 
+    % Once the nodes are placed, connecting them is easy. 
+    \draw [draw,->] (input) -- node {$R(s)$} (sum);
+    \draw [->] (sum) -- node {} (controller);
+    \draw [->] (controller) -- node[name=y] {$Y(s)$} (output);
+    \draw [->] (y) |- node {} (measurements);
+    \draw [->] (measurements) -| node[pos=0.99] {$-$} node[near end] {} (sum);
+\end{tikzpicture}
+

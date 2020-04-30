@@ -5,21 +5,22 @@
 \contentsline {subsection}{\numberline {1.4}Transient Response from Bode Plot}{8}{subsection.1.4}% 
 \contentsline {section}{\numberline {2}Stability in Frequency Domain}{11}{section.2}% 
 \contentsline {subsection}{\numberline {2.1}Nyquist Criterion}{11}{subsection.2.1}% 
-\contentsline {subsection}{\numberline {2.2}Nyquist Criterion}{14}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.2}Nyquist Criterion}{15}{subsection.2.2}% 
 \contentsline {subsection}{\numberline {2.3}}{15}{subsection.2.3}% 
 \contentsline {subsection}{\numberline {2.4}Nyquist and Routh-Hurwitz}{15}{subsection.2.4}% 
-\contentsline {subsection}{\numberline {2.5}Nyquist}{16}{subsection.2.5}% 
-\contentsline {subsection}{\numberline {2.6}Nyquist}{18}{subsection.2.6}% 
-\contentsline {section}{\numberline {3}Design in Frequency Domain}{19}{section.3}% 
-\contentsline {subsection}{\numberline {3.1}}{19}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}}{19}{subsection.3.2}% 
-\contentsline {subsection}{\numberline {3.3}Lag Compensator}{19}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {2.5}Nyquist}{17}{subsection.2.5}% 
+\contentsline {subsection}{\numberline {2.6}Nyquist}{19}{subsection.2.6}% 
+\contentsline {section}{\numberline {3}Design in Frequency Domain}{20}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}}{20}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}}{20}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Lag Compensator}{20}{subsection.3.3}% 
 \contentsline {subsection}{\numberline {3.4}Lead Compensator}{21}{subsection.3.4}% 
-\contentsline {subsection}{\numberline {3.5}Compensator for Overshoot}{24}{subsection.3.5}% 
-\contentsline {subsection}{\numberline {3.6}}{26}{subsection.3.6}% 
-\contentsline {subsection}{\numberline {3.7}Lead Compensator}{26}{subsection.3.7}% 
+\contentsline {subsection}{\numberline {3.5}Compensator for Overshoot}{25}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.6}}{27}{subsection.3.6}% 
+\contentsline {subsection}{\numberline {3.7}Lead Compensator}{27}{subsection.3.7}% 
 \contentsline {subsection}{\numberline {3.8}}{28}{subsection.3.8}% 
 \contentsline {subsection}{\numberline {3.9}}{28}{subsection.3.9}% 
 \contentsline {subsection}{\numberline {3.10}}{28}{subsection.3.10}% 
 \contentsline {section}{\numberline {4}PID Controller Design}{28}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}Introduction}{28}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.1}PD}{28}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}PID}{29}{subsection.4.2}% 

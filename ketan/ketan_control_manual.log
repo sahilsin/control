@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  30 APR 2020 14:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  30 APR 2020 15:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2092,10 +2092,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 (./tables/ee18btech11047/ee18btech11047_2.tex) [10]
 File: ./figs/ee18btech11047/ee18btech11047_4.eps Graphic file (type eps)
 
-<./figs/ee18btech11047/ee18btech11047_4.eps>) (./chapters/ee18btech11028_1.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+<./figs/ee18btech11047/ee18btech11047_4.eps>) (./chapters/ee18btech11050_1.tex
+File: ./figs/ee18btech11050_1.eps Graphic file (type eps)
 
-
+<./figs/ee18btech11050_1.eps>) (./chapters/ee18btech11028_1.tex [11]
 (./figs/ee18btech11028_1_fig1.tex)
 
 LaTeX Warning: Command \j invalid in math mode on input line 35.
@@ -2122,22 +2122,23 @@ LaTeX Warning: Command \j invalid in math mode on input line 35.
 LaTeX Warning: Command \j invalid in math mode on input line 35.
 
 File: ./figs/ee18btech11028_1.eps Graphic file (type eps)
-<./figs/ee18btech11028_1.eps>
+<./figs/ee18btech11028_1.eps>) (./chapters/ee18btech11041.tex
+File: ./figs/ee18btech11041_1.eps Graphic file (type eps)
+
+<./figs/ee18btech11041_1.eps>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11]) (./chapters/ee18btech11041.tex
-Underfull \vbox (badness 2790) has occurred while \output is active []
-
-File: ./figs/ee18btech11041_1.eps Graphic file (type eps)
-
-<./figs/ee18btech11041_1.eps>) (./chapters/ee18btech11011_1.tex
+[12]) (./chapters/ee18btech11011_1.tex
 File: ./figs/ee18btech11011.eps Graphic file (type eps)
-
-<./figs/ee18btech11011.eps> [12]
+ <./figs/ee18btech11011.eps>
 File: ./figs/zoomed.eps Graphic file (type eps)
- <./figs/zoomed.eps>)
-(./chapters/ee18btech11016.tex (./figs/ee18btech11016_figure1.tex)
+
+<./figs/zoomed.eps>) (./chapters/ee18btech11016.tex
+Underfull \vbox (badness 3158) has occurred while \output is active []
+
+ [13]
+(./figs/ee18btech11016_figure1.tex)
 
 LaTeX Warning: Command \j invalid in math mode on input line 28.
 
@@ -2211,7 +2212,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--79
 
  []
 
-[13]) (./chapters/es17btech11015.tex
+) [14] (./chapters/es17btech11015.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
@@ -2239,9 +2240,12 @@ Underfull \hbox (badness 2443) in paragraph at lines 43--44
 []\OT1/txr/m/n/12 The fol-low-ing python code gen-er-ates the
  []
 
-[14]
 File: ./figs/es17btech11015.eps Graphic file (type eps)
- <./figs/es17btech11015.eps>
+<./figs/es17btech11015.eps>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 63--68
 
  []
@@ -2261,12 +2265,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
  []
 
-) (./chapters/ee18btech11029.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-(./figs/ee18btech11029/ee18btech11029_1.tex)
-(./figs/ee18btech11029/ee18btech11029_2.tex)
+) (./chapters/ee18btech11029.tex (./figs/ee18btech11029/ee18btech11029_1.tex)
+(./figs/ee18btech11029/ee18btech11029_2.tex) [15]
 
 LaTeX Warning: Command \j invalid in math mode on input line 37.
 
@@ -2360,7 +2360,7 @@ LaTeX Warning: Command \j invalid in math mode on input line 63.
 
 LaTeX Warning: Command \j invalid in math mode on input line 63.
 
-[15] (./tables/ee18btech11029_table.tex
+(./tables/ee18btech11029_table.tex
 \gnumericColE=\skip86
 
 Overfull \hbox (1.78pt too wide) in paragraph at lines 219--219
@@ -2370,15 +2370,10 @@ Overfull \hbox (1.78pt too wide) in paragraph at lines 219--219
 )
 File: ./figs/ee18btech11029/Nyquist.eps Graphic file (type eps)
  <./figs/ee18btech11029/Nyquist.eps>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
+ [16])
 (./chapters/ee18btech11034.tex (./figs/ee18btech11034/ee18btech11034_fig.tex)
-[16]
 
 LaTeX Warning: Command \j invalid in math mode on input line 42.
 
@@ -2480,12 +2475,15 @@ LaTeX Warning: Command \j invalid in math mode on input line 60.
 
 File: ./figs/ee18btech11034/ee18btech11034_1.eps Graphic file (type eps)
 <./figs/ee18btech11034/ee18btech11034_1.eps>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 (./tables/ee18btech11034/ee18btech11034_table1.tex
 Overfull \hbox (1.78pt too wide) in paragraph at lines 219--219
 \OT1/txr/m/n/12 marginally 
  []
 
-)
+) [17]
 
 LaTeX Warning: Command \j invalid in math mode on input line 121.
 
@@ -2516,7 +2514,6 @@ LaTeX Warning: Command \j invalid in math mode on input line 121.
 
 LaTeX Warning: Command \j invalid in math mode on input line 121.
 
-[17]
 
 LaTeX Warning: Command \j invalid in math mode on input line 125.
 
@@ -2528,11 +2525,15 @@ LaTeX Warning: Command \j invalid in math mode on input line 125.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 125.
+
+
+Underfull \vbox (badness 1527) has occurred while \output is active []
 
 File: ./figs/ee18btech11034/ee18btech11034_2.eps Graphic file (type eps)
+
 <./figs/ee18btech11034/ee18btech11034_2.eps>
 (./tables/ee18btech11034/ee18btech11034_table2.tex))
-(./chapters/ee18btech11035.tex
+(./chapters/ee18btech11035.tex [18]
 
 LaTeX Warning: Command \j invalid in math mode on input line 21.
 
@@ -2601,9 +2602,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
-[18]
 File: ./figs/ee18btech11035_1.eps Graphic file (type eps)
- <./figs/ee18btech11035_1.eps>
+<./figs/ee18btech11035_1.eps>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
@@ -2614,11 +2618,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
  []
 
 File: ./figs/ee18btech11035_2.eps Graphic file (type eps)
-<./figs/ee18btech11035_2.eps>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./tables/ee18btech11035_table.tex
+<./figs/ee18btech11035_2.eps> (./tables/ee18btech11035_table.tex
 Overfull \hbox (8.0pt too wide) in paragraph at lines 208--208
  \OT1/txr/m/n/12 0.1744| 
  []
@@ -2633,20 +2633,21 @@ Overfull \hbox (8.0pt too wide) in paragraph at lines 233--233
  \OT1/txr/m/n/12 0.0005| 
  []
 
-)) (./chapters/ee18btech11030.tex (./figs/ee18btech11030/ee18btech11030.tex)
-[19]
+) [19]) (./chapters/ee18btech11030.tex
+(./figs/ee18btech11030/ee18btech11030.tex)
 File: ./figs/ee18btech11030/ee18btech11030_1.eps Graphic file (type eps)
- <./figs/ee18btech11030/ee18btech11030_1.eps>
+
+<./figs/ee18btech11030/ee18btech11030_1.eps> [20]
 File: ./figs/ee18btech11030/ee18btech11030_2.eps Graphic file (type eps)
 
 <./figs/ee18btech11030/ee18btech11030_2.eps> (./tables/ee18btech11030.tex)
 File: ./figs/ee18btech11030/ee18btech11030_3.eps Graphic file (type eps)
 
-<./figs/ee18btech11030/ee18btech11030_3.eps> [20])
-(./chapters/ee18btech11036.tex (./figs/ee18btech11036_tik1.tex)
+<./figs/ee18btech11030/ee18btech11030_3.eps>) (./chapters/ee18btech11036.tex
+(./figs/ee18btech11036_tik1.tex) [21]
 File: ./figs/ee18btech11036_1.eps Graphic file (type eps)
-
-<./figs/ee18btech11036_1.eps> (./figs/ee18btech11036_tik2.tex) [21]
+ <./figs/ee18btech11036_1.eps>
+(./figs/ee18btech11036_tik2.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 72--75
 \OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 The max-i-mum phase lead
  []
@@ -2664,16 +2665,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--75
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [22]
 File: ./figs/ee18btech11036_3.eps Graphic file (type eps)
 
 <./figs/ee18btech11036_3.eps> (./figs/ee18btech11036_tik3.tex)
 File: ./figs/ee18btech11036_2.eps Graphic file (type eps)
 
-<./figs/ee18btech11036_2.eps>) (./chapters/ee18btech11046.tex [22]
+<./figs/ee18btech11036_2.eps>) (./chapters/ee18btech11046.tex
 (./figs/ee18btech11046.tex)
 Underfull \vbox (badness 5817) has occurred while \output is active []
 
-
+ [23]
 
 LaTeX Warning: Command \j invalid in math mode on input line 43.
 
@@ -2715,7 +2717,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Underfull \vbox (badness 2020) has occurred while \output is active []
 
- [23]
+
 
 LaTeX Warning: Command \j invalid in math mode on input line 124.
 
@@ -2754,7 +2756,7 @@ LaTeX Warning: Command \j invalid in math mode on input line 167.
 
 Underfull \vbox (badness 2617) has occurred while \output is active []
 
-
+ [24]
 Underfull \hbox (badness 2680) in paragraph at lines 167--170
 \OT1/txr/m/n/12 Substituting val-ues of T and $\OML/txmi/m/it/12 ^^L$ \OT1/txr/
 m/n/12 ob-tained
@@ -2762,7 +2764,7 @@ m/n/12 ob-tained
 
 File: ./figs/ee18btech11046_2.eps Graphic file (type eps)
 <./figs/ee18btech11046_2.eps>) (./chapters/ee18btech11026.tex
-(./figs/ee18btech11026/ee18btech11026_block_1.tex) [24]
+(./figs/ee18btech11026/ee18btech11026_block_1.tex)
 File: ./figs/ee18btech11026/ee18btech11026_1.eps Graphic file (type eps)
 
 <./figs/ee18btech11026/ee18btech11026_1.eps>
@@ -2773,8 +2775,8 @@ Overfull \hbox (15.71935pt too wide) detected at line 45
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-(./tables/ee18btech11026/ee18btech11026_table_1.tex) [25]
+ [25]
+(./tables/ee18btech11026/ee18btech11026_table_1.tex)
 Overfull \hbox (9.7102pt too wide) detected at line 112
 []
  []
@@ -2793,21 +2795,31 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 (./chapters/es17btech11002_new.tex
 Underfull \vbox (badness 4132) has occurred while \output is active []
 
-
+ [26]
 Underfull \vbox (badness 2790) has occurred while \output is active []
 
- [26]
+
 (./figs/es17btech11002_block_new.tex)
 File: ./figs/es17btech11002_1_new.eps Graphic file (type eps)
  <./figs/es17btech11002_1_new.eps>
-(./table/es17btech11002_1_new.tex)
+[27] (./table/es17btech11002_1_new.tex)
 File: ./figs/es17btech11002_2_new.eps Graphic file (type eps)
  <./figs/es17btech11002_2_new.eps>)
-(./chapters/ee18btech11021.tex
+(./chapters/ee17btech11031_ke.tex (./figs/ee17btech11031_tiklap_ke.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27]
-(./tables/ee18btech11021.tex)
+
+(./table/ee17btech11031_t_ke.tex)
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 44.
+
+[28] (./table/ee17btech11031_final_ke.tex)
+File: ./figs/ee17btech11031_pd_ke.eps Graphic file (type eps)
+ <./figs/ee17btech11031_pd_ke.eps>)
+(./chapters/ee18btech11021.tex (./tables/ee18btech11021.tex)
 
 LaTeX Warning: Command \j invalid in math mode on input line 49.
 
@@ -2816,6 +2828,9 @@ LaTeX Warning: Command \j invalid in math mode on input line 49.
 
 File: ./figs/ee18btech11021/EE18BTECH11021_PD.eps Graphic file (type eps)
 <./figs/ee18btech11021/EE18BTECH11021_PD.eps>
+Underfull \vbox (badness 3701) has occurred while \output is active []
+
+ [29]
 
 LaTeX Warning: Command \j invalid in math mode on input line 100.
 
@@ -2827,42 +2842,41 @@ Overfull \hbox (17.00072pt too wide) detected at line 100
 []
  []
 
-[28]
 File: ./figs/ee18btech11021/EE18BTECH11021_PI.eps Graphic file (type eps)
- <./figs/ee18btech11021/EE18BTECH11021_PI.eps>
+<./figs/ee18btech11021/EE18BTECH11021_PI.eps>
 
 LaTeX Warning: Command \j invalid in math mode on input line 152.
 
 
 LaTeX Warning: Command \j invalid in math mode on input line 152.
 
-
-Underfull \vbox (badness 4229) has occurred while \output is active []
-
+[30]
 File: ./figs/ee18btech11021/EE18BTECH11021_PID.eps Graphic file (type eps)
+ <./figs/ee18btech11021/EE18BTECH11021_PID.eps>)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 394.
+ [31
 
-<./figs/ee18btech11021/EE18BTECH11021_PID.eps>) [29]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 394.
 
 (./ketan_control_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 390.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 394.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 394.
 Package rerunfilecheck Info: File `ketan_control_manual.out' has not changed.
-(rerunfilecheck)             Checksum: EC5697CF4B5F81C1B1B0AEDDA98EAC10;1527.
+(rerunfilecheck)             Checksum: 2800F277E6A611D6F8557D1EFBB0A8E7;1570.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 390.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 394.
  ) 
 Here is how much of TeX's memory you used:
- 33562 strings out of 492624
- 726145 string characters out of 6119216
- 933255 words of memory out of 5000000
- 36663 multiletter control sequences out of 15000+600000
+ 33592 strings out of 492624
+ 726986 string characters out of 6119216
+ 933262 words of memory out of 5000000
+ 36677 multiletter control sequences out of 15000+600000
  68203 words of font info for 165 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,19n,69p,512b,1157s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ketan_control_manual.dvi (29 pages, 370704 bytes).
+Output written on ketan_control_manual.dvi (31 pages, 390540 bytes).

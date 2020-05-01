@@ -2,151 +2,162 @@
 \numberwithin{equation}{enumi}
 
 \item
-Consider a unity feedback system as shown in Fig.  \ref{fig:ee18btech11005}, with an integral compensator $\frac{k}{s}$ and open-loop transfer function
-\begin{align}
-G(s) = \frac{1}{s^2+3s+2}
-\end{align}
-where k greater than 0. 
-%
-Find its closed loop transfer function.
+The non-inverting op-amp configuration shown in fig.\ref{fig:original_circuit} provides direct implementation of feedback loop.Assuming operational amplifier has infinite input resistance and zero output resitance.Find the expression for feedback factor.
 \begin{figure}[!ht]
 	\begin{center}
 		
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11005.tex}}
+		\resizebox{\columnwidth}{!}{\input{./figs/original_circuit.tex}}
 	\end{center}
 \caption{}
-\label{fig:ee18btech11005}
+\label{fig:original_circuit}
 \end{figure}
-
-\solution $\because H(s) = 1$ in Fig.  \ref{fig:ee18btech11005}, due to unity feedback,   the transfer function is given by
+\solution Let the gain of the operational amplifier be G.
+The equivalent circuit of the amplifier is in fig.\ref{fig:equivalent_circuit}
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/equivalent_circuit.tex}}
+	\end{center}
+\caption{}
+\label{fig:equivalent_circuit}
+\end{figure}
+From the equivalent circuit,
+Applying Ohms law,
 \begin{align}
-\frac{Y(s)}{X(s)} &= \frac{G(s)}{1+G(s)H(s)}
-\\
-\implies T(s) &= \frac{k}{s^3+3s^2+2s}
+V_0 &= G(V_i) \label{eq:opamp_output}\\
+\text{and,} V_i &= V_+-V_-
 \end{align}
-%
-\item Find the {\em characteristic} equation for $G(s)$.
-\\
-\solution The characteristic equation is
+Now,Applying voltage dividing rule
 \begin{align}
-\label{eq:routh_char_eq}
- 1 + G(s)H(s) &= 0 
-\\
-\implies 1 + \sbrak{\frac{k}{s^3+3s^2+2s}} &= 0
-\\
-\text{or, } s^3+3s^2+2s+k &= 0
+V_- &= \sbrak{\frac{R_1}{R_1+R_2}}V_0
 \end{align}
-\item Using the tabular method for the Routh hurwitz criterion, find $k > 0$ for which there are two poles of unity feedback system on j${\omega}$ axis.
-%
-\\
-\solution 
-This criterion is based on arranging the coefficients of characteristic equation into an array called Routh array.
-For any characteristic equation 
-\begin{multline}
-q(s) = a_0s^n+a_1s^{n-1}+.....+a_{n-1}s+a_n = 0
-\end{multline}
-the Routh array can be constructed as 
- 
+Substituting in equ.\ref{eq:opamp_output}
 \begin{align}
-\mydet{s^n\\s^{n-1}\\s^{n-2} \\ \vdots}
- \mydet{a_0 & a_2 & a_4 & \cdots \\
-a_1 & a_3 & a_5 & \cdots  \\
-b_1 & b_2 & b_3 & \cdots \\
-\vdots & \vdots & \vdots & \ddots &\vdots 
- \cdots \\}
+    V_0 &= G(V_+-\sbrak{\frac{R_1}{R_1+R_2}}V_0)
+    \\
+\implies V_0 &= GV_+-G\sbrak{\frac{R_1}{R_1+R_2}}V_0
+    \\
+G(V_+)&=V_0+G\sbrak{\frac{R_1}{R_1+R_2}}V_0
 \end{align}
-%
- where
- \begin{align}
- b_1 =\frac{ a_1a_2-a_0a_3}{a_1}  
- \\
- b_2 =\frac{ a_1a_4-a_0a_5}{a_1} 
- \\
- c_1=\frac{ b_1a_3-a_1b_2}{b_1} 
-\\
- c_2=\frac{ b_1a_5-a_1b_3}{b_1}  
-\end{align}
-For poles to lie on imaginary axis any one entire row of hurwitz matrix should be zero.
-Constructing the routh array for the characteristic equation obtained in \ref{eq:routh_char_eq},
-%
+But,
 \begin{align}
- s^3+3s^2+2s+k = 0
+    V_s &= V_+
 \end{align}
-%
+because, no current flows through resistor.  
 \begin{align}
-\mydet{s^3\\s^2\\s^1 \\ s^0}
-\mydet{1 & 2 \\ 3 & k \\  \frac{6-k}{3} & 0\\ k & 0}
+    V_0 &= G\sbrak{\frac{1}{1+\frac{GR_1}{R_1+R_2}}}V_s
+    \\
+ \text{Gain =}\frac{V_0}{V_s}&=\sbrak{\frac{G}{1+\frac{GR_1}{R_1+R_2}}}\label{eq:opamp_gain}
 \end{align}
-For poles on $\j \omega$ axis any one of the row should be zero.
-%
+For a negative feedback system,
 \begin{align}
-\therefore \frac{6-k}{3} &= 0 \text{ or } k = 0
-\\
-\implies k &= 6 \quad \because k > 0
+   \frac{V_0}{V_i} &= \frac{G}{1+GH}
+  \\
+  \text{where.,} H = \frac{R_1}{R_1+R_2}
 \end{align}
-\item Repeat the above using the determinant method.
-\\
-\solution The {\em Routh matrix} can be expressed as
-\begin{align}
-\vec{R} = \myvec{a_0 & a_2 & a_4 & \cdots \\
-a_1 & a_3 & a_5 & \cdots  \\
- 0 & a_0 & a_2\cdots \\
- 0 & a_1 & a_3 \cdots\\
-\vdots & \vdots & \vdots & \ddots &\vdots 
-\cdots \\}
-\end{align}
-and the corresponding Routh determinants are
-\begin{align}
-D_1 &= |a_0|
-\\
-D_2 &= 
-\mydet{
-a_0 & a_2 
-\\ 
-a_1 & a_3
-} 
-\\
-D_3 &=\mydet{
-a_0 & a_2 & a_4 
-\\ a_1 & a_3 & a_5 
-\\ 0 & a_0 & a_2}
-\\
-\dots
-\end{align}
-If at least any one of the Determinents are zero then the poles lie on imaginary axes.  From \eqref{eq:routh_char_eq},
-%
-\begin{align}
-D_1 &= 1 \ne 0
-\\
-D2 &= \mydet{
-1 & 2 \\ 3 & k } 
-&= k-6 =0 \implies k = 6
-\end{align}
-%
-\item Verify your answer using a python code for both the determinant method as well as the tabular method.
-\label{prob:ee18btech11005_python}
-\\
-\solution 
-The following code verifies the stability using the tabular method 
-%
-\begin{lstlisting}
-codes/ee18btech11005_2.py
-\end{lstlisting}
-and the following one verifies using the determinant method.
-\begin{lstlisting}
-codes/ee18btech11005.py
-\end{lstlisting}
-%
-provides the necessary soution.
+The equation.\ref{eq:opamp_output} looks exactly similar to the Gain of a negative feedback system with
 \begin{itemize}
-\item  For the system to be stable all coefficients should lie on left half of s-plane. Because if any pole is in right half of s-plane then there will be a component in output that increases without bound,causing system to be unstable.
-All the coefficients in the characteristic equation should be positive.This is necessary condition but not sufficient.Because it may have poles on right half of s plane.
-Poles are the roots of the characteristic equation.
-    \item A system is stable if all of its characteristic modes go to finite value as t goes to infinity.It is possible only if all the poles are on the left half of s plane.
-    The characteristic equation should have negative roots only. So the first column should always be greater than zero.That means no sign changes.
-    \item A system is unstable if its characteristic modes are not bounded. Then the characteristic equation will also have roots in the right side of s-plane.That means it has sign changes.
-    \end{itemize}
-
+    \item Open loop gain = G
+    \item Loop gain = P 
+    \item Amount of feedback = F
+    \item Feedback factor = f
+    \item closed loop gain = T
+\end{itemize}
+where
+\begin{align}
+    G &= G\\
+    P &= GH = G\frac{R_1}{R_1+R_2}\\
+    F &= 1+GH= 1 + \frac{GR_1}{R_1+R_2}\\
+    f &= H = \frac{R_1}{R_1+R_2}
+\end{align}
+Therefore,This operational amplifier can be modelled as a negative feedback system shown in the fig.\ref{fig:equivalent_control_system}
+\begin{figure}[!ht]
+	\begin{center}
+			\resizebox{\columnwidth}{!}{\input{./figs/equivalent_control_system.tex}}
+	\end{center}
+\caption{}
+\label{fig:equivalent_control_system}
+\end{figure}
+So, the feedback factor f..,
+\begin{align}
+     f &= H = \frac{R_1}{R_1+R_2}
+\end{align}
+\item Find the condition under which closed loop gain T is almost entirely determined by the feedback network.
+\solution For T to entirely dependent on feedback network, it should be independent on G(open loop gain)
+T is given by..,
+\begin{align}
+    T &= \frac{G}{1+\frac{GR_1}{R_1+R_2}} \\
+\end{align}
+For T to be independent on G..,
+\begin{align}
+ GH >> 1 \\
+ G\frac{R_1}{R_1+R_2} >> 1 \\
+ G >> 1 + \frac{R_2}{R_1} 
+\end{align}
+Under such condition..,
+\begin{align}
+    T &= \frac{1}{H} \\
+    T &= \frac{R_1+R_2}{R_1}\\
+    T &= 1+\frac{R_2}{R_1}
+\end{align}
+so, the necessary condition for Af depend only on feedback network is
+\begin{align}
+    G >> T
+\end{align}
+\item If the open loop voltage gain
+\begin{align} 
+G & = 10^4
+\end{align}
+Find the ratio of R2 and R1 to obtain a closed loop gain of 10.
+\solution The closed loop gain gain T is given by
+\begin{align}
+    T &= \frac{G}{1+GH}
+        = \frac{G}{1+\frac{GR_1}{R_1+R_2}} = 10\\
+    \text{where..,} G &= 10^4 \\
+    10 &= \frac{10^4}{1+\frac{10^4}{1+\frac{R_2}{R_1}}}\\
+\implies 1+\frac{R_2}{R_1} &= \frac{10^4}{\frac{10^4}{10}-1}
+\\
+1+\frac{R_2}{R_1} &= 10.010
+\\
+\frac{R_2}{R_1} &= 9.010
+\end{align}
+\item What is the amount of feedback in decibels?
+\solution The value of F in decibals is given by 
+\begin{align}
+    F(dB) &= 20\log(F)\\
+\text{where..,} F &= 1+GH \\
+F &= \frac{G}{T}\\
+\text{where..,} G&=10^4 \\ T &= 10\\
+F(dB) &= 20\log(\frac{10^4}{10})=20\log(1000)\\
+F(dB) &= 60 dB
+\end{align}
+\item If G decreases by 20\%,what is the corresponding decrease in T?
+\solution Given
+\begin{align}
+G = 10^4
+\end{align}
+If G decrease by 20\% then,
+the value of G is..,
+\begin{align}
+    G &= (1-0.2)10^4 \\
+      &= 8000
+\end{align}
+For this value of G and ,
+\begin{align}
+    \frac{R_2}{R_1} = 9.010
+\end{align}
+The value of T can be solved as follows,
+\begin{align}
+ T &= \frac{G}{1+\frac{G}{1+\frac{R_2}{R_1}}}\\
+ T &= \frac{8000}{1+\frac{8000}{1+0.9010}}\\
+ T &= 9.99749
+\end{align}
+The percentage change in T is..,
+\begin{align}
+    fractionalchange &= \frac{10-9.99749}{10}\\
+      &= 2.51x10^{-4}\\
+     \% change in T &= 0.00251
+\end{align}
+Therefore T decreases by 0.0025\% when G decreases by 20\%
 \end{enumerate}
-
 

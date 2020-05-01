@@ -1,78 +1,94 @@
 \begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
 \numberwithin{equation}{enumi}
 
-\item Generate the Routh array for the 
-polynomial, 
-\begin{align}
-f(s)=s^{7}+s^{6}+7 s^{5}+14 s^{4}+31s^{3}+73 s^{2}+25 s+ 200
-\label{eq:ee18btech11014_routh_poly}
-\end{align}
+\item Draw the equivalent control system for the feedback current amplifier shown in \ref{fig:ee18btech11014_Input}
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+\begin{figure}[h!]
+	\begin{center}
+		\resizebox{\columnwidth/1}{!}{\input{./figs/ee18btech11014/ee18btech11014_figa.tex}}
+	\end{center}
+	\caption{}
+	\label{fig:ee18btech11014_Input}
+\end{figure}
+\\
+\solution See Fig. 	\ref{fig:ee18btech11014_Control_System}.
+
+\begin{figure}[ht!]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11014/ee18btech11014_figc.tex}}
+	\end{center}
+	\caption{}
+	\label{fig:ee18btech11014_Control_System}
+\end{figure}
+\renewcommand{\thefigure}{\theenumi}
+\item For the feedback current amplifier shown in \ref{fig:ee18btech11014_Input}, draw the Small-Signal Model. Neglect the Early effect in $Q_{1}$ and $Q_{2}$.\\
+\solution See Fig. 	\ref{fig:ee18btech11014_Small_Signal}.
+
+While drawing a Small-Signal Model, we ground all constant voltage sources and open all constant current sources. All Small-Signal paramters are obtained from DC-Analysis of the circuit. Neglecting Early effect, in Small-Signal Analysis a N-MOSFET is modelled as a Current Source with value of current equal to $g_{m}v_{gs}$ flowing from Drain to Source. Whereas a P-MOSFET is modelled as a Current Source with value of current equal to $g_{m}v_{sg}$ flowing from Source to Drain.
+\begin{figure}[h!]
+	\begin{center}
+		\resizebox{\columnwidth/1}{!}{\input{./figs/ee18btech11014/ee18btech11014_figb.tex}}
+	\end{center}
+	\caption{Small Signal Model}
+	\label{fig:ee18btech11014_Small_Signal}
+\end{figure}
+
+%------------------------------------------------------------------------%
+
+\item Describe how the given circuit is a Negetive Feedback Current Amplifier.\\
 \solution 
-\begin{align}
-\mydet{s^7\\s^6\\s^5}
-\mydet{1 & 7 & 31 & 25 \\ 1 & 14 & 73 & 200 \\ -7 & -42 & -175 & 0}
-\end{align}\\
-\begin{align}
-\mydet{s^7\\s^6\\s^5\\s^4}
-\mydet{1 & 7 & 31 & 25 \\ 1 & 14 & 73 & 200 \\ -7 & -42 & -175 & 0 \\ 8 & 48 & 200 & 0}
-\end{align}\\
-\begin{align}
-\mydet{s^7\\s^6\\s^5\\s^4\\s^3}
-\mydet{1 & 7 & 31 & 25 \\ 1 & 14 & 73 & 200 \\ -7 & -42 & -175 & 0 \\ 8 & 48 & 200 & 0 \\ 0 & 0 & 0 &  }
-\end{align}\\
+For the feedback to be negative, $I_{f}$ must have the same polarity as $I_{s}$. To ascertain that this is the case, we assume an increase in $I_{s}$ and follow the change around the loop: An increase in $I_{s}$ causes $I_{i}$ to increase and the drain voltage of $Q_{1}$ will increase. Since this voltage is applied to the gate of the p-channel device $Q_{2}$ , its increase will cause $I_{o}$ , the drain current of $Q_{2}$, to decrease. Thus, the voltage across $R_{M}$ will decrease, which will cause $I_{f}$ to increase. This is the same polarity assumed for the initial change in
+$I_{s}$, verifying that the feedback is indeed negative.
+%------------------------------------------------------------------------%
 
-When such a case is encountered, we take the derivative of the expression formed the the coefficients above it i.e derivative of $8s^4 + 48s^2 +200$.
-\begin{center}
-    $\frac{d}{dx}(8s^4 + 48s^2 +200) = 32s^3 + 96s$
-\end{center}
-
-The coefficients of obtained expression are placed in the table.
-
+\item Find the Expression for the Open-Loop Gain $G=\frac{I_{o}}{I_{i}}$, from the Small-Signal Model. 
+in Fig. \ref{fig:ee18btech11014_Small_Signal}.
+\\
+\solution
+In Small-Signal Model,
 \begin{align}
-\mydet{s^7\\s^6\\s^5\\s^4\\s^3}
-\mydet{1 & 7 & 31 & 25 \\ 1 & 14 & 73 & 200 \\ -7 & -42 & -175 & 0 \\ 8 & 48 & 200 & 0 \\ 32 & 96 & 0 &  }
-\end{align}\\
-\begin{align}
-\mydet{s^7\\s^6\\s^5\\s^4\\s^3\\s^2}
-\mydet{1 & 7 & 31 & 25 \\ 1 & 14 & 73 & 200 \\ -7 & -42 & -175 & 0 \\ 8 & 48 & 200 & 0 \\ 32 & 96 & 0 &  \\ 24 & 200 & 0 &  }
-\end{align}\\
-\begin{align}
-\mydet{s^7\\s^6\\s^5\\s^4\\s^3\\s^2\\s^1}
-\mydet{1 & 7 & 31 & 25 \\ 1 & 14 & 73 & 200 \\ -7 & -42 & -175 & 0 \\ 8 & 48 & 200 & 0 \\ 32 & 96 & 0 &  \\ 24 & 200 & 0 &  \\ -170.67 & 0 &  & }
-\end{align}\\
-\begin{align}
-\mydet{s^7\\s^6\\s^5\\s^4\\s^3\\s^2\\s^1\\s^0}
-\mydet{1 & 7 & 31 & 25 \\ 1 & 14 & 73 & 200 \\ -7 & -42 & -175 & 0 \\ 8 & 48 & 200 & 0 \\ 32 & 96 & 0 &  \\ 24 & 200 & 0 &  \\ -170.67 & 0 &  & \\200 &   &   & }
-\label{eq:ee18btech11014_routh_final}
+v_{B} = I_{i}R_{D}\\
+v_{gs_{2}} = v_{B} = I_{i}R_{D}
 \end{align}
 
-So, the above one is the Routh-Hurwitz Table.
+In Small-Signal Analysis, P-MOSFET is modelled as a current source where current flows from Source to Drain. So, the value of current flowing from Source to Drain in P-MOSFET is,
+\begin{align}
+I_{o} =  -g_{m_{2}}v_{gs_{2}} = -g_{m_{2}}I_{i}R_{D}
+\end{align}
+So, the Open-Circuit Gain is
+\begin{align}
+\label{eq:ee18btech110014_G}
+G = \frac{I_{o}}{I_{i}} =  -g_{m_{2}}R_{D}
+\end{align}
+%------------------------------------------------------------------------%
 
-\item Find the number of roots of the polynomial in the right half of the $s$-plane.
+\item Find the Expression of the Feedback Factor $H = \frac{I_{f}}{I_{o}}$, from Small-Signal Model. 
 \\
-\solution The number of roots of the polynomial that are in the right half-plane is equal to
-the number of sign changes in the first column. From \ref{eq:ee18btech11014_routh_final},
-the polynomial in \eqref{eq:ee18btech11014_routh_poly}
-has 4 roots lie on right-side of Imaginary Axis.
+\solution
+$I_{o}$ is fed to a current divider formed by $R_{M}$ and $R_{F}$.
+$R_{F}$ is a Large Resistance compared to Input resistance of Amplifier and so most of the current flows through it leaving a small current as input to Amplifier. Hence the voltage at point 'A' is very small and is considered, $v_{A} \simeq 0$. So $R_{F}$ and $R_{M}$ are parallel and Voltage Drop across them is same.
+\begin{align}
+(I_{o} + I_{f})R_{M} \simeq -I_{f}R_{F}\\
+\frac{I_{f}}{I_{o}} \simeq -\frac{R_{M}}{R_{F}+R_{M}}
+\end{align}
+So, the Feedback Factor,
+\begin{align}
+\label{eq:ee18btech110014_H}
+H \equiv \frac{I_{f}}{I_{o}} \simeq-\frac{R_{M}}{R_{F}+R_{M}}
+\end{align}
+%------------------------------------------------------------------------%
+\item Find the Expression for the Closed-Loop Gain $T=\frac{I_{o}}{I_{s}}$. 
+\\
+\solution 
+From \eqref{eq:ee18btech110014_G}
+ and \eqref{eq:ee18btech110014_H},
+\begin{align}
+\label{eq:ee18btech110014_T}
+T &= \frac{I_{o}}{I_{s}} = \frac{G}{1+GH}\\
+&=-\frac{g_{m_{2}} R_{D}}{1+g_{m_{2}} R_{D} /\left(1+\frac{R_{F}}{R_{M}}\right)}
+\\
+\implies T &= -\frac{g_{m_{2}} R_{D}}{1+g_{m_{2}} R_{D} /\left(1+\frac{R_{F}}{R_{M}}\right)}
+\end{align}
+%------------------------------------------------------------------------%
 
-\item Write a Python code for generating each stage of the Routh Table.
-\\
-\solution The following code 
-\begin{lstlisting}
-codes/ee18btech11014/ee18btech11014.py
-\end{lstlisting}
-%
-generates the various stages.
-%The below image is the location of Roots of given polynomial.\\
-%%\includegraphics[scale=0.15]{figs/Roots.eps}\\
-%
-%The below image is finding out the roots of given polynomial by substituting $z=x+iy$ and obtaining the Real and Imaginary Parts of f(z). The values of $z$ where Real and Imaginary parts f(z) becomes zero simultaneously are roots of f(z).\\
-%%\includegraphics[scale=0.15]{figs/f(z).png}
-
-\item Find the roots of the polynomial in in \eqref{eq:ee18btech11014_routh_poly} and verify that 4 roots are in the right half $s$-plane.
-\\
-\solution The following code generates the necessary roots.
-\begin{lstlisting}
-codes/ee18btech11014/Roots.py
-\end{lstlisting}
 \end{enumerate}

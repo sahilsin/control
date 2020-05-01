@@ -3,24 +3,25 @@
 \contentsline {subsection}{\numberline {1.2}Direct and Inverse Polar Plot}{3}{subsection.1.2}% 
 \contentsline {subsection}{\numberline {1.3}Bode Plot}{4}{subsection.1.3}% 
 \contentsline {subsection}{\numberline {1.4}Transient Response from Bode Plot}{8}{subsection.1.4}% 
-\contentsline {section}{\numberline {2}Stability in Frequency Domain}{11}{section.2}% 
-\contentsline {subsection}{\numberline {2.1}Nyquist Criterion}{11}{subsection.2.1}% 
-\contentsline {subsection}{\numberline {2.2}Nyquist Criterion}{16}{subsection.2.2}% 
-\contentsline {subsection}{\numberline {2.3}}{17}{subsection.2.3}% 
-\contentsline {subsection}{\numberline {2.4}Nyquist and Routh-Hurwitz}{17}{subsection.2.4}% 
-\contentsline {subsection}{\numberline {2.5}Nyquist}{18}{subsection.2.5}% 
-\contentsline {subsection}{\numberline {2.6}Nyquist}{20}{subsection.2.6}% 
-\contentsline {section}{\numberline {3}Design in Frequency Domain}{21}{section.3}% 
-\contentsline {subsection}{\numberline {3.1}}{21}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}}{21}{subsection.3.2}% 
-\contentsline {subsection}{\numberline {3.3}Lag Compensator}{21}{subsection.3.3}% 
-\contentsline {subsection}{\numberline {3.4}Lead Compensator}{23}{subsection.3.4}% 
-\contentsline {subsection}{\numberline {3.5}Compensator for Overshoot}{26}{subsection.3.5}% 
-\contentsline {subsection}{\numberline {3.6}}{28}{subsection.3.6}% 
-\contentsline {subsection}{\numberline {3.7}Lead Compensator}{28}{subsection.3.7}% 
-\contentsline {subsection}{\numberline {3.8}}{30}{subsection.3.8}% 
-\contentsline {subsection}{\numberline {3.9}}{30}{subsection.3.9}% 
-\contentsline {subsection}{\numberline {3.10}}{30}{subsection.3.10}% 
-\contentsline {section}{\numberline {4}PID Controller Design}{30}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}PD}{30}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}PID}{30}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {1.5}Parameter Estimation from Bode Plot}{11}{subsection.1.5}% 
+\contentsline {section}{\numberline {2}Stability in Frequency Domain}{12}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Nyquist Criterion}{12}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Nyquist Criterion}{17}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}}{18}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Nyquist and Routh-Hurwitz}{18}{subsection.2.4}% 
+\contentsline {subsection}{\numberline {2.5}Nyquist}{20}{subsection.2.5}% 
+\contentsline {subsection}{\numberline {2.6}Nyquist}{21}{subsection.2.6}% 
+\contentsline {section}{\numberline {3}Design in Frequency Domain}{23}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}}{23}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}}{23}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Lag Compensator}{23}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Lead Compensator}{24}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5}Compensator for Overshoot}{28}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.6}}{30}{subsection.3.6}% 
+\contentsline {subsection}{\numberline {3.7}Lead Compensator}{30}{subsection.3.7}% 
+\contentsline {subsection}{\numberline {3.8}}{31}{subsection.3.8}% 
+\contentsline {subsection}{\numberline {3.9}}{31}{subsection.3.9}% 
+\contentsline {subsection}{\numberline {3.10}}{31}{subsection.3.10}% 
+\contentsline {section}{\numberline {4}PID Controller Design}{31}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}PD}{31}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}PID}{32}{subsection.4.2}% 

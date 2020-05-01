@@ -7,13 +7,13 @@
 \BOOKMARK [1][-]{section.2}{Stability in Frequency Domain}{}% 7
 \BOOKMARK [2][-]{subsection.2.1}{Nyquist Criterion}{section.2}% 8
 \BOOKMARK [2][-]{subsection.2.2}{Nyquist Criterion}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.3}{}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.3}{M and N Circles}{section.2}% 10
 \BOOKMARK [2][-]{subsection.2.4}{Nyquist and Routh-Hurwitz}{section.2}% 11
 \BOOKMARK [2][-]{subsection.2.5}{Nyquist}{section.2}% 12
 \BOOKMARK [2][-]{subsection.2.6}{Nyquist}{section.2}% 13
 \BOOKMARK [1][-]{section.3}{Design in Frequency Domain}{}% 14
 \BOOKMARK [2][-]{subsection.3.1}{}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.2}{}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.2}{Lead Compensator}{section.3}% 16
 \BOOKMARK [2][-]{subsection.3.3}{Lag Compensator}{section.3}% 17
 \BOOKMARK [2][-]{subsection.3.4}{Lead Compensator}{section.3}% 18
 \BOOKMARK [2][-]{subsection.3.5}{Compensator for Overshoot}{section.3}% 19

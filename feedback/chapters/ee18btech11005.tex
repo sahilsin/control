@@ -1,26 +1,51 @@
 \begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
 \numberwithin{equation}{enumi}
 
-\item
-The non-inverting op-amp configuration shown in fig.\ref{fig:original_circuit} provides direct implementation of feedback loop.Assuming operational amplifier has infinite input resistance and zero output resitance.Find the expression for feedback factor.
+\item Fig. \ref{fig:ee18btech11005_original_circuit} shows a  non-inverting op-amp configuration   with parameters described in Table \ref{table:ee18btech11005_Input_Table}.  Draw the equivalent control system.
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+%
 \begin{figure}[!ht]
 	\begin{center}
 		
-		\resizebox{\columnwidth}{!}{\input{./figs/original_circuit.tex}}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11005/original_circuit.tex}}
 	\end{center}
 \caption{}
-\label{fig:original_circuit}
+\label{fig:ee18btech11005_original_circuit}
 \end{figure}
+%
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11005/ee18btech11005_2.tex}
+\caption{}
+\label{table:ee18btech11005_Input_Table}
+\end{table}
+\\
+\solution  See 	Fig. \ref{fig:ee18btech11005_equivalent_control_system}
+\begin{figure}[!ht]
+	\begin{center}
+			\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11005/equivalent_control_system.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11005_equivalent_control_system}
+\end{figure}
+\renewcommand{\thefigure}{\theenumi}
+
+\item Draw the small signal model for Fig. \ref{fig:ee18btech11005_original_circuit}.
+\\
+\solution
+The equivalent circuit of the amplifier is in Fig. \ref{fig:ee18btech11005_equivalent_circuit}
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11005/equivalent_circuit.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11005_equivalent_circuit}
+\end{figure}
+
+\item Assuming that the operational amplifier has infinite input resistance and zero output resistance, find  the {\em feedback factor} $H$.
+\\
 \solution Let the gain of the operational amplifier be G.
-The equivalent circuit of the amplifier is in fig.\ref{fig:equivalent_circuit}
-\begin{figure}[!ht]
-	\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/equivalent_circuit.tex}}
-	\end{center}
-\caption{}
-\label{fig:equivalent_circuit}
-\end{figure}
 From the equivalent circuit,
 Applying Ohms law,
 \begin{align}
@@ -63,22 +88,14 @@ The equation.\ref{eq:opamp_output} looks exactly similar to the Gain of a negati
     \item Feedback factor = f
     \item closed loop gain = T
 \end{itemize}
-where
-\begin{align}
-    G &= G\\
-    P &= GH = G\frac{R_1}{R_1+R_2}\\
-    F &= 1+GH= 1 + \frac{GR_1}{R_1+R_2}\\
-    f &= H = \frac{R_1}{R_1+R_2}
-\end{align}
-Therefore,This operational amplifier can be modelled as a negative feedback system shown in the fig.\ref{fig:equivalent_control_system}
-\begin{figure}[!ht]
-	\begin{center}
-			\resizebox{\columnwidth}{!}{\input{./figs/equivalent_control_system.tex}}
-	\end{center}
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11005/ee18btech11005_1.tex}
 \caption{}
-\label{fig:equivalent_control_system}
-\end{figure}
-So, the feedback factor f..,
+\label{table:ee18btech11005_Output_Table}
+\end{table}
+Therefore,
+So, the feedback factor ..,
 \begin{align}
      f &= H = \frac{R_1}{R_1+R_2}
 \end{align}
@@ -100,7 +117,7 @@ Under such condition..,
     T &= \frac{R_1+R_2}{R_1}\\
     T &= 1+\frac{R_2}{R_1}
 \end{align}
-so, the necessary condition for Af depend only on feedback network is
+so, the necessary condition for T depend only on feedback network is
 \begin{align}
     G >> T
 \end{align}
@@ -159,5 +176,10 @@ The percentage change in T is..,
      \% change in T &= 0.00251
 \end{align}
 Therefore T decreases by 0.0025\% when G decreases by 20\%
+\item Write a python code that can compute closed loop gain,loop gain,amount of feedback given all input parameters.
+\solution
+Code to compute different gains.,
+\begin{lstlisting}
+codes/ee18btech11005/ee18btech11005.py
+\end{lstlisting}
 \end{enumerate}
-

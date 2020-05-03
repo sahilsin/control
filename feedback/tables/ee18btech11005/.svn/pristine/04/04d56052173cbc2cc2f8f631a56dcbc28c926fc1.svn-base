@@ -1,35 +1,4 @@
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                                                  %%
-%%  This is the header of a LaTeX2e file exported from Gnumeric.    %%
-%%                                                                  %%
-%%  This file can be compiled as it stands or included in another   %%
-%%  LaTeX document. The table is based on the longtable package so  %%
-%%  the longtable options (headers, footers...) can be set in the   %%
-%%  preamble section below (see PRAMBLE).                           %%
-%%                                                                  %%
-%%  To include the file in another, the following two lines must be %%
-%%  in the including file:                                          %%
-%%        \def\inputGnumericTable{}                                 %%
-%%  at the beginning of the file and:                               %%
-%%        \input{name-of-this-file.tex}                             %%
-%%  where the table is to be placed. Note also that the including   %%
-%%  file must use the following packages for the table to be        %%
-%%  rendered correctly:                                             %%
-%%    \usepackage[latin1]{inputenc}                                 %%
-%%    \usepackage{color}                                            %%
-%%    \usepackage{array}                                            %%
-%%    \usepackage{longtable}                                        %%
-%%    \usepackage{calc}                                             %%
-%%    \usepackage{multirow}                                         %%
-%%    \usepackage{hhline}                                           %%
-%%    \usepackage{ifthen}                                           %%
-%%  optionally (for landscape tables embedded in another document): %%
-%%    \usepackage{lscape}                                           %%
-%%                                                                  %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 
 %%  This section checks if we are begin input into another file or  %%
 %%  the file will be compiled alone. First use a macro taken from   %%
@@ -65,9 +34,6 @@
        \usepackage{multirow}
        \usepackage{hhline}
        \usepackage{ifthen}
-
-
-
 %%  End of the preamble for the standalone. The next section is for %%
 %%  documents which are included into other LaTeX2e files.          %%
 \else
@@ -123,10 +89,11 @@
 \setlongtables
 
 \setlength\gnumericTableWidth{%
-	53pt+%
-	93pt+%
+	50pt+%
+	50pt+%
+	50pt+%
 0pt}
-\def\gumericNumCols{2}
+\def\gumericNumCols{3}
 \setlength\gnumericTableWidthComplete{\gnumericTableWidth+%
          \tabcolsep*\gumericNumCols*2+\arrayrulewidth*\gumericNumCols}
 \ifthenelse{\lengthtest{\gnumericTableWidthComplete > \linewidth}}%
@@ -144,12 +111,14 @@
 %%                                                                  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{110pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{20pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{50pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{60pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{60pt*\gnumericScale}@{}}x\end{tabular}}
 
 \begin{tabular}[c]{%
 	b{\gnumericColA}%
 	b{\gnumericColB}%
+	b{\gnumericColC}%
 	}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -160,85 +129,90 @@
 %%  the first, last or every page. Use \multicolumn if you want.    %%
 
 %%  Header for the first page.                                      %%
-%	\multicolumn{2}{c}{The First Header} \\ \hline 
+%	\multicolumn{3}{c}{The First Header} \\ \hline 
 %	\multicolumn{1}{c}{colTag}	%Column 1
+%	&\multicolumn{1}{c}{colTag}	%Column 2
 %	&\multicolumn{1}{c}{colTag}	\\ \hline %Last column
 %	\endfirsthead
 
 %%  The running header definition.                                  %%
 %	\hline
-%	\multicolumn{2}{l}{\ldots\small\slshape continued} \\ \hline
+%	\multicolumn{3}{l}{\ldots\small\slshape continued} \\ \hline
 %	\multicolumn{1}{c}{colTag}	%Column 1
+%	&\multicolumn{1}{c}{colTag}	%Column 2
 %	&\multicolumn{1}{c}{colTag}	\\ \hline %Last column
 %	\endhead
 
 %%  The running footer definition.                                  %%
 %	\hline
-%	\multicolumn{2}{r}{\small\slshape continued\ldots} \\
+%	\multicolumn{3}{r}{\small\slshape continued\ldots} \\
 %	\endfoot
 
 %%  The ending footer definition.                                   %%
-%	\multicolumn{2}{c}{That's all folks} \\ \hline 
+%	\multicolumn{3}{c}{That's all folks} \\ \hline 
 %	\endlastfoot
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\hhline{|-|-}
+\hhline{|-|-|-}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{Parameter}}}
+	{\gnumericPB{\centering}\textbf{Parameters}}
 	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{Value}}}
-\\
-\hhline{|-|-}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{input resistance}}}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{$\infty$}}}
-\\
-\hhline{|-|-}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{output resistance}}}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{0}}}
-\\
-\hhline{|-|-}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{Input voltage}}}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{$V_s$}}}
-\\
-\hhline{|-|-}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{Output Voltage}}}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{$V_o$}}}
-\\
-\hhline{|-|-}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{Feeding resistance}}}
-	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{$R_1$}}}
+	{\gnumericPB{\centering}\textbf{Definition}}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\centering}\textbf{For given circuit}}
+
+	
 \\
 
-\hhline{|-|-}
+
+\hhline{|---|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{Feedback resistance}}}
+	{\gnumericPB{\centering}{Open loop gain}}
 	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{$R_2$}}}
+	{\gnumericPB{\centering}G}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\centering}G}
+
 \\
-\hhline{|-|-}
+\hhline{|---|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{Source resistance}}}
+	{\gnumericPB{\centering}Feedback factor}
 	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{$R_s$}}}
+	{\gnumericPB{\centering}H}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\centering}{$\frac{R_1}{R_1+R_2}$}}
+
 \\
-\hhline{|-|-}
+\hhline{|---|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{load resistance}}}
+	{\gnumericPB{\centering}Loop gain}
 	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\centering}\gnumbox{\textbf{$R_L$}}}
+	{\gnumericPB{\centering}GH}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\centering}{$G\frac{R_1}{R_1+R_2}$}}
+
 \\
 
-\hhline{|-|-|}
+
+\hhline{|-|-|-|}
+    \multicolumn{1}{|p{\gnumericColA}|}%
+	{\gnumericPB{\centering}Amount of feedback}
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\centering}1+GH}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\centering}{$1+\frac{GR_1}{R_1+R_2}$}}
+
+\\
+\hhline{|---|}
+	 \multicolumn{1}{|p{\gnumericColA}|}%
+	{\gnumericPB{\centering}Closed loop gain }
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\centering}{$\frac{G}{1+GH}$}}
+	&\multicolumn{1}{p{\gnumericColC}|}%
+	{\gnumericPB{\centering}{$\frac{G(R_1+R_2)}{R_1+R_2+GR_1}$}}
+
+\\
+\hhline{|-|-|-|}
 \end{tabular}
 
 \ifthenelse{\isundefined{\languageshorthands}}{}{\languageshorthands{\languagename}}

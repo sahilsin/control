@@ -45,141 +45,92 @@ The equivalent circuit of the amplifier is in Fig. \ref{fig:ee18btech11005_equiv
 
 \item Assuming that the operational amplifier has infinite input resistance and zero output resistance, find  the {\em feedback factor} $H$.
 \\
-\solution Let the gain of the operational amplifier be G.
-From the equivalent circuit,
-Applying Ohms law,
+\solution From Fig. \ref{fig:ee18btech11005_equivalent_circuit},
+
 \begin{align}
-V_0 &= G(V_i) \label{eq:opamp_output}\\
-\text{and,} V_i &= V_+-V_-
+\label{eq:ee18btech11005_opamp_output}
+V_0 &= GV_i
+\\
+ V_i &= V_s -V_f
+\\
+V_f &= \frac{R_1}{R_1+R_2}V_o
 \end{align}
-Now,Applying voltage dividing rule
+%
+assuming that the current through $R_s$ is very small.  Thus, 
 \begin{align}
-V_- &= \sbrak{\frac{R_1}{R_1+R_2}}V_0
+H &=  \frac{V_f}{V_o} = \frac{R_1}{R_1+R_2}
+\label{eq:ee18btech11005_H}
 \end{align}
-Substituting in equ.\ref{eq:opamp_output}
+\item  Obtain the closed loop gain $T$ and summarize your results through a Table.
+\\
+\solution Table \ref{table:ee18btech11005_Output_Table} provides a summary.
+
 \begin{align}
-    V_0 &= G(V_+-\sbrak{\frac{R_1}{R_1+R_2}}V_0)
-    \\
-\implies V_0 &= GV_+-G\sbrak{\frac{R_1}{R_1+R_2}}V_0
-    \\
-G(V_+)&=V_0+G\sbrak{\frac{R_1}{R_1+R_2}}V_0
-\end{align}
-But,
-\begin{align}
-    V_s &= V_+
-\end{align}
-because, no current flows through resistor.  
-\begin{align}
-    V_0 &= G\sbrak{\frac{1}{1+\frac{GR_1}{R_1+R_2}}}V_s
-    \\
- \text{Gain =}\frac{V_0}{V_s}&=\sbrak{\frac{G}{1+\frac{GR_1}{R_1+R_2}}}\label{eq:opamp_gain}
-\end{align}
-For a negative feedback system,
-\begin{align}
-   \frac{V_0}{V_i} &= \frac{G}{1+GH}
+\label{eq:ee18btech11005_T}
+T &=    \frac{V_0}{V_i}= \frac{G}{1+GH}
   \\
-  \text{where.,} H = \frac{R_1}{R_1+R_2}
+&= \frac{G\brak{R_1+R_2}}{\brak{R_1+R_2}+GR_1}
 \end{align}
-The equation.\ref{eq:opamp_output} looks exactly similar to the Gain of a negative feedback system with
-\begin{itemize}
-    \item Open loop gain = G
-    \item Loop gain = P 
-    \item Amount of feedback = F
-    \item Feedback factor = f
-    \item closed loop gain = T
-\end{itemize}
 \begin{table}[!ht]
 \centering
 \input{./tables/ee18btech11005/ee18btech11005_1.tex}
 \caption{}
 \label{table:ee18btech11005_Output_Table}
 \end{table}
-Therefore,
-So, the feedback factor ..,
-\begin{align}
-     f &= H = \frac{R_1}{R_1+R_2}
-\end{align}
+%
 \item Find the condition under which closed loop gain T is almost entirely determined by the feedback network.
-\solution For T to entirely dependent on feedback network, it should be independent on G(open loop gain)
-T is given by..,
+\\
+\solution If 
+
 \begin{align}
-    T &= \frac{G}{1+\frac{GR_1}{R_1+R_2}} \\
+ GH &\gg 1,
+ \\
+T &\approx \frac{1}{H}  = 1 + \frac{R_2}{R_1} 
+\label{eq:ee18btech11005_T}
 \end{align}
-For T to be independent on G..,
-\begin{align}
- GH >> 1 \\
- G\frac{R_1}{R_1+R_2} >> 1 \\
- G >> 1 + \frac{R_2}{R_1} 
-\end{align}
-Under such condition..,
-\begin{align}
-    T &= \frac{1}{H} \\
-    T &= \frac{R_1+R_2}{R_1}\\
-    T &= 1+\frac{R_2}{R_1}
-\end{align}
-so, the necessary condition for T depend only on feedback network is
-\begin{align}
-    G >> T
-\end{align}
-\item If the open loop voltage gain
+\item If 
 \begin{align} 
 G & = 10^4
-\end{align}
-Find the ratio of R2 and R1 to obtain a closed loop gain of 10.
-\solution The closed loop gain gain T is given by
-\begin{align}
-    T &= \frac{G}{1+GH}
-        = \frac{G}{1+\frac{GR_1}{R_1+R_2}} = 10\\
-    \text{where..,} G &= 10^4 \\
-    10 &= \frac{10^4}{1+\frac{10^4}{1+\frac{R_2}{R_1}}}\\
-\implies 1+\frac{R_2}{R_1} &= \frac{10^4}{\frac{10^4}{10}-1}
 \\
-1+\frac{R_2}{R_1} &= 10.010
+T &= 10,
+\end{align}
+find $H$.
+%$\frac{R_2}{R_1}$.
 \\
-\frac{R_2}{R_1} &= 9.010
-\end{align}
-\item What is the amount of feedback in decibels?
-\solution The value of F in decibals is given by 
+\solution From Table \ref{table:ee18btech11005_Output_Table}
 \begin{align}
-    F(dB) &= 20\log(F)\\
-\text{where..,} F &= 1+GH \\
-F &= \frac{G}{T}\\
-\text{where..,} G&=10^4 \\ T &= 10\\
-F(dB) &= 20\log(\frac{10^4}{10})=20\log(1000)\\
-F(dB) &= 60 dB
+    T &=  \frac{G}{1+GH} = 10
+\\
+\implies  H &= 0.0999
+%\frac{R_2}{R_1} &= 9.010
 \end{align}
-\item If G decreases by 20\%,what is the corresponding decrease in T?
-\solution Given
+%\item What is the amount of feedback in decibels?
+%\solution The value of F in decibals is given by 
+%\begin{align}
+%    F(dB) &= 20\log\brak{1+GH}\\
+%F(dB) &= 60 dB
+%\end{align}
+\item {\em Gain Desensitivity:} If G decreases by 20\%,what is the corresponding decrease in T?  Comment.
+\\
+\solution From From Table \ref{table:ee18btech11005_Output_Table},
+Given
 \begin{align}
-G = 10^4
+T &= \frac{G}{1+GH}
+\\
+\implies dT &= \frac{dG}{\brak{1+GH}^2}
+\\
+\implies \frac{dT}{T} &= \frac{1}{1+GH}\frac{dG}{G}
 \end{align}
-If G decrease by 20\% then,
-the value of G is..,
+From the information available so far, 
 \begin{align}
-    G &= (1-0.2)10^4 \\
-      &= 8000
+dG = 20\%, G = 10^4, H = 0.0999
+\implies \frac{dT}{T} = 0.025\%
 \end{align}
-For this value of G and ,
-\begin{align}
-    \frac{R_2}{R_1} = 9.010
-\end{align}
-The value of T can be solved as follows,
-\begin{align}
- T &= \frac{G}{1+\frac{G}{1+\frac{R_2}{R_1}}}\\
- T &= \frac{8000}{1+\frac{8000}{1+0.9010}}\\
- T &= 9.99749
-\end{align}
-The percentage change in T is..,
-\begin{align}
-    fractionalchange &= \frac{10-9.99749}{10}\\
-      &= 2.51x10^{-4}\\
-     \% change in T &= 0.00251
-\end{align}
-Therefore T decreases by 0.0025\% when G decreases by 20\%
-\item Write a python code that can compute closed loop gain,loop gain,amount of feedback given all input parameters.
-\solution
-Code to compute different gains.,
+%
+using the following code.
 \begin{lstlisting}
 codes/ee18btech11005/ee18btech11005.py
 \end{lstlisting}
+%
+Thus the closed loop gain is almost invariant to a relatively large (20\%) variation in the open loop gain $G$.  This is known as gain desensitivity.
 \end{enumerate}

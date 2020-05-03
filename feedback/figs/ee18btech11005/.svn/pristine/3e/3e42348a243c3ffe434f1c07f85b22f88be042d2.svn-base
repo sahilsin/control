@@ -13,4 +13,7 @@
 (5,1) --(6,1) to[R=$R_l$,*-*] (6,-0.5) node[ground]{}
 (6,1) --(6.5,1) node at(6.8,1){$V_0$}
 node at(1.8,-0.3) {$V_i$}
+node at(0.6,-1.75){$+$}
+node at(0.6,-3){$-$}
+node at(0.6,-2.5){$V_f$}
 ;\end{circuitikz}

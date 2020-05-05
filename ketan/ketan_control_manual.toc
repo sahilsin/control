@@ -17,13 +17,13 @@
 \contentsline {subsection}{\numberline {3.2}Lead Compensator}{27}{subsection.3.2}% 
 \contentsline {subsection}{\numberline {3.3}Lag Compensator}{29}{subsection.3.3}% 
 \contentsline {subsection}{\numberline {3.4}Lead Compensator}{30}{subsection.3.4}% 
-\contentsline {subsection}{\numberline {3.5}Compensator for Overshoot}{34}{subsection.3.5}% 
-\contentsline {subsection}{\numberline {3.6}Lead Compensator}{35}{subsection.3.6}% 
-\contentsline {subsection}{\numberline {3.7}Lag Lead Compensator}{39}{subsection.3.7}% 
-\contentsline {subsection}{\numberline {3.8}Lag Lead Compensator}{40}{subsection.3.8}% 
-\contentsline {subsection}{\numberline {3.9}}{42}{subsection.3.9}% 
-\contentsline {subsection}{\numberline {3.10}}{42}{subsection.3.10}% 
-\contentsline {subsection}{\numberline {3.11}}{42}{subsection.3.11}% 
-\contentsline {section}{\numberline {4}PID Controller Design}{42}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}PD}{42}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}PID}{43}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {3.5}Compensator for Overshoot}{36}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.6}Lead Compensator}{38}{subsection.3.6}% 
+\contentsline {subsection}{\numberline {3.7}Lag Lead Compensator}{40}{subsection.3.7}% 
+\contentsline {subsection}{\numberline {3.8}Lag Lead Compensator}{42}{subsection.3.8}% 
+\contentsline {subsection}{\numberline {3.9}}{44}{subsection.3.9}% 
+\contentsline {subsection}{\numberline {3.10}}{44}{subsection.3.10}% 
+\contentsline {subsection}{\numberline {3.11}}{44}{subsection.3.11}% 
+\contentsline {section}{\numberline {4}PID Controller Design}{44}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}PD}{44}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}PID}{45}{subsection.4.2}% 

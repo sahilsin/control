@@ -25,7 +25,7 @@ The gain crossover frequency $ \omega_{gc} $ and phase margin $ \phi_{M} $ is ca
 codes/ee18btech11051/ee18btech11051_code1.py
 \end{lstlisting}
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=\columnwidth]{./figs/ee18btech11051/ee18btech11051_fig1.eps}
     \label{fig:ee18btech11051_1}
@@ -36,8 +36,8 @@ This can also be calculated from the equations
     \omega \sqrt{\omega^2 + 1} \sqrt{\omega^2 + 25} = 25\\
     \phi_{M} = -90^{\circ} - \tan^{-1}{\omega_{gc}} - \tan^{-1}({\frac{\omega_{gc}}{10}})
 \end{align}
-Solving which, we get $\phi_{M} =  3.96^{\degree} , \omega_{gc} =  2.03$\\
 
+Solving which, we get $\phi_{M} =  3.96^{\degree} , \omega_{gc} =  2.03$\\
 The following code computes the margins and frequencies:
 \begin{lstlisting}
 codes/ee18btech11051/ee18btech11051_code2.py
@@ -48,7 +48,7 @@ The maximum phase of the compensator is given by-
     \phi_{M} = 60^{\degree} - phase margin + angle correction\\
     \phi_{M} = 56^{\degree} + angle correction
 \end{align}
-Here, the angle correction is added to compensate the early zero added due to the lead compensator. We set the angle correction to be $20^{\degree}$.
+Here, the angle correction is added to compensate the early zero added due to the lead compensator. The highest phase margin is achieved when $\phi_{M}$ is close to $90^{\degree}$. To achieve it, we take angle correction = $33^{\degree}$.
 The phase lead compensator will have a transfer function of the form:
 \begin{align}
     G_{C}(s) = \left(\frac{1+\alpha Ts} {1+Ts}\right), \alpha >1
@@ -58,36 +58,70 @@ The phase lead compensator will have a transfer function of the form:
 Note that this transfer function doesn't change the error constant.
 Now we solve for $\alpha$ using the equation
 \begin{align}
-    \alpha = \frac{1+\sin{\phi_{M}}}{1-\sin{\phi_{M}}} = \frac{1+\sin{76^{\degree}}}{1-\sin{76^{\degree}}} = 66.33
+    \alpha = \frac{1+\sin{\phi_{M}}}{1-\sin{\phi_{M}}} = \frac{1+\sin{89^{\degree}}}{1-\sin{89^{\degree}}} = 13,130.56
 \end{align}
 
 Now to get the phase gain, we set the frequency for maximum phase of compensator $\omega_{m}$ to the previous gain crossover frequency. And using it, the value of T is calculated as follows
 \begin{align}
     \omega_{m} = 2.03 rad/sec \\
-    T = \frac{1}{\omega_{m}\alpha} = 0.0074
+    T = \frac{1}{\omega_{m}\alpha} = 0.0000375
 \end{align}
 
 
 The Compensator will have the transfer function as follows :
 \begin{align}
-G_{c}(s) = \left(\frac{1 + 0.5s}{1 + 0.0074s}\right)
+G_{c}(s) = \left(\frac{1 + 0.5s}{1 + 0.0000375s}\right)
 \end{align}
 
 The open loop T.F for the compensated system is  :
 \begin{align}
-    G(s) G_{c}(s) = 25\left(\frac{(1+0.5s)}{s(s+1)(s+5)(1+0.0074s)}\right)
+    G(s) G_{c}(s) = 25\left(\frac{(1+0.5s)}{s(s+1)(s+5)(1+0.0000375s)}\right)
+\end{align}
+
+
+To observe the changes, we plot the compensated system
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth]{./figs/ee18btech11051/ee18btech11051_fig2.eps}
+    \label{fig:ee18btech11051_2}
+\end{figure}
+
+Using the code previously used to calculate the phase margin, the phase margin of the compensated system turns out to not go beyond $46^{\degree}$. So, we use a two stage lead compensator to get the required phase margin. The new compensator can be thought of as the square of the previous compensator 
+\begin{align}
+    G_{C}^{2}(s) = \left(\frac{1+\alpha Ts} {1+Ts}\right)^{2}, \alpha >1
+\end{align}
+The values of $\alpha$ and T can still be calculated as done previously, but for half of the required increase in phase, as the compensator gives double of the configured phase. So, for
+\begin{align}
+    \phi_{M} = \frac{(56^{\degree}+26^{\degree})}{2} = 41^{\degree}\\
+    \alpha = \frac{1+\sin(38^{\degree})}{1-\sin{38^{\degree}}} = 5\\
+    \omega_{m} = 2.6\\
+    T = \frac{1}{\omega_{m}\alpha} = 0.0769
+\end{align}
+Now, the new compensator and the compensated transfer functions are
+\begin{align}
+    G_{c}^{2}(s) = \frac{(1 + 0.38s)^{2}}{(1 + 0.0769s)^{2}}\\
+    G(s) G_{c}^{2}(s) = 25\left(\frac{(1+0.38s)^{2}}{s(s+1)(s+5)(1+0.0769s)^{2}}\right)
 \end{align}
 
 
 %\item
 \textbf{Verification : }
-To observe the changes, we plot the compensated system
+Now we plot the newly compensated transfer function.
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
-    \includegraphics[width=\columnwidth]{./figs/ee18btech11051/ee18btech11051_fig2.eps}
-    \label{fig:ee18btech11051_2}
+    \includegraphics[width=\columnwidth]{./figs/ee18btech11051/ee18btech11051_fig3.eps}
+    \label{fig:ee18btech11051_3}
 \end{figure}
- Clearly, the gain crossover frequency is slightly shifted to the right due to addition of the early zero, and an overall increase in phase is observed.
+
+\begin{table}[!ht]
+    \centering
+    \input{./tables/ee18btech11051/ee18btech11051_table1.tex}
+    \caption{Design Parameters}
+    \label{table:ee18btech11051_table_1}
+\end{table}
+
+The design reqirements and the achieved parameters are listed in the table \ref{table:ee18btech11051_table_1}.\\As it can be seen from the final readings in the table \ref{table:ee18btech11051_table_1}, the desired transfer function is achieved. 
 
 %\end{enumerate}

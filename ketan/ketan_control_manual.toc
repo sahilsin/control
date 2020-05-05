@@ -8,23 +8,27 @@
 \contentsline {subsection}{\numberline {2.1}Nyquist Criterion}{13}{subsection.2.1}% 
 \contentsline {subsection}{\numberline {2.2}Nyquist Criterion}{18}{subsection.2.2}% 
 \contentsline {subsection}{\numberline {2.3}$M$ and $N$ Circles}{20}{subsection.2.3}% 
-\contentsline {subsection}{\numberline {2.4}Nyquist and Routh-Hurwitz}{23}{subsection.2.4}% 
-\contentsline {subsection}{\numberline {2.5}Nyquist and Routh-Hurwitz}{24}{subsection.2.5}% 
-\contentsline {subsection}{\numberline {2.6}Nyquist}{26}{subsection.2.6}% 
-\contentsline {subsection}{\numberline {2.7}Nyquist}{27}{subsection.2.7}% 
-\contentsline {section}{\numberline {3}Design in Frequency Domain}{28}{section.3}% 
-\contentsline {subsection}{\numberline {3.1}}{28}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Lead Compensator}{28}{subsection.3.2}% 
-\contentsline {subsection}{\numberline {3.3}Lag Compensator}{30}{subsection.3.3}% 
-\contentsline {subsection}{\numberline {3.4}Lead Compensator}{32}{subsection.3.4}% 
-\contentsline {subsection}{\numberline {3.5}Compensator for Overshoot}{37}{subsection.3.5}% 
-\contentsline {subsection}{\numberline {3.6}Lead Compensator}{39}{subsection.3.6}% 
-\contentsline {subsection}{\numberline {3.7}Lag Lead Compensator}{43}{subsection.3.7}% 
-\contentsline {subsection}{\numberline {3.8}Lag Lead Compensator}{45}{subsection.3.8}% 
-\contentsline {subsection}{\numberline {3.9}}{47}{subsection.3.9}% 
-\contentsline {subsection}{\numberline {3.10}}{47}{subsection.3.10}% 
-\contentsline {subsection}{\numberline {3.11}}{47}{subsection.3.11}% 
-\contentsline {section}{\numberline {4}PID Controller Design}{47}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}PD}{47}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}PID}{48}{subsection.4.2}% 
-\contentsline {subsection}{\numberline {4.3}Position Control System}{50}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {2.4}Nichol's Chart}{23}{subsection.2.4}% 
+\contentsline {subsection}{\numberline {2.5}Stability}{24}{subsection.2.5}% 
+\contentsline {subsection}{\numberline {2.6}Range of K}{27}{subsection.2.6}% 
+\contentsline {subsection}{\numberline {2.7}Closed Loop Frequency Response }{30}{subsection.2.7}% 
+\contentsline {subsection}{\numberline {2.8}Nyquist and Routh-Hurwitz}{35}{subsection.2.8}% 
+\contentsline {subsection}{\numberline {2.9}Nyquist and Routh-Hurwitz}{36}{subsection.2.9}% 
+\contentsline {subsection}{\numberline {2.10}Nyquist}{37}{subsection.2.10}% 
+\contentsline {subsection}{\numberline {2.11}Nyquist}{39}{subsection.2.11}% 
+\contentsline {section}{\numberline {3}Design in Frequency Domain}{40}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}}{40}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Lead Compensator}{40}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Lag Compensator}{42}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Lead Compensator}{44}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5}Compensator for Overshoot}{49}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.6}Lead Compensator}{51}{subsection.3.6}% 
+\contentsline {subsection}{\numberline {3.7}Lag Lead Compensator}{55}{subsection.3.7}% 
+\contentsline {subsection}{\numberline {3.8}Lag Lead Compensator}{57}{subsection.3.8}% 
+\contentsline {subsection}{\numberline {3.9}}{59}{subsection.3.9}% 
+\contentsline {subsection}{\numberline {3.10}}{59}{subsection.3.10}% 
+\contentsline {subsection}{\numberline {3.11}}{59}{subsection.3.11}% 
+\contentsline {section}{\numberline {4}PID Controller Design}{59}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}PD}{59}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}PID}{60}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Position Control System}{62}{subsection.4.3}% 

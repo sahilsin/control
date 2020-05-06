@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  3 MAY 2020 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  6 MAY 2020 09:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1339,11 +1339,7 @@ ngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-) (./gvv_feedback_manual.aux
-
-LaTeX Warning: Label `eq:ee18btech11005_T' multiply defined.
-
-)
+) (./gvv_feedback_manual.aux)
 \openout1 = `gvv_feedback_manual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 88.
@@ -1492,16 +1488,16 @@ File: utxsyc.fd 2000/12/15 v3.1
 \gnumericColB=\skip83
 )
 (./figs/ee18btech11005/equivalent_control_system.tex)
-(./figs/ee18btech11005/equivalent_circuit.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
+(./figs/ee18btech11005/equivalent_circuit.tex) [1
 
 
 ]
 (./tables/ee18btech11005/ee18btech11005_1.tex
 \gnumericColC=\skip84
 )
+Underfull \vbox (badness 1400) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 113--117
 []\OT1/txr/m/it/12 Gain De-sen-si-tiv-ity: \OT1/txr/m/n/12 If G de-creases by
  []
@@ -1527,33 +1523,45 @@ Underfull \hbox (badness 1496) in paragraph at lines 27--35
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+Underfull \hbox (badness 4954) in paragraph at lines 44--48
+[]\OT1/txr/m/n/12 Write all the node/loop equa-tions us-ing
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 300.
 
-[4
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+
+LaTeX Warning: Reference `eq:ee18btech110014_G' on page 4 undefined on input li
+ne 129.
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
+ [4
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 300.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
  (./gvv_feedback_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 300.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 300.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 301.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
 Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
-(rerunfilecheck)             Checksum: D241C823078548FC572D1011CE79DD55;272.
+(rerunfilecheck)             Checksum: EF926B9C05DBCEE0AFFD2E7BDAA158C0;150.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 300.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
  ) 
 Here is how much of TeX's memory you used:
- 33852 strings out of 492624
- 731860 string characters out of 6119216
- 1015158 words of memory out of 5000000
- 37128 multiletter control sequences out of 15000+600000
+ 33880 strings out of 492624
+ 732526 string characters out of 6119216
+ 1001723 words of memory out of 5000000
+ 37156 multiletter control sequences out of 15000+600000
  75595 words of font info for 190 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,13n,69p,649b,1199s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,13n,69p,650b,1199s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (4 pages, 121248 bytes).
+Output written on gvv_feedback_manual.dvi (4 pages, 123524 bytes).

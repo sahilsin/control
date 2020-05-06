@@ -1,0 +1,263 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item
+Consider a Feedback Current Amplifier formed by cascading an Inverting Opamp $\mu$ with a MOSFET (NMOS) ash shown in Fig. \ref{fig:ee18btech11021_Complete_Circuit}
+.
+The output current is the Drain Current of the NMOS.
+Assume that Opamp has an input resistance $R_{id}$, an Open Circuit Voltage Gain $\mu$, and an output resistance $r_{o1}$.  Express this as a control system.
+
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{figs/ee18btech11021/Complete_Circuit.tex}}
+	\end{center}
+\caption{Complete Circuit}
+\label{fig:ee18btech11021_Complete_Circuit}
+\end{figure}
+\solution See Fig. \ref{fig:ee18btech11021_Block_Diagram}
+%
+\begin{figure}[!ht]
+	\begin{center}
+			\resizebox{\columnwidth}{!}{\input{figs/ee18btech11021/Block_Diagram.tex}}
+	\end{center}
+\caption{Block Diagram}
+\label{fig:ee18btech11021_Block_Diagram}
+\end{figure}
+\renewcommand{\thefigure}{\theenumi}
+
+\item Represent Fig. \ref{fig:ee18btech11021_Complete_Circuit} using a Small Signal Equivalent Model.
+
+\solution See Fig. \ref{fig:ee18btech11021_Small_Signal_Model}
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{figs/ee18btech11021/Small_Signal_Model.tex}}
+	\end{center}
+\caption{Small Signal Model}
+\label{fig:ee18btech11021_Small_Signal_Model}
+\end{figure}
+
+\item Find $G$.
+
+\solution  From Fig. \ref{fig:ee18btech11021_Small_Signal_Model} we have the following equations
+\begin{align}
+V_g &= -\mu V_i
+\\
+\frac{V_i}{R_{id}} &= I_i
+\\
+I_s &= \frac{V_i}{R_s} + I_f + I_i
+\\
+I_f &= \frac{V_i-V_s}{R_2}
+\\
+\frac{V_g}{R_2} &= I_f + I_o
+\\
+I_o &= g_m \brak{V_g-V_s} + \frac{V_s}{r_{o2}}
+\\
+G &= \frac{I_o}{I_i}
+\\
+H &= \frac{I_f}{I_o}
+\end{align}
+
+%By replacing the Opamp with its equivalent model we can get the G circuit
+%
+%\begin{figure}[!ht]
+%	\begin{center}
+%		
+%		\resizebox{\columnwidth}{!}{\input{figs/ee18btech11021/Gain_Circuit.tex}}
+%	\end{center}
+%\caption{Gain Circuit}
+%\label{fig:ee18btech11021_Gain_Circuit}
+%\end{figure}
+
+
+\begin{align}
+    R_{i}=R_{s}\|R_{i d}\|(R_{1}+R_{2})
+\end{align}
+%
+where $R_i$ is the resistance seen by the current source $I_s$ and $R_{id}$ is the internal resistance of the OPAMP.
+\begin{align}
+    V_{i}&=I_{s} R_{i} 
+\\
+I_i &= I_s \frac{R_s\parallel \brak{R_1+R_2}}{R_s+R_{id}+R_1+R_2}
+\end{align}
+%
+for small values of $I_f$.
+\begin{align}
+    I_{o}=-\mu V_{i} \frac{1}{1 / g_{m}+(R_{1}\|R_{2}\| r_{o 2})} \frac{r_{o 2}}{r_{o 2}+(R_{1} \| R_{2})}
+\end{align}
+\begin{align}
+    G = \frac{I_{o}}{I_{i}}=-\mu \frac{R_{i}}{1 / g_{m}+(R_{1}\|R_{2}\| r_{o 2})} \frac{r_{o 2}}{r_{o 2}+(R_{1} \| R_{2})}
+\end{align}
+We use the approximation
+\begin{align}
+    1 / g_{m} \ll (R_{1}\|R_{2}\| r_{o 2})
+\end{align}
+This is because the $\frac{1}{g_{m}}$ is in order of few \ohm s but, $R_{1}$, $R_{2}$ and $r_{o2}$ are in order of k\ohm s 
+
+\begin{align}
+    G =-\mu \frac{R_{i}}{R_{1} \| R_{2}}
+\end{align}
+\begin{align}
+    R_{o}=r_{o 2}+(R_{1} \| R_{2})+(g_{m} r_{o 2})(R_{1} \| R_{2})
+\end{align}
+\begin{align}
+    \implies R_{o} \simeq g_{m} r_{o 2}\left(R_{1} \| R_{2}\right)
+\end{align}
+
+\item
+Find expression for Loop Gain H
+
+\solution
+\begin{align}
+    H = \frac{I_{f}}{I_{o}}=-\frac{R_{1}}{R_{1}+R_{2}}
+\end{align}
+
+\item
+If loop gain is large, find approximate expression for closed loop gain $T$
+
+\solution
+Given,
+\begin{align}
+    GH \gg 1
+\end{align}
+\begin{align}
+    T = \frac{G}{1+GH}\simeq \frac{1}{H}
+\end{align}
+
+
+\begin{align}
+    T \simeq \frac{1}{H}=-\left(1+\frac{R_{2}}{R_{1}}\right)
+\end{align}
+
+\item
+Give expressions for GH, $T$, $R_{if}$, $R_{in}$, $R_{of}$, $R_{out}$
+
+\solution
+\begin{align}
+    GH=\mu \frac{R_{i}}{\frac{1}{g_{m}}+(R_{1}\|R_{2}\| r_{o 2})} \frac{r_{o 2}}{r_{o 2}+(R_{1} \| R_{2})} \frac{R_{1}}{R_{1}+R_{2}}
+\end{align}
+
+Once again, using the approximation,
+\begin{align}
+    \implies GH \simeq \mu \frac{R_{i}}{R_{1} \| R_{2}} \frac{R_{1}}{R_{1}+R_{2}}=\mu \frac{R_{i}}{R_{2}}
+\end{align}
+
+For Input Resistance,
+\begin{align}
+    R_{if}=R_{i} /(1+GH)
+\end{align}
+\begin{align}
+    \implies \frac{1}{R_{i f}}=\frac{1}{R_{i}}+\frac{\mu}{R_{2}}
+\end{align}
+\begin{align}
+    \implies R_{i f}=R_{i} \| \frac{R_{2}}{\mu}
+\end{align}
+
+Substituting the value of $R_{i}$,
+\begin{align}
+    R_{if}=R_{s}\|R_{id}\|(R_{1}+R_{2}) \| \frac{R_{2}}{\mu}
+\end{align}
+
+\begin{align}
+    R_{if}=R_{s} \| R_{in}
+\end{align}
+
+\begin{align}
+    \implies R_{in}=R_{i d}\|(R_{1}+R_{2})\| \frac{R_{2}}{\mu}
+\end{align}
+\begin{align}
+    R_{in} \simeq \frac{R_{2}}{\mu}
+\end{align}
+
+For Output Resistance,
+\begin{align}
+    R_{of}=R_{o}(1+GH) \simeq GH R_{o}
+\end{align}
+\begin{align}
+    R_{of} \simeq \mu (\frac{R_{i}}{R_{2}})(g_{m} r_{o 2})(R_{1} \| R_{2})
+\end{align}
+\begin{align}
+    R_{out} = R_{of}=\mu \frac{R_{i}}{R_{1}+R_{2}}(g_{m} r_{o 2}) R_{1}
+\end{align}
+
+
+\item
+Given the following values
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11021/Input_Table.tex}
+\caption{}
+\label{table: Input_Table}
+\end{table}
+
+Find numerical value of $R_{i}$ and use it to find the value of G
+
+\solution
+Using the given numerical values on the previously obtained equations, we obtain:
+\begin{align}
+    R_{i}=\infty\|\infty\|(10+90)=100 k\ohm
+\end{align}
+
+\begin{align}
+    G =-1000 \frac{100}{10 \| 90}=-11.11 \times 10^{3}
+\end{align}
+
+\item 
+Check the validity of the approximation that we use to neglect $1/g_{m}$
+
+\solution
+\begin{align}
+    1 / g_{m}=0.2 k\ohm \ll (10\|90\| 20)k\ohm = 6.2k\ohm
+\end{align}
+Hence, we can see that our approximation is valid
+
+\item
+Find the value of feedback gain H and open loop gain GH
+
+\solution
+\begin{align}
+    H=-\frac{R_{1}}{R_{1}+R_{2}}=-\frac{10}{10+90}=-0.1
+\end{align}
+
+\begin{align}
+    GH=1111 \gg 1
+\end{align}
+
+\item
+Find the approximate value of closed loop gain T
+
+\solution
+\begin{align}
+    T \simeq \frac{1}{H} = -\frac{1}{0.1} = -10
+\end{align}
+
+\item
+Find the values of $R_{in}$ and $R_{out}$
+
+\solution
+\begin{align}
+    R_{in}=\frac{R_{2}}{\mu}=\frac{90k\ohm}{1000}=90\ohm
+\end{align}
+\begin{align}
+    R_{o} &=g_{m} r_{o 2}(R_{1} \| R_{2}) =5 \times 20(10 \| 90)=900k\ohm
+\end{align}
+\begin{align}
+    R_{out}=(1+GH) R_{o}=1112 \times 900 \simeq 1000M\ohm
+\end{align}
+
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11021/Output_Table.tex}
+\caption{}
+\label{table: Output_Table}
+\end{table}
+
+\item
+Verify the above calculations using a Python code.
+
+\solution
+\begin{lstlisting}
+codes/ee18btech11021/ee18btech11021_calc.py
+\end{lstlisting}
+
+\end{enumerate}

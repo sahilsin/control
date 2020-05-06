@@ -17,18 +17,18 @@
 \contentsline {subsection}{\numberline {2.10}Nyquist}{37}{subsection.2.10}% 
 \contentsline {subsection}{\numberline {2.11}Nyquist}{39}{subsection.2.11}% 
 \contentsline {section}{\numberline {3}Design in Frequency Domain}{40}{section.3}% 
-\contentsline {subsection}{\numberline {3.1}}{40}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Lead Compensator}{40}{subsection.3.2}% 
-\contentsline {subsection}{\numberline {3.3}Lag Compensator}{42}{subsection.3.3}% 
-\contentsline {subsection}{\numberline {3.4}Lead Compensator}{44}{subsection.3.4}% 
-\contentsline {subsection}{\numberline {3.5}Compensator for Overshoot}{49}{subsection.3.5}% 
-\contentsline {subsection}{\numberline {3.6}Lead Compensator}{51}{subsection.3.6}% 
-\contentsline {subsection}{\numberline {3.7}Lag Lead Compensator}{55}{subsection.3.7}% 
-\contentsline {subsection}{\numberline {3.8}Lag Lead Compensator}{57}{subsection.3.8}% 
-\contentsline {subsection}{\numberline {3.9}}{59}{subsection.3.9}% 
-\contentsline {subsection}{\numberline {3.10}}{59}{subsection.3.10}% 
-\contentsline {subsection}{\numberline {3.11}}{59}{subsection.3.11}% 
-\contentsline {section}{\numberline {4}PID Controller Design}{59}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}PD}{59}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}PID}{60}{subsection.4.2}% 
-\contentsline {subsection}{\numberline {4.3}Position Control System}{62}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {3.1}GM, PM and Overshoot}{40}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Lead Compensator}{42}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Lag Compensator}{44}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Lead Compensator}{45}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5}Compensator for Overshoot}{51}{subsection.3.5}% 
+\contentsline {subsection}{\numberline {3.6}Lead Compensator}{53}{subsection.3.6}% 
+\contentsline {subsection}{\numberline {3.7}Lag Lead Compensator}{57}{subsection.3.7}% 
+\contentsline {subsection}{\numberline {3.8}Lag Lead Compensator}{59}{subsection.3.8}% 
+\contentsline {subsection}{\numberline {3.9}}{61}{subsection.3.9}% 
+\contentsline {subsection}{\numberline {3.10}}{61}{subsection.3.10}% 
+\contentsline {subsection}{\numberline {3.11}}{61}{subsection.3.11}% 
+\contentsline {section}{\numberline {4}PID Controller Design}{61}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}PD}{61}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}PID}{62}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Position Control System}{64}{subsection.4.3}% 

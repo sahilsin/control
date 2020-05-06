@@ -50,13 +50,16 @@ While drawing a Small-Signal Model, we ground all constant voltage sources and o
 I_i &= \frac{v_B}{R_D}
 \\
 \label{eq:ee18btech11014_G_der2}
-I_o &= -g_{m2}v_{B}
+I_o &= -g_{m_2}v_{B}
 \\
 \label{eq:ee18btech11014_H_der1}
-v_{C} + v_{B} &= -I_oR_L
+v_{C} - v_{A} &= -I_fR_F
 \\
 \label{eq:ee18btech11014_H_der2}
-v_C &= \brak{I_o - I_f}R_M
+v_C &= \brak{I_o + I_f}R_M
+\\
+I_i &= g_{m_1}v_{A}
+\label{eq:ee18btech11014_vA}
 \end{align}
 %
 
@@ -66,23 +69,8 @@ v_C &= \brak{I_o - I_f}R_M
 %
 \begin{align}
 \label{eq:ee18btech11014_G}
-G=\frac{I_{o}}{I_{i}} = -g_{m2}R_D
+G=\frac{I_{o}}{I_{i}} = -g_{m_2}R_D
 \end{align}
-%In Small-Signal Model,
-%\begin{align}
-%v_{B} = I_{i}R_{D}\\
-%v_{gs_{2}} = v_{B} = I_{i}R_{D}
-%\end{align}
-
-%In Small-Signal Analysis, P-MOSFET is modelled as a current source where current flows from Source to Drain. So, the value of current flowing from Source to Drain in P-MOSFET is,
-%\begin{align}
-%I_{o} =  -g_{m_{2}}v_{gs_{2}} = -g_{m_{2}}I_{i}R_{D}
-%\end{align}
-%So, the Open-Circuit Gain is
-%\begin{align}
-%\label{eq:ee18btech110014_G}
-%G = \frac{I_{o}}{I_{i}} =  -g_{m_{2}}R_{D}
-%\end{align}
 %------------------------------------------------------------------------%
 
 \item Find the Expression of the Feedback Factor $H$.
@@ -90,27 +78,34 @@ G=\frac{I_{o}}{I_{i}} = -g_{m2}R_D
 \solution 
 \begin{align}
 H = \frac{I_{f}}{I_{o}},
+\label{eq:ee18btech11014_Hdef}
 \end{align}
 
 
 From \eqref{eq:ee18btech11014_H_der1}
  and \eqref{eq:ee18btech11014_H_der2},
 \begin{align}
-\brak{I_o + I_f}R_M + v_{B} &= -I_oR_L
+\brak{I_o + I_f}R_M - v_{A} &= -I_fR_F
 \\
-\implies \brak{I_o + I_f}R_M + I_iR_D &=-I_oR_L 
+\implies \brak{I_o + I_f}R_M + \frac{I_i}{g_{m_1}} &=-I_fR_F
 \end{align}
-from  \eqref{eq:ee18btech11014_G_der1}
+from  \eqref{eq:ee18btech11014_vA}. Dividing by  $I_o $,%
 \begin{align}
-\implies \brak{1 + H}R_M + \frac{R_D}{G} &=-R_L 
+\implies \brak{1 + H}R_M + \frac{1}{g_{m_1}G} &=-HR_F 
 \end{align}
-dividing by  $I_o $
+%
+upon substituting from \label{eq:ee18btech11014_G}
+and \label{eq:ee18btech11014_Hdef}.  Simplifying further, we obtain
+%
 \begin{align}
-\implies H &= -1 - \frac{1}{R_M} \brak{R_L -\frac{1}{g_{m2}}}
+\implies H &= \frac{\frac{1}{g_{m_1}g_{m_2}R_D} - R_M}{R_F+R_M}
+\\
+& \approx  -\frac{ R_M}{R_F+R_M}
 \end{align}
-upon  substituting from  \eqref{eq:ee18btech11014_G} and simplifying.
-
-
+%
+for $R_M \gg \frac{1}{g_{m_1}g_{m_2}R_D}$. 
+%
+\item 
 $I_{o}$ is fed to a current divider formed by $R_{M}$ and $R_{F}$.
 $R_{F}$ is a Large Resistance compared to Input resistance of Amplifier and so most of the current flows through it leaving a small current as input to Amplifier. Hence the voltage at point 'A' is very small and is considered, $v_{A} \simeq 0$. So $R_{F}$ and $R_{M}$ are parallel and Voltage Drop across them is same.
 \begin{align}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  6 MAY 2020 09:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  6 MAY 2020 13:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1339,7 +1339,14 @@ ngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-) (./gvv_feedback_manual.aux)
+) (./gvv_feedback_manual.aux
+
+LaTeX Warning: Label `eq:ee18btech11014_G' multiply defined.
+
+
+LaTeX Warning: Label `eq:ee18btech11014_Hdef' multiply defined.
+
+)
 \openout1 = `gvv_feedback_manual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 88.
@@ -1536,7 +1543,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [3]
 
 LaTeX Warning: Reference `eq:ee18btech110014_G' on page 4 undefined on input li
-ne 129.
+ne 124.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
@@ -1553,15 +1560,18 @@ Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
  ) 
 Here is how much of TeX's memory you used:
- 33880 strings out of 492624
- 732526 string characters out of 6119216
- 1001723 words of memory out of 5000000
- 37156 multiletter control sequences out of 15000+600000
+ 33881 strings out of 492624
+ 732563 string characters out of 6119216
+ 1001959 words of memory out of 5000000
+ 37157 multiletter control sequences out of 15000+600000
  75595 words of font info for 190 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,13n,69p,650b,1199s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (4 pages, 123524 bytes).
+Output written on gvv_feedback_manual.dvi (4 pages, 124276 bytes).

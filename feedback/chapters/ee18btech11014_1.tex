@@ -1,0 +1,89 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+%------------------------------------------------------------------------%
+\item Draw the Block Diagram and Circuit Diagram for $H$.\\
+\solution The Block Diagram  is available in Fig. 	\ref{fig:ee18btech11014_Feedback_Block}
+
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+\begin{figure}[ht!]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11014/ee18btech11014_figf.tex}}
+	\end{center}
+	\caption{Feedback Block Diagram}
+	\label{fig:ee18btech11014_Feedback_Block}
+\end{figure}
+and the corresponding circuit diagram in Fig.  \ref{fig:ee18btech11014_Feedback_Network}
+\begin{figure}[ht!]
+	\begin{center}
+		\resizebox{\columnwidth/2}{!}{\input{./figs/ee18btech11014/ee18btech11014_figd.tex}}
+	\end{center}
+	\caption{Feedback Network}
+	\label{fig:ee18btech11014_Feedback_Network}
+\end{figure}
+\renewcommand{\thefigure}{\theenumi}
+\item Find $H$ from Fig.  \ref{fig:ee18btech11014_Feedback_Network}.
+\\
+\solution Using current division,
+\begin{align}
+\frac{I_{f}}{I_{o}} &= -\frac{R_{M}}{R_{F}+R_{M}}
+\\
+\implies H &= -\frac{R_{M}}{R_{F}+R_{M}}
+\end{align}
+
+%------------------------------------------------------------------------%
+
+\item Find $R_{11}$ and $R_{22}$  of Feedback Network where $R_{11}$ is input resistance through Port-1 and $R_{22}$ is Input Resistance through Port-2.\\
+\solution $R_{11}$ is calculated by opening the current source at  Port-2.  Hence, 
+\begin{align}
+R_{11} = R_{F} + R_{M}
+\end{align}
+While calculating $R_{22}$, Port-1 should be shorted. Hence, 
+\begin{align}
+R_{22} &= R_{F} || R_{M}\\
+ &= \frac{R_{F}R_{M}}{R_{F}+R_{M}}
+\end{align}
+%------------------------------------------------------------------------%
+
+\item Draw the block diagram and circuit diagram for calculating $G$.\\
+\solution  See Figs. 		\ref{fig:ee18btech11014_OpenLoop_Block}
+ and \ref{fig:ee18btech11014_OpenLoop_Network}
+%
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+\begin{figure}[ht!]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11014/ee18btech11014_figg.tex}}
+	\end{center}
+	\caption{Open-Loop Block Diagram}
+	\label{fig:ee18btech11014_OpenLoop_Block}
+\end{figure}
+\begin{figure}[ht!]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11014/ee18btech11014_fige.tex}}
+	\end{center}
+	\caption{Open-Loop Network}
+	\label{fig:ee18btech11014_OpenLoop_Network}
+\end{figure}
+\renewcommand{\thefigure}{\theenumi}
+\item Find $G$.
+\\
+\solution The analysis is the same as Problem \ref{prob:ee18btech11014_G}.
+
+
+%By KVL and KCL,
+%\begin{align}
+%v_{B} = I_{i}R_{D}\\
+%v_{gs_{2}} = v_{B} = I_{i}R_{D}\\
+%I_{o} =  -g_{m_{2}}v_{gs_{2}} = -g_{m_{2}}I_{i}R_{D}\\
+%\frac{I_{o}}{I_{i}} = -g_{m_{2}}R_{D}
+%\end{align}
+%
+%So, Open-Loop Gain is
+%\begin{align}
+%G = \frac{I_{o}}{I_{i}} =  -g_{m_{2}}R_{D}
+%\end{align}
+%
+%The Block Diagram of Open-Loop Network is
+
+\end{enumerate}

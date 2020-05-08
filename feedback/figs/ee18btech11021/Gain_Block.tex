@@ -1,0 +1,12 @@
+\begin{circuitikz}[american]
+\usetikzlibrary{positioning, fit, calc}
+\draw (0,0) to[I = $I_{i}$] (0,2) -- (2,2) to[R=$R_s$,*-*] (2,0){}
+(2,2) -- (5,2) {}
+(3,2) to[R=$R_{11}$,*-*] (3,0)
+(7,1)node[draw,minimum width=4cm,minimum height=4cm] (load) {Gain Amplifier}{}
+(0,0)--(5,0){}
+(9,2) -- (14,2) to[R=$R_L$,*-*] (14,0)
+(14,0) to [R=$R_{22}$,*-*] (9,0){}
+(14,2) to[short,i=$I_o$] (9,2)
+
+;\end{circuitikz}

@@ -1,0 +1,13 @@
+\begin{circuitikz}
+\ctikzset{tripoles/mos style/arrows}
+\draw
+(0,0) node[nmos,](Q){}
+(Q.center) node[right]{{$Q$}}
+(Q.D) -- (0.75,0.75) to[R=$r_{02}$] (0.75,-0.75)-- (Q.S)
+(Q.D) -- (0,1.5) -- (0.5,1.5) node[ground]{}
+(Q.G) -- (-1,0) to[R=$r_{01}$, i = 0] (-4,0) 
+(-4,-3.5) node[ground]{}
+(-4,-3.5) to[V = $\mu V_i$] (-4,0){}
+(Q.S) to[short, i = $I_{o}$] (0,-1.5) to[R=$R_1$] (0,-3.5) node[ground]{}
+(0,-1.5) --(-1,-1.5) to[R=$R_2$] (-1,-3.5) node[ground]{}
+;\end{circuitikz}

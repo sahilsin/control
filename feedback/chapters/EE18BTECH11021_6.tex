@@ -1,86 +1,63 @@
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
 \numberwithin{equation}{enumi}
 \item
-Consider a Feedback Current Amplifier formed by cascading an Inverting Opamp $\mu$ with a MOSFET (NMOS) as shown in Fig. \ref{fig:ee18btech11021_Complete_Circuit}.
+Consider a Feedback Current Amplifier formed by cascading an Inverting Opamp $\mu$ with a MOSFET (NMOS).
 The output current is the Drain Current of the NMOS.
-Assume that Opamp has an input resistance $R_{id}$, an Open Circuit Voltage Gain $\mu$, and an output resistance $r_{o1}$.  Express this as a control system.
+Assume that Opamp has an input resistance $R_{id}$, an Open Circuit Voltage Gain $\mu$, and an output resistance $r_{o1}$
 
-\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
 \begin{figure}[!ht]
 	\begin{center}
 		\resizebox{\columnwidth}{!}{\input{figs/ee18btech11021/Complete_Circuit.tex}}
 	\end{center}
 \caption{Complete Circuit}
-\label{fig:ee18btech11021_Complete_Circuit}
+\label{fig:Complete_Circuit}
 \end{figure}
-\solution See Fig. \ref{fig:ee18btech11021_Block_Diagram}
-%
-\begin{figure}[!ht]
-	\begin{center}
-			\resizebox{\columnwidth}{!}{\input{figs/ee18btech11021/Block_Diagram.tex}}
-	\end{center}
-\caption{Block Diagram}
-\label{fig:ee18btech11021_Block_Diagram}
-\end{figure}
-\renewcommand{\thefigure}{\theenumi}
 
-\item Represent Fig. \ref{fig:ee18btech11021_Complete_Circuit} using a Small Signal Equivalent Model.
+\item
+Represent the given circuit using a Small Signal Equivalent Model.
 
-\solution See Fig. \ref{fig:ee18btech11021_Small_Signal_Model}
-
+\solution
 \begin{figure}[!ht]
 	\begin{center}
 		\resizebox{\columnwidth}{!}{\input{figs/ee18btech11021/Small_Signal_Model.tex}}
 	\end{center}
 \caption{Small Signal Model}
-\label{fig:ee18btech11021_Small_Signal_Model}
+\label{fig:Small_Signal_Model}
 \end{figure}
 
-\item Find $G$.
+\item
+Represent the Control System using a block diagram
 
-\solution  From Fig. \ref{fig:ee18btech11021_Small_Signal_Model} we have the following equations
-\begin{align}
-V_g &= -\mu V_i
-\\
-\frac{V_i}{R_{id}} &= I_i
-\\
-I_s &= \frac{V_i}{R_s} + I_f + I_i
-\\
-I_f &= \frac{V_i-V_s}{R_2}
-\\
-\frac{V_g}{R_2} &= I_f + I_o
-\\
-I_o &= g_m \brak{V_g-V_s} + \frac{V_s}{r_{o2}}
-\\
-G &= \frac{I_o}{I_i}
-\\
-H &= \frac{I_f}{I_o}
-\end{align}
+\solution
+\begin{figure}[!ht]
+	\begin{center}
+			\resizebox{\columnwidth}{!}{\input{figs/ee18btech11021/Block_Diagram.tex}}
+	\end{center}
+\caption{Block Diagram}
+\label{fig:Block_Diagram}
+\end{figure}
 
-%By replacing the Opamp with its equivalent model we can get the G circuit
-%
-%\begin{figure}[!ht]
-%	\begin{center}
-%		
-%		\resizebox{\columnwidth}{!}{\input{figs/ee18btech11021/Gain_Circuit.tex}}
-%	\end{center}
-%\caption{Gain Circuit}
-%\label{fig:ee18btech11021_Gain_Circuit}
-%\end{figure}
+\item
+Describe the resistances involved in the circuit
 
+\solution
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11021/Resistance_Table.tex}
+\caption{}
+\label{table: Resistance_Table}
+\end{table}
 
+\item
+Find approximate expressions for G, $R_{i}$, $R_{o}$
+
+\solution
 \begin{align}
     R_{i}=R_{s}\|R_{i d}\|(R_{1}+R_{2})
 \end{align}
-%
-where $R_i$ is the resistance seen by the current source $I_s$ and $R_{id}$ is the internal resistance of the OPAMP.
 \begin{align}
-    V_{i}&=I_{s} R_{i} 
-\\
-I_i &= I_s \frac{R_s\parallel \brak{R_1+R_2}}{R_s+R_{id}+R_1+R_2}
+    V_{i}=I_{i} R_{i}
 \end{align}
-%
-for small values of $I_f$.
 \begin{align}
     I_{o}=-\mu V_{i} \frac{1}{1 / g_{m}+(R_{1}\|R_{2}\| r_{o 2})} \frac{r_{o 2}}{r_{o 2}+(R_{1} \| R_{2})}
 \end{align}

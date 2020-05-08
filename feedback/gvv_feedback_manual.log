@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  8 MAY 2020 11:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  8 MAY 2020 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1481,12 +1481,16 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 244.
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) (./gvv_feedback_manual.toc)
+) (./gvv_feedback_manual.toc
+Underfull \hbox (badness 2689) in paragraph at lines 6--6
+[][][]\OT1/txr/bx/n/12 Feedback Transcon-duc-tance Am-pli- 
+ []
+
+)
 \tf@toc=\write5
 \openout5 = `gvv_feedback_manual.toc'.
 
- (./chapters/ee18btech11005.tex
-(./figs/ee18btech11005/original_circuit.tex)
+ (./chapters/ee18btech11005.tex (./figs/ee18btech11005/original_circuit.tex)
 (./tables/ee18btech11005/ee18btech11005_2.tex
 \gnumericTableWidth=\skip79
 \gnumericTableWidthComplete=\skip80
@@ -1496,7 +1500,7 @@ File: utxsyc.fd 2000/12/15 v3.1
 )
 (./figs/ee18btech11005/equivalent_control_system.tex)
 (./figs/ee18btech11005/equivalent_circuit.tex)
-Overfull \vbox (53.09355pt too high) has occurred while \output is active []
+Overfull \vbox (37.62306pt too high) has occurred while \output is active []
 
 
 [1
@@ -1525,6 +1529,7 @@ Underfull \hbox (badness 1496) in paragraph at lines 28--36
 []\OT1/txr/m/n/12 While draw-ing a Small-Signal Model, we
  []
 
+[2]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1534,9 +1539,6 @@ Underfull \hbox (badness 4954) in paragraph at lines 45--49
  []
 
 
-Underfull \vbox (badness 1173) has occurred while \output is active []
-
- [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3])
@@ -1549,7 +1551,7 @@ ort-1 should be
 
 (./figs/ee18btech11014/ee18btech11014_figg.tex)
 (./figs/ee18btech11014/ee18btech11014_fige.tex)) (./chapters/ee18btech11021.tex
-[4] (./figs/ee18btech11021/Complete_Circuit.tex
+(./figs/ee18btech11021/Complete_Circuit.tex
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/libra
 ries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2019/02/02 v3.1.1 (3.1.1)
@@ -1558,7 +1560,7 @@ File: pgflibraryarrows.meta.code.tex 2019/02/02 v3.1.1 (3.1.1)
 \pgfarrowwidth=\dimen312
 \pgfarrowlinewidth=\dimen313
 )) (./figs/ee18btech11021/Block_Diagram.tex) (./figs/ee18btech11021/Small_Signa
-l_Model.tex)
+l_Model.tex) [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1568,104 +1570,46 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-(./tables/ee18btech11021/Input_Table.tex)
-Underfull \vbox (badness 1418) has occurred while \output is active []
-
- [6]
+(./tables/ee18btech11021/Input_Table.tex) [6]
 (./tables/ee18btech11021/Output_Table.tex)) (./chapters/EE18BTECH11007.tex
+Underfull \vbox (badness 1558) has occurred while \output is active []
+
+
 (./figs/EE18BTECH11007/circuit1.tex) (./tables/EE18BTECH11007/table1.tex)
+(./figs/EE18BTECH11007/block_diagram.tex)
 (./figs/EE18BTECH11007/amplifier_blockdiagram.tex
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
 endlayer/tikz/libraries/tikzlibraryfit.code.tex
 File: tikzlibraryfit.code.tex 2019/02/02 v3.1.1 (3.1.1)
 ))
 (./figs/EE18BTECH11007/H_blockdiagram.tex) (./figs/EE18BTECH11007/circuit2.tex)
-[7] (./figs/EE18BTECH11007/feedback_network.tex)
-Underfull \vbox (badness 6893) has occurred while \output is active []
+[7]
+Underfull \vbox (badness 3601) has occurred while \output is active []
 
 
+(./figs/EE18BTECH11007/feedback_network.tex)
 (./figs/EE18BTECH11007/G_blockdiagram.tex) (./figs/EE18BTECH11007/circuit3.tex
 Missing character: There is no ; in font nullfont!
-)
-Underfull \hbox (badness 7907) in paragraph at lines 122--125
-\OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 em-ploy-ing equiv-a-lent am-pli-fier
-
- []
-
-[8] (./figs/EE18BTECH11007/circuit4.tex
-Missing character: There is no a in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-)
-Underfull \hbox (badness 1521) in paragraph at lines 150--152
+) [8]
+Underfull \hbox (badness 1521) in paragraph at lines 139--142
 \OT1/txr/m/n/12 Next, we de-ter-mine the gain of the sec-
  []
 
 
-Overfull \hbox (5.20222pt too wide) detected at line 154
+Overfull \hbox (5.20222pt too wide) detected at line 144
 []
  []
 
 
-Overfull \hbox (28.94333pt too wide) detected at line 170
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Overfull \hbox (17.73387pt too wide) detected at line 176
-[]
- []
-
-
-Overfull \hbox (12.5608pt too wide) detected at line 215
+Overfull \hbox (17.73387pt too wide) detected at line 181
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
-Overfull \hbox (36.07938pt too wide) detected at line 229
-[]
- []
 
-
-Overfull \hbox (13.97949pt too wide) detected at line 233
-[]
- []
-
-
-Overfull \hbox (31.32753pt too wide) detected at line 235
-[]
- []
-
-
-LaTeX Warning: Reference `table:parameters2' on page 10 undefined on input line
- 240.
-
-(./tables/EE18BTECH11007/table2.tex)
-
-LaTeX Warning: Reference `fig:ee18btech11007_block_diagram' on page 10 undefine
-d on input line 249.
-
-(./figs/EE18BTECH11007/block_diagram.tex)
-
-LaTeX Warning: Reference `table:parameters2' on page 10 undefined on input line
- 258.
-
-
-LaTeX Warning: Reference `table:parameters2' on page 10 undefined on input line
- 262.
-
-) [10]
+(./tables/EE18BTECH11007/table2.tex)) [9]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 307.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 307.
  (./gvv_feedback_manual.aux)
@@ -1675,20 +1619,17 @@ Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
 (rerunfilecheck)             Checksum: B5901C636B7C049EC181CE23111AD87E;427.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 307.
  ) 
 Here is how much of TeX's memory you used:
- 37188 strings out of 492624
- 813452 string characters out of 6119216
- 1065850 words of memory out of 5000000
- 40384 multiletter control sequences out of 15000+600000
+ 37145 strings out of 492624
+ 812396 string characters out of 6119216
+ 1106030 words of memory out of 5000000
+ 40344 multiletter control sequences out of 15000+600000
  78904 words of font info for 200 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,14n,70p,650b,1602s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (10 pages, 407668 bytes).
+Output written on gvv_feedback_manual.dvi (9 pages, 393256 bytes).

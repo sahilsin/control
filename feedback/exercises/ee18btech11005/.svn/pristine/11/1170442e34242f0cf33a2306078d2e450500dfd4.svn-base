@@ -1,0 +1,23 @@
+************ VERFYING DC GAIN OF THE CLOSED LOOP NEGATIVE FEEDBACK CIRCUIT *************
+
+***********THEORY***************
+For the verifying DC Gain...
+We give a DC input of 1 in ngspice.
+DC gain = Vout/Vin (for DC value of input)
+Since Vin=1 
+Dc gain = Vout
+
+***********SIMULATION************
+We write the commands in the specified format in ngspice.
+Now set the simulation to .op (operating point) (NOTE:- SINCE WE ARE DOING DC ANALYSIS)
+always end the netlist with .end command
+
+***********VERIFYING***************
+We can notice that V(vo)= 9.9903
+But the calculated value of DC gain is 10(mentioned in the pdf).
+
+***********ERROR ANALYSIS**********
+ERROR in DC GAIN = 10-9.993 = 0.007
+Thus, the predicted value in ngspice is almost accurate.
+
+

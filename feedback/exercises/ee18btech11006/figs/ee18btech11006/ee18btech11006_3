@@ -1,0 +1,13 @@
+\begin{circuitikz}
+\ctikzset{bipoles/length=1cm}
+
+\draw 
+(0, 0) node[op amp] (opamp) {}
+(opamp.-)   to (-2, 0.35) node[ground]{}
+(opamp.center) node[]{$10^3$}
+node at (3.4,-1.2){$V_0$}
+node at (3.4,0){$+$}
+node at (3.4,-2.4){$-$}
+(opamp.+) -- (-0.6,-0.35) to (-2,-0.35) to[V=$V_i$] (-2,-2.4) node[ground]{}
+(opamp.out) to [L={$L_2$}](2.5,0) to [R=$R_2$](2.5,-2.4) node[ground]{}
+;\end{circuitikz}

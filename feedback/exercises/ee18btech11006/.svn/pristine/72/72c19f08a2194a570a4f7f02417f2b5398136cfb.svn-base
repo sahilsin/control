@@ -1,0 +1,148 @@
+
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item An op amp having a low-frequency gain of $10^{3}$ and a single-pole rolloff at $10^{4}$ rad/s is connected in a negative feedback loop via a feedback network having a transmission k and a two-pole rolloff at $10^{4}$ rad/s. Find the value of k above which the closed-loop amplifier becomes unstable.
+
+
+\solution 
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11006/ee18btech11006_1.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11006_1}
+\end{figure} \\
+The given oscillator has a low frequency gain $10^3$ and a single-pole rolloff at $10^4$ rad/s. So we have a open loop amplifier gain 
+\begin{align}
+G(s)&= \frac{10^3}{1+\frac{s}{10^4}}
+\end{align}
+Given feedback network transmission gain k and two-pole rolloff at $10^4$ rad/s. So, the feedback factor would be
+\begin{align}
+H(s)&= \frac{k}{\left(1+\frac{s}{10^4}\right)^2}   
+\end{align}
+The resulting loop-gain would be 
+\begin{align}
+G(s)H(s) &= \frac{10^3k}{\left(1+\frac{s}{10^4}\right)^3}
+\end{align}
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11006/ee18btech11006_1.tex}
+\caption{}
+\label{table:ee18btech11006_Factors}
+\end{table}\\
+The closed loop gain would be
+\begin{align}
+T(s)=\frac{G(s)}{1+G(s)H(s)}
+\end{align}
+Generalized condition for the system to be stable:
+\begin{align}
+T(j\omega)=\frac{G(j\omega)}{1+G(j\omega)H(j\omega)}
+\end{align}
+Loop gain, $L(j\omega)=G(j\omega)H(j\omega)$.
+\begin{align}
+L(j\omega)=\abs{{G(j\omega)H(j\omega)}}e^{j\phi(\omega)}
+\end{align}
+Let the frequency at which phase angle $\phi(\omega)$ becomes $180^{\circ}$ be $\omega_{180}$. At $\omega = \omega_{180}$ , $L(j\omega)$ is a negative real number.
+\begin{itemize}
+    \item if $\abs{{G(j\omega_{180})H(j\omega_{180})}}$ $<$ 1,$T(j\omega_{180}) >$ 1 \\ $\implies$ 
+    system is stable.
+    \item if $\abs{{G(j\omega_{180})H(j\omega_{180})}}$ $=$ 1,$T(j\omega_{180}) = \infty $ \\ $\implies$
+    system is unstable.
+    \item if $\abs{{G(j\omega_{180})H(j\omega_{180})}}$ $>$ 1,$T(j\omega_{180}) <$ 1 \\ $\implies$ 
+    system is unstable.
+\end{itemize}
+For the given system :
+\begin{align}
+   \angle G(j\omega)H(j\omega) =  \angle\frac{10^3k}{\left(1+\frac{j\omega}{10^4}\right)^3} 
+   = -3tan^{-1}\left({\frac{\omega}{10^4}}\right)
+\end{align}
+So,
+\begin{align}
+   180^{\circ}=  -3tan^{-1}\left({\frac{\omega_{180}}{10^4}}\right)\\
+   \implies \omega_{180} = -\sqrt{3}\times 10^4
+\end{align}
+The Loop gain at $\omega_{180}$ is $G(j\omega_{180})H(j\omega_{180})$.
+ The system becomes unstable if 
+\begin{align}
+G(j\omega_{180})H(j\omega_{180})\geq 1 \\
+\implies \abs{\frac{10^3k}{\left(1+\frac{j\omega}{10^4}\right)^3}} \geq 1\\
+\abs{\frac{10^3k}{\left(1-\sqrt{3}j\right)^3} } \geq 1
+\end{align}
+\begin{align}
+     \frac{10^3k}{\abs{\sqrt{1+{\sqrt{3}}^2}}} \geq 1\\
+     \frac{10^3k}{8} \geq 1 \\
+     \implies k \geq 0.008
+\end{align}
+Hence, the value of k above which the system becomes unstable is 0.008. 
+\item Design the circuit for the given parameters
+\solution Consider the open loop gain,G \newline
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11006/ee18btech11006_4.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11006_4}
+\end{figure} \\
+Now, 
+\begin{align}
+V_i=V_{in}\\
+G(s)=\frac{V_0}{V_i-V_-}= \frac{10^3}{1+\frac{s}{10^4}}
+\end{align}
+This is of the form $10^3 \left(\frac{R}{R+sL}\right)$.
+This can be realized using the circuit:
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11006/ee18btech11006_3.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11006_3}
+\end{figure} \\
+Where the gain of the Op-Amp is $10^3$.
+\begin{align}
+    \frac{R_2}{L_2}=10^4
+\end{align}
+One set of values that would satisfy this condition would be 
+\begin{align}
+    R_2&= 100\ohm \\
+    L_2&=1 \mu F
+\end{align}
+Consider the feedback factor, H \newline
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11006/ee18btech11006_5.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11006_5}
+\end{figure} \\
+Now, 
+\begin{align}
+H(s)&=\frac{V_f}{V_0}= \frac{k}{\left(1+\frac{s}{10^4}\right)^2} = k\left({\frac{1}{1+\frac{2s}{10^4}+\frac{s^2}{10^8}}}\right)  
+\end{align}
+This is of the form,
+\begin{align}
+k\left(\frac{1}{1+s{R_1}{C_1}+{s^2}{L_1}{C_1}}\right) =  k\left(\frac{\frac{1}{s{C_1}}}{{R_1}+s{L_1}+\frac{1}{s{C_1}}}\right)  
+\end{align}
+This can be realized using the circuit,
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11006/ee18btech11006_2.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11006_2}
+\end{figure} \\
+A set of values that satisfy these equations are,
+\begin{align}
+R_1&= 200\ohm \\
+C_1&= 1\mu F\\
+L_1&= 10mH 
+\end{align}
+The final circuit would be,
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{2\columnwidth}{!}{\input{./figs/ee18btech11006/ee18btech11006_6.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11006_6}
+\end{figure}
+\end{enumerate}

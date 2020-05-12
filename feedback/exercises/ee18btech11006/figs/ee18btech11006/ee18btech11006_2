@@ -1,0 +1,14 @@
+\begin{circuitikz}
+\ctikzset{bipoles/length=1cm}
+
+\draw 
+(0, 0) node[op amp] (opamp) {}
+(opamp.-) -- (-2,0.35)  node[ground]{}
+(opamp.out) to[L =$L_1$,*-*] (2,0)to[R=$R_1$](4,0) to [C](4,-2.4) node[ground]{}
+(opamp.+)   to (-1.8,-0.35)node at (-2,-0.35){$V_0$}
+(opamp.center) node[]{k};
+\draw node at (4.6,-1.2){$V_f$}
+node at (4.6,0){$+$}
+node at (4.6,-2.4){$-$}
+node at (3.5,-1.2){$C_1$}
+;\end{circuitikz}

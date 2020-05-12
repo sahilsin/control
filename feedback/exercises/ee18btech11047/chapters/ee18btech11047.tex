@@ -1,7 +1,13 @@
-\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+For the circuit shown in Fig. \ref{fig:ee18btech11047_fig1}, find the loop gain $L(s) = G(s)H(s)$, $L(j\omega)$, the frequency for zero loop phase, and $R_{2}/R_{1}$ for oscillation.
+\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+%\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
-\item For the circuit shown in Fig. \ref{fig:ee18btech11047_fig1}, find $L(s)$, $L(j\omega)$, the frequency for zero loop phase, and $R_{2}/R_{1}$ for oscillation.
+\item Draw the equivalent control system representation for the circuit in Fig. \ref{fig:ee18btech11047_fig1} as well as the small signal model.
+\\
+\solution See Figs. \ref{fig:ee18btech11047_fig2} and 
+
+
 \renewcommand{\thefigure}{\theenumi.\arabic{figure}}
 %
 \begin{figure}[!ht]
@@ -12,14 +18,21 @@
 \label{fig:ee18btech11047_fig1}
 \end{figure}
 %
-\\
-\solution The equivalent control system representation is shown in Fig. \ref{fig:ee18btech11047_fig2}. Oscillators do not include input signal.
+\solution See Fig. \ref{fig:ee18btech11047_fig2}. Oscillators do not include input signal.
 \begin{figure}[!ht]
 	\begin{center}
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11047/ee18btech11047_2.tex}}
 	\end{center}
 \caption{}
 \label{fig:ee18btech11047_fig2}
+\end{figure}
+%
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11047/ee18btech11047_3.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11047_fig3}
 \end{figure}
 \renewcommand{\thefigure}{\theenumi}
 %
@@ -49,13 +62,6 @@ G &= T_{1}
 \item Find the feedback factor $H$. \\
 \label{prob:ee18btech11047_H}
 \solution The small signal model is shown in Fig. \ref{fig:ee18btech11047_fig3}
-\begin{figure}[!ht]
-	\begin{center}
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11047/ee18btech11047_3.tex}}
-	\end{center}
-\caption{}
-\label{fig:ee18btech11047_fig3}
-\end{figure}
 Applying KCL at node $V_f$
 \begin{align}
 \frac{V_{f} - 0}{\frac{1}{sC}} +\frac{V_{f} - V_{a}}{R} &= 0

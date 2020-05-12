@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  11 MAY 2020 19:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  12 MAY 2020 13:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1479,15 +1479,19 @@ File: utxsyc.fd 2000/12/15 v3.1
  (./chapters/ee18btech11047.tex
 (./figs/ee18btech11047/ee18btech11047_1.tex)
 (./figs/ee18btech11047/ee18btech11047_2.tex)
+(./figs/ee18btech11047/ee18btech11047_3.tex)
 
 LaTeX Warning: Reference `table:ee18btech11005_Output_Table' on page 1 undefine
-d on input line 29.
+d on input line 42.
 
-(./figs/ee18btech11047/ee18btech11047_3.tex) [1
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
 ]
-Underfull \vbox (badness 7832) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1508,23 +1512,19 @@ File: tikzlibraryfit.code.tex 2019/02/02 v3.1.1 (3.1.1)
 \gnumericColA=\skip82
 \gnumericColB=\skip83
 )
-Underfull \vbox (badness 2961) has occurred while \output is active []
+Underfull \vbox (badness 1642) has occurred while \output is active []
 
  [3]
 File: ./figs/ee18btech11047/ee18btech11047.eps Graphic file (type eps)
 
-<./figs/ee18btech11047/ee18btech11047.eps>
-Underfull \vbox (badness 4403) has occurred while \output is active []
-
-) [4]
+<./figs/ee18btech11047/ee18btech11047.eps>) [4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
-
-(./gvv_feedback_manual.aux)
+ (./gvv_feedback_manual.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 261.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
 Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
-(rerunfilecheck)             Checksum: 23DE1AD03474FF3EB9B2C117C35678E0;64.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were undefined references.
@@ -1535,12 +1535,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
  ) 
 Here is how much of TeX's memory you used:
- 33838 strings out of 492624
- 732560 string characters out of 6119216
- 974410 words of memory out of 5000000
- 37115 multiletter control sequences out of 15000+600000
+ 33836 strings out of 492624
+ 732547 string characters out of 6119216
+ 970650 words of memory out of 5000000
+ 37113 multiletter control sequences out of 15000+600000
  78904 words of font info for 200 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,14n,69p,511b,1164s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,69p,511b,1161s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (4 pages, 118660 bytes).
+Output written on gvv_feedback_manual.dvi (4 pages, 117440 bytes).

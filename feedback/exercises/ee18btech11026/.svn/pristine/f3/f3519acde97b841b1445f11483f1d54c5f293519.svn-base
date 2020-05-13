@@ -1,0 +1,164 @@
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item An op amp with open-loop voltage gain of $10^{4}$ and poles at $10^{6},10^{7} $and$ 10^{8}$ Hz is to be compensated by the addition of a fourth dominant pole to operate stably with unity feedback ($|H| = 1$). What is the frequency of the required dominant pole? The compensation network placed in the negative feedback path of the op amp. The dc bias conditions are such that a $1M\Omega$ resistor can be tolerated in series with each of the negative and positive input terminals. What capacitor is required between the negative input and ground to implement the required fourth pole?
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+%
+
+
+
+
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11026/ee18btech11026_1.tex}
+\caption{}
+\label{table:ee18btech11026_Table_1}
+\end{table}
+
+\item{\textbf{Solution}}
+\\
+The open loop gain is :
+\begin{align}
+G(s) = \frac{10^{4}}{(1+\frac{s}{P_{1}})(1+\frac{s}{P_{2}})(1+\frac{s}{P_{3}})}
+\end{align}
+Let the fourth pole$(P_{D})$is located at $f_{D}$ Hz. For $P_{D}$ to become a dominant pole it should be lower than the lowest pole $P_{1}$.
+\\
+$f_{D}$ should be such that the modified loop gain intersects the $20log(\frac{1}{|H(s)|})$ with -20 dB slope  near $f_{P1}$ , so as to ensure stability. 
+\\
+Since its unity feedback , the loop gain should intersect the 0dB line at $f_{P1}$\\
+\\As shown in Fig:\ref{fig:ee18btech11026_1}:
+ The gain begins to rolloff from 80dB at a -20 dB/dec rate , from $f_{D}$ and continues  until $f_{P1}$ where it cuts 0dB line . Therefore :
+\begin{align}
+\frac{f_{D}}{1} = \frac{f_{P1}}{10^{4}}\\
+f_{D} = 10^{2} Hz
+\end{align}  
+This extra pole is achieved through a Low-pass series RC network placed in the negative feedback as shown in the figure \ref{fig:ee18btech110026_circuit_1}.
+
+This series feedback network is represented by  H(s) whose only  pole is $P_{D}$
+\begin{align}
+P_{D} =2\pi * f_{D}= \frac{1}{R_{f}C_{f}}
+\end{align}
+
+
+\begin{align}
+C_{f} &= \frac{1}{2\pi*R_{f}f_{D}}
+\end{align}
+Given that a $1M\Omega$  is a safe value of resistance that can be placed in series across both terminals.We can choose  :
+\begin{align}
+R_{f} = R_{s}=1M\Omega
+\end{align}
+\begin{align}
+\implies C_{f} &= 1.59nF
+\end{align}
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11026/ee18btech11026_2.tex}
+\caption{}
+\label{table:ee18btech11026_Table_2}
+\end{table}
+
+Hence from Fig\ref{fig:ee18btech110026_circuit_2} 
+\begin{align}
+H(s) = \frac{V_{f}}{V_{0}}
+	&= \frac{1}{1+sR_{f}C_{f}}
+\end{align}
+
+The loop gain of the compensated system is :
+\begin{align}
+G(s)H(s) = \frac{10^{4}}{(1+sR_{f}C_{f})(1+\frac{s}{P_{1}})(1+\frac{s}{P_{2}})(1+\frac{s}{P_{3}})}
+\end{align}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\columnwidth]{./figs/ee18btech11026/ee18btech11026_1.eps}
+    \caption{Bode Plot using asymptotic approximations}
+    \label{fig:ee18btech11026_1}
+\end{figure}
+Fig\ref{fig:ee18btech11026_1} is a bode plot, plotted considering asymptotic approximations for better understanding. We can observe that due to a dominant pole at $f_{D}$ we will have a 0dB gain at $f_{p1}$, while earlier it used to be 80 dB , which could have lead to unstability.
+\item{\textbf{Verification through bode plots:}}\\
+Loop gain : L(s) \\
+Closed Loop gain : $T(s) = \frac{G(s)}{1+L(s)}$
+
+The stability of closed loop gain can be determined through the bode plots of its loop gain L(s)\\
+\begin{align}
+L(j\omega)=\abs{{G(j\omega)H(j\omega)}}e^{j\phi(\omega)}
+\end{align}
+Let $\omega_{180}$ be the frequency at which the phase of $L(j\omega)$ i.e; $\phi(w)$ = $-180^{\circ}$ and using it the stability of the system is determined as follows :
+\begin{align}
+\abs{{G(j\omega_{180})H(j\omega_{180})}} < 1 \implies Stable \\
+\abs{{G(j\omega_{180})H(j\omega_{180})}} > 1 \implies Unstable 
+\end{align}
+For uncompensated System: 
+$L_{1}(s) = G(s).1$\\
+$w_{180} = w_{1}$\\
+For Compensated System : 
+$L_{2}(s) = G(s).H(s)$\\
+$w_{180} = w_{2}$\\
+The below are the Bode plots : 
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\columnwidth]{./figs/ee18btech11026/ee18btech11026_2.eps}
+    \caption{Bode Plots for verificaition}
+    \label{fig:ee18btech11026_2}
+\end{figure}
+
+From the Fig\ref{fig:ee18btech11026_2} we can easily observe that : 
+\begin{align}
+\abs{L_{1}(jw_{1})} > 1
+\end{align}
+$\implies L_{1}$ is unstable.
+\begin{align}
+\abs{L_{2}(jw_{2})} < 1
+\end{align}
+$\implies L_{2}$ is stable.\\
+Hence the designed Low pass network placed in negative feedback, compensates our open loop gain and stabilizes the closed loop gain of the overall system.
+\item \textbf{Design a circuit for the given parameters}.\\
+\solution
+
+The below is a block diagram representing G(s) and H(s)
+\begin{figure}[!ht]
+	\begin{center}
+				\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11026/block.tex}}
+	\end{center}
+\caption{Block Diagram}
+\label{fig:ee18btech110026_block}
+\end{figure}
+
+\begin{figure}[!ht]
+	\begin{center}
+				\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11026/circuit_1.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech110026_circuit_1}
+\end{figure}
+
+
+\begin{figure}[!ht]
+	\begin{center}
+				\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11026/circuit_2.tex}}
+	\end{center}
+\caption{Circuit resembling G(s)}
+\label{fig:ee18btech110026_circuit_2}
+\end{figure}
+
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11026/ee18btech11026_3.tex}
+\caption{}
+\label{table:ee18btech11026_Table_3}
+\end{table}
+\item {\textbf{What is the practical use of the built circuit ?}}
+\solution
+The Bode plot of the closed loop T.F is as follows:
+\begin{align}
+T(s) = \frac{G(s)}{1+G(s)H(s)}
+\end{align}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\columnwidth]{./figs/ee18btech11026/Bodeplot.eps}
+    \caption{Bode Plots of T(s)}
+    \label{fig:ee18btech11026_bode}
+\end{figure}
+\\From Fig:\ref{fig:ee18btech11026_bode} we can say that this circuit is used as \textbf{Band pass filter}. It amplifies the frequencies lying between 0.1 MHz to 10 MHz, while rejecting higher and lower frequencies.
+\end{enumerate}

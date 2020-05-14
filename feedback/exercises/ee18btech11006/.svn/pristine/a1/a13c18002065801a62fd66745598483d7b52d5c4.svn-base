@@ -157,7 +157,7 @@
 	&\multicolumn{1}{p{\gnumericColB}|}%
 	{\gnumericPB{\centering}\textbf{Definition}}
 	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\centering}\textbf{For given case}}
+	{\gnumericPB{\centering}\textbf{For given question}}
 
 	
 \\
@@ -178,7 +178,7 @@
 	&\multicolumn{1}{p{\gnumericColB}|}%
 	{\gnumericPB{\centering}H}
 	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\centering}{$\frac{k}{\left({1+\frac{s}{10^4}} \right)^2} $}}
+	{\gnumericPB{\centering}{$\frac{k}{\left({1+\frac{s}{10^4}} \right)^2}$}}
 
 \\
 \hhline{|---|}
@@ -187,7 +187,7 @@
 	&\multicolumn{1}{p{\gnumericColB}|}%
 	{\gnumericPB{\centering}GH}
 	&\multicolumn{1}{p{\gnumericColC}|}%
-	{\gnumericPB{\centering}{$ k\left(\frac{10}{1+\frac{s}{10^4}}\right)}^3 $}
+	{\gnumericPB{\centering}{$ {k\left(\frac{10}{1+\frac{s}{10^4}}\right)}^3$}}
 
 \\
 \hhline{|-|-|-|}

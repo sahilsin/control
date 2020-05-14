@@ -15,5 +15,5 @@
     \draw [->] (sum) -- node {$V_i$} (controller);
     \draw [->] (controller) -- node [name=y] {$V_o$}(output);
     \draw [->] (y) |- (feedback);
-    \draw [->] (feedback) -| node[pos=0.99]{$+$}  node [near end] {$V_f$} (sum);
+    \draw [->] (feedback) -| node[pos=0.99]{$-$}  node [near end] {$V_f$} (sum);
 \end{tikzpicture}

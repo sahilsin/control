@@ -6,13 +6,6 @@
 
 
 \solution 
-\begin{figure}[!ht]
-	\begin{center}
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11006/ee18btech11006_1.tex}}
-	\end{center}
-\caption{}
-\label{fig:ee18btech11006_1}
-\end{figure} \\
 The given oscillator has a low frequency gain $10^3$ and a single-pole rolloff at $10^4$ rad/s. So we have a open loop amplifier gain 
 \begin{align}
 G(s)&= \frac{10^3}{1+\frac{s}{10^4}}

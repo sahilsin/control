@@ -74,42 +74,66 @@ using the standard forumulation for a second order system.  Also, for maximally 
 \begin{align}
     Q = \frac{1}{2\zeta}= \frac{1}{\sqrt{2}}&
 \\
-\implies  \zeta = \sqrt{2} &
+\implies  \zeta = \frac{1}{\sqrt{2}} &
 \label{eq:ee18btech11005_second_order_zeta_q}
 \\
-\implies \frac{p_1+p_2}{2\sqrt{(HG_0+1)p_1p_2}} &= \sqrt{2}
-\end{align}
+\implies \frac{p_1+p_2}{2\sqrt{(HG_0+1)p_1p_2}} &= \frac{1}{\sqrt{2}}
+%\end{align}
 \\
-\begin{multline}
+%\begin{multline}
 \implies \sqrt{\frac{p_1}{p_2}}+\sqrt{\frac{p_2}{p_1}} 
-\\
-= 2\sqrt{2(HG_0+1)} 
-\end{multline}
+%\\
+&= \sqrt{2(HG_0+1)} 
+\end{align}
+%\end{multline}
 %
 The above equation is of the form 
 %
 \begin{align}
-x + \frac{1}{x} &= 2a
+\label{eq:ee18btech11005_x}
+x + \frac{1}{x} &= a
 \\
-\implies x &= a \pm \sqrt{a^2 -1}
+\implies x &= \frac{a \pm \sqrt{a^2 -4}}{2}
+\label{eq:ee18btech11005_x_sol}
 \end{align}
 %
-Substituting 
-%
+where 
 \begin{align}
+\label{eq:ee18btech11005_x_p1p2}
 x  &= \sqrt{\frac{p_2}{p_1}}
 \\
 a &= \sqrt{2(HG_0+1)}, 
-\\
-p_2 &= p_1 \cbrak{\sqrt{2\brak{HG_0+1}} \pm \sqrt{2 \brak{HG_0+1}-1}}^2
+\label{eq:ee18btech11005_a}
+\end{align}
+Thus, from \eqref{eq:ee18btech11005_x_p1p2}, \eqref{eq:ee18btech11005_a}
+and \eqref{eq:ee18btech11005_x_sol},
+%
+\begin{align}
+p_2 &= p_1\sbrak{\frac{\sqrt{2\brak{HG_0+1}} \pm \sqrt{2 \brak{HG_0+1}-4}}{2}}^2
 \end{align}
 %
-The following code computes the values 
+From the following code,
 \begin{lstlisting}
 codes/ee18btech11005/ee18btech11005_1.py
 \end{lstlisting}
-
+%
+\begin{multline}
+p_2 = 1244038.9567529503 
+\\
+\text{ and } 31.734068607786863
+\end{multline}
+%
 %---------------------
+\item  Draw the equivalent circuit system diagram.\\
+\solution
+The equivalent circuit system is shown in the figure.\ref{fig:equivalent_system}
+\begin{figure}[!hbt]
+	\begin{center}
+			\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11005/equivalent_control_system.tex}}
+	\end{center}
+\caption{1}
+\label{fig:equivalent_system}
+\end{figure}
 %-----------------
 \item Obtain $G(s)$ and $T(s)$
 \\

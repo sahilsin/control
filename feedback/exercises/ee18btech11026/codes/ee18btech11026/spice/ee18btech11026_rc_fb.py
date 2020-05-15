@@ -9,7 +9,7 @@ import subprocess
 import shlex
 #end if
 
-data=np.loadtxt('ee18btech11026_rc_fb.dat')
+data=np.loadtxt('./codes/ee18btech11026/spice/ee18btech11026_rc_fb.dat')
 plt.plot(data[:,0],data[:,1])
 
 plt.grid()

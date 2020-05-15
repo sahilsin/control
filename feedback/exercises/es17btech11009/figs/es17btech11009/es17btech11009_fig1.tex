@@ -1,8 +1,5 @@
 \begin{circuitikz}
 \ctikzset{bipoles/length=1cm}
- \ctikzset{
-amplifiers/fill=cyan
-}
  
 \draw (0, 0) node[op amp] (opamp) {\texttt{2}};
 \draw (opamp.-) --(-1,0.35)-- (-1,1.25) to[R=$2R$,*-*] (1,1.25) -- (1,0) -- (1,-1.25) to  [vR=$R_{f}$,*-*] (-1,-1.25) -- (-1,-0.35) to (opamp.+);

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  15 MAY 2020 12:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  15 MAY 2020 18:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1306,8 +1306,7 @@ ngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-)
-No file gvv_feedback_manual.aux.
+) (./gvv_feedback_manual.aux)
 \openout1 = `gvv_feedback_manual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 87.
@@ -1397,12 +1396,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 87.
 LaTeX Info: Redefining \pageref on input line 87.
 LaTeX Info: Redefining \nameref on input line 87.
+ (./gvv_feedback_manual.out) (./gvv_feedback_manual.out)
 \@outlinefile=\write4
 \openout4 = `gvv_feedback_manual.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 \c@lstlisting=\count269
 \c@theorem=\count270
@@ -1445,42 +1441,71 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 221.
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-)
+) (./gvv_feedback_manual.toc)
 \tf@toc=\write5
 \openout5 = `gvv_feedback_manual.toc'.
 
  (./chapters/es17btech11009.tex
-
-LaTeX Warning: Reference `fig:es17btech11009_fig1' on page 1 undefined on input
- line 4.
-
 (./figs/es17btech11009/es17btech11009_fig1.tex
+LaTeX Font Info:    Try loading font information for OT1+txtt on input line 4.
 
-! Package pgfkeys Error: I do not know the key '/tikz/circuitikz/amplifiers/fil
-l', to which you passed 'cyan', and I am going to ignore it. Perhaps you misspe
-lled it.
+(/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
+txtt.fd
+File: ot1txtt.fd 2000/12/15 v3.1
+)) (./figs/es17btech11009/es17btech11009_fig2.tex)
+(./figs/es17btech11009/es17btech11009_fig3.tex)
+(./figs/es17btech11009/es17btech11009_2.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 }
-     
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.5 }
-     
-End of file on the terminal!
+ [1
 
- 
+
+]
+Underfull \vbox (badness 3635) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+(./tables/es17btech11009/es17btech11009_table1.tex
+\gnumericTableWidth=\skip75
+\gnumericTableWidthComplete=\skip76
+\gnumericMultiRowLength=\skip77
+\gnumericColA=\skip78
+\gnumericColB=\skip79
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: ./figs/es17btech11009/es17btech11009_1_1.eps Graphic file (type eps)
+
+<./figs/es17btech11009/es17btech11009_1_1.eps>
+File: ./figs/es17btech11009/es17btech11009_spice.eps Graphic file (type eps)
+
+<./figs/es17btech11009/es17btech11009_spice.eps> [3])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
+ [4
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
+
+(./gvv_feedback_manual.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 256.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
+Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
+(rerunfilecheck)             Checksum: 23DE1AD03474FF3EB9B2C117C35678E0;64.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 256.
+ ) 
 Here is how much of TeX's memory you used:
- 32045 strings out of 492624
- 694951 string characters out of 6119216
- 889160 words of memory out of 5000000
- 35376 multiletter control sequences out of 15000+600000
- 68203 words of font info for 165 fonts, out of 8000000 for 9000
+ 33391 strings out of 492624
+ 722713 string characters out of 6119216
+ 1004469 words of memory out of 5000000
+ 36687 multiletter control sequences out of 15000+600000
+ 75871 words of font info for 191 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,6n,69p,511b,587s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
+ 55i,15n,69p,511b,1263s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on gvv_feedback_manual.dvi (4 pages, 118308 bytes).

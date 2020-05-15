@@ -1,9 +1,8 @@
 \begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
 \numberwithin{equation}{enumi}
 \item
-Consider the quadrature-oscillator circuit given Fig. \ref{fig:es17btech11009_fig1} without the limiter. Let the resistance $R_{f}$ be equal to $\frac{2R}{1 + \Delta}$ where $\Delta \ll 1$. Show that the poles of the characteristic equation are in the right-half s plane and given by 
+Consider the quadrature-oscillator circuit given Fig. \ref{fig:es17btech11009_fig1} without the limiter. Let the resistance $R_{f}$ be equal to $\frac{2R}{1 + \Delta}$ where $\Delta << 1$. Show that the poles of the characteristic equation are in the right-half s plane and given by 
 s $\approx \frac{1}{CR}(\frac{\Delta}{4}\pm j)$
-
 \renewcommand{\thefigure}{\theenumi.\arabic{figure}}
 \begin{figure}[!ht]
 	\begin{center}
@@ -24,9 +23,7 @@ And the Equivalent circuit at the input of op-amp 2 is given in Fig \ref{fig:es1
 \end{figure}
 
 \item 
-\solution
-
-The Quadrature oscillator is based on the second integrator.
+\solution The Quadrature oscillator is based on the second integrator.
 
 As an active filter, the loop is damped to locate the poles in the left half of the s-plane. In the quadrature oscillator, the op amp 1 is connected as an inverting miller integrator with a limiter in the feedback for controlling the amplitude. The op amp 2 is connected as a non-inverting integrator.
 
@@ -146,7 +143,7 @@ Write the expression for roots of a general quadratic equation
  \begin{align}
       = \frac{\frac{\Delta}{2} \pm 2j\sqrt{1 - \brak{\frac{\Delta}{4}}^2}}{2RC}
  \end{align}
- As $\Delta \ll 1$, 
+ As $\Delta << 1$, 
  \begin{align}
      \brak{1-\brak{\frac{\Delta}{4}}^2}^\frac{1}{2} = 1 - \frac{1}{2}\brak{\frac{\Delta}{4}}^2
  \end{align}
@@ -159,11 +156,10 @@ Write the expression for roots of a general quadratic equation
  \end{align}
  From \eqref{eq:es17btech11009_eqn},
  \begin{align}
-     Re\brak{s_{p}} \textgreater 0
+     Re\brak{s_{p}} > 0
  \end{align}
  Hence, the poles of the characteristic equation are in the right half of the s plane.
- 
- As $\Delta \ll 1$, higher order terms are neglected.
+ As $\Delta << 1$, higher order terms are neglected.
  \begin{align}
      s_{p} = \frac{\frac{\Delta}{2} \pm 2j}{2RC}
  \end{align}
@@ -218,7 +214,7 @@ spice/es17btech11009.net
 \end{lstlisting}
 Python code used for generating the output:
 \begin{lstlisting}
-spice/es17btech11009_spice.py
+codes/es17btech11009/es17btech11009_spice.py
 \end{lstlisting}
 \begin{figure}[!ht]
 \centering

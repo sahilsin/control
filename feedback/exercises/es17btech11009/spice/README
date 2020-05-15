@@ -6,4 +6,5 @@ This section contains all the files used and generated in simulating by the spic
 5:Now simulate the circuit using ngspice.
 6:Use the following command to create a Vout.dat file containing the V(vout) values with respect to time.
  Command : wrdata Vout.dat V(Vout)
-7:Plot this .dat file using python script.
+7:Ensure that es17btech11009_spice.py file and Vout.dat file are in the same folder
+8:Plot this .dat file using python script.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  15 MAY 2020 13:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  15 MAY 2020 20:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1339,7 +1339,11 @@ ngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-) (./gvv_feedback_manual.aux)
+) (./gvv_feedback_manual.aux
+
+LaTeX Warning: Label `fig:ee18btech11026_rc_fb_mag' multiply defined.
+
+)
 \openout1 = `gvv_feedback_manual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 89.
@@ -1528,54 +1532,49 @@ File: ./figs/ee18btech11026/Bodeplot.eps Graphic file (type eps)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2]
+[2] (./figs/ee18btech11026/circuit_2.tex)
 File: ./figs/ee18btech11026/ee18btech11026_spice_result_buffer.eps Graphic file
  (type eps)
- <./figs/ee18btech11026/ee18btech11026_spice_result_buffer.eps>
+
+<./figs/ee18btech11026/ee18btech11026_spice_result_buffer.eps>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: ./figs/ee18btech11026/ee18btech11026_spice_result_rc_bf.eps Graphic file 
 (type eps)
 <./figs/ee18btech11026/ee18btech11026_spice_result_rc_bf.eps>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 File: ./figs/ee18btech11026/ee18btech11026_spice_result_rc_bf_mag.eps Graphic f
 ile (type eps)
+
 <./figs/ee18btech11026/ee18btech11026_spice_result_rc_bf_mag.eps>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./figs/ee18btech11026/circuit_2.tex)
-(./tables/ee18btech11026/ee18btech11026_3.tex))
-
-LaTeX Warning: Text page 3 contains only floats.
-
-[3]
+(./tables/ee18btech11026/ee18btech11026_3.tex)) [3]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 276.
  [4
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
- (./gvv_feedback_manual.aux)
+
+(./gvv_feedback_manual.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 276.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 276.
 Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 276.
  ) 
 Here is how much of TeX's memory you used:
  33361 strings out of 492624
  720868 string characters out of 6119216
- 967232 words of memory out of 5000000
+ 957716 words of memory out of 5000000
  36646 multiletter control sequences out of 15000+600000
  74877 words of font info for 189 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,13n,69p,666b,1179s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (4 pages, 72440 bytes).
+Output written on gvv_feedback_manual.dvi (4 pages, 72624 bytes).

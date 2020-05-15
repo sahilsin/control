@@ -1,6 +1,6 @@
  # Details regarding files in the directory:
- buffer_fb.net is a netlist for simulating the unity feedback system
- rc_fb.net is a netlist for simulating the low pass RC feedback system.
+ buffer_fb.net is a netlist for simulating the uncompensated unity feedback system
+ rc_fb.net is a netlist for simulating the RC compensated feedback system.
  
  ee18btech11026_buffer.py is a python file to plot the ee18btech11026_buffer.dat  
  ee18btech11026_rc_fb.py is a python file to plot the ee18btech11026_rc_fb.dat  

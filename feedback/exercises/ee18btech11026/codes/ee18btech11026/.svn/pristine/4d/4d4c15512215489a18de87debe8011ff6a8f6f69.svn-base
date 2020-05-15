@@ -9,7 +9,7 @@ import subprocess
 import shlex
 #end if
 
-data=np.loadtxt('./codes/ee18btech11026/spice/ee18btech11026_buffer.dat')
+data=np.loadtxt('ee18btech11026_buffer.dat')
 plt.plot(data[:,0],data[:,1])
 plt.grid()
 plt.xlabel("time")
@@ -20,8 +20,10 @@ plt.title('Spice simulation for uncompensated system')
 
 
 
+'''
 plt.savefig('./figs/ee18btech11026/ee18btech11026_spice_result_buffer.pdf')
 plt.savefig('./figs/ee18btech11026/ee18btech11026_spice_result_buffer.eps')
 subprocess.run(shlex.split("termux-open ./figs/ee18btech11026/ee18btech11026_spice_result_buffer.pdf"))
+'''
 #else
-#plt.show()
+plt.show()

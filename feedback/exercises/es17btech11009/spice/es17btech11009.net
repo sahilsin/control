@@ -1,0 +1,16 @@
+* C:\Users\varsh\OneDrive\Desktop\es17btech11009.asc
+XU1 N001 N002 Vcc -Vcc Vout LM741/NS
+R1 N001 0 2000
+R2 Vout N001 2000
+R3 N002 N003 2000
+R4 Vout N002 909
+C1 N002 0 0.001
+V1 Vcc 0 15
+V2 0 -Vcc 15
+V3 N003 0 SINE(0 1 0.159)
+.tran 0 150 0 0.01
+.include LM741.MOD
+.control
+run
+plot V(Vout)
+.end

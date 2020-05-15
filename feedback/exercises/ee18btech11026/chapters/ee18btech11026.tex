@@ -104,6 +104,8 @@ Table \ref{table:ee18btech11026_Table_2} summarizes this.
 
 \item Verify stability using Bode plots.
 %
+\\
+\solution 
 The loop gain of the compensated system is
 \begin{multline}
 L(s) = G(s)H(s) 
@@ -137,7 +139,11 @@ and
 \begin{align}
 L_{2}(s) = G(s)H(s)
 \end{align}
-for the compensated system 
+for the compensated system .
+The following code plots  Figs. \ref{fig:ee18btech11026_1} and \ref{fig:ee18btech11026_2}.
+\begin{lstlisting}
+codes/ee18btech11026/ee18btech11026_1.py
+\end{lstlisting}
 %
 \begin{figure}[!h]
     \centering
@@ -150,28 +156,32 @@ From Fig. \ref{fig:ee18btech11026_2},
 \begin{align}
 \abs{L_1\brak{\j\omega_{180}}} &> 1 
 \\
-\implies L_{1} &\text{is unstable}
+\implies L_{1} &\text{ is unstable}
 \end{align}
 \begin{align}
 \abs{L_2\brak{\j\omega_{180}}} & < 1 
 \\
-\implies L_{2} &\text{is stable}
+\implies L_{2} &\text{ is stable}
 \end{align}
 %
 Thus, $H(s)$ stabilizes the unity feedback system.
 %Hence the designed Low pass network placed in negative feedback, compensates our open loop gain and stabilizes the closed loop gain of the overall system.
 \item Describe the functionality of the feedback circuit.
 \\
-\solution
-The Bode plot of $T(s)$
+\solution  
+The following code plots the Bode plot of $T(s)$ in Fig. \ref{fig:ee18btech11026_bode}.
+\begin{lstlisting}
+codes/ee18btech11026/time_res.py
+\end{lstlisting}
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\columnwidth]{./figs/ee18btech11026/Bodeplot.eps}
     \caption{Bode Plots of T(s)}
     \label{fig:ee18btech11026_bode}
 \end{figure}
-is avaiable in  Fig \ref{fig:ee18btech11026_bode}. This resembles a band pass filter and amplifies the frequencies lying between 0.1 MHz to 10 MHz, while rejecting higher and lower frequencies.
+It can be seen that the feedback circuits acts as a DC buffer.  It also behaves like a band pass filter and amplifies the frequencies lying between 0.1 MHz to 10 MHz.
 %
+\numberwithin{figure}{enumi}
 \item Simulate the circuit using ngspice.
 %\item \textbf{Design a circuit for the given parameters}.\\
 %\solution
@@ -179,7 +189,7 @@ is avaiable in  Fig \ref{fig:ee18btech11026_bode}. This resembles a band pass fi
 %The below is a block diagram representing G(s) and H(s)
 \\
 \solution 
-The following code provides instructions about the simulation.
+The following code provides instructions about the spice simulation.
 \begin{lstlisting}
 codes/ee18btech11026/spice/README.md
 \end{lstlisting}
@@ -194,6 +204,7 @@ codes/ee18btech11026/spice/ee18btech11026_buffer.py
 \end{lstlisting}
 
 We can observe that the step response shoots up to a very large value($10^{293}$).This was a consequence for the initial system being unstable.
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\columnwidth]{./figs/ee18btech11026/ee18btech11026_spice_result_buffer.eps}
@@ -235,6 +246,7 @@ Fig. \ref{fig:ee18btech110026_circuit_2} shows how the circuit is actually imple
 \caption{Circuit resembling G(s)}
 \label{fig:ee18btech110026_circuit_2}
 \end{figure}
+\renewcommand{\thefigure}{\theenumi}
 
 \begin{table}[!ht]
 \centering

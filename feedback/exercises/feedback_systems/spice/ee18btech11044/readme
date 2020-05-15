@@ -1,7 +1,0 @@
-This section contains all the files that have been generated and used in simulating the circuit using spice simulators
-1. Bulid the circuit to be simulated in LTspice using LM741.MOD
-2.generate the netlist from LTspice
-3.Edit this netlist by adding run and plot commands and also specifying the path to LM741.MOD
-4.Use this netlist and simulate the circuit in ngspice, makesure you have the LM741.MOD at the specified path.
-5.Use wrdata command to export the data of plot into a .dat file.
-6.Plot this .dat file using a python script.

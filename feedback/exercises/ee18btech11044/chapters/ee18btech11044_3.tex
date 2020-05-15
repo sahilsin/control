@@ -1,7 +1,4 @@
-\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-\numberwithin{equation}{enumi}
-\item
-For the Wein-bridge oscillator of Fig \ref{fig:ee18btech11044_3_tikz_1}, use the expression for loop gain in Eq \ref{eq:ee18btech11044_3_1}  to find the poles of the closed-loop system. Give the expression for the pole , Q and use it to show that to locate the poles in the right half of s plane, $\frac{R_2}{R_1}$ must be selected to be greater than 2. 
+For the Wein-bridge oscillator of Fig \ref{fig:ee18btech11044_3_tikz_1}, use the expression for loop gain in  \eqref{eq:ee18btech11044_3_1}  to find the poles of the closed-loop system. Give the expression for the pole, Q and use it to show that to locate the poles in the right half of s plane, $\frac{R_2}{R_1}$ must be selected to be greater than 2. 
 
 \begin{figure}[!hbt]
 	\begin{center}
@@ -10,6 +7,11 @@ For the Wein-bridge oscillator of Fig \ref{fig:ee18btech11044_3_tikz_1}, use the
 \caption{}
 \label{fig:ee18btech11044_3_tikz_1}
 \end{figure}
+
+\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item
 
 
 \item Compare the basic structure for a sinusoidal oscillator with Wein-bridge oscillator and give expressions for G and H. 
@@ -149,13 +151,13 @@ codes/ee18btech11044_3_1.py
 You can find the netlist for the simulated circuit here:
 
 \begin{lstlisting}
-spice/ee18btech11044.net
+spice/ee18btech11044/ee18btech11044.net
 \end{lstlisting}
 
 You can find the python script used to generate the output here:
 
 \begin{lstlisting}
-codes/ee18btech11044_spice.py
+codes/ee18btech11044/ee18btech11044_spice.py
 \end{lstlisting}
 
 \begin{figure}[!ht]

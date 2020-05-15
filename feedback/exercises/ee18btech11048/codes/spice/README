@@ -1,0 +1,22 @@
+1:Make sure that feedback.net file and LM741.MOD are in the same folder.
+2:cd into the folder containing the above files.
+
+***********THEORY***************
+For the verifying DC Gain...
+We give a DC input of 1 in ngspice.
+DC gain = Vout/Vin (for DC value of input)
+Since Vin=1 
+Dc gain = Vout
+
+***********SIMULATION************
+We write the commands in the specified format in ngspice.
+Now set the simulation to .op (operating point) (NOTE:- SINCE WE ARE DOING DC ANALYSIS)
+always end the netlist with .end command
+
+***********VERIFYING***************
+We can notice that V(vo)= 5.005334
+But the calculated value of DC gain is 5
+
+***********ERROR ANALYSIS**********
+ERROR in DC GAIN = 5-5.005334 = -0.005334
+Thus, the calculated value and the simulation value are almost same.

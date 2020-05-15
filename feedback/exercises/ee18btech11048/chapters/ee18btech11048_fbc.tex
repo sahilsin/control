@@ -1,0 +1,135 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item
+Figure \ref{fig:original_circuit} shows a feedback transconductance
+amplifier implemented using an op amp with open-loop gain $\mu$
+, a very large input resistance, and an output resistance $r_{o}$.
+The output current $I_{o}$ that is delivered to the load resistance $R_{L}$
+is sensed by the feedback network composed of the three
+resistances $R_{M}$, $R_{1}$, and $R_{2}$, and a proportional voltage$V_{f}$
+is fed back to the negative-input terminal of the op amp.\\
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11048_fbc1.tex}}
+	\end{center}
+\caption{1 Original Circuit}
+\label{fig:original_circuit}
+\end{figure}\\
+
+
+Find G,H and T. If the loop gain is large, find an approximate expression for T
+and state precisely the condition for which this applies.\\
+
+\solution
+The parameters given are shown in the TABLE.\ref{table: Table1}:1
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11048_table1.tex}
+\caption{1}
+\label{table: Table1}
+\end{table}
+The equivalent circuit of the amplifier is in fig.\ref{fig:ss_circuit}:2
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11048_fbc2.tex}}
+	\end{center}
+\caption{2 Equivalent Circuit}
+\label{fig:ss_circuit}
+\end{figure}\\
+\item
+Calculating G\\
+\solution
+\begin{align}
+G &= \frac{I_{o}}{V_{i}} \label{eq:G}\\
+\text{From fig \ref{fig:ss_circuit}:2}\\
+\implies G&= \mu
+\end{align}
+\item
+Calculating H\\
+\solution
+\begin{align}
+H &= \frac{V_{f}}{I_{o}} \label{eq:H}
+\end{align}
+From fig \ref{fig:ss_circuit}:2\\
+\begin{align}
+V_{f}&=R_{1}I_{o}\frac{R_M}{R_M+R_1+R_2}\\
+\implies
+H &= \frac{R_1R_M}{R_1+R_2+R_M}
+\end{align}
+\item
+Calculating T\\
+\solution
+\begin{align}
+T &= \frac{I_{o}}{V_{s}} \label{eq:To}
+\end{align}
+\begin{align}
+T &= \frac{G}{1+GH} \label{eq:T}
+\end{align}
+From fig \ref{fig:ss_circuit}:2
+\begin{align}
+T&= \frac{\mu \brak{R_1+R_2+R_M}}{R_1+R_2+R_M+ \mu R_1R_M}
+\end{align}
+
+
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11048_tables2.tex}
+\caption{1}
+\label{table: Input_Table}
+\end{table}
+
+
+\item When Loop Gain is large\\
+\solution
+\begin{align}
+GH &\gg 1, \label{eq:greater}
+ \\
+T &\approx \frac{1}{H}  = \frac{R_1+R_2+R_M}{R_1R_M} 
+\end{align}
+This is the key to designing a successful feedback system; if we can guarantee that $GH \gg 1$ for the frequencies that we are interested in, then the closed-loop gain will not be dependent on the details of the plant gain G. This is very useful, since in some cases the feedback function H can be implemented with a simple resistive divider, which can be cheap and accurate.
+\item
+Example \\ We need to calculate $V_o$ for the parameters in TABLE \ref{table: Example_Table}:1\\
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11048_tables3.tex}
+\caption{1}
+\label{table: Example_Table}
+\end{table}
+\solution
+From Fig\ref{fig:original_circuit}
+\begin{align}
+V_o - V_A &= I_o R_L \\
+V_A &= I_o\brak{R_M\parallel\brak{R_1+R_2}}\\
+\implies V_o &= I_o\brak{R_L+\brak{R_M\parallel\brak{R_1+R_2}}}
+\end{align}
+Dividing both sides by $V_s$
+\begin{align}
+\frac{V_o}{V_s} &= \frac{I_o}{V_s}\brak{R_L+\brak{R_M\parallel\brak{R_1+R_2}}} \label{eq:eee}
+\end{align}
+From equation \ref{eq:To} and \ref{eq:eee}
+\begin{align}
+ \frac{V_o}{V_s} &= T\brak{R_L+\brak{R_M\parallel\brak{R_1+R_2}}} \label{eq:final}
+\end{align}
+From values in table\ref{table: Example_Table} 
+\begin{align}
+ H&= \frac{\brak{1000}\brak{1000}}{1000+1000+1000}\\
+ \implies H&= \frac{1000}{3}
+\end{align}
+For an op amp:
+\begin{align}
+ G \in \brak{20000,200000}
+\end{align}
+So, from equation \ref{eq:greater} and Table\ref{table: Example_Table}
+\begin{align}
+T &\approx \frac{1}{H}\\
+ T &= \frac{3}{1000}
+\end{align}
+Hence,
+\begin{align}
+V_o &= 5V_s\\
+\implies V_o &= 5V
+\end{align}
+\end{enumerate}

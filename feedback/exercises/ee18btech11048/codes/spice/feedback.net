@@ -1,0 +1,40 @@
+*DC GAIN...
+Vin vin 0 1
+Rf 0 vf 1000
+XU1 vin vf vcc -vcc vout LM741/NS 
+V1 Vcc 0 12
+V2 0 -Vcc 12
+R2 vf va 1000
+Rl vout va 1000
+Rm 0 va 1000
+.include LM741.MOD
+.op
+.control
+run
+print V(vout)
+.endc
+.end 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,189 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item An op amp with an open loop voltage gain of 80dB and poles at $10^{5}$Hz , $10^{6}$ Hz and $2\times10^{6}$ Hz is said to be compensated to be stable for unity $\beta$. Assume that op amp incorporates an amplifier circuit equivalent to Fig.\ref{fig:Eqivalent circuit }  with $C_{1}$=150pF ,$C_{2}$=5pF and $g_{m}$=40mA/V and that $f_{p1}$ is caused by input circuit and $f_{p2}$ by the output circuit of this amplifier.Find the required value of compensating miller capacitance and the new frequency of the output pole
+
+\begin{figure}[h!]
+	\begin{center}
+		\resizebox{\columnwidth/1}{!}{\input{./figs/ee18btech11029/ee18btech11029_fig.tex}}
+	\end{center}
+	\caption{Equivalent amplifier circuit}
+	\label{fig:Eqivalent circuit }
+\end{figure}
+
+\solution
+
+The analysis of the circuit yields the transfer function
+\begin{multline}
+    \frac{V_{0}}{I_{i}} = \frac{\brak{sC_{f}-g_{m}}R_{1}R_{2}}{1+s\sbrak{P}+s^{2}\sbrak{Q}}
+    \label{eq:ee18btech11029_1}
+\end{multline}
+where
+\begin{align}
+    P&={C_{1}R_{1}+C_{2}R_{2}+C_{f}\brak{g_{m}R_{1}R_{2}+R_{1}+R_{2}}}\\
+    Q&={\brak{C_{1}C_{2}+C_{f}\brak{C_{1}+C_{2}}}R_{1}R_{2}}
+\end{align}
+The zero is usually at a much higher frequency so neglecting its effect ,the denominator of the transfer function can be written in the form
+\begin{align}
+    D(s)=\brak{1+\frac{s}{\omega_{p1}^{'}}}\brak{1+\frac{s}{\omega_{p2}^{'}}}
+\end{align}
+Here $\omega_{p1}^{'}$ and $\omega_{p2}^{'}$ are the new frequencies of the two poles and one of the pole will be dominant
+\begin{align}
+    \omega_{p1}^{'} < \omega_{p2}^{'}
+\end{align}
+Thus
+\begin{align}
+    D(s) \approx 1+\frac{s}{\omega_{p1}^{'}}+\frac{s^{2}}{\omega_{p1}^{'} \omega_{p2}^{'}}
+    \label{eq:ee18btech11029_2}
+\end{align}
+Equating the coefficient of s in the Eq. \eqref{eq:ee18btech11029_1} and Eq. \eqref{eq:ee18btech11029_2}
+we get
+\begin{align}
+    \omega_{p1}^{'} = \frac{1}{C_{1}R_{1}+C_{2}R_{2}+C_{f}\brak{g_{m}R_{1}R_{2}+R_{1}+R_{2}}}
+\end{align}
+This can be approximated to 
+\begin{align}
+    \omega_{p1}^{'} =\frac{1}{g_{m}R_{1}R_{2}C_{f}}
+    \label{eq:ee18btech11029_3}
+\end{align}
+In order to obtain the value of $\omega_{p2}^{'}$ we equate the coefficient of $s^{2}$ in Eq. \eqref{eq:ee18btech11029_1} and Eq. \eqref{eq:ee18btech11029_2} and use the value of Eq. \eqref{eq:ee18btech11029_3}
+\begin{align}
+    \omega_{p2}^{'} = \frac{g_{m}C_{f}}{{C_{1}C_{2}+C_{f}\brak{C_{1}+C_{2}}}}
+    \label{eq:ee18btech11029_4}
+\end{align}
+
+\item Find the value of G
+\begin{align}
+    80&=20\log\brak{G}\\
+    G&=10^{4}
+\end{align}
+\item Find the values of $R_{1}$ and $R_{2}$\\
+\solution The pole $f_{p1}$ is caused by input circuit and $f_{p2}$ by the output circuit.
+\begin{align}
+    f_{p1} = \frac{1}{2\pi R_{1}C_{1}}\\
+    f_{p2} = \frac{1}{2\pi R_{2}C_{2}}
+\end{align}
+finding the values of $R_{1}$ and $R_{2}$
+\begin{align}
+     R_{1} &= \frac{1}{2\pi\brak{150\times10^{-12}}\brak{10^{5}}} = 10.61k\Omega
+\end{align}
+\begin{align}
+     R_{2} &= \frac{1}{2\pi\brak{5\times10^{-12}}\brak{10^{6}}} = 31.8k\Omega
+\end{align}
+
+Assuming that the pole $f_{p2}$ will move to a frequency $f_{p2}^{'}$. This requires the modified first pole to be located at 
+\begin{align}
+    f_{p1}^{'} &= \frac{f_{p3}}{G}\\
+    &= \frac{2\times10^{6}}{10^{4}} = 200 Hz
+\end{align}
+
+
+\begin{table}[!t]
+\centering
+\input{./tables/ee18btech11029/ee18btech11029.tex}
+\caption{}
+\label{table: Input_Table}
+\end{table}
+\item Find the value of Miller capacitance\\
+\solution Compensating miller capacitance is 
+From Eq.\eqref{eq:ee18btech11029_3} we get
+\begin{align}
+    C_{f}=\frac{1}{2\pi g_{m}R_{1}R_{2}f_{p1}^{'}}
+\end{align}
+\begin{align}
+    C_{f}&= \frac{1}{2\pi\brak{40\times10^{-3}}\brak{\frac{10^{5}}{3\pi}}\brak{\frac{10^{5}}{\pi}}\brak{200}}\\
+    C_{f}&=58.9pF
+\end{align}
+\item Find the frequency of new output pole\\
+\solution
+The new frequency of the output pole from Eq. \eqref{eq:ee18btech11029_4}
+\begin{align}
+    f_{p2}^{'} = \frac{g_{m}C_{f}}{2\pi\sbrak{C_{1}C_{2} + C_{f}\brak{{C_{1}+C_{2}}}}}
+\end{align}
+\begin{align}
+    f_{p2}^{'} &= \frac{\brak{40\times10^{-3}}\brak{58.9\times10^{-12}}}{2\pi\brak{9.8\times10^{-21}}}
+\end{align}
+\begin{align}
+    f_{p2}^{'}=37.95MHz
+\end{align}
+
+\item Verify using bode plots\\
+\solution
+\begin{figure}[!h]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11029/feedback.eps}
+\caption{}
+\label{fig:ee18btech11029_1}
+\end{figure}
+The presence of $C_{f}$ has the effects
+
+\begin{itemize}
+    \item It downshifts the first pole by factor of $\frac{10^{5}}{200}=500$
+    \item It upshifts the second pole by factor of $\frac{37.95\times10^{6}}{10^{6}}=37.95$
+\end{itemize}
+Verify the above plot by
+\begin{lstlisting}
+codes/ee18btech11029/ee18btech11029_1.py
+\end{lstlisting}
+
+\item Design the circuit\\
+\solution
+\begin{figure}[ht!]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11029/block.tex}}
+	\end{center}
+	\caption{}
+	\label{fig:ee18btech11029_block}
+\end{figure}\\
+The transfer function of the opamp is
+\begin{align}
+   G(s)&= \frac{10^{4}}{\brak{1+\frac{s}{2\pi\times10^{5}}}\brak{1+\frac{s}{2\pi\times10^{6}}}\brak{1+\frac{s}{2\pi\times2\times10^{6}}}}
+\end{align}
+\item For feedback gain H\\
+\solution
+The value of the feedback gain is 1,So just place a wire between the input and the output terminal
+\begin{align}
+    H=\frac{V_{f}}{V_{o}}=1
+\end{align}
+\item Design the feedback circuit
+\begin{figure}[ht!]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11029/ee18btech11029_fig1.tex}}
+	\end{center}
+	\caption{}
+	\label{fig:ee18btech11029_fig1}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}

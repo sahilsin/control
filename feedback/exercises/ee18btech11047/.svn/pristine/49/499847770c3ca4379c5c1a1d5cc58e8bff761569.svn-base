@@ -1,11 +1,11 @@
-For the circuit shown in Fig. \ref{fig:ee18btech11047_fig1}, find the loop gain $L(s) = G(s)H(s)$, $L\brak{\j\omega}$, the frequency for zero loop phase, and $R_{2}/R_{1}$ for oscillation.
+For the circuit shown in Fig. \ref{fig:ee18btech11047_fig1}, find the loop gain $L(s) = G(s)H(s)$, $L(j\omega)$, the frequency for zero loop phase, and $R_{2}/R_{1}$ for oscillation.
 \begin{enumerate}[label=\arabic*.,ref=\theenumi]
 %\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
 
-\item Draw the equivalent control system representation for the circuit in Fig. \ref{fig:ee18btech11047_fig1} as well as the small signal model. 
+\item Draw the equivalent control system representation for the circuit in Fig. \ref{fig:ee18btech11047_fig1} as well as the small signal model.
 \\
-\solution See Figs. \ref{fig:ee18btech11047_block}, \ref{fig:ee18btech11047_fig2} and \ref{fig:ee18btech11047_fig3}. Oscillators do not include input signal.
+\solution See Figs. \ref{fig:ee18btech11047_block}, \ref{fig:ee18btech11047_fig2} and \ref{fig:ee18btech11047_fig3}
 %
 \renewcommand{\thefigure}{\theenumi.\arabic{figure}}
 %
@@ -17,7 +17,7 @@ For the circuit shown in Fig. \ref{fig:ee18btech11047_fig1}, find the loop gain 
 \label{fig:ee18btech11047_fig1}
 \end{figure}
 %
-%\solution See Fig. \ref{fig:ee18btech11047_fig2}. 
+\solution See Fig. \ref{fig:ee18btech11047_fig2}. Oscillators do not include input signal.
 \begin{figure}[!ht]
 	\begin{center}
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11047/ee18btech11047_block.tex}}
@@ -42,119 +42,29 @@ For the circuit shown in Fig. \ref{fig:ee18btech11047_fig1}, find the loop gain 
 \end{figure}
 \renewcommand{\thefigure}{\theenumi}
 %
-\item Draw the block diagram and circuit diagram for $H$.\\
-\solution See Figs. \ref{fig:ee18btech11047_fig4} and \ref{fig:ee18btech11047_fig5}. 
-\numberwithin{figure}{enumi}
-\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
-\begin{figure}[!ht]
-	\begin{center}
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11047/ee18btech11047_4.tex}}
-	\end{center}
-\caption{Feedback block diagram}
-\label{fig:ee18btech11047_fig4}
-\end{figure}
-\begin{figure}[!ht]
-	\begin{center}
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11047/ee18btech11047_5.tex}}
-	\end{center}
-\caption{Feedback circuit}
-\label{fig:ee18btech11047_fig5}
-\end{figure}
-\renewcommand{\thefigure}{\theenumi}
-\item Find $H$.
-\\
-\solution In Fig. \ref{fig:ee18btech11047_fig5}, let $I_o$ be the current flowing from $V_o$.  Then
+\item Find the open loop gain $G$.\\
+\label{prob:ee18btech11047_G}
+\solution Let the closed loop gain, open-loop gain of op-amp connected in non-inverting configuration be $T_{0}$ and $G_{0}$ respectively.
+From Table \ref{table:ee18btech11005_Output_Table}
 \begin{align}
-\label{eq:ee18btech11047_H_io}
-I_o = \frac{V_o}{\frac{1}{sC} + R \parallel \brak{R+\frac{1}{sC}}}
+T_{0} &= \frac{G_{0}\brak{R_1+R_2}}{\brak{R_1+R_2}+G_{0}R_1}
+\end{align}
+\begin{align}
+T_{0} &= \frac{\brak{R_1+R_2}}{\brak{R_1+R_2}/G_{0}+R_1}
+\end{align}
+Assuming $G_{0}\to\infty$
+\begin{align}
+T_{0} &= 1 + \frac{R_{2}}{R_{1}}
+\end{align}
+The open loop gain of the circuit shown in Fig. \ref{fig:ee18btech11047_fig1} is equal to the closed loop gain of an op-amp connected in non-inverting configuration.
+\begin{align}
+G &= T_{0}
+\end{align}
+\begin{align}
+\label{eq:ee18btech11047_1}
+\implies G = 1 + \frac{R_{2}}{R_{1}}
 \end{align}
 %
-Using current division,
-\begin{align}
-\label{eq:ee18btech11047_H_vf}
-V_f = I_o \frac{R}{R +  \brak{R+\frac{1}{sC}}} \times \frac{1}{sC}
-%I_o = \frac{V_o}{\frac{1}{sC} + \brak{R \parallel \frac{1}{sC}}}
-\end{align}
-From \eqref{eq:ee18btech11047_H_io} and \eqref{eq:ee18btech11047_H_vf},
-
-
-%the analysis is same as problem \ref{prob:ee18btech11047_H}
-\begin{align}
-%V_f = V_o \frac{\frac{1}{sC}}{\frac{1}{sC}+}
-\frac{V_{f}}{V_{o}} &= \frac{R}{R +  \brak{R+\frac{1}{sC}}} \times \frac{1}{sC} 
-\nonumber \\
-&\quad \times \frac{1}{\frac{1}{sC} + R \parallel \brak{R+\frac{1}{sC}}}
-\\
-\implies H &= \frac{1}{\brak{3+sRC +\frac{1}{sRC}}}
-\end{align}
-%
-after simplification.
-\item Find $R_{11}$ and $R_{22}$ from Fig. \ref{fig:ee18btech11047_fig5}. 
-\\
-\solution Shorting  $V_{o}$ to ground,
-\begin{align}
-R_{11} &= \frac{1}{sC} \parallel \brak{R+ R\parallel\frac{1}{sC}} 
-\label{eq:ee18btech11047_6}
-\end{align}
-Shorting $V_{f}$ to ground,
-\begin{align}
-R_{22} &= \frac{1}{sC} + \frac{R}{2}   
-\end{align}
-%
-%----------------------------------------------------
-\item Draw the block diagram and circuit diagram for $G$.\\
-\solution See Figs. \ref{fig:ee18btech11047_fig6} and \ref{fig:ee18btech11047_fig7}.
-
-\numberwithin{figure}{enumi}
-\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
-%
-\begin{figure}[!ht]
-	\begin{center}
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11047/ee18btech11047_6.tex}}
-	\end{center}
-\caption{Open loop block diagram}
-\label{fig:ee18btech11047_fig6}
-\end{figure}
-%
-\begin{figure}[!ht]
-	\begin{center}
-		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11047/ee18btech11047_7.tex}}
-	\end{center}
-\caption{Open loop circuit diagram}
-\label{fig:ee18btech11047_fig7}
-\end{figure}
-\renewcommand{\thefigure}{\theenumi}
-%
-\item Find $G$.
-\\
-\solution 
-From Fig.\ref{fig:ee18btech11047_fig7}
-\begin{align}
-V_{f_{2}} &= \brak{\frac{R_{1}}{R_{1} + R_{2}}}V_{o}
-\end{align}
-\begin{align}
-G_{1} &= \frac{V_{f_{2}}}{V_{o}}
-\end{align}
-\begin{align}
-\label{eq:ee18btech11047_G1}
-\implies G_{1} &= \frac{R_{1}}{R_{1} + R_{2}}
-\end{align}
-From Fig. \ref{fig:ee18btech11047_block} ,$G_{1}$ is the negative feedback factor and $G_{o}$ is the gain of the op-amp.Therefore,equivalent $G$ is given by
-\begin{align}
-G &= \frac{G_{o}}{1+G_{o}G_{1}}
-\end{align}
-\begin{align}
-G  &= \frac{1}{\frac{1}{G_{o}} + G_{1}}
-\end{align}
-We assumed $G_{0}\to\infty$. 
-\begin{align}
-\implies G&=\frac{1}{G_{1}}
-\end{align}
-From equation \eqref{eq:ee18btech11047_G1}.
-\begin{align}
-\implies G &= \frac{R_{1}+R_{2}}{R_{1}}=1+\frac{R_{2}}{R_{1}}
-\end{align}
-Hence verified with equation \eqref{eq:ee18btech11047_1}.
 \item Find the feedback factor $H$. \\
 \label{prob:ee18btech11047_H}
 \solution The small signal model is shown in Fig. \ref{fig:ee18btech11047_fig3}
@@ -191,29 +101,6 @@ H &= \frac{V_{f}}{V_{o}}
 \label{eq:ee18btech11047_3}
 \implies H &= \frac{1}{\brak{3+sRC +\frac{1}{sRC}}}
 \end{align}
-\item Find the open loop gain $G$.\\
-\label{prob:ee18btech11047_G}
-\solution Let the closed loop gain, open-loop gain of op-amp connected in non-inverting configuration be $T_{0}$ and $G_{0}$ respectively.
-From Table \ref{table:ee18btech11005_Output_Table}
-\begin{align}
-T_{0} &= \frac{G_{0}\brak{R_1+R_2}}{\brak{R_1+R_2}+G_{0}R_1}
-\end{align}
-\begin{align}
-T_{0} &= \frac{\brak{R_1+R_2}}{\brak{R_1+R_2}/G_{0}+R_1}
-\end{align}
-Assuming $G_{0}\to\infty$
-\begin{align}
-T_{0} &= 1 + \frac{R_{2}}{R_{1}}
-\end{align}
-The open loop gain of the circuit shown in Fig. \ref{fig:ee18btech11047_fig1} is equal to the closed loop gain of an op-amp connected in non-inverting configuration.
-\begin{align}
-G &= T_{0}
-\end{align}
-\begin{align}
-\label{eq:ee18btech11047_1}
-\implies G = 1 + \frac{R_{2}}{R_{1}}
-\end{align}
-%
 %
 \item Find the loop gain L(s).\\
 \solution The transfer function of the equivalent positive feedback circuit in Fig. \ref{fig:ee18btech11047_fig2} is  
@@ -237,11 +124,11 @@ L(s) &= \brak{1 + \frac{R_{2}}{R_{1}}}\brak{\frac{1}{3+sRC+\frac{1}{sRC}}}
 \item Find the loop gain in terms of $j\omega$ .\\
 \solution Substitute $s = j\omega$ in equation \eqref{eq:ee18btech11047_4}
 \begin{align} 
-L\brak{\j\omega}&= \brak{\frac{1+\frac{R_{2}}{R_{1}}}{3+j\omega RC+\frac{1}{j\omega RC}}}
+L(j\omega)&= \brak{\frac{1+\frac{R_{2}}{R_{1}}}{3+j\omega RC+\frac{1}{j\omega RC}}}
 \end{align}
 \begin{align}
 \label{eq:ee18btech11047_5}
-\implies L\brak{\j\omega}&= \brak{\frac{1+\frac{R_{2}}{R_{1}}}{3+ j \brak{\omega RC-\frac{1}{\omega RC}}}}
+\implies L(j\omega)&= \brak{\frac{1+\frac{R_{2}}{R_{1}}}{3+ j \brak{\omega RC-\frac{1}{\omega RC}}}}
 \end{align}
 \item Find the frequency for zero loop phase.\\
 \solution The frequency at which loop phase will be zero (i.e. loop gain will be a real number).To obtain the required frequency, equate the imaginary part of the loop gain $L(j \omega )$ to zero.
@@ -272,6 +159,96 @@ From equation \eqref{eq:ee18btech11047_5}
 \begin{align}
 \implies \frac{R_{2}}{R_{1}} &\geq 2
 \end{align}
+%----------------------------------------------------
+\item Draw the block diagram and circuit diagram for $H$.\\
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11047/ee18btech11047_4.tex}}
+	\end{center}
+\caption{Feedback block diagram}
+\label{fig:ee18btech11047_fig4}
+\end{figure}
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11047/ee18btech11047_5.tex}}
+	\end{center}
+\caption{Feedback circuit}
+\label{fig:ee18btech11047_fig5}
+\end{figure}
+\renewcommand{\thefigure}{\theenumi}
+\solution See figs \ref{fig:ee18btech11047_fig4} and \ref{fig:ee18btech11047_fig5} .From Fig. \ref{fig:ee18btech11047_fig5},the analysis is same as problem \ref{prob:ee18btech11047_H}
+\begin{align}
+\frac{V_{f}}{V_{o}} &= \frac{1}{\brak{3+sRC +\frac{1}{sRC}}}
+\end{align}
+\begin{align}
+\implies H &= \frac{1}{\brak{3+sRC +\frac{1}{sRC}}}
+\end{align}
+%
+\item Find the input and output resistances of the feedback network.\\
+\solution To find the input resistance $R_{11}$ short the output node $V_{o}$ to ground.
+\begin{align}
+R_{11} &= Z ||(R+ (R||Z)) 
+\end{align}
+where $Z=\frac{1}{sC}$ is the impedance of the capacitor.
+\begin{align}
+\label{eq:ee18btech11047_6}
+\implies R_{11} &= \brak{\frac{1}{sC}||\brak{R+R ||\frac{1}{sC}}}
+\end{align}
+To find the output resistance $R_{22}$ short the input node $V_{f}$ to ground.
+\begin{align}
+R_{22} &= Z + (R||R)
+\end{align}
+\begin{align}
+\implies R_{22} &= \frac{1}{sC} + \frac{R}{2}   
+\end{align}
+%
+\item Draw the block diagram and circuit diagram for $G$.\\
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+%
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11047/ee18btech11047_6.tex}}
+	\end{center}
+\caption{Open loop block diagram}
+\label{fig:ee18btech11047_fig6}
+\end{figure}
+%
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11047/ee18btech11047_7.tex}}
+	\end{center}
+\caption{Open loop circuit diagram}
+\label{fig:ee18btech11047_fig7}
+\end{figure}
+\renewcommand{\thefigure}{\theenumi}
+\solution See figs \ref{fig:ee18btech11047_fig6} and \ref{fig:ee18btech11047_fig7}.From Fig.\ref{fig:ee18btech11047_fig7}
+\begin{align}
+V_{f_{2}} &= \brak{\frac{R_{1}}{R_{1} + R_{2}}}V_{o}
+\end{align}
+\begin{align}
+G_{1} &= \frac{V_{f_{2}}}{V_{o}}
+\end{align}
+\begin{align}
+\label{eq:ee18btech11047_G1}
+\implies G_{1} &= \frac{R_{1}}{R_{1} + R_{2}}
+\end{align}
+From Fig. \ref{fig:ee18btech11047_block} ,$G_{1}$ is the negative feedback factor and $G_{o}$ is the gain of the op-amp.Therefore,equivalent $G$ is given by
+\begin{align}
+G &= \frac{G_{o}}{1+G_{o}G_{1}}
+\end{align}
+\begin{align}
+G  &= \frac{1}{\frac{1}{G_{o}} + G_{1}}
+\end{align}
+We assumed $G_{0}\to\infty$. 
+\begin{align}
+\implies G&=\frac{1}{G_{1}}
+\end{align}
+From equation \eqref{eq:ee18btech11047_G1}.
+\begin{align}
+\implies G &= \frac{R_{1}+R_{2}}{R_{1}}=1+\frac{R_{2}}{R_{1}}
+\end{align}
+Hence verified with equation \eqref{eq:ee18btech11047_1}.
 \item Find the amplitude and frequency for some arbitrary R,C values given in Table \ref{table:ee18btech110047_Input_Table}.\\
 \begin{table}[!ht]
 \centering

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  15 MAY 2020 09:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  16 MAY 2020 11:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1438,72 +1438,69 @@ LaTeX Info: Redefining \nameref on input line 88.
 \c@lemma=\count273
 \c@example=\count274
 \c@rem=\count275
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 222.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 222.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 224.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 224.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 222.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 224.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 222.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 224.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 222.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 224.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 222.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 224.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) (./gvv_feedback_manual.toc)
-\tf@toc=\write5
-\openout5 = `gvv_feedback_manual.toc'.
+) (./chapters/ee18btech11047.tex
 
- (./chapters/ee18btech11047.tex
+LaTeX Warning: Command \j invalid in math mode on input line 1.
+
 (./figs/ee18btech11047/ee18btech11047_1.tex)
 (./figs/ee18btech11047/ee18btech11047_block.tex)
 (./figs/ee18btech11047/ee18btech11047_2.tex)
 (./figs/ee18btech11047/ee18btech11047_3.tex)
-
-LaTeX Warning: Reference `table:ee18btech11005_Output_Table' on page 1 undefine
-d on input line 49.
-
-
-Underfull \vbox (badness 3965) has occurred while \output is active []
-
- [1
-
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
 (./figs/ee18btech11047/ee18btech11047_4.tex
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
 endlayer/tikz/libraries/tikzlibraryfit.code.tex
 File: tikzlibraryfit.code.tex 2019/02/02 v3.1.1 (3.1.1)
 ))
 (./figs/ee18btech11047/ee18btech11047_5.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+
+]
+
+LaTeX Warning: Text page 2 contains only floats.
+
 (./figs/ee18btech11047/ee18btech11047_6.tex)
 (./figs/ee18btech11047/ee18btech11047_7.tex)
-Underfull \hbox (badness 2173) in paragraph at lines 236--238
+Underfull \vbox (badness 2050) has occurred while \output is active []
+
+ [2]
+Underfull \hbox (badness 2173) in paragraph at lines 141--143
 \OT1/txr/m/n/12 From Fig. [][]1.2[][][] ,$\OML/txmi/m/it/12 G[]$ \OT1/txr/m/n/1
 2 is the neg-a-tive feed-
  []
@@ -1511,7 +1508,27 @@ Underfull \hbox (badness 2173) in paragraph at lines 236--238
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+
+LaTeX Warning: Reference `table:ee18btech11005_Output_Table' on page 3 undefine
+d on input line 197.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 241.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 241.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [3]
+
+LaTeX Warning: Command \j invalid in math mode on input line 245.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 245.
+
 (./tables/ee18btech11047/ee18btech11047_table1.tex
 \gnumericTableWidth=\skip79
 \gnumericTableWidthComplete=\skip80
@@ -1519,14 +1536,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \gnumericColA=\skip82
 \gnumericColB=\skip83
 )
-Underfull \vbox (badness 7576) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: ./figs/ee18btech11047/ee18btech11047.eps Graphic file (type eps)
 
-<./figs/ee18btech11047/ee18btech11047.eps>) [4]
+<./figs/ee18btech11047/ee18btech11047.eps> [4]
+File: ./figs/ee18btech11047/ee18btech11047_spice.eps Graphic file (type eps)
+
+<./figs/ee18btech11047/ee18btech11047_spice.eps>
+File: ./figs/ee18btech11047/ee18btech11047_spice2.eps Graphic file (type eps)
+
+<./figs/ee18btech11047/ee18btech11047_spice2.eps>) [5]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 261.
- (./gvv_feedback_manual.aux)
+
+(./gvv_feedback_manual.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 261.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 261.
 Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
@@ -1538,12 +1562,12 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
  ) 
 Here is how much of TeX's memory you used:
- 33862 strings out of 492624
- 733032 string characters out of 6119216
- 973820 words of memory out of 5000000
- 37136 multiletter control sequences out of 15000+600000
- 78904 words of font info for 200 fonts, out of 8000000 for 9000
+ 33843 strings out of 492624
+ 732729 string characters out of 6119216
+ 991042 words of memory out of 5000000
+ 37119 multiletter control sequences out of 15000+600000
+ 78186 words of font info for 199 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,14n,69p,511b,1161s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,69p,511b,1160s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (4 pages, 127748 bytes).
+Output written on gvv_feedback_manual.dvi (5 pages, 135860 bytes).

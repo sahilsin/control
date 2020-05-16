@@ -9,7 +9,7 @@ import subprocess
 import shlex
 #end if
 
-data=np.loadtxt('ee18btech11047.dat')  
+data=np.loadtxt('./codes/ee18btech11047/spice/ee18btech11047.dat')  
 plt.plot(data[:,0],data[:,1])  
 plt.grid()
 plt.xlabel("time")

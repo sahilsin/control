@@ -16,7 +16,8 @@ print("Amplitude is:",8.89)
 
 
 #Loading the data
-data = np.loadtxt( 'ee18btech11047.dat' )
+data=np.loadtxt('./codes/ee18btech11047/spice/ee18btech11047.dat')  
+#data = np.loadtxt( 'ee18btech11047.dat' )
 #PLotting the data from spice simulation
 plt.plot(data[:,0],data[:,1])
 plt.xlim(117,140)

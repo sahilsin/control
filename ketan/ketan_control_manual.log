@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  6 MAY 2020 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  17 MAY 2020 13:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1384,6 +1384,9 @@ LaTeX Warning: Label `table:es17btech11002_1' multiply defined.
 
 
 LaTeX Warning: Label `eq:ee18btech11021' multiply defined.
+
+
+LaTeX Warning: Label `eq:ee18btech11030' multiply defined.
 
 )
 \openout1 = `ketan_control_manual.aux'.
@@ -3403,17 +3406,151 @@ File: ./figs/ee18btech11001/ee18btech11001_4.eps Graphic file (type eps)
 File: ./figs/ee18btech11001/ee18btech11001_5.eps Graphic file (type eps)
 
 <./figs/ee18btech11001/ee18btech11001_5.eps> (./tables/ee18btech11001_2.tex)
-[66])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 426.
- [67
+[66]) (./chapters/ee18btech11019.tex
+File: ./figs/ee18btech11019_1.eps Graphic file (type eps)
+ <./figs/ee18btech11019_1.eps>
+File: ./figs/ee18btech11019_2.eps Graphic file (type eps)
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 426.
+<./figs/ee18btech11019_2.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 20--26
+
+ []
+
+File: ./figs/ee18btech11019_3.eps Graphic file (type eps)
+<./figs/ee18btech11019_3.eps> (./figs/ee18btech11019_8.tex)
+Underfull \hbox (badness 4193) in paragraph at lines 27--43
+ \OT1/txr/m/n/12 Clearly from the ques-tion its neg-a-tive
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 27--43
+\OT1/txr/m/n/12 feed-back sys-tem and given sen-si-tiv-ity of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--43
+
+ []
+
+[67] (./tables/ee18btech11019_2.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 44--55
+
+ []
+
+
+Underfull \hbox (badness 4634) in paragraph at lines 44--55
+\OT1/txr/m/n/12 directly tak-ing re-sult from book con-trol
+ []
+
+
+Underfull \hbox (badness 6316) in paragraph at lines 44--55
+\OT1/txr/m/n/12 sys-tems en-gi-neer-ing by norman-nise, $6[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--61
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--68
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--90
+
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 91--94
+\OT1/txr/m/n/12 Considering the closed-loop gain of plant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--94
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68]
+Underfull \hbox (badness 10000) in paragraph at lines 102--105
+
+ []
+
+(./figs/ee18btech11019_4.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
+
+ []
+
+(./figs/ee18btech11019_5.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 129--141
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69]
+Underfull \hbox (badness 10000) in paragraph at lines 177--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
+
+ []
+
+File: ./figs/ee18btech11019_6.eps Graphic file (type eps)
+<./figs/ee18btech11019_6.eps>
+File: ./figs/ee18btech11019_7.eps Graphic file (type eps)
+ <./figs/ee18btech11019_7.eps>
+(./tables/ee18btech11019.tex)) [70]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 428.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 428.
  (./ketan_control_manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 426.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 426.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 428.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 428.
 Package rerunfilecheck Info: File `ketan_control_manual.out' has not changed.
-(rerunfilecheck)             Checksum: 914FFEDFA885246F9A87F4B4DEF3C937;2211.
+(rerunfilecheck)             Checksum: DEB7BB1BCA21F0315754AE8DD1BCDBF4;2284.
 
 
 LaTeX Warning: There were undefined references.
@@ -3421,15 +3558,15 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 426.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 428.
  ) 
 Here is how much of TeX's memory you used:
- 34238 strings out of 492624
- 744008 string characters out of 6119216
- 956152 words of memory out of 5000000
- 37089 multiletter control sequences out of 15000+600000
+ 34286 strings out of 492624
+ 745179 string characters out of 6119216
+ 956714 words of memory out of 5000000
+ 37116 multiletter control sequences out of 15000+600000
  76674 words of font info for 195 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,19n,69p,512b,1177s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,19n,69p,593b,1177s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ketan_control_manual.dvi (67 pages, 792392 bytes).
+Output written on ketan_control_manual.dvi (70 pages, 830364 bytes).

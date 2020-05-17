@@ -32,3 +32,4 @@
 \contentsline {subsection}{\numberline {4.1}PD}{61}{subsection.4.1}% 
 \contentsline {subsection}{\numberline {4.2}PID}{62}{subsection.4.2}% 
 \contentsline {subsection}{\numberline {4.3}Position Control System}{64}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.4}Position Control System}{67}{subsection.4.4}% 

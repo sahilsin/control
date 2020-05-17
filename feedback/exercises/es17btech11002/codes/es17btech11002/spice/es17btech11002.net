@@ -1,0 +1,18 @@
+* C:\Users\varsh\OneDrive\Desktop\Spice64\bin\es17btech11002.asc
+R1 N001 0 1k
+R2 Vout N001 2030
+V1 Vcc 0 15
+V2 0 -Vcc 15
+XU1 N002 N001 Vcc -Vcc Vout LM741/NS
+R3 N002 0 250
+R4 Vout N003 250
+C1 N003 0 1m
+C2 N003 N002 1m
+.include C:\Users\varsh\OneDrive\Desktop\LM741.MOD
+.tran 0.01 150 UIC
+.include LM741.MOD
+.control
+run
+wrdata ee18btech11047.dat V(Vout)
+.endc
+.end

@@ -1,0 +1,26 @@
+*DC GAIN...
+Vin vin 0 1
+R1 vin va 100
+R2 va v1 1k
+Vd1 vdd 0 15
+Vd2 0 -vdd 15
+XU1 0 va vdd -vdd v1 LM741
+R3 v1 vb 1k
+R4 vb v2 1k
+C1 vb v2 0.8005n
+XU2 0 vb vdd -vdd v2 LM741
+R5 v2 vc 1k 
+R6 vc v3 1k
+XU3 0 vc vdd -vdd v3 LM741
+R7 v3 vd 1k
+C2 vd vo 1.599n
+R8 vb vo 1k
+XU4 0 vd vdd -vdd vo LM741
+.include LM741.MOD
+.op 
+.control
+print V(vo)
+.endc
+.end
+
+

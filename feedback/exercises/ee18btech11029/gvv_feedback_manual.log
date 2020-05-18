@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  14 MAY 2020 18:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  18 MAY 2020 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1337,7 +1337,11 @@ ngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
-) (./gvv_feedback_manual.aux)
+) (./gvv_feedback_manual.aux
+
+LaTeX Warning: Label `table:ee18btech11029_ Input_Table' multiply defined.
+
+)
 \openout1 = `gvv_feedback_manual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 88.
@@ -1438,61 +1442,42 @@ LaTeX Info: Redefining \nameref on input line 88.
 \c@lemma=\count273
 \c@example=\count274
 \c@rem=\count275
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 222.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 222.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 224.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 224.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 222.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 224.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 222.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 224.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 222.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 224.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 222.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 224.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) (./gvv_feedback_manual.toc)
-\tf@toc=\write5
-\openout5 = `gvv_feedback_manual.toc'.
-
- (./chapters/ee18btech11029.tex
+) (./chapters/ee18btech11029.tex
 (./figs/ee18btech11029/ee18btech11029_fig.tex)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) detected at line 19
- []$[]  [] \OT1/txr/m/n/12 = []$ [][][]  [][]  
- []
-
-
-Underfull \vbox (badness 1616) has occurred while \output is active []
-
- [1
-
-
-]
 (./tables/ee18btech11029/ee18btech11029.tex
 \gnumericTableWidth=\skip79
 \gnumericTableWidthComplete=\skip80
@@ -1500,14 +1485,64 @@ Underfull \vbox (badness 1616) has occurred while \output is active []
 \gnumericColA=\skip82
 \gnumericColB=\skip83
 )
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 18.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 18.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 18.
+
+(./figs/ee18btech11029/block.tex)
+(./figs/ee18btech11029/ee18btech11029_fig1.tex) [1
+
+
+]
+(./tables/ee18btech11029/ee18btech11029_R.tex)
+File: ./figs/ee18btech11029/spiceuncompensated.eps Graphic file (type eps)
+
+<./figs/ee18btech11029/spiceuncompensated.eps>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 162.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 162.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\ne' on input line 162.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 162.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [2]
+(./tables/ee18btech11029/ee18btech11029_1.tex)
+Overfull \hbox (11.3661pt too wide) detected at line 255
+[]
+ []
+
+(./figs/ee18btech11029/compensatedblock.tex)
 File: ./figs/ee18btech11029/feedback.eps Graphic file (type eps)
 
-<./figs/ee18btech11029/feedback.eps> [2] (./figs/ee18btech11029/block.tex)
-(./figs/ee18btech11029/ee18btech11029_fig1.tex))
+<./figs/ee18btech11029/feedback.eps> [3]
+File: ./figs/ee18btech11029/spicecompensated.eps Graphic file (type eps)
+
+<./figs/ee18btech11029/spicecompensated.eps>)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 270.
- [3
+ [4
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 270.
@@ -1515,16 +1550,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 270.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 270.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 270.
 Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
-(rerunfilecheck)             Checksum: 0CA316A16B2B9024EAD9F543B11E2310;272.
+(rerunfilecheck)             Checksum: 8C85D9658E73AE0115A434FF91C61925;121.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 270.
  ) 
 Here is how much of TeX's memory you used:
- 33256 strings out of 492624
- 717569 string characters out of 6119216
- 937205 words of memory out of 5000000
- 36548 multiletter control sequences out of 15000+600000
+ 33277 strings out of 492624
+ 718377 string characters out of 6119216
+ 946303 words of memory out of 5000000
+ 36561 multiletter control sequences out of 15000+600000
  75595 words of font info for 190 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,14n,69p,612b,1180s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,69p,511b,1160s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (3 pages, 60736 bytes).
+Output written on gvv_feedback_manual.dvi (4 pages, 74708 bytes).

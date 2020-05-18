@@ -1,0 +1,24 @@
+\tikzstyle{block} = [draw, rectangle, 
+    minimum height=1.25em, minimum width=2.5em]
+\tikzstyle{sum} = [draw, circle, node distance=1cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+
+\begin{tikzpicture}[auto, node distance=3.5cm,>=latex']
+
+    \node [input, name=input] {};
+    \node [sum, right of=input] (sum) {};
+    \node [block, right of=sum] (controller) {$\frac{10^{4}}{\brak{1+\frac{s}{2\pi\times200}}\brak{1+\frac{s}{2\pi\times37.95\times10^{6}}}\brak{1+\frac{s}{2\pi\times2\times10^{6}}}}$};
+    
+   
+    \node [output, right of=controller] (output) {};
+    \node [block, below of=controller] (measurements) {$1$};
+
+    \draw [draw,->] (input) -- node[pos=0.99] {$+$} node {$V_{s}$} (sum);
+    \draw [->] (sum) -- node {$V_{i}$} (controller);
+    \draw [->] (controller) -- node [name=y] {$V_{o}$}(output);
+    \draw [->] (y) |- (measurements);
+    \draw [->] (measurements) -| node[pos=0.99] {$-$} node [near end] {$V_{f}$} (sum);
+\end{tikzpicture}

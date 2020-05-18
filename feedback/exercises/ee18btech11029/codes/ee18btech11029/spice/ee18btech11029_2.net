@@ -1,0 +1,42 @@
+EE18BTECH11029_2.NET - OPAMP CLOSED-LOOP STEP RESPONSE 
+* STEP INPUT
+VS	1	0	AC	1	PWL(0US 0V   0.1US 1V   10US 1V)
+
+XOP	1 4 	4	OPAMP1	
+
+
+.SUBCKT OPAMP1      1   2 7
+* INPUT IMPEDANCE
+RIN	1	2	100MEG
+*FOR FIRST POLE
+G1      0       3  VALUE = { 1e-2*V(1,2)}
+RP1     3      0   1e6
+CP1     3      0   0.795e-9
+*FOR SECOND POLE
+G2      0       4  3 0 1e-6
+RP2     4      0   1e6
+CP2     4      0   0.419e-14
+*FOR THIRD POLE
+G3      0       5  4 0 1e-6
+RP3     5      0   1e6
+CP3     5      0   0.795e-13
+
+* OUTPUT BUFFER AND RESISTANCE
+EBUFFER	6 0	5 0	1
+ROUT	6	7	10
+.ENDS
+
+* ANALYSIS
+.AC 	DEC 	10 10 10MEG
+.TRAN 	0.01US  30US
+*
+
+* VIEW RESULTS
+.control
+run
+plot V(4)
+*wrdata ee18btech11029_2.dat V(4)
+.endc 
+
+.end
+

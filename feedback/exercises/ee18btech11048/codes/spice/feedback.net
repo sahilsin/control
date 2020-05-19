@@ -7,13 +7,15 @@ V2 0 -Vcc 12
 R2 vf va 1000
 Rl vout va 1000
 Rm 0 va 1000
+Vib vout va dc 0v
 .include LM741.MOD
 .op
 .control
 run
-print V(vout)
+print (Vib#branch)
 .endc
 .end 
+
 
 
 

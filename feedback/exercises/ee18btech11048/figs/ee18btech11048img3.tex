@@ -1,0 +1,11 @@
+\begin{circuitikz}[american]
+\usetikzlibrary{positioning, fit, calc}
+\draw (0,0)to [open,v=$V_f$]++(0,-2)to[short]++(2.5,0)
+(0,0)to++(2.5,0);
+\draw (4,-1)node[draw,minimum width=3cm,minimum height=3cm] (load) {H}(8,0);
+\draw (5.5,0)--(8,0)
+(5.5,-2)--(8,-2)
+node at(6.7,-0.42){$I_o$}
+[arrows=<-,line width=1pt](6.9,-0.2)--(6.4,-0.2);
+;
+\end{circuitikz}

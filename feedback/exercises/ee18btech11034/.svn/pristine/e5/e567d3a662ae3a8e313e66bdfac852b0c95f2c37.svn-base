@@ -1,7 +1,7 @@
 %!PS-Adobe-2.0
-%%Creator: dvips(k) 5.999 Copyright 2019 Radical Eye Software
+%%Creator: dvips(k) 5.997 Copyright 2017 Radical Eye Software
 %%Title: gvv_feedback_manual.dvi
-%%CreationDate: Tue May 19 09:55:37 2020
+%%CreationDate: Tue May 19 07:29:36 2020
 %%Pages: 5
 %%PageOrder: Ascend
 %%BoundingBox: 0 0 612 792
@@ -10,10 +10,9 @@
 %%DocumentPaperSizes: Letter
 %%EndComments
 %DVIPSWebPage: (www.radicaleye.com)
-%DVIPSCommandLine: dvips gvv_feedback_manual.dvi -q* -o
-%+ gvv_feedback_manual.ps
+%DVIPSCommandLine: dvips gvv_feedback_manual.dvi
 %DVIPSParameters: dpi=600
-%DVIPSSource:  TeX output 2020.05.19:1525
+%DVIPSSource:  TeX output 2020.05.19:1259
 %%BeginProcSet: tex.pro 0 0
 %!
 /TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
@@ -2074,7 +2073,8 @@ ifelse
 %%Page: 1 1
 TeXDict begin 1 0 bop 0 0 a
 SDict begin [/Producer (dvips + Distiller)/Title ()/Subject ()/Creator
-(LaTeX with hyperref)/Author ()/Keywords () /DOCINFO pdfmark end
+(LaTeX with hyperref package)/Author ()/Keywords () /DOCINFO pdfmark
+end
  0 0 a 0 0 a
 SDict begin /product where{pop product(Distiller)search{pop pop pop
 version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
@@ -2119,7 +2119,7 @@ SDict begin 13.92 H.A end
  -192 1406 a -192 1406 a
 SDict begin [/View [/XYZ H.V]/Dest (Item.1) cvn /DEST pdfmark end
  -192
-1406 a 0 TeXcolorgray -153 1500 a Ft(\(a\))p 0 TeXcolorgray
+1406 a 0 TeXcolorgray -126 1500 a Ft(1\))p 0 TeXcolorgray
 50 w(A)54 b(manuf)o(acturing)e(error)i(introducing)e(a)i(second)7
 1616 y(pole)43 b(at)f(10)h(kHz.)f(Find)h(the)f(frequenc)o(y)h(at)g
 (which)7 1731 y Fn(j)n Fq(G)t(H)t Fn(j)29 b Fs(=)f Ft(1)33
@@ -2131,32 +2131,31 @@ SDict begin 13.92 H.A end
  -192 1753 a -192 1753
 a
 SDict begin [/View [/XYZ H.V]/Dest (Item.2) cvn /DEST pdfmark end
- -192 1753 a 0 TeXcolorgray -159 1847 a Ft(\(b\))p 0
-TeXcolorgray 50 w(F)o(or)57 b(what)f(v)n(alues)g(of)i
-Fq(H)k Ft(is)56 b(the)g(phase)h(mar)n(gin)7 1963 y(greater)36
-b(than)e(45)625 1926 y Fm(\016)662 1963 y Ft(?)-192 2072
-y
+ -192 1753 a 0 TeXcolorgray -126 1847 a Ft(2\))p 0 TeXcolorgray
+50 w(F)o(or)57 b(what)f(v)n(alues)g(of)i Fq(H)k Ft(is)56
+b(the)g(phase)h(mar)n(gin)7 1963 y(greater)36 b(than)e(45)625
+1926 y Fm(\016)662 1963 y Ft(?)-192 2072 y
 SDict begin H.S end
- -192 2072 a -192 2072 a
+ -192 2072
+a -192 2072 a
 SDict begin 13.92 H.A end
  -192 2072 a -192 2072 a
 SDict begin [/View [/XYZ H.V]/Dest (Item.3) cvn /DEST pdfmark end
- -192
-2072 a 0 TeXcolorgray -118 2166 a Ft(1.)p 0 TeXcolorgray
-50 w(Find)61 b(the)g(transfer)g(function)f(of)h(the)g(tw)o(o)g(pole)7
-2282 y(OP)-9 b(AMP)e(.)7 2397 y Fl(Solution:)44 b Ft(F)o(or)39
-b(a)h(tw)o(o-pole)f(ampli\002er)g(open)g(loop)7 2513
-y(transfer)c(function)f(is)452 2828 y Fq(G)543 2827 y
-Ft(\()580 2828 y Fq(s)619 2827 y Ft(\))680 2828 y Fs(=)1056
-2761 y Fq(G)1130 2776 y Fy(0)p 781 2805 664 6 v 781 2828
-a Fk(\020)816 2920 y Ft(1)22 b Fs(+)1010 2881 y Fo(s)p
-984 2897 75 6 v 984 2955 a Fp(!)1030 2965 y Fj(1)1069
-2828 y Fk(\021)17 b(\020)1156 2920 y Ft(1)22 b Fs(+)1349
-2881 y Fo(s)p 1324 2897 V 1324 2955 a Fp(!)1370 2965
-y Fj(2)1409 2828 y Fk(\021)1709 2828 y
+ -192 2072 a 0 TeXcolorgray
+-118 2166 a Ft(1.)p 0 TeXcolorgray 50 w(Find)61 b(the)g(transfer)g
+(function)f(of)h(the)g(tw)o(o)g(pole)7 2282 y(OP)-9 b(AMP)e(.)7
+2397 y Fl(Solution:)44 b Ft(F)o(or)39 b(a)h(tw)o(o-pole)f(ampli\002er)g
+(open)g(loop)7 2513 y(transfer)c(function)f(is)452 2828
+y Fq(G)543 2827 y Ft(\()580 2828 y Fq(s)619 2827 y Ft(\))680
+2828 y Fs(=)1056 2761 y Fq(G)1130 2776 y Fy(0)p 781 2805
+664 6 v 781 2828 a Fk(\020)816 2920 y Ft(1)22 b Fs(+)1010
+2881 y Fo(s)p 984 2897 75 6 v 984 2955 a Fp(!)1030 2965
+y Fj(1)1069 2828 y Fk(\021)17 b(\020)1156 2920 y Ft(1)22
+b Fs(+)1349 2881 y Fo(s)p 1324 2897 V 1324 2955 a Fp(!)1370
+2965 y Fj(2)1409 2828 y Fk(\021)1709 2828 y
 SDict begin H.S end
- 1709 2828 a 1709
-2828 a
+ 1709 2828
+a 1709 2828 a
 SDict begin 17.4 H.A end
  1709 2828 a 1709 2828 a
 SDict begin [/View [/XYZ H.V]/Dest (equation.3.1) cvn /DEST pdfmark
@@ -6671,9 +6670,9 @@ neg exch translate
  pgfs
 
 
- -16 699 a
+
  0 setgray
- -16 699 a -16 699 a
+ -16 699 a
 
 
  pgfr
@@ -6695,16 +6694,15 @@ neg exch translate
  pgfs
 
 
- -16 699
-a
+
  0 setgray
- -16 699 a 246 660 a Fy(10)312 636 y Fj(5)p -6 676 601
-6 v -6 770 a Ft(\()27 763 y Fy(1)p Fx(+)170 737 y Ff(s)p
-113 748 133 4 v 113 786 a Fj(2)p Fg(\031)p Fe(\002)p
-Fj(10)255 770 y Ft(\))288 686 y Fd(\022)313 763 y Fy(1)p
-Fx(+)470 737 y Ff(s)p 398 748 162 4 v 398 800 a Fj(2)p
-Fg(\031)p Fe(\002)p Fj(10)531 786 y(4)570 686 y Fd(\023)-16
-699 y
+ 246 660 a Fy(10)312 636 y Fj(5)p
+-6 676 601 6 v -6 770 a Ft(\()27 763 y Fy(1)p Fx(+)170
+737 y Ff(s)p 113 748 133 4 v 113 786 a Fj(2)p Fg(\031)p
+Fe(\002)p Fj(10)255 770 y Ft(\))288 686 y Fd(\022)313
+763 y Fy(1)p Fx(+)470 737 y Ff(s)p 398 748 162 4 v 398
+800 a Fj(2)p Fg(\031)p Fe(\002)p Fj(10)531 786 y(4)570
+686 y Fd(\023)-16 699 y
 
 
  pgfr
@@ -6730,10 +6728,10 @@ Fg(\031)p Fe(\002)p Fj(10)531 786 y(4)570 686 y Fd(\023)-16
  pgfs
 
 
- -16 699 a
+
  0 setgray
- -16 699 a Ft(0)p Fr(:)p Ft(01)-16 699
-y
+ -16 699 a Ft(0)p Fr(:)p Ft(01)-16
+699 y
 
 
  pgfr
@@ -6768,7 +6766,7 @@ restore
  pgfs
 
 
- -16 699 a
+
  0 setgray
  -16 699 a Fs(+)-16 699 y
 
@@ -6788,10 +6786,10 @@ restore
  pgfs
 
 
- -16 699 a
+
  0 setgray
- -16 699
-a Fq(V)48 714 y Fo(s)-16 699 y
+ -16 699 a Fq(V)48 714
+y Fo(s)-16 699 y
 
 
  pgfr
@@ -6826,10 +6824,10 @@ restore
  pgfs
 
 
- -16 699 a
+
  0 setgray
- -16 699 a Fq(V)45
-714 y Fo(i)-16 699 y
+ -16 699 a Fq(V)45 714 y Fo(i)-16 699
+y
 
 
  pgfr
@@ -6864,10 +6862,9 @@ restore
  pgfs
 
 
- -16 699 a
+
  0 setgray
- -16 699 a Fq(V)45 714
-y Fo(o)-16 699 y
+ -16 699 a Fq(V)45 714 y Fo(o)-16 699 y
 
 
  pgfr
@@ -6923,10 +6920,10 @@ restore
  pgfs
 
 
- -16 699 a
+
  0 setgray
- -16 699 a Fn(\000)-16 699
-y
+ -16 699 a Fn(\000)-16
+699 y
 
 
  pgfr
@@ -6944,7 +6941,7 @@ y
  pgfs
 
 
- -16 699 a
+
  0 setgray
  -16 699 a Fq(V)55 714 y Fo(f)-16 699 y
 
@@ -6964,8 +6961,8 @@ y
  pgfc
 
 
- -192
-1358 a
+ -192 1358
+a
  currentpoint currentpoint translate 1 1.28366 div 1 1.28366 div scale
 neg exch neg exch translate
  -192 1358 a 0 TeXcolorgray 733 1514 a Ft(Fig.)f(5)p
@@ -7082,9 +7079,9 @@ a
  pgfs
 
 
- -110 4353 a
+
  0 setgray
- -110 4353 a -110 4353 a
+ -110 4353 a
 
 
  pgfr
@@ -7110,10 +7107,9 @@ a
  pgfs
 
 
- -110 4353 a
+
  0 setgray
- -110
-4353 a -110 4353 a
+ -110 4353 a
 
 
  pgfr
@@ -7161,10 +7157,9 @@ a
  pgfs
 
 
- -110 4353 a
+
  0 setgray
- -110 4353 a -110 4353
-a
+ -110 4353 a
 
 
  pgfr
@@ -7182,10 +7177,10 @@ a
  pgfs
 
 
- -110 4353 a
+
  0 setgray
- -110 4353 a Fq(V)-49 4368 y Fo(o)-110 4353
-y
+ -110 4353 a Fq(V)-49
+4368 y Fo(o)-110 4353 y
 
 
  pgfr
@@ -7287,9 +7282,9 @@ y
  pgfs
 
 
- -110 4353 a
+
  0 setgray
- -110 4353 a -110 4353 a
+ -110 4353 a
 
 
  pgfr
@@ -7323,10 +7318,10 @@ y
  pgfs
 
 
- -110 4353 a
+
  0 setgray
- -110
-4353 a Fq(R)-49 4368 y Fy(2)-110 4353 y
+ -110 4353 a Fq(R)-49
+4368 y Fy(2)-110 4353 y
 
 
  pgfr
@@ -7378,10 +7373,9 @@ y
  pgfs
 
 
- -110 4353 a
+
  0 setgray
- -110
-4353 a -110 4353 a
+ -110 4353 a
 
 
  pgfr
@@ -7411,10 +7405,10 @@ y
  pgfs
 
 
- -110 4353 a
+
  0 setgray
- -110 4353 a Fq(R)-49 4368
-y Fy(1)-110 4353 y
+ -110 4353 a Fq(R)-49
+4368 y Fy(1)-110 4353 y
 
 
  pgfr
@@ -7432,10 +7426,9 @@ y Fy(1)-110 4353 y
  pgfs
 
 
- -110 4353 a
+
  0 setgray
- -110 4353 a -110 4353
-a
+ -110 4353 a
 
 
  pgfr
@@ -7527,9 +7520,9 @@ a
  pgfs
 
 
- -110 4353 a
+
  0 setgray
- -110 4353 a -110 4353 a
+ -110 4353 a
 
 
  pgfr
@@ -7555,10 +7548,10 @@ a
  pgfs
 
 
- -110 4353 a
+
  0 setgray
  -110
-4353 a -110 4353 a
+4353 a
 
 
  pgfr
@@ -7606,10 +7599,9 @@ a
  pgfs
 
 
- -110 4353 a
+
  0 setgray
- -110 4353 a -110 4353
-a
+ -110 4353 a
 
 
  pgfr
@@ -7627,10 +7619,10 @@ a
  pgfs
 
 
- -110 4353 a
+
  0 setgray
- -110 4353 a Fq(V)-39 4368 y Fo(f)-110 4353
-y
+ -110 4353 a Fq(V)-39 4368 y Fo(f)-110
+4353 y
 
 
  pgfr
@@ -7651,68 +7643,69 @@ y
  -192 4487 a
  currentpoint currentpoint translate 1 1.82443 div 1 1.82443 div scale
 neg exch neg exch translate
- -192 4487 a 0 TeXcolorgray 733 4642 a Ft(Fig.)35
-b(6)p 0 TeXcolorgray 0 TeXcolorgray 7 4897 a(Choose)g
-Fq(R)402 4912 y Fy(1)474 4897 y Ft(and)g Fq(R)714 4912
-y Fy(2)786 4897 y Ft(as)783 5080 y Fq(R)844 5095 y Fy(1)909
-5080 y Fs(=)28 b Ft(10)p Fs(\012)1709 5080 y
+ -192 4487 a 0 TeXcolorgray 733 4642
+a Ft(Fig.)35 b(6)p 0 TeXcolorgray 0 TeXcolorgray 7 4897
+a(Choose)g Fq(R)402 4912 y Fy(1)474 4897 y Ft(and)g Fq(R)714
+4912 y Fy(2)786 4897 y Ft(as)783 5080 y Fq(R)844 5095
+y Fy(1)909 5080 y Fs(=)28 b Ft(10)p Fs(\012)1709 5080
+y
 SDict begin H.S end
- 1709 5080
-a 1709 5080 a
+ 1709 5080 a 1709 5080 a
 SDict begin 17.4 H.A end
  1709 5080 a 1709 5080 a
 SDict begin [/View [/XYZ H.V]/Dest (equation.8.2) cvn /DEST pdfmark
 end
- 1709 5080 a Ft(\(6.2\))734
-5224 y Fq(R)795 5239 y Fy(2)859 5224 y Fs(=)g Ft(990)p
-Fs(\012)1709 5224 y
+ 1709
+5080 a Ft(\(6.2\))734 5224 y Fq(R)795 5239 y Fy(2)859
+5224 y Fs(=)g Ft(990)p Fs(\012)1709 5224 y
 SDict begin H.S end
- 1709 5224 a 1709 5224 a
-SDict begin 17.4 H.A end
  1709 5224
 a 1709 5224 a
+SDict begin 17.4 H.A end
+ 1709 5224 a 1709 5224 a
 SDict begin [/View [/XYZ H.V]/Dest (equation.8.3) cvn /DEST pdfmark
 end
- 1709 5224 a Ft(\(6.3\))205 5528 y Fq(H)33
-b Fs(=)514 5460 y Fq(R)575 5475 y Fy(1)p 411 5505 305
-6 v 411 5596 a Fq(R)472 5611 y Fy(1)531 5596 y Fs(+)23
-b Fq(R)678 5611 y Fy(2)753 5528 y Fs(=)982 5460 y Ft(10)p
-854 5505 357 6 v 854 5596 a(10)e Fs(+)i Ft(990)1248 5528
-y Fs(=)28 b Ft(0)p Fr(:)p Ft(01)1709 5528 y
+ 1709 5224 a Ft(\(6.3\))205
+5528 y Fq(H)33 b Fs(=)514 5460 y Fq(R)575 5475 y Fy(1)p
+411 5505 305 6 v 411 5596 a Fq(R)472 5611 y Fy(1)531
+5596 y Fs(+)23 b Fq(R)678 5611 y Fy(2)753 5528 y Fs(=)982
+5460 y Ft(10)p 854 5505 357 6 v 854 5596 a(10)e Fs(+)i
+Ft(990)1248 5528 y Fs(=)28 b Ft(0)p Fr(:)p Ft(01)1709
+5528 y
 SDict begin H.S end
- 1709 5528
-a 1709 5528 a
-SDict begin 17.4 H.A end
  1709 5528 a 1709 5528 a
+SDict begin 17.4 H.A end
+ 1709 5528 a 1709 5528
+a
 SDict begin [/View [/XYZ H.V]/Dest (equation.8.4) cvn /DEST pdfmark
 end
- 1709 5528 a Ft(\(6.4\))p
-0 TeXcolorgray 0 TeXcolorgray 2000 -167 a
-SDict begin H.S end
- 2000 -167 a
+ 1709 5528 a Ft(\(6.4\))p 0 TeXcolorgray 0 TeXcolorgray
 2000 -167 a
-SDict begin 13.92 H.A end
- 2000 -167 a 2000 -167 a
-SDict begin [/View [/XYZ H.V]/Dest (Item.9) cvn /DEST pdfmark end
- 2000 -167 a 0 TeXcolorgray
-2074 -52 a Ft(7.)p 0 TeXcolorgray 50 w(Feedback)36 b(Circuit)e(for)j
-Fq(P)5 b(M)32 b Fs(=)c Ft(51)p Fr(:)p Ft(9)3527 -88 y
-Fm(\016)2199 64 y Fl(Solution:)p 0 TeXcolorgray 2000
-155 a
 SDict begin H.S end
- 2000 155 a 2000 155 a
+ 2000 -167 a 2000 -167 a
+SDict begin 13.92 H.A end
+ 2000 -167 a 2000
+-167 a
+SDict begin [/View [/XYZ H.V]/Dest (Item.9) cvn /DEST pdfmark end
+ 2000 -167 a 0 TeXcolorgray 2074 -52 a Ft(7.)p
+0 TeXcolorgray 50 w(Feedback)36 b(Circuit)e(for)j Fq(P)5
+b(M)32 b Fs(=)c Ft(51)p Fr(:)p Ft(9)3527 -88 y Fm(\016)2199
+64 y Fl(Solution:)p 0 TeXcolorgray 2000 155 a
+SDict begin H.S end
+ 2000 155
+a 2000 155 a
 SDict begin 13.92 H.A end
  2000 155 a 2000 155 a
 SDict begin [/View [/XYZ H.V]/Dest (figure.caption.4) cvn /DEST pdfmark
 end
- 2000
-155 a 0 TeXcolorgray 0 TeXcolorgray 2000 1718 a
+ 2000 155 a 0 TeXcolorgray
+0 TeXcolorgray 2000 1718 a
  currentpoint currentpoint translate 1.20456 1.20456 scale neg exch
 neg exch translate
- 2000
-1718 a 2557 1584 a
+ 2000 1718 a 2557 1584 a
 
- 2557 1584 a 2557 1584 a
+ 2557
+1584 a 2557 1584 a
 
 
  pgfo
@@ -7740,8 +7733,7 @@ neg exch translate
  pgfs
 
 
- 2586 1584
-a Fc(\000)2557 1584 y
+ 2586 1584 a Fc(\000)2557 1584 y
 
 
  pgfr
@@ -7755,7 +7747,8 @@ a Fc(\000)2557 1584 y
  pgfs
 
 
- 2586 1584 a Fa(+)2557 1584 y
+ 2586
+1584 a Fa(+)2557 1584 y
 
 
  pgfr
@@ -7801,10 +7794,9 @@ a Fc(\000)2557 1584 y
  pgfs
 
 
- 2557
-1584 a
+
  0 setgray
- 2557 1584 a 2557 1584 a
+ 2557 1584 a
 
 
  pgfr
@@ -7873,13 +7865,13 @@ a Fc(\000)2557 1584 y
 
  -5.95285 21.2601 moveto
 
- -4.98253 22.784 -4.0539 24.23653 -2.97643 24.23653 curveto
+ -5.00542 22.7483 -4.06274 24.23653 -2.97643 24.23653 curveto
 
- -1.89896 24.23653 -0.97032 22.78401 0.0 21.2601 curveto
+ -1.8901 24.23653 -0.94743 22.7483 0.0 21.2601 curveto
 
- 0.9703 19.73619 1.89894 18.28368 2.97643 18.28368 curveto
+ 0.94742 19.77188 1.89009 18.28368 2.97643 18.28368 curveto
 
- 4.05388 18.28368 4.98251 19.73618 5.95285 21.2601 curveto
+ 4.06273 18.28368 5.0054 19.77188 5.95285 21.2601 curveto
 
  pgfstr
 
@@ -7894,10 +7886,9 @@ a Fc(\000)2557 1584 y
  pgfs
 
 
- 2557 1584 a
+
  0 setgray
- 2557 1584
-a 2557 1584 a
+ 2557 1584 a
 
 
  pgfr
@@ -7927,10 +7918,10 @@ a 2557 1584 a
  pgfs
 
 
- 2557 1584 a
+
  0 setgray
- 2557 1584 a Fq(V)2621 1599
-y Fo(s)2557 1584 y
+ 2557
+1584 a Fq(V)2621 1599 y Fo(s)2557 1584 y
 
 
  pgfr
@@ -7948,10 +7939,9 @@ y Fo(s)2557 1584 y
  pgfs
 
 
- 2557 1584 a
+
  0 setgray
- 2557 1584 a 2557 1584
-a
+ 2557 1584 a
 
 
  pgfr
@@ -8039,9 +8029,10 @@ a
  pgfs
 
 
- 2557 1584 a
+
  0 setgray
- 2557 1584 a 2557 1584 a
+
+2557 1584 a
 
 
  pgfr
@@ -8059,10 +8050,10 @@ a
  pgfs
 
 
- 2557 1584 a
+
  0 setgray
- 2557
-1584 a Fq(V)2628 1599 y Fo(f)2557 1584 y
+ 2557 1584 a Fq(V)2628 1599 y Fo(f)2557 1584
+y
 
 
  pgfr
@@ -8114,10 +8105,9 @@ a
  pgfs
 
 
- 2557 1584 a
- 0 setgray
 
-2557 1584 a 2557 1584 a
+ 0 setgray
+ 2557 1584 a
 
 
  pgfr
@@ -8151,10 +8141,9 @@ a
  pgfs
 
 
- 2557 1584 a
+
  0 setgray
- 2557 1584 a Ft(10)p
-Fs(\012)2557 1584 y
+ 2557 1584 a Ft(10)p Fs(\012)2557 1584 y
 
 
  pgfr
@@ -8172,10 +8161,10 @@ Fs(\012)2557 1584 y
  pgfs
 
 
- 2557 1584 a
+
  0 setgray
- 2557 1584 a 2557 1584
-a
+
+2557 1584 a
 
 
  pgfr
@@ -8239,9 +8228,9 @@ a
  pgfs
 
 
- 2557 1584 a
+
  0 setgray
- 2557 1584 a 2557 1584 a
+ 2557 1584 a
 
 
  pgfr
@@ -8259,10 +8248,9 @@ a
  pgfs
 
 
- 2557 1584 a
+
  0 setgray
- 2557
-1584 a 2557 1584 a
+ 2557 1584 a
 
 
  pgfr
@@ -8286,10 +8274,9 @@ a
  pgfs
 
 
- 2557 1584 a
+
  0 setgray
- 2557 1584 a 2557 1584
-a
+ 2557 1584 a
 
 
  pgfr
@@ -8307,10 +8294,10 @@ a
  pgfs
 
 
- 2557 1584 a
+
  0 setgray
- 2557 1584 a Fq(V)2618 1599 y Fo(o)2557
-1584 y
+ 2557
+1584 a Fq(V)2618 1599 y Fo(o)2557 1584 y
 
 
  pgfr
@@ -8394,9 +8381,9 @@ a
  pgfs
 
 
- 2557 1584 a
+
  0 setgray
- 2557 1584 a 2557 1584 a
+ 2557 1584 a
 
 
  pgfr
@@ -8430,10 +8417,10 @@ a
  pgfs
 
 
- 2557 1584
-a
+
  0 setgray
- 2557 1584 a Ft(990)p Fs(\012)2557 1584 y
+
+2557 1584 a Ft(990)p Fs(\012)2557 1584 y
 
 
  pgfr
@@ -8451,11 +8438,11 @@ a
  pgfc
 
 
- 2000 1718
-a
+ 2000 1718 a
  currentpoint currentpoint translate 1 1.20456 div 1 1.20456 div scale
 neg exch neg exch translate
- 2000 1718 a 0 TeXcolorgray 2925 1874 a Ft(Fig.)34 b(7)p
+
+2000 1718 a 0 TeXcolorgray 2925 1874 a Ft(Fig.)34 b(7)p
 0 TeXcolorgray 0 TeXcolorgray 2000 2021 a
 SDict begin H.S end
  2000 2021 a
@@ -16019,9 +16006,9 @@ a
  pgfs
 
 
- 2176 4619 a
+
  0 setgray
- 2176 4619 a 2176 4619 a
+ 2176 4619 a
 
 
  pgfr
@@ -16043,11 +16030,10 @@ a
  pgfs
 
 
- 2176 4619 a
+
  0 setgray
- 2176
-4619 a 2438 4579 a Fy(10)2504 4555 y Fj(5)p 2186 4596
-601 6 v 2186 4690 a Ft(\()2219 4683 y Fy(1)p Fx(+)2362
+ 2438 4579 a Fy(10)2504 4555 y Fj(5)p 2186
+4596 601 6 v 2186 4690 a Ft(\()2219 4683 y Fy(1)p Fx(+)2362
 4657 y Ff(s)p 2304 4668 133 4 v 2304 4706 a Fj(2)p Fg(\031)p
 Fe(\002)p Fj(10)2447 4690 y Ft(\))2480 4605 y Fd(\022)2505
 4683 y Fy(1)p Fx(+)2662 4657 y Ff(s)p 2590 4668 162 4
@@ -16078,11 +16064,11 @@ y(4)2761 4605 y Fd(\023)2176 4619 y
  pgfs
 
 
- 2176 4619 a
+
  0 setgray
- 2176
-4619 a Ft(1)p Fr(:)p Ft(414)21 b Fn(\002)i Ft(10)2608
-4583 y Fm(\000)p Fy(2)2176 4619 y
+ 2176 4619 a Ft(1)p
+Fr(:)p Ft(414)21 b Fn(\002)i Ft(10)2608 4583 y Fm(\000)p
+Fy(2)2176 4619 y
 
 
  pgfr
@@ -16117,10 +16103,9 @@ restore
  pgfs
 
 
- 2176 4619 a
+
  0 setgray
- 2176 4619
-a Fs(+)2176 4619 y
+ 2176 4619 a Fs(+)2176 4619 y
 
 
  pgfr
@@ -16138,10 +16123,10 @@ a Fs(+)2176 4619 y
  pgfs
 
 
- 2176 4619 a
+
  0 setgray
- 2176 4619 a Fq(V)2240
-4634 y Fo(s)2176 4619 y
+ 2176 4619
+a Fq(V)2240 4634 y Fo(s)2176 4619 y
 
 
  pgfr
@@ -16176,7 +16161,7 @@ restore
  pgfs
 
 
- 2176 4619 a
+
  0 setgray
  2176 4619 a Fq(V)2237
 4634 y Fo(i)2176 4619 y
@@ -16214,10 +16199,10 @@ restore
  pgfs
 
 
- 2176 4619 a
+
  0 setgray
- 2176 4619 a Fq(V)2237
-4634 y Fo(o)2176 4619 y
+ 2176 4619 a Fq(V)2237 4634 y
+Fo(o)2176 4619 y
 
 
  pgfr
@@ -16273,10 +16258,9 @@ restore
  pgfs
 
 
- 2176 4619 a
+
  0 setgray
- 2176 4619 a Fn(\000)2176
-4619 y
+ 2176 4619 a Fn(\000)2176 4619 y
 
 
  pgfr
@@ -16294,10 +16278,10 @@ restore
  pgfs
 
 
- 2176 4619 a
+
  0 setgray
- 2176 4619 a Fq(V)2247 4634 y Fo(f)2176
-4619 y
+ 2176
+4619 a Fq(V)2247 4634 y Fo(f)2176 4619 y
 
 
  pgfr
@@ -16318,9 +16302,10 @@ restore
  2000 5285 a
  currentpoint currentpoint translate 1 1.28366 div 1 1.28366 div scale
 neg exch neg exch translate
- 2000 5285 a 0 TeXcolorgray 2900 5440
-a Ft(Fig.)34 b(12)p 0 TeXcolorgray 0 TeXcolorgray 0 TeXcolorgray
-0 TeXcolorgray eop end
+
+2000 5285 a 0 TeXcolorgray 2900 5440 a Ft(Fig.)34 b(12)p
+0 TeXcolorgray 0 TeXcolorgray 0 TeXcolorgray 0 TeXcolorgray
+eop end
 %%Page: 4 4
 TeXDict begin 4 3 bop 0 TeXcolorgray 0 0 a
 SDict begin /product where{pop product(Distiller)search{pop pop pop
@@ -16493,9 +16478,9 @@ neg exch translate
 
 
 
-365 2766 a
  0 setgray
- 365 2766 a 365 2766 a
+
+365 2766 a
 
 
  pgfr
@@ -16564,13 +16549,13 @@ neg exch translate
 
  -5.95285 21.2601 moveto
 
- -4.98253 22.784 -4.0539 24.23653 -2.97643 24.23653 curveto
+ -5.00542 22.7483 -4.06274 24.23653 -2.97643 24.23653 curveto
 
- -1.89896 24.23653 -0.97032 22.78401 0.0 21.2601 curveto
+ -1.8901 24.23653 -0.94743 22.7483 0.0 21.2601 curveto
 
- 0.9703 19.73619 1.89894 18.28368 2.97643 18.28368 curveto
+ 0.94742 19.77188 1.89009 18.28368 2.97643 18.28368 curveto
 
- 4.05388 18.28368 4.98251 19.73618 5.95285 21.2601 curveto
+ 4.06273 18.28368 5.0054 19.77188 5.95285 21.2601 curveto
 
  pgfstr
 
@@ -16585,10 +16570,9 @@ neg exch translate
  pgfs
 
 
- 365 2766 a
+
  0 setgray
- 365 2766
-a 365 2766 a
+ 365 2766 a
 
 
  pgfr
@@ -16618,7 +16602,7 @@ a 365 2766 a
  pgfs
 
 
- 365 2766 a
+
  0 setgray
  365 2766 a Fq(V)429 2781 y Fo(s)365
 2766 y
@@ -16639,9 +16623,9 @@ a 365 2766 a
  pgfs
 
 
- 365 2766 a
+
  0 setgray
- 365 2766 a 365 2766 a
+ 365 2766 a
 
 
  pgfr
@@ -16729,10 +16713,9 @@ a 365 2766 a
  pgfs
 
 
- 365 2766 a
+
  0 setgray
- 365
-2766 a 365 2766 a
+ 365 2766 a
 
 
  pgfr
@@ -16750,7 +16733,7 @@ a 365 2766 a
  pgfs
 
 
- 365 2766 a
+
  0 setgray
  365 2766 a Fq(V)436 2781
 y Fo(f)365 2766 y
@@ -16805,9 +16788,9 @@ y Fo(f)365 2766 y
  pgfs
 
 
- 365 2766 a
+
  0 setgray
- 365 2766 a 365 2766 a
+ 365 2766 a
 
 
  pgfr
@@ -16841,10 +16824,10 @@ y Fo(f)365 2766 y
  pgfs
 
 
- 365
-2766 a
+
  0 setgray
- 365 2766 a Ft(10)p Fs(\012)365 2766 y
+ 365 2766 a Ft(10)p Fs(\012)365
+2766 y
 
 
  pgfr
@@ -16862,10 +16845,9 @@ y Fo(f)365 2766 y
  pgfs
 
 
- 365 2766
-a
+
  0 setgray
- 365 2766 a 365 2766 a
+ 365 2766 a
 
 
  pgfr
@@ -16929,10 +16911,9 @@ a
  pgfs
 
 
- 365 2766 a
+
  0 setgray
- 365 2766 a 365 2766
-a
+ 365 2766 a
 
 
  pgfr
@@ -16950,9 +16931,9 @@ a
  pgfs
 
 
- 365 2766 a
+
  0 setgray
- 365 2766 a 365 2766 a
+ 365 2766 a
 
 
  pgfr
@@ -16976,10 +16957,9 @@ a
  pgfs
 
 
- 365 2766 a
+
  0 setgray
- 365 2766
-a 365 2766 a
+ 365 2766 a
 
 
  pgfr
@@ -16997,10 +16977,10 @@ a 365 2766 a
  pgfs
 
 
- 365 2766 a
+
  0 setgray
- 365 2766 a Fq(V)426 2781 y Fo(o)365
-2766 y
+ 365
+2766 a Fq(V)426 2781 y Fo(o)365 2766 y
 
 
  pgfr
@@ -17084,9 +17064,9 @@ a 365 2766 a
  pgfs
 
 
- 365 2766 a
+
  0 setgray
- 365 2766 a 365 2766 a
+ 365 2766 a
 
 
  pgfr
@@ -17120,7 +17100,7 @@ a 365 2766 a
  pgfs
 
 
- 365 2766 a
+
  0 setgray
  365
 2766 a Ft(700)p Fs(\012)365 2766 y
@@ -20312,173 +20292,174 @@ SDict begin H.R end
 a
 SDict begin [/View [/XYZ H.V]/Dest (page.5) cvn /DEST pdfmark end
  -200 -445 a 0 TeXcolorgray 4059 -337 a Fy(5)p 0 TeXcolorgray
-7 -52 a Ft(F)o(or)35 b(the)g(gi)n(v)o(en)e(GH)143 167
+7 -52 a Ft(F)o(or)35 b(the)g(gi)n(v)o(en)e(GH)658 167
 y
  save /setgray { pop } def
- 143 167 a @beginspecial @setspecial
+ 658 167 a @beginspecial @setspecial
   0.99626401 0.99626401 scale 0.2 0 moveto 0 0.11044 -0.08955 0.2 -0.2
 0.2 rcurveto -0.11044 0 -0.2 -0.08955 -0.2 -0.2 rcurveto 0 -0.11044
 0.08955 -0.2 0.2 -0.2 rcurveto 0.11044 0 0.2 0.08955 0.2 0.2 rcurveto
 closepath fill
  
-@endspecial 143
+@endspecial 658
 167 a
  restore
- 143 167 a 143 167 a
+ 658 167 a 658 167 a
  save /setgray { pop } def
- 143 167 a @beginspecial @setspecial
+ 658 167 a @beginspecial @setspecial
   0.99626401 0.99626401 scale 0.6 setlinewidth  0 0 moveto 54.159 0
 lineto stroke
 
 
-@endspecial 143 167 a
+@endspecial 658 167 a
  restore
- 143 167 a 143 167 a
+ 658 167 a 658 167 a
  save /setgray { pop } def
- 143 167 a
+ 658 167 a
 @beginspecial @setspecial
   0.99626401 0.99626401 scale 0.6 setlinewidth  0 0 moveto 6.231 12.462
 lineto stroke
  
-@endspecial 143 167 a
+@endspecial 658 167 a
  restore
- 143
-167 a 0 TeXcolorgray 193 134 a Fq(G)r Ft(\()15 b Fq(f)g
+ 658
+167 a 0 TeXcolorgray 708 134 a Fq(G)r Ft(\()15 b Fq(f)g
 Ft(\))r Fq(H)t Ft(\()g Fq(f)g Ft(\))p 0 TeXcolorgray
-621 131 a Fs(=)712 167 y
+1136 131 a Fs(=)1227 167 y
  save /setgray { pop } def
- 712 167 a @beginspecial @setspecial
+ 1227 167 a @beginspecial @setspecial
   0.99626401 0.99626401 scale 0.2 0 moveto 0 0.11044 -0.08955 0.2 -0.2
 0.2 rcurveto -0.11044 0 -0.2 -0.08955 -0.2 -0.2 rcurveto 0 -0.11044
 0.08955 -0.2 0.2 -0.2 rcurveto 0.11044 0 0.2 0.08955 0.2 0.2 rcurveto
 closepath fill
 
 
-@endspecial 712 167 a
+@endspecial 1227 167 a
  restore
- 712 167 a 712 167 a
+ 1227 167 a 1227 167 a
  save /setgray { pop } def
- 712 167 a
-@beginspecial @setspecial
+ 1227 167
+a @beginspecial @setspecial
   0.99626401 0.99626401 scale 0.6 setlinewidth  0 0 moveto 29.77501
 0 lineto stroke
  
-@endspecial 712 167 a
+@endspecial 1227 167 a
  restore
- 712
-167 a 712 167 a
+ 1227
+167 a 1227 167 a
  save /setgray { pop } def
- 712 167 a @beginspecial @setspecial
+ 1227 167 a @beginspecial @setspecial
   0.99626401 0.99626401 scale 0.6 setlinewidth  0 0 moveto 6.231 12.462
 lineto stroke
- 
-@endspecial
-712 167 a
+
+
+@endspecial 1227 167 a
  restore
- 712 167 a 0 TeXcolorgray 762 134 a Fq(G)r Ft(\()g
-Fq(f)g Ft(\))p 0 TeXcolorgray 1659 131 a
-SDict begin H.S end
- 1659 131 a 1659
+ 1227 167 a 0 TeXcolorgray 1276
+134 a Fq(G)r Ft(\()g Fq(f)g Ft(\))p 0 TeXcolorgray 1659
 131 a
+SDict begin H.S end
+ 1659 131 a 1659 131 a
 SDict begin 17.4 H.A end
  1659 131 a 1659 131 a
 SDict begin [/View [/XYZ H.V]/Dest (equation.19.3) cvn /DEST pdfmark
 end
- 1659 131 a Ft(\(17.3\))621
-341 y Fs(=)28 b Fn(\000)17 b Ft(tan)914 299 y Fm(\000)p
-Fy(1)1010 200 y Fk( )1094 273 y Fq(f)p 1058 318 100 6
-v 1058 409 a Ft(10)1167 200 y Fk(!)1228 341 y Fn(\000)22
-b Ft(tan)1435 299 y Fm(\000)p Fy(1)1531 200 y Fk( )1634
-273 y Fq(f)p 1579 318 137 6 v 1579 409 a Ft(10)1679 380
-y Fy(4)1726 200 y Fk(!)1659 516 y
+ 1659
+131 a Ft(\(17.3\))221 341 y Fs(=)-14 b Fn(\))56 b(\000)17
+b Ft(tan)623 299 y Fm(\000)p Fy(1)719 200 y Fk( )804
+273 y Fq(f)p 768 318 100 6 v 768 409 a Ft(10)877 200
+y Fk(!)937 341 y Fn(\000)23 b Ft(tan)1145 299 y Fm(\000)p
+Fy(1)1241 200 y Fk( )1344 273 y Fq(f)p 1289 318 137 6
+v 1289 409 a Ft(10)1389 380 y Fy(4)1436 200 y Fk(!)1659
+341 y
 SDict begin H.S end
- 1659 516 a 1659 516
-a
+ 1659 341 a 1659 341 a
 SDict begin 17.4 H.A end
- 1659 516 a 1659 516 a
+ 1659 341 a 1659 341 a
 SDict begin [/View [/XYZ H.V]/Dest (equation.19.4) cvn /DEST pdfmark
 end
- 1659 516 a Ft(\(17.4\))7 686
-y(At)50 b Fq(f)42 b Fs(=)28 b Fn(1)244 905 y
+ 1659
+341 a Ft(\(17.4\))7 570 y(At)50 b Fq(f)42 b Fs(=)28 b
+Fn(1)244 789 y
  save /setgray { pop } def
- 244 905
+ 244 789 a @beginspecial @setspecial
+  0.99626401 0.99626401 scale 0.2 0 moveto 0 0.11044 -0.08955 0.2 -0.2
+0.2 rcurveto -0.11044 0 -0.2 -0.08955 -0.2 -0.2 rcurveto 0 -0.11044
+0.08955 -0.2 0.2 -0.2 rcurveto 0.11044 0 0.2 0.08955 0.2 0.2 rcurveto
+closepath fill
+ 
+@endspecial
+244 789 a
+ restore
+ 244 789 a 244 789 a
+ save /setgray { pop } def
+ 244 789 a @beginspecial
+@setspecial
+  0.99626401 0.99626401 scale 0.6 setlinewidth  0 0 moveto 29.77501
+0 lineto stroke
+ 
+@endspecial 244 789 a
+ restore
+ 244 789 a 244 789
+a
+ save /setgray { pop } def
+ 244 789 a @beginspecial @setspecial
+  0.99626401 0.99626401 scale 0.6 setlinewidth  0 0 moveto 6.231 12.462
+lineto stroke
+ 
+@endspecial 244
+789 a
+ restore
+ 244 789 a 0 TeXcolorgray 294 756 a Fq(G)r Ft(\()15
+b Fq(f)g Ft(\))p 0 TeXcolorgray 519 753 a Fs(=)28 b Fn(\000)p
+Ft(90)773 712 y Fm(\016)832 753 y Fn(\000)23 b Ft(90)1018
+712 y Fm(\016)1082 753 y Fs(=)28 b Fn(\000)p Ft(180)1386
+712 y Fm(\016)1659 753 y
+SDict begin H.S end
+ 1659 753 a 1659 753 a
+SDict begin 17.4 H.A end
+ 1659 753
+a 1659 753 a
+SDict begin [/View [/XYZ H.V]/Dest (equation.19.5) cvn /DEST pdfmark
+end
+ 1659 753 a Ft(\(17.5\))7 936 y(So)39 b(there)f(will)g(be)g
+(no)g(positi)n(v)o(e)e(f)j(where)1555 972 y
+ save /setgray { pop } def
+ 1555 972
 a @beginspecial @setspecial
   0.99626401 0.99626401 scale 0.2 0 moveto 0 0.11044 -0.08955 0.2 -0.2
 0.2 rcurveto -0.11044 0 -0.2 -0.08955 -0.2 -0.2 rcurveto 0 -0.11044
 0.08955 -0.2 0.2 -0.2 rcurveto 0.11044 0 0.2 0.08955 0.2 0.2 rcurveto
 closepath fill
  
-@endspecial 244 905 a
+@endspecial 1555 972 a
  restore
- 244
-905 a 244 905 a
+ 1555
+972 a 1555 972 a
  save /setgray { pop } def
- 244 905 a @beginspecial @setspecial
+ 1555 972 a @beginspecial @setspecial
   0.99626401 0.99626401 scale 0.6 setlinewidth  0 0 moveto 29.77501
 0 lineto stroke
- 
-@endspecial
-244 905 a
+
+
+@endspecial 1555 972 a
  restore
- 244 905 a 244 905 a
+ 1555 972 a 1555 972 a
  save /setgray { pop } def
- 244 905 a @beginspecial
-@setspecial
+ 1555 972
+a @beginspecial @setspecial
   0.99626401 0.99626401 scale 0.6 setlinewidth  0 0 moveto 6.231 12.462
 lineto stroke
  
-@endspecial 244 905 a
+@endspecial 1555 972 a
  restore
- 244 905 a 0 TeXcolorgray
-294 872 a Fq(G)r Ft(\()15 b Fq(f)g Ft(\))p 0 TeXcolorgray
-519 868 a Fs(=)28 b Fn(\000)p Ft(90)773 827 y Fm(\016)832
-868 y Fn(\000)23 b Ft(90)1018 827 y Fm(\016)1082 868
-y Fs(=)28 b Fn(\000)p Ft(180)1386 827 y Fm(\016)1659
-868 y
-SDict begin H.S end
- 1659 868 a 1659 868 a
-SDict begin 17.4 H.A end
- 1659 868 a 1659 868 a
-SDict begin [/View [/XYZ H.V]/Dest (equation.19.5) cvn /DEST pdfmark
-end
- 1659
-868 a Ft(\(17.5\))7 1051 y(So)39 b(there)f(will)g(be)g(no)g(positi)n(v)
-o(e)e(f)j(where)1555 1087 y
- save /setgray { pop } def
- 1555 1087 a @beginspecial
-@setspecial
-  0.99626401 0.99626401 scale 0.2 0 moveto 0 0.11044 -0.08955 0.2 -0.2
-0.2 rcurveto -0.11044 0 -0.2 -0.08955 -0.2 -0.2 rcurveto 0 -0.11044
-0.08955 -0.2 0.2 -0.2 rcurveto 0.11044 0 0.2 0.08955 0.2 0.2 rcurveto
-closepath fill
- 
-@endspecial 1555 1087 a
- restore
- 1555 1087 a 1555
-1087 a
- save /setgray { pop } def
- 1555 1087 a @beginspecial @setspecial
-  0.99626401 0.99626401 scale 0.6 setlinewidth  0 0 moveto 29.77501
-0 lineto stroke
- 
-@endspecial
-1555 1087 a
- restore
- 1555 1087 a 1555 1087 a
- save /setgray { pop } def
- 1555 1087 a @beginspecial
-@setspecial
-  0.99626401 0.99626401 scale 0.6 setlinewidth  0 0 moveto 6.231 12.462
-lineto stroke
- 
-@endspecial 1555 1087 a
- restore
- 1555 1087 a 0 TeXcolorgray
-1605 1054 a Fq(G)r Ft(\()15 b Fq(f)g Ft(\))p 0 TeXcolorgray
-1837 1051 a Fr(<)7 1167 y Fn(\000)p Ft(180)220 1131 y
-Fm(\016)7 1282 y Ft(Hence,the)55 b(system)e(is)g(stable)h(for)h(an)o(y)
-e(constant)7 1398 y(feedback)36 b(gain)e(H)p 0 TeXcolorgray
-0 TeXcolorgray 0 TeXcolorgray 0 TeXcolorgray eop end
+ 1555
+972 a 0 TeXcolorgray 1605 939 a Fq(G)r Ft(\()15 b Fq(f)g
+Ft(\))p 0 TeXcolorgray 1837 936 a Fr(<)7 1051 y Fn(\000)p
+Ft(180)220 1015 y Fm(\016)7 1167 y Ft(Hence,the)55 b(system)e(is)g
+(stable)h(for)h(an)o(y)e(constant)7 1282 y(feedback)36
+b(gain)e(H)p 0 TeXcolorgray 0 TeXcolorgray 0 TeXcolorgray
+0 TeXcolorgray eop end
 %%Trailer
 
 userdict /end-hook known{end-hook}if

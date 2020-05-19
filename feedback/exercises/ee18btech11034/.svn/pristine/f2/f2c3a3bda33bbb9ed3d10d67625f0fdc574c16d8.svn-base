@@ -1,5 +1,5 @@
 Consider an op amp having a single pole open loop response $G_{0} = 10^5$ and $f_{p} = 10$ Hz.  Let the OPAMP be ideal connected in non-inverting terminal with a nominal low frequency of closed loop gain of 100 
-\begin{enumerate}[label=(\alph*)]
+\begin{enumerate}
 \item A manufacturing error introducing a second pole at $10$ kHz. Find the frequency at which $\abs{GH} = 1$ and the corresponding phase margin.
 \item For what values of $H$ is the phase margin greater than 45\degree ?
 \end{enumerate}
@@ -296,9 +296,9 @@ PM < 0\degree\\
 \end{align}
 For the given GH
 \begin{align}
-\phase{G(f)H(f)} &= \phase{G(f)}
+\phase{G(f)H(f)} = \phase{G(f)}
 \\
-&= -\tan^{-1}\brak{\frac{f}{10}} -\tan^{-1}\brak{\frac{f}{10^{4}}}
+\implies -\tan^{-1}\brak{\frac{f}{10}} -\tan^{-1}\brak{\frac{f}{10^{4}}}
 \end{align}
 At $f = \infty$
 \begin{align}

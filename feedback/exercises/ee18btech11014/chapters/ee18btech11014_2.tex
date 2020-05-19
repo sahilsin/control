@@ -93,7 +93,7 @@ So, for
 \solution
 \begin{align}
 \abs{G(f_{\pi})} &= 320 - 40\log(f_{\pi})\\
- &= 59 dB = 896
+ &= 59 dB = 896\\
 H &= 1.11 \times 10^{-3} \brak{\because \abs{G(f_{\pi})H} = 1}
 \end{align}
 
@@ -106,10 +106,44 @@ Thus,
 \item $H < 1.11 \times 10^{-3}$, System is Stable
 \end{itemize}
 
-\item Verify the stablity from the value of $H$\\
-\solution
-Run the following code to verify the results
+\item Verify the stablity from the value of $H=9.9\times 10^{-3}$\\
+\solution\\
+\textbf{System is Unstable} as $H>1.11\times 10^{-3}$.
+
+Run the following code to verify the stablity of the system
 \begin{lstlisting}
 codes/ee18btech11014/Stability.py
 \end{lstlisting}
+
+\item Using ngspice, find the Unit-Step Response for System for $H=9.9\times 10^{-3}$\\
+\solution\\
+ At $H=9.9\times 10^{-3}$, the Phase-Margin($\alpha$) of the system is
+\begin{align}
+\alpha \approx -38.5^{\circ}
+\end{align}
+So the system is \textbf{Unstable}.
+
+Check the following spice file for circuit.
+\begin{lstlisting}
+spice/ee18btech11014/ee18btech11014_3.net
+\end{lstlisting}
+
+Following are the instructions to run the spice file.
+\begin{lstlisting}
+spice/ee18btech11014/README.md
+\end{lstlisting}
+
+Run the following code to see the Unit Step Response of Closed-Loop System for $H=9.9\times 10^{-3}$.
+\begin{lstlisting}
+spice/ee18btech11014/EE18BTECH11014_Simulation-3.py
+\end{lstlisting}
+
+The Unit-Step Response is Fig. \ref{fig:Unstable System}
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{./figs/ee18btech11014/ee18btech11014_Spice_Result.eps}
+	\end{center}
+	\caption{}
+	\label{fig:Unstable System}
+\end{figure}
 \end{enumerate}

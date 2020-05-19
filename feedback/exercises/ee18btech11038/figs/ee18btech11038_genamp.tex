@@ -1,0 +1,19 @@
+\begin{circuitikz}[american]
+\tikzset{quad/.style={draw, minimum height=2.4cm, minimum width=4cm}}
+\node[quad] (A) at (0,0) {$Basic\quad Amp$};
+\draw ($(A.north west)!.175!(A.west)$) to[short] ++(-3,0)
+      ($(A.south west)!.175!(A.west)$) to[short] ++(-3,0)
+      ($(A.north east)!.175!(A.east)$) to[short] ++(1,0)
+      ($(A.south east)!.175!(A.east)$) to[short] ++(1,0);
+
+\draw (-4,-1) to[R,n=res1] (-4,1);
+\draw (-5,-1) -- (-6,-1);
+\draw (-5,1) -- (-6,1);
+\draw (-6,-1) -- (-7.5,-1) to[isource, l= $I_{i}$] (-7.5,1) -- (-6,1);
+\draw (-6,-1) to[R,n=res3] (-6,1);
+\draw (3,-1) to[R,n=res2] (5,-1) -- (6,-1) to[R=$R_{L}$] (6,1) -- (3,1);
+\draw (res1.s) node[right]{$R_{11}$};
+\draw (res3.s) node[right]{$R_{s}$};
+\draw (res2.s) node[below]{$R_{22}$};
+
+\end{circuitikz}

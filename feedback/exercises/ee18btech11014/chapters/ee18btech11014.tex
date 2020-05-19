@@ -32,7 +32,7 @@ G(f) =
 \end{cases}
 \end{align}
 
-As we know that, \textbf{When a pole is encountered the slope always decreases by 20 dB/decade} and \textbf{When a zero is encountered the slope always increases by 20 dB/decade}. So, by observing Fig. \ref{fig:ee18btech11014_Bode} it can be concluded that we are having Poles at $f=10^{5} Hz, 10^{6} Hz, 10^{7} Hz$ and No Zeros.\\
+As we know that, \textbf{When a pole is encountered the slope always decreases by 20 dB/decade} and \textbf{When a zero is encountered the slope always increases by 20 dB/decade}. So, by observing Fig.  \ref{fig:ee18btech11014_Bode} it can be concluded that we are having Poles at $f=10^{5} Hz, 10^{6} Hz, 10^{7} Hz$ and No Zeros.\\
 
 So, the Open-Loop Transfer Function $G(f)$ is
 \begin{align}
@@ -56,7 +56,7 @@ So, the Open-Loop Transfer Function $G(f)$ is
 Magnitude and Phase Bode Plots of $G(f)$ and comparing with \eqref{eq:ee18btech11014_G_piece}
 \\
 \solution
-See Fig.  \ref{fig:ee18btech11014_Bode Plot}
+See Fig.   \ref{fig:ee18btech11014_Bode Plot}
 \begin{figure}[ht!]
 	\begin{center}
 		\includegraphics[width=\columnwidth]{./figs/ee18btech11014/Bode_Plot.eps}
@@ -72,7 +72,7 @@ codes/ee18btech11014/Bode_Plot.py
 
 %-------------------------------------------------------------------------------------------------%
 %2.1.3
-\item Find the PM from  Fig. 	\ref{fig:ee18btech11014_Bode}, given that he feedback gain $H(f)$ is constant and given by 
+\item Find the PM from  Fig.  	\ref{fig:ee18btech11014_Bode}, given that he feedback gain $H(f)$ is constant and given by 
 \begin{align}
 20 \log \brak{\frac{1}{H(f) }} &= 85 dB
 \\
@@ -118,7 +118,7 @@ using \eqref{eq:ee18btech11014_f1} in \eqref{eq:ee18btech11014_G_ang}.
 \implies f_{\pi} &= 3.34 MHz
 \end{align}
 by solving \eqref{eq:ee18btech11014_G_ang}.
-From Fig. \ref{fig:ee18btech11014_Bode}, 
+From Fig.  \ref{fig:ee18btech11014_Bode}, 
 \begin{align}
 %\label{eq:ee18btech11014_G_f1}
 20 \log \abs{G(f_\pi)} &= 60 dB
@@ -145,7 +145,7 @@ From Fig. \ref{fig:ee18btech11014_Bode},
 \end{align}
 %
 The block diagram is available in 
-Fig. 	\ref{fig:ee18btech11014_RC Circuit_block}
+Fig.  	\ref{fig:ee18btech11014_RC Circuit_block}
 %
 \begin{figure}[ht!]
 	\begin{center}
@@ -157,7 +157,7 @@ Fig. 	\ref{fig:ee18btech11014_RC Circuit_block}
 
 %-------------------------------------------------------------------------------------------------%
 %2.1.9
-\item Find the Gain of RC-Circuit in Fig. \ref{fig:ee18btech11014_RC Circuit} and identify the pole location.
+\item Find the Gain of RC-Circuit in Fig.  \ref{fig:ee18btech11014_RC Circuit} and identify the pole location.
 \begin{figure}[ht!]
 	\begin{center}
 		\resizebox{\columnwidth/2}{!}{\input{./figs/ee18btech11014/ee18btech11014_figf.tex}}
@@ -194,12 +194,12 @@ s = -\frac{1}{RC}
 \solution \eqref{eq:ee18btech11014_Gs} can be expressed as
 %
 \begin{align}
-\because G(s) = \frac{G_0}{\brak{1+sC_1R_1}\brak{1+sC_2R_2}\brak{1+sC_3R_3}}
+\because G(s) = \frac{G_1 G_2 G_3}{\brak{1+sC_1R_1}\brak{1+sC_2R_2}\brak{1+sC_3R_3}}
 \end{align}
 %
 where the parameters are available in Table \ref{table:ee18btech11014_table1}.  Choosing an OPAMP of gain %
-$G_0$ and noting from \eqref{eqLee18btech11014_RC} that each of the blocks in Fig. 	\ref{fig:ee18btech11014_RC Circuit_block} can be realised through the RC circuit in Fig. 	\ref{fig:ee18btech11014_RC Circuit} with parameters in Table \ref{table:ee18btech11014_table1}, the circuit design is available in 
-Fig. 	\ref{fig:ee18btech11014_Open-Loop Circuit}. 
+$G_1$,$G_2$ and $G_3$ and noting from \eqref{eqLee18btech11014_RC} that each of the blocks in Fig.  	\ref{fig:ee18btech11014_RC Circuit_block} can be realised through the RC circuit in Fig.  	\ref{fig:ee18btech11014_RC Circuit} with parameters in Table \ref{table:ee18btech11014_table1}, the circuit design is available in 
+Fig.  	\ref{fig:ee18btech11014_Open-Loop Circuit}. 
 %
 \begin{table}[!ht]
 \centering
@@ -285,7 +285,7 @@ Fig. 	\ref{fig:ee18btech11014_Open-Loop Circuit}.
 %2.1.12
 \item Design a circuit for $H(s)$.
 \\
-\solution From \eqref{eq:ee18btech11014_H}, $H$ is constant and should not involve any Reactive Elements. The simplest way to realise $H$ is through a voltage divider as shown in Fig. 	\ref{fig:ee18btech11014_Feedback Circuit}.  Thus, 
+\solution From \eqref{eq:ee18btech11014_H}, $H$ is constant and should not involve any Reactive Elements. The simplest way to realise $H$ is through a voltage divider as shown in Fig.  	\ref{fig:ee18btech11014_Feedback Circuit}.  Thus, 
 \begin{align}
 H = \frac{R_{F}}{R_{F} + R_{M}} 
 \end{align}
@@ -318,7 +318,7 @@ with resistance values  available in Table \ref{table:ee18btech11014_tableH}.
 \item  Find the closed loop transfer function $T(s)$ and draw the equivalent circuit.
 \\
 \solution The closed loop circuit is easily obtained from Figs. 		\ref{fig:ee18btech11014_Open-Loop Circuit}
- and \ref{fig:ee18btech11014_Feedback Circuit} as shown in Fig. 	\ref{fig:ee18btech11014_Closed-Loop Circuit}
+ and \ref{fig:ee18btech11014_Feedback Circuit} as shown in Fig.  	\ref{fig:ee18btech11014_Closed-Loop Circuit}
 
 
 \begin{figure}[ht!]
@@ -362,7 +362,39 @@ T(s) &= \frac{G(s)}{1+G(s)H}
 &=\dfrac{10^5}{\left(1+\frac{s}{2\pi 10^{5}}\right)\left(1+\frac{s}{2\pi 10^{6}}\right)\left(1+\frac{s}{2\pi 10^{7}}\right)+5.623}
 \label{eq:ee18btech11014_Ts}
 \end{align}
-\item Using ngspice, find the output of Fig. 	\ref{fig:ee18btech11014_Closed-Loop Circuit} for a DC input and verify that $T(s)$ in \eqref{eq:ee18btech11014_Ts} is stable.
+%-------------------------------------------------------------------------------------------------%
+\item Using ngspice, find the output of Fig.  \ref{fig:ee18btech11014_Closed-Loop Circuit} for a DC input and verify that $T(s)$ in \eqref{eq:ee18btech11014_Ts} is stable.\\
+\solution\\
+Frequency of a DC Input is $0$. So, the Gain of the system for DC input should be
+\begin{align}
+f = 0\\
+s = 0\\
+T_{0} = T(0) = 15098.8
+\end{align} 
+Check the following spice file for circuit.
+\begin{lstlisting}
+spice/ee18btech11014/ee18btech11014_a.net
+\end{lstlisting}
 
+Following are the instructions to run the spice file.
+\begin{lstlisting}
+spice/ee18btech11014/README.md
+\end{lstlisting}
+
+Observe the results by running the Python Code
+\begin{lstlisting}
+spice/ee18btech11014/EE18BTECH11014_Simulation-a.py
+\end{lstlisting}
+
+The Response of Closed-Loop System for DC Signal as Input is Fig. \ref{fig:DC}
+\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{./figs/ee18btech11014/ee18btech11014_Spice_Result_PM=72.eps}
+	\end{center}
+	\caption{}
+	\label{fig:DC}
+\end{figure}
+
+The value of Gain($T_{0}$) from simulation is $14969.4763$. The Error with theoritically calculated value is $0.8645\%$
 
 \end{enumerate}

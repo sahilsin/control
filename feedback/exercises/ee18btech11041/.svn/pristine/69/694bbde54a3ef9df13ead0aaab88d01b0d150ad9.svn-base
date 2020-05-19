@@ -1,0 +1,233 @@
+\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+\item For a feedback transconductance amplifier in Fig \ref{fig:fig1}, derive an approximate expression for the closed loop transconductance T for the case of GH $\gg$1. Hence select a value of $R_2$ to obtain T=100 mA/V. If Q is biased to obtain $g_m$ = 1mA/V, specify  the value of the gian $\mu$ of the differential amplifier to obtain an amount of feedback of 60 dB. If Q has $r_o$ = 50 k$\ohm$ find the $R_{out}$.
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11041_1.tex}}
+	\end{center}
+\caption{Complete Circuit}
+\label{fig:fig1}
+\end{figure}
+
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11041_3.tex}}
+	\end{center}
+\caption{Small signal model}
+\label{fig:fig2}
+\end{figure}
+
+
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11041_4.tex}}
+	\end{center}
+\caption{Block Diagram}
+\label{fig:fig3}
+\end{figure}
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11041_7.tex}}
+	\end{center}
+\caption{Transconductance amplifier}
+\label{fig:fig4}
+\end{figure}
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11041_2.tex}}
+	\end{center}
+\caption{Feedback Circuit}
+\label{fig:fig5}
+\end{figure}
+
+
+
+
+\begin{align}
+H = \frac{V_f}{I_o}
+\label{eq: eq1}
+\end{align}
+
+From Fig.\ref{fig:fig4}
+\begin{align}
+    V_x = ((R_2 + R_3) \| R_1) I_o 
+    \label{eq: eq2}
+\end{align} 
+
+\begin{align}
+V_f = I_f R_3
+\label{eq: eq3}
+\end{align} 
+\begin{align}
+V_x - V_f = R_2 I_f
+\label{eq: eq4}
+\end{align} 
+
+From equations \ref{eq: eq1} to \ref{eq: eq4} we get
+
+\begin{align}
+    H = \frac{V_f}{I_o}=\frac{R_1 R_3}{R_1+R_2+R_3}
+    \label{eq:eq5}
+\end{align}
+
+As GH $\gg$ 1 ,
+
+
+\begin{align}
+    T = \frac{1}{H}
+    \label{eq:eq6}
+\end{align}
+
+
+\begin{align}
+    T = \frac{R_1+R_2+R_3}{R_1 R_3}
+    \label{eq:eq6}
+\end{align}
+
+For T = 100 mA/V,
+
+\begin{align}
+    R_2 = 800 \ohm
+    \label{eq:eq7}
+\end{align}
+\begin{align}
+\implies H=10
+\end{align}
+
+
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11041_5.tex}}
+	\end{center}
+\caption{Block Diagram of G}
+\label{fig:fig6}
+\end{figure}
+
+
+
+\begin{align}
+    R_{11} = (R_2+R_1)\|R_3)
+\end{align}
+
+\begin{align}
+    R_{22} = (R_2+R_3)\|R_1)
+\end{align}
+
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11041_6.tex}}
+	\end{center}
+\caption{Gain equivalent circuit}
+\label{fig:fig7}
+\end{figure}
+
+
+\begin{align}
+    G = \frac{I_o}{V_i} 
+    \label{eq;eq8}
+\end{align}
+
+From Fig. \ref{fig:fig6} we can see that
+ 
+\begin{align}
+    V_{gs} = \mu V_i - V_x
+    \label{eq;eq9}
+\end{align}
+
+\begin{align}
+    g_mV_{gs} - \frac{V_x}{r_o} = I_o
+    \label{eq;eq10}
+\end{align}
+
+From equations \ref{eq;eq9} to \ref{eq;eq10}
+\begin{align}
+    G = \frac{I_o}{V_i} = \frac{g_m \mu r_o}{r_o + (1+g_m r_o)((R_2+R_3)\|R_1) }
+    \label{eq:eq11}
+\end{align}
+
+
+Given GH = 60dB,
+\begin{align}
+    20\log_{10} GH = 60 dB
+    \label{eq:eq12}
+\end{align}
+
+\begin{align}
+\implies G=100
+\end{align}
+
+Substituting the values in the Eq. \ref{eq:eq11}
+\begin{align}
+    \mu = 109180
+\end{align}
+
+
+For output reistance,
+\begin{align}
+    R_o = r_o + g_m r_o((R_2+R_3)\|R_1) + ((R_2+R_3)\|R_1)    
+    \label{eq:eq13}
+\end{align}
+Substituting the values in Eq.\ref{eq:eq13} 
+\begin{align}
+    R_o=54.59k\ohm
+\end{align}
+\begin{align}
+R_{out} = R_o(1+GH)    
+\end{align}
+
+$\implies$  $R_{out}$ = 54.64 M$\ohm$
+
+
+\begin{table}[!ht]
+\centering
+\input{./tables/table_1.tex}
+\caption{}
+\label{table: Output_Table}
+\end{table}
+ 
+    
+The following code generates the values
+\begin{lstlisting}
+codes/ee18btech11041.py
+\end{lstlisting}
+
+The following code generates results from spice solution
+
+\begin{lstlisting}
+codes/spice/ee18btech11041_spice.py
+\end{lstlisting}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/H1.eps}
+\caption{}
+\label{fig:fig8}
+\end{figure}
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/G1.eps}
+\caption{}
+\label{fig:fig9}
+\end{figure}
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/T1.eps}
+\caption{}
+\label{fig:fig10}
+\end{figure}
+
+
+\end{enumerate}

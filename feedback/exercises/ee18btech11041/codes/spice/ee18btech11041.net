@@ -1,0 +1,20 @@
+* Spice netlister for gnetlist
+V1 vid 0 AC 10m 0
+R3 vf 0 100
+R2 vs vf 800
+E1 vg 0 vid vf 109180
+R5 N001 vg 10000000
+R1 vs 0 100
+R6 0 vs 50k
+R4 vid vf 10000000
+G1 0 vs N001 vs 1m
+.ac lin 100 50k 100k
+.control
+run
+
+wrdata plotdata V(vf)/  ((V(vg) - V(vs))*0.001-(V(vs)/50k) ) 
+wrdata plotdata2 ((V(vg) - V(vs))*0.001-(V(vs)/50k) )/ (V(vid)-V(vf)) 
+wrdata plotdata3 ((V(vg) - V(vs))*0.001-(V(vs)/50k) )/ (V(vid)) 
+
+.endc 
+.end

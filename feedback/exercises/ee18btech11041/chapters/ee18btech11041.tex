@@ -1,0 +1,218 @@
+For a feedback transconductance amplifier in Fig \ref{fig:ee18btech11041_fig1}, derive an approximate expression for the closed loop transconductance T for the case of GH $\gg$1. Hence select a value of $R_2$ to obtain T=100 mA/V. If Q is biased to obtain $g_m$ = 1mA/V, specify  the value of the gian $\mu$ of the differential amplifier to obtain an amount of feedback of 60 dB. If Q has $r_o$ = 50 k$\ohm$ find the $R_{out}$.
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11041_1.tex}}
+	\end{center}
+\caption{Complete Circuit}
+\label{fig:ee18btech11041_fig1}
+\end{figure}
+\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+
+\item Draw the small signal model for Fig. \ref{fig:ee18btech11041_fig1}
+%
+\\
+\solution See Fig. \ref{fig:ee18btech11041_fig2}
+
+
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11041_3.tex}}
+	\end{center}
+\caption{Small signal model}
+\label{fig:ee18btech11041_fig2}
+\end{figure}
+
+\item Draw the block diagram and the transconductance freedback model.
+\\
+\solution See Figs. \ref{fig:ee18btech11041_fig3} and \ref{fig:ee18btech11041_fig3}
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11041_4.tex}}
+	\end{center}
+\caption{Block Diagram}
+\label{fig:ee18btech11041_fig3}
+\end{figure}
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11041_7.tex}}
+	\end{center}
+\caption{Transconductance amplifier}
+\label{fig:ee18btech11041_fig4}
+\end{figure}
+%
+\item  Draw the feedback circuit for $H$ and compute it.
+\\
+\solution From Fig. \ref{fig:ee18btech11041_fig5}, using current division,
+%
+\begin{align}
+V_f &= I_o \times \frac{R_1}{R_1+R_2+R_3}\times R_3
+\\
+\implies 
+H &= \frac{V_f}{I_o}
+\\
+&= \frac{R_1 R_3}{R_1+R_2+R_3}
+\end{align}
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11041_2.tex}}
+	\end{center}
+\caption{Feedback Circuit}
+\label{fig:ee18btech11041_fig5}
+\end{figure}
+
+\item For $GH \gg 1,T = 100$ mA/V, find $H$ and $R_2$.
+\\
+\solution 
+
+\begin{align}
+    T &\approx \frac{1}{H}
+    \label{eq:ee18btech11041_eq6}
+\\
+     &= \frac{R_1+R_2+R_3}{R_1 R_3}
+\\
+\implies     R_2 &= 800 \ohm \quad \text{and}
+    \label{eq:ee18btech11041_eq7}
+\\
+ H &=10
+\end{align}
+
+\item Find $R_{11}$ and $R_{22}$ in Fig. \ref{fig:ee18btech11041_fig6}
+\\
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11041_5.tex}}
+	\end{center}
+\caption{Block Diagram of G}
+\label{fig:ee18btech11041_fig6}
+\end{figure}
+\solution  From Fig. \ref{fig:ee18btech11041_fig5},
+%
+\begin{align}
+    R_{11} = (R_2+R_1)\parallel R_3
+\end{align}
+
+\begin{align}
+    R_{22} = (R_2+R_3) \parallel R_1
+\end{align}
+
+\item Draw the equivalent circuit for $G$ and find it.
+\\
+\solution 
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11041_6.tex}}
+	\end{center}
+\caption{Gain equivalent circuit}
+\label{fig:ee18btech11041_fig7}
+\end{figure}
+\begin{align}
+    G = \frac{I_o}{V_i} 
+    \label{eq;eq8}
+\end{align}
+
+From Fig. \ref{fig:ee18btech11041_fig6} we can see that
+ 
+\begin{align}
+    V_{gs} = \mu V_i - V_x
+    \label{eq;eq9}
+\end{align}
+
+\begin{align}
+    g_mV_{gs} - \frac{V_x}{r_o} = I_o
+    \label{eq;eq10}
+\end{align}
+
+From equations \ref{eq;eq9} to \ref{eq;eq10}
+\begin{align}
+    G = \frac{I_o}{V_i} = \frac{g_m \mu r_o}{r_o + (1+g_m r_o)((R_2+R_3) \parallel R_1) }
+    \label{eq:ee18btech11041_eq11}
+\end{align}
+\item If GH = 60dB, find $\mu$.
+\\
+\solution 
+\begin{align}
+    20\log_{10} GH &= 60 
+    \label{eq:ee18btech11041_eq12}
+\\
+\implies G&=100
+\end{align}
+
+Substituting the values in the Eq. \ref{eq:ee18btech11041_eq11}
+\begin{align}
+    \mu = 109180
+\end{align}
+%
+%\item Find $R_{out}$.
+%\\
+%\solution 
+%For output reistance,
+%\begin{align}
+%    R_o = r_o + g_m r_o((R_2+R_3) \parallel R_1) + ((R_2+R_3) \parallel R_1)    
+%    \label{eq:ee18btech11041_eq13}
+%\end{align}
+%Substituting the values in Eq.\ref{eq:ee18btech11041_eq13} 
+%\begin{align}
+%    R_o=54.59k\ohm
+%\end{align}
+%\begin{align}
+%R_{out} = R_o(1+GH)    
+%\end{align}
+%
+%$\implies$  $R_{out}$ = 54.64 M$\ohm$
+
+
+%\begin{table}[!ht]
+%\centering
+%\input{./tables/table_1.tex}
+%\caption{}
+%\label{table: Output_Table}
+%\end{table}
+% 
+
+    
+The following code generates the values
+\begin{lstlisting}
+codes/ee18btech11041.py
+\end{lstlisting}
+
+\item Verify your results using spice.
+\\
+\solution
+The following code generates results from spice solution
+
+\begin{lstlisting}
+codes/spice/ee18btech11041_spice.py
+\end{lstlisting}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/H1.eps}
+\caption{}
+\label{fig:ee18btech11041_fig8}
+\end{figure}
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/G1.eps}
+\caption{}
+\label{fig:ee18btech11041_fig9}
+\end{figure}
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/T1.eps}
+\caption{}
+\label{fig:ee18btech11041_fig10}
+\end{figure}
+
+
+\end{enumerate}

@@ -1,19 +1,27 @@
-import numpy as np  
-from matplotlib import pyplot as plt  
+# -*- coding: utf-8 -*-
+import numpy as np
+import matplotlib.pyplot as plt
 
 #if using termux
 import subprocess
 import shlex
-#end if
+#end
 
-# plotting the ngspice output 
+#T = 0.0313905 - 0.03062
+#f = 1/T
+#print(f)
 
-data=np.loadtxt('Vout.dat')  
-plt.plot(data[:,0],data[:,1])  
+#Loading the data
+data = np.loadtxt( './codes/es17btech11002/spice/es17btech11002.dat' )
+#PLotting the data from spice simulation
+plt.plot(data[:,0],data[:,1])
 plt.grid()
-plt.xlabel("time")
-plt.ylabel("Vout")
+plt.xlabel('time')
+plt.ylabel('Vout')
 plt.title('Output from Oscillator')
+plt.legend()
+
+
 
 #if using termux
 plt.savefig('./figs/es17btech11002/es17btech11002_spice.pdf')

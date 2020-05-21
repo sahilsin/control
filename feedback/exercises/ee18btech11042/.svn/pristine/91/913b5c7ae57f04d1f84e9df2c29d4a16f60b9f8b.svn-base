@@ -1,0 +1,17 @@
+\begin{circuitikz}[american]
+    
+    \ctikzset{tripoles/mos style/arrows}
+    \draw(0,0) to [resistor,l = $R_s$] (2,0) --(3,0)--(3,-1) to [resistor,l = $R_{id}$,v>=$V_1$](3,-3);
+    \draw (3,-3) to [resistor,l = $R_1//R_2$] (0,-3);
+    \draw(0,0) to [open,v>=$V_f$](0,-3);
+    \draw(3,0) to [open] (4,0);
+    \draw (4,0)--(5,0) to [resistor,l = $ r_o$] (6,0)--(6.5,0);
+    \draw(6.5,0) to [resistor,l = $R_1+R_2$](6.5,-3);
+    \draw(6.5,-3) node [ground]{};
+    \draw(6.5,0)--(8.5,0)to [resistor,l = $R_L$] (8.5,-3);
+    \draw(8.5,-3)node [ground]{};
+    \draw(4,0)to [cV,l = $\mu V_1$] (4,-3);
+    \draw(4,-3) node[ground]{};
+    \draw(8.5,0)node[circle,fill,inner sep = 2pt,label = $V_o$]{};
+    \end{circuitikz}
+ 

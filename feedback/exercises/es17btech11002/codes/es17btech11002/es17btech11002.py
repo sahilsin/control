@@ -7,24 +7,25 @@ import subprocess
 import shlex
 #end if
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # #
-#                  Transfer function     
-#
-#          3.03*0.0625s^2 + 3.03*0.75s + 3.03
-#  T{s}=   ----------------------------------
-#               0.0625s^2 - 0.0075s + 1
-#
-# # # # # # # # # # # # # # # # # # # # # # # # # # #
-num = [3.03*0.0625, 3.03*0.75, 3.03]	
-den = [0.0625,-0.0075,1]
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                         #
+#                                                         #
+#          3.03*0.0001*0.0001*s^2 + 3.03*0.0001s+ 3.03    #
+# T(s)=   ----------------------------------              #
+#               (0.0001*0.0001)s^2 -0.000003s +1          #
+#                                                         #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+num = [3.03*0.0001*0.0001, 3.03*3*0.0001, 3.03]	
+den = [0.0001*0.0001,0,1]
 system = signal.lti(num,den)
 T, yout = signal.step(system)	#oscillating response
-
 plt.plot(T,yout)
 plt.grid()
-
 plt.xlabel("time (t)")
 plt.title("Oscillating system response ")
+plt.xlim(0, 3.2)
+plt.ylim(-15,15)
+#plt.plot(data[:,0],data[:,1])  
 
 #if using termux
 plt.savefig('./figs/es17btech11002/es17btech11002.pdf')

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  17 MAY 2020 09:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  21 MAY 2020 07:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1520,20 +1520,16 @@ LaTeX Warning: Command \j invalid in math mode on input line 194.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+File: ./figs/es17btech11002/es17btech11002.eps Graphic file (type eps)
 
+<./figs/es17btech11002/es17btech11002.eps>
 (./tables/es17btech11002/es17btech11002_table1.tex
 \gnumericTableWidth=\skip79
 \gnumericTableWidthComplete=\skip80
 \gnumericMultiRowLength=\skip81
 \gnumericColA=\skip82
 \gnumericColB=\skip83
-)
-File: ./figs/es17btech11002/es17btech11002.eps Graphic file (type eps)
-
-<./figs/es17btech11002/es17btech11002.eps>
-Underfull \vbox (badness 1448) has occurred while \output is active []
-
- [3]
+) [3]
 File: ./figs/es17btech11002/es17btech11002_spice.eps Graphic file (type eps)
 
 <./figs/es17btech11002/es17btech11002_spice.eps>
@@ -1553,10 +1549,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 261.
 Here is how much of TeX's memory you used:
  33734 strings out of 492624
  730198 string characters out of 6119216
- 990623 words of memory out of 5000000
+ 990622 words of memory out of 5000000
  37009 multiletter control sequences out of 15000+600000
  78186 words of font info for 199 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,14n,69p,511b,1155s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (4 pages, 119188 bytes).
+Output written on gvv_feedback_manual.dvi (4 pages, 119828 bytes).

@@ -63,19 +63,19 @@ For the circuit shown in Fig. \ref{fig:es17btech11002_fig1}, find the loop gain 
 \solution In Fig. \ref{fig:es17btech11002_fig5}, let $I_o$ be the current flowing from $V_o$.  Then
 \begin{align}
 \label{eq:es17btech11002_H_io}
-I_o = \frac{V_o}{R + \frac{1}{sc} \parallel \brak{\frac{1}{sC}+R}}
+I_o = \frac{V_o}{R + \frac{1}{sC} \parallel \brak{\frac{1}{sC}+R}}
 \end{align}
 %
 Using current division,
 \begin{align}
 \label{eq:es17btech11002_H_vf}
-V_f = I_o \frac{\frac{1}{sc}}{\frac{1}{sc} +  \brak{\frac{1}{sc}+R}} \times R
+V_f = I_o \frac{\frac{1}{sC}}{\frac{1}{sC} +  \brak{\frac{1}{sC}+R}} \times R
 \end{align}
 From \eqref{eq:es17btech11002_H_io} and \eqref{eq:es17btech11002_H_vf},
 
 \begin{align}
-\frac{V_{f}}{V_{o}} &=\frac{\frac{1}{sc}}{\frac{1}{sc} +  \brak{\frac{1}{sc}+R}}\times R\\\
-&\quad \times  \frac{1}{R + \frac{1}{sc} \parallel \brak{\frac{1}{sC}+R}}
+\frac{V_{f}}{V_{o}} &=\frac{\frac{1}{sC}}{\frac{1}{sC} +  \brak{\frac{1}{sC}+R}}\times R\\\
+&\quad \times  \frac{1}{R + \frac{1}{sC} \parallel \brak{\frac{1}{sC}+R}}
 \end{align}
 On further simplification we get,
 \begin{align}
@@ -87,7 +87,7 @@ On further simplification we get,
 \\
 \solution Shorting  $V_{o}$ to ground,
 \begin{align}
-R_{11} &= R\parallel \brak{\frac{1}{sc}+ \frac{1}{sc}\parallel R} 
+R_{11} &= R\parallel \brak{\frac{1}{sC}+ \frac{1}{sC}\parallel R} 
 \label{eq:es17btech11002_6}
 \end{align}
 Shorting $V_{f}$ to ground,
@@ -210,6 +210,17 @@ L\brak{0} &\ge 1
 \implies \frac{R_{2}}{R_{1}} &\geq 2
 \end{align}
 %
+The following code plots the step response of the system.  This, in fact is the output of Fig. \ref{fig:es17btech11002_fig1}.
+\begin{lstlisting}
+codes/es17btech11002/es17btech11002.py
+\end{lstlisting}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/es17btech11002/es17btech11002.eps}
+\caption{}
+\label{fig:es17btech11002_fig8}
+\end{figure}
+%
 \item Find the frequency for some arbitrary R, C values given in Table \ref{table:es17btech11002_Input_Table}.\\
 \begin{table}[!ht]
 \centering
@@ -220,22 +231,12 @@ L\brak{0} &\ge 1
 \\
 \solution 
 %
-The following code plots the impulse  response of the system.  This, in fact is the output of Fig. \ref{fig:es17btech11002_fig1}.
-\begin{lstlisting}
-codes/es17btech11002/es17btech11002.py
-\end{lstlisting}
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\columnwidth]{./figs/es17btech11002/es17btech11002.eps}
-\caption{}
-\label{fig:es17btech11002_fig8}
-\end{figure}
 \textbf{Frequency:} From equation \eqref{eq:es17btech11002_freq}
 \begin{align}
-\omega = \frac{1}{RC} = 4 rad/sec
+\omega = \frac{1}{RC} = 10000 rad/sec
 \end{align}
 \begin{align}
-f = \frac{\omega }{2\pi} = 0.636 Hz
+f = \frac{\omega }{2\pi} = 1.57 kHz
 \end{align}
 \item Verify the frequency using spice simulation.\\
 \solution The following readme file provides necessary instructions to simulate the circuit in spice.
@@ -270,12 +271,19 @@ codes/es17btech11002/spice/es17btech11002_spice2.py
 \label{fig:es17btech11002_spice2}
 \end{figure}
 \renewcommand{\thefigure}{\theenumi}
-\textbf{Frequency:} From Fig. \ref{fig:es17btech11002_spice2} time period is calculated by any two end points of one cycle,
+\textbf{Amplitude:}From Fig. \ref{fig:es17btech11002_spice2} V(peak-peak) is 
 \begin{align}
-T&=124.150-(122.160) = 1.61 sec
+V_{p-p} &= 0.47-(-0.47) = 0.94V
 \end{align}
 \begin{align}
-f = \frac{1}{T} = 0.64 Hz
+V_{max} &= \frac{V_{p-p}}{2} = 0.47.
+\end{align}
+\textbf{Frequency:} time period is calculated by any two end points of one cycle,
+\begin{align}
+T&=0.0313164 - \brak{0.03060} = 0.7164 ms
+\end{align}
+\begin{align}
+f = \frac{1}{T} = 1.39 kHz
 \end{align}
 Hence,the frequency is verified through the spice simulation.
 \end{enumerate}

@@ -1,4 +1,4 @@
-\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \numberwithin{equation}{enumi}
 \item
 Consider the quadrature-oscillator circuit given Fig. \ref{fig:es17btech11009_fig1} without the limiter. Let the resistance $R_{f}$ be equal to $\frac{2R}{1 + \Delta}$ where $\Delta << 1$. Show that the poles of the characteristic equation are in the right-half s plane and given by 
@@ -78,7 +78,7 @@ The equivalent Circuit is shown in Fig \ref{fig:es17btech11009_b4}
 \label{fig:es17btech11009_b4}
 \end{figure}
 \begin{align}
-    H = \frac{v_{o_1}}{v_{o_2}}
+    H = \frac{v_{o_2}}{v_{o_1}}
 \end{align}
 \item
 Draw the equivalent control system representation for the circuit in Fig. \ref{fig:es17btech11009_b4} which is given in \ref{fig:es17btech11009_block}
@@ -237,10 +237,25 @@ From Table \ref{table:es17btech11009_Table1},
 \begin{align}
     f = \frac{\omega_{o}}{2\pi} = 3.184 Hz
 \end{align}
-Substituting \eqref{eq:es17btech11009_G} and \eqref{eq:es17btech11009_H} in \eqref{eq:es17btech11009_TF},
+
+From \eqref{eq:es17btech11009_TF},
 \begin{align}
     T = \frac{-SCR + \frac{\Delta}{2}}{s^2C^2R^2 - \frac{sCR\Delta}{2} + 1}
 \end{align}
+From Table \ref{table:es17btech11009_Table1},
+\begin{align}
+    T = \frac{-0.05s + 0.05}{0.0025s^2 - 0.0025s +1}
+\end{align}
+The following code plots the oscillating response of the system as shown in \ref{fig:es17btech11009_1_1}
+\begin{lstlisting}
+codes/es17btech11009/es17btech11009_1_1.py
+\end{lstlisting}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/es17btech11009/es17btech11009_1_1.eps}
+\caption{}
+\label{fig:es17btech11009_1_1}
+\end{figure}
 
 \item
 Simulate the circuit Fig \ref{fig:es17btech11009_fig3} using spice simulators and plot the generated output using python script.

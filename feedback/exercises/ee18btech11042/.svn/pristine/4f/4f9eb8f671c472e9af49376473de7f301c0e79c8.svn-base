@@ -1,0 +1,4 @@
+1. You will a spice_1.net file in spice/ee18btech11042 folder.
+2. Open terminal and run spice_1.net file which creates two .dat files(input.dat and output.dat)
+3. Make sure  ee18btech11042.py and input.dat and output.dat are in same run.
+$.Now,run this python file ,shows plots of input and output signals.

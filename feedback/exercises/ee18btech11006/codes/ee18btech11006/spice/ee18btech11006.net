@@ -1,0 +1,17 @@
+*/home/shruti/Desktop/gvv_ltspice.asc
+G1 0 kV0 V0 0 0.001
+R1 kV0 0 1
+R2 N003 kV0 200
+L1 Vf N003 0.01
+C1 Vf 0 0.000001
+G2 0 N002 N001 Vf 1000
+V1 N001 0 dc 1.
+R3 N002 0 1
+L2 V0 N002 0.000001
+R4 V0 0 100
+.dc V1 0 10 1
+.control
+run
+wrdata ee18btech11006.dat V(V0)
+.endc
+.end

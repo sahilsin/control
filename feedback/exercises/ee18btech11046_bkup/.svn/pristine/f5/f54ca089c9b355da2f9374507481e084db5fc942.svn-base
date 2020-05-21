@@ -1,5 +1,5 @@
 For the feedback transresistance amplifier in \ref{fig:ee18btech11046_Question}), use small-signal analysis to find the open-loop gain 'G', Feedback factor 'H' and Closed-loop gain 'T'. Let $R_{F}>>R_{L}$ and $r_{o}>>R_{L}$. Find the value of T for $R_{L}=10K\ohm$, $R_{F}=100K\ohm$ and the transistor current gain $\beta = 100$.
-\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}    
 \item Draw the equivalent control system for the feedback Transresistance amplifier shown in \ref{fig:ee18btech11046_Question}
 \renewcommand{\thefigure}{\theenumi.\arabic{figure}}

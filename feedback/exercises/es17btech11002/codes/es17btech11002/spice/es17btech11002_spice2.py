@@ -13,7 +13,7 @@ print(f)
 
 
 #Loading the data
-data = np.loadtxt( './codes/es17btech11002/spice/es17btech11002.dat' )
+data = np.loadtxt( 'es17btech11002.dat' )
 #PLotting the data from spice simulation
 plt.plot(data[:,0],data[:,1])
 plt.grid()

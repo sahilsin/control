@@ -38,7 +38,6 @@ The equivalent circuit of the amplifier is in Fig. \ref{fig:ee18btech11048_ss_ci
 \end{figure}
 
 
-\numberwithin{figure}{enumi}
 \item Draw the block diagram and equivalent ciruit for $H$.
 \\
 \renewcommand{\thefigure}{\theenumi.\arabic{figure}}
@@ -118,15 +117,14 @@ T &= \frac{G}{1+GH} \label{eq:ee18btech11048_T}
 \caption{}
 \label{table:ee18btech11048_ Example_Table}
 \end{table}
-\solution  The following code computes the value of $I_o$ as 
+\solution  The following code computes the value of $I_o$ using the fact that
 \begin{align}
-I_o &= TV_s = \frac{V_s}{H}
-\\
-&= 3 \, mA.
+I_o &= \frac{V_s}{H}\\
 \end{align}
 \begin{lstlisting}
 codes/ee18btech11048/ee18btech11048_fbc.py
 \end{lstlisting}
+On running this code value of $I_o$ is printed on terminal. The value obtained is 0.003 A.
 \item Verify your result through spice.
 \\
 \solution The following readme file provides necessary instructions to simulate the circuit in spice.

@@ -1,4 +1,4 @@
-The feedback current amplifier in Fig \ref{fig:ee18btech11038_probfig} utilizes two identical NMOS transistor sized so that at $I_{D1} = 0.2mA$, they operate at $V_{OV} = 0.2V$. Both the devices have $V_{t} =0.5V$ and $V_{A} = 10V$.
+The feedback current amplifier in Fig \ref{fig:ee18btech11038_probfig} utilizes two identical NMOS transistor sized so that at $I_{D} = 0.2mA$, they operate at $V_{OV} = 0.2V$. Both the devices have $V_{t} =0.5V$ and $V_{A} = 10V$.
 \begin{figure}[!ht]
 	\begin{center}
 		
@@ -7,14 +7,8 @@ The feedback current amplifier in Fig \ref{fig:ee18btech11038_probfig} utilizes 
 \caption{Problem Figure}
 \label{fig:ee18btech11038_probfig}
 \end{figure}
-\begin{table}[!ht]
-\centering
-\input{./tables/ee18btech11038_given.tex}
-\caption{Given Parameters}
-\label{table: given}
-\end{table}
+\begin{enumerate}
 
-\begin{enumerate}[label=(\alph*)]
 
 \item  If $I_{S}$ has zero DC component, show that both $Q_{1}$ and $Q_{2}$ are, operating at $I_{D} = 0.2mA$. What is DC voltage at the input?
 \\
@@ -29,21 +23,12 @@ The feedback current amplifier in Fig \ref{fig:ee18btech11038_probfig} utilizes 
 \item Find $R_{in}$ and $R_{out}$.
 \end{enumerate}
 %\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
-
-
 \begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \numberwithin{equation}{enumi}
-\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
-\item Find the DC voltage at the node $A$.
-\\
-\solution 
-Given that $I_{s}$ has zero DC component, it can be neglected in DC analysis of the circuit. The current does not enter the Gate terminal of any mosfet. Thus the DC current flow is as shown in Fig \ref{fig:ee18btech11038_dcckt} 
-%Given $V_{OV} = 0.2V$ and  $V_{t} = 0.5V$, for Q1-
-\begin{align}
-    V_{GS1} = V_{OV}  + V_{t} = 0.7V\\
-    \implies V_A = V_{G1} = V_{GS1} = 0.7V
-    \end{align}
-%a)DC analysis of circuit.\\
+%\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+\item Find $V_{g_1} = V_A$\\
+\solution Given that $I_{s}$ has zero DC component, it can be neglected in DC analysis of the circuit. The current does not enter the Gate terminal of any mosfet. Thus the DC current flow looks like shown in Fig \ref{fig:ee18btech11038_dcckt} 
+
 \begin{figure}[!ht]
 	\begin{center}
 		
@@ -52,25 +37,20 @@ Given that $I_{s}$ has zero DC component, it can be neglected in DC analysis of 
 \caption{DC Analysis Circuit}
 \label{fig:ee18btech11038_dcckt}
 \end{figure}
-%
-\item Show that the drain current for $Q2$ is $I_{D_2} = 0.2$mA.
-\\
-\solution 
-\begin{align}
-\because I_s &= 0 \text{ and }
-I_{G1} &= 0,
-\end{align}
-no current passes through $R_2$ and
-%
-\begin{align}
-\because I_s &= 0 \text{ and }
-V_{S2} &=V_{A} = 0.7
-\\
-\implies I_{D2} &= \frac{V_{S2}}{R{1}} 
-\\
-I_{D2} &= 0.2mA
-\end{align}
 
+Given $V_{OV} = 0.2V$ and  $V_{t} = 0.5V$, for Q1-
+\begin{align}
+    V_{GS1} = V_{OV}  + V_{t} = 0.7V\\
+    \implies V_{G1} = V_{GS1} = 0.7V
+    \end{align}
+\begin{align}
+    \text{The DC voltage } V_{G2} = V_{S2}\\
+    \text{by ohms law, } I_{D2} = \frac{V_{S2}}{R{1}} = \frac{0.7V}{3.5k\ohm}\\
+    \implies I_{D2} = 0.2mA
+\end{align}
+Clearly $I_{D1} = 0.2mA$.
+\\
+DC voltage at input = $V_{G1} = 0.7V$
 \item To find $g_{m}$ and $r_{o}$\\
 \solution We know,
 \begin{align}

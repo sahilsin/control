@@ -1,12 +1,12 @@
 \begin{circuitikz}[american]
 \ctikzset{tripoles/mos style/arrows}
-\draw (2,3) to[R=$R_{2}$, i=$I_{dc}\text{=}0$] (6,3) -- (6,3)node{} to[R=$R_{1}$] (6,0) node[ground](GND){} (6,0);
+\draw (2,3) to[R=$R_{2}(14k\ohm$), i=$I_{dc}(0)$] (6,3) -- (6,3)node{} to[R=$R_{1}(3.5k\ohm)$] (6,0) node[ground](GND){} (6,0);
 
 \draw (3,6) node[nmos,](Q1){};
 \draw (2,3) node[]{} to[short] (Q1.G);
 \draw (Q1.center) node[right]{{$Q_{1}$}};
 \draw (Q1.S) to[short, i=$I_{D1}$](3, 5) -- (3,5) node[ground](GND){};
-\draw (3,9) node[vcc](VCC){} to[short, i=$I_{D1}$](3,8.5) to[isource, l ={$I$} ](Q1.D);
+\draw (3,9) node[vcc](VCC){} to[short, i=$I_{D1}$](3,8.5) to[isource, l =$I(0.2mA)$ ](Q1.D);
 
 
 \draw (6,7)node[nmos,](Q2){};

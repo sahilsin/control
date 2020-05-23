@@ -5,6 +5,7 @@
 \draw (-2,0)node[below]{$+$};
 \draw (-2,3)node[below]{$-$};
 \draw (-2,1.5)node[]{$v_{gs2}$};
-\draw (3,4)node[ground]{} to[vsource, l=$V_{x}$](3,7) to[short, i=$I_{x}$](0,7) to[R=$r_{o2}$](0,5) to[vsource, l=$g_{m2}v_{gs2}$](0,3);
-
+%\draw (3,4)node[ground]{} to[vsource, l=$V_{x}$](3,7) to[short, i=$I_{x}$](0,7) to[R=$r_{o2}$](0,5) to[vsource, l=$g_{m2}v_{gs2}$](0,3);
+\draw (0,3) to[vsource, l=$g_{m2}v_{gs2}$](0,5) to[R=$r_{o2}$](0,7) to[short](3,7) to[vsource, l=$V_{x}$](3,5) to[short] (3,4)node[ground]{};
+\draw (3,7) to[short, i=$I_{x}$](0,7);
 \end{circuitikz}

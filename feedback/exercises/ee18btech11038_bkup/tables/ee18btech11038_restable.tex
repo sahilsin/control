@@ -28,7 +28,7 @@
 %%                                                                  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
- 
+
 
 %%  This section checks if we are begin input into another file or  %%
 %%  the file will be compiled alone. First use a macro taken from   %%
@@ -65,7 +65,7 @@
        \usepackage{hhline}
        \usepackage{ifthen}
 
-	
+	\begin{document}
 
 
 %%  End of the preamble for the standalone. The next section is for %%
@@ -123,8 +123,8 @@
 \setlongtables
 
 \setlength\gnumericTableWidth{%
-	83pt+%
-	91pt+%
+	53pt+%
+	163pt+%
 0pt}
 \def\gumericNumCols{2}
 \setlength\gnumericTableWidthComplete{\gnumericTableWidth+%
@@ -144,8 +144,8 @@
 %%                                                                  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{83pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{91pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{163pt*\gnumericScale}@{}}x\end{tabular}}
 
 \begin{tabular}[c]{%
 	b{\gnumericColA}%
@@ -184,98 +184,82 @@
 
 \hhline{|-|-}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{Parameter}}}
-	&\multicolumn{1}{p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{Value}}}
-\\
-
-\hhline{|-|-}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$g_{m1}$}}}
-	&\multicolumn{1}{p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$2mA/V$}}}
-\\
-\hhline{|-|-}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$g_{m2}$}}}
-	&\multicolumn{1}{p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$2mA/V$}}}
-\\
-\hhline{|-|-}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$r_{o1}$}}}
+	{\gnumericPB{\centering}\gnumbox{\textbf{Resistance}}}
 	&\multicolumn{1}{p{\gnumericColB}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$50k\Omega$}}}
+	{\gnumericPB{\centering}\gnumbox{\textbf{Description}}}
 \\
-\hhline{|-|-}
+\hhline{|--|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$r_{o2}$}}}
-	&\multicolumn{1}{p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$50k\Omega$}}}
+	{\gnumericPB{\raggedright}\gnumbox[l]{$R_{in}$}}
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{Total Input Resistance}}
 \\
-\hhline{|-|-}
+\hhline{|--|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$R_{s}$}}}
-	&\multicolumn{1}{p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$\infty$}}}
+	{\gnumericPB{\raggedright}\gnumbox[l]{$R_{out}$}}
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{Total Ouput Resistance}}
 \\
-\hhline{|-|-}
+\hhline{|--|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$R_{L}$}}}
-	&\multicolumn{1}{p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$0$}}}
+	{\gnumericPB{\raggedright}\gnumbox[l]{$r_{o1}$}}
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{Output resistance of MOSFET1}}
 \\
-
-\hhline{|-|-}
+\hhline{|--|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$G$}}}
-	&\multicolumn{1}{p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$-526.3$}}}
+	{\gnumericPB{\raggedright}\gnumbox[l]{$r_{o2}$}}
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{Output resistance of MOSFET2}}
 \\
-\hhline{|-|-}
+\hhline{|--|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$R_{i}$}}}
-	&\multicolumn{1}{p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$17.5k\Omega$}}}
+	{\gnumericPB{\raggedright}\gnumbox[l]{$R_{i}$}}
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{Input resistance of Open Loop}}
 \\
-\hhline{|-|-}
+\hhline{|--|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$R_{o}$}}}
-	&\multicolumn{1}{p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$332.8k\Omega$}}}
+	{\gnumericPB{\raggedright}\gnumbox[l]{$R_{o}$}}
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{Output resistance of Open Loop}}
 \\
-\hhline{|-|-}
+\hhline{|--|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$H$}}}
-	&\multicolumn{1}{p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$-0.2$}}}
+	{\gnumericPB{\raggedright}\gnumbox[l]{$R_{if}$}}
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{Input resistance of Feedback}}
 \\
-\hhline{|-|-}
+\hhline{|--|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$GH$}}}
-	&\multicolumn{1}{p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$105.26$}}}
+	{\gnumericPB{\raggedright}\gnumbox[l]{$R_{of}$}}
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{Output resistance of Feedback}}
 \\
-\hhline{|-|-}
+\hhline{|--|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$T$}}}
-	&\multicolumn{1}{p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$-4.95$}}}
+	{\gnumericPB{\raggedright}\gnumbox[l]{$R_{s}$}}
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{Resistance of Current Source}}
 \\
-\hhline{|-|-}
+\hhline{|--|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$R_{in}$}}}
-	&\multicolumn{1}{p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$164\Omega$}}}
+	{\gnumericPB{\raggedright}\gnumbox[l]{$R_{L}$}}
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{Output Load Resistance}}
 \\
-\hhline{|-|-}
+\hhline{|--|}
 	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$R_{out}$}}}
-	&\multicolumn{1}{p{\gnumericColA}|}%
-	{\gnumericPB{\raggedright}\gnumbox[l]{\textbf{$35.3M\Omega$}}}
+	{\gnumericPB{\raggedright}\gnumbox[l]{$R_{11}$}}
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{Input load resist. (due feedback) }}
 \\
-
-
+\hhline{|--|}
+	 \multicolumn{1}{|p{\gnumericColA}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{$R_{22}$}}
+	&\multicolumn{1}{p{\gnumericColB}|}%
+	{\gnumericPB{\raggedright}\gnumbox[l]{Output load resist. (due feedback)}}
+\\
 \hhline{|-|-|}
 \end{tabular}
 

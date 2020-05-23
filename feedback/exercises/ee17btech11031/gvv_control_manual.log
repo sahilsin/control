@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  23 MAY 2020 08:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  23 MAY 2020 13:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1460,31 +1460,43 @@ Underfull \hbox (badness 3769) in paragraph at lines 4--6
  []
 
 (./figs/ee17btech11031_ss_3.tex
+Missing character: There is no ; in font nullfont!
+)
 
-! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
+LaTeX Warning: Reference `eq:ee17btech11031_fed1' on page 1 undefined on input 
+line 44.
 
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.19 \draw
-           (npn1.C)++(2.75,-1.5)node[label={right:$R_{out}$}]{}--++(0,1)--++...
 
+LaTeX Warning: Reference `eq:ee17btech11031_fed2' on page 1 undefined on input 
+line 44.
+
+(./table/ee17btech11031_para.tex
+\gnumericTableWidth=\skip75
+\gnumericTableWidthComplete=\skip76
+\gnumericMultiRowLength=\skip77
+\gnumericColA=\skip78
+\gnumericColB=\skip79
+)
+
+LaTeX Warning: Reference `fig:ss1 ckt' on page 1 undefined on input line 62.
+
+(./figs/ee17btech11031_ss_1.tex
+! Undefined control sequence.
+l.3 \draw
+          (0,0) node [ground]{};
 ? 
 ! Emergency stop.
- ...                                              
-                                                  
-l.19 \draw
-           (npn1.C)++(2.75,-1.5)node[label={right:$R_{out}$}]{}--++(0,1)--++...
+l.3 \draw
+          (0,0) node [ground]{};
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 32695 strings out of 492624
- 706584 string characters out of 6119216
- 902159 words of memory out of 5000000
- 36026 multiletter control sequences out of 15000+600000
- 68203 words of font info for 165 fonts, out of 8000000 for 9000
+ 32791 strings out of 492624
+ 708402 string characters out of 6119216
+ 918711 words of memory out of 5000000
+ 36116 multiletter control sequences out of 15000+600000
+ 73281 words of font info for 180 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,9n,69p,510b,1104s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,13n,69p,510b,1096s stack positions out of 5000i,500n,10000p,200000b,80000s
 No pages of output.

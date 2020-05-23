@@ -1,0 +1,13 @@
+* C:\Users\psiit\OneDrive\Documents\ee17btech11031.asc
+R1 N001 N003 5.6k
+R2 N003 N002 56k
+R3 N002 N004 10k
+V1 N004 0 0.7
+V2 N001 0 15
+Q1 N003 N002 0 0 NPN
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\psiit\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.op 100ms
+.backanno
+.end

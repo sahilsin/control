@@ -1,0 +1,239 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item A dc amplifier having a single-pole response with pole frequency 10Hz and unity-gain frequency of 1MHz is operated in a loop whose frequency-independent feedback factor is 0.01. Find the low-frequency gain, the 3-dB frequency, and the unity-gain frequency of the closed-loop amplifier. By what factor does the pole shift?\\
+\solution The open-loop gain of the amplifier is
+\begin{align}
+    G\brak{s}=\frac{A_{O}}{1+\frac{s}{\omega_p}}=\frac{A_{O}}{1+\frac{s}{2\pi.10}}
+\end{align}
+Given that unity gain frequency is 1MHz\\
+Replacing $s$ with $\j\omega$ in this equation.
+\begin{align}
+    \abs{\frac{A_{O}}{1+\frac{\j.2\pi.10^6}{2\pi.10}}}&=1\\
+    \abs{A_{O}}&=\abs{1+\j\frac{2\pi.10^6}{2\pi.10}}\\
+    A_{O}&\approx10^5
+\end{align}
+
+\item Draw the bode plots of open-loop circuit\\
+\solution
+\begin{figure}[!h]
+  \includegraphics[width=\columnwidth]{./figs/ee18btech11035_bode1.eps}
+  \caption{Bode plots of Open-loop Transfer Function}
+  \label{fig:ee18btech11035_bode1}
+\end{figure}
+
+Python code for above plot is
+\begin{lstlisting}
+codes/ee18btech11035_bode1.py
+\end{lstlisting}
+
+\item Design a Circuit for G\brak{s}\\
+\solution Designing G\brak{s} Using Op-amp with DC gain of $10^5$ and a pole at 10Hz.
+
+\begin{figure}[!ht]
+    \begin{center}
+		\resizebox{0.95\columnwidth}{!}{\input{./figs/ee18btech11035_G.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11035_G}
+\end{figure}
+
+
+
+\item Verify the gain using spice\\
+\solution Follow the Instructions for SPICE simulation:
+\begin{lstlisting}
+spice/README.md
+\end{lstlisting}Netlist file for simulation:
+\begin{lstlisting}
+spice/ee18btech11035_spice1.net
+\end{lstlisting}
+
+\begin{figure}[!h]
+  \includegraphics[width=\columnwidth]{./figs/ee18btech11035_spice1.eps}
+  \caption{Spice Simulation of Open-loop Transfer Function}
+  \label{fig:ee18btech11035_spice1}
+\end{figure}
+
+
+Python code for above plot:
+\begin{lstlisting}
+codes/ee18btech11035_spice1.py
+\end{lstlisting}
+
+\item Verification of step response of open-loop transfer function through python\\
+\solution 
+\begin{figure}[!h]
+  \includegraphics[width=\columnwidth]{./figs/ee18btech11035_python1.eps}
+  \caption{Python verification of Open-loop Transfer Function}
+  \label{fig:ee18btech11035_pv1}
+\end{figure}
+
+Python code for above verification is 
+\begin{lstlisting}
+codes/ee18btech11035_pythonverify1.py
+\end{lstlisting}
+
+
+\item Add a feedback for above circuit with a feedback factor of 0.01 an calculate closed-loop transfer function\\
+\solution $G\brak{s}=\frac{10^5}{1+\frac{s}{2\pi.10}}$ and $H\brak{s}=0.01$
+\begin{align}
+    T\brak{s}&=\frac{G\brak{s}}{1+G\brak{s}H\brak{s}}
+\end{align}
+\begin{align}
+    T&=\frac{\frac{A_{O}}{1+A_{0}H\brak{s}}}{1+\frac{s}{20\pi\brak{1+A_{O}H\brak{s}}}}\\
+    T\brak{s}&=\frac{99.90}{1+\frac{s}{2\pi.10010}}
+\end{align}
+
+
+
+
+
+Block diagram representation of the amplifier
+\begin{figure}[!ht]
+    \begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11035_block.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11035_block}
+\end{figure}
+
+\item Find the low frequency gain of the closed-loop amplifier.\\ 
+\solution As frequency is low,substituting $s=0$\\
+\begin{align}
+    T\brak{0}&=\frac{G\brak{0}}{1+G\brak{0}H\brak{0}}\\
+    &=\frac{10^5}{1+10^5.\brak{0.01}}\\
+    &=99.900
+\end{align}
+
+\item Find the 3-dB frequency of the closed loop amplifier\\
+\solution
+\begin{align}
+    T&=\frac{\frac{A_{O}}{1+A_{0}H\brak{s}}}{1+\frac{s}{20\pi\brak{1+A_{O}H\brak{s}}}}\\
+    \text{3-dB frequency}&=20\pi.\brak{1+A_{O}H\brak{s}}\\
+    &=20\pi.\brak{1+10^5.\brak{0.01}}\\
+    &=62862.8rad/s=10.01kHz
+\end{align}
+
+\item Find the unity gain frequency of the closed loop amplifier\\
+\solution Unity-gain frequency of the closed loop amplifier is obtained as follows
+\begin{align}
+    \abs{T}&=1\\
+    \frac{A_{O}}{1+A_{O}H\brak{s}}&=\abs{1+\frac{\j\omega}{20\pi\brak{1+A_{O}H\brak{s}}}}\\
+    99.900&=\abs{1+\frac{\j\omega}{62862.8}}\\
+    \omega&=6279.649Krad/s=999.94kHz
+\end{align}
+
+
+\item By what factor does the pole shift?\\
+\solution Open-loop pole is 10Hz and the Closed-loop pole is $20\pi.\brak{1+A_{O}H\brak{s}}$\\
+\begin{align}
+    \text{Pole-shift Factor}&=\frac{20\pi\brak{1+A_{O}H\brak{s}}}{20\pi}\\
+    &=1+A_{O}H\brak{s}=1001
+\end{align}
+
+
+
+\item Design the feedback with $H\brak{s}=0.01$\\
+\solution Designing Feedback circuit:\\
+As,Feedback is a constant value designing it by using simple voltage divider circuit
+\begin{figure}[!ht]
+    \begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11035_feedback.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11035_feedback}
+\end{figure}
+
+\begin{align}
+    \frac{V_{f}}{V_{out}}=\frac{R_{1}}{R_{1}+R_{f}}=H\brak{s}=0.01
+\end{align}
+Choosing $R_{1}$ as $10\ohm$ and $R_{f}$ as 990\ohm\\
+
+Overall Circuit is as follows:
+\begin{figure}[!ht]
+    \begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11035_circuit.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11035_circuit}
+\end{figure}
+
+
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11035_table1.tex}
+\caption{}
+\label{table:ee18btech11035_table1}
+\end{table}
+
+
+\item Draw the Bode plots of closed-loop circuit\\
+\solution
+\begin{figure}[!h]
+  \includegraphics[width=\columnwidth]{./figs/ee18btech11035_bode2.eps}
+  \caption{Bode plots of Closed-loop Transfer Function}
+  \label{fig:ee18btech11035_bode2}
+\end{figure}
+
+Python code for above plot is
+\begin{lstlisting}
+codes/ee18btech11035_bode2.py
+\end{lstlisting}
+
+
+
+\item Verify the gain of closed loop Circuit using spice\\
+\solution Follow the Instructions for SPICE simulation:
+\begin{lstlisting}
+spice/README.md
+\end{lstlisting}
+Netlist file for simulation:
+\begin{lstlisting}
+spice/ee18btech11035_spice2.net
+\end{lstlisting}
+
+\begin{figure}[!h]
+  \includegraphics[width=\columnwidth]{./figs/ee18btech11035_spice2.eps}
+  \caption{Spice simulation of Closed-loop Transfer Function}
+  \label{fig:ee18btech11035_spice2}
+\end{figure}
+
+
+Pyhton code for above plot:
+\begin{lstlisting}
+codes/ee18btech11035_spice2.py
+\end{lstlisting}
+
+\item Verification of step response of open-loop transfer function through python\\
+\solution 
+
+\begin{figure}[!h]
+  \includegraphics[width=\columnwidth]{./figs/ee18btech11035_python2.eps}
+  \caption{Python verification of closed-loop Transfer Function}
+  \label{fig:ee18btech11035_pv2}
+\end{figure}
+
+
+Python code for above verification is 
+\begin{lstlisting}
+codes/ee18btech11035_pythonverify2.py
+\end{lstlisting}
+
+
+
+
+\item Tabulating DC Gain,Bandwidth and Gain bandwidth product\\
+\solution
+Observing the fig:\eqref{fig:ee18btech11035_bode1} and fig:\eqref{fig:ee18btech11035_bode2} to get DC Gain and Bandwidth
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11035_table2.tex}
+\caption{}
+\label{table:ee18btech11035_table2}
+\end{table}
+
+Therefore,By using feedback we can get desired Gain of an amplifier while maintaining constant Gain Bandwidth product(for a first-order op-amp).
+
+
+\end{enumerate}

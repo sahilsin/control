@@ -1,0 +1,28 @@
+\begin{circuitikz}
+\ctikzset{bipoles/length=1cm}
+\ctikzset{tripoles/mos style/arrows}
+\draw 
+(0, 0) node[op amp, yscale=-1] (opamp) {}
+(opamp.+) -- (-1,0.35)to[short,-o](-1,0.35) 
+node at (-1.3,0.35){$V_G$}
+(opamp.-) 
+(opamp.out) to (.5,-0)--(0.5,0)
+(opamp.-) -- (-0.6,-0.35) to[]  (-0.9,-0.35) ;
+
+\draw (1.5,0) node[nmos,](Q2){};
+\draw (Q2.S)--(1.5,-1.5);
+\draw  (1.5,-1)--(-0.9,-1)--(-0.9,-0.35);
+\draw (1.5,0)(Q2.center) node[right]{{$Q_{2}$}};
+\draw (Q2.G) -- (0.5,0) to [short] (0.5,0);
+\draw (Q2.D) -- (1.5,1.5)node[ground,rotate=180](GND){};
+\draw (1.7,1.7)--(1.7,1.3)to[short, i=$I_O$](1.7,1.1);
+\draw (1.5,-2) node[nmos,](Q1){};
+\draw (Q1.S)--(1.5,-3)node[ground](GND){};
+\draw (Q1.center) node[right]{{$Q_{1}$}};
+\draw (Q1.G) --(0,-2);
+\draw (Q1.D) -- (1.5,-1.5);
+\draw (-0,-2)to[short,-o](-0,-2)
+
+node at(-0.3,-2){$V_i$};
+\draw (3,0.8)--(1.7,0.8)--(1.7,0.6)to[short,i=$R_o$](1.7,0.4);
+\end{circuitikz}

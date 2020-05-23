@@ -1,0 +1,9 @@
+****************FOLLOW THE FOLLOWING INSTRUCTIONS TO RUN A NETLIST FILE**********************
+ 1) Open the folder where the netlist file is saved.
+ 2) Open the terminal. Enter the directory in which the netlist file is saved.
+ 3) Run the netlist file using the following command
+             "ngspice filename.net"
+ 4) This opens the spice prompt.That shows all the details about simulation.
+    Enter "exit" to close the prompt.
+ 5) The abve netlist file generates the dat file.
+ 6) Run the python code to plot the graph of output obtained.

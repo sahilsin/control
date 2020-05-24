@@ -156,13 +156,13 @@ columns=fullflexible
 \vspace{3cm}
 \title{
 %	\logo{
-Quadrature Oscillator
+Control Systems
 %	}
 }
 \author{Hrithik Raj$^{*}$% <-this % stops a space
 	\thanks{*The author is with the Department
 		of Electrical Engineering, Indian Institute of Technology, Hyderabad
-		502285 India. All content in this manual is released under GNU GPL.  Free and open source.}
+		502285 India e-mail:  gadepall@iith.ac.in. All content in this manual is released under GNU GPL.  Free and open source.}
 	
 }	
 %\title{
@@ -218,8 +218,8 @@ Quadrature Oscillator
 % column for its text to clear the IEEEpubid mark.
 % make the title area
 \maketitle
-%\newpage
-%\tableofcontents
+\newpage
+\tableofcontents
 \bigskip
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
@@ -248,9 +248,9 @@ Quadrature Oscillator
 % For peerreview papers, this IEEEtran command inserts a page break and
 % creates the second title. It will be ignored for other modes.
 %\IEEEpeerreviewmaketitle
-%\begin{abstract}
-%The objective of this manual is to introduce control system design at an elementary level.
-%\end{abstract}
-%\section{Op-Amp RC Oscillator Circuits}
+\begin{abstract}
+The objective of this manual is to introduce control system design at an elementary level.
+\end{abstract}
+\section{Op-Amp RC Oscillator Circuits}
 \input{chapters/es17btech11009}
 \end{document}

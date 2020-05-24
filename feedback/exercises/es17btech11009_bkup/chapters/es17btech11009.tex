@@ -1,5 +1,9 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item
 Consider the quadrature-oscillator circuit given Fig. \ref{fig:es17btech11009_fig1} without the limiter. Let the resistance $R_{f}$ be equal to $\frac{2R}{1 + \Delta}$ where $\Delta << 1$. Show that the poles of the characteristic equation are in the right-half s plane and given by 
 s $\approx \frac{1}{CR}(\frac{\Delta}{4}\pm j)$
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
 \begin{figure}[!ht]
 	\begin{center}
 		\resizebox{\columnwidth}{!}{\input{./figs/es17btech11009/es17btech11009_fig1.tex}}
@@ -7,98 +11,6 @@ s $\approx \frac{1}{CR}(\frac{\Delta}{4}\pm j)$
 \caption{}
 \label{fig:es17btech11009_fig1}
 \end{figure}
-%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\numberwithin{equation}{enumi}
-\item Identify the the open loop gain and feedback  components of the circuit.
-\\
-\solution See Fig. \ref{fig:es17btech11009_b4}.
-%\ref{fig:es17btech11009_fig2}.
-\begin{figure}[!ht]
-	\begin{center}
-		\resizebox{\columnwidth}{!}{\input{./figs/es17btech11009/es17btech11009_block4.tex}}
-	\end{center}
-\caption{Circuit without the limiter}
-\label{fig:es17btech11009_b4}
-\end{figure}
-
-\numberwithin{figure}{enumi}
-\item Draw the block diagram and equivalent circuit for $H$.
-\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
-\begin{figure}[!ht]
-	\begin{center}
-		\resizebox{\columnwidth}{!}{\input{./figs/es17btech11009/es17btech11009_block3.tex}}
-	\end{center}
-\caption{Feedback Block diagram}
-\label{fig:es17btech11009_b3}
-\end{figure}
-\begin{figure}[!ht]
-	\begin{center}
-		\resizebox{\columnwidth}{!}{\input{./figs/es17btech11009/es17btech11009_fig3.tex}}
-	\end{center}
-\caption{Equivalent Feedback Circuit}
-\label{fig:es17btech11009_fig3}
-\end{figure}
-\renewcommand{\thefigure}{\theenumi}
-\\
-\solution See Figs. \ref{fig:es17btech11009_b3} and \ref{fig:es17btech11009_fig3}.
-\begin{align}
-    H = \frac{v_{f}}{v_{o}}
-\end{align}
-\item Find $H$.
-\\
-\solution In \ref{fig:es17btech11009_fig3},
-%Use voltage division principle to write the expression of the fraction of its input voltage.
-\begin{align}
-v_{+}&= v_{-}=\brak{\frac{v_{o_2}}{2R + 2R}}\brak{2R} = \frac{v_{o_2}}{2}
-\end{align}
-%
-Using node analysis at the non- inverting terminal, and substituting 
-%of the op amp in Fig \ref{fig:es17btech11009_fig3}
-\begin{align}
-R_{f} &= \frac{2R}{1 + \Delta},
-\end{align}
-%\\
-\begin{align}
-\frac{\frac{v_{0_2}}{2} - v_{o_1}}{2R} + \frac{\frac{v_{0_2}}{2}}{\frac{1}{sC}} + \frac{\frac{v_{0_2}}{2} - v_{o_2}}{R_{f}} &=0
-\\
-%\end{align}
-%\begin{align}
-%\frac{v_{o_2} - 2v_{o_1}}{4R} + sC\frac{v_{o_2}}{2} + \frac{v_{o_2} - 2v_{o_2}}{2R_{f}} = 0
-%\end{align}
-%\begin{align}
-%\frac{v_{o_2} - 2v_{o_1}}{4R} + sCv_{o_2} -  \frac{v_{o_2}}{R_{f}} = 0
-%\end{align}
-%Substitute $R_{f} = \frac{2R}{1 + \Delta}$ and find the feedback factor H
-%\begin{align}
-\implies \frac{v_{o_2} - 2v_{o_1}}{4R} + sCv_{o_2} -  \frac{v_{o_2}}{2R}\brak{1 + \Delta} &= 0
-\end{align}
-%\begin{align}
-%v_{o_2}\brak{\frac{1}{2R} + sC - \frac{1+ \Delta}{2R}}&= \frac{v_{o_1}}{R} 
-%\end{align}
-%\begin{align}
-%v_{o_2}\brak{1 + 2sRC -1 - \Delta}&= 2v_{o_1}
-%\end{align}
-%Simplifying further,
-%\begin{align}
-\begin{align}
-\text{or, }    H = \frac{v_{o_2}}{v_{o_1}}= \frac{1}{sRC - \frac{\Delta}{2}}
-    \label{eq:es17btech11009_H}
-\end{align}
-%\begin{align}
-%    H &=\frac{v_{o_2}}{v_{o_1}}= \frac{1}{sRC - \frac{\Delta}{2}}
-%    \label{eq:es17btech11009_H}
-%\end{align}
-after some algebra.
-%\item 
-%The equivalent Circuit is shown in Fig 
-%\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
-%
-%\begin{align}
-%    H = \frac{v_{o_2}}{v_{o_1}}
-%\end{align}
-
-%\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
 \item
 And the Equivalent circuit at the input of op-amp 2 is given in Fig \ref{fig:es17btech11009_fig2}
 \renewcommand{\thefigure}{\theenumi.\arabic{figure}}
@@ -114,6 +26,13 @@ And the Equivalent circuit at the input of op-amp 2 is given in Fig \ref{fig:es1
 
 When we consider the circuit without the limiter and break the loop at X, The circuit looks as shown in Fig \ref{fig:es17btech11009_b4}
 \renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/es17btech11009/es17btech11009_block4.tex}}
+	\end{center}
+\caption{Circuit without the limiter}
+\label{fig:es17btech11009_b4}
+\end{figure}
 
 \item
 Find the open loop gain.
@@ -148,6 +67,33 @@ The expression for open loop gain is
 \end{align}
 
 \item
+Consider the general block diagram for Feedback network in Fig \ref{fig:es17btech11009_b3}
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/es17btech11009/es17btech11009_block3.tex}}
+	\end{center}
+\caption{Feedback Block diagram}
+\label{fig:es17btech11009_b3}
+\end{figure}
+\begin{align}
+    H = \frac{v_{f}}{v_{o}}
+\end{align}
+\item 
+The equivalent Circuit is shown in Fig \ref{fig:es17btech11009_fig3}
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/es17btech11009/es17btech11009_fig3.tex}}
+	\end{center}
+\caption{Equivalent Feedback Circuit}
+\label{fig:es17btech11009_fig3}
+\end{figure}
+
+\begin{align}
+    H = \frac{v_{o_2}}{v_{o_1}}
+\end{align}
+\item
 Draw the equivalent control system representation for the circuit in Fig. \ref{fig:es17btech11009_b4} which is given in \ref{fig:es17btech11009_block}
 
 \renewcommand{\thefigure}{\theenumi.\arabic{figure}}
@@ -164,6 +110,42 @@ Draw the equivalent control system representation for the circuit in Fig. \ref{f
 As an active filter, the loop is damped to locate the poles in the left half of the s-plane. In the quadrature oscillator, the op amp 1 is connected as an inverting miller integrator with a limiter in the feedback for controlling the amplitude. The op amp 2 is connected as a non-inverting integrator.
 
 \item
+In \ref{fig:es17btech11009_fig3}.
+
+Use voltage division principle to write the expression of the fraction of its input voltage.
+\begin{align}
+v_{+}&= v_{-}=\brak{\frac{v_{o_2}}{2R + 2R}}\brak{2R} = \frac{v_{o_2}}{2}
+\end{align}
+\item
+Apply KCL at the non- inverting terminal of the op amp in Fig \ref{fig:es17btech11009_fig3}
+\begin{align}
+\frac{\frac{v_{0_2}}{2} - v_{o_1}}{2R} + \frac{\frac{v_{0_2}}{2}}{\frac{1}{sC}} + \frac{\frac{v_{0_2}}{2} - v_{o_2}}{R_{f}} =0
+\end{align}
+\begin{align}
+\frac{v_{o_2} - 2v_{o_1}}{4R} + sC\frac{v_{o_2}}{2} + \frac{v_{o_2} - 2v_{o_2}}{2R_{f}} = 0
+\end{align}
+\begin{align}
+\frac{v_{o_2} - 2v_{o_1}}{4R} + sCv_{o_2} -  \frac{v_{o_2}}{R_{f}} = 0
+\end{align}
+\item
+Substitute $R_{f} = \frac{2R}{1 + \Delta}$ and find the feedback factor H
+\begin{align}
+\frac{v_{o_2} - 2v_{o_1}}{4R} + sCv_{o_2} -  \frac{v_{o_2}}{2R}\brak{1 + \Delta} = 0
+\end{align}
+\begin{align}
+v_{o_2}\brak{\frac{1}{2R} + sC - \frac{1+ \Delta}{2R}}&= \frac{v_{o_1}}{R} 
+\end{align}
+\begin{align}
+v_{o_2}\brak{1 + 2sRC -1 - \Delta}&= 2v_{o_1}
+\end{align}
+Simplifying further,
+\begin{align}
+    \frac{v_{o_2}}{v_{o_1}}&= \frac{1}{sRC - \frac{\Delta}{2}}
+\end{align}
+\begin{align}
+    H &=\frac{v_{o_2}}{v_{o_1}}= \frac{1}{sRC - \frac{\Delta}{2}}
+    \label{eq:es17btech11009_H}
+\end{align}
 
 \item
 The transfer function of the equivalent positive feedback circuit in Fig. \ref{fig:es17btech11009_fig3} is  

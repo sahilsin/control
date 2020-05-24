@@ -1,0 +1,49 @@
+Current Feedback Amplifier
+
+** Defining parameters for output**
+.CSPARAM RID = 1MegOhm
+.CSPARAM RL_1 = 10kOhm
+.CSPARAM RF_1 = 10kOhm
+
+** Circuit Description **
+
+RL	3 	4 	10k
+Rm	0 	4 	100
+Is	0 	2 	1m
+Rf	2	4	10k
+XOP	0 2 3	OPAMP1
+
+* OPAMP MACRO MODEL
+* connections:      non-inverting input
+*                   |   inverting input
+*                   |   |   output
+*                   |   |   |
+.SUBCKT OPAMP1      1   2   4
+.PARAM Ri = 1MegOhm
+.PARAM RO = 100Ohm
+.PARAM GAIN = 10k
+* INPUT IMPEDANCE
+RIN	1	2	Ri
+* OUTPUT GAIN AND RESISTANCE
+B1 	3 	0 	I=((V(2)-V(1))/Ri)*GAIN
+ROUT	3	4	RO
+.ENDS
+
+** Analysis Request **
+.tran 0.01 10
+
+** Output Request **
+.control
+
+run
+* Io = (V(4) - V(3))/RL_1
+* Ii = V(2)/RID
+* Is = 1m
+* If = (V(2) - V(4))/RF_1
+
+wrdata ep18btech11016_ol_gain.dat RID*(V(4) - V(3))/(V(2)*RL_1)
+wrdata ep18btech11016_feed_gain.dat (RL_1*(V(2) - V(4)))/((V(4) - V(3))*RF_1)
+wrdata ep18btech11016_cl_gain.dat (V(4) - V(3))/(RL_1*1m)
+
+.endc
+.end

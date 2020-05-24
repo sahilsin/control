@@ -1,0 +1,13 @@
+\begin{circuitikz}
+\ctikzset{bipoles/length=1cm}
+
+\draw 
+(0, 0) node[op amp] (opamp) {$\mu$}
+(opamp.+) to (-1,-0.35)--(-1,-0.7) node[ground]{}
+(opamp.-) --(-1.5,0.35) to [short, i<=\small$I_i$] (-1.5,1.5) to[R=\small$R_F$, i>_=\small$I_f$, *-*] (1.5,1.5) to[R=\small$R_L$, i<=\small$I_o$] (1.5,0)
+(opamp.out) --(1.5, 0)
+(1.5, 1.5) to[R=\small$R_M$] (1.5, 2.9) to (2, 2.9) node[ground]{}
+(-1.5, 2.9) to[I_=\small$I_s$] (-1.5, 1.5) 
+(-1.5, 2.9) --(-1, 2.9) node[ground]{}
+
+;\end{circuitikz}

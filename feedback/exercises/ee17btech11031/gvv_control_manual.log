@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  23 MAY 2020 13:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  24 MAY 2020 10:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1449,7 +1449,7 @@ File: utxsyc.fd 2000/12/15 v3.1
 \tf@toc=\write5
 \openout5 = `gvv_control_manual.toc'.
 
- (./chapters/ee17btech11031_feed.tex
+ (./chapters/ee17btech11031_fbc.tex
 
 LaTeX Warning: Reference `fig:Original ckt' on page 1 undefined on input line 4
 .
@@ -1459,9 +1459,7 @@ Underfull \hbox (badness 3769) in paragraph at lines 4--6
 []\OT1/txr/m/n/12 The CE BJT am-pli-fier in Fig. [] em-
  []
 
-(./figs/ee17btech11031_ss_3.tex
-Missing character: There is no ; in font nullfont!
-)
+(./figs/ee17btech11031_fbc4f.tex)
 
 LaTeX Warning: Reference `eq:ee17btech11031_fed1' on page 1 undefined on input 
 line 44.
@@ -1470,7 +1468,7 @@ line 44.
 LaTeX Warning: Reference `eq:ee17btech11031_fed2' on page 1 undefined on input 
 line 44.
 
-(./table/ee17btech11031_para.tex
+(./table/ee17btech11031_fbc5.tex
 \gnumericTableWidth=\skip75
 \gnumericTableWidthComplete=\skip76
 \gnumericMultiRowLength=\skip77
@@ -1478,25 +1476,48 @@ line 44.
 \gnumericColB=\skip79
 )
 
-LaTeX Warning: Reference `fig:ss1 ckt' on page 1 undefined on input line 62.
+LaTeX Warning: Reference `fig:sss ckt' on page 1 undefined on input line 62.
 
-(./figs/ee17btech11031_ss_1.tex
-! Undefined control sequence.
-l.3 \draw
-          (0,0) node [ground]{};
+(./figs/ee17btech11031_fbc1f.tex)
+
+LaTeX Warning: Reference `fig: G ckt' on page 1 undefined on input line 75.
+
+(./figs/ee17btech11031_fbc2f.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
+
+
+]
+
+LaTeX Warning: Reference `eq:ee17btech11031_cc1' on page 2 undefined on input l
+ine 98.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+(./table/ee17btech11031_fbc2.tex
+! Missing $ inserted.
+<inserted text> 
+                $
+l.219 ...ight}\gnumbox[l]{\textbf{$16.06$ \mu A}}}
+                                                  
 ? 
 ! Emergency stop.
-l.3 \draw
-          (0,0) node [ground]{};
+<inserted text> 
+                $
+l.219 ...ight}\gnumbox[l]{\textbf{$16.06$ \mu A}}}
+                                                  
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 32791 strings out of 492624
- 708402 string characters out of 6119216
- 918711 words of memory out of 5000000
- 36116 multiletter control sequences out of 15000+600000
+ 33216 strings out of 492624
+ 718813 string characters out of 6119216
+ 988879 words of memory out of 5000000
+ 36534 multiletter control sequences out of 15000+600000
  73281 words of font info for 180 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,13n,69p,510b,1096s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
+ 55i,13n,69p,510b,1187s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on gvv_control_manual.dvi (2 pages, 76360 bytes).

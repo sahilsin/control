@@ -1,0 +1,15 @@
+\begin{circuitikz}
+\ctikzset{bipoles/length=0.5cm}
+
+\draw 
+(0,0) to[R=\tiny$R_F$, i=\tiny$I_f$] (2,0)
+(0,0) --(0,-1) --(0.3,-1) to[R=\tiny$R_{id}$, i=\tiny$I_i$] (0.3,-2) node[ground]{}
+(0,-1) --(-0.3,-1)
+(-0.3,-2) node[ground]{} (-0.3,-2) to[I>=\tiny$I_s$] (-0.3,-1)
+(2,0) --(2, -1) to[R, l_=\tiny$R_L$] (1.5,-1) to[R, l_=\tiny$r_o$, i_=\tiny$I_o$] (0.9,-1)
+(0.9,-1) to[cI=\tiny$\mu{I_i}$] (0.9,-2) node[ground]{}
+(2,-1) --(2.2,-1) to[R, l=\tiny$R_M$, i<=\tiny$I_1$] (2.2,-2) node[ground]{}
+node at(2.3,-0.9){\tiny$V_o$}
+node at(0.4,-1){\tiny$V$}
+
+;\end{circuitikz}

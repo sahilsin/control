@@ -1,0 +1,22 @@
+\begin{circuitikz}[american,scale =2]
+	\draw
+	% Drawing a npn transistor
+	(0,0) node[coordinate](A){} 
+	(0,-0.75)node[coordinate](B){$V_o$}
+	(-4,0)node[coordinate](C){}
+	(-4,-0.75)node[coordinate](D){}
+	(-1,-0.75)node[coordinate](E){}
+	% Making connections from transistor using relative coordinates
+	% Labelling the transistor
+	(A) to (B) to[L=$L_1$,v = $V_o$](0,-2) to node[ground]{}(0,-2)
+    (C) to[C=c,i<^=$i_1$](0,0)
+    (-4,-2) to[L=$L_2$](-4,-1) --(C)
+    (-4,-2) to node[ground]{}(-4,-2)
+    (D) --(-3,-0.75)
+    (B) --(-2,-0.75)
+    (E) to[R=R,*-*](-1,-2) to node[ground]{}(-1,-2)
+    (-2,-0.75) to[cI =$g_mV_\pi$](-2,-2) to node[ground]{}(-2,-2)
+    (-3,-2) to node[ground]{}(-3,-2)
+    (-3,-0.8) to[open,v_=$V_\pi$](-3,-2.2)
+	;
+\end{circuitikz}

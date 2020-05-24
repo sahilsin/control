@@ -50,10 +50,10 @@ and the various gains summarised in Table \ref{table:ee18btech11006_Factors}
 %\exp\cbrak{\j \phase{L\brak{\j \omega_{\pi}}}} = -1
 %\end{align}
 %Let the frequency at which phase angle $\phi(\omega)$ becomes $180^{\circ}$ be $\omega_{180}$. At $\omega = \omega_{180}$ , $L(j\omega)$ is a negative real number.
-\item Find the PM and the condition for stability.
+\item Find the condition for stability using the GM.
 \\
 \solution 
-For stability, $PM > 0$
+% \And PM > 0$. \\
 %\begin{itemize}
 %    \item if $\abs{{G(j\omega_{180})H(j\omega_{180})}}$ $<$ 1,$T(j\omega_{180}) >$ 1 \\ $\implies$ 
 %    system is stable.
@@ -71,19 +71,63 @@ For the given system
 \\
    \implies \omega_{180} &= \sqrt{3}\times 10^4 \, rad/s
 \end{align}
-The Loop gain at $\omega_{180}$ is $G(j\omega_{180})H(j\omega_{180})$.
- The system becomes unstable if 
+%
+For stability, 
+%<<<<<<< .mine
+%||||||| .r66
+%So,
+%\begin{align}
+%   180^{\circ}=  -3tan^{-1}\left({\frac{\omega_{180}}{10^4}}\right)\\
+%   \implies \omega_{180} = -\sqrt{3}\times 10^4
+%\end{align}
+%=======
+%So the phase crossover frequency is,
+%\begin{align}
+%   180^{\circ}= \abs{-3tan^{-1}\left({\frac{\omega_{180}}{10^4}}\right)}\\
+%   \implies \omega_{180} = \sqrt{3}\times 10^4
+%\end{align}
+%>>>>>>> .r69
+%The Loop gain at $\omega_{180}$ is $\abs{G(j\omega_{180})H(j\omega_{180})}$.
+% (i) $GM_{dB} > 0$
 \begin{align}
-G(j\omega_{180})H(j\omega_{180})\geq 1 \\
-\implies \abs{\frac{10^3k}{\left(1+\frac{j\omega}{10^4}\right)^3}} \geq 1\\
-\abs{\frac{10^3k}{\left(1-\sqrt{3}j\right)^3} } \geq 1
+GM &> 1
+\\
+\abs{L\brak{\j\omega_{180}}} & >  1 \\
+%\implies \abs{\frac{10^3k}{\left(1+\frac{j\omega}{10^4}\right)^3}} < 1\\
+%\abs{\frac{10^3k}{\left(1-\sqrt{3}j\right)^3} } < 1
+%\end{align}
+%\begin{align}
+ \implies     \frac{10^3\abs{k}}{{\abs{\sqrt{1+{\sqrt{3}}^2}}}^3} &> 1\\
+%     \frac{10^3\abs{k}}{8} < 1 \\
+\text{or, }     \abs{k}  &>  0.008
 \end{align}
-\begin{align}
-     \frac{10^3k}{\abs{\sqrt{1+{\sqrt{3}}^2}}} \geq 1\\
-     \frac{10^3k}{8} \geq 1 \\
-     \implies k \geq 0.008
-\end{align}
-Hence, the value of k above which the system becomes unstable is 0.008. 
+%\item Verify your result using the PM.
+%\\
+%\solution The gain crossover frequency $\omega_{gc}$ is defined as 
+%\begin{align}
+%   \abs{G(j\omega_{gc})H(j\omega_{gc})}&= 1  \\
+%   \abs{\frac{10^3k}{{\sqrt{1+\frac{{\omega_{gc}}^2}{10^8}}}^3}}&=1\\
+%  \implies \omega_{gc}&=\sqrt{10^8\left(10^2k^{\frac{2}{3}}-1\right)}
+%\end{align}
+%%
+%For stability
+%%
+%\begin{align}
+%PM=\phi_m=180^{\circ}+\angle{L\left(j\omega_{gc}\right)}&>0 
+%\\
+%\implies 180^{\circ}-3tan^{-1}\left({\frac{\omega_{gc}}{10^4}}\right)>0
+%\\
+%%Gain crossover frequency $\omega_{gc}$,
+%%Now, 
+%%\begin{align}
+%%  \phi_m=180^{\circ}-3tan^{-1}\left({\frac{\sqrt{10^8\left(10^2k^{\frac{2}{3}}-1\right)}}{10^4}}\right)>0  
+%%\end{align}
+%%\begin{align}
+%\sqrt{10^8\left(10^2k^{\frac{2}{3}}-1\right)}&<\sqrt{3} \times 10^4\\
+%%10^2k^{\frac{2}{3}}&<4\\
+%\implies \abs{k}<0.008
+%\end{align}
+%From (i) and (ii) the value of k above which the system becomes unstable is 0.008.
 \item Design the feedback circuit $H$. \\
 \solution
 \begin{align}

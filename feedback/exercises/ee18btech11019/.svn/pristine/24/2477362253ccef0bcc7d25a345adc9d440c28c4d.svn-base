@@ -1,0 +1,5 @@
+This section contains all the files that have been generated and used in simulating the circuit using spice simulators
+1. Open terminal in this folder and run the netlist
+2.Running the netlist will generate a ee18btech11019.dat file 
+3.Visualise this .dat file using a python script ee18btech11019_2.py
+

@@ -1,9 +1,0 @@
-\begin{circuitikz}[american]
-\ctikzset{tripoles/mos style/arrows}
-\draw (0,0)node[ground]{} to[R=$R_{22}$](0,1) to[short](0,3) to[short](3,3) to[R=$r_{o2}$](3,6) to[short](0,6) to[cisource, l=$g_{m2}v_{gs2}$](0,3);
-\draw (0,3) to[short, -o] (-2,3)node[above]{$-v_{gs2}$};
-\draw (-2,0)node[below]{$+$};
-\draw (-2,3)node[below]{$-$};
-\draw (-2, 1.5)node[]{$v_{gs2}$};
-\draw (6,0)node[ground]{} to[vsource, l=$V_{x}$](6,6) to[short](3,6);
-\end{circuitikz}

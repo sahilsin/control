@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  22 MAY 2020 08:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  24 MAY 2020 21:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1509,35 +1509,35 @@ LaTeX Warning: No positions in optional float specifier.
 )
 
 LaTeX Warning: Reference `fig:Original ckt1' on page 1 undefined on input line 
-32.
+33.
 
 
-LaTeX Warning: Reference `fig:small ckt1' on page 1 undefined on input line 34.
+LaTeX Warning: Reference `fig:small ckt1' on page 1 undefined on input line 35.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--35
+Underfull \hbox (badness 10000) in paragraph at lines 30--36
 
  []
 
 
-Underfull \hbox (badness 6016) in paragraph at lines 27--35
+Underfull \hbox (badness 6016) in paragraph at lines 30--36
 \OT1/txr/m/n/12 with ref-er-ence to the fig,[]. For ideal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--35
+Underfull \hbox (badness 10000) in paragraph at lines 30--36
 \OT1/txr/m/n/12 op-amp,the in-put resistance($\OML/txmi/m/it/12 R[]$\OT1/txr/m/
 n/12 ) is very
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 27--35
+Underfull \hbox (badness 1383) in paragraph at lines 30--36
 \OT1/txr/m/n/12 high (in-fi-nite) . And the drain cur-rent is
  []
 
 
-LaTeX Warning: Reference `fig:small ckt1' on page 1 undefined on input line 45.
+LaTeX Warning: Reference `fig:small ckt1' on page 1 undefined on input line 46.
 
 
 [1
@@ -1545,37 +1545,33 @@ LaTeX Warning: Reference `fig:small ckt1' on page 1 undefined on input line 45.
 
 ]
 
-LaTeX Warning: Reference `fig:small ckt1' on page 2 undefined on input line 63.
+LaTeX Warning: Reference `fig:small ckt1' on page 2 undefined on input line 64.
 
 
 
-LaTeX Warning: Reference `fig:small ckt1' on page 2 undefined on input line 77.
+LaTeX Warning: Reference `fig:small ckt1' on page 2 undefined on input line 79.
 
 
 (./figs/EE18BTECH11023/ee18btech11023_ckt3.tex)
 
-LaTeX Warning: Reference `fig:small ckt1' on page 2 undefined on input line 86.
+LaTeX Warning: Reference `fig:small ckt1' on page 2 undefined on input line 88.
 
 
 
-Underfull \vbox (badness 6412) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `fig:small ckt1' on page 2 undefined on input line 112
+LaTeX Warning: Reference `fig:small ckt1' on page 2 undefined on input line 114
 .
 
 
 LaTeX Warning: Reference `eq_ee18btech11023_10' on page 2 undefined on input li
-ne 159.
+ne 163.
 
 
 LaTeX Warning: Reference `eq_ee18btech11023_16' on page 2 undefined on input li
-ne 159.
+ne 163.
 
 
 LaTeX Warning: Reference `eq_ee18btech11023_18' on page 2 undefined on input li
-ne 173.
+ne 177.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1583,106 +1579,110 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [2]
 
 LaTeX Warning: Reference `eq_ee18btech11023_21' on page 3 undefined on input li
-ne 195.
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_22' on page 3 undefined on input li
 ne 200.
 
 
-LaTeX Warning: Reference `eq_ee18btech11023_23' on page 3 undefined on input li
+LaTeX Warning: Reference `eq_ee18btech11023_22' on page 3 undefined on input li
 ne 205.
 
 
+LaTeX Warning: Reference `eq_ee18btech11023_23' on page 3 undefined on input li
+ne 210.
+
+
 LaTeX Warning: Reference `eq_ee18btech11023_24' on page 3 undefined on input li
-ne 214.
+ne 219.
 
 
 LaTeX Warning: Reference `eq_ee18btech11023_25' on page 3 undefined on input li
-ne 214.
+ne 219.
 
 
-LaTeX Warning: Reference `fig:small ckt1' on page 3 undefined on input line 234
+LaTeX Warning: Reference `fig:small ckt1' on page 3 undefined on input line 240
 .
-
-
-LaTeX Warning: Reference `eq_ee18btech11023_28' on page 3 undefined on input li
-ne 239.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
+LaTeX Warning: Reference `eq_ee18btech11023_28' on page 3 undefined on input li
+ne 245.
+
+
 LaTeX Warning: Reference `eq_ee18btech11023_31' on page 3 undefined on input li
-ne 249.
+ne 255.
 
 
 LaTeX Warning: Reference `fig:Original ckt2' on page 3 undefined on input line 
-260.
+270.
 
 
 LaTeX Warning: Reference `fig:Original ckt1' on page 3 undefined on input line 
-262.
+270.
 
 (./figs/EE18BTECH11023/ee18btech11023_ckt2.tex)
 
 LaTeX Warning: Reference `fig:Original ckt2' on page 3 undefined on input line 
-272.
+278.
 
 
 LaTeX Warning: Reference `table:ee18btech11023_2' on page 3 undefined on input 
-line 273.
+line 279.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 274.
+               Default added (so using `tbp') on input line 280.
 
 (./tables/EE18BTECH11023/ee18btech11023_table2.tex)
 
 LaTeX Warning: Reference `fig:Original ckt2' on page 3 undefined on input line 
-282.
+287.
 
 
-LaTeX Warning: Reference `fig:small ckt2' on page 3 undefined on input line 283
+LaTeX Warning: Reference `fig:small ckt2' on page 3 undefined on input line 288
 .
 
-(./figs/EE18BTECH11023/ee18btech11023_ckt4.tex) [3]
+[3] (./figs/EE18BTECH11023/ee18btech11023_ckt4.tex)
 
-LaTeX Warning: Reference `fig:small ckt2' on page 4 undefined on input line 293
+LaTeX Warning: Reference `fig:small ckt2' on page 4 undefined on input line 298
 .
 
 
 LaTeX Warning: Reference `eq_ee18btech11023_34' on page 4 undefined on input li
-ne 305.
+ne 310.
 
 
 LaTeX Warning: Reference `eq_ee18btech11023_33' on page 4 undefined on input li
-ne 305.
+ne 310.
 
 
 LaTeX Warning: Reference `Question_1b_ee18btech11023' on page 4 undefined on in
-put line 315.
+put line 320.
 
 
 LaTeX Warning: Reference `Question_1c_ee18btech11023' on page 4 undefined on in
-put line 315.
+put line 320.
 
 
 LaTeX Warning: Reference `eq_ee18btech11023_36' on page 4 undefined on input li
-ne 325.
+ne 330.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 LaTeX Warning: Reference `eq_ee18btech11023_35' on page 4 undefined on input li
-ne 342.
+ne 347.
 
 
 LaTeX Warning: Reference `eq_ee18btech11023_41' on page 4 undefined on input li
-ne 342.
+ne 347.
 
 
 LaTeX Warning: Reference `Question_1d_ee18btech11023' on page 4 undefined on in
-put line 370.
+put line 375.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1690,32 +1690,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [4]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 412.
+               Default added (so using `tbp') on input line 418.
 
 (./tables/EE18BTECH11023/ee18btech11023_table3.tex)
 
-LaTeX Warning: Reference `fig:spice fig' on page 5 undefined on input line 422.
+LaTeX Warning: Reference `fig:spice fig' on page 5 undefined on input line 428.
 
 
 
 LaTeX Warning: Reference `table:ee18btech11023_3' on page 5 undefined on input 
-line 422.
+line 428.
 
 (./figs/EE18BTECH11023/ee18btech11023_ckt5.tex)
 File: figs/EE18BTECH11023/ee18btech11023_output.eps Graphic file (type eps)
 
 <figs/EE18BTECH11023/ee18btech11023_output.eps>
-Underfull \hbox (badness 1783) in paragraph at lines 443--452
+Underfull \hbox (badness 1783) in paragraph at lines 449--458
 \OT1/txr/m/n/12 in-put sig-nal. there will be no change in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--452
+Underfull \hbox (badness 10000) in paragraph at lines 449--458
 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) [5]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 270.
@@ -1743,10 +1740,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 270.
 Here is how much of TeX's memory you used:
  33972 strings out of 492624
  736012 string characters out of 6119216
- 991778 words of memory out of 5000000
+ 973947 words of memory out of 5000000
  37257 multiletter control sequences out of 15000+600000
  75595 words of font info for 190 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,15n,69p,511b,1215s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (5 pages, 158340 bytes).
+Output written on gvv_feedback_manual.dvi (5 pages, 158104 bytes).

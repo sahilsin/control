@@ -1,0 +1,8 @@
+\begin{circuitikz}
+\ctikzset{bipoles/length=1cm}
+
+\draw (0,0) to [R=$R_{f}$,*-*] (2,0) to [R=$2R$,*-*] (4,0);
+\draw (2,0) to [C=$C$,*-*](2,-2) to node[ground]{}(2,-1.4) ;
+\draw node at (-0.25,0.25) {$v_{o_2}$};
+\draw node at (4.25,0.25) {$v_{o_1}$};
+\end{circuitikz}

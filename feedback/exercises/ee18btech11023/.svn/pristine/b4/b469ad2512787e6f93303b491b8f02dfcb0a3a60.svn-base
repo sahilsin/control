@@ -1,8 +1,0 @@
-instructions for simulation:
-1. first 'cd'  both file ee18btech11023.net and LM741.mod 
-2. open terminal and run command "ngspice ee18btech11023.net"
-above command genarates ee18btech11023.dat file in that same folder.
-3:Enter the following command to exit from the interactive console.
-  Enter the command : exit
-4.Make sure that ee18btech11023.dat , ee18btech11023.py are in the same folder.
-5.Run the ee18btech11023.py file which gives a python plot of time vs Vout.

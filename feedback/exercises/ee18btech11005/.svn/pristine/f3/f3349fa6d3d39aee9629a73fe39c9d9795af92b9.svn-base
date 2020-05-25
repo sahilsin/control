@@ -1,0 +1,6 @@
+\begin{circuitikz}
+\draw (0,0) to[R=$R$] (2,0) to[C=$C$] (2,-2) node[ground]{}
+node at(0,-0.3){$V_{a2}$}
+(2,0) --(2.5,0)
+node at (2.5,-0.3) {$V_o$}
+;\end{circuitikz}

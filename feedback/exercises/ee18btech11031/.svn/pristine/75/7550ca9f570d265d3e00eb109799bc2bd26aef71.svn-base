@@ -1,0 +1,180 @@
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item Three identical inverting amplifier stages each characterized by a low frequency gain K and a single pole response with 
+\begin{align}
+    f_{3dB} = 100kHz
+\end{align}
+are connected in a feedback loop with H = 1.
+What is the minimum value of K at which the circuit oscillates? What would the frequency of oscillation be?\\
+\solution
+The given data is shown in the table.\ref{table:Input_table}
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11031/table1.tex}
+\caption{INPUT TABLE}
+\label{table:Input_table}
+\end{table}
+\\
+The open loop gain of amplifier stages is given by..,
+\begin{align}
+    G_1(s) = G_2(s) = G_3(s) = \frac{-K}{1+\frac{s}{2\pi10^5}}
+\end{align}
+The three gains are cascaded.The net open loop gain is given by.,
+\begin{align}
+    G(s) &= G_1(s)G_2(s)G_3(s)\\
+    G(s) &= \sbrak{\frac{-K}{1+\frac{s}{2\pi10^5}}}^3\\
+    G(s) &= -\sbrak{\frac{K}{1+\frac{s}{2\pi10^5}}}^3
+\end{align}
+%------------------------------
+\item Draw the control block diagram of above question.\\
+\solution 
+The control system block is shown in the figure.\ref{fig:control_system}
+\begin{figure}[!hbt]
+	\begin{center}
+			\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11031/control_system_block.tex}}
+	\end{center}
+\caption{CONTROL SYSTEM BLOCK}
+\label{fig:control_system}
+\end{figure}
+%--------------------------------
+\item Find the loop gain of the system.\\
+\solution The loop gain is given by 
+\begin{align}
+    LG(s) &= G(s)H \\
+    LG(s) &= -\sbrak{\frac{K}{1+\frac{s}{2\pi10^5}}}^3\\
+\text{Substitute..,} s=j\omega \\
+LG(j\omega) &= -\sbrak{\frac{K}{1+\frac{j\omega}{2\pi10^5}}}^3 \label{eq:ee18btech11031_Transfer_Func}
+\end{align}
+
+%-----------------------------------
+\item Find the frequency of oscillation of above circuit.\\
+\solution According to BarkHausen's criteria..,
+\begin{itemize}
+    \item The magnitude of loop gain of the system at the oscillating frequency should be greater than or equal to 1.
+    \item The phase angle of loop gain at the oscillating frequency must be equal to -180 degrees.
+\end{itemize}
+Let the frequency of oscillation is fs.,
+\begin{align}
+    \angle LG(j\omega) = -180\degree\\
+    180\degree - 3tan^{-1}\sbrak{\frac{\omega_s}{2\pi10^5}} = -180\degree \\
+    - 3tan^{-1}\sbrak{\frac{\omega_s}{2\pi10^5}} = -360\degree\\
+    \frac{\omega_s}{2\pi10^5} =  \tan(120\degree)\\
+    \implies \omega_s = 1.088\times10^6\text{ rad/sec}\label{eq:ee18btech11031_frequency}
+\end{align}
+Thus,the frequency of oscillation is 1.088M rad/sec.
+%-----------------------------------
+\item Find the minimum value of K.\\
+\solution 
+We know the magnitude of loop gain is greater than or equal to 1.The range of K can be found as follows,
+\begin{align}
+    \abs{LG(j\omega_s)} &\geq 1 \\
+    \frac{K^3}{\abs{1+\frac{j\omega_s}{2\pi10^5}}^3} &\geq 1 \\
+    K^3 &\geq \abs{1+\frac{j1.088\times10^6}{2\pi10^5}}^3\\
+     K^3 &\geq \abs{1+j1.73}^3\\
+     K^3 &\geq 8 \\
+     K &\geq 2
+\end{align}
+Therefore, The minimum value of K is 2.
+%---------------------------------
+\item Design the three stage oscillator for the above given question.
+\\
+\solution Consider the circuit shown in the figure.\ref{fig:ee18btech11031_circuit_design}.\\
+\begin{figure}[!hbt]
+	\begin{center}
+			\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11031/ee18btech11031_1.tex}}
+	\end{center}
+\caption{1}
+\label{fig:ee18btech11031_circuit_design}
+\end{figure}
+Considering the first stage.,
+\begin{align}
+    \frac{V_1}{V_{out}} &= -\frac{R_f||\frac{1}{sC}}{R}\\
+    \frac{V_1}{V_{out}} &= -\frac{\frac{R_f}{R}}{1+sCR_f}
+\end{align}
+Similarly for second stage.,
+\begin{align}
+     \frac{V_2}{V_1} &= -\frac{\frac{R_f}{R}}{1+sCR_f}
+\end{align}
+Similarly For third stage.,
+\begin{align}
+     \frac{V_{out}}{V_2} &= -\frac{\frac{R_f}{R}}{1+sCR_f}
+\end{align}
+Loop gain of the oscillator is computed as follows.,
+\begin{align}
+    LG(s) &= \frac{V_1}{V_{out}}\times \frac{V_2}{V_1}\times \frac{V_{out}}{V_2} \\
+    LG(s) &= \sbrak{-\frac{\frac{R_f}{R}}{1+sCR_f}}^3
+\end{align}
+Comparing with the equation.\ref{eq:ee18btech11031_Transfer_Func}
+\begin{align}
+    \frac{R_f}{R} &= K\\
+    CR_f &= \frac{1}{2\pi10^5}
+\end{align}
+For the circuit to oscillate,
+\begin{align}
+  K \geq 2 \\
+  R_f \geq 2R
+\end{align}
+Choose 
+\begin{align}
+    R &= 1000\Omega\\
+    \implies R_f &= 2000\Omega\\
+    \implies C &= 7.9577\times 10^{-10}F
+\end{align}
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11031/table2.tex}
+\caption{}
+\label{table:Output_table}
+\end{table}
+%-------------------------
+\item Verify the above result using the ngspice simulation.\\
+\solution
+Follow the instructions of the following README file.
+\begin{lstlisting}
+spice/ee18btech11031/README
+\end{lstlisting}
+Connect the circuit shown in fig.\ref{fig:ee18btech11031_circuit_design}:1 in ngspice.
+The following netlist file is connected accordingly
+\begin{lstlisting}
+spice/ee18btech11031/gvv_ngspice.net
+\end{lstlisting}
+This  netlist file results in a sinusoidal wave with particular frequency.
+The following code generates the graph shown in fig.\ref{fig:ee18btech11031_spice1}
+\begin{lstlisting}
+spice/ee18btech11031/ee18btech11031_ngspice.py
+\end{lstlisting}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11031/ee18btech11031_spice_1.eps}
+\caption{Output of three stage oscillator}
+\label{fig:ee18btech11031_spice1}
+\end{figure}
+%------------------
+\item Find the frequency of sinusoid obtained from the simulation.\\
+\solution The following Netlist file is to generate the output from 4.22msec to 4.26msec
+\begin{lstlisting}
+spice/ee18btech11031/gvv_ngspice2.net
+\end{lstlisting}
+The following code generates the variation of output voltage with respect to time.\\
+\begin{lstlisting}
+spice/ee18btech11031/ee18btech11031_ngspice_2.py
+\end{lstlisting}
+The data obtained from the above netlist file is plotted in the figure.\ref{fig:ee18btech11031_spice2}.
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11031/ee18btech11031_spice_2.eps}
+\caption{Output of three stage oscillator}
+\label{fig:ee18btech11031_spice2}
+\end{figure}
+The frequency obtained in simulation is as follows.,
+ \begin{align}
+     T_s(spice) &= 4.229\times10^{-3} - 4.2228\times10^{-3}\\
+     T_s(spice) &= 6.2\times10^{-6}\\
+     \implies F_s(spice) &= 0.1612 \text{MHz}\\
+     \implies \omega_s(spice) &= 1.012 \text{ Mrad/sec}
+ \end{align}
+But the obtained value in equation.\ref{eq:ee18btech11031_frequency} is 1.088MHz.
+Thus, the frequency obtained in the spice simulation is approximately equal to the calculated frequency.
+\end{enumerate}
+

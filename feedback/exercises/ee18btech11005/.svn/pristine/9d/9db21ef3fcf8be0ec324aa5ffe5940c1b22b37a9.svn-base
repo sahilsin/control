@@ -1,0 +1,15 @@
+\begin{circuitikz}
+\draw (0,0)--(6,0)
+(0,-2)--(6,-2);
+\draw (8,-1)node[draw,minimum width=4cm,minimum height=4cm] (load) {Feedback Network - H}
+(10,0) -- (14,0) 
+(14,0) -- (16,0)
+(10,-2) -- (16,-2)
+node at (0,-0.3){$+$}
+node at (0,-1) {$V_{a2}$}
+node at (0,-1.7){$-$}
+node at (16,-0.3){$+$}
+node at (16,-1) {$V_o$}
+node at (16,-1.7){$-$}
+;
+\end{circuitikz}

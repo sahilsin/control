@@ -8,9 +8,9 @@
 \begin{tikzpicture}[auto, node distance=2cm,>=latex']
     \node [input, name=input] {};
     \node [sum, right of=input] (sum) {};
-    \node [block, right of=sum] (controller) {$Amplifier$};
+    \node [block, right of=sum] (controller) {$G(s) = 1 + \frac{R_2}{R_1}$};
     \node [output, right of=controller] (output) {};
-    \node [block, below of=controller] (feedback) {\tiny{Frequency selective network}};
+    \node [block, below of=controller] (feedback) {$H(s) = \frac{Z_p}{Z_p+Z_s}$};
     
     \draw [->] (sum) -- node {$V_i$} (controller);
     \draw [->] (controller) -- node [name=y] {$V_o$}(output);

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  25 MAY 2020 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  26 MAY 2020 19:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1487,14 +1487,22 @@ File: utxsyc.fd 2000/12/15 v3.1
 \gnumericColA=\skip82
 \gnumericColB=\skip83
 )
+(./figs/ee18btech11028/feedback_loop.tex)
 File: ./figs/ee18btech11028/fig_1.eps Graphic file (type eps)
-
-<./figs/ee18btech11028/fig_1.eps>
+ <./figs/ee18btech11028/fig_1.eps>
 File: ./figs/ee18btech11028/fig_2.eps Graphic file (type eps)
- <./figs/ee18btech11028/fig_2.eps> [1
+
+<./figs/ee18btech11028/fig_2.eps> [1
 
 
 ]
+Overfull \hbox (11.66217pt too wide) detected at line 106
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: ./figs/ee18btech11028/fig_3.eps Graphic file (type eps)
 
 <./figs/ee18btech11028/fig_3.eps>
@@ -1509,6 +1517,9 @@ File: ./figs/ee18btech11028/spice_step_response.eps Graphic file (type eps)
 (./figs/ee18btech11028/op_amp_circuit.tex)
 (./tables/ee18btech11028/ee18btech11028_2_t2.tex)) [3]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 276.
+ [4
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 276.
 
 (./gvv_feedback_manual.aux)
@@ -1519,12 +1530,12 @@ Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 276.
  ) 
 Here is how much of TeX's memory you used:
- 33143 strings out of 492624
- 716109 string characters out of 6119216
- 938513 words of memory out of 5000000
- 36429 multiletter control sequences out of 15000+600000
+ 33199 strings out of 492624
+ 717524 string characters out of 6119216
+ 927537 words of memory out of 5000000
+ 36482 multiletter control sequences out of 15000+600000
  74877 words of font info for 189 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,14n,69p,511b,1176s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (3 pages, 53148 bytes).
+Output written on gvv_feedback_manual.dvi (4 pages, 60668 bytes).

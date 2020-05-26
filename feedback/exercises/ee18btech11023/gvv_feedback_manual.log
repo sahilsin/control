@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  25 MAY 2020 20:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  26 MAY 2020 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1475,10 +1475,40 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 224.
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 ) (./chapters/ee18btech11023.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
 (./figs/EE18BTECH11023/ee18btech11023_ckt1.tex)
+(./figs/EE18BTECH11023/ee18btech11023_ckt2.tex)
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 18.
+               Default added (so using `tbp') on input line 50.
 
 (./tables/EE18BTECH11023/ee18btech11023_table1.tex
 \gnumericTableWidth=\skip79
@@ -1487,23 +1517,28 @@ LaTeX Warning: No positions in optional float specifier.
 \gnumericColA=\skip82
 \gnumericColB=\skip83
 )
-Underfull \hbox (badness 10000) in paragraph at lines 30--36
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 56.
+
+(./tables/EE18BTECH11023/ee18btech11023_table2.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
 
  []
 
 
-Underfull \hbox (badness 4832) in paragraph at lines 30--36
+Underfull \hbox (badness 4832) in paragraph at lines 67--73
 \OT1/txr/m/n/12 with ref-er-ence to the fig,[][]2.3[][][]. For ideal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--36
+Underfull \hbox (badness 10000) in paragraph at lines 67--73
 \OT1/txr/m/n/12 op-amp,the in-put resistance($\OML/txmi/m/it/12 R[]$\OT1/txr/m/
 n/12 ) is very
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 30--36
+Underfull \hbox (badness 1383) in paragraph at lines 67--73
 \OT1/txr/m/n/12 high (in-fi-nite) . And the drain cur-rent is
  []
 
@@ -1511,10 +1546,13 @@ Underfull \hbox (badness 1383) in paragraph at lines 30--36
 
 
 ] (./figs/EE18BTECH11023/ee18btech11023_ckt3.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1968) has occurred while \output is active []
 
  [2]
-Underfull \hbox (badness 1881) in paragraph at lines 197--201
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 234--238
 \OT1/txr/m/n/12 substituting the val-ues of GH and $\OML/txmi/m/it/12 R[]$ \OT1
 /txr/m/n/12 in
  []
@@ -1522,35 +1560,29 @@ Underfull \hbox (badness 1881) in paragraph at lines 197--201
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-(./figs/EE18BTECH11023/ee18btech11023_ckt2.tex)
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 280.
-
-(./tables/EE18BTECH11023/ee18btech11023_table2.tex) [3]
+ [3]
 (./figs/EE18BTECH11023/ee18btech11023_ckt4.tex)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [4]
+(./figs/EE18BTECH11023/ee18btech11023_ckt5.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 418.
+               Default added (so using `tbp') on input line 453.
 
 (./tables/EE18BTECH11023/ee18btech11023_table3.tex)
-(./figs/EE18BTECH11023/ee18btech11023_ckt5.tex)
 File: figs/EE18BTECH11023/ee18btech11023_output.eps Graphic file (type eps)
 
 <figs/EE18BTECH11023/ee18btech11023_output.eps>
-Underfull \hbox (badness 1783) in paragraph at lines 449--458
+Underfull \hbox (badness 1783) in paragraph at lines 470--479
 \OT1/txr/m/n/12 in-put sig-nal. there will be no change in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--458
+Underfull \hbox (badness 10000) in paragraph at lines 470--479
 
  []
 
@@ -1565,19 +1597,15 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 271.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
 Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
 (rerunfilecheck)             Checksum: 0CA316A16B2B9024EAD9F543B11E2310;272.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 271.
  ) 
 Here is how much of TeX's memory you used:
- 33968 strings out of 492624
- 735878 string characters out of 6119216
- 968077 words of memory out of 5000000
- 37248 multiletter control sequences out of 15000+600000
+ 33970 strings out of 492624
+ 735907 string characters out of 6119216
+ 968089 words of memory out of 5000000
+ 37249 multiletter control sequences out of 15000+600000
  75595 words of font info for 190 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,15n,69p,511b,1189s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,69p,511b,1189s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (5 pages, 157224 bytes).
+Output written on gvv_feedback_manual.dvi (5 pages, 158480 bytes).

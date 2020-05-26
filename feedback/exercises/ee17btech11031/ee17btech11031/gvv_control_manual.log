@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  25 MAY 2020 20:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  26 MAY 2020 19:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1523,12 +1523,12 @@ Overfull \vbox (0.66823pt too high) has occurred while \output is active []
 
 
 LaTeX Warning: Reference `fig:Original ckt' on page 4 undefined on input line 2
-29.
+39.
 
 (./table/ee17btech11031_fbc4.tex)
 
 LaTeX Warning: Reference `table:ee17btech11031_spice_Table' on page 4 undefined
- on input line 238.
+ on input line 248.
 
 ) [4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
@@ -1562,4 +1562,4 @@ Here is how much of TeX's memory you used:
  1144 hyphenation exceptions out of 8191
  55i,13n,69p,510b,1222s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (4 pages, 145736 bytes).
+Output written on gvv_control_manual.dvi (4 pages, 147196 bytes).

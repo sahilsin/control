@@ -1,0 +1,13 @@
+\begin{circuitikz}[american]
+\ctikzset{tripoles/mos style/arrows}
+
+\draw (0,0) node[ground]{};
+\draw (0,0) to[short, i = $I_{f}$] (0,2.5){};
+\draw (0, 2.5) to[R = $R_{f}$] (2.5, 2.5);
+\draw (2.5,2.5) to[short, -o] (3,2.5);
+\draw (3,0) node[ground]{};
+\draw node at(3,2.2){$+$};
+\draw node at(3,1.4){$V_{o}$};
+\draw node at(3,0.5){$-$};
+
+\end{circuitikz}

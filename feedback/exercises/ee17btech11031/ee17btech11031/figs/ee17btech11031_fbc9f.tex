@@ -1,0 +1,42 @@
+  
+\begin{circuitikz}[american]
+\usetikzlibrary{positioning, fit, calc}
+\draw (0,-2) to[isource, l = $I{s}$] (0,0);
+\draw (0,0) -- (6,0);
+\draw (6,0) to[R = $R_{i}$] (6,-2) -- (0,-2);
+\draw (6, -4) to[controlled current source = $HV_{o}$] (6,-6);
+\draw (6,-4) -- (4,-4) -- (4, 0);
+\draw (6,-6) -- (2, -6 ) -- (2, -2);
+\draw node at(5,-0.2){$+$};
+\draw node at(5,-1.8){$-$};
+\draw node at(5,-1){$V_{i}$};
+\draw (10,0) to [controlled voltage source=$GV_i$]++(0,-2);
+\draw (12, 0) to[R = $R_{o}$] (14,0);
+\draw (10,0) -- (12,0);
+\draw (14,0)--(14,-2)--(14,-4)--(12,-4);
+\draw (12, -6) -- (16,-6) -- (16, -2);
+
+\draw (12, -4) to[short, -o] (12, -4);
+\draw (12, -6) to[short, -o] (12, -6);
+\draw (14,-2) -- (16,-2);
+\draw (16, -2) to[short, -o] (18,-2);
+\draw (16, 0) to[short, -o] (18, 0);
+\draw node at(18,-0.2){$+$};
+\draw (14,0) -- (16, 0);
+\draw node at(18, -1.8){$-$};
+\draw node at(18, - 1){$V_{o}$};
+\draw (10,-2)--(12,-2);
+\draw (12,-2) -- (14,-2);
+\draw (5,0)coordinate(left);
+\draw (5,-2)coordinate(bottoml);
+\draw (13,0)coordinate(right);
+\draw (13,-2)coordinate(bottomr);
+\draw node[fit=(left)(right)(bottoml)(bottomr),draw, dashed, label={amplifier circuit},inner sep=10pt] {};
+\draw (5,-4)coordinate(left1);
+\draw (5,-6)coordinate(bottoml1);
+\draw (13,-4)coordinate(right1);
+\draw (13,-6)coordinate(bottomr1);
+\draw node[fit=(left1)(right1)(bottoml1)(bottomr1),draw, dashed, label={feedback circuit},inner sep=10pt] {};
+
+
+\end{circuitikz}

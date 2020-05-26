@@ -1,0 +1,24 @@
+\begin{circuitikz}[american]
+\ctikzset{tripoles/mos style/arrows}
+
+\draw (0,-2.5) -- (0,-1.5) to[isource, l = $I_{i}$] (0,-1) -- (0,0);
+\draw (0,-2.5) -- (2, -2.5) -- (2, -2) to[R = $R_{s}$] (2, -1) -- (2, 0);
+\draw (2, -2.5) -- (4, -2.5) -- (4, -2) to[R = $R_{11}$] (4, -1) -- (4, 0);
+\draw (0, 0) -- (6,0);
+\draw (4, -2.5) -- (6, -2.5);
+
+\draw (10, 0) -- (12, 0) -- (12, -1) to[R = $R_{22}$] (12,-2) -- (12, -2.5);
+\draw (12, 0) -- (14, 0) -- (14, -1) to[R = $R_{L}$] (14, -2) -- (14, -2.5);
+\draw (10, -2.5) -- (14, -2.5);
+\draw (8,-1)node[draw,minimum width=4cm,minimum height=4cm] (load) {Basic Amplifier}(8,0); 
+\draw (14, -2.5) to[short, -o] (16,-2.5);
+\draw (14, 0) to[short, -o] (16, 0);
+\draw node at(16, -0.5){$+$};
+\draw node at(16, -1.5){$V_{o}$};
+\draw node at(16, -2.3){$-$};
+\draw (0.8,-3.5)node[label = {right:$R_{i}$}]{} --(0.8,-2);
+\draw (2.1,-2.1) ++(-1,0.1) node[flowarrow]{};
+\draw (15.4,-3.5)node[label = {right:$R_{o}$}]{} --(15.4,-2);
+\draw (16,-2.1) ++(-1,0.1) node[flowarrow, rotate = 180]{};
+
+\end{circuitikz}

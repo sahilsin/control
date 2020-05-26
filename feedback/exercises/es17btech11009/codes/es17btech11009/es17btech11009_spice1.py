@@ -7,25 +7,24 @@ import subprocess
 import shlex
 #end
 
-T = 15.3738 - 15.0569
+T = 3.3801-3.317
 f = 1/T
 print(f)
-
 
 
 #Loading the data
 data = np.loadtxt( 'es17btech11009.dat' )
 #PLotting the data from spice simulation
-plt.plot(data[:,0],data[:,1],label="Oscillating output")
-plt.xlim(15,17)
+plt.plot(data[:,0],data[:,1],label='Oscillator output')
+plt.xlim(3,3.5)
 plt.ylim(-5,5)
-plt.plot([15,17],[0,0],'r--',lw=1,label ='0V')
-plt.plot(15.3738,0,'o')
-plt.plot(15.0569,0,'o')
-plt.legend()
 plt.xlabel('time')
 plt.ylabel('Vout')
-plt.title('Output from spice simulation')
+plt.title('Output from Oscillator')
+plt.plot([3,3.5],[0,0],'r--',lw=1,label ='0V')
+plt.plot(3.3801,0,'o')
+plt.plot(3.317,0,'o')
+plt.legend()
 
 #if using termux
 plt.savefig('./figs/es17btech11009/es17btech11009_spice1.pdf')

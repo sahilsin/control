@@ -1,0 +1,20 @@
+* C:\Users\varsh\OneDrive\Desktop\Spice64\bin\es17btech11009.asc
+R1 N001 0 2000
+R2 X N001 2000
+R3 N003 Vout 2000
+R4 X N003 1818.18
+C1 N003 0 0.00001
+V1 Vcc 0 5
+V2 0 -Vcc 5
+C2 Vout N002 0.00001
+R5 N002 X 1000
+XU1 0 N002 Vcc -Vcc Vout LM741/NS
+XU2 N003 N001 Vcc -Vcc X LM741/NS
+.tran 0.01 4 UIC
+.include LM741.MOD
+.control
+run
+wrdata es17btech11009.dat V(Vout)
+*plot V(Vout)
+.endc
+.end

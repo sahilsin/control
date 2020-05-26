@@ -3,18 +3,18 @@
 \item An op amp designed to have a low-frequency gain of $10^{5}$ and a high-frequency response dominated by a single pole at 100 rad/s, acquires, through a manufacturing error, a pair of additional poles at 10,000 rad/s. 
 \begin{enumerate}
 \item At what frequency does the total phase shift reach 180$\degree$ ? 
-\item At this frequency, for what value of $\beta$, assumed to be frequency independent, does the loop gain reach a value of unity? 
+\item At this frequency, for what value of H, assumed to be frequency independent, does the loop gain reach a value of unity? 
 \item What is the corresponding value of closed-loop gain at low frequencies?
 \end{enumerate}
 \solution
 \begin{align}
-G(s) &= \frac{A}{1+\frac{s}{p}} 
+G(s) &= \frac{G_{0}}{1+\frac{s}{p}} 
 \end{align}
 Considering manufacturing error
 \begin{align}
-G(s) &= \dfrac{A}{\brak{1+\dfrac{s}{p}}\brak{1+\dfrac{s}{p_{error}}}} 
+G(s) &= \dfrac{G_{0}}{\brak{1+\dfrac{s}{p}}\brak{1+\dfrac{s}{p_{error}}}} 
 \\
-A &= \text{Low Frequency Gain} = 10^{5}
+G_{0} &= \text{Low Frequency Gain} = 10^{5}
 \\
 p &= 100
 \\
@@ -44,13 +44,13 @@ Also $\omega_{180} >> 100$
   \caption{Open Loop Gain}
   \label{fig:plot1}
 \end{figure}
-\item Calculating feedback factor $\beta$ for which loop gain at $\omega_{180}$ is unity
+\item Calculating feedback factor $H$ for which loop gain at $\omega_{180}$ is unity
 \begin{align}
-H(s) = G(s)\beta = 1
+\text{Loop Gain} = G(s)H = 1
 \\
-\dfrac{10^{5}\beta}{\sqrt{1^{2} + \brak{\dfrac{\omega_{180}}{10^{2}}}^{2}} \sqrt{\brak{1+\dfrac{\omega_{180}}{10^{4}}}^{2}}} = 1
+\dfrac{10^{5}H}{\sqrt{1^{2} + \brak{\dfrac{\omega_{180}}{10^{2}}}^{2}} \sqrt{\brak{1+\dfrac{\omega_{180}}{10^{4}}}^{2}}} = 1
 \\
-\beta = 0.002
+H = 0.002
 \end{align}
 \item Calculating the closed loop gain at low frequency
 Let $T(s)$ be the closed loop Transfer Function.
@@ -63,9 +63,9 @@ Let $T(s)$ be the closed loop Transfer Function.
 \end{figure}
 
 \begin{align}
-T(s) &= \dfrac{G(s)}{1+\beta G(s)}
+T(s) &= \dfrac{G(s)}{1+H G(s)}
 \\
-T(s) &= \dfrac{10^{5}}{1+\beta 10^{5}+ \dfrac{s}{100}}
+T(s) &= \dfrac{10^{5}}{1+H 10^{5}+ \dfrac{s}{100}}
 \end{align}
 
 \begin{align}
@@ -141,7 +141,7 @@ R_{2}C_{1} &= \frac{1}{100}
 \end{align}
 
 
-2) Designing $H(s) = \beta G(s)$
+2) Designing $H(s) = H$
 
 \begin{figure}[!hbt]
 	\begin{center}

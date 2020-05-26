@@ -1,0 +1,10 @@
+1:Make sure that es17btech11009.net file and LM741.MOD are in the same folder.
+2:cd into the folder containing the above files.
+3:Enter the command: 
+  ngspice es17btech11009.net
+4:The above command will generate es17btech11009.dat file.
+5:Enter the following command to exit from the interactive console.
+   Enter the command : exit
+6:Make sure that es17btech11009.dat,es17btech11009_spice.py and es17btech11009_spice1.py are in the same folder.
+7:Run the es17btech11009_spice.py file which gives a python   plot of time vs Vout.
+8:Run the es17btech11009_spice1.py file to generate part of     the plot.

@@ -1,0 +1,102 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand*\HyPL@Entry[1]{}
+\bibstyle{IEEEtran}
+\HyPL@Entry{0<</S/D>>}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Feedback Voltage Amplifier: Series-Shunt}{1}{section.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Feedback Current Amplifier: Shunt-Series}{1}{section.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Ideal Case}{1}{subsection.2.1}}
+\newlabel{Question_1_ee18btech11023}{{{2.1}}{1}{Ideal Case}{Item.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {{2.1}}{\ignorespaces \relax }}{1}{figure.caption.1}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:Original ckt1}{{{2.1}}{1}{\relax }{figure.caption.1}{}}
+\newlabel{Question_1a_ee18btech11023}{{{2.2}}{1}{Ideal Case}{Item.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {{2.1}}{\ignorespaces \relax }}{1}{table.caption.2}}
+\newlabel{table:ee18btech11023_1}{{{2.1}}{1}{\relax }{table.caption.2}{}}
+\newlabel{eq_ee18btech11023_1}{{{2.2}.1}{1}{Ideal Case}{equation.2.1}{}}
+\newlabel{eq_ee18btech11023_2}{{{2.2}.2}{1}{Ideal Case}{equation.2.2}{}}
+\newlabel{eq_ee18btech11023_3}{{{2.2}.3}{1}{Ideal Case}{equation.2.3}{}}
+\newlabel{eq_ee18btech11023_4}{{{2.2}.4}{2}{Ideal Case}{equation.2.4}{}}
+\newlabel{eq_ee18btech11023_5}{{{2.2}.5}{2}{Ideal Case}{equation.2.5}{}}
+\newlabel{eq_ee18btech11023_6}{{{2.2}.6}{2}{Ideal Case}{equation.2.6}{}}
+\newlabel{Question_1b_ee18btech11023}{{{2.3}}{2}{Ideal Case}{Item.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {{2.3}}{\ignorespaces \relax }}{2}{figure.caption.3}}
+\newlabel{fig:small ckt1}{{{2.3}}{2}{\relax }{figure.caption.3}{}}
+\newlabel{eq_ee18btech11023_7}{{{2.3}.1}{2}{Ideal Case}{equation.3.1}{}}
+\newlabel{eq_ee18btech11023_8}{{{2.3}.2}{2}{Ideal Case}{equation.3.2}{}}
+\newlabel{eq_ee18btech11023_9}{{{2.3}.3}{2}{Ideal Case}{equation.3.3}{}}
+\newlabel{eq_ee18btech11023_10}{{{2.3}.4}{2}{Ideal Case}{equation.3.4}{}}
+\newlabel{eq_ee18btech11023_11}{{{2.3}.5}{2}{Ideal Case}{equation.3.5}{}}
+\newlabel{eq_ee18btech11023_12}{{{2.3}.6}{2}{Ideal Case}{equation.3.6}{}}
+\newlabel{eq_ee18btech11023_13}{{{2.3}.7}{2}{Ideal Case}{equation.3.7}{}}
+\newlabel{Question_1c_ee18btech11023}{{{2.4}}{2}{Ideal Case}{Item.4}{}}
+\newlabel{eq_ee18btech11023_14}{{{2.4}.1}{2}{Ideal Case}{equation.4.1}{}}
+\newlabel{eq_ee18btech11023_15}{{{2.4}.2}{2}{Ideal Case}{equation.4.2}{}}
+\newlabel{eq_ee18btech11023_16}{{{2.4}.3}{2}{Ideal Case}{equation.4.3}{}}
+\newlabel{Question_1d_ee18btech11023}{{{2.5}}{2}{Ideal Case}{Item.5}{}}
+\newlabel{eq_ee18btech11023_17}{{{2.5}.1}{2}{Ideal Case}{equation.5.1}{}}
+\newlabel{eq_ee18btech11023_18}{{{2.5}.2}{2}{Ideal Case}{equation.5.2}{}}
+\newlabel{eq_ee18btech11023_19}{{{2.5}.3}{2}{Ideal Case}{equation.5.3}{}}
+\newlabel{eq_ee18btech11023_20}{{{2.5}.4}{2}{Ideal Case}{equation.5.4}{}}
+\newlabel{Question_1e_ee18btech11023}{{{2.6}}{2}{Ideal Case}{Item.6}{}}
+\newlabel{eq_ee18btech11023_21}{{{2.6}.1}{3}{Ideal Case}{equation.6.1}{}}
+\newlabel{eq_ee18btech11023_22}{{{2.6}.2}{3}{Ideal Case}{equation.6.2}{}}
+\newlabel{eq_ee18btech11023_23}{{{2.6}.3}{3}{Ideal Case}{equation.6.3}{}}
+\newlabel{eq_ee18btech11023_24}{{{2.6}.4}{3}{Ideal Case}{equation.6.4}{}}
+\newlabel{eq_ee18btech11023_25}{{{2.6}.5}{3}{Ideal Case}{equation.6.5}{}}
+\newlabel{eq_ee18btech11023_26}{{{2.6}.6}{3}{Ideal Case}{equation.6.6}{}}
+\newlabel{eq_ee18btech11023_27}{{{2.6}.7}{3}{Ideal Case}{equation.6.7}{}}
+\newlabel{eq_ee18btech11023_28}{{{2.6}.8}{3}{Ideal Case}{equation.6.8}{}}
+\newlabel{eq_ee18btech11023_29}{{{2.6}.9}{3}{Ideal Case}{equation.6.9}{}}
+\newlabel{eq_ee18btech11023_30}{{{2.6}.10}{3}{Ideal Case}{equation.6.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {{2.7}}{\ignorespaces \relax }}{3}{table.caption.5}}
+\newlabel{table:ee18btech11023_2}{{{2.7}}{3}{\relax }{table.caption.5}{}}
+\newlabel{eq_ee18btech11023_31}{{{2.6}.11}{3}{Ideal Case}{equation.6.11}{}}
+\newlabel{eq_ee18btech11023_32}{{{2.6}.12}{3}{Ideal Case}{equation.6.12}{}}
+\newlabel{Question_2f_ee18btech11023}{{{2.7}}{3}{Ideal Case}{Item.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {{2.7}}{\ignorespaces \relax }}{3}{figure.caption.4}}
+\newlabel{fig:Original ckt2}{{{2.7}}{3}{\relax }{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {{2.7}}{\ignorespaces \relax }}{4}{figure.caption.6}}
+\newlabel{fig:small ckt2}{{{2.7}}{4}{\relax }{figure.caption.6}{}}
+\newlabel{eq_ee18btech11023_33}{{{2.7}.1}{4}{Ideal Case}{equation.7.1}{}}
+\newlabel{eq_ee18btech11023_34}{{{2.7}.2}{4}{Ideal Case}{equation.7.2}{}}
+\newlabel{eq_ee18btech11023_35}{{{2.7}.3}{4}{Ideal Case}{equation.7.3}{}}
+\newlabel{eq_ee18btech11023_36}{{{2.7}.4}{4}{Ideal Case}{equation.7.4}{}}
+\newlabel{eq_ee18btech11023_37}{{{2.7}.5}{4}{Ideal Case}{equation.7.5}{}}
+\newlabel{eq_ee18btech11023_38}{{{2.7}.6}{4}{Ideal Case}{equation.7.6}{}}
+\newlabel{eq_ee18btech11023_39}{{{2.7}.7}{4}{Ideal Case}{equation.7.7}{}}
+\newlabel{eq_ee18btech11023_40}{{{2.7}.8}{4}{Ideal Case}{equation.7.8}{}}
+\newlabel{eq_ee18btech11023_41}{{{2.7}.9}{4}{Ideal Case}{equation.7.9}{}}
+\newlabel{eq_ee18btech11023_42}{{{2.7}.10}{4}{Ideal Case}{equation.7.10}{}}
+\newlabel{eq_ee18btech11023_43}{{{2.7}.11}{4}{Ideal Case}{equation.7.11}{}}
+\newlabel{eq_ee18btech11023_44}{{{2.7}.12}{4}{Ideal Case}{equation.7.12}{}}
+\newlabel{eq_ee18btech11023_45}{{{2.7}.13}{4}{Ideal Case}{equation.7.13}{}}
+\newlabel{eq_ee18btech11023_46}{{{2.7}.14}{4}{Ideal Case}{equation.7.14}{}}
+\newlabel{eq_ee18btech11023_47}{{{2.7}.15}{4}{Ideal Case}{equation.7.15}{}}
+\newlabel{eq_ee18btech11023_48}{{{2.7}.16}{4}{Ideal Case}{equation.7.16}{}}
+\newlabel{eq_ee18btech11023_49}{{{2.7}.17}{4}{Ideal Case}{equation.7.17}{}}
+\newlabel{eq_ee18btech11023_50}{{{2.7}.18}{4}{Ideal Case}{equation.7.18}{}}
+\newlabel{eq_ee18btech11023_51}{{{2.8}.1}{4}{Ideal Case}{equation.8.1}{}}
+\newlabel{eq_ee18btech11023_52}{{{2.8}.3}{4}{Ideal Case}{equation.8.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {{2.8}}{\ignorespaces \relax }}{5}{table.caption.7}}
+\newlabel{table:ee18btech11023_3}{{{2.8}}{5}{\relax }{table.caption.7}{}}
+\newlabel{eq_ee18btech11023_53}{{{2.8}.4}{5}{Ideal Case}{equation.8.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {{2.8}}{\ignorespaces \relax }}{5}{figure.caption.8}}
+\newlabel{fig:spice fig}{{{2.8}}{5}{\relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {{2.8}}{\ignorespaces output from feedback Amplifier\relax }}{5}{figure.caption.9}}
+\newlabel{fig:output}{{{2.8}}{5}{output from feedback Amplifier\relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Practical Case}{5}{subsection.2.2}}

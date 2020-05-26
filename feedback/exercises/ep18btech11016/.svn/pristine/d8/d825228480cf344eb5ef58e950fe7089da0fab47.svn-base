@@ -1,0 +1,14 @@
+\begin{circuitikz}
+\ctikzset{bipoles/length=1cm}
+
+\draw
+(1,-1.5) to[R=$R_F$,*-*] (5.5,-1.5)
+(5.5,-1.5)-- (5.5,-1)
+(5.5,-1.5) to[R=$R_M$] (5.5,-2.75) --(5.5,-3) node[ground]{};
+\draw
+node at(2,-2){$I_f$}
+[arrows=->,line width=.4pt](1.8,-1.7)--(2.3,-1.7);
+\draw
+node at(6,-1.2){$I_o$}
+[arrows=<-,line width=.4pt](5.7,-1.4)--(5.7,-1);
+\end{circuitikz}

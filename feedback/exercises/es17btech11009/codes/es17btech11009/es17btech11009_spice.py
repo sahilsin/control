@@ -12,6 +12,7 @@ plt.grid()
 plt.xlabel("time")
 plt.ylabel("Vout")
 plt.title('Output from Oscillator')
+plt.xlim(0,3.5)
 
 #if using termux
 plt.savefig('./figs/es17btech11009/es17btech11009_spice.pdf')

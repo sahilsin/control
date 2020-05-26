@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  24 MAY 2020 21:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  26 MAY 2020 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1449,50 +1449,34 @@ LaTeX Font Info:    Try loading font information for OT1+txtt on input line 4.
 txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 )) (./figs/es17btech11009/es17btech11009_block4.tex)
+(./figs/es17btech11009/es17btech11009_2.tex)
 (./figs/es17btech11009/es17btech11009_block3.tex
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/generic/pgf/front
 endlayer/tikz/libraries/tikzlibraryfit.code.tex
 File: tikzlibraryfit.code.tex 2019/02/02 v3.1.1 (3.1.1)
 ))
-(./figs/es17btech11009/es17btech11009_fig3.tex) [1
+(./figs/es17btech11009/es17btech11009_fig3.tex)
+Underfull \vbox (badness 6859) has occurred while \output is active []
+
+ [1
 
 
 ]
-(./figs/es17btech11009/es17btech11009_block4.tex)
-(./figs/es17btech11009/es17btech11009_block3.tex)
-(./figs/es17btech11009/es17btech11009_fig3.tex)
-(./figs/es17btech11009/es17btech11009_fig2.tex)
-Underfull \vbox (badness 1571) has occurred while \output is active []
-
- [2]
-(./figs/es17btech11009/es17btech11009_block1.tex)
-
-LaTeX Warning: Reference `fig:es17btech11009_R' on page 3 undefined on input li
-ne 231.
-
 (./figs/es17btech11009/es17btech11009_R.tex)
-
-LaTeX Warning: Reference `eq:es17btech11009_Rf' on page 3 undefined on input li
-ne 245.
-
-
-Underfull \vbox (badness 1917) has occurred while \output is active []
-
-
-
-LaTeX Warning: Reference `eq:es17btech11009_Rf' on page 3 undefined on input li
-ne 253.
-
-(./figs/es17btech11009/es17btech11009_block3.tex)
-(./figs/es17btech11009/es17btech11009_fig3.tex)
-(./figs/es17btech11009/es17btech11009_block2.tex) [3]
-(./figs/es17btech11009/es17btech11009_2.tex)
-Underfull \vbox (badness 7415) has occurred while \output is active []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]
+
+(./figs/es17btech11009/es17btech11009_block1.tex)
+(./figs/es17btech11009/es17btech11009_block2.tex)
+Underfull \vbox (badness 4792) has occurred while \output is active []
+
+ [2]
+File: ./figs/es17btech11009/es17btech11009_1_1.eps Graphic file (type eps)
+
+<./figs/es17btech11009/es17btech11009_1_1.eps>
+File: ./figs/es17btech11009/es17btech11009_imp.eps Graphic file (type eps)
+
+<./figs/es17btech11009/es17btech11009_imp.eps>
 (./tables/es17btech11009/es17btech11009_table1.tex
 \gnumericTableWidth=\skip75
 \gnumericTableWidthComplete=\skip76
@@ -1500,41 +1484,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \gnumericColA=\skip78
 \gnumericColB=\skip79
 )
-File: ./figs/es17btech11009/es17btech11009_1_1.eps Graphic file (type eps)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<./figs/es17btech11009/es17btech11009_1_1.eps>
+ [3]
 File: ./figs/es17btech11009/es17btech11009_spice.eps Graphic file (type eps)
 
-<./figs/es17btech11009/es17btech11009_spice.eps> [5]
+<./figs/es17btech11009/es17btech11009_spice.eps>
 File: ./figs/es17btech11009/es17btech11009_spice1.eps Graphic file (type eps)
 
 <./figs/es17btech11009/es17btech11009_spice1.eps>)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 256.
+ [4
 
-! LaTeX Error: \begin{enumerate} on input line 12 ended by \end{document}.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 256.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.256 \end{document}
-                    
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.256 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
- 
+(./gvv_feedback_manual.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 256.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 256.
+Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 256.
+ ) 
 Here is how much of TeX's memory you used:
- 34523 strings out of 492624
- 751505 string characters out of 6119216
- 1030759 words of memory out of 5000000
- 37795 multiletter control sequences out of 15000+600000
+ 33916 strings out of 492624
+ 735893 string characters out of 6119216
+ 1039190 words of memory out of 5000000
+ 37199 multiletter control sequences out of 15000+600000
  78462 words of font info for 200 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,15n,69p,511b,2022s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on gvv_feedback_manual.dvi (5 pages, 257204 bytes).
+ 55i,14n,69p,511b,1253s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on gvv_feedback_manual.dvi (4 pages, 161652 bytes).

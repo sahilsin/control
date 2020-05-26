@@ -7,9 +7,9 @@ import subprocess
 import shlex
 #end if
 
-G = 1                
-num = [0,-0.05,0.05]		#describing transfer function
-den = [0.0025,-0.0025,1]
+G = 50                  #High gain
+num = [0,-1,0.05]		#describing transfer function
+den = [1,-0.05,1]
 system = signal.lti(num,den)
 
 T, yout = signal.step(system)	#oscillating response

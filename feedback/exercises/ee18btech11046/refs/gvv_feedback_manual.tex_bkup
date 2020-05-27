@@ -1,4 +1,3 @@
-
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 %
 \usepackage{setspace}
@@ -167,17 +166,6 @@ Trans-resistance Feedback Circuits
 	
 }	
 %\title{
-%%	\logo{
-%Wein-bridge oscillator
-%%	}
-%}
-%\author{ Vedala Sai Ashok$^{*}$% <-this % stops a space
-%	\thanks{*The author is with the Department
-%		of Electrical Engineering, Indian Institute of Technology, Hyderabad
-%		502285 India. All content in this manual is released under GNU GPL.  Free and open source.}
-%	
-%}	
-%\title{
 %	\logo{Matrix Analysis through Octave}{\begin{center}\includegraphics[scale=.24]{tlc}\end{center}}{}{HAMDSP}
 %}
 % paper title
@@ -263,6 +251,6 @@ Trans-resistance Feedback Circuits
 %\begin{abstract}
 %The objective of this manual is to introduce control system design at an elementary level.
 %\end{abstract}
-%\section{Feedback Circuits}
-\input{chapters/ee18btech11046.tex}
+%\section{Trans-resistance Feedback Circuits}
+%\input{chapters/ee18btech11046.tex}
 \end{document}

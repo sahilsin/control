@@ -1,7 +1,7 @@
 %!PS-Adobe-2.0
-%%Creator: dvips(k) 5.999 Copyright 2019 Radical Eye Software
+%%Creator: dvips(k) 5.997 Copyright 2017 Radical Eye Software
 %%Title: gvv_feedback_manual.dvi
-%%CreationDate: Wed May 27 03:43:09 2020
+%%CreationDate: Tue May 26 18:03:24 2020
 %%Pages: 5
 %%PageOrder: Ascend
 %%BoundingBox: 0 0 612 792
@@ -10,10 +10,9 @@
 %%DocumentPaperSizes: Letter
 %%EndComments
 %DVIPSWebPage: (www.radicaleye.com)
-%DVIPSCommandLine: dvips gvv_feedback_manual.dvi -q* -o
-%+ gvv_feedback_manual.ps
+%DVIPSCommandLine: dvips gvv_feedback_manual.dvi
 %DVIPSParameters: dpi=600
-%DVIPSSource:  TeX output 2020.05.27:0913
+%DVIPSSource:  TeX output 2020.05.26:2333
 %%BeginProcSet: tex.pro 0 0
 %!
 /TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
@@ -1987,7 +1986,8 @@ ifelse
 %%Page: 1 1
 TeXDict begin 1 0 bop 0 0 a
 SDict begin [/Producer (dvips + Distiller)/Title ()/Subject ()/Creator
-(LaTeX with hyperref)/Author ()/Keywords () /DOCINFO pdfmark end
+(LaTeX with hyperref package)/Author ()/Keywords () /DOCINFO pdfmark
+end
  0 0 a 0 0 a
 SDict begin /product where{pop product(Distiller)search{pop pop pop
 version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
@@ -2182,10 +2182,9 @@ a 961 3524 a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a 961 3524
-a
+ 961 3524 a
 
 
  pgfr
@@ -2203,9 +2202,10 @@ a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a Fm(B)961 3524 y
+ 961 3524 a Fm(B)961
+3524 y
 
 
  pgfr
@@ -2223,10 +2223,9 @@ a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961
-3524 a Fm(C)961 3524 y
+ 961 3524 a Fm(C)961 3524 y
 
 
  pgfr
@@ -2244,7 +2243,7 @@ a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
  961 3524 a Fm(E)961
 3524 y
@@ -2341,9 +2340,9 @@ a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a 961 3524 a
+ 961 3524 a
 
 
  pgfr
@@ -2373,10 +2372,10 @@ a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961
-3524 a Fj(R)1024 3539 y Fh(L)961 3524 y
+ 961 3524 a Fj(R)1024 3539 y Fh(L)961
+3524 y
 
 
  pgfr
@@ -2406,10 +2405,9 @@ a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961
-3524 a 961 3524 a
+ 961 3524 a
 
 
  pgfr
@@ -2435,9 +2433,9 @@ a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a 961 3524 a
+ 961 3524 a
 
 
  pgfr
@@ -2485,10 +2483,10 @@ a
  pgfs
 
 
- 961
-3524 a
+
  0 setgray
- 961 3524 a Fj(V)1022 3539 y Fh(cc)961 3524 y
+ 961 3524 a Fj(V)1022 3539
+y Fh(cc)961 3524 y
 
 
  pgfr
@@ -2538,10 +2536,9 @@ a
  pgfs
 
 
- 961
-3524 a
+
  0 setgray
- 961 3524 a 961 3524 a
+ 961 3524 a
 
 
  pgfr
@@ -2567,10 +2564,10 @@ a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a Fm(GND)961
-3524 y
+ 961 3524 a Fm(GND)961 3524
+y
 
 
  pgfr
@@ -2686,9 +2683,9 @@ a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a 961 3524 a
+ 961 3524 a
 
 
  pgfr
@@ -2714,10 +2711,9 @@ a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961
-3524 a 961 3524 a
+ 961 3524 a
 
 
  pgfr
@@ -2759,10 +2755,10 @@ a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a 2 w Fj(I)996
-3539 y Fh(i)961 3524 y
+ 963 3524 a Fj(I)996 3539 y Fh(i)961
+3524 y
 
 
  pgfr
@@ -2858,10 +2854,9 @@ a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524
-a 961 3524 a
+ 961 3524 a
 
 
  pgfr
@@ -2891,9 +2886,9 @@ a 961 3524 a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a 2 w Fj(I)999 3539
+ 963 3524 a Fj(I)999 3539
 y Fh(s)961 3524 y
 
 
@@ -2912,9 +2907,9 @@ y Fh(s)961 3524 y
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a 961 3524 a
+ 961 3524 a
 
 
  pgfr
@@ -3090,10 +3085,9 @@ y Fh(s)961 3524 y
  pgfs
 
 
- 961
-3524 a
+
  0 setgray
- 961 3524 a 961 3524 a
+ 961 3524 a
 
 
  pgfr
@@ -3119,10 +3113,9 @@ y Fh(s)961 3524 y
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a 961
-3524 a
+ 961 3524 a
 
 
  pgfr
@@ -3180,9 +3173,10 @@ y Fh(s)961 3524 y
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a 961 3524 a
+ 961
+3524 a
 
 
  pgfr
@@ -3208,10 +3202,9 @@ y Fh(s)961 3524 y
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961
-3524 a 961 3524 a
+ 961 3524 a
 
 
  pgfr
@@ -3253,10 +3246,10 @@ y Fh(s)961 3524 y
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a 2 w Fj(I)998
-3539 y Fh(F)961 3524 y
+ 963 3524 a Fj(I)998 3539 y Fh(F)961
+3524 y
 
 
  pgfr
@@ -3308,10 +3301,9 @@ y Fh(s)961 3524 y
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a 961 3524
-a
+ 961 3524 a
 
 
  pgfr
@@ -3345,10 +3337,10 @@ a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a Fj(R)1024 3539 y Fh(F)961 3524
-y
+ 961 3524 a Fj(R)1024 3539 y Fh(F)961
+3524 y
 
 
  pgfr
@@ -3378,9 +3370,9 @@ y
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a 961 3524 a
+ 961 3524 a
 
 
  pgfr
@@ -3406,10 +3398,9 @@ y
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524
-a 961 3524 a
+ 961 3524 a
 
 
  pgfr
@@ -3467,9 +3458,9 @@ a 961 3524 a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a 961 3524 a
+ 961 3524 a
 
 
  pgfr
@@ -3495,10 +3486,9 @@ a 961 3524 a
  pgfs
 
 
- 961 3524
-a
+
  0 setgray
- 961 3524 a 961 3524 a
+ 961 3524 a
 
 
  pgfr
@@ -3546,10 +3536,10 @@ a
  pgfs
 
 
- 961 3524 a
+
  0 setgray
- 961 3524 a Fj(V)1022
-3539 y Fh(o)961 3524 y
+ 961
+3524 a Fj(V)1022 3539 y Fh(o)961 3524 y
 
 
  pgfr
@@ -3570,27 +3560,27 @@ a
  -192 4311 a
  currentpoint currentpoint translate 1 1.34322 div 1 1.34322 div scale
 neg exch neg exch translate
- -192 4311 a 0 TeXcolorgray
-696 4466 a Fm(Fig.)34 b(1.1)p 0 TeXcolorgray 0 TeXcolorgray
-7 4808 a Fg(Solution:)k Fm(see)d(Fig.)787 4809 y
+ -192
+4311 a 0 TeXcolorgray 696 4466 a Fm(Fig.)34 b(1.1)p 0
+TeXcolorgray 0 TeXcolorgray 7 4808 a Fg(Solution:)k Fm(see)d(Fig.)787
+4809 y
 SDict begin H.S end
- 787
-4809 a 0 TeXcolorgray -1 x Fm(1.2)p 0 TeXcolorgray 912
-4742 a
+ 787 4809 a 0 TeXcolorgray -1 x Fm(1.2)p 0 TeXcolorgray
+912 4742 a
 SDict begin H.R end
  912 4742 a 912 4808 a
 SDict begin [/Color [1 0 0]/H /I/Border [0 0 1]BorderArrayPatch/Subtype
 /Link/Dest (figure.caption.2) cvn H.B /ANN pdfmark end
- 912 4808 a -192 4830 a
+ 912 4808 a -192 4830
+a
 SDict begin H.S end
- -192
-4830 a -192 4830 a
+ -192 4830 a -192 4830 a
 SDict begin 13.92 H.A end
  -192 4830 a -192 4830 a
 SDict begin [/View [/XYZ H.V]/Dest (Item.2) cvn /DEST pdfmark end
- -192 4830
-a 0 TeXcolorgray -118 4924 a Fm(2.)p 0 TeXcolorgray 50
-w(F)o(or)75 b(the)f(feedback)i(T)m(ransresistance)d(ampli\002er)7
+ -192
+4830 a 0 TeXcolorgray -118 4924 a Fm(2.)p 0 TeXcolorgray
+50 w(F)o(or)75 b(the)f(feedback)i(T)m(ransresistance)d(ampli\002er)7
 5040 y(sho)n(wn)51 b(in)447 5041 y
 SDict begin H.S end
  447 5041 a 0 TeXcolorgray
@@ -3674,10 +3664,9 @@ neg exch translate
  pgfs
 
 
- 2176 1054 a
+
  0 setgray
- 2176 1054 a 2176 1054
-a
+ 2176 1054 a
 
 
  pgfr
@@ -3699,9 +3688,10 @@ a
  pgfs
 
 
- 2176 1054 a
+
  0 setgray
- 2176 1054 a -2 w Fj(G)2176 1054 y
+ 2174 1054 a Fj(G)2176
+1054 y
 
 
  pgfr
@@ -3727,10 +3717,9 @@ a
  pgfs
 
 
- 2176
-1054 a
+
  0 setgray
- 2176 1054 a 2 w Fj(H)2176 1054 y
+ 2178 1054 a Fj(H)2176 1054 y
 
 
  pgfr
@@ -3765,10 +3754,10 @@ restore
  pgfs
 
 
- 2176 1054 a
+
  0 setgray
- 2176
-1054 a Fl(+)2176 1054 y
+ 2176 1054 a Fl(+)2176
+1054 y
 
 
  pgfr
@@ -3786,10 +3775,9 @@ restore
  pgfs
 
 
- 2176 1054 a
+
  0 setgray
- 2176 1054 a 2 w Fj(I)2214
-1069 y Fh(s)2176 1054 y
+ 2178 1054 a Fj(I)2214 1069 y Fh(s)2176 1054 y
 
 
  pgfr
@@ -3824,10 +3812,10 @@ restore
  pgfs
 
 
- 2176 1054 a
+
  0 setgray
- 2176 1054 a 2 w Fj(I)2211
-1069 y Fh(i)2176 1054 y
+
+2178 1054 a Fj(I)2211 1069 y Fh(i)2176 1054 y
 
 
  pgfr
@@ -3862,10 +3850,10 @@ restore
  pgfs
 
 
- 2176 1054 a
+
  0 setgray
- 2176 1054 a Fj(v)2220
-1069 y Fh(o)2176 1054 y
+ 2176 1054
+a Fj(v)2220 1069 y Fh(o)2176 1054 y
 
 
  pgfr
@@ -3921,7 +3909,7 @@ restore
  pgfs
 
 
- 2176 1054 a
+
  0 setgray
  2176 1054 a Fe(\000)2176
 1054 y
@@ -3942,10 +3930,9 @@ restore
  pgfs
 
 
- 2176 1054 a
+
  0 setgray
- 2176 1054 a 2 w Fj(I)2213 1069 y Fh(F)2176
-1054 y
+ 2178 1054 a Fj(I)2213 1069 y Fh(F)2176 1054 y
 
 
  pgfr
@@ -3963,15 +3950,16 @@ restore
  pgfc
 
 
- 2000 1712 a
+
+2000 1712 a
  currentpoint currentpoint translate 1 1.28366 div 1 1.28366 div scale
 neg exch neg exch translate
- 2000 1712 a 0 TeXcolorgray 2887 1868
-a Fm(Fig.)35 b(1.2)p 0 TeXcolorgray 0 TeXcolorgray 2199
-2272 a(While)71 b(dra)o(wing)g(a)h(Small-Signal)f(Model,)g(we)2199
-2387 y(ground)41 b(all)h(constant)f(v)n(oltage)g(sources)h(and)f(open)
-2199 2503 y(all)g(constant)g(current)h(sources.)f(All)g(Small-Signal)
-2199 2618 y(paramters)80 b(are)h(obtained)f(from)g(DC-Analysis)2199
+ 2000 1712 a 0 TeXcolorgray 2887 1868 a Fm(Fig.)35
+b(1.2)p 0 TeXcolorgray 0 TeXcolorgray 2199 2272 a(While)71
+b(dra)o(wing)g(a)h(Small-Signal)f(Model,)g(we)2199 2387
+y(ground)41 b(all)h(constant)f(v)n(oltage)g(sources)h(and)f(open)2199
+2503 y(all)g(constant)g(current)h(sources.)f(All)g(Small-Signal)2199
+2618 y(paramters)80 b(are)h(obtained)f(from)g(DC-Analysis)2199
 2734 y(of)72 b(the)h(circuit.)f(Ne)o(glecting)f(Early)h(e)p
 Fl(\013)p Fm(ect,)g(in)2199 2850 y(SmallSignal)30 b(Analysis)f(a)i
 (npn-T)m(ransistor)e(is)h(mod-)2199 2965 y(elled)f(as)h(a)f(Current)h
@@ -4023,10 +4011,10 @@ neg exch translate
  pgfs
 
 
+
+ 0 setgray
  2246
 4369 a
- 0 setgray
- 2246 4369 a 2246 4369 a
 
 
  pgfr
@@ -4186,10 +4174,9 @@ neg exch translate
  pgfs
 
 
- 2246 4369
-a
+
  0 setgray
- 2246 4369 a 2246 4369 a
+ 2246 4369 a
 
 
  pgfr
@@ -4219,10 +4206,10 @@ a
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369 a 2 w
-Fj(I)2284 4384 y Fh(s)2246 4369 y
+ 2248 4369 a Fj(I)2284
+4384 y Fh(s)2246 4369 y
 
 
  pgfr
@@ -4294,10 +4281,9 @@ Fj(I)2284 4384 y Fh(s)2246 4369 y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369
-a 2246 4369 a
+ 2246 4369 a
 
 
  pgfr
@@ -4335,9 +4321,9 @@ a 2246 4369 a
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369 a 2246 4369 a
+ 2246 4369 a
 
 
  pgfr
@@ -4363,10 +4349,10 @@ a 2246 4369 a
  pgfs
 
 
+
+ 0 setgray
  2246
 4369 a
- 0 setgray
- 2246 4369 a 2246 4369 a
 
 
  pgfr
@@ -4408,10 +4394,9 @@ a 2246 4369 a
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369
-a 2 w Fj(I)2281 4384 y Fh(i)2246 4369 y
+ 2248 4369 a Fj(I)2281 4384 y Fh(i)2246 4369 y
 
 
  pgfr
@@ -4527,10 +4512,10 @@ a 2 w Fj(I)2281 4384 y Fh(i)2246 4369 y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246
-4369 a 2246 4369 a
+
+2246 4369 a
 
 
  pgfr
@@ -4560,10 +4545,10 @@ a 2 w Fj(I)2281 4384 y Fh(i)2246 4369 y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369 a Fj(r)2285
-4384 y Fi(\031)2246 4369 y
+ 2246 4369 a Fj(r)2285 4384 y Fi(\031)2246
+4369 y
 
 
  pgfr
@@ -4613,10 +4598,9 @@ a 2 w Fj(I)2281 4384 y Fh(i)2246 4369 y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369 a Fq(+)2246
-4369 y
+ 2246 4369 a Fq(+)2246 4369 y
 
 
  pgfr
@@ -4634,9 +4618,10 @@ a 2 w Fj(I)2281 4384 y Fh(i)2246 4369 y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369 a Fe(\000)2246 4369 y
+ 2246 4369 a Fe(\000)2246
+4369 y
 
 
  pgfr
@@ -4658,8 +4643,7 @@ a 2 w Fj(I)2281 4384 y Fh(i)2246 4369 y
  pgfs
 
 
- 2246
-4369 a
+
  0 setgray
  2246 4369 a Fj(v)2290 4384 y Fh(be)2246 4369 y
 
@@ -4692,9 +4676,9 @@ a 2 w Fj(I)2281 4384 y Fh(i)2246 4369 y
 
 
 
-2246 4369 a
  0 setgray
- 2246 4369 a 2246 4369 a
+
+2246 4369 a
 
 
  pgfr
@@ -4798,10 +4782,9 @@ a 2 w Fj(I)2281 4384 y Fh(i)2246 4369 y
  pgfs
 
 
- 2246
-4369 a
+
  0 setgray
- 2246 4369 a 2246 4369 a
+ 2246 4369 a
 
 
  pgfr
@@ -4831,11 +4814,11 @@ a 2 w Fj(I)2281 4384 y Fh(i)2246 4369 y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369
-a Fj(g)2296 4384 y Fh(m)2348 4369 y Fj(v)2392 4384 y
-Fh(be)2246 4369 y
+ 2246 4369 a Fj(g)2296
+4384 y Fh(m)2348 4369 y Fj(v)2392 4384 y Fh(be)2246 4369
+y
 
 
  pgfr
@@ -4911,9 +4894,9 @@ Fh(be)2246 4369 y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369 a 2246 4369 a
+ 2246 4369 a
 
 
  pgfr
@@ -4974,9 +4957,8 @@ Fh(be)2246 4369 y
 
 
 
-2246 4369 a
  0 setgray
- 2246 4369 a 2246 4369 a
+ 2246 4369 a
 
 
  pgfr
@@ -5006,10 +4988,10 @@ Fh(be)2246 4369 y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246
-4369 a Fj(R)2309 4384 y Fh(L)2246 4369 y
+ 2246 4369 a Fj(R)2309 4384
+y Fh(L)2246 4369 y
 
 
  pgfr
@@ -5027,10 +5009,9 @@ Fh(be)2246 4369 y
  pgfs
 
 
- 2246 4369 a
- 0 setgray
 
-2246 4369 a 2246 4369 a
+ 0 setgray
+ 2246 4369 a
 
 
  pgfr
@@ -5072,9 +5053,9 @@ Fh(be)2246 4369 y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369 a 2 w Fj(I)2281
+ 2248 4369 a Fj(I)2281
 4384 y Fh(o)2246 4369 y
 
 
@@ -5127,10 +5108,9 @@ Fh(be)2246 4369 y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369 a 2246
-4369 a
+ 2246 4369 a
 
 
  pgfr
@@ -5156,9 +5136,9 @@ Fh(be)2246 4369 y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369 a 2246 4369 a
+ 2246 4369 a
 
 
  pgfr
@@ -5206,10 +5186,10 @@ Fh(be)2246 4369 y
  pgfs
 
 
- 2246 4369
-a
+
  0 setgray
- 2246 4369 a Fj(V)2307 4384 y Fh(o)2246 4369 y
+ 2246
+4369 a Fj(V)2307 4384 y Fh(o)2246 4369 y
 
 
  pgfr
@@ -5309,10 +5289,9 @@ a
  pgfs
 
 
- 2246
-4369 a
+
  0 setgray
- 2246 4369 a 2246 4369 a
+ 2246 4369 a
 
 
  pgfr
@@ -5338,10 +5317,10 @@ a
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369
-a 2246 4369 a
+
+2246 4369 a
 
 
  pgfr
@@ -5387,9 +5366,9 @@ a 2246 4369 a
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369 a 2246 4369 a
+ 2246 4369 a
 
 
  pgfr
@@ -5431,11 +5410,10 @@ a 2246 4369 a
  pgfs
 
 
- 2246
-4369 a
+
  0 setgray
- 2246 4369 a 2 w Fj(I)2283 4384 y Fh(F)2246 4369
-y
+ 2248 4369 a Fj(I)2283 4384 y
+Fh(F)2246 4369 y
 
 
  pgfr
@@ -5487,9 +5465,9 @@ y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369 a 2246 4369 a
+ 2246 4369 a
 
 
  pgfr
@@ -5523,10 +5501,10 @@ y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246
-4369 a Fj(R)2309 4384 y Fh(F)2246 4369 y
+ 2246 4369 a Fj(R)2309 4384
+y Fh(F)2246 4369 y
 
 
  pgfr
@@ -5556,10 +5534,9 @@ y
  pgfs
 
 
- 2246 4369 a
- 0 setgray
 
-2246 4369 a 2246 4369 a
+ 0 setgray
+ 2246 4369 a
 
 
  pgfr
@@ -5585,10 +5562,9 @@ y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369 a 2246
-4369 a
+ 2246 4369 a
 
 
  pgfr
@@ -5638,9 +5614,10 @@ y
  pgfs
 
 
- 2246 4369 a
+
  0 setgray
- 2246 4369 a 2246 4369 a
+ 2246 4369
+a
 
 
  pgfr
@@ -5702,10 +5679,9 @@ y
  pgfs
 
 
- 2246 4369
-a
+
  0 setgray
- 2246 4369 a 2246 4369 a
+ 2246 4369 a
 
 
  pgfr
@@ -5973,9 +5949,9 @@ a
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172 a 481 4172 a
+ 481 4172 a
 
 
  pgfr
@@ -5993,10 +5969,9 @@ a
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172
-a Fm(B)481 4172 y
+ 481 4172 a Fm(B)481 4172 y
 
 
  pgfr
@@ -6014,10 +5989,10 @@ a Fm(B)481 4172 y
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172 a Fm(C)481 4172
-y
+ 481 4172 a Fm(C)481
+4172 y
 
 
  pgfr
@@ -6035,7 +6010,7 @@ y
  pgfs
 
 
- 481 4172 a
+
  0 setgray
  481 4172 a Fm(E)481 4172 y
 
@@ -6137,10 +6112,9 @@ y
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481
-4172 a 481 4172 a
+ 481 4172 a
 
 
  pgfr
@@ -6166,9 +6140,10 @@ y
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172 a 481 4172 a
+ 481 4172
+a
 
 
  pgfr
@@ -6210,10 +6185,9 @@ y
  pgfs
 
 
- 481
-4172 a
+
  0 setgray
- 481 4172 a 2 w Fj(I)516 4187 y Fh(c)481 4172 y
+ 483 4172 a Fj(I)516 4187 y Fh(c)481 4172 y
 
 
  pgfr
@@ -6266,9 +6240,9 @@ y
 
 
 
-481 4172 a
  0 setgray
- 481 4172 a 481 4172 a
+ 481 4172
+a
 
 
  pgfr
@@ -6298,10 +6272,9 @@ y
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172
-a Fj(R)544 4187 y Fh(L)481 4172 y
+ 481 4172 a Fj(R)544 4187 y Fh(L)481 4172 y
 
 
  pgfr
@@ -6319,10 +6292,10 @@ a Fj(R)544 4187 y Fh(L)481 4172 y
  pgfs
 
 
- 481 4172 a
+
  0 setgray
  481 4172
-a 481 4172 a
+a
 
 
  pgfr
@@ -6364,10 +6337,9 @@ a 481 4172 a
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172 a 2 w Fj(I)518 4187
-y Fh(E)481 4172 y
+ 483 4172 a Fj(I)518 4187 y Fh(E)481 4172 y
 
 
  pgfr
@@ -6397,9 +6369,10 @@ y Fh(E)481 4172 y
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172 a 481 4172 a
+ 481 4172
+a
 
 
  pgfr
@@ -6425,10 +6398,9 @@ y Fh(E)481 4172 y
  pgfs
 
 
- 481
-4172 a
+
  0 setgray
- 481 4172 a 481 4172 a
+ 481 4172 a
 
 
  pgfr
@@ -6476,10 +6448,10 @@ y Fh(E)481 4172 y
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172 a Fj(V)542
-4187 y Fh(cc)481 4172 y
+ 481 4172 a Fj(V)542 4187 y Fh(cc)481 4172
+y
 
 
  pgfr
@@ -6535,10 +6507,9 @@ y Fh(E)481 4172 y
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172 a 481 4172
-a
+ 481 4172 a
 
 
  pgfr
@@ -6564,9 +6535,9 @@ a
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172 a 481 4172 a
+ 481 4172 a
 
 
  pgfr
@@ -6608,10 +6579,10 @@ a
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172
-a 2 w Fj(I)518 4187 y Fh(E)481 4172 y
+ 483 4172 a Fj(I)518 4187 y Fh(E)481
+4172 y
 
 
  pgfr
@@ -6629,10 +6600,9 @@ a 2 w Fj(I)518 4187 y Fh(E)481 4172 y
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481
-4172 a Fm(GND)481 4172 y
+ 481 4172 a Fm(GND)481 4172 y
 
 
  pgfr
@@ -6786,10 +6756,9 @@ a 2 w Fj(I)518 4187 y Fh(E)481 4172 y
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172 a 481 4172
-a
+ 481 4172 a
 
 
  pgfr
@@ -6827,9 +6796,10 @@ a
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172 a 481 4172 a
+ 481 4172
+a
 
 
  pgfr
@@ -6855,10 +6825,9 @@ a
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172
-a 481 4172 a
+ 481 4172 a
 
 
  pgfr
@@ -6900,10 +6869,10 @@ a 481 4172 a
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172 a 2 w Fj(I)518 4187
-y Fh(B)481 4172 y
+ 483 4172 a Fj(I)518 4187 y Fh(B)481 4172
+y
 
 
  pgfr
@@ -6955,9 +6924,9 @@ y Fh(B)481 4172 y
  pgfs
 
 
- 481 4172 a
+
  0 setgray
- 481 4172 a 481 4172 a
+ 481 4172 a
 
 
  pgfr
@@ -6991,10 +6960,10 @@ y Fh(B)481 4172 y
  pgfs
 
 
- 481
-4172 a
+
  0 setgray
- 481 4172 a Fj(R)544 4187 y Fh(F)481 4172 y
+ 481 4172 a Fj(R)544 4187 y Fh(F)481 4172
+y
 
 
  pgfr
@@ -7024,10 +6993,9 @@ y Fh(B)481 4172 y
  pgfs
 
 
- 481
-4172 a
+
  0 setgray
- 481 4172 a 481 4172 a
+ 481 4172 a
 
 
  pgfr
@@ -7056,61 +7024,61 @@ y Fh(B)481 4172 y
  -192 4959 a
  currentpoint currentpoint translate 1 2.24062 div 1 2.24062 div scale
 neg exch neg exch translate
- -192 4959 a
-0 TeXcolorgray 308 5115 a Fm(Fig.)h(3:)f(Lar)n(ge)h(signal)f(model)p
-0 TeXcolorgray 0 TeXcolorgray 7 5393 a(Where)i Fj(V)369
-5408 y Fh(T)445 5393 y Fl(=)28 b Fm(25)p Fj(m)p Fm(v)n(olts)162
-5576 y Fj(V)225 5591 y Fh(B)r(E)342 5576 y Fl(=)g Fm(0)p
-Fk(:)p Fm(7)p Fj(volt)7 b(s)54 b Fl(=)-14 b Fe(\))56
-b Fj(V)1072 5591 y Fh(B)1144 5576 y Fl(=)28 b Fm(0)p
-Fk(:)p Fm(7)p Fj(volt)7 b(s)1709 5576 y
+ -192 4959 a 0 TeXcolorgray 308
+5115 a Fm(Fig.)h(3:)f(Lar)n(ge)h(signal)f(model)p 0 TeXcolorgray
+0 TeXcolorgray 7 5393 a(Where)i Fj(V)369 5408 y Fh(T)445
+5393 y Fl(=)28 b Fm(25)p Fj(m)p Fm(v)n(olts)162 5576
+y Fj(V)225 5591 y Fh(B)r(E)342 5576 y Fl(=)g Fm(0)p Fk(:)p
+Fm(7)p Fj(volt)7 b(s)54 b Fl(=)-14 b Fe(\))56 b Fj(V)1072
+5591 y Fh(B)1144 5576 y Fl(=)28 b Fm(0)p Fk(:)p Fm(7)p
+Fj(volt)7 b(s)1709 5576 y
 SDict begin H.S end
- 1709 5576 a 1709
-5576 a
-SDict begin 17.4 H.A end
  1709 5576 a 1709 5576 a
+SDict begin 17.4 H.A end
+ 1709
+5576 a 1709 5576 a
 SDict begin [/View [/XYZ H.V]/Dest (equation.3.3) cvn /DEST pdfmark
 end
- 1709 5576 a Fm(\(3.3\))p
-0 TeXcolorgray 0 TeXcolorgray 2908 131 a Fj(I)2943 146
-y Fh(E)3019 131 y Fl(=)30 b Fj(I)3147 146 y Fh(B)3214
-131 y Fl(+)25 b Fj(I)3333 146 y Fh(C)3901 131 y
+ 1709 5576 a Fm(\(3.3\))p 0 TeXcolorgray
+0 TeXcolorgray 2908 131 a Fj(I)2943 146 y Fh(E)3019 131
+y Fl(=)30 b Fj(I)3147 146 y Fh(B)3214 131 y Fl(+)25 b
+Fj(I)3333 146 y Fh(C)3901 131 y
 SDict begin H.S end
- 3901
-131 a 3901 131 a
-SDict begin 17.4 H.A end
  3901 131 a 3901 131 a
+SDict begin 17.4 H.A end
+
+3901 131 a 3901 131 a
 SDict begin [/View [/XYZ H.V]/Dest (equation.3.4) cvn /DEST pdfmark
 end
- 3901 131 a Fm(\(3.4\))2979
-381 y Fj(I)3010 396 y Fh(C)3090 381 y Fl(=)j Fk(\014)r
-Fj(I)3269 396 y Fh(B)3901 381 y
+ 3901 131 a Fm(\(3.4\))2979 381
+y Fj(I)3010 396 y Fh(C)3090 381 y Fl(=)j Fk(\014)r Fj(I)3269
+396 y Fh(B)3901 381 y
 SDict begin H.S end
  3901 381 a 3901 381 a
 SDict begin 17.4 H.A end
-
-3901 381 a 3901 381 a
+ 3901 381
+a 3901 381 a
 SDict begin [/View [/XYZ H.V]/Dest (equation.3.5) cvn /DEST pdfmark
 end
- 3901 381 a Fm(\(3.5\))2199 564
-y(From)35 b(applying)e(KVL)i(and)g(KCL)g(on)f(Fig.)2843
-747 y Fj(V)2904 762 y Fh(cc)2989 747 y Fe(\000)24 b Fj(I)3111
-762 y Fh(E)3159 747 y Fj(R)3222 762 y Fh(L)3285 747 y
-Fe(\000)h Fj(I)3408 762 y Fh(B)3453 747 y Fj(R)3516 762
-y Fh(F)3586 747 y Fe(\000)e Fm(0)p Fk(:)p Fm(7)k Fl(=)h
-Fm(0)3901 862 y
+ 3901 381 a Fm(\(3.5\))2199 564 y(From)35
+b(applying)e(KVL)i(and)g(KCL)g(on)f(Fig.)2843 747 y Fj(V)2904
+762 y Fh(cc)2989 747 y Fe(\000)24 b Fj(I)3111 762 y Fh(E)3159
+747 y Fj(R)3222 762 y Fh(L)3285 747 y Fe(\000)h Fj(I)3408
+762 y Fh(B)3453 747 y Fj(R)3516 762 y Fh(F)3586 747 y
+Fe(\000)e Fm(0)p Fk(:)p Fm(7)k Fl(=)h Fm(0)3901 862 y
 SDict begin H.S end
- 3901 862 a 3901 862 a
+
+3901 862 a 3901 862 a
 SDict begin 17.4 H.A end
- 3901 862 a 3901
-862 a
+ 3901 862 a 3901 862 a
 SDict begin [/View [/XYZ H.V]/Dest (equation.3.6) cvn /DEST pdfmark
 end
- 3901 862 a Fm(\(3.6\))2354 1007 y Fl(=)-14 b Fe(\))56
-b Fj(V)2616 1022 y Fh(cc)2701 1007 y Fe(\000)2786 1006
-y Fm(\()2820 1007 y Fk(\014)21 b Fl(+)i Fm(1)3028 1006
-y(\))3079 1007 y Fj(I)3114 1022 y Fh(B)3159 1007 y Fj(R)3222
-1022 y Fh(L)3285 1007 y Fe(\000)i Fj(I)3408 1022 y Fh(B)3453
+ 3901 862
+a Fm(\(3.6\))2354 1007 y Fl(=)-14 b Fe(\))56 b Fj(V)2616
+1022 y Fh(cc)2701 1007 y Fe(\000)2786 1006 y Fm(\()2820
+1007 y Fk(\014)21 b Fl(+)i Fm(1)3028 1006 y(\))3079 1007
+y Fj(I)3114 1022 y Fh(B)3159 1007 y Fj(R)3222 1022 y
+Fh(L)3285 1007 y Fe(\000)i Fj(I)3408 1022 y Fh(B)3453
 1007 y Fj(R)3516 1022 y Fh(F)3586 1007 y Fe(\000)e Fm(0)p
 Fk(:)p Fm(7)k Fl(=)h Fm(0)3901 1122 y
 SDict begin H.S end
@@ -7850,9 +7818,9 @@ a
  pgfs
 
 
- 2154 1358 a
+
  0 setgray
- 2154 1358 a 2154 1358 a
+ 2154 1358 a
 
 
  pgfr
@@ -7878,10 +7846,9 @@ a
  pgfs
 
 
- 2154
-1358 a
+
  0 setgray
- 2154 1358 a 2154 1358 a
+ 2154 1358 a
 
 
  pgfr
@@ -7923,10 +7890,10 @@ a
  pgfs
 
 
- 2154 1358 a
+
  0 setgray
- 2154 1358
-a 2 w Fj(I)2191 1373 y Fh(F)2154 1358 y
+ 2156 1358 a Fj(I)2191
+1373 y Fh(F)2154 1358 y
 
 
  pgfr
@@ -7956,10 +7923,9 @@ a 2 w Fj(I)2191 1373 y Fh(F)2154 1358 y
  pgfs
 
 
- 2154 1358 a
+
  0 setgray
- 2154
-1358 a 2154 1358 a
+ 2154 1358 a
 
 
  pgfr
@@ -8017,10 +7983,9 @@ a 2 w Fj(I)2191 1373 y Fh(F)2154 1358 y
  pgfs
 
 
- 2154 1358 a
+
  0 setgray
- 2154 1358 a 2154 1358
-a
+ 2154 1358 a
 
 
  pgfr
@@ -8064,9 +8029,10 @@ a
  pgfs
 
 
- 2154 1358 a
+
  0 setgray
- 2154 1358 a Fm(H)2154 1358 y
+ 2154
+1358 a Fm(H)2154 1358 y
 
 
  pgfr
@@ -8084,8 +8050,7 @@ a
  pgfs
 
 
- 2154 1358
-a
+
  0 setgray
  2154 1358 a Fl(+)2154 1358 y
 
@@ -8105,10 +8070,10 @@ a
  pgfs
 
 
- 2154 1358 a
+
  0 setgray
- 2154 1358
-a Fe(\000)2154 1358 y
+
+2154 1358 a Fe(\000)2154 1358 y
 
 
  pgfr
@@ -8126,7 +8091,7 @@ a Fe(\000)2154 1358 y
  pgfs
 
 
- 2154 1358 a
+
  0 setgray
  2154 1358 a Fj(V)2215
 1373 y Fh(o)2154 1358 y
@@ -8251,10 +8216,10 @@ neg exch translate
  pgfs
 
 
+
+ 0 setgray
  2154 3237
 a
- 0 setgray
- 2154 3237 a 2154 3237 a
 
 
  pgfr
@@ -8280,10 +8245,9 @@ a
  pgfs
 
 
- 2154 3237 a
+
  0 setgray
- 2154 3237 a 2154
-3237 a
+ 2154 3237 a
 
 
  pgfr
@@ -8325,9 +8289,9 @@ a
  pgfs
 
 
- 2154 3237 a
+
  0 setgray
- 2154 3237 a 2 w Fj(I)2191 3252 y Fh(F)2154
+ 2156 3237 a Fj(I)2191 3252 y Fh(F)2154
 3237 y
 
 
@@ -8380,9 +8344,9 @@ a
  pgfs
 
 
- 2154 3237 a
+
  0 setgray
- 2154 3237 a 2154 3237 a
+ 2154 3237 a
 
 
  pgfr
@@ -8416,10 +8380,10 @@ a
  pgfs
 
 
- 2154 3237
-a
+
  0 setgray
- 2154 3237 a Fj(R)2217 3252 y Fh(F)2154 3237 y
+ 2154 3237 a Fj(R)2217 3252 y Fh(F)2154
+3237 y
 
 
  pgfr
@@ -8501,8 +8465,7 @@ a
  pgfs
 
 
- 2154
-3237 a Fe(\000)2154 3237 y
+ 2154 3237 a Fe(\000)2154 3237 y
 
 
  pgfr
@@ -8516,8 +8479,8 @@ a
  pgfs
 
 
- 2154 3237 a Fl(+)2154 3237
-y
+ 2154 3237 a Fl(+)2154
+3237 y
 
 
  pgfr
@@ -8533,9 +8496,9 @@ y
  pgfs
 
 
- 2154 3237 a
+
  0 setgray
- 2154 3237 a 2154 3237 a
+ 2154 3237 a
 
 
  pgfr
@@ -8573,10 +8536,10 @@ y
  pgfs
 
 
- 2154 3237 a
+
  0 setgray
- 2154
-3237 a Fj(V)2215 3252 y Fh(o)2154 3237 y
+ 2154 3237 a Fj(V)2215 3252 y Fh(o)2154
+3237 y
 
 
  pgfr
@@ -8606,10 +8569,9 @@ y
  pgfs
 
 
- 2154 3237 a
- 0 setgray
 
-2154 3237 a 2154 3237 a
+ 0 setgray
+ 2154 3237 a
 
 
  pgfr
@@ -8669,10 +8631,9 @@ y
  pgfs
 
 
- 2154 3237 a
+
  0 setgray
- 2154 3237 a 2154
-3237 a
+ 2154 3237 a
 
 
  pgfr
@@ -8698,9 +8659,9 @@ y
  pgfs
 
 
- 2154 3237 a
+
  0 setgray
- 2154 3237 a 2154 3237 a
+ 2154 3237 a
 
 
  pgfr
@@ -8750,10 +8711,10 @@ y
  pgfs
 
 
+
+ 0 setgray
  2154 3237
 a
- 0 setgray
- 2154 3237 a 2154 3237 a
 
 
  pgfr
@@ -8814,8 +8775,8 @@ a
  2000 3489 a
  currentpoint currentpoint translate 1 1.50854 div 1 1.50854 div scale
 neg exch neg exch translate
- 2000 3489 a 0 TeXcolorgray
-2520 3644 a Fm(Fig.)h(9.6:)f(Feedback)i(circuit)p 0 TeXcolorgray
+ 2000 3489 a 0 TeXcolorgray 2520 3644 a
+Fm(Fig.)h(9.6:)f(Feedback)i(circuit)p 0 TeXcolorgray
 0 TeXcolorgray 2199 3912 a(From)f(KVl)f(on)2791 3914
 y
 SDict begin H.S end
@@ -9085,10 +9046,10 @@ neg exch translate
  pgfs
 
 
+
+ 0 setgray
  -66
 614 a
- 0 setgray
- -66 614 a -66 614 a
 
 
  pgfr
@@ -9114,10 +9075,9 @@ neg exch translate
  pgfs
 
 
- -66 614 a
+
  0 setgray
- -66 614 a -66 614
-a
+ -66 614 a
 
 
  pgfr
@@ -9159,9 +9119,9 @@ a
  pgfs
 
 
- -66 614 a
+
  0 setgray
- -66 614 a 2 w Fj(I)-31 629 y Fh(i)-66 614
+ -64 614 a Fj(I)-31 629 y Fh(i)-66 614
 y
 
 
@@ -9192,9 +9152,9 @@ y
  pgfs
 
 
- -66 614 a
+
  0 setgray
- -66 614 a -66 614 a
+ -66 614 a
 
 
  pgfr
@@ -9252,10 +9212,9 @@ y
  pgfs
 
 
- -66 614 a
+
  0 setgray
- -66 614 a -66
-614 a
+ -66 614 a
 
 
  pgfr
@@ -9299,7 +9258,7 @@ y
  pgfs
 
 
- -66 614 a
+
  0 setgray
  -66 614 a Fm(G)-66 614 y
 
@@ -9319,10 +9278,10 @@ y
  pgfs
 
 
- -66 614 a
+
  0 setgray
- -66
-614 a Fl(+)-66 614 y
+ -66 614
+a Fl(+)-66 614 y
 
 
  pgfr
@@ -9340,10 +9299,9 @@ y
  pgfs
 
 
- -66 614 a
+
  0 setgray
- -66 614 a Fe(\000)-66
-614 y
+ -66 614 a Fe(\000)-66 614 y
 
 
  pgfr
@@ -9361,10 +9319,10 @@ y
  pgfs
 
 
- -66 614 a
+
  0 setgray
- -66 614 a Fj(V)-5 629 y Fh(o)-66 614
-y
+ -66 614
+a Fj(V)-5 629 y Fh(o)-66 614 y
 
 
  pgfr
@@ -9440,9 +9398,9 @@ y
  pgfs
 
 
- -66 614 a
+
  0 setgray
- -66 614 a -66 614 a
+ -66 614 a
 
 
  pgfr
@@ -9472,7 +9430,7 @@ y
  pgfs
 
 
- -66 614 a
+
  0 setgray
  -66 614 a Fj(R)-2
 629 y Fh(s)-66 614 y
@@ -9551,9 +9509,9 @@ y
  pgfs
 
 
- -66 614 a
+
  0 setgray
- -66 614 a -66 614 a
+ -66 614 a
 
 
  pgfr
@@ -9583,10 +9541,10 @@ y
  pgfs
 
 
- -66
-614 a
+
  0 setgray
- -66 614 a Fj(R)-3 629 y Fh(L)-66 614 y
+ -66 614 a Fj(R)-3 629
+y Fh(L)-66 614 y
 
 
  pgfr
@@ -9662,10 +9620,9 @@ y
  pgfs
 
 
- -66 614
-a
+
  0 setgray
- -66 614 a -66 614 a
+ -66 614 a
 
 
  pgfr
@@ -9695,10 +9652,10 @@ a
  pgfs
 
 
- -66 614 a
+
  0 setgray
- -66 614 a Fj(R)-5 629
-y Fr(11)-66 614 y
+ -66 614 a Fj(R)-5 629 y Fr(11)-66
+614 y
 
 
  pgfr
@@ -9774,9 +9731,9 @@ y Fr(11)-66 614 y
  pgfs
 
 
- -66 614 a
+
  0 setgray
- -66 614 a -66 614 a
+ -66 614 a
 
 
  pgfr
@@ -9806,10 +9763,10 @@ y Fr(11)-66 614 y
  pgfs
 
 
- -66 614
-a
+
  0 setgray
- -66 614 a Fj(R)-5 629 y Fr(22)-66 614 y
+ -66 614 a Fj(R)-5 629 y Fr(22)-66 614
+y
 
 
  pgfr
@@ -9830,19 +9787,18 @@ a
  -192 852 a
  currentpoint currentpoint translate 1 0.52003 div 1 0.52003 div scale
 neg exch neg exch translate
-
--192 852 a 0 TeXcolorgray 117 1007 a Fm(Fig.)f(11.7:)g(Open)h(loop)f
-(block)g(diagram)p 0 TeXcolorgray 0 TeXcolorgray 0 TeXcolorgray
--192 1265 a
+ -192 852 a 0 TeXcolorgray 117 1007 a Fm(Fig.)f(11.7:)g
+(Open)h(loop)f(block)g(diagram)p 0 TeXcolorgray 0 TeXcolorgray
+0 TeXcolorgray -192 1265 a
 SDict begin H.S end
  -192 1265 a -192 1265 a
 SDict begin 13.92 H.A end
- -192 1265 a -192
-1265 a
+ -192
+1265 a -192 1265 a
 SDict begin [/View [/XYZ H.V]/Dest (figure.caption.9) cvn /DEST pdfmark
 end
- -192 1265 a 0 TeXcolorgray 0 TeXcolorgray -192
-1843 a
+ -192 1265 a 0 TeXcolorgray 0 TeXcolorgray
+-192 1843 a
  currentpoint currentpoint translate 0.68935 0.68935 scale neg exch
 neg exch translate
  -192 1843 a 44 1709 a
@@ -9873,10 +9829,10 @@ neg exch translate
  pgfs
 
 
- 44 1709
-a
+
  0 setgray
- 44 1709 a 44 1709 a
+
+44 1709 a
 
 
  pgfr
@@ -10036,10 +9992,9 @@ a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a 44
-1709 a
+ 44 1709 a
 
 
  pgfr
@@ -10069,10 +10024,10 @@ a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a 2 w Fj(I)79 1724 y Fh(i)44
-1709 y
+ 46 1709 a Fj(I)79 1724
+y Fh(i)44 1709 y
 
 
  pgfr
@@ -10144,9 +10099,9 @@ a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -10184,10 +10139,9 @@ a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709
-a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -10213,9 +10167,9 @@ a 44 1709 a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -10257,10 +10211,10 @@ a 44 1709 a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44
-1709 a 2 w Fj(I)79 1724 y Fh(i)44 1709 y
+ 46 1709
+a Fj(I)79 1724 y Fh(i)44 1709 y
 
 
  pgfr
@@ -10376,10 +10330,9 @@ a 44 1709 a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44
-1709 a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -10409,10 +10362,10 @@ a 44 1709 a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a Fj(r)83 1724 y Fi(\031)44
-1709 y
+ 44 1709 a Fj(r)83
+1724 y Fi(\031)44 1709 y
 
 
  pgfr
@@ -10462,7 +10415,7 @@ a 44 1709 a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
  44 1709 a Fq(+)44 1709 y
 
@@ -10482,7 +10435,7 @@ a 44 1709 a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
  44
 1709 a Fe(\000)44 1709 y
@@ -10507,10 +10460,10 @@ a 44 1709 a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a Fj(v)88
-1724 y Fh(be)44 1709 y
+ 44 1709 a Fj(v)88 1724 y Fh(be)44
+1709 y
 
 
  pgfr
@@ -10540,9 +10493,9 @@ a 44 1709 a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -10604,8 +10557,7 @@ a 44 1709 a
  pgfs
 
 
-
-44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -10647,9 +10599,9 @@ a 44 1709 a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -10679,11 +10631,11 @@ a 44 1709 a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44
-1709 a Fj(g)94 1724 y Fh(m)145 1709 y Fj(v)189 1724 y
-Fh(be)44 1709 y
+ 44 1709 a Fj(g)94
+1724 y Fh(m)145 1709 y Fj(v)189 1724 y Fh(be)44 1709
+y
 
 
  pgfr
@@ -10759,9 +10711,9 @@ Fh(be)44 1709 y
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -10821,10 +10773,9 @@ Fh(be)44 1709 y
  pgfs
 
 
- 44 1709
-a
+
  0 setgray
- 44 1709 a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -10854,10 +10805,10 @@ a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a Fj(R)107 1724
-y Fh(L)44 1709 y
+ 44 1709 a Fj(R)107 1724 y Fh(L)44
+1709 y
 
 
  pgfr
@@ -10875,9 +10826,9 @@ y Fh(L)44 1709 y
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -10919,10 +10870,10 @@ y Fh(L)44 1709 y
  pgfs
 
 
- 44 1709
-a
+
  0 setgray
- 44 1709 a 2 w Fj(I)79 1724 y Fh(o)44 1709 y
+ 46 1709 a Fj(I)79 1724 y Fh(o)44 1709
+y
 
 
  pgfr
@@ -10974,10 +10925,9 @@ a
  pgfs
 
 
- 44 1709
-a
+
  0 setgray
- 44 1709 a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -11003,9 +10953,9 @@ a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -11053,10 +11003,10 @@ a
  pgfs
 
 
- 44
-1709 a
+
  0 setgray
- 44 1709 a Fj(V)105 1724 y Fh(o)44 1709 y
+ 44 1709 a Fj(V)105 1724 y Fh(o)44
+1709 y
 
 
  pgfr
@@ -11132,10 +11082,9 @@ a
  pgfs
 
 
- 44 1709
-a
+
  0 setgray
- 44 1709 a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -11165,10 +11114,10 @@ a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a Fj(R)107 1724
-y Fh(F)44 1709 y
+ 44 1709 a Fj(R)107 1724 y Fh(F)44 1709
+y
 
 
  pgfr
@@ -11244,9 +11193,9 @@ y Fh(F)44 1709 y
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -11276,8 +11225,7 @@ y Fh(F)44 1709 y
  pgfs
 
 
- 44 1709
-a
+
  0 setgray
  44 1709 a Fj(R)107 1724 y Fh(F)44 1709 y
 
@@ -11301,10 +11249,10 @@ a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
 
-44 1709 a 44 1709 a
+44 1709 a
 
 
  pgfr
@@ -11366,9 +11314,9 @@ a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -11430,10 +11378,9 @@ a
  pgfs
 
 
- 44
-1709 a
+
  0 setgray
- 44 1709 a 44 1709 a
+ 44 1709 a
 
 
  pgfr
@@ -11495,10 +11442,9 @@ a
  pgfs
 
 
- 44 1709 a
+
  0 setgray
- 44 1709 a 44 1709
-a
+ 44 1709 a
 
 
  pgfr
@@ -11559,80 +11505,80 @@ a
  -192 1843 a
  currentpoint currentpoint translate 1 0.68935 div 1 0.68935 div scale
 neg exch neg exch translate
- -192 1843 a 0 TeXcolorgray -28 1999 a Fm(Fig.)h(11.8:)f
-(Open)g(loop)g(block)g(circuit)h(diagram)p 0 TeXcolorgray
-0 TeXcolorgray -192 2156 a
+ -192
+1843 a 0 TeXcolorgray -28 1999 a Fm(Fig.)h(11.8:)f(Open)g(loop)g(block)
+g(circuit)h(diagram)p 0 TeXcolorgray 0 TeXcolorgray -192
+2156 a
 SDict begin H.S end
  -192 2156 a -192 2156 a
 SDict begin 13.92 H.A end
- -192
-2156 a -192 2156 a
+ -192 2156 a -192 2156
+a
 SDict begin [/View [/XYZ H.V]/Dest (Item.12) cvn /DEST pdfmark end
- -192 2156 a 0 TeXcolorgray -167 2250
-a Fm(12.)p 0 TeXcolorgray 49 w(Find)g(G)7 2366 y Fg(Solution:)f
-Fm(From)d(\002g.)805 2367 y
+ -192 2156 a 0 TeXcolorgray -167 2250 a Fm(12.)p 0 TeXcolorgray
+49 w(Find)g(G)7 2366 y Fg(Solution:)f Fm(From)d(\002g.)805
+2367 y
 SDict begin H.S end
- 805 2367 a 0 TeXcolorgray
--1 x Fm(11.8)p 0 TeXcolorgray 980 2299 a
+ 805 2367 a 0 TeXcolorgray -1 x Fm(11.8)p 0 TeXcolorgray
+980 2299 a
 SDict begin H.R end
- 980 2299 a 980
-2366 a
+ 980 2299 a 980 2366 a
 SDict begin [/Color [1 0 0]/H /I/Border [0 0 1]BorderArrayPatch/Subtype
 /Link/Dest (figure.caption.9) cvn H.B /ANN pdfmark end
- 980 2366 a Fm(,)g(There)h(is)f(no)g Fj(R)1590
-2381 y Fh(S)1669 2366 y Fm(in)g(the)7 2482 y(circuit)k(and)649
-2664 y Fj(V)710 2679 y Fh(be)805 2664 y Fl(=)30 b Fj(I)931
-2679 y Fh(i)971 2663 y Fm(\()1004 2664 y Fj(r)1043 2679
-y Fi(\031)1081 2664 y Fe(jj)p Fj(R)1184 2679 y Fh(L)1225
-2663 y Fm(\))1659 2664 y
+ 980 2366 a Fm(,)g(There)h(is)f(no)g
+Fj(R)1590 2381 y Fh(S)1669 2366 y Fm(in)g(the)7 2482
+y(circuit)k(and)649 2664 y Fj(V)710 2679 y Fh(be)805
+2664 y Fl(=)30 b Fj(I)931 2679 y Fh(i)971 2663 y Fm(\()1004
+2664 y Fj(r)1043 2679 y Fi(\031)1081 2664 y Fe(jj)p Fj(R)1184
+2679 y Fh(L)1225 2663 y Fm(\))1659 2664 y
 SDict begin H.S end
- 1659 2664 a 1659 2664 a
+ 1659 2664 a
+1659 2664 a
 SDict begin 17.4 H.A end
- 1659
-2664 a 1659 2664 a
+ 1659 2664 a 1659 2664 a
 SDict begin [/View [/XYZ H.V]/Dest (equation.12.1) cvn /DEST pdfmark
 end
- 1659 2664 a Fm(\(12.1\))7 2847 y(From)35
-b(KCL)g(at)g(node)g Fj(V)889 2862 y Fh(o)926 2847 y Fm(,)596
-3030 y Fj(I)629 3045 y Fh(o)695 3030 y Fl(=)28 b Fe(\000)p
-Fj(g)899 3045 y Fh(m)953 3030 y Fj(I)986 3045 y Fh(i)1026
-3029 y Fm(\()1059 3030 y Fj(r)1098 3045 y Fi(\031)1137
-3030 y Fe(jj)p Fj(R)1240 3045 y Fh(L)1280 3029 y Fm(\))1659
-3030 y
+ 1659 2664 a Fm(\(12.1\))7
+2847 y(From)35 b(KCL)g(at)g(node)g Fj(V)889 2862 y Fh(o)926
+2847 y Fm(,)596 3030 y Fj(I)629 3045 y Fh(o)695 3030
+y Fl(=)28 b Fe(\000)p Fj(g)899 3045 y Fh(m)953 3030 y
+Fj(I)986 3045 y Fh(i)1026 3029 y Fm(\()1059 3030 y Fj(r)1098
+3045 y Fi(\031)1137 3030 y Fe(jj)p Fj(R)1240 3045 y Fh(L)1280
+3029 y Fm(\))1659 3030 y
 SDict begin H.S end
  1659 3030 a 1659 3030 a
 SDict begin 17.4 H.A end
- 1659 3030 a 1659 3030
-a
+ 1659
+3030 a 1659 3030 a
 SDict begin [/View [/XYZ H.V]/Dest (equation.12.2) cvn /DEST pdfmark
 end
- 1659 3030 a Fm(\(12.2\))292 3280 y Fj(V)353 3295 y
-Fh(o)418 3280 y Fl(=)g Fe(\000)p Fj(g)622 3295 y Fh(m)676
-3280 y Fj(I)709 3295 y Fh(i)749 3279 y Fm(\()782 3280
-y Fj(r)821 3295 y Fi(\031)860 3280 y Fe(jj)p Fj(R)963
-3295 y Fh(L)1004 3279 y Fm(\))17 b(\()1087 3280 y Fj(R)1150
-3295 y Fh(L)1190 3280 y Fe(jj)p Fj(R)1293 3295 y Fh(F)1342
-3279 y Fm(\))1659 3280 y
+ 1659 3030 a Fm(\(12.2\))292 3280 y
+Fj(V)353 3295 y Fh(o)418 3280 y Fl(=)g Fe(\000)p Fj(g)622
+3295 y Fh(m)676 3280 y Fj(I)709 3295 y Fh(i)749 3279
+y Fm(\()782 3280 y Fj(r)821 3295 y Fi(\031)860 3280 y
+Fe(jj)p Fj(R)963 3295 y Fh(L)1004 3279 y Fm(\))17 b(\()1087
+3280 y Fj(R)1150 3295 y Fh(L)1190 3280 y Fe(jj)p Fj(R)1293
+3295 y Fh(F)1342 3279 y Fm(\))1659 3280 y
 SDict begin H.S end
- 1659 3280 a 1659 3280 a
+ 1659 3280 a
+1659 3280 a
 SDict begin 17.4 H.A end
- 1659
-3280 a 1659 3280 a
+ 1659 3280 a 1659 3280 a
 SDict begin [/View [/XYZ H.V]/Dest (equation.12.3) cvn /DEST pdfmark
 end
- 1659 3280 a Fm(\(12.3\))7 3463 y(Since)56
-b(normally)e Fj(R)762 3478 y Fh(F)877 3463 y Fk(>>)66
-b Fj(R)1132 3478 y Fh(L)1228 3463 y Fm(and)56 b Fj(R)1491
-3478 y Fh(F)1605 3463 y Fk(>>)67 b Fj(r)1837 3478 y Fi(\031)1875
-3463 y Fm(.)7 3578 y(Therefore,)484 3577 y(\()517 3578
-y Fj(r)556 3593 y Fi(\031)595 3578 y Fe(jj)p Fj(R)698
-3593 y Fh(L)739 3577 y Fm(\))831 3578 y(becomes)59 b
-Fj(r)1278 3593 y Fi(\031)1376 3578 y Fm(and)1579 3577
-y(\()1612 3578 y Fj(R)1675 3593 y Fh(F)1723 3578 y Fe(jj)p
-Fj(R)1826 3593 y Fh(L)1867 3577 y Fm(\))7 3694 y(becomes)35
-b Fj(R)454 3709 y Fh(L)529 3694 y Fm(Therefore,)565 3909
-y Fj(G)29 b Fl(=)767 3841 y Fj(V)828 3856 y Fh(o)p 767
-3886 99 6 v 789 3977 a Fj(I)822 3992 y Fh(i)903 3909
+ 1659 3280 a Fm(\(12.3\))7
+3463 y(Since)56 b(normally)e Fj(R)762 3478 y Fh(F)877
+3463 y Fk(>>)66 b Fj(R)1132 3478 y Fh(L)1228 3463 y Fm(and)56
+b Fj(R)1491 3478 y Fh(F)1605 3463 y Fk(>>)67 b Fj(r)1837
+3478 y Fi(\031)1875 3463 y Fm(.)7 3578 y(Therefore,)484
+3577 y(\()517 3578 y Fj(r)556 3593 y Fi(\031)595 3578
+y Fe(jj)p Fj(R)698 3593 y Fh(L)739 3577 y Fm(\))831 3578
+y(becomes)59 b Fj(r)1278 3593 y Fi(\031)1376 3578 y Fm(and)1579
+3577 y(\()1612 3578 y Fj(R)1675 3593 y Fh(F)1723 3578
+y Fe(jj)p Fj(R)1826 3593 y Fh(L)1867 3577 y Fm(\))7 3694
+y(becomes)35 b Fj(R)454 3709 y Fh(L)529 3694 y Fm(Therefore,)565
+3909 y Fj(G)29 b Fl(=)767 3841 y Fj(V)828 3856 y Fh(o)p
+767 3886 99 6 v 789 3977 a Fj(I)822 3992 y Fh(i)903 3909
 y Fl(=)f Fe(\000)p Fj(g)1107 3924 y Fh(m)1159 3909 y
 Fj(r)1198 3924 y Fi(\031)1237 3909 y Fj(R)1300 3924 y
 Fh(L)1659 3909 y
@@ -11851,10 +11797,9 @@ neg exch translate
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099
-a 2773 3099 a
+ 2773 3099 a
 
 
  pgfr
@@ -11872,10 +11817,10 @@ a 2773 3099 a
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099 a Fm(B)2773 3099
-y
+ 2773 3099
+a Fm(B)2773 3099 y
 
 
  pgfr
@@ -11893,7 +11838,7 @@ y
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
  2773 3099 a Fm(C)2773 3099 y
 
@@ -11913,10 +11858,10 @@ y
  pgfs
 
 
- 2773 3099
-a
+
  0 setgray
- 2773 3099 a Fm(E)2773 3099 y
+ 2773
+3099 a Fm(E)2773 3099 y
 
 
  pgfr
@@ -12016,10 +11961,9 @@ a
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099
-a 2773 3099 a
+ 2773 3099 a
 
 
  pgfr
@@ -12045,9 +11989,9 @@ a 2773 3099 a
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099 a 2773 3099 a
+ 2773 3099 a
 
 
  pgfr
@@ -12089,11 +12033,10 @@ a 2773 3099 a
  pgfs
 
 
- 2773
-3099 a
+
  0 setgray
- 2773 3099 a 2 w Fj(I)2808 3114 y Fh(c)2773 3099
-y
+ 2775
+3099 a Fj(I)2808 3114 y Fh(c)2773 3099 y
 
 
  pgfr
@@ -12145,9 +12088,9 @@ y
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099 a 2773 3099 a
+ 2773 3099 a
 
 
  pgfr
@@ -12177,10 +12120,10 @@ y
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773
-3099 a Fj(R)2836 3114 y Fh(L)2773 3099 y
+
+2773 3099 a Fj(R)2836 3114 y Fh(L)2773 3099 y
 
 
  pgfr
@@ -12198,10 +12141,10 @@ y
  pgfs
 
 
- 2773 3099 a
- 0 setgray
 
-2773 3099 a 2773 3099 a
+ 0 setgray
+ 2773 3099
+a
 
 
  pgfr
@@ -12243,10 +12186,9 @@ y
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099 a 2 w Fj(I)2810
-3114 y Fh(E)2773 3099 y
+ 2775 3099 a Fj(I)2810 3114 y Fh(E)2773 3099 y
 
 
  pgfr
@@ -12276,9 +12218,9 @@ y
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099 a 2773
+ 2773
 3099 a
 
 
@@ -12305,9 +12247,9 @@ y
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099 a 2773 3099 a
+ 2773 3099 a
 
 
  pgfr
@@ -12355,10 +12297,10 @@ y
  pgfs
 
 
- 2773 3099
-a
+
  0 setgray
- 2773 3099 a Fj(V)2834 3114 y Fh(cc)2773 3099 y
+ 2773 3099 a Fj(V)2834 3114 y Fh(cc)2773
+3099 y
 
 
  pgfr
@@ -12414,10 +12356,9 @@ a
  pgfs
 
 
- 2773
-3099 a
+
  0 setgray
- 2773 3099 a 2773 3099 a
+ 2773 3099 a
 
 
  pgfr
@@ -12443,10 +12384,9 @@ a
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099
-a 2773 3099 a
+ 2773 3099 a
 
 
  pgfr
@@ -12488,10 +12428,10 @@ a 2773 3099 a
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099 a 2 w Fj(I)2810 3114
-y Fh(E)2773 3099 y
+ 2775 3099 a Fj(I)2810
+3114 y Fh(E)2773 3099 y
 
 
  pgfr
@@ -12509,10 +12449,10 @@ y Fh(E)2773 3099 y
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099 a Fm(GND)2773
-3099 y
+ 2773 3099 a Fm(GND)2773 3099
+y
 
 
  pgfr
@@ -12666,9 +12606,9 @@ y Fh(E)2773 3099 y
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099 a 2773 3099 a
+ 2773 3099 a
 
 
  pgfr
@@ -12706,10 +12646,9 @@ y Fh(E)2773 3099 y
  pgfs
 
 
- 2773 3099
-a
+
  0 setgray
- 2773 3099 a 2773 3099 a
+ 2773 3099 a
 
 
  pgfr
@@ -12735,10 +12674,9 @@ a
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099 a 2773
-3099 a
+ 2773 3099 a
 
 
  pgfr
@@ -12780,10 +12718,10 @@ a
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099 a 2 w Fj(I)2810 3114 y Fh(B)2773
-3099 y
+ 2775 3099 a Fj(I)2810
+3114 y Fh(B)2773 3099 y
 
 
  pgfr
@@ -12835,9 +12773,9 @@ a
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099 a 2773 3099 a
+ 2773 3099 a
 
 
  pgfr
@@ -12871,10 +12809,10 @@ a
  pgfs
 
 
- 2773 3099
-a
+
  0 setgray
- 2773 3099 a Fj(R)2836 3114 y Fh(F)2773 3099 y
+ 2773 3099 a Fj(R)2836
+3114 y Fh(F)2773 3099 y
 
 
  pgfr
@@ -12904,10 +12842,9 @@ a
  pgfs
 
 
- 2773
-3099 a
+
  0 setgray
- 2773 3099 a 2773 3099 a
+ 2773 3099 a
 
 
  pgfr
@@ -13030,10 +12967,9 @@ a
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773
-3099 a 2773 3099 a
+ 2773 3099 a
 
 
  pgfr
@@ -13071,10 +13007,10 @@ a
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099 a Fj(V)2836
-3114 y Fh(B)r(E)2773 3099 y
+ 2773
+3099 a Fj(V)2836 3114 y Fh(B)r(E)2773 3099 y
 
 
  pgfr
@@ -13104,10 +13040,10 @@ a
  pgfs
 
 
- 2773 3099 a
+
  0 setgray
- 2773 3099 a 2773
-3099 a
+ 2773 3099
+a
 
 
  pgfr
@@ -13136,15 +13072,15 @@ a
  2000 3886 a
  currentpoint currentpoint translate 1 2.02206 div 1 2.02206 div scale
 neg exch neg exch translate
- 2000 3886 a 0 TeXcolorgray 2862 4042
-a Fm(Fig.)h(13.9)p 0 TeXcolorgray 0 TeXcolorgray 2199
-4375 a(From)f Fj(I)2482 4390 y Fh(c)2547 4375 y Fm(vs)e
-Fj(V)2729 4390 y Fh(be)2827 4375 y Fm(graph,)f(Slope)h(at)f
-(Q-point\(middle)2199 4491 y(point)j(of)h(linear)f(re)o(gion\))g(gi)n
-(v)o(es)g Fj(g)3431 4506 y Fh(m)2318 4716 y Fj(g)2368
-4731 y Fh(m)2447 4716 y Fl(=)2578 4649 y Fk(@)r Fj(I)2664
-4664 y Fh(c)p 2548 4693 179 6 v 2548 4785 a Fk(@)p Fj(V)2660
-4800 y Fh(be)2765 4716 y Fl(=)28 b Fm(0)p Fk(:)p Fm(0104943)p
+ 2000 3886 a 0 TeXcolorgray 2862 4042 a
+Fm(Fig.)h(13.9)p 0 TeXcolorgray 0 TeXcolorgray 2199 4375
+a(From)f Fj(I)2482 4390 y Fh(c)2547 4375 y Fm(vs)e Fj(V)2729
+4390 y Fh(be)2827 4375 y Fm(graph,)f(Slope)h(at)f(Q-point\(middle)2199
+4491 y(point)j(of)h(linear)f(re)o(gion\))g(gi)n(v)o(es)g
+Fj(g)3431 4506 y Fh(m)2318 4716 y Fj(g)2368 4731 y Fh(m)2447
+4716 y Fl(=)2578 4649 y Fk(@)r Fj(I)2664 4664 y Fh(c)p
+2548 4693 179 6 v 2548 4785 a Fk(@)p Fj(V)2660 4800 y
+Fh(be)2765 4716 y Fl(=)28 b Fm(0)p Fk(:)p Fm(0104943)p
 Fj(S)3361 4715 y Fm(\()3395 4716 y Fj(a)7 b(p)g(pr)r(o)e(x)3699
 4715 y Fm(\))3851 4716 y
 SDict begin H.S end

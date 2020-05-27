@@ -10,7 +10,7 @@
     \node [sum, right of=input] (sum) {};
     \node [block, right of=sum] (controller) {$G(s)$};
     \node [output, right of=controller] (output) {};
-    \node [block, below of=controller] (feedback) {$\beta$};
+    \node [block, below of=controller] (feedback) {$H$};
     \draw [draw,->] (input) -- node {$V_s$} (sum);
     \draw [->] (sum) -- node {$V_i$} (controller);
     \draw [->] (controller) -- node [name=y] {$V_o$}(output);

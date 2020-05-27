@@ -50,8 +50,9 @@ plt.show()
 
 
 #Step Response
-t = np.linspace(0,0.03,1000)
-y = 500*(1 - np.exp(-200*t))
+t = np.linspace(0,0.05,1000)
+y = -10000*np.exp(-100*t) + 9801 + 199*np.exp(-10000*t)
+y*= 10000/9801
 plt.figure()
 plt.title("Step Response")
 plt.ylabel("y(t)")

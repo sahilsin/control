@@ -1,5 +1,4 @@
 * Schematics Netlist *
-
 VS	1	0	AC	1	PWL(0US 0V  0.1US 1V)
 *
 R1	2	0	10K
@@ -23,22 +22,31 @@ EBUFFER	5 0	4 0	1
 ROUT	5	6	10
 .ENDS
 
-CC1 _N_3 _N_2 10n
+CC1 _N_3 _N_2 0.00000001
+CC2 _N_11 _N_10 0.0001
+CC3 _N_13 _N_12 0.0001
 XOP1 0 _N_2 _N_3  OPAMP1
-XOP2 0 _N_6 _N_5  OPAMP1
-XOP3 0 _N_9 _N_7  OPAMP1
-VVPul1 _N_8 0  EXP(493.8772 0 0 0 0 0.01)
-RR1 _N_7 _N_2 10
+XOP2 0 _N_10 _N_11  OPAMP1
+XOP3 0 _N_12 _N_11  OPAMP1
+XOP4 0 _N_5 _N_4  OPAMP1
+XOP5 0 _N_8 _N_6  OPAMP1
+BOpAmp3 _N_6 0 V=5 < 1000*(v(0,0) - v(_N_8,0)) ? 5 : 1000*(v(0,0) - v(_N_8,0)) < 0 ? 0 : 1000*(v(0,0) - v(_N_8,0))
+BOpAmp4 _N_11 0 V=5 < 1000*(v(0,0) - v(_N_10,0)) ? 5 : 1000*(v(0,0) - v(_N_10,0)) < 0 ? 0 : 1000*(v(0,0) - v(_N_10,0))
+BOpAmp5 _N_13 0 V=5 < 1000*(v(0,0) - v(_N_12,0)) ? 5 : 1000*(v(0,0) - v(_N_12,0)) < 0 ? 0 : 1000*(v(0,0) - v(_N_12,0))
+RR1 _N_6 _N_2 10
 RR15 _N_2 _N_3 1000k
-RR16 _N_6 _N_5 1k
-RR2 _N_4 _N_3 998
-RR3 _N_4 0 2
-RR4 _N_4 _N_6 1k
-RR5 _N_9 _N_5 1k
-RR6 _N_9 _N_8 1k
-RR7 _N_7 _N_9 1k
-
-
+RR16 _N_5 _N_4 1k
+RR2 _N_9 _N_13 998
+RR26 _N_12 _N_13 1
+RR3 _N_9 0 2
+RR35 _N_10 _N_11 1
+RR4 _N_9 _N_5 1k
+RR5 _N_8 _N_4 1k
+RR6 _N_8 _N_7 1k
+RR7 _N_6 _N_8 1k
+RR8 _N_3 _N_10 1
+RR9 _N_11 _N_12 1
+VVPul1 _N_7 0  EXP(9642.654 0 0 0 0 0.01)
 
  .tran 0.0001 0.05 0.001 0.0001
 * VIEW RESULTS
@@ -48,7 +56,7 @@ run
 
 
 
-wrdata plot.dat V(_N_8)
+wrdata plot.dat V(_N_7)
 .endc
 .end
 

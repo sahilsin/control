@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  26 MAY 2020 14:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  27 MAY 2020 08:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1400,10 +1400,6 @@ LaTeX Info: Redefining \nameref on input line 88.
 \@outlinefile=\write4
 \openout4 = `gvv_feedback_manual.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 \c@lstlisting=\count269
 \c@theorem=\count270
 \c@problem=\count271
@@ -1447,31 +1443,93 @@ syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 ) (./chapters/ee18btech11044_3.tex
 (./figs/ee18btech11044/ee18btech11044_3_tikz_1.tex)
+(./figs/ee18btech11044/ee18btech11044_3_tikz_2.tex)
+Underfull \vbox (badness 3302) has occurred while \output is active []
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 \end{itemize}
-                  
-? 
-! Emergency stop.
- ...                                              
-                                                  
-l.31 \end{itemize}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- 
+ [1
+
+
+]
+File: ./figs/ee18btech11044/ee18btech11044_3_1.eps Graphic file (type eps)
+
+<./figs/ee18btech11044/ee18btech11044_3_1.eps>
+(./tables/ee18btech11044/ee18btech11044_3_t_1.tex
+\gnumericTableWidth=\skip75
+\gnumericTableWidthComplete=\skip76
+\gnumericMultiRowLength=\skip77
+\gnumericColA=\skip78
+\gnumericColB=\skip79
+) [2]
+File: ./figs/ee18btech11044/ee18btech11044_3_2.eps Graphic file (type eps)
+
+<./figs/ee18btech11044/ee18btech11044_3_2.eps>
+File: ./figs/ee18btech11044/ee18btech11044_3_3.eps Graphic file (type eps)
+
+<./figs/ee18btech11044/ee18btech11044_3_3.eps>
+File: ./figs/ee18btech11044/ee18btech11044_3_4.eps Graphic file (type eps)
+
+<./figs/ee18btech11044/ee18btech11044_3_4.eps>
+Underfull \vbox (badness 6995) has occurred while \output is active []
+
+ [3]
+File: ./figs/ee18btech11044/ee18btech11044_3_5.eps Graphic file (type eps)
+
+<./figs/ee18btech11044/ee18btech11044_3_5.eps>
+File: ./figs/ee18btech11044/ee18btech11044_3_6.eps Graphic file (type eps)
+
+<./figs/ee18btech11044/ee18btech11044_3_6.eps>
+File: ./figs/ee18btech11044/ee18btech11044_3_7.eps Graphic file (type eps)
+
+<./figs/ee18btech11044/ee18btech11044_3_7.eps>
+File: ./figs/ee18btech11044/ee18btech11044_3_8.eps Graphic file (type eps)
+
+<./figs/ee18btech11044/ee18btech11044_3_8.eps> [4]
+File: ./figs/ee18btech11044/ee18btech11044_3_9.eps Graphic file (type eps)
+
+<./figs/ee18btech11044/ee18btech11044_3_9.eps>
+Underfull \hbox (badness 4556) in paragraph at lines 386--387
+[]\OT1/txr/m/n/12 We get the poles two real and dis-
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 386--387
+\OT1/txr/m/n/12 tinct poles at 42838.13728906053 and
+ []
+
+File: ./figs/ee18btech11044/ee18btech11044_3_10.eps Graphic file (type eps)
+<./figs/ee18btech11044/ee18btech11044_3_10.eps>
+File: ./figs/ee18btech11044/ee18btech11044_3_11.eps Graphic file (type eps)
+
+<./figs/ee18btech11044/ee18btech11044_3_11.eps>
+File: ./figs/ee18btech11044/ee18btech11044_3_12.eps Graphic file (type eps)
+
+<./figs/ee18btech11044/ee18btech11044_3_12.eps> [5]
+File: ./figs/ee18btech11044/ee18btech11044_3_13.eps Graphic file (type eps)
+
+<./figs/ee18btech11044/ee18btech11044_3_13.eps> [6])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 257.
+ [7
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 257.
+
+(./gvv_feedback_manual.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 257.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 257.
+Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 257.
+ ) 
 Here is how much of TeX's memory you used:
- 32504 strings out of 492624
- 706088 string characters out of 6119216
- 902302 words of memory out of 5000000
- 35827 multiletter control sequences out of 15000+600000
+ 32904 strings out of 492624
+ 711556 string characters out of 6119216
+ 921018 words of memory out of 5000000
+ 36204 multiletter control sequences out of 15000+600000
  74877 words of font info for 189 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,12n,69p,511b,1075s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
+ 55i,13n,69p,511b,1256s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on gvv_feedback_manual.dvi (7 pages, 83544 bytes).

@@ -1,0 +1,4 @@
+\begin{circuitikz}[american]
+\draw (0,0) node[label={[font=\footnotesize]above:$V_{C_{2}}$}] {} --(2,0) to [R, l_=$r_{\pi_{3}}$] ++ (0,-2) -- (4,-2) to [R, l_=$r_{e_{3}}$ ,i>=$I_{o}$] ++ (0,-2) to [R, l_=$R_{22}$] ++ (0,-2) to node[ground]{}++(0,-0.5);
+\draw (4,-2) -- (6,-2) to [I,invert,l_=$g_{m_{3}}V_{BE_{3}}$] ++ (0,2) -- (9,0) node[label={[font=\footnotesize]above:$V_{C_{3}}$}] {} to [R,l_=$R_{C_{3}}$] ++ (0,-2) to node[ground]{}++(0,-0.5);
+;\end{circuitikz}

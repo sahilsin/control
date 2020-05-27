@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  25 MAY 2020 20:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  27 MAY 2020 07:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1505,33 +1505,36 @@ File: ./figs/Figure_2.eps Graphic file (type eps)
  <./figs/Figure_2.eps>
 File: ./figs/Figure_3.eps Graphic file (type eps)
  <./figs/Figure_3.eps>
-(./figs/circuit.tex)
+(./figs/circuit.tex) [2] (./figs/circuit3.tex) (./figs/circuit4.tex
+Missing character: There is no ; in font nullfont!
+)
+(./tables/table2.tex)
+Underfull \hbox (badness 2698) in paragraph at lines 205--206
+[]\OT1/txr/m/n/12 Verification of closed loop cir-cuit de-sign
+ []
 
-LaTeX Warning: Text page 2 contains only floats.
-
-[2] (./figs/circuit3.tex) (./figs/circuit4.tex) (./tables/table2.tex)
 File: ./figs/Figure_4.eps Graphic file (type eps)
+<./figs/Figure_4.eps> [3]
+Underfull \vbox (badness 1102) has occurred while \output is active []
 
-<./figs/Figure_4.eps> [3])
+) [4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 270.
- [4
-
-]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 270.
- (./gvv_feedback_manual.aux)
+
+(./gvv_feedback_manual.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 270.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 270.
 Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 9534070C232AA0A3F935CB7C3E3F8D46;35.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 270.
  ) 
 Here is how much of TeX's memory you used:
- 33448 strings out of 492624
- 722783 string characters out of 6119216
- 945522 words of memory out of 5000000
- 36730 multiletter control sequences out of 15000+600000
- 74877 words of font info for 189 fonts, out of 8000000 for 9000
+ 34416 strings out of 492624
+ 746553 string characters out of 6119216
+ 1100310 words of memory out of 5000000
+ 37697 multiletter control sequences out of 15000+600000
+ 75595 words of font info for 190 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,17n,69p,511b,1146s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,17n,69p,511b,1154s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_feedback_manual.dvi (4 pages, 80164 bytes).
+Output written on gvv_feedback_manual.dvi (4 pages, 158188 bytes).

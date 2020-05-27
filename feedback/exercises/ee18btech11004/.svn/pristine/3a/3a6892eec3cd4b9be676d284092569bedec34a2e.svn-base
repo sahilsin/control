@@ -1,0 +1,7 @@
+\begin{circuitikz}[american]
+\draw (0,0) to [voltage source,l_=$V_{i}$] ++ (0,-2) to  node[ground]{}++(0,-0.5);
+
+\draw (0,0) -- (2,0) to [R, l=$r_{\pi_{1}}$, v_=$V_{BE_{1}}$ ,i>=$I_{B_{1}}$] ++ (0,-3) --(4,-3) to [I,invert,l_=$g_{m_{1}}V_{BE_{1}}$ ,i<=$I_{C_{1}}$]++(0,3) -- (7,0) to [R,l_=$R_{C_{1}}$] ++ (0,-2) to node[ground]{} ++ (0,-0.5);
+\draw (7,0) node[label={[font=\footnotesize]above:$V_{C_{1}}$}] {} --(9,0) to  [R, l=$r_{\pi_{2}}$ ,v_=$V_{BE_{2}}$] ++ (0,-2) to node [ground]{} ++ (0,-0.5);
+\draw (3,-3) to [R, l_=$r_{e_{1}}$ ,i>=$I_{E_{1}}$] ++ (0,-2) to [R, l_=$R_{11}$] ++ (0,-2) to node[ground]{} ++ (0,-0.5);
+;\end{circuitikz}

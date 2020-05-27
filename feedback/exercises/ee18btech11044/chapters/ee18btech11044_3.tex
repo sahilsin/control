@@ -1,10 +1,4 @@
-\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-\numberwithin{equation}{enumi}
-
-\item  For the Wein-bridge oscillator of Fig \ref{fig:ee18btech11044_3_tikz_1}, use the expression for loop gain to find the poles of the closed-loop system. Give the expression for the pole, Q and use it to show that to locate the poles in the right half of s plane, $\frac{R_2}{R_1}$ must be selected to be greater than 2. 
-\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
-\begin{figure}[!hbt]
+For the Wein-bridge oscillator of Fig \ref{fig:ee18btech11044_3_tikz_1}, use the expression for loop gain to find the poles of the closed-loop system. Give the expression for the pole, Q and use it to show that to locate the poles in the right half of s plane, $\frac{R_2}{R_1}$ must be selected to be greater than 2. \begin{figure}[!hbt]
 	\begin{center}
 			\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11044/ee18btech11044_3_tikz_1.tex}}
 	\end{center}
@@ -12,26 +6,19 @@
 \label{fig:ee18btech11044_3_tikz_1}
 \end{figure}
 
+\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item  Draw the equivalent control system block diagram for Fig. \ref{fig:ee18btech11044_3_tikz_1} and compute $G$ and $H$.
+%
+\\
+\solution 
+%\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+
 
 
 \item Compare the basic structure for a sinusoidal oscillator with Wein-bridge oscillator and give expressions for G and H. 
-
-\solution
-\begin{itemize}
- Comparring Fig \ref{fig:ee18btech11044_3_tikz_1} and Fig \ref{fig:ee18btech11044_3_tikz_2}, we get
-\begin{align}
-G = 1+\frac{R_2}{R_1} \label{eq:ee18btech11044_3_1}\\
-H = \frac{Z_p}{Z_p + Z_s}  \label{eq:ee18btech11044_3_2}
-\end{align}
-where,
-\begin{align}
-    Z_p = \frac{R}{RSC+1} \\
-    Z_s = \frac{RSC+1}{SC}
-\end{align}
-\end{itemize}
-
-
-
 \begin{figure}[!hbt]
 	\begin{center}
 		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11044/ee18btech11044_3_tikz_2.tex}}
@@ -40,42 +27,50 @@ where,
 \label{fig:ee18btech11044_3_tikz_2}
 \end{figure} 
 
-
-\item Write the closed loop Transfer function T(s) for wein-bridge oscillator.
-
-\solution
+\solution See Fig \ref{fig:ee18btech11044_3_tikz_2}.
+%\begin{itemize}
+ \item Comparring Fig \ref{fig:ee18btech11044_3_tikz_1} and , we get
 \begin{align}
-T(s) = \frac{(1+\frac{R_2}{R_1}) R^2C^2s^2+3RCs+1 }{R^C^2s^2+(2-\frac{R_2}{R_1})RCs+1} \label{eq:ee18btech11044_3_7}
+G &= 1+\frac{R_2}{R_1} 
+\label{eq:ee18btech11044_3_1}\\
+H(s) &= \frac{V_f}{V_o} = \frac{Z_p}{Z_p + Z_s}  
+\label{eq:ee18btech11044_3_2}
 \end{align}
-
-
-
-
-
-\item Write the characteristic equation for Wein-bridge oscillator.
-
-\solution
+where,
 \begin{align}
-    1 - L(s) = 0  \\
-    1 - \frac{1 + \frac{R_2}{R_1}}{3 + sCR + \frac{1}{sCR}} = 0  \\
-    3 + sRC + \frac{1}{sCR} = 1 + \frac{R_2}{R_1}  \\
-    3 - 1 +sRC +\frac{1}{sRC} -\frac{R_2}{R_1} = 0  \\
-    2s + s^2 RC + \frac{1}{RC} -s\frac{R_2}{R_1} = 0  \\
-    s^2 RC + s(2 - \frac{R_2}{R_1}) + \frac{1}{RC} =0 \\
-    s^2 + s \frac{1}{RC}(2-\frac{R_2}{R_1}) + \frac{1}{R^2C^2} = 0 \label{eq:ee18btech11044_3_3}
+    Z_p &= \frac{R}{RSC+1} \\
+    Z_s &= \frac{RSC+1}{SC}
 \end{align}
+%\end{itemize}
 
-\item
-Write the general expression for the characteristic equation.
 
-\solution
+
+
+
+
+\item Find the loop gain $L(s)$ and obtain the characteristic equation.
+ for the Wein-bridge oscillator.
+\\
+\solution From \eqref{eq:ee18btech11044_3_1} and \eqref{eq:ee18btech11044_3_2},
+the loop gain 
 \begin{align}
-    s^2 + s\frac{\omega_0}{Q} + \omega_0^2 = 0 \label{eq:ee18btech11044_3_4}
+    L(s) =  \frac{1 + \frac{R_2}{R_1}}{3 + sCR + \frac{1}{sCR}} = 0  \\
 \end{align}
+and the characteristic equation is 
+\begin{align}
+    1 - L(s) &= 0  \\
+%    1 - \frac{1 + \frac{R_2}{R_1}}{3 + sCR + \frac{1}{sCR}} = 0  \\
+%    3 + sRC + \frac{1}{sCR} = 1 + \frac{R_2}{R_1}  \\
+%    3 - 1 +sRC +\frac{1}{sRC} -\frac{R_2}{R_1} = 0  \\
+%    2s + s^2 RC + \frac{1}{RC} -s\frac{R_2}{R_1} = 0  \\
+%    s^2 RC + s\brak{2 - \frac{R_2}{R_1}} + \frac{1}{RC} =0 \\
+\implies     s^2 +  \frac{s}{RC}\brak{2-\frac{R_2}{R_1}} + \frac{1}{R^2C^2} &= 0 \label{eq:ee18btech11044_3_3}\end{align}
+%
+after some algebra.
 
 \item State the \textbf{Barkhausen criterion} for sustained oscillations with frequency $\omega_0$.
 
-\solution
+\solution  This is nothing but the condition for marginal stability in a control system.
 \begin{align}
     L(j\omega_0) = G(j\omega_0)  H(j\omega_0) = 1
 \end{align}
@@ -96,18 +91,24 @@ Write the general expression for the characteristic equation.
  
 
 
-\item 
-Compare the equations \ref{eq:ee18btech11044_3_3} and \ref{eq:ee18btech11044_3_4} and give expressions for Q and $\omega_0$
-
+\item The characteristic equation for a second order system is given by 
+%Write the general expression for the characteristic equation.
+\begin{align}
+    s^2 + s\frac{\omega_0}{Q} + \omega_0^2 = 0 \label{eq:ee18btech11044_3_4}
+\end{align}
+%
+Obtain  $Q$ and $\omega_0$ for  \eqref{eq:ee18btech11044_3_3} 
+%and \ref{eq:ee18btech11044_3_4} and give expressions for
+\\
 \solution
 \begin{align}
-    \omega_0^2 = \frac{1}{R^2C^2} \\
-    \omega_0 = \frac{1}{RC} \label{eq:ee18btech11044_3_5} \\
-    \frac{\omega_0}{Q} = \frac{1}{RC}(2 - \frac{R_2}{R_1}) \\
-    Q = \frac{1}{(2 - \frac{R_2}{R_1})} \label{eq:ee18btech11044_3_6} \\
+%    \omega_0^2 = \frac{1}{R^2C^2} \\
+    \omega_0 &= \frac{1}{RC} \label{eq:ee18btech11044_3_5} \text{ and }\\
+    \frac{\omega_0}{Q} &= \frac{1}{RC}\brak{2 - \frac{R_2}{R_1}} \\
+\implies     Q &= \frac{1}{\brak{2 - \frac{R_2}{R_1}}} \label{eq:ee18btech11044_3_6} 
 \end{align}
 \item 
-Using Eq \ref{eq:ee18btech11044_3_6} calculate the value of $\frac{R_2}{R_1}$ for which poles lie on right hand of s-plane.
+Using   \eqref{eq:ee18btech11044_3_6} calculate the value of $\frac{R_2}{R_1}$ for which poles lie on right hand of s-plane.
 
 \solution 
 
@@ -161,6 +162,12 @@ Where, according to Fig \ref{fig:ee18btech11044_3_tikz_1}
 
 %Case-------------------------1
 
+\item Write the closed loop Transfer function T(s) for wein-bridge oscillator.
+
+\solution
+\begin{align}
+T(s) = \frac{(1+\frac{R_2}{R_1}) R^{2}C^{2}s^{2}+3RCs+1 }{R^{2}C^{2}s^{2}+(2-\frac{R_2}{R_1})RCs+1} \label{eq:ee18btech11044_3_7}
+\end{align}
 \item Calculate the frequency of sinusoid generated for the values given in table \ref{table:ee18btech11044_t_1}.
 
 \solution
@@ -175,7 +182,7 @@ codes/ee18btech11044/ee18btech11044_3_1.py
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%Python simulation
 
-\item Substituting the values shown in table \ref{table:ee18btech11044_t_1} in the Eq \ref{eq:ee18btech11044_3_7}, Plot the impulse response and step response using a python code.
+\item Substituting the values shown in table \ref{table:ee18btech11044_t_1} in the   \eqref{eq:ee18btech11044_3_7}, Plot the impulse response and step response using a python code.
 
 \solution
 
@@ -228,8 +235,8 @@ spice/ee18btech11044/ee18btech11044_spice_3_1.py
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\columnwidth]{./figs/ee18btech11044/ee18btech11044_3_4.eps}
-\label{fig:ee18btech11044_3_4}
 \caption{}
+\label{fig:ee18btech11044_3_4}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%Frequency of spice simulation
@@ -275,7 +282,24 @@ codes/ee18btech11044/ee18btech11044_3_4.py
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%python simulation
-\item Substituting the values shown in table \ref{table:ee18btech11044_t_1} in the Eq \ref{eq:ee18btech11044_3_7}, Consider the ratio of $\frac{R_2}{R_1•}$ = 2 and plot the impulse response and step response using a python code.
+\item Substituting the values shown in table \ref{table:ee18btech11044_t_1} in the   \eqref{eq:ee18btech11044_3_7}, Consider the ratio of $\frac{R_2}{R_1}$ = 2 and plot the impulse response and step response using a python code.
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11044/ee18btech11044_3_6.eps}
+\caption{}
+\label{fig:ee18btech11044_3_6}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11044/ee18btech11044_3_7.eps}
+\caption{}
+\label{fig:ee18btech11044_3_7}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%spice simulation
+\renewcommand{\thefigure}{\theenumi}
 
 \solution
 
@@ -293,22 +317,14 @@ codes/ee18btech11044/ee18btech11044_3_6.py
 \item As expected from the poles we are getting pure sinusoid as both impulse response and step response.
 \end{itemize}
 
+
+\item Simulate the circuit shown in Fig \ref{fig:ee18btech11044_3_tikz_1} using spice simulators. Consider the ratio of $\frac{R_2}{R_1}$ = 2 and plot the output using a python script.
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=\columnwidth]{./figs/ee18btech11044/ee18btech11044_3_6.eps}
+\includegraphics[width=\columnwidth]{./figs/ee18btech11044/ee18btech11044_3_8.eps}
 \caption{}
-\label{fig:ee18btech11044_3_6}
+\label{fig:ee18btech11044_3_8}
 \end{figure}
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\columnwidth]{./figs/ee18btech11044/ee18btech11044_3_7.eps}
-\caption{}
-\label{fig:ee18btech11044_3_7}
-\end{figure}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%spice simulation
-\item Simulate the circuit shown in Fig \ref{fig:ee18btech11044_3_tikz_1} using spice simulators. Consider the ratio of $\frac{R_2}{R_1•}$ = 2 and plot the output using a python script.
 
 \solution
 
@@ -324,12 +340,7 @@ spice/ee18btech11044/ee18btech11044_spice_3_3.py
 \end{lstlisting}
 \end{itemize}
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\columnwidth]{./figs/ee18btech11044/ee18btech11044_3_8.eps}
-\label{fig:ee18btech11044_3_8}
-\caption{}
-\end{figure}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%Frequency of spice simulation
 
@@ -376,7 +387,7 @@ codes/ee18btech11044/ee18btech11044_3_7.py
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%python simulation
-\item Substituting the values shown in table \ref{table:ee18btech11044_t_1} in the Eq \ref{eq:ee18btech11044_3_7}. Consider the ratio of $\frac{R_2}{R_1•}$ = 9 and plot the impulse response and step response using a python code.
+\item Substituting the values shown in table \ref{table:ee18btech11044_t_1} in the   \eqref{eq:ee18btech11044_3_7}. Consider the ratio of $\frac{R_2}{R_1}$ = 9 and plot the impulse response and step response using a python code.
 
 \solution
 
@@ -409,12 +420,19 @@ codes/ee18btech11044/ee18btech11044_3_9.py
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%spice simulation
-\item Simulate the circuit shown in Fig \ref{fig:ee18btech11044_3_tikz_1} using spice simulators. Consider the ratio of $\frac{R_2}{R_1•}$ = 9 and plot the output using a python script.
-
-\solution
+\item Simulate the circuit shown in Fig \ref{fig:ee18btech11044_3_tikz_1} using spice simulators. Consider the ratio of $\frac{R_2}{R_1}$ = 9 and plot the output using a python script.
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11044/ee18btech11044_3_12.eps}
+\caption{}
+\label{fig:ee18btech11044_3_12}
+\end{figure}
+\\
+\solution 
 
 \begin{itemize}
-\item Refer Fig \ref{fig:ee18btech11044_3_12} for the spice simulation output.  
+\item Refer to Fig. \ref{fig:ee18btech11044_3_12}
+ for the spice simulation output.  
 \item You can find the netlist for the simulated circuit here:
 \begin{lstlisting}
 spice/ee18btech11044/ee18btech11044_3_3.net
@@ -425,12 +443,6 @@ spice/ee18btech11044/ee18btech11044_spice_3_5.py
 \end{lstlisting}
 \end{itemize}
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=\columnwidth]{./figs/ee18btech11044/ee18btech11044_3_12.eps}
-\label{fig:ee18btech11044_3_12}
-\caption{}
-\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%Frequency of spice simulation
 

@@ -1,0 +1,9 @@
+\begin{circuitikz}[american]
+\usetikzlibrary{positioning, fit, calc}
+\draw (0,0)to [open,v=$V_f$]++(0,-2)to[short]++(6,0)
+(0,0)to[short,i=$I_1$]++(6,0);
+\draw (8,-1)node[draw,minimum width=4cm,minimum height=4cm] (load) {Feedback Network}(8,0)
+(10,0)--++(6,0)
+(10,-2)--(16,-2)to[current source,l_=$I_o$]++(0,2)
+;
+\end{circuitikz}

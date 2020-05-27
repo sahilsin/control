@@ -1,0 +1,341 @@
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+ \item Part of the circuit of the MC1553 Amplifier is shown in circuit1 in  Fig. \ref{fig:ee18btech11007_circuit1} with values of various parameters given in  Table \ref{table:ee18btech11007}.  Draw the equivalent block diagrams.
+
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+ \begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11007/circuit1.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11007_circuit1}
+\end{figure}
+ 
+\begin{table}[!ht]
+\centering
+\input{./tables/EE18BTECH11007/table1.tex}
+\caption{parameters}
+\label{table:ee18btech11007}
+\end{table}
+\solution  The block diagrams are  available in Figs. \ref{fig:ee18btech11007_block_diagram} and 
+\ref{fig:ee18btech11007_trans-conductance_blockdiagram}. 
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11007/block_diagram.tex}}
+	\end{center}
+\caption{block diagram}
+\label{fig:ee18btech11007_block_diagram}
+\end{figure}
+
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11007/amplifier_blockdiagram.tex}}
+	\end{center}
+\caption{Feedback Transconductance Amplifier}
+\label{fig:ee18btech11007_trans-conductance_blockdiagram}
+\end{figure}
+\renewcommand{\thefigure}{\theenumi}
+
+\item Draw the block diagram and equivalent circuit for $H$ for Fig. \ref{fig:ee18btech11007_trans-conductance_blockdiagram}.
+\\
+\solution Fig. \ref{fig:ee18btech11007_H_blockdiagram} gives the required block diagram
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11007/H_blockdiagram.tex}}
+	\end{center}
+\caption{Feedback circuit block diagram}
+\label{fig:ee18btech11007_H_blockdiagram}
+\end{figure}
+\begin{align}
+    H=\frac{V_f}{I_o}|_{I_{1}=0} 
+\end{align}
+%
+and the equivalent $H$ circuit is available in Fig. \ref{fig:ee18btech11007_circuit2}.
+
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11007/circuit2.tex}}
+	\end{center}
+\caption{H circuit}
+\label{fig:ee18btech11007_circuit2}
+\end{figure}
+\renewcommand{\thefigure}{\theenumi}
+%
+\item Find the feedback Factor $H$
+\\
+\solution From Fig. \ref{fig:ee18btech11007_circuit2}, 
+\begin{align}
+    H&=\frac{V_f}{I_0}=\frac{R_{E1}R_{E2}}{R_{E2}+R_F+R_{E1}} 
+%\\
+%    &=\frac{100}{100+640+100}\times 100=11.9\ohm
+\end{align}
+\item Find $R_{11}$ and $R_{22}$  from Figs. \ref{fig:ee18btech11007_feedback_network} and \ref{fig:ee18btech11007_circuit2}
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11007/feedback_network.tex}}
+	\end{center}
+\caption{feedback network}
+\label{fig:ee18btech11007_feedback_network}
+\end{figure}
+\\
+\solution
+\begin{align}
+    R_{11}=R_{E1}||(R_F+R_{E2})
+\end{align}
+\begin{align}
+    R_{22}=R_{E2}||(R_F+R_{E1})
+\end{align}
+%
+\item Draw the block diagram and equivalent circuit for $G$.
+\\
+\solution The required block diagram is available in Fig. \ref{fig:ee18btech11007_G_blockdiagram} 
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11007/G_blockdiagram.tex}}
+	\end{center}
+\caption{Amplifier circuit  block diagram}
+\label{fig:ee18btech11007_G_blockdiagram}
+\end{figure}
+and the equivalent circuit in 
+ \begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11007/circuit3.tex}}
+	\end{center}
+\caption{G circuit}
+\label{fig:ee18btech11007_circuit3}
+\end{figure}
+
+%\begin{align}
+%    G=\frac{I_o}{V_i}
+%\end{align}
+%$R_{11}$ and $R_{22}$ are  obtained from fig.\ref{fig:ee18btech11007_feedback_network}
+
+%{\small
+%\item draw the block diagram of a Feedback Trans-conductance Amplifier(series-series)
+%\\
+%\solution fig.\ref{fig:ee18btech11007_trans-conductance_blockdiagram} gives us the required block diagram 
+%\begin{align}
+%    T=\frac{I_o}{V_s}=\frac{G}{1+GH}
+%\end{align}
+
+
+
+\item Find $G$ 
+\renewcommand{\thefigure}{\theenumi.\arabic{figure}}
+\\
+\solution
+This is the equivalent circuit of AC analysis
+Refer Fig.\ref{fig:ee18btech11007_ac_analysis_circuit}
+
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11007/ac_analysis_circuit.tex}}
+	\end{center}
+\caption{ac analysis circuit}
+\label{fig:ee18btech11007_ac_analysis_circuit}
+\end{figure}
+
+To find $G=\frac{I_0}{V_i}$ we determine the gain of first stage(where $\beta = h_{fe}$)
+Refer Fig. \ref{fig:ee18btech11007_circuit6}
+
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11007/circuit6.tex}}
+	\end{center}
+\caption{circuit6}
+\label{fig:ee18btech11007_circuit6}
+\end{figure}
+As
+\begin{align}
+    V_{C_{1}}=-I_{C_{1}}(R_{C_{1}} \parallel r_{\pi_{2}})
+\end{align} 
+By writing  KVL we get
+\begin{align}
+    V_{i} - \frac{r_{\pi_{1}}}{1+\beta} I_{E_{1}} - I_{E_{1}}(r_{e_{1}} + R_{11}) =0 \\
+    V_{i} = I_{E_{1}}(\frac{r_{\pi_{1}}}{1+\beta} + r_{e_{1}} + R_{11} ) \\ 
+    \frac{V_{C_{1}}}{V_{i}} = \frac{-I_{C_{1}}(R_{C_{1}} \parallel r_{\pi_{2}})}{ I_{E_{1}}(\frac{r_{\pi_{1}}}{1+\beta} + r_{e_{1}} + R_{11} )}
+\end{align}
+As \begin{align}
+    I_{C_{1}}=\alpha  I_{E_{1}}
+\end{align} 
+%
+\begin{align}
+    \frac{V_{C_{1}}}{V_{i}} = \frac{- \alpha(R_{C_{1}} \parallel r_{\pi_{2}})}{(\frac{r_{\pi_{1}}}{1+\beta} + r_{e_{1}} + R_{11} )}\\
+    \therefore \frac{V_{C_{1}}}{V_{i}} \simeq \frac{- \alpha(R_{C_{1}} \parallel r_{\pi_{2}})}{ (r_{e_{1}} + R_{11} )} \\
+\end{align}
+
+
+%
+Next, we determine the gain of the second stage,(noting that $V_{b2}=V_{c1}$)
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11007/circuit7.tex}}
+	\end{center}
+\caption{circuit7}
+\label{fig:ee18btech11007_circuit7}
+\end{figure}
+
+As here 
+\begin{align}
+    V_{BE_{2}}=V_{C_{1}}
+\end{align}
+By writing KCL we  get
+
+\begin{align}
+    V_{C_{2}}-r_{\pi_{3}}I_{B_{3}} -R_{22}(1+\beta)I_{B_{3}}=0 \\
+    V_{C_{2}} = (r_{\pi_{3}} + R_{22}(1+\beta))I_{B_{3}} \\
+    V_{C_{2}} \simeq ( R_{22}(1+\beta))I_{B_{3}} \\
+    I_{B_{3}} = \frac{V_{C_{2}}}{R_{22}(1+\beta)}
+\end{align}
+By writing KVL at node $V_{C_{2}} $
+\begin{align}
+    -g_{m_{2}}V_{C_{1}} = \frac{V_{C_{2}}}{R_{C_{2}}} + I_{B_{3}}
+\end{align}
+Sub $I_{B_{3}}$
+\begin{align}
+    -g_{m_{2}}V_{C_{1}} = \frac{V_{C_{2}}}{R_{C_{2}}} + \frac{V_{C_{2}}}{(1+\beta)R_{22}} \\
+    -g_{m_{2}}V_{C_{1}} = (\frac{1}{R_{C_{2}}} + \frac{1}{(1+\beta)R_{22}})V_{C_{2}} \\
+    \frac{V_{C_{2}}}{V_{C_{1}}} = -g_{m_{2}} \times \frac{1}{(\frac{1}{R_{C_{2}}} + \frac{1}{(1+\beta)R_{22}})} \\
+    \therefore \frac{V_{C_{2}}}{V_{C_{1}}} = -g_{m_{2}}(R_{C_{2}} \parallel (1+\beta)R_{22})
+\end{align}
+
+Finally,for the third stage 
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11007/circuit8.tex}}
+	\end{center}
+\caption{circuit8}
+\label{fig:ee18btech11007_circuit8}
+\end{figure}
+
+By writing KVL we get
+\begin{align}
+    V_{C_{2}}-\frac{r_{\pi_{3}}}{(1+\beta)}I_{o}-(r_{e_{3}}+R_{22})I_{o}=0 \\
+    V_{C_{2}} = (\frac{r_{\pi_{3}}}{(1+\beta)}+ r_{e_{3}}+R_{22})I_{o} \\
+    V_{C_{2}} \simeq (r_{e_{3}}+R_{22})I_{o}\\
+    %\therefore I_{o} = \frac{V_{C_{2}}}{r_{e_{1}}+R_{22}}
+    \therefore \frac{I_{o}}{V_{C_{2}}} = \frac{1}{R_{22}+r_{e_{3}}} 
+\end{align}
+
+% finally Amplifier circuit is obtained shown in fig.\ref{fig:ee18btech11007_circuit3}
+%\begin{figure}[!ht]
+%	\begin{center}
+%		
+%		\resizebox{\columnwidth}{!}{\input{./figs/EE18BTECH11007/circuit4.tex}}
+%	\end{center}
+%\caption{circuit4}
+%\label{fig:ee18btech11007_circuit4}
+%\end{figure}
+%using values from \ref{table:ee18btech11007}
+%\begin{align}
+%\frac{V_{c1}}{V_i}=-14.92V/V     
+%\end{align}
+%substituting ,results in 
+%\begin{align}
+%    \frac{V_{c2}}{V_{c1}}=-131.2 V/V
+%\end{align}
+%substituing values from \ref{table:ee18btech11007} gives
+%\begin{align}
+%    \frac{I_0}{V_{c2}}=10.6mA/V
+%\end{align}
+%combining the gains of the three stags results in
+%\begin{align}
+%G=\frac{I_0}{V_i}=-14.92\times-131.2\times10.6\times10^{-3}=20.7A/V    
+%\end{align}
+\item Find closed loop gain T and Voltage Gain $V_0/V_s$numerically.
+\\ 
+\solution
+ \begin{align}
+ \label{eq:EE18BTECH11007}
+    T=\frac{I_0}{V_s}=\frac{G}{1+GH}=\frac{20.7}{1+20.7\times11.9}=83.7mA/V
+\end{align}
+% the voltage gain is found from 
+%\begin{align}
+%    \frac{V_0}{V_s}=\frac{-I_cR_{c3}}{V_s}\approx\frac{-I_0R_{C3}}{V_s}=-TR_{C3}
+%    \
+%\end{align}
+%\begin{align}
+%    =-83.7\times10^{-3}\times600=-50.2V/V
+%\end{align}
+\item Now assume Loop gain is large and find approximate expression for closed loop gain $T=\frac{I_o}{V_s}$
+\\
+\solution When GH $\gg$1,
+\begin{align}
+    T &\approx\frac{I_0}{V_s}\approx \frac{1}{H}
+\\
+    &=\frac{1}{11.9}=84mA/V
+\end{align}
+\begin{align}
+ \frac{I_c}{V_s}\approx\frac{I_0}{V_s}=84 mA/V
+ \end{align}
+ which  we note is very close to the approximate value found in \eqref{eq:EE18BTECH11007} 
+%\item Find $R_{in}$ and $R_{out}$ for circuit in  fig.\ref{fig:ee18btech11007_circuit1}
+%\\
+%\solution
+%\begin{align}
+%    R_{in} =R_{if}=R_i(1+GH)
+%\end{align}
+%where $R_i$ is the input resistance of the G circuit.The value of $R_i$ can be found from the circuit in fig.\ref{fig:ee18btech11007_circuit3} as follows:
+%\begin{align}
+%    R_i=(h_{fe}+1)(r_{e1}+(R_{E1}||(R_F+R_{E2})))=13.65K\Omega
+%\end{align} 
+%\begin{align}
+%    R_{if}=13.65(1+20.7\times11.9)=3.38M\Omega
+%\end{align}
+%\begin{align}
+%    R_{of}=R_o(1+GH)
+%\end{align}
+%where $R_o$ can be determined to be 
+% \begin{align}
+%    R_o=(R_{E2}||(R_F+R_{E1}))+r_{e3}+\frac{R_{C2}}{h_{fe}+1}
+%\end{align}
+%from values in Table \ref{table:ee18btech11007}, yields $R_o = 143.9 \Omega$. The output resistance $R_{of}$ of the feedback amplifier can now be found as
+%\begin{align}
+%    R_{of}=R_o(1+GH)=143.9(1+20.7\times11.9)=35.6K\Omega
+%\end{align}
+%$R_{out}$ is found by using circuit4 in fig.\ref{fig:ee18btech11007_circuit3}
+%\begin{align}
+%    R_{out}=r_{o3}+[R_{of}||(r_{\pi3}+R_{C2})](1+g_{m3}r_{o3}\frac{r_{\pi3}}{r_{\pi3}+R_{C2}})
+%\end{align}
+%\begin{align}
+%=25+[35.6||(5.625)][1+160\times25\frac{0.625}{5.625}]=2.19M\Omega \end{align}
+%
+%thus $R_{out}$ is increased (from $r_{o3}$) but not by (1+GH)
+\item Tabulate all your results.
+\\
+\solution See Table \ref{table:parameters2}.  
+\begin{table}[!ht]
+\centering
+\input{./tables/EE18BTECH11007/table2.tex}
+\caption{calculated parameters}
+\label{table:parameters2}
+\end{table}
+%\item Represent this amplifier in  a control system Block Diagram
+%\\
+%\solution figure in  fig.\ref{fig:ee18btech11007_block_diagram} represents our control system
+\item Write a code for doing calculations and verify the values obtained in \ref{table:parameters2} 
+\\
+\solution 
+The following code does all the calculations of above equations to give parameters in
+\ref{table:parameters2} 
+\begin{lstlisting}
+codes/ee18btech11007/circuit_calc.py
+\end{lstlisting}
+
+
+
+\end{enumerate}

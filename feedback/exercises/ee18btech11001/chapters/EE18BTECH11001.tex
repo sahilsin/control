@@ -125,20 +125,39 @@ Applying KCL at node $V_{1}$
 \begin{align}
 I_{in} &= I_{C_{1}} + I_{R_{2}}
 \\
-\dfrac{V_{in}}{R_{1}} &= \dfrac{V_{out}}{R_{2}} + C_{1}\dfrac{dV_{out}}{dt}
+\dfrac{V_{in}}{R_{1}} &= \dfrac{V_{o1}}{R_{2}} + C_{1}\dfrac{dV_{out}}{dt}
 \end{align}
 In Laplace domain
 \begin{align}
-\dfrac{V_{in}(s)}{R_{1}} &= \dfrac{V_{out}(s)}{R_{2}} + C_{1}sV_{out}(s)
+\dfrac{V_{in}(s)}{R_{1}} &= \dfrac{V_{o1}(s)}{R_{2}} + C_{1}sV_{out}(s)
 \\
-\dfrac{V_{out}}{V_{in}} &= \dfrac{R_{2}/R_{1}}{1+sR_{2}C_{1}}
+\dfrac{V_{o1}}{V_{in}} &= \dfrac{R_{2}/R_{1}}{1+sR_{2}C_{1}}
 \\
-T(s) &= \dfrac{10^{5}}{1+\frac{s}{100}}
+\dfrac{V_{o1}}{V_{in}} &= \dfrac{10^{5}}{1+\frac{s}{100}}
 \\
 \frac{R_{2}}{R_{1}} &= 10^{5}
 \\
 R_{2}C_{1} &= \frac{1}{100}
 \end{align}
+
+As shown in \ref{fig:equivalent_system1} for the two identical poles at 10000 rad/sec we place similar op amp circuits twice.
+
+Solving the circuit for second pole
+
+\begin{align}
+\dfrac{V_{o1}(s)}{R_{3}} &= \dfrac{V_{o2}(s)}{R_{4}} + C_{2}sV_{out}(s)
+\\
+\dfrac{V_{o2}}{V_{o1}} &= \dfrac{R_{4}/R_{3}}{1+sR_{4}C_{2}}
+\end{align}
+
+\begin{align}
+\dfrac{V_{o2}}{V_{o1}} &= \dfrac{1}{1+\frac{s}{10000}}
+\\
+\frac{R_{4}}{R_{3}} &= 1
+\\
+R_{4}C_{2} &= \frac{1}{10000}
+\end{align}
+
 
 
 2) Designing $H(s) = H$
@@ -152,11 +171,11 @@ R_{2}C_{1} &= \frac{1}{100}
 \end{figure}
 
 \begin{align}
-	V_{out} &= V_{in} \brak{\frac{R_{4}}{R_{3}+R_{4}}}
+	V_{out} &= V_{in} \brak{\frac{R_{6}}{R_{5}+R_{6}}}
 	\\
-	{\frac{R_{4}}{R_{3}+R_{4}}} &= 0.002
+	{\frac{R_{6}}{R_{5}+R_{6}}} &= 0.002
 	\\
-	R_{4} &= 0.002 R_{3}
+	R_{6} &= 0.002 R_{5}
 \end{align}
 
 3) Closed loop design
@@ -178,10 +197,13 @@ Figure \ref{closedloop} is the final closed loop design for transfer function $T
 \label{table:DesignParams}
 \end{table}
 
-The table \ref{table:DesignParams} provides the parameters for our circuit design
+The table \ref{table:DesignParams} provides the parameters for our circuit design. 
+
+The arbitrary parameters can be selected based on practical availability.
 
 
-\item Verification of circuit design through SPICE
+\item Verification of closed loop circuit design through SPICE
+
 
 \begin{figure}[!ht]
 \centering
@@ -190,7 +212,10 @@ The table \ref{table:DesignParams} provides the parameters for our circuit desig
   \label{fig:SPICEresult}
 \end{figure}
 
-A SPICE simulation of circuit \ref{fig:equivalent_system1} is done by providing a DC input(Unit Step Input). The obtained plot (figure \ref{fig:SPICEresult}) is similar to the Step response of the feedback system in figure \ref{fig:stepResponse}. Hence we verify our design is correct.
+A SPICE simulation of circuit \ref{fig:equivalent_system1} is done by providing a DC input(Unit Step Input). 
+
+The obtained plot (figure \ref{fig:SPICEresult}) is similar to the Step response of the feedback system in figure \ref{fig:stepResponse}. Hence we verify our design is correct.
+
 
 
 

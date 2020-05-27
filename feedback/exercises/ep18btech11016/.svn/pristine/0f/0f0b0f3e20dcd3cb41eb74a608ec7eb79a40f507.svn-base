@@ -14,32 +14,32 @@
 \fi}
 \global\let\hyper@last\relax 
 \gdef\HyperFirstAtBeginDocument#1{#1}
-\providecommand*\HyPL@Entry[1]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
 \bibstyle{IEEEtran}
-\HyPL@Entry{0<</S/D>>}
-\@writefile{lof}{\contentsline {figure}{\numberline {{1}.1}{\ignorespaces \relax }}{1}{figure.caption.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {{1}.1}{\ignorespaces \relax }}{1}{figure.caption.1}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:ep18btech11016_circuit}{{{1}.1}{1}{\relax }{figure.caption.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {{1}.2}{\ignorespaces \relax }}{1}{figure.caption.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {{1}.2}{\ignorespaces \relax }}{1}{figure.caption.2}}
 \newlabel{fig:ep18btech11016_block}{{{1}.2}{1}{\relax }{figure.caption.2}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {{2}}{\ignorespaces \relax }}{1}{table.caption.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {{2}}{\ignorespaces \relax }}{1}{table.caption.3}}
 \newlabel{table:ep18btech11016_comps}{{{2}}{1}{\relax }{table.caption.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {{2}}{\ignorespaces \relax }}{1}{figure.caption.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {{2}}{\ignorespaces \relax }}{1}{figure.caption.4}}
 \newlabel{fig:ep18btech11016_equi}{{{2}}{1}{\relax }{figure.caption.4}{}}
 \newlabel{eq:ep18btech11016_ol_gain}{{{3}.2}{2}{}{equation.3.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {{3}}{\ignorespaces \relax }}{2}{figure.caption.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {{3}}{\ignorespaces \relax }}{2}{figure.caption.5}}
 \newlabel{fig:ep18btech11016_open}{{{3}}{2}{\relax }{figure.caption.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {{4}.5}{\ignorespaces \relax }}{2}{figure.caption.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {{4}.5}{\ignorespaces \relax }}{2}{figure.caption.6}}
 \newlabel{fig:ep18btech11016_feed}{{{4}.5}{2}{\relax }{figure.caption.6}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {{4}.6}{\ignorespaces \relax }}{2}{figure.caption.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {{4}.6}{\ignorespaces \relax }}{2}{figure.caption.7}}
 \newlabel{fig:ep18btech11016_feed_circuit}{{{4}.6}{2}{\relax }{figure.caption.7}{}}
 \newlabel{eq:ep18btech11016_feed_gain}{{{6}.3}{2}{}{equation.6.3}{}}
 \newlabel{eq:ep18btech11016_cl_gain}{{{7}.3}{2}{}{equation.7.3}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {{9}}{\ignorespaces \relax }}{3}{table.caption.8}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {{9}}{\ignorespaces \relax }}{3}{table.caption.8}}
 \newlabel{table:ep18btech11016_values}{{{9}}{3}{\relax }{table.caption.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {{10}}{\ignorespaces \relax }}{3}{table.caption.9}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {{10}}{\ignorespaces \relax }}{3}{table.caption.9}}
 \newlabel{table:ep18btech11016_final}{{{10}}{3}{\relax }{table.caption.9}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {{11}.7}{\ignorespaces \relax }}{3}{figure.caption.10}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {{11}.7}{\ignorespaces \relax }}{3}{figure.caption.10}}
 \newlabel{fig:ep18btech11016_feed_gain}{{{11}.7}{3}{\relax }{figure.caption.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {{11}.8}{\ignorespaces \relax }}{3}{figure.caption.11}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {{11}.8}{\ignorespaces \relax }}{3}{figure.caption.11}}
 \newlabel{fig:ep18btech11016_cl_gin}{{{11}.8}{3}{\relax }{figure.caption.11}{}}

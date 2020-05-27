@@ -1,0 +1,17 @@
+* Z:\home\saiashok\Desktop\feedback_systems\spice\ee18btech11044\ee18btech11044_3.asc
+XU1 N001 N004 N002 N003 Vout LM741/NS
+C1 N001 0 16n
+R1 N001 0 10000
+C2 P001 N001 16n
+R2 Vout P001 10000
+V1 0 N003 15
+V2 N002 0 15
+R3 N004 0 10000
+R4 Vout N004 15000
+.tran 0.0001 .02 UIC
+.include LM741.MOD
+.control
+run
+*plot V(Vout)
+wrdata ee18btech11044_3_4.dat V(Vout)
+.end

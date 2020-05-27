@@ -474,23 +474,152 @@ spice/ee18btech11044/ee18btech11044_spice_3_6.py
 \label{fig:ee18btech11044_3_13}
 \end{figure}
 
+
+\item Calculate the poles of transfer function when the ratio $\frac{R_2}{R_1}$ is taken to be 1.5.
+
+\solution
+
+\begin{itemize}
+\item Calculating poles of transfer function for $\frac{R_2}{R_1}$= 1.5 using a python script.
+\begin{lstlisting}
+codes/ee18btech11044/ee18btech11044_3_10.py
+\end{lstlisting}
+\item We get the poles two complex conjugate poles in Left Hand Side of s-plane at  -1563+6051.5364784490885j and -1563-6051.5364784490885j, which correspond to an exponentially decreasing sinusoid function, corresponding to a frequnecy of 963.27Hz. 
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%python simulation
+\item Substituting the values shown in table \ref{table:ee18btech11044_t_1} in the Eq \ref{eq:ee18btech11044_3_7}. Consider the ratio of $\frac{R_2}{R_1}$ = 1.5 and plot the impulse response and step response using a python code.
+
+\solution
+
+\begin{itemize}
+\item Refer Fig \ref{fig:ee18btech11044_3_14} for impulse response of transfer function.
+\item Code for generating impulse response
+\begin{lstlisting}
+codes/ee18btech11044/ee18btech11044_3_11.py
+\end{lstlisting}
+\item Refer Fig \ref{fig:ee18btech11044_3_15} for step response of transfer function.
+\item Code for generating step response
+\begin{lstlisting}
+codes/ee18btech11044/ee18btech11044_3_12.py
+\end{lstlisting}
+\item As expected from the poles we are getting an exponentially increasing function as both impulse response and step response.
+\end{itemize}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11044/ee18btech11044_3_14.eps}
+\caption{}
+\label{fig:ee18btech11044_3_14}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11044/ee18btech11044_3_15.eps}
+\caption{}
+\label{fig:ee18btech11044_3_15}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%spice simulation
+\item Simulate the circuit shown in Fig \ref{fig:ee18btech11044_3_tikz_1} using spice simulators. Consider the ratio of $\frac{R_2}{R_1}$ = 1.5 and plot the output using a python script.
+
+\solution
+
+\begin{itemize}
+\item Refer Fig \ref{fig:ee18btech11044_3_16} for the spice simulation output.  
+\item You can find the netlist for the simulated circuit here:
+\begin{lstlisting}
+spice/ee18btech11044/ee18btech11044_3_4.net
+\end{lstlisting}
+\item You can find the python script used to generate the output here:
+\begin{lstlisting}
+spice/ee18btech11044/ee18btech11044_spice_3_7.py
+\end{lstlisting}
+\end{itemize}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11044/ee18btech11044_3_16.eps}
+\caption{}
+\label{fig:ee18btech11044_3_16}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%Frequency of spice simulation
+
+\item Calculate the frequency of sinusoidal wave using plot generated from simulationfor the case where $\frac{R_2}{R_1} = 1.5$.
+ 
+ \solution
+ \begin{itemize}
+     \item Consider a part of plot generated from simulation shown in the Fig \ref{fig:ee18btech11044_3_17}.
+     \item Calculating the Time-period of the sinusoidal wave generated using the two points marked in the Fig \ref{fig:ee18btech11044_3_17}.
+     \begin{align}
+         T_0 = 0.00125 - 0.000191532 \\
+         f_0 = 1/T_0 \\
+         f_0 = 944Hz.
+     \end{align}
+     \item We get the frequencies calculated from the formulae and the plot to be very different.
+     \item THe output predicted by python and spice simulation are matching in this case.
+     \item Use this script to generate Fig \ref{fig:ee18btech11044_3_13}
+\begin{lstlisting}
+spice/ee18btech11044/ee18btech11044_spice_3_8.py
+\end{lstlisting}
+\item In this case because of the saturation voltage in op-amp we are getting a curve similar to square wave.
+ \end{itemize}
+ 
+
+ 
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/ee18btech11044/ee18btech11044_3_17.eps}
+\caption{}
+\label{fig:ee18btech11044_3_17}
+\end{figure}
+
+
 \item Describe the output depending upon the nature of poles.
 
 \solution 
 
 \begin{itemize}
 \item For purely imaginery poles, we expect a sinusoidal output (As in the case $\frac{R_2}{R_1}$ = 2).
-\item For complex conjugate poles, we expect an exponentially increasing sinusoid as the output.(As in the case $2 < \frac{R_2}{R_1} < 4$).
-\item For real and distinct poles, we expect an exponential  output.(As in the case $\frac{R_2}{R_1} > 4$).
+\item For complex conjugate poles in right hand side of s-plane, we expect an exponentially increasing sinusoid as the output.(As in the case $2 < \frac{R_2}{R_1} < 4$).
+\item For real and distinct poles in right hand side of s-plane, we expect an exponential  output.(As in the case $\frac{R_2}{R_1} > 4$).
+\item For complex conjugate poles on the left hand side of splane, we expect an exponentially decreasing sinusoid.(As in the case $0 <  \frac{R_2}{R_1} < 2$.
+\item It is not practical to simulate for real and distinct poles in left hand side of s plane as $R_2$ should be negative for that case. 
 \item As you can observe behaviour of output generated by python scripts can be explained from the location of poles.
-\item In the case of spice simulation, the output is always sinusoidal irrespective of location of poles.
-\item Only in the case of marginal stability the output of ngspice seems to be valid.  
-\item Do not consider the frequency of impulse response from python plot in case-1, as python is not able to calculate the Inverse laplace completely i have plotted using function signal.impulse(system) which generates a python plot of correct shape but frequency cannot be calculated from this plot.
+\item In the case of spice simulation, the output is always sinusoidal when $\frac{R_2}{R_1} > 2$ which is not the expected shape. 
+\item For $\frac{R_2}{R_1} <= 2$ spice simulation is producing output of expected shape and frequency. 
+\item Do not consider the frequency of impulse response from python plot in case-1 and case-4, as python is not able to calculate the Inverse laplace completely i have plotted using function signal.impulse(system) which generates a python plot of correct shape but frequency cannot be calculated from this plot.
 \item Please find the code to calculate impulse response in Case-1.
 \begin{lstlisting}
-codes/ee18btech11044/ee18btech11044_3_10.py
+codes/ee18btech11044/ee18btech11044_3_13.py
+\end{lstlisting}
+\item \item Please find the code to calculate impulse response in Case-2.
+\begin{lstlisting}
+codes/ee18btech11044/ee18btech11044_3_14.py
 \end{lstlisting}
 
 \end{itemize}
+
+
+
+%\item Describe the output depending upon the nature of poles.
+%
+%\solution 
+%
+%\begin{itemize}
+%\item For purely imaginery poles, we expect a sinusoidal output (As in the case $\frac{R_2}{R_1}$ = 2).
+%\item For complex conjugate poles, we expect an exponentially increasing sinusoid as the output.(As in the case $2 < \frac{R_2}{R_1} < 4$).
+%\item For real and distinct poles, we expect an exponential  output.(As in the case $\frac{R_2}{R_1} > 4$).
+%\item As you can observe behaviour of output generated by python scripts can be explained from the location of poles.
+%\item In the case of spice simulation, the output is always sinusoidal irrespective of location of poles.
+%\item Only in the case of marginal stability the output of ngspice seems to be valid.  
+%\item Do not consider the frequency of impulse response from python plot in case-1, as python is not able to calculate the Inverse laplace completely i have plotted using function signal.impulse(system) which generates a python plot of correct shape but frequency cannot be calculated from this plot.
+%\item Please find the code to calculate impulse response in Case-1.
+%\begin{lstlisting}
+%codes/ee18btech11044/ee18btech11044_3_10.py
+%\end{lstlisting}
+%
+%\end{itemize}
 
 \end{enumerate}

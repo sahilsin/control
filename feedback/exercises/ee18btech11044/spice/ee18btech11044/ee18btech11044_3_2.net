@@ -8,7 +8,7 @@ V1 0 N003 15
 V2 N002 0 15
 R3 N004 0 10000
 R4 Vout N004 20000
-.tran 0.01 .2 UIC
+.tran 0.01 20 UIC
 .include LM741.MOD
 .control
 run

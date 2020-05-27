@@ -10,7 +10,7 @@ import shlex
 data = np.loadtxt( 'ee18btech11044_3_2.dat' )
 #PLotting the data from spice simulation
 plt.plot(data[:,0],data[:,1])
-plt.xlim(0,0.01)
+#plt.xlim(0,0.01)
 plt.xlabel('time')
 plt.ylabel('Vout')
 plt.title('Output from Oscillator -- R2/R1 = 2')

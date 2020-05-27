@@ -1,22 +1,21 @@
 Circuit: * Z:\home\saiashok\Desktop\feedback_systems\spice\ee18btech11044\ee18btech11044_3.asc
 
 Direct Newton iteration for .op point succeeded.
-Heightened Def Con from 10.8894 to 10.8894
 
-Date: Sat May 23 23:26:57 2020
-Total elapsed time: 13.383 seconds.
+Date: Wed May 27 13:05:37 2020
+Total elapsed time: 0.042 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 3167208
-traniter = 3167198
-tranpoints = 947085
-accept = 664909
-rejected = 282177
+totiter = 2172
+traniter = 2162
+tranpoints = 1081
+accept = 1071
+rejected = 10
 matrix size = 38
 fillins = 48
 solver = Normal
-Matrix Compiler1: 4.24 KB object code size  1.2/0.8/[0.6]
-Matrix Compiler2: 3.90 KB object code size  0.7/0.8/[0.7]
+Matrix Compiler1:     239 opcodes  1.1/[0.8]/0.9
+Matrix Compiler2: off  [0.7]/1.1/1.0
 

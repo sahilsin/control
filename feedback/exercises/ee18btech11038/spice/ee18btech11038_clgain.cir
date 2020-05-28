@@ -1,0 +1,24 @@
+closed loop gain
+r1 0 5 3.5k
+r2 5 2 14k
+vc1 4 3 0v
+id1 0 4 dc 0.2m
+vc2 7 6 0v
+vd2 7 0 dc 2.1v
+is 0 10 ac 0 sin(0 1u 10k)
+vc3 10 2 0v
+m1 3 2 0 0 nmos1 w=100u l=10u
+m2 6 4 5 5 nmos2 w=100u l=10u
+.model nmos1 nmos vto=0.5v kp=1m lambda=0.1
+.model nmos2 nmos vto=0.5v kp=1m lambda=0.1
+
+.tran 1u 0.0001
+
+.control 
+run
+*plot i(vc3)
+wrdata ee18btech11038_clgout i(vc2)
+wrdata ee18btech11038_clgin i(vc3)
+
+.endc
+.end

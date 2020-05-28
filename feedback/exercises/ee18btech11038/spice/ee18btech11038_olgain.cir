@@ -1,0 +1,21 @@
+g circuit, open loop gain
+is 0 10 ac 0 sin(0 1u 10k)
+vc2 10 1 0v 
+r11 1 0 17.5k
+g1 2 0 1 0 2m
+ro1 2 0 50k
+g2 0 3 2 3 2m
+ro2 3 0 50k
+r22 3 4 2.8k
+vc1 4 0 0v
+
+.tran 1u 0.0001
+.control
+run
+*plot i(vc1)
+*plot i(vc2)
+wrdata ee18btech11038_olgout i(vc1)
+wrdata ee18btech11038_olgin i(vc2)
+
+.endc
+.end

@@ -65,15 +65,19 @@ Let $T(s)$ be the closed loop Transfer Function.
 \begin{align}
 T(s) &= \dfrac{G(s)}{1+H G(s)}
 \\
-T(s) &= \dfrac{10^{5}}{1+H 10^{5}+ \dfrac{s}{100}}
-\end{align}
-
-\begin{align}
-|T(s)| &= \dfrac{10^{5}}{\sqrt{(200)^{2} + \brak{\frac{s}{100}}^{2}}}
+T(s) &= \dfrac{10^{5}}{H 10^{5}+ \brak{1+\dfrac{s}{100}}\brak{1+\dfrac{s}{1000}}^{2}}
+\\
+T(s) &= \dfrac{10^{5}}{10^{-10} s^{3} + (2x10^{-6}) s^{2} + 10^{-2}s + 1 + 10^{5}H}
 \end{align}
 At low frequencies
 \begin{align}
-|T(s)| &= 500 V/V
+T(0) &= \dfrac{10^{5}}{1 + 10^{5}H}
+\\
+|T(0)| &= \dfrac{10^{5}}{\sqrt{(200)^{2}}}
+\end{align}
+
+\begin{align}
+|T(0)| &= 500 V/V
 \end{align}
 
 \begin{table}[!ht]
@@ -217,14 +221,14 @@ A SPICE simulation of circuit \ref{fig:equivalent_system1} is done by providing 
 The obtained plot (figure \ref{fig:SPICEresult}) is similar to the Step response of the feedback system in figure \ref{fig:stepResponse}. Hence we verify our design is correct.
 
 
-
-
 The following code plots the SPICE simulation results
-from SPICE plot txt file and spice .net file
+from SPICE plot .dat file and spice .net file
 
 \begin{lstlisting}
 codes/spice/plotter.py
 \end{lstlisting}
+
+The following is the spice simulation file
 
 \begin{lstlisting}
 codes/spice/spice.net

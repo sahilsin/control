@@ -1,0 +1,15 @@
+output resistance
+r22 0 1 2.8k
+g1 2 1 0 1 2m
+ro2 2 1 50k
+vx 3 0 
+vc1 3 2 0v
+.dc vx 0 5 0.1
+
+
+.control
+run
+*plot i(vc1)
+wrdata ee18btech11038_rout i(vc1)
+.endc
+.end

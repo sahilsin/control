@@ -1,0 +1,7 @@
+\usetikzlibrary{decorations.markings}
+\begin{circuitikz}
+\ctikzset{tripoles/mos style/arrows}
+\draw (1,2) to[short, -o] (0,2) node[label={above:$V_i$}]{};
+\draw (1,2) to[R=$R_1$] (2,2) -- (3,2) to[R=$R_2$] (3,0) node[ground](GND){};
+\draw (3,2) to[short, -o] (4,2) node[label={above:$V_o$}]{};
+\end{circuitikz}

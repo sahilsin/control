@@ -1,0 +1,14 @@
+
+R2 N003 N001 100K
+R P001 N003 10K
+R1 N001 N002 4.14k
+R2 N002 0 6.86k
+C1 N001 0 1.6n
+C N002 N003 16n
+V1 P001 0 PULSE(0 10v)
+.tran 0.01us 1ms UIC
+.control
+run
+*plot V(N001)
+wrdata ee18btech11030_1.dat V(N001)
+.end

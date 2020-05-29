@@ -1,0 +1,207 @@
+Redesign the circuit of Fig. \ref{fig:ee18btech11049_fig1} for operation at 10KHz using same values of resistance. If at 10KHz the op amp provides an excess phase shift (lag) of 5.7\degree , what will be the frequency of oscillation? Assume the phase shift introduced by the op amp remains constant for frequencies around 10KHz.)To restore operation to 10KHz, what change must be made in the shunt resistor of the wien bridge? Also, to what value must $R_{2}/R_{1}$ be changed ?
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11049/ee18btech11049_1.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11049_fig1}
+\end{figure}
+\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+%\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item Draw block diagram for the above circuit .
+\\
+\solution  
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11049/ee18btech11049_block.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11049_block}
+\end{figure}
+
+\item Find G and draw circuit diagram for G .  
+\\
+\solution  
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11049/ee18btech11049_G_block.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11049_g_block}
+\end{figure}
+
+from fig. \ref{fig:ee18btech11049_g_block} 
+
+\begin{align}
+    V_{f2} = \brak{\frac{R_1}{R_1 + R_2}}V_o
+\end{align}
+\begin{align}
+    G_1 = \frac{V_{f2}}{V_o} = \brak{\frac{R_1}{R_1 + R_2}}
+\end{align}
+from fig \ref{fig:ee18btech11049_g_block} , $A_o$ is the gain of amplifier, and $G_1$ is placed as negative feedback factor. Therefore total G is given as
+
+\begin{align}
+G &= \frac{A_{0}}{1+A_{0}G_{1}}
+\\
+&= \frac{1}{\frac{1}{A_{0}} + G_{1}}
+\\
+\implies G&\approx \frac{1}{G_{1}}, \quad   A_{0}\to\infty
+\\
+\text{or, } G &= \frac{R_{1}+R_{2}}{R_{1}}=1+\frac{R_{2}}{R_{1}}
+\label{eq:ee18btech11047_G}
+\end{align}
+
+
+\item  Find H and draw circuit diagram for H
+\\
+\solution  
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11049/ee18btech11049_h_block.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11049_h_block}
+\end{figure}
+
+from fig \ref{fig:ee18btech11049_h_block} 
+\begin{align}
+    V_1 = \frac{R \parallel \frac{1}{sC}}{\brak{R \parallel \frac{1}{sC}} + R + \frac{1}{sC}} V_2
+\end{align}
+\begin{align}
+    H = \frac{1}{3+j\brak{\omega CR - 1/\omega CR}}
+\end{align}
+
+
+
+\item Find frequency of oscillation when the excess phase shift \brak{lag} is 5.7\degree
+\\
+\solution  The loop gain of wein bridge oscillator$L\brak{j\omega}$ is 
+
+
+\begin{align}
+    L\brak{j\omega} = H\brak{j\omega}G\brak{j\omega}
+\end{align}
+%
+\begin{align}
+\label{eq:ee18btech11049_wein_main}
+    L\brak{j\omega} = \frac{1+ R_2/R_1 }  {3+j\brak{\omega CR - 1/\omega CR}}
+\end{align}
+%
+The phase shift of loop is 
+\begin{align}
+\label{eq:ee18btech11049_loop_phase}
+    \phi\brak{\omega} = \tan^{-1}\brak{\frac{\omega CR - 1/\omega CR}{3}}
+\end{align}
+%
+The loop gain will be a real number
+(i.e., the phase will be zero) at the frequency
+
+\begin{align}
+\label{eq:ee18btech11049_freq}
+    \omega = \frac{1}{CR}
+\end{align}
+%
+Differentiating $\phi\brak{\omega} $ with $\omega$
+
+%
+\begin{align}
+\label{eq:ee18btech11049_freq}
+    \frac{\partial \phi\brak{\omega}}{\partial \omega}
+    =\frac{-1}{1+\brak{\frac{\omega CR - 1/\omega CR}{3}}^2}
+    \frac{\partial \brak{\omega CR - 1/\omega CR }}{\partial \omega}
+\end{align}
+
+%
+And since $\omega = 1/CR$ upon evaluating  
+
+%
+\begin{align}
+\label{eq:ee18btech11049_freq}
+    \frac{\partial \phi\brak{\omega}}{\partial \omega}
+   = \frac{-2CR}{3} = \frac{-2}{3\omega}
+\end{align}
+%
+\begin{align}
+\label{eq:ee18btech11049_freq}
+    \text{and } \Delta\omega = \frac{\Delta\phi}{ \frac{\partial \phi\brak{\omega}}{\partial \omega}}
+\end{align}
+
+\begin{align}
+\label{eq:ee18btech11049_freq}
+    \Delta\omega = \frac{-0.1}{ -2/3\omega} \brak{ 5.7\degree = 0.1 rad/s }
+\end{align}
+
+\begin{align}
+\label{eq:ee18btech11049_freq}
+    \Delta\omega = 0.15\omega
+\end{align}
+%
+So, the frequency of oscillation is 
+\begin{align}
+\label{eq:ee18btech11049_freq}
+    \omega - \Delta\omega = 10-0.15x10\\ 
+    = 8.15 kHz
+\end{align}
+
+\item What change must be made in the shunt resistor of the wien bridge, to restore the frequency of oscillation ? \\
+\solution Assuming the parallel R = $R_s$ as shunt shown in Fig \ref{fig:ee18btech11049_fig2}
+
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11049/ee18btech11049_2.tex}}
+	\end{center}
+\caption{}
+\label{fig:ee18btech11049_fig2}
+\end{figure}
+
+Feedback loop gain $\beta\brak{s}$
+
+\begin{align}
+\label{eq:ee18btech11049_beta}
+    \beta\brak{s} = \frac{R_s \parallel \frac{1}{sC}}{\brak{R_s \parallel \frac{1}{sC}} + R + \frac{1}{sC}}
+\end{align}
+
+\begin{align}
+\label{eq:ee18btech11049_freq}
+    \beta\brak{s} = \frac{1}{2 + \frac{R}{R_s} + j\brak{\omega CR - \frac{1}{\omega CR_s}}}
+\end{align}
+
+So, phase shift $\phi\brak{\omega}$ is
+
+\begin{align}
+\label{eq:ee18btech11049_phase_mine}
+    \phi\brak{\omega}  = -\tan^{-1}\brak{\frac{\omega CR - \frac{1}{\omega CR_s}}{2+\frac{R}{R_s}}}
+\end{align}
+
+from \ref{eq:ee18btech11049_phase_mine} we can find value of $R_s$ when $\omega = \frac{1}{RC}$ 
+\begin{align}
+   R_s = 0.75R \\
+   R_s = 7.5k\Omega 
+\end{align}
+
+
+\item Also, to what value must $R_2/R_1$ be changed ?
+\\
+\\
+\solution Substituting the values of $R $ and $ R_s$ in \ref{eq:ee18btech11049_beta} we get
+\begin{align}
+    \beta\brak{j\omega} = \frac{1}{3.35}
+\end{align}
+%
+
+we know the loop gain $L\brak{j\omega}$ is
+
+
+\begin{align}
+    L\brak{j\omega} = \frac{1+R_2/R_1}{\beta \brak{j\omega}}
+\end{align}
+Condition for oscillation is $1-L\brak{s} = 0$
+
+\begin{align}
+    1 + \frac{R_2}{R_1} = 3.35 \\
+    \frac{R_2}{R_1} = 2.35
+\end{align}
+\end{enumerate}

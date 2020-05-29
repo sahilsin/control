@@ -1,0 +1,13 @@
+\begin{circuitikz}[scale=1]
+\draw
+(0,0) to[C,*-*, l = $16nF$] (3,0)
+    to[R,*-*,l = $10k\Omega$] (6,0)
+    node[ocirc]{V2}
+(0,0) -- (-4,0)
+    node[ocirc]{V1}
+
+(0,0) to[R, l = $R_s$] (0,-3) node[ground]{} 
+(-2,0) to[C, l_ = $16nF$] (-2,-3) node[ground]{} 
+
+;
+\end{circuitikz}

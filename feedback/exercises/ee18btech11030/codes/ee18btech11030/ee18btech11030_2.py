@@ -16,20 +16,17 @@ from scipy.signal import  step
 import subprocess
 import shlex
 #endif
-
+RC = 160 *(10**-6)
 #closed loop TF's
-s1 = signal.lti([0.1*5,0], [1, 2*5,25])               
-s2 = signal.lti([0.686*5,0], [1,  1.4142135*5,25])
-s3 = signal.lti([2.1*5,0], [1, 0,25])
+
+s3 = signal.lti([2.13*(RC**2),2.13*2.13*RC,2.13], [(RC**2),(-0.03)*RC,1])
 plt.figure()
-t2,s2 = step(s2)
-t1,s1 = step(s1)
+
 t3,s3 = step(s3)
 
 
-plt.title("Time responses")
-plt.plot(t1,s1,label = "Poles are coincident K = 0.1")
-plt.plot(t2,s2,label = "Maximally flat response K = 0.686")
+plt.title("Time response")
+
 plt.plot(t3,s3,label = "Oscillating response K = 2.1")
 plt.grid()
 plt.legend()

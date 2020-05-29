@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  26 APR 2020 08:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  29 MAY 2020 07:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1362,9 +1362,6 @@ LaTeX Warning: Label `eq:ee18btech11006_yx_init' multiply defined.
 LaTeX Warning: Label `fig:ee18btech11038' multiply defined.
 
 
-LaTeX Warning: Label `fig:ee18btech111019_hart_block' multiply defined.
-
-
 LaTeX Warning: Label `eq:ee18btech11046_char' multiply defined.
 
 
@@ -1554,21 +1551,25 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no , in font nullfont!
-) (./figs/ee18btech11003/L1.tex
+)
+Underfull \vbox (badness 1533) has occurred while \output is active []
+
+
+(./figs/ee18btech11003/L1.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+) (./figs/ee18btech11003/L2.tex
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 )
-(./figs/ee18btech11003/L2.tex
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-Missing character: There is no , in font nullfont!
-) (./figs/ee18btech11003/L3.tex
+(./figs/ee18btech11003/L3.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no . in font nullfont!
@@ -1577,8 +1578,7 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no , in font nullfont!
-)
-(./figs/ee18btech11003/L4.tex
+) (./figs/ee18btech11003/L4.tex
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -1586,7 +1586,8 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no , in font nullfont!
-) [2] (./tables/ee18btech11003.tex
+) [2]
+(./tables/ee18btech11003.tex
 \gnumericTableWidth=\skip79
 \gnumericTableWidthComplete=\skip80
 \gnumericMultiRowLength=\skip81
@@ -2420,118 +2421,8 @@ LaTeX Warning: Command \j invalid in math mode on input line 47.
 LaTeX Warning: Command \j invalid in math mode on input line 47.
 
 File: ./figs/ee18btech11030/ee18btech11030_1.eps Graphic file (type eps)
-<./figs/ee18btech11030/ee18btech11030_1.eps>) (./chapters/ee18btech11019.tex
-(./figs/ee18btech11019/hart.tex) [31] (./figs/ee18btech11019/osc.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-(./figs/ee18btech11019/lc.tex)
-Underfull \hbox (badness 5119) in paragraph at lines 37--39
-[]\OT1/txr/m/n/12 W.K.T, no cur-rent flows in the opamp
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--57
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-Underfull \hbox (badness 10000) in paragraph at lines 71--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
-
- []
-
-
-Underfull \hbox (badness 1681) in paragraph at lines 85--90
-\OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 From fig-ure [][]10.2.2.1[][][] Os-c
-il-la-tors
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--90
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--97
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--117
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--136
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--165
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33]
-Underfull \hbox (badness 10000) in paragraph at lines 168--186
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 191--194
-
- []
-
-) (./chapters/ee18btech11046.tex
+<./figs/ee18btech11030/ee18btech11030_1.eps>) (./chapters/ee18btech11046.tex
+[31]
 
 LaTeX Warning: Command \j invalid in math mode on input line 32.
 
@@ -2561,33 +2452,22 @@ LaTeX Warning: Command \j invalid in math mode on input line 103.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
+ [32]
 File: ./figs/ee18btech11046.eps Graphic file (type eps)
 
 <./figs/ee18btech11046.eps>) (./chapters/ee18btech11050.tex
-Underfull \vbox (badness 4156) has occurred while \output is active []
-
 File: ./figs/ee18btech11050.eps Graphic file (type eps)
 
-<./figs/ee18btech11050.eps>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./chapters/ee18btech11052.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35]
+<./figs/ee18btech11050.eps>) (./chapters/ee18btech11052.tex
 
 LaTeX Warning: Command \j invalid in math mode on input line 8.
 
+[33]
 
 LaTeX Warning: Command \j invalid in math mode on input line 18.
 
 File: ./figs/ee18btech11052.eps Graphic file (type eps)
 <./figs/ee18btech11052.eps>) (./chapters/ee18btech11051.tex
-Underfull \vbox (badness 2229) has occurred while \output is active []
-
-
 
 LaTeX Warning: Command \j invalid in math mode on input line 12.
 
@@ -2616,7 +2496,10 @@ LaTeX Warning: Command \j invalid in math mode on input line 20.
 LaTeX Warning: Command \j invalid in math mode on input line 20.
 
 File: ./figs/ee18btech11051.eps Graphic file (type eps)
-<./figs/ee18btech11051.eps> [36]) (./chapters/ee17btech11031.tex
+<./figs/ee18btech11051.eps>) (./chapters/ee17btech11031.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
 (./figs/ee17btech11031/ee17btech11031_tik.tex)
 (./figs/ee17btech11031/ee17btech11031_tiklap.tex)
 File: ./figs/ee17btech11031/ee17btech11031_1.eps Graphic file (type eps)
@@ -2628,9 +2511,9 @@ File: ./figs/ee17btech11031/ee17btech11031_2.eps Graphic file (type eps)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [37]
+) [35]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 406.
- [38
+ [36
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 406.
@@ -2638,7 +2521,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 406.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 406.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 406.
 Package rerunfilecheck Info: File `gvv_control_manual.out' has not changed.
-(rerunfilecheck)             Checksum: B115A8FA8E18B064324A96538A6402F3;3238.
+(rerunfilecheck)             Checksum: C5D1A2A9FD45C8A7BBB065A42B4470E5;3179.
 
 
 LaTeX Warning: There were undefined references.
@@ -2649,12 +2532,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 406.
  ) 
 Here is how much of TeX's memory you used:
- 34445 strings out of 492624
- 745224 string characters out of 6119216
- 986954 words of memory out of 5000000
- 37513 multiletter control sequences out of 15000+600000
- 84303 words of font info for 220 fonts, out of 8000000 for 9000
+ 33781 strings out of 492624
+ 729499 string characters out of 6119216
+ 975430 words of memory out of 5000000
+ 36867 multiletter control sequences out of 15000+600000
+ 79696 words of font info for 203 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  55i,22n,74p,528b,1876s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_control_manual.dvi (38 pages, 613436 bytes).
+Output written on gvv_control_manual.dvi (36 pages, 545140 bytes).

@@ -25,7 +25,7 @@ Y2 = np.zeros(j,dtype = object)
 X1 = np.zeros(j,dtype = object)
 Y1 = np.zeros(j,dtype = object)
 for k in range (0,j):
-   num[k] = [k*2.5,0.000000000001]         # Coefficients of Numerator of Tranfer Function
+   num[k] = [k*0.1,k*0.1*2.1*25,k*0.1*625]         # Coefficients of Numerator of Tranfer Function
    den[k] = [1,(2.1-(k*0.1))*25,625]       # Coefficients of Denominator of Tranfer Function
    
    ans1[k] = np.roots(num[k])   # Zeros of Transfer Fuunction

@@ -1,10 +1,4 @@
-Consider the positive-feedback circuit shown in Figure: \ref{fig:ee18btech11030}. 
-\begin{enumerate}
-\item Find the loop transmission L(s) and the characteristic equation
-\item Find the expressions for resulting pole frequency $\omega_o$ and Q factor?
-\item Sketch a Pole-Zero plot for varying K. For what value of K do the poles coincide? For what value of K does the response becomes maximally flat? For what value of K does the circuit oscillate?
-\end{enumerate}
- Assume that the amplifier has frequency-independent gain, infinite input impedance, and zero output impedance.
+Consider the positive-feedback circuit shown in Fig. \ref{fig:ee18btech11030}. 
 \begin{figure}[!ht]
 	\begin{center}
 		\resizebox{\columnwidth/1}{!}{\input{./figs/ee18btech11030/ee18btech11030.tex}}
@@ -12,10 +6,17 @@ Consider the positive-feedback circuit shown in Figure: \ref{fig:ee18btech11030}
 	\caption{ Positive Feedback Circuit}
 	\label{fig:ee18btech11030}
 \end{figure}
-\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=(\alph*),ref=\theenumi]
+
+\item Find the loop transmission L(s) and the characteristic equation ,find the expressions for resulting pole frequency $\omega_o$ and Q factor?
+\item Sketch a Pole-Zero plot for varying K. 
+\item For what value of K do the poles coincide? For what value of K does the response becomes maximally flat? For what value of K does the circuit oscillate?
+\end{enumerate}
+Assume that the amplifier has frequency-independent gain, infinite input impedance, and zero output impedance.
 %\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 \numberwithin{equation}{enumi}
-\item 
+\item Find $L(s)$.
 
 \solution To obtain the loop transmission L(s),
 \begin{itemize}
@@ -70,26 +71,39 @@ By comparing the Eq:\ref{eq:ee18btech11030_3} with the standard characteristic e
 \begin{align}
    \omega_o = \frac{1}{RC} ; Q = \frac{1}{2.1-K}
 \end{align}
+
+\item Equivalent control system model of Fig. \ref{fig:ee18btech11030_fig1}
+
+\solution
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth/1}{!}{\input{./figs/ee18btech11030/ee18btech11030_2.tex}}
+	\end{center}
+	\caption{ Positive Feedback Circuit}
+	\label{fig:ee18btech11030_fig2}
+\end{figure}
+
 Closed Loop gain 
 \begin{align}
-    T = \frac{s(\frac{-K}{RC})}{s^2 + s(\frac{2.1-K}{CR}) + (\frac{1}{CR})^2}
+    T = \frac{k(s^2+s(\frac{2.1}{RC})+(\frac{1}{RC})^2)}{s^2 + s(\frac{2.1-K}{CR}) + (\frac{1}{CR})^2}
     \label{eq:ee18btech11030_5}
 \end{align}
-\item Sketch the Normalised closed loop gain of above two pole feedback amplifier for various Q values
+
+\item Sketch the Normalised closed loop gain of T for various Q values
 
 \solution 
 \begin{figure}[!h]
 \centering
   \includegraphics[width=\columnwidth]{./figs/ee18btech11030/ee18btech11030_fc.eps}
 \caption{}
-\label{fig:ee18btech11030_fig2} 
+\label{fig:ee18btech11030_fig3} 
 \end{figure}
 
 The following is code for the plot
 \begin{lstlisting}
 codes/ee18btech11030/ee18btech11030.py
 \end{lstlisting}
-From Figure:\ref{fig:ee18btech11030_fig2} ,
+From Figure:\ref{fig:ee18btech11030_fig3} ,
 \begin{itemize}
 \item It is observed that maximally flat response is obtained when Q = 0.71
 \item It will be seen that response of the feedback amplifier under consideration shows almost no peaking for Q$\leq$ 0.71 
@@ -101,14 +115,14 @@ From Figure:\ref{fig:ee18btech11030_fig2} ,
 \centering
   \includegraphics[width=\columnwidth]{./figs/ee18btech11030/ee18btech11030_fc1.eps}
 \caption{}
-\label{fig:ee18btech11030_fig3} 
+\label{fig:ee18btech11030_fig4} 
 \end{figure}
 
 The following is code for the  plot
 \begin{lstlisting}
 codes/ee18btech11030/ee18btech11030_1.py
 \end{lstlisting}
-From Figure : \ref{fig:ee18btech11030_fig3} 
+From Figure : \ref{fig:ee18btech11030_fig4} 
 \begin{itemize}
 \item For K = 0,the poles have Q = 0.476 and therefore located on negative real axis. 
 \item As K increases poles are brought closer together and eventually coincide at K = 0.1 and Q = 0.5
@@ -116,24 +130,138 @@ From Figure : \ref{fig:ee18btech11030_fig3}
 \item Maximally flat response is obtained when Q = 0.707,which results when K = 0.686.In this case poles are at 45\degree .
 \item Oscillating response is obtained when poles are completely imaginary when Q = inf which results when K = 2.1 
 \end{itemize}
-\item Verify the response in time domain for a unit impulse input 
 
-\solution :
-\begin{figure}[!ht]
-\centering
-  \includegraphics[width=\columnwidth]{./figs/ee18btech11030/ee18btech11030_fc2.eps}
-\caption{}
-\label{fig:ee18btech11030_fig4} 
-\end{figure}
-
-The following is code for the plot
-\begin{lstlisting}
-codes/ee18btech11030/ee18btech11030_2.py
-\end{lstlisting}
 \begin{table}[!ht]
 \centering
 \input{./tables/ee18btech11030.tex}
 \caption{}
 \label{table:ee18btech11030_table}
 \end{table}
+
+\item Building gain K in spice simulation for circuit Fig: \ref{fig:ee18btech11030_fig1}
+
+\solution :
+
+\begin{itemize}
+\item For K greater than 1(K = 2.1),the gain block is built using LM741 op-amp.
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth/1}{!}{\input{./figs/ee18btech11030/ee18btech11030_3.tex}}
+	\end{center}
+	\caption{LM741 op-amp}
+	\label{fig:ee18btech11030_fig5}
+\end{figure}
+\begin{align}
+K = 1 + \frac{R_2}{R_1}
+\implies \frac{R_2}{R_1} = 1.1
+\end{align}
+\item For K less than 1, the gain block is built using voltage divider circuit.
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth/1}{!}{\input{./figs/ee18btech11030/ee18btech11030_4.tex}}
+	\end{center}
+	\caption{Voltage Divider}
+	\label{fig:ee18btech11030_fig6}
+\end{figure}
+\begin{align}
+K = \frac{R_2}{R_1+R_2}
+\end{align}
+\end{itemize}
+
+\item Verify the response in time domain using parameters in Table : \ref{table:ee18btech11030_table1} for K = 2.13
+
+\solution :
+\begin{figure}[!ht]
+\centering
+  \includegraphics[width=\columnwidth]{./figs/ee18btech11030/ee18btech11030_fc2.eps}
+\caption{}
+\label{fig:ee18btech11030_fig7} 
+\end{figure}
+
+The following is code for the plot
+\begin{lstlisting}
+codes/ee18btech11030/ee18btech11030_2.py
+\end{lstlisting}
+
+\item Choose the appropriate values of R and C to simulate the circuit for K = 2.1
+
+\solution:
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11030_1.tex}
+\caption{}
+\label{table:ee18btech11030_table1}
+\end{table}
+\item Verify the response using the spice model
+
+\solution :
+
+\begin{itemize}
+    \item Figure \ref{fig:ee18btech11030_fig8} is the spice simulated output for K = 2.1 using Table \ref{table:ee18btech11030_table1} parameters.
+    \item The following is the netlist for simulated circuit.
+\begin{lstlisting}
+spice/ee18btech11030/ee18btech11030.net
+\end{lstlisting}
+    \item The following is code for generating output
+\begin{lstlisting}
+spice/ee18btech11030/ee18btech11030.py
+\end{lstlisting}
+    
+\end{itemize}
+\begin{figure}[!ht]
+\centering
+  \includegraphics[width=\columnwidth]{./figs/ee18btech11030/ee18btech11030_spice_fc3.eps}
+\caption{}
+\label{fig:ee18btech11030_fig8} 
+\end{figure}
+
+\item Choose the appropriate values of R and C to simulate the circuit for K = 0.1 and K = 0.686
+
+\solution :
+
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11030_2.tex}
+\caption{}
+\label{table:ee18btech11030_table2}
+\end{table}
+\item Verify the response using the spice model
+
+\solution 
+
+\begin{figure}[!ht]
+\centering
+  \includegraphics[width=\columnwidth]{./figs/ee18btech11030/ee18btech11030_spice_fc4.eps}
+\caption{}
+\label{fig:ee18btech11030_fig9} 
+\end{figure}
+
+\begin{itemize}
+    \item Figure \ref{fig:ee18btech11030_fig9} is the spice simulated output for K = 0.686 using Table \ref{table:ee18btech11030_table2} parameters.
+    \item The following is the netlist for simulated circuit.
+\begin{lstlisting}
+spice/ee18btech11030/ee18btech11030_1.net
+\end{lstlisting}
+    \item The following is code for generating output
+\begin{lstlisting}
+spice/ee18btech11030/ee18btech11030_1.py
+\end{lstlisting}
+\end{itemize}
+\begin{figure}[!ht]
+\centering
+  \includegraphics[width=\columnwidth]{./figs/ee18btech11030/ee18btech11030_spice_fc5.eps}
+\caption{}
+\label{fig:ee18btech11030_fig10} 
+\end{figure}
+\begin{itemize}
+    \item Figure \ref{fig:ee18btech11030_fig10} is the spice simulated output for K = 0.1 using Table \ref{table:ee18btech11030_table2} parameters.
+    \item The following is the netlist for simulated circuit.
+\begin{lstlisting}
+spice/ee18btech11030/ee18btech11030_2.net
+\end{lstlisting}
+    \item The following is code for generating output
+\begin{lstlisting}
+spice/ee18btech11030/ee18btech11030_2.py
+\end{lstlisting}
+\end{itemize}
 \end{enumerate}

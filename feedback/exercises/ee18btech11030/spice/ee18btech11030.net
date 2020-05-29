@@ -1,0 +1,19 @@
+
+XU1 N001 N004 N002 N003 Vout LM741/NS
+C1 N001 0 1.6n
+R1 N001 P001 100000
+C2 P001 Vout 16n
+R2 P001 P002 10000
+Vs P002 0 PULSE(0,0.1v)
+V1 0 N003 15
+V2 N002 0 15
+R3 N004 0 10000
+R4 Vout N004 11300
+.tran 0.01 1 UIC
+.include LM741.MOD
+.control
+run
+*plot V(Vout)
+wrdata ee18btech11030.dat V(Vout)
+.end
+

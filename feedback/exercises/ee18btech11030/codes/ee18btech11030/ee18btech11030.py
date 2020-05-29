@@ -24,9 +24,9 @@ phase = np.zeros(j,dtype = object)
 m = 0
 
 #Defining the transfer function 
-for k in range (1,j,6):
+for k in range (6,j,2):
    m = 1000.00/(2.1000001-k*0.1)
-   s[k] = signal.lti([-k*0.5,0], [1,(2.1-(k*0.1))*5,25])  #G(s)
+   s[k] = signal.lti([k*0.1,2.1*k*0.1*5,k*0.1*25], [1,(2.1-(k*0.1))*5,25])  #G(s)
     
 #signal.bode takes transfer function as input and returns frequency,magnitude and phase arrays
    w[k],mag[k],phase[k] = signal.bode(s[k],n=100000)
@@ -36,7 +36,7 @@ for k in range (1,j,6):
 plt.grid()
 plt.xlabel('Frequency(rad/s)')
 plt.ylabel('Magnitude(db)')
-plt.title('Normalised gain for different Q-Factors')
+plt.title('Normalised gain for different Q-Factors for RC = 1/5')
 
 plt.legend()
 

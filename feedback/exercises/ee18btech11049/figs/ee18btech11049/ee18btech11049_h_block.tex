@@ -1,0 +1,13 @@
+\begin{circuitikz}[scale=.8]
+\draw
+(0,0) to[C,*-*, l = C] (3,0)
+    to[R,*-*,l = R] (6,0)
+    node[ocirc]{V2}
+(0,0) -- (-4,0)
+    node[ocirc]{V1}
+
+(0,0) to[R, l = R] (0,-3) node[ground]{} 
+(-2,0) to[C, l_ = C] (-2,-3) node[ground]{} 
+
+;
+\end{circuitikz}

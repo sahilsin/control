@@ -5,8 +5,8 @@
   
   \draw[color=black]   
 
-    (0,0) to[short,-,l=$I_{x}$](1,0)
-    (1,0)to[short,o,l=S](1.5,0)
+    (0,0) to[short,l=$I_{x}$](1,0)
+    (1,0)to[short,*-*,l=$S$](1.5,0)
     
     (0,-2)to[V = $V_{x}$] (0,0)
     
@@ -14,8 +14,8 @@
     
     (4,0)to[cisource, l= $g_{m} V_{gs}$](1,0)
     
-    (4,0)to[short,o,l=D](4,0)
-    (4,0)to[short,o](5,0)
+    (4,0)to[short,*-*,l=$D$](4,0)
+    (4,0)to[short,-o](5,0)
     (5,0)to[short,-o,l=$V_{o}$](6,0)
     
     (5,0) to[R,l_=$R_{D}$,-](5,-3)to[short] node[ground]{}(5,-5)
@@ -23,7 +23,7 @@
     (4,0) to[R,l_=$R_{2}$,-](4,-2)
     (4,-2)to[short](4,-3)
     (4,-2.5)to[short,-o](2,-2.5)
-    (2,-2.5)to[short,o,l=G](2,-2.5)
+    (2,-2.5)to[short,*-*,l=$G$](2,-2.5)
     node at(2,-1.5){$V_{gs}$}
     node at (2,-0.2){$-$}
     node at (2,-2.2){$+$}

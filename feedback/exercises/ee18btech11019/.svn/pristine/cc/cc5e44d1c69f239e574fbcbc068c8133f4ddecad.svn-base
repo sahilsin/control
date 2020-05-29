@@ -1,0 +1,29 @@
+\begin{circuitikz}[american,scale =2]
+	
+    \node[draw,box] (A) at (0.3,-0.75) {$V_{o}$};
+	% Drawing a npn transistor
+	\draw
+	(-2,-0.5)node[left]{Gain $G(s)$}
+	
+	(0,-0.75)node[coordinate](B){$V_o$}
+	
+	(-4,-0.75)node[coordinate](D){}
+	(-1,-0.75)node[coordinate](E){}
+	
+	% Making connections from transistor using relative coordinates
+	% Labelling the transistor
+	
+	(B) to[short,i=$i_1$](0,-0.5)
+	(B) to[L=$L_1$](0,-2) to node[ground]{}(0,-2)
+    
+
+    (D) --(-3,-0.75)
+    (B) --(-2,-0.75)
+    (E) to[R=R,*-*](-1,-2) to node[ground]{}(-1,-2)
+    (-2,-0.75) to[cI =$g_mV_i$](-2,-2) to node[ground]{}(-2,-2)
+    (-3,-2) to node[ground]{}(-3,-2)
+    (-3,-0.8) to[open,v_=$V_i$](-3,-2.2)
+    (B) --(0.15,-0.75)
+	;
+\end{circuitikz}
+
